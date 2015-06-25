@@ -75,4 +75,4 @@ Whether you are a person/company looking to hire developers or a developer looki
  [2]: http://ooomf.com
  [3]: http://apphappening.com
  [4]: http://360idev.com
- [5]: http://brandontreb.com/hire-me
+ [5]: http://pixegon.com/
