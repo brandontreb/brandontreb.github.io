@@ -61,7 +61,7 @@ One of my favorite iOS conferences is [360iDev][4]. It&#8217;s very indie-centri
 
 ### 6. Bonus &#8211; Right Here
 
-Shameless plug time.  If you are looking for professional mobile app (iOS or Android), I have a team of developers and am always looking to work on new and exciting projects.  If you want to hear more about it head over to my [Hire Me][5] page and shoot me an email brandon @ brandontreb [dot] com.
+Shameless plug time.  If you are looking for professional mobile app (iOS or Android), I have a team of developers and am always looking to work on new and exciting projects.  If you want to hear more about it head over to my [Hire Us][5] page or shoot me an email brandon @ pixegon [dot] com.
 
 ### Conclusion
 
