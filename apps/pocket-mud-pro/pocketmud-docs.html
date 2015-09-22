@@ -1,0 +1,224 @@
+<html>
+	<head>
+		<meta name='viewport' content='width=device-width; initial-scale=1.0; maximum-scale=1.0;'>
+	</head>
+	<body>
+		<center><h2>Pocket MUD Pro Documentation</h2></center>
+		<ul>
+			<li>
+				<a href="#general">General Usage</a>
+				<ul>
+					<li><a href="#general_connect">Connecting To A MUD</a></li>
+					<li><a href="#general_disconnect">Disconnecting From A MUD</a></li>
+					<li><a href="#general_adding">Adding A MUD</a></li>
+					<li><a href="#general_settings">Changing A MUD's Settings</a></li>
+					<li><a href="#general_favorite">Favorite MUD's'</a></li>
+					<li><a href="#general_autostart">Autostart</a></li>
+				</ul>
+			</li>
+            <li>
+                <a href="#triggers">Triggers</a>
+                <ul>
+                    <li><a href="#trigger_add">Creating A Trigger</a></li>
+                    <li><a href="#trigger_matching">Matching MUD Text</a></li>
+                    <li><a href="#trigger_lua_basics">LUA API Documenation</a></li>
+                    <li><a href="#trigger_capture">Capturing MUD Text</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#alias">Aliases</a>
+                <ul>
+                    <li><a href="#alias_basic">Creating An Alias</a></li>
+                    <li><a href="#alias_captures">Capturing Command Arguments</a></li>
+                </ul>
+            </li>
+            <!--<li><a href="#history">Version History</a></li> -->
+		</ul>
+
+        <!-- General Usage -->
+
+		<h2><a name="general">General Usage</a></h2>
+		
+		<p>Pocket MUD Pro is a MUD client for the iPhone which allows you to connect to your favorite MUD on the go.<p>
+		
+		<p><a name="general_connect"><b>Connecting To A MUD</b></a></p>
+		
+		<p>When you first launch Pocket MUD Pro, you will see a large list of some of the most popular MUD's in existence.  To connect to a MUD, simply tap on the MUD's name and it will instantly connect you to the game world.</p>
+		
+		<p><a name="general_disconnect"><b>Disconnecting From A MUD</b></a></p>
+		
+		<p>If you wish to disconnect from a MUD or have been disconnected and want to return to the MUD list screen, tap the eject icon in the bottom right-hand corner of the MUD view.  It will ask you to confirm and then bring you back to the MUD list.</p>
+		
+		<p><a name="general_adding"><b>Adding A MUD</b></a></p>
+		
+		<p>To add a new MUD, tap the "+" button in the upper right hand corner of the main MUD list screen</p>
+		
+		<p><a name="general_settings"><b>Changing a MUD's Settings</b></a></p>
+		
+		<p>To modify information about a MUD including name, address, port, triggers, and aliases, tap the blue ">" icon next to the MUD in the MUD list view.  
+		
+		<p><a name="general_favorite"><b>Favorite MUDs</b></a></p>
+		
+		<p>The 'big list' of MUDs can be quite annoying and difficult to navigate at times.  That's why we have implemented a favorites list which is quickly accessible by tapping the "Favorites" button at the top of the MUD list. To add a MUD as a favorite, open up it's <a href="#general_settings">settings</a> and tap the slider which corresponds to "Favorite".  Then tap "Save".  The MUD should now appear in your favorites list</p>
+			
+		<p><a name="general_autostart"><b>Autostart</b></a></p>
+		
+		<p>Some players might want to skip the MUD selection altogether.  This might be the case if you really only play one MUD.  If you toggle "auto start" to on in the MUD <a href="#general_settings">settings</a> and tap "save", that MUD will immediately be launched on startup of Pocket MUD Pro.</p>
+
+        <!-- Triggers -->
+        <h2><a name="triggers">Triggers</a></h2>
+
+        <p>Triggers are a mechanism which allow you to respond to certain text in the MUD and update accordingly.  Triggers could be used for tasks as simple as auto-logging in to your favorite MUD or as complex as creating a fully automated character. When a trigger fires, it can run lua code. <a href="http://www.lua.org/manual/5.1/">Tap here</a> to read more about lua.</p>
+
+        <p>The following section will show you how to use triggers inside of Pocket MUD Pro as well as show you the full trigger API</p>
+
+         <p><a name="trigger_add"><b>Adding A New Trigger</b></a></p>
+
+         <p>To add a trigger, navigate to the <a href="#general_settings">MUD settings</a> of the MUD you are creating a trigger for.  Then tap "Add" under the row marked "Triggers".  Triggers require the following information:
+         <ul>
+            <li>Name: The name of the trigger</li>
+            <li>Pattern: The pattern that must be matched to fire the trigger</li>
+            <li>Prompt: Some MUD's update the "prompt". Setting this to YES, tells the trigger to look in the prompt text rather than the main MUD text<li>
+            <li>Enabled: Whether or not this trigger is enabled</li>
+            <li>Code: By default this says <i>Tap to modify...</i> This is the lua code that will execute when a trigger fires.</i>
+        </ul>
+
+        </p>
+
+        <p><a name="trigger_matching"><b>Matching MUD Text</b></a></p>
+        
+        <p>Before a trigger can fire, it must match some specified text sent by the MUD. You can just enter in plain text here OR use regular expressions. Here are some example patterns:</p>
+
+        <pre>thy name, adventurer?</pre> 
+
+        <p>This will match Aardwolf's request for you to enter your character name when logging in.  You could use this text to create an auto-login trigger</p>
+
+        <pre>hit by a s.*</pre>
+
+        <p>This will match anything where something starting with "s" hit you. (You were hit by a snake).</p>
+
+        <p>Pocket MUD Pro triggers also support captures which get injected into your lua script. See <a href="trigger_capture">captures</a> for more info.</p>
+
+         <p><a name="trigger_lua_basics"><b>Lua Basics And Trigger API</b></a></p>
+
+         <p>When a trigger or alias fires, it executes lua code.  There are quite a few things you can do inside of this code.  Since you have the full lua language inside, the possibilities become endless.  Here is a look at all of the Pocket MUD Pro specific API calls you are able to make</p>
+
+         <p><b>send:</b>
+         This function sends text to the MUD.
+         <pre>send("kill rat")</pre> would send the text "kill rat" to the server.
+         </p>
+
+         <p><b>echo:</b>
+         This function prints the text to the screen but doesn't send it to the server.
+         <pre>echo("YOU MUST EAT")</pre>
+         would print "YOU MUST EAT" to your MUD View.
+         </p>
+
+         <p><b>gag:</b>
+         This function suppresses the output of the text passed in. You might use this in order to shorten long descriptions or silence a character who talks too much. When using the <i>gag</i> command, you also have access to a variable called <i>line</i> which is the text line that contained the match.
+         <pre>gag(line)</pre>
+         will suppress the output of the entire line containing the match.
+         <pre>gag("welcome to the game")</pre>
+         will suppress only the text "welcome to the game".
+         </p>
+
+          <p><b>replace:</b>
+          Replaces some specified text with some other text. In fact, the gag command is simply replace(line,"")
+         <pre>replace("rats","dogs")</pre>
+          will replace all occurrences of the word "rats" with the word "dogs".
+         </p>
+
+         <p><b>prompt:</b>
+         This will replace the prompt text.  The prompt sits just above your text entry view and is persistent even when the MUD text updates.
+         <pre>prompt(health .. "hp " .. magic .. "mp")</pre>
+         This will update the prompt to show your character's HP and MP.  It will look like 530hp 45mp. You could have grabbed these values from a <a href="#trigger_capture">capture</a>.
+         </p>
+
+         <p><b>trigger_enable:</b>
+         Enables a specific trigger. This command uses the trigger (case sensitive) as an identifier.
+         <pre>trigger_enable("Rat Bot")</pre>
+         Would enable a trigger named "Rat Bot"
+         </p>
+
+         <p><b>trigger_disabled:</b>
+         Disables a specific trigger. This command uses the trigger (case sensitive) name as an identifier. 
+         <pre>trigger_enable("Rat Bot")</pre>
+         Would disable a trigger named "Rat Bot"
+         </p>
+
+         <p><b>timer:</b>
+         Runs some specified lua code after a given amount of time (in seconds).
+         <pre>timer(5,"send(\"kill rat\")")</pre>
+         Would send the command "kill rat" after 5 seconds.  Note that quotes for the parameters of the send command must be escaped with \ 's or it will fail to parse properly.
+         </p>
+
+         <p><b>sound:</b>
+         Plays a sound from a given package. Although you can select single sounds to play when a trigger fires, you can also use this command to programmatically invoke a sound.
+         <pre>sound("Basic","bell.caf")</pre> would play the bell sound from the Basic package when the trigger fires.
+         </p>
+
+         <p><b>bar:</b>
+         Creates html text to render a status bar (for health, mana, etc). Use this in conjunction with prompt.
+         <br>Syntax: bar([value],[max],[label],[color],[width])
+        <pre>prompt(bar(10,20,"HP","Red",13))</pre> would display a red bar labeled HP 50% full with a length of 13.
+         </p>
+
+
+         <p><a name="trigger_capture"><b>Capturing MUD Text</b></a></p>
+
+         <p>If you specify text in your match area, it will be injected into your lua code using the <b>matches</b> lua table. In lua, arrays/tables are 1 indexed and the element at position 1 is always equal to the entire line that matched the pattern, the next indices will contain each of the captures.  Here is an example:</p>
+
+         <p>Pattern: \[(.*)/(.*)hp</p>
+
+         <p>This could be used to get your current and max HP in the Aardwolf MUD which has a prompt that looks like [123/400hp 22/234mp]. You could then use these values in your MUD like this:</p>
+
+         <pre>
+current_hp = matches[2]
+max_hp = matches[3]
+percent = current_hp/max_hp
+
+prompt("Health: " .. percent .. "%")
+         </pre>
+
+         <p>The matches array will contain the following values:</br>
+         matches[1] = [123/400hp<br>
+         matches[2] = 123<br>
+         matches[3] = 400<br>
+         <p>
+
+         <h2><a name="alias">Aliases</a></h2>
+
+         <p>Aliases allow you to create your own custom commands.  You may either create a command to send a string of commands back to the mud OR create a command that runs a script (such as enabling or disabling a trigger).</p>
+
+         <p>Aliases can be accessed from any MUD settings screen, by tapping the Add button under the Aliases heading.<p>
+
+         <p><a name="alias_basic"><b>Creating A Basic Alias</b></a></p>
+
+         <p>Here are the parts of an alias:</p>
+
+         <ul>
+             <li>Command: The command you must type to invoke this alias.</li>
+             <li>Text: By default, this is off. When text is set to ON, it means that your command will be text rather than code</li>
+             <li>Tap to modify code...: This is where you write what your alias does. If text is on, this will be a string of commands (north;east;look) separated by ";"'s. If text is off, this will be lua code and you will have all of the <a href="#trigger_lua_basics">Lua API</a> available to you</li>
+         </ul>
+
+         <p>Example:</p>
+
+         Command: ll<br/>
+         Text: ON<br/>
+         Code: look north; look south; look east; look west <br />
+
+         <p>This command would cause you to look in all of the main directions when typing the ll command.</p>
+
+        <p><a name="alias_captures"><b>Capturing Text</b></a></p>
+
+        <p>As you did with <a href="#triggers">triggers</a>, you can also capture text in your alias commands. Captured text will show up using %num where num is the number of variables you add to the end of the command.  For example</p>
+
+        Command: ll<br />
+        Text: ON<br />
+        Code: look %1; look %2; <br />
+
+        <p>Now you can type "ll north west" and it will look north and then west.<p>
+
+	</body>
+</html>
