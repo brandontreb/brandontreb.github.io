@@ -1,6 +1,25 @@
-url: http://brandontreb.com
-name: brandontreb.com
-title: brandontreb.com
-description: >
-  Software Consulting Tips And iPhone
-  Development Tutorials
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+
+gems: [jekyll-paginate]
+permalink:           pretty
+
+# Setup
+title:              brandontreb.com 
+tagline:             'Tips And Resources For Software Consultants'
+description:         'A blog about software development consulting' 
+url:                 'http://brandontreb.com'
+baseurl:             ''             
+
+paginate: 5
+paginate_path: "page:num"
+
+# About/contact
+author:
+  name:              Brandon Trebitowski
+  url:               https://twitter.com/brandontreb
+  email:             brandon@pixegon.com
+
+# Custom vars
+version:             1.0.0

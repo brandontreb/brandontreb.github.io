@@ -1,37 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 
   {% include head.html %}
 
   <body>
-	  <!-- BuySellAds Ad Code -->
-	  <script type="text/javascript">
-	  (function(){
-	    var bsa = document.createElement('script');
-	       bsa.type = 'text/javascript';
-	       bsa.async = true;
-	       bsa.src = '//s3.buysellads.com/ac/bsa.js';
-	    (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
-	  })();
-	  </script>
-	  <!-- End BuySellAds Ad Code -->
 
-    {% include header.html %}
+    {% include sidebar.html %}
 
-    <div class="page-content">
-		<div class="wrapper" style="text-align:center;">
-  		  <!-- BuySellAds Zone Code -->
-  		  <div id="bsap_1242083" class="bsarocks bsap_ecc27b69ffe30504412d8da9c39c3116"></div>
-  		  <!-- End BuySellAds Zone Code -->
-		  &nbsp;
-  </div>
-      <div class="wrapper">	  
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+            <small>{{ site.tagline }}</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
         {{ content }}
       </div>
     </div>
 
-    {% include footer.html %}
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
   </body>
-
 </html>
