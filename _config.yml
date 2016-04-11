@@ -2,7 +2,10 @@
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 
-gems: [jekyll-paginate]
+gems: 
+    - jekyll-paginate
+    - jekyll-sitemap
+
 permalink:           pretty
 
 # Setup
