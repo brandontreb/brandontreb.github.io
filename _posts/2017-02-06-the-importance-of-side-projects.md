@@ -38,3 +38,4 @@ Here are a few Hacker News Posts that I found particularly inspiring to get you 
 
 Dont' have any idea to start on? Try cloning something in one of the above posts. There are _tons_ of ideas in here large and small and there's plenty of room on the web for variances of differenct products. I probably stole most of this post from somewhere...
 
+If you found this post helpful and want to hear more, make sure to [subscribe to my newsletter](http://brandontreb.us3.list-manage1.com/subscribe?u=66135759856eefe4f6dcec97c&id=ef6c358d78). It's not spammy, just let's you know when I post.
