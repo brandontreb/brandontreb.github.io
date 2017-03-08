@@ -7,7 +7,7 @@ As developers, we hear the echo chamber on Hacker News and others shouting at us
 
 Here are 3 times when you should consider lowering your rates:
 
-##1. Building Your Portfolio
+## 1. Building Your Portfolio
 
 This is definitely the case when you are first starting out. If you don't have a solid portfolio, why should a client trust you to build their project at full rate. You have no credibility and they would be better off using a large shop that charges the same rate, but has hundreds of apps under their belts.
 
@@ -15,7 +15,7 @@ Even if you are not just starting out, this can be a great strategy to employ if
 
 This strategy has proven to be incredibly successful for [Pixegon](http://pixegon.com)
 
-##2. Longer Term Engagements
+## 2. Longer Term Engagements
 
 Our overall goal is to make money and provide sustainability as indie software developers. If you get an opportunity for a longer engagement on a project you enjoy working on, this often times can be much more valuable than trying to get your full rate.
 
@@ -28,7 +28,7 @@ Our overall goal is to make money and provide sustainability as indie software d
 
 In my opinion, I would MUCH rather be working on a _larger_ contract at a lower price than a shorter one at a higher price.  At the end of the day, it's all about the contract value and sustainabilty.  
 
-##3. On The Job Training
+## 3. On The Job Training
 
 As students of computer science, we should be able to build anything right? Well, sort of.  In the past, there have been instances when clients have asked me to work in unfamiliar territory. Whether that is using a programming language I have never written in, or working in a field that I don't know much about.
 
