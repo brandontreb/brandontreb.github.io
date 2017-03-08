@@ -26,7 +26,7 @@ Our overall goal is to make money and provide sustainability as indie software d
  - 3 months * 172 hours * $125 = **$64,500**
  - 6 months * 172 hours * $100 = **$103,200**
 
-In my opinion, I would MUCH rather be working on a _larger_ contract at a lower price than a shorter one at a higher price.  At the end of the day, it's all about the contract value.  
+In my opinion, I would MUCH rather be working on a _larger_ contract at a lower price than a shorter one at a higher price.  At the end of the day, it's all about the contract value and sustainabilty.  
 
 ##3. On The Job Training
 
