@@ -58,9 +58,6 @@ This is definitely a good starting point.  Sometimes I will copy and paste these
 
 Sales is something that I am constantly working on and refining.  I hope to continue to share my findings with you as I learn along the way.
 
-At the end of the day, remember that your ultimate goal with a sales call is to get enough information to provide a solution path. Even if the path isn't to use your shop, always provide the client with a solution path.  
-
-
 
  
 
