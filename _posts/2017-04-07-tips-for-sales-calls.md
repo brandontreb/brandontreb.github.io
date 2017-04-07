@@ -7,15 +7,15 @@ categories:
   - Articles
 ---
  
-In 2012, I was still in college. I had just landed my first job with a small consultancy as their first iOS developer replacing their outsourced Ukrainian team. Within my first week on the job, the CEO asked me to jump on a sales call as the technical lead.  This absolutely terrified me.  I remember doing things like ensuring that I had a full glass of water so my throat wouldn't get so dry (it still did).  I also stubmled over my words and almost cost the team many sales.  Eventually, I learned.
+In 2012, I was still in college. I had just landed my first job with a small consultancy as their first iOS developer replacing their outsourced Ukrainian team. Within my first week on the job, the CEO asked me to jump on a sales call as the technical lead.  This absolutely terrified me.  I remember doing things like ensuring that I had a full glass of water so my throat wouldn't get so dry (it still did).  I also stumbled over my words, almost costing the team many sales.  Eventually, I learned.
 
-Since that day, I have taken literally hundreds of software sales calls.  Each time trying to improve my process by testing out what works and what doesn't.  Now that I run my own company, I have found that one of the most beneficial things that I have done is implemented a standard call flow.
+Since that day, I have taken hundreds of software sales calls.  Each time trying to improve my process by testing out what works and what doesn't.  Now that I run my own company, I have found that one of the most beneficial things that I have done is implemented a standard call flow.
 
 There is a reason that call centers require their employees to memorize call flows.  When you have a call flow in place, it does a few things. 
 
 #### 1. It allows you to practice and refine your pitch over and over again. 
 
-Practice makes perfect.  Definitly cliche, but it makes a lot of sense here. As you give your pitch over and over again, you will start to pair it down to something that works for you and your team.
+Practice makes perfect.  Definitely cliche, but it makes a lot of sense here. As you give your pitch over and over again, you will start to pair it down to something that works for you and your team.
 
 #### 2. It builds confidence
 
@@ -27,11 +27,11 @@ Now when someone says "Could I see an example of your work?", I can quickly shoo
 
 #### 3. It's so easy a 'sales guy' can do it
 
-This is the part that I'm starting to experiment with.  I want my pitch for my company to be so tight, that I could give it to any 'sales guy' to deliver and him represent Pixegon in much the same way I would.  I have already done this with some of my engineers as I don't always have time to make every single sales call and it has proven to be a huge sucess.
+This is the part that I'm starting to experiment with.  I want my pitch for my company to be so tight, that I could give it to any 'sales guy' to deliver and him represent Pixegon in much the same way I would.  I have already done this with some of my engineers as I don't always have time to make every single sales call and it has proven to be a huge success.
 
 #### 4. It removes emotion
 
-This is a big one. When we are nervous, we tend to say dumb things.  I remember a few times on sales calls when I was nervous (often because I really wanted/needed the contract), that I would seriously compramise on my rate just because the client suggested it.  Had I had a call flow in font of me, I would have been better prepared to field such a request. 
+This is a big one. When we are nervous, we tend to say dumb things.  I remember a few times on sales calls when I was nervous (often because I really wanted/needed the contract), that I would seriously compromise on my rate just because the client suggested it.  Had I had a call flow in font of me, I would have been better prepared to field such a request. 
 
 I now replace emotion with process and it usually ends up better for both parties.
 
@@ -52,9 +52,13 @@ Here is a rough outline of my sample call flow:
 - If all goes well, ask them to send over any assets/wires/requirements and tell them you will follow up with a rough scope and estimate. Again, **don't estimate on this call** 
 - Thank them for their time and let the know you will be in touch.
 
-This is definitly a good starting point.  Sometimes I will copy and paste these flows into a new document and tailor them based on the client that I am about to speak to. 
+This is definitely a good starting point.  Sometimes I will copy and paste these flows into a new document and tailor them based on the client that I am about to speak to. 
+
+## Conclusion 
 
 Sales is something that I am constantly working on and refining.  I hope to continue to share my findings with you as I learn along the way.
+
+At the end of the day, remember that your ultimate goal with a sales call is to get enough information to provide a solution path. Even if the path isn't to use your shop, always provide the client with a solution path.  
 
 
 
