@@ -50,7 +50,7 @@ Here is a rough outline of my sample call flow:
 - Ask more detailed questions about the project (If timeline / budget are somewhat ok).  Determine things like backend requirements, UI/UX, Staff aug vs full solution, etc...
 - Don't give them a $$$ estimate. They will usually ask you and it will usually cost you in the end if you give them a number here.
 - If all goes well, ask them to send over any assets/wires/requirements and tell them you will follow up with a rough scope and estimate. Again, **don't estimate on this call** 
-- Thank them for their time and let the know you will be in touch.
+- Thank them for their time and let them know you will be in touch.
 
 This is definitely a good starting point.  Sometimes I will copy and paste these flows into a new document and tailor them based on the client that I am about to speak to. 
 
