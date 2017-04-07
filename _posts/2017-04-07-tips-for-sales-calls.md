@@ -13,11 +13,11 @@ Since that day, I have taken hundreds of software sales calls.  Each time trying
 
 There is a reason that call centers require their employees to memorize call flows.  When you have a call flow in place, it does a few things. 
 
-### 1. It allows you to practice and refine your pitch over and over again. 
+## 1. It allows you to practice and refine your pitch over and over again. 
 
 Practice makes perfect.  Definitely cliche, but it makes a lot of sense here. As you give your pitch over and over again, you will start to pair it down to something that works for you and your team.
 
-### 2. It builds confidence
+## 2. It builds confidence
 
 Many people are nervous speaking to strangers. Software developers are no exception to this.  As I mentioned above, I was terrified on my first few sales calls.  This had a lot to do with the fact that I was 'shooting from the hip' and just trying to make things up as I went along.
 
@@ -25,17 +25,17 @@ Once I finally got a script in place, I was able to lean on it during future cal
 
 Now when someone says "Could I see an example of your work?", I can quickly shoot them a link or list rather than nervously trying to get the words out "well...uh...I made an app about catz, and I'll find the link and...uhhh... send it to you later...".
 
-### 3. It's so easy a 'sales guy' can do it
+## 3. It's so easy a 'sales guy' can do it
 
 This is the part that I'm starting to experiment with.  I want my pitch for my company to be so tight, that I could give it to any 'sales guy' to deliver and him represent Pixegon in much the same way I would.  I have already done this with some of my engineers as I don't always have time to make every single sales call and it has proven to be a huge success.
 
-### 4. It removes emotion
+## 4. It removes emotion
 
 This is a big one. When we are nervous, we tend to say dumb things.  I remember a few times on sales calls when I was nervous (often because I really wanted/needed the contract), that I would seriously compromise on my rate just because the client suggested it.  Had I had a call flow in font of me, I would have been better prepared to field such a request. 
 
 I now replace emotion with process and it usually ends up better for both parties.
 
-## Sample Flow
+### Sample Flow
 
 Here is a rough outline of my sample call flow:
 
