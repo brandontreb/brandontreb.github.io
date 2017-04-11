@@ -7,7 +7,7 @@ categories:
   - Articles
 ---
  
-In 2012, I was still in college. I had just landed my first job with a small consultancy as their first iOS developer replacing their outsourced Ukrainian team. Within my first week on the job, the CEO asked me to jump on a sales call as the technical lead.  This absolutely terrified me.  I remember doing things like ensuring that I had a full glass of water so my throat wouldn't get so dry (it still did).  I also stumbled over my words, almost costing the team many sales.  Eventually, I learned.
+In 2008, I was still in college. I had just landed my first job with a small consultancy as their first iOS developer replacing their outsourced Ukrainian team. Within my first week on the job, the CEO asked me to jump on a sales call as the technical lead.  This absolutely terrified me.  I remember doing things like ensuring that I had a full glass of water so my throat wouldn't get so dry (it still did).  I also stumbled over my words, almost costing the team many sales.  Eventually, I learned.
 
 Since that day, I have taken hundreds of software sales calls.  Each time trying to improve my process by testing out what works and what doesn't.  Now that I run my own company, I have found that one of the most beneficial things that I have done is implemented a standard call flow.
 
