@@ -54,7 +54,7 @@
     <div id="winners"></div>
     <div>&nbsp;</div>
 
-    <div class="dropdown">
+    <div class="dropdown" id="admin_controls">
       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Select a Function
       </button>
@@ -67,36 +67,20 @@
     </div>
     <div>&nbsp;</div>
 
-    <!-- <div class="alert alert-success" role="alert" id="message">
-    <strong>Well done!</strong> You successfully read this important alert message.
-  </div>
 
-  <img id="loader" src="https://loading.io/spinners/double-ring/lg.double-ring-spinner.gif">
-  <form onsubmit="return false;">
-  <div class="form-group">
-  <label for="name">Name</label>
-  <input class="form-control" id="name" type="text">
-</div>
-<div class="form-group">
-<label for="email">Email</label>
-<input class="form-control" id="email" type="text">
-</div>
-<div class="form-group">
-<label for="initial_amount">Initial Amount</label>
-<input class="form-control" id="initial_amount" type="text">
-</div>
-<div class="form-group">
-<button id="button" class="btn btn-primary">Add User</button>
-<button id="button_draw_user" class="btn btn-secondary">Draw User</button>
-</div>
-</form> -->
-
-<table id="table" class="table table-striped " data-locale="en-US" data-sort-name="name" data-sort-order="asc">
+<table id="table"
+  class="table table-striped "
+  data-locale="en-US"
+  data-sort-name="name"
+  data-sort-order="asc"
+  data-pagination="true"
+  data-search="true"
+  data-height="460">
   <thead>
     <tr>
-      <th data-field="name">Name</th>
-      <th data-field="email">Email</th>
-      <th data-field="balance" data-formatter="balanceFormatter">Balance</th>
+      <th data-field="name" data-sortable="true">Name</th>
+      <th data-field="email" data-sortable="true">Email</th>
+      <th data-field="balance" data-formatter="balanceFormatter" data-sortable="true">Balance</th>
     </tr>
   </thead>
 </table>

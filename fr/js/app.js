@@ -63,6 +63,11 @@ function startApp() {
     setInterval(function(){
       reloadWinners();
     }, 10000);
+
+    checkIsAdmin();
+    setInterval(function(){
+      checkIsAdmin();
+    }, 10000);
 });
 }
 
@@ -124,6 +129,17 @@ function reloadWinners() {
           $('#winners').html(html);
         }
       });
+    }
+  });
+}
+
+function checkIsAdmin() {
+  eggFuture.isAdmin(web3js.eth.defaultAccount,function(err, res){
+    isAdmin = res;
+    if(isAdmin) {
+      $('#admin_controls').show();
+    } else {
+      $('#admin_controls').hide();
     }
   });
 }
