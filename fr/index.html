@@ -79,7 +79,7 @@
   <thead>
     <tr>
       <th data-field="name" data-sortable="true">Name</th>
-      <th data-field="email" data-sortable="true">Email</th>
+      <!-- <th data-field="email" data-sortable="true">Email</th> -->
       <th data-field="balance" data-formatter="balanceFormatter" data-sortable="true">Balance</th>
     </tr>
   </thead>
@@ -190,7 +190,7 @@ window.addEventListener('load', function() {
             <input class="form-control" id="user_email" type="text">
           <script>
           $('#user_email').on('input', function() {
-            var user = userHash[$('#user_email').val()];
+            var user = userHash[web3.sha3($('#user_email').val())];
             if(user) {
               $('#user_data').html('<strong>'+user.name+'</strong>: ' + user.balance.toLocaleString() + egg);
             } else {

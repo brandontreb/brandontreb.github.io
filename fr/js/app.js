@@ -11,7 +11,7 @@ function loadJSON(file, callback) {
 }
 
 /* Global variables */
-var contractAddress = '0xb6816285c0aB8Eb93e030b7e6D34c1c7306ea238';
+var contractAddress = '0x6FD6FF28852Df576710E5Bc5C27BdeA59ceE36A7';
 var egg = ' 🥚';
 var users = [];
 var userHash = {};
@@ -101,11 +101,11 @@ function reloadUsers() {
     for(i = 0; i < count; i++) {
       eggFuture.getUser(i,function(err, res){
         var user = {
-          name: res[0],
-          email: res[1],
+          key: res[0],
+          name: res[1],
           balance: res[2].toNumber()
         };
-      userHash[user.email] = user;
+      userHash[user.key] = user;
       users.push(user);
       if(users.length == count) {
         reloadUsersTable(users);
@@ -182,6 +182,19 @@ function addUser(name, email, initialBalance, cb) {
   });
 }
 
+function deleteUser(email, cb) {
+  eggFuture.deleteUser(email, function(error, result) {
+    console.log("debug: " + JSON.stringify(error));
+    console.log("debug: " + JSON.stringify(result));
+    if(result) {
+      success("Deleted user - " + name);
+    } else {
+      error("Delete user - " + JSON.stringify(error));
+    }
+    cb(error,result);
+  });
+}
+
 function addAdmin(address, cb) {
   eggFuture.addAdmin(address, function(error, result) {
     console.log("debug: " + JSON.stringify(error));
@@ -196,6 +209,7 @@ function addAdmin(address, cb) {
 }
 
 function drawUser(amount, cb) {
+  console.log('drawing');
   eggFuture.drawRandomUser(amount, function(error, result) {
     console.log("debug: " + JSON.stringify(error));
     console.log("debug: " + JSON.stringify(result));
