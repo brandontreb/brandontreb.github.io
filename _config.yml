@@ -2,18 +2,18 @@
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 
-gems: 
+plugins:
     - jekyll-paginate
     - jekyll-sitemap
 
 permalink:           pretty
 
 # Setup
-title:              brandontreb.com 
+title:              brandontreb.com
 tagline:             'Tips And Resources For Software Consultants'
-description:         'A blog about software development consulting' 
+description:         'A blog about software development consulting'
 url:                 'http://brandontreb.com'
-baseurl:             ''             
+baseurl:             ''
 
 paginate: 5
 paginate_path: "page:num"
@@ -26,3 +26,10 @@ author:
 
 # Custom vars
 version:             1.0.0
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "post"
