@@ -5,6 +5,7 @@ layout: post
 permalink: /trying-something-new
 categories:
   - Articles
+date: 2018-04-15 17:00
 ---
 
 **tl;dr**: [http://micro.blog](micro.blog) is pretty cool.
