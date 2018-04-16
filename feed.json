@@ -10,7 +10,7 @@ layout: null
 		{% for post in site.posts limit:25 %}
 		{
 			"id": "{{ post.slug }}",
-      {% if post.title == null or post.microblog == false %}
+      {% if post.title != null %}
 			"title": {{ post.title | jsonify }},
 			{% endif %}
 			"content_html": {{ post.content | jsonify }},
