@@ -10,7 +10,7 @@ layout: null
 		{% for post in site.posts limit:25 %}
 		{
 			"id": "{{ post.slug }}",
-      {% if post.title != null %}
+      {% if post.title != null and post.title != '' %}
 			"title": {{ post.title | jsonify }},
 			{% endif %}
 			"content_html": {{ post.content | jsonify }},
