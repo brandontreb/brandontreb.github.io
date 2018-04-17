@@ -3,8 +3,11 @@ layout: default
 ---
 
 <div class="post">
-  {% if  page.microblog == undefined or page.microblog == false %}
+  {% if page.microblog == undefined or page.microblog == false %}
   <h1 class="post-title">{{ page.title }}</h1>
+  {% endif %}
+  {% if page.mf-photo %}
+    <img src="{{ page.mf-photo }}" />
   {% endif %}
   {{ content }}
   <footer class="post__footer">
