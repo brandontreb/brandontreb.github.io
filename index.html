@@ -7,21 +7,22 @@ title: Home
   {% for post in paginator.posts %}
   {% if post.title == null or post.title.length == 0 %}
     {% continue %}
+  {% else %}
+    <div class="post">
+      {% if  post.microblog == undefined or post.microblog == false %}
+      <h1 class="post-title">
+        <a href="{{ site.baseurl }}/{{ post.url | remove_first:'/' }}">
+          {{ post.title }}
+        </a>
+      </h1>
+      {% endif %}
+      {{ post.content }}
+      <!-- <span class="post-date">{{ post.date | date_to_string }}</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ post.url }}" title="Permalink to Microblog post" class="u-url">{{ post.date | date: "%a, %b %d, %Y at %I:%M%P" }}</time></a></small>
+        </footer>
+    </div>
   {% endif %}
-  <div class="post">
-    {% if  post.microblog == undefined or post.microblog == false %}
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}/{{ post.url | remove_first:'/' }}">
-        {{ post.title }}
-      </a>
-    </h1>
-    {% endif %}
-    {{ post.content }}
-    <!-- <span class="post-date">{{ post.date | date_to_string }}</span> -->
-    <footer class="post__footer">
-        <small><time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ post.url }}" title="Permalink to Microblog post" class="u-url">{{ post.date | date: "%a, %b %d, %Y at %I:%M%P" }}</time></a></small>
-      </footer>
-  </div>
   {% endfor %}
 </div>
 

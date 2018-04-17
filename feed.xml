@@ -15,7 +15,7 @@ layout: null
 
       {% if post.title == null or post.title.length == 0 %}
         {% continue %}
-      {% endif %}
+      {% else %}
 
       <item>
         <title>{{ post.title | xml_escape }}</title>
@@ -30,6 +30,7 @@ layout: null
         <category>{{ cat | xml_escape }}</category>
         {% endfor %}
       </item>
+      {% endif %}
     {% endfor %}
   </channel>
 </rss>
