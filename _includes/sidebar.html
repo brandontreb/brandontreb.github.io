@@ -42,7 +42,7 @@
 
     <span class="sidebar-nav-item">Recent Posts
     {% for post in site.posts limit: 4 %}
-      {% if post.title == null or post.title.length == 0 %}
+      {% if post.title == null or post.title.size == 0 %}
         {% continue %}
       {% endif %}
         <a class="sidebar-nav-item" href="{{ post.url }}">{{ post.title }}</a>
