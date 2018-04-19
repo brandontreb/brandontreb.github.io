@@ -1,10 +1,11 @@
 {
-  "main.css": "static/css/main.42462ec0.css",
-  "main.css.map": "static/css/main.42462ec0.css.map",
-  "main.js": "static/js/main.987afe2f.js",
-  "main.js.map": "static/js/main.987afe2f.js.map",
+  "main.css": "static/css/main.b72ac2f4.css",
+  "main.css.map": "static/css/main.b72ac2f4.css.map",
+  "main.js": "static/js/main.0d117dc3.js",
+  "main.js.map": "static/js/main.0d117dc3.js.map",
   "static/media/ic_ethFill.svg": "static/media/ic_ethFill.3c573979.svg",
   "static/media/ic_person.svg": "static/media/ic_person.57f2c632.svg",
   "static/media/ic_receive.svg": "static/media/ic_receive.eaadd1d5.svg",
-  "static/media/ic_wallet.svg": "static/media/ic_wallet.b90c2e1c.svg"
+  "static/media/ic_wallet.svg": "static/media/ic_wallet.b90c2e1c.svg",
+  "static/media/trustwallet-logo.svg": "static/media/trustwallet-logo.2c33f169.svg"
 }
