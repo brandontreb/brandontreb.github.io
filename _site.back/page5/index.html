@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="description" content="Some Thoughts On Software Development Consulting">
+  <meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+  <meta name="author" content="Brandon Trebitowski">
+
+  <link rel="micropub" href="https://brandontreb-blog.herokuapp.com/micropub/main">
+  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+  <link href="https://twitter.com/brandontreb" rel="me">
+  <link href="http://github.com/brandontreb" rel="me">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      brandontreb.com &middot; Tips And Resources For Software Consultants
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-381854-9', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A blog about software development consulting</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+
+    <!-- <a class="sidebar-nav-item" href="/archive/v1.0.0.zip">Download</a>
+    <a class="sidebar-nav-item" href="">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v1.0.0</span> -->
+
+    <!--
+            Recent Posts
+            On my homepage I like to include a recent posts section to entice people click through and read, and also to have no content on the homepage every time I write an article. Important part of SEO!
+            You can easily change this to suit your site. Maybe you want 3 posts, instead of 2 or more words in the snippet.
+    -->
+
+    <span class="sidebar-nav-item">Subscribe: <a href="http://feeds.feedburner.com/brandontreb">RSS</a> | <a href="http://eepurl.com/bnryI5">Email</a></span>
+    <a class="sidebar-nav-item" href="/micro">Micro Blog</a>
+    <a class="sidebar-nav-item" href="http://linkedin.com/in/brandontreb">Linked In</a>
+    <a class="sidebar-nav-item" href="http://twitter.com/brandontreb">Twitter</a>
+    <a class="sidebar-nav-item" href="http://pixegon.com/more-works">Portfolio</a>
+
+    <span class="sidebar-nav-item">Recent Posts
+    
+      
+        
+      
+        
+      
+        <a class="sidebar-nav-item" href="/trying-something-new">Trying Something New</a>
+    
+      
+        <a class="sidebar-nav-item" href="/how-creating-a-call-flow-helps-sales-calls">How Creating A Call Flow Can Help Your Software Sales Calls</a>
+    
+    </span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2018. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">brandontreb.com</a>
+            <small>Tips And Resources For Software Consultants</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="posts">
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/the-top-5-places-to-find-good-developerscontractors-to-work-on-your-projects">
+          The Top 5 Places To Find Good Software Developers/Contractors
+        </a>
+      </h1>
+
+      <p>One thing I am often asked is “Where can I find good developers/contractors/subcontractors?” While I have found talent many different ways, I wanted to share my top 5 with you.</p>
+
+<p>This post should be useful to you if you have a project and are looking to find a developer OR are a developer looking to subcontract some of your work.  I am sharing these based solely on my experiences with them and hope you find value in this list.</p>
+
+<h3 id="1-local-meetups">1. Local Meetups</h3>
+
+<p>Local meet ups are the absolute best place in my opinion to find developers.  Almost every city in the nation has some sort of group meeting on a regular bases for a given focus of development.  You should have no problems finding a rails meetup group, iOS, Android, etc…</p>
+
+<p>I would suggest finding out about such meetups in your area by Googling phrases such as “[your area] iOS meetup (sub iOS for rails, python, etc…).  I regularly attend a “Cocoa Heads” group full of incredibly smart and capable mobile developers all willing to work on projects.</p>
+
+<p>These types of groups are always excited to have clients come in and pitch their ideas.  One piece of advice though, don’t go in to these groups and start with “I have a great idea and I will give you a percentage of the company in exchange for development”. They will stop listening immediately.</p>
+
+<h3 id="2-popular-developersmailing-lists">2. Popular Developers/Mailing Lists</h3>
+
+<p>This one is going to require a bit of work and research on your part, but I will get you started.  Around the internet, there are a few of what I call “celebrity developers”.  These are generally guys who have made a name for themselves and who are established as experts in their space.</p>
+
+<p>While many of them are not taking on contract work themselves, they may or may not have a mailing list of interested contractors.  One such person that does exactly this is <a href="http://raywenderlich.com">Ray Wenderlich</a> and I happen to receive emails on his contractor list.</p>
+
+<p>Even if these developers don’t have lists, they generally have plenty of connections to point you in the right direction.  Like I said, this method isn’t easy, but it can definitely have one of the biggest payoffs in terms of quality developers.</p>
+
+<h3 id="3-specialize-project-sites">3. Specialize Project Sites</h3>
+
+<p>As of late, quite a few interesting sites have been popping up that have solved a fundamental issue when it comes to pairing developers with projects. The problems are 1. it’s hard to find good developers and 2. it’s hard to find clients with realistic cost expectations. That’s why ODesk exists 😉</p>
+
+<p>The first of these sites that I have found is <a href="http://ooomf.com">OOOMF</a>.  OOOMF is relatively new and you must be reviewed and accepted by their team in order to be a part of it.  It’s basically a private network for pairing developers with projects and it supports all different project types (mobile, web, design, etc…).</p>
+
+<p>Project owners can put their project up with a relative budget and developers can “apply”.  The process then moves forward with communication between the client and the developers until a price and scope have been reached.</p>
+
+<p>There is an additional overhead of 15% for using this service, but I think it’s well worth it.</p>
+
+<p>Another one of these sites that is more mobile centric is<a href="http://apphappening.com"> http://apphappening.com</a>.  This site is very new and I have only just begun to use it.  I should have a better review of them shortly.</p>
+
+<h3 id="4-twitter-and-appnet">4. Twitter and App.net</h3>
+
+<p>Twitter and app.net are definitely the preferred social network of serious developers.  I would steer clear of Facebook and Linked in as this is generally where the recruiters hang out. Your message will most likely get dismissed as spam.</p>
+
+<p>I’d suggest searching Twitter/App.net for the keywords of your project (iOS developer, rails, etc…) and find the folks with a ton of follows and a very small following to follower ratio. You will know them right away.  Also, most of their blogs come up first in Google for many related keywords.</p>
+
+<h3 id="5-developer-conferences">5. Developer Conferences</h3>
+
+<p>This one might cost you a bit of money, but is definitely well worth it.  There are conferences for every focus of software development and they occur all throughout the year.  These conferences generally have a HUGE percentage of professional developers who are just as eager to work on a project as you are to have them.</p>
+
+<p>One of my favorite iOS conferences is <a href="http://360idev.com">360iDev</a>. It’s very indie-centric and offers an incredible community of iOS developers of all abilities.  If you are looking to get a mobile project done, I strongly urge you to attend.  While I can’t speak for conferences in other areas(web, etc..), I would really love some suggestions in the comments of this post if you are up for it!</p>
+
+<h3 id="6-bonus--right-here">6. Bonus – Right Here</h3>
+
+<p>Shameless plug time.  If you are looking for professional mobile app (iOS or Android), I have a team of developers and am always looking to work on new and exciting projects.  If you want to hear more about it head over to my <a href="http://pixegon.com/">Hire Us</a> page or shoot me an email brandon @ pixegon [dot] com.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>Whether you are a person/company looking to hire developers or a developer looking to hire contractors, I hope you have found this post useful.  Your feedback in the comments is greatly appreciated.  Best of luck with your search!</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="The Top 5 Places To Find Good Software Developers/Contractors" data-url="http://brandontreb.com/the-top-5-places-to-find-good-developerscontractors-to-work-on-your-projects" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+      <!-- <span class="post-date">20 Aug 2013</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2013-08-20T00:00:00-06:00"><a href="/the-top-5-places-to-find-good-developerscontractors-to-work-on-your-projects" title="Permalink to Microblog post" class="u-url">Tue, Aug 20, 2013 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/iphone-programming-tutorial-creating-an-image-gallery-like-over-part-2">
+          iPhone Programming Tutorial: Creating An Image Gallery Like Over &#8211; Part 2
+        </a>
+      </h1>
+
+      <p><a href="http://brandontreb.com/wp-content/uploads/2013/08/Screen-Shot-2013-08-09-at-8.36.42-PM.png"><img class="alignright" alt="Screen Shot 2013-08-09 at 8.36.42 PM" src="http://brandontreb.com/wp-content/uploads/2013/08/Screen-Shot-2013-08-09-at-8.36.42-PM.png" width="225" height="365" /></a></p>
+
+<p> </p>
+
+<p>Welcome to the second part of my tutorial series “<strong>Creating An Image Gallery Like Over”.</strong>  In this part of the tutorial, you will learn how to actually display the photos in the UICollectionView as well as give the user the ability to take photos with their camera.</p>
+
+<p>If you haven’t already done so, please go back and<a href="http://brandontreb.com/iphone-programming-tutorial-creating-an-image-gallery-like-over-part-1"> complete part 1</a>.</p>
+
+<h3 id="1-custom-uicollectionviewcell">1. Custom UICollectionViewCell</h3>
+
+<p>Start by creating a new subclass of <strong>UICollectionViewCell</strong> and naming it <strong>PhotoCell.  </strong>Now, open up PhotoCell.h and add the following code:</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="objc" style="font-family:monospace;"><span style="color: #6e371a;">#import &lt;AssetsLibrary/AssetsLibrary.h&gt;</span>
+&nbsp;
+<span style="color: #a61390;">@interface</span> PhotoCell <span style="color: #002200;">:</span> UICollectionViewCell
+<span style="color: #a61390;">@property</span><span style="color: #002200;">&#40;</span>nonatomic, strong<span style="color: #002200;">&#41;</span> ALAsset <span style="color: #002200;">*</span>asset;
+<span style="color: #a61390;">@end</span></pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>Now, open PhotoCell.m and add the following code:</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="objc" style="font-family:monospace;"><span style="color: #6e371a;">#import "PhotoCell.h"</span>
+&nbsp;
+<span style="color: #a61390;">@interface</span> PhotoCell <span style="color: #002200;">&#40;</span><span style="color: #002200;">&#41;</span>
+<span style="color: #11740a; font-style: italic;">// 1</span>
+<span style="color: #a61390;">@property</span><span style="color: #002200;">&#40;</span>nonatomic, weak<span style="color: #002200;">&#41;</span> IBOutlet UIImageView <span style="color: #002200;">*</span>photoImageView;
+<span style="color: #a61390;">@end</span>
+&nbsp;
+<span style="color: #a61390;">@implementation</span> PhotoCell
+<span style="color: #002200;">-</span> <span style="color: #002200;">&#40;</span><span style="color: #a61390;">void</span><span style="color: #002200;">&#41;</span> setAsset<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span>ALAsset <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span>asset
+<span style="color: #002200;">&#123;</span>
+    <span style="color: #11740a; font-style: italic;">// 2</span>
+    _asset <span style="color: #002200;">=</span> asset;
+    self.photoImageView.image <span style="color: #002200;">=</span> <span style="color: #002200;">&#91;</span>UIImage imageWithCGImage<span style="color: #002200;">:</span><span style="color: #002200;">&#91;</span>asset thumbnail<span style="color: #002200;">&#93;</span><span style="color: #002200;">&#93;</span>;
+<span style="color: #002200;">&#125;</span>
+<span style="color: #a61390;">@end</span></pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<ol>
+  <li>This is an <strong>IBOutlet </strong>to a <strong>UIImageView</strong> that we will create inside of the Storyboard</li>
+  <li>We overwrite the setter method for the asset in order to convert the asset’s thumbnail into a UIImage and set it to the contents of the UIImageView</li>
+</ol>
+
+<p>Now that we have the custom cell created, we need to hook it up and create the UIImageView inside of Storyboard.  Open <strong>MainStoryboard.storyboard </strong>and click on the default <strong>UICollectionViewCell</strong> inside of your <strong>UICollectionView.</strong></p>
+
+<p>It might be tricky to see the cell as it has a white background and blends in, but it’s there.</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-24-at-6.43.38-PM.png"><img alt="Screen Shot 2013-07-24 at 6.43.38 PM" src="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-24-at-6.43.38-PM-300x281.png" width="300" height="281" /></a></p>
+
+<p>Now, click on the <strong>Identity Inspector</strong> from the right side bar and change the class to <strong>PhotoCell.</strong>  This will inform interface builder that this object is of the type PhotoCell and let us hook up the photoImageView outlet.</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-24-at-6.46.35-PM.png"><img alt="Screen Shot 2013-07-24 at 6.46.35 PM" src="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-24-at-6.46.35-PM.png" width="260" height="70" /></a></p>
+
+<p>Next, open the size inspector, change the size to <strong>Custom, </strong>the width to <strong>104 </strong>and the height to <strong>104.</strong>  This will give us nice sized images, with a good amount of padding between them.</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-24-at-6.49.51-PM.png"><img alt="Screen Shot 2013-07-24 at 6.49.51 PM" src="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-24-at-6.49.51-PM.png" width="260" height="105" /></a></p>
+
+<p>The <strong>UICollectionView</strong> will overwrite these sizes, so we need to change it in one other location.  To ensure that the cells stay the correct size, click on the <strong>Collection View</strong> in left side bar and open it’s <strong>Size Inspector</strong>.  Then set the <strong>Cell Size</strong> width and height to 104.</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-24-at-7.07.14-PM.png"><img alt="Screen Shot 2013-07-24 at 7.07.14 PM" src="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-24-at-7.07.14-PM.png" width="260" height="81" /></a></p>
+
+<p>The final step here is to drag a <strong>UIImageView</strong> on to your cell (scaling it to fit the entire cell size), and hook up the <strong>IBOutlet</strong> to the photoImageView. Do this by control-click and dragging from Photo Cell to the ImageView and selecting <strong>photoImageView</strong>.</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-24-at-6.52.32-PM.png"><img alt="Screen Shot 2013-07-24 at 6.52.32 PM" src="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-24-at-6.52.32-PM-300x147.png" width="300" height="147" /></a></p>
+
+<p>If you build and run at this stage, nothing will be different.  That’s because we still need to tell the ViewController class about our new <strong>PhotoCell</strong>.  Open <strong>ViewController.m </strong>and import <strong>PhotoCell.h</strong>.</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="objc" style="font-family:monospace;"><span style="color: #6e371a;">#import "PhotoCell.h"</span></pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>Now, head down to the <strong>collectionView:cellForItemAtIndexPath</strong> method and replace the contents of it with the following code:</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="objc" style="font-family:monospace;"><span style="color: #002200;">-</span> <span style="color: #002200;">&#40;</span>UICollectionViewCell <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span> collectionView<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span>UICollectionView <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span>collectionView cellForItemAtIndexPath<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span><span style="color: #400080;">NSIndexPath</span> <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span>indexPath
+<span style="color: #002200;">&#123;</span>
+    PhotoCell <span style="color: #002200;">*</span>cell <span style="color: #002200;">=</span> <span style="color: #002200;">&#40;</span>PhotoCell <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span><span style="color: #002200;">&#91;</span>collectionView dequeueReusableCellWithReuseIdentifier<span style="color: #002200;">:</span><span style="color: #bf1d1a;">@</span><span style="color: #bf1d1a;">"PhotoCell"</span> forIndexPath<span style="color: #002200;">:</span>indexPath<span style="color: #002200;">&#93;</span>;
+&nbsp;
+    ALAsset <span style="color: #002200;">*</span>asset <span style="color: #002200;">=</span> self.assets<span style="color: #002200;">&#91;</span>indexPath.row<span style="color: #002200;">&#93;</span>;
+    cell.asset <span style="color: #002200;">=</span> asset;
+    cell.backgroundColor <span style="color: #002200;">=</span> <span style="color: #002200;">&#91;</span>UIColor redColor<span style="color: #002200;">&#93;</span>;
+&nbsp;
+    <span style="color: #a61390;">return</span> cell;
+<span style="color: #002200;">&#125;</span></pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>What’s changed here is, we are now telling the <strong>UICollectionView</strong> that the cell it’s returning is of the type <strong>PhotoCell</strong>. Also, we are fetching the <strong>ALAsset</strong> out of our array at each index and sending it to the cell so that it can display it’s thumbnail.</p>
+
+<p><strong>Build And Run!</strong></p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-24-at-7.10.39-PM.png"><img alt="Screen Shot 2013-07-24 at 7.10.39 PM" src="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-24-at-7.10.39-PM-184x300.png" width="184" height="300" /></a></p>
+
+<p>Whoohoo<strong>! </strong>You should now see your photos populating the **UICollectionView. Congratulations! &lt;/p&gt;</p>
+
+<p>&lt;/strong&gt;While, this is definitely cool, you might now be wondering “how do I select a photo?”.  Great question, and here is the solution.</p>
+
+<h3 id="2-selecting-photos">2. Selecting Photos</h3>
+
+<p>Now that you have all of the groundwork in place, selecting photos from the collection could not be easier.  Open up <strong>ViewController.m</strong> and replace the <strong>collectionView:didSelectItemAtIndexPath </strong>method with the following code:</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="objc" style="font-family:monospace;"><span style="color: #002200;">-</span> <span style="color: #002200;">&#40;</span><span style="color: #a61390;">void</span><span style="color: #002200;">&#41;</span> collectionView<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span>UICollectionView <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span>collectionView didSelectItemAtIndexPath<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span><span style="color: #400080;">NSIndexPath</span> <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span>indexPath
+<span style="color: #002200;">&#123;</span>
+    ALAsset <span style="color: #002200;">*</span>asset <span style="color: #002200;">=</span> self.assets<span style="color: #002200;">&#91;</span>indexPath.row<span style="color: #002200;">&#93;</span>;
+    ALAssetRepresentation <span style="color: #002200;">*</span>defaultRep <span style="color: #002200;">=</span> <span style="color: #002200;">&#91;</span>asset defaultRepresentation<span style="color: #002200;">&#93;</span>;
+    UIImage <span style="color: #002200;">*</span>image <span style="color: #002200;">=</span> <span style="color: #002200;">&#91;</span>UIImage imageWithCGImage<span style="color: #002200;">:</span><span style="color: #002200;">&#91;</span>defaultRep fullScreenImage<span style="color: #002200;">&#93;</span> scale<span style="color: #002200;">:</span><span style="color: #002200;">&#91;</span>defaultRep scale<span style="color: #002200;">&#93;</span> orientation<span style="color: #002200;">:</span><span style="color: #2400d9;"></span><span style="color: #002200;">&#93;</span>;
+    <span style="color: #11740a; font-style: italic;">// Do something with the image</span>
+<span style="color: #002200;">&#125;</span></pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>This will get the selected asset and convert it to a UIImage. You are now free to use the UIImage how you want. Perhaps you create a protocol for this class and make a callback to a delegate OR maybe you add this to a UINavigationController stack and push a new view controller on to the stack containing this image. The sky is the limit!</p>
+
+<p>If you look at the Over app and back to your image gallery that you just created, you will notice something is still missing.  What if the user wants to take a photo or access other albums?  This is where Over adds a bar across the top of the interface with 2 buttons that fall back to the “default” style of fetching images if the user wants to take a photo or access a different photo album.  Let’s build this out now.</p>
+
+<h3 id="3-building-the-interface-to-take-photos-and-access-albums">3. Building The Interface To Take Photos And Access Albums</h3>
+
+<p>Start by setting up the <strong>IBActions</strong> for theses buttons.  Open <strong>ViewController.m</strong> and add the following empty methods:</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="objc" style="font-family:monospace;"><span style="color: #6e371a;">#pragma mark - Actions</span>
+&nbsp;
+<span style="color: #002200;">-</span> <span style="color: #002200;">&#40;</span>IBAction<span style="color: #002200;">&#41;</span>takePhotoButtonTapped<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span><span style="color: #a61390;">id</span><span style="color: #002200;">&#41;</span>sender
+<span style="color: #002200;">&#123;</span>
+&nbsp;
+<span style="color: #002200;">&#125;</span>
+&nbsp;
+<span style="color: #002200;">-</span> <span style="color: #002200;">&#40;</span>IBAction<span style="color: #002200;">&#41;</span>albumsButtonTapped<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span><span style="color: #a61390;">id</span><span style="color: #002200;">&#41;</span>sender
+<span style="color: #002200;">&#123;</span>
+&nbsp;
+<span style="color: #002200;">&#125;</span></pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>We don’t need to add the code yet since we still need to build the UI and hook up the <strong>IBOutlets</strong>. Now open <strong>MainStoryboard.storyboard </strong>and drag a <strong>UIView </strong>right on top of your <strong>UIView.</strong></p>
+
+<p>One issue you might run in to here is the view will want to become a subview of the collection view.  To combat this, drag the view outside of the collection view inside the left bar so the hierarchy will look like this:</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-25-at-12.35.06-PM.png"><img alt="Screen Shot 2013-07-25 at 12.35.06 PM" src="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-25-at-12.35.06-PM.png" width="265" height="162" /></a></p>
+
+<p> </p>
+
+<p>One other “gotcha” is, you must ensure that the view is positioned <strong>below</strong> the collection view in this list, otherwise it won’t show above it on screen.</p>
+
+<p>Now, let’s manually size and position the view as Interface Building will make things hard on us if we want to position it over our collection view.</p>
+
+<p>Select the view and open the <strong>Size Inspector.</strong> Set the values as follows:</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-25-at-12.44.23-PM.png"><img alt="Screen Shot 2013-07-25 at 12.44.23 PM" src="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-25-at-12.44.23-PM.png" width="260" height="168" /></a></p>
+
+<p> </p>
+
+<p>Again, remember this positioning is optimized for the iPhone 5. So make sure you are testing with that simulator or you won’t see this bar.</p>
+
+<p>After this, the bar still won’t be visible inside of Interface Builder.  We need to set the background color to black with some transparency.  Open the <strong>Attributes Inspector</strong> and click on the background color.  Then set the color to black with 80% opacity:</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-25-at-12.40.13-PM.png"><img alt="Screen Shot 2013-07-25 at 12.40.13 PM" src="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-25-at-12.40.13-PM-177x300.png" width="177" height="300" /></a></p>
+
+<p> </p>
+
+<p>You should now see the bar positioned on the screen like this:</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-25-at-12.41.54-PM.png"><img alt="Screen Shot 2013-07-25 at 12.41.54 PM" src="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-25-at-12.41.54-PM-154x300.png" width="154" height="300" /></a></p>
+
+<p> </p>
+
+<p>Now drag a <strong>UIButton </strong>on to the view you just created. There are a few things that must be done to style the button:</p>
+
+<ol>
+  <li>Position it at 0,0</li>
+  <li>Set the width to 160px and the height to 70x</li>
+  <li>Change the type to custom</li>
+  <li>Change the text to “Take Photo”</li>
+  <li>Change the font to “Helvetica Neue Condensed Black” size 20</li>
+  <li>Set the text color to white</li>
+</ol>
+
+<p>When you have completed these steps, the button should look like this:</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-25-at-12.47.26-PM.png"><img alt="Screen Shot 2013-07-25 at 12.47.26 PM" src="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-25-at-12.47.26-PM-300x213.png" width="300" height="213" /></a></p>
+
+<p> </p>
+
+<p>Now, hook up the <strong>IBAction </strong>by opening the <strong>Connections Inspector</strong> and dragging from <strong>Touch Up Inside</strong> to the <strong>View Controller</strong> object and selecting t<strong>akePhotoButtonTapped:</strong></p>
+
+<p>Finally, duplicate this button (copy and paste), rename the title to “Albums”, move it next to the “Take Photo” button and hook its <strong>Touch Up Inside</strong> to <strong>albumsButtonTapped:</strong></p>
+
+<p>The final Interface should look like this:</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-25-at-12.51.25-PM.png"><img alt="Screen Shot 2013-07-25 at 12.51.25 PM" src="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-25-at-12.51.25-PM-300x221.png" width="300" height="221" /></a></p>
+
+<p> </p>
+
+<p>Go ahead and do a <strong>Build and Run</strong> and this stage and marvel at your interface development prowess!</p>
+
+<h3 id="4-actually-taking-photos-and-accessing-albums">4. Actually Taking Photos And Accessing Albums</h3>
+
+<p>The final step for this tutorial is to implement the code to bring up the camera as well as bring up the photo albums.  Let’s start with the camera.  Open <strong>ViewController.m</strong> and add the following code to the <strong>takePhotosButtonTapped:</strong> method:</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="objc" style="font-family:monospace;"><span style="color: #002200;">-</span> <span style="color: #002200;">&#40;</span>IBAction<span style="color: #002200;">&#41;</span>takePhotoButtonTapped<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span><span style="color: #a61390;">id</span><span style="color: #002200;">&#41;</span>sender
+<span style="color: #002200;">&#123;</span>
+    <span style="color: #a61390;">if</span> <span style="color: #002200;">&#40;</span><span style="color: #002200;">&#40;</span><span style="color: #002200;">&#91;</span>UIImagePickerController isSourceTypeAvailable<span style="color: #002200;">:</span>
+          UIImagePickerControllerSourceTypeCamera<span style="color: #002200;">&#93;</span> <span style="color: #002200;">==</span> <span style="color: #a61390;">NO</span><span style="color: #002200;">&#41;</span><span style="color: #002200;">&#41;</span>
+        <span style="color: #a61390;">return</span>; <span style="color: #11740a; font-style: italic;">// 1</span>
+&nbsp;
+    <span style="color: #11740a; font-style: italic;">// 2</span>
+    UIImagePickerController <span style="color: #002200;">*</span>mediaUI <span style="color: #002200;">=</span> <span style="color: #002200;">&#91;</span><span style="color: #002200;">&#91;</span>UIImagePickerController alloc<span style="color: #002200;">&#93;</span> init<span style="color: #002200;">&#93;</span>;
+    mediaUI.sourceType <span style="color: #002200;">=</span> UIImagePickerControllerSourceTypeCamera;
+    mediaUI.allowsEditing <span style="color: #002200;">=</span> <span style="color: #a61390;">NO</span>;
+    mediaUI.delegate <span style="color: #002200;">=</span> self;
+    <span style="color: #11740a; font-style: italic;">// 3</span>
+    <span style="color: #002200;">&#91;</span>self presentViewController<span style="color: #002200;">:</span>mediaUI animated<span style="color: #002200;">:</span><span style="color: #a61390;">YES</span> completion<span style="color: #002200;">:</span><span style="color: #a61390;">nil</span><span style="color: #002200;">&#93;</span>;
+<span style="color: #002200;">&#125;</span></pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<ol>
+  <li>Makes sure that the photo library is available.  If the user declines photo access, this will be the case.</li>
+  <li>Create the <strong>UIImagePickerController</strong> and set its source type to <strong>UIImagePickerControllerSourceTypeCamera</strong>.  This lets the media picker know to use the camera and not the image library.</li>
+  <li>Finally, present the view controller modally</li>
+</ol>
+
+<p>The method to bring up the photo albums is almost identical to the method above.  Add the following code to the <strong>albumsButtonTapped:</strong> method.</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="objc" style="font-family:monospace;"><span style="color: #002200;">-</span> <span style="color: #002200;">&#40;</span>IBAction<span style="color: #002200;">&#41;</span>albumsButtonTapped<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span><span style="color: #a61390;">id</span><span style="color: #002200;">&#41;</span>sender
+<span style="color: #002200;">&#123;</span>
+    <span style="color: #a61390;">if</span> <span style="color: #002200;">&#40;</span><span style="color: #002200;">&#40;</span><span style="color: #002200;">&#91;</span>UIImagePickerController isSourceTypeAvailable<span style="color: #002200;">:</span>
+          UIImagePickerControllerSourceTypePhotoLibrary<span style="color: #002200;">&#93;</span> <span style="color: #002200;">==</span> <span style="color: #a61390;">NO</span><span style="color: #002200;">&#41;</span><span style="color: #002200;">&#41;</span>
+        <span style="color: #a61390;">return</span>;
+&nbsp;
+    UIImagePickerController <span style="color: #002200;">*</span>mediaUI <span style="color: #002200;">=</span> <span style="color: #002200;">&#91;</span><span style="color: #002200;">&#91;</span>UIImagePickerController alloc<span style="color: #002200;">&#93;</span> init<span style="color: #002200;">&#93;</span>;
+    mediaUI.sourceType <span style="color: #002200;">=</span> UIImagePickerControllerSourceTypePhotoLibrary;    
+    mediaUI.allowsEditing <span style="color: #002200;">=</span> <span style="color: #a61390;">NO</span>;
+    mediaUI.delegate <span style="color: #002200;">=</span> self;
+    <span style="color: #002200;">&#91;</span>self presentViewController<span style="color: #002200;">:</span>mediaUI animated<span style="color: #002200;">:</span><span style="color: #a61390;">YES</span> completion<span style="color: #002200;">:</span><span style="color: #a61390;">nil</span><span style="color: #002200;">&#93;</span>;
+<span style="color: #002200;">&#125;</span></pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>As I said before, this method is almost identical with the only difference being, we are using <strong>UIImagePickerControllerSourceTypePhotoLibrary </strong>to open up the photo albums.</p>
+
+<p><strong>Build and Run</strong> and tap the “Take Photo” button. Make sure you are testing on the device at this stage or nothing will happen since the simulator doesn’t have a camera.  You can however test the “Albums” button assuming you have some photos in your photo library.</p>
+
+<p>Now that you are able to pick a photo, you need to be able to access the photo that was selected or taken.  To do this implement the following delegate method for <strong>UIImagePickerController.</strong></p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="objc" style="font-family:monospace;"><span style="color: #6e371a;">#pragma mark - image picker delegate</span>
+&nbsp;
+<span style="color: #002200;">-</span> <span style="color: #002200;">&#40;</span><span style="color: #a61390;">void</span><span style="color: #002200;">&#41;</span> imagePickerController<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span>UIImagePickerController <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span>picker didFinishPickingMediaWithInfo<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span><span style="color: #400080;">NSDictionary</span> <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span>info
+<span style="color: #002200;">&#123;</span>
+    UIImage <span style="color: #002200;">*</span>image <span style="color: #002200;">=</span> <span style="color: #002200;">&#40;</span>UIImage <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span> <span style="color: #002200;">&#91;</span>info objectForKey<span style="color: #002200;">:</span>
+                                          UIImagePickerControllerOriginalImage<span style="color: #002200;">&#93;</span>;    
+    <span style="color: #002200;">&#91;</span>self dismissViewControllerAnimated<span style="color: #002200;">:</span><span style="color: #a61390;">YES</span> completion<span style="color: #002200;">:^</span><span style="color: #002200;">&#123;</span>
+        <span style="color: #11740a; font-style: italic;">// Do something with the image</span>
+    <span style="color: #002200;">&#125;</span><span style="color: #002200;">&#93;</span>;
+<span style="color: #002200;">&#125;</span></pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>This method fetches the selected (or taken) image and stores. It then dismisses the camera or photo albums allowing you to do whatever is needed with the image.</p>
+
+<h3 id="5-next-steps">5. Next Steps</h3>
+
+<p>By now, you should have learned how to use the <strong>ALAssets </strong>library to interact with a user’s photos and use them to build a custom interface. You also learned how to use a <strong>UICollectionView</strong> to display a grid of photos.</p>
+
+<p>With this knowledge in hand, you should now be able to make much more interesting photo selection interfaces than the default one Apple has to offer.  Other apps like Google+ and Instagram both have very slick photo pickers and I hope this tutorial has your gears going thinking about other interesting photo selection interfaces.</p>
+
+<p>You can download the source from this tutorial on <a href="https://github.com/brandontreb/OverPicker">GitHub</a></p>
+
+<p>Feel free to leave a comment if you have any questions. Happy Hacking!</p>
+
+<p> </p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="iPhone Programming Tutorial: Creating An Image Gallery Like Over - Part 2" data-url="http://brandontreb.com/iphone-programming-tutorial-creating-an-image-gallery-like-over-part-2" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+      <!-- <span class="post-date">15 Aug 2013</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2013-08-15T00:00:00-06:00"><a href="/iphone-programming-tutorial-creating-an-image-gallery-like-over-part-2" title="Permalink to Microblog post" class="u-url">Thu, Aug 15, 2013 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/iphone-programming-tutorial-creating-an-image-gallery-like-over-part-1">
+          iPhone Programming Tutorial: Creating An Image Gallery Like Over &#8211; Part 1
+        </a>
+      </h1>
+
+      <p><a href="http://brandontreb.com/wp-content/uploads/2013/08/Screen-Shot-2013-08-09-at-8.36.42-PM.png"><img class="alignright" alt="Screen Shot 2013-08-09 at 8.36.42 PM" src="http://brandontreb.com/wp-content/uploads/2013/08/Screen-Shot-2013-08-09-at-8.36.42-PM.png" width="225" height="365" /></a></p>
+
+<p> </p>
+
+<p>Recently, I have had to build an app (<a href="http://j.mp/scriptapp" target="_blank">download link</a>) that required the user to choose a photo from their photo library.  Rather than just throwing up a <strong>UIImagePickerController</strong> like many apps, I decided to add a little bit of style.  Being inspired by Over’s ultra simplistic (and beautiful) photo selection interface, I decided to fancy things up a bit.</p>
+
+<p>For this tutorial, I will start with a Fresh <strong>iOS6</strong> View-Based application that uses <strong>Storyboards</strong> and <strong>ARC</strong>. Also note that I will be optimizing for the iPhone 5 resolution.  You are free to make the tweaks necessary to deploy on the iPhone 4 and 4S.</p>
+
+<p> </p>
+
+<p>Here is a breakdown of what we will cover in this part:</p>
+
+<ol>
+  <li><span style="line-height: 14px;">Creating a <strong>UICollectionView </strong>inside of <strong>Storyboard</strong></span></li>
+  <li>Using the <strong>ALAssetsLibrary</strong> to fetch photos from the user’s <strong>Camera Roll</strong></li>
+  <li>Displaying the <strong>ALAssets</strong> inside of the <strong>UICollectionView</strong></li>
+</ol>
+
+<h3 id="1-preparing-the-iboutlets">1. Preparing The IBOutlets</h3>
+
+<p>Start by opening up <strong>ViewController.m **and replacing the **@interface</strong> declaration at the top with the following code:</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="objc" style="font-family:monospace;"><span style="color: #a61390;">@interface</span> ViewController <span style="color: #002200;">&#40;</span><span style="color: #002200;">&#41;</span>&lt;UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout&gt;
+<span style="color: #a61390;">@property</span><span style="color: #002200;">&#40;</span>nonatomic, weak<span style="color: #002200;">&#41;</span> IBOutlet UICollectionView <span style="color: #002200;">*</span>collectionView;
+<span style="color: #a61390;">@end</span></pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>This will declare the <strong>IBOutlet </strong>needed to hook up the main <strong>UICollectionView</strong> that we will be using to display the user’s photos.  I have also set up our class to be a <strong>UICollectionViewDataSource</strong>, <strong>UICollectionViewDelegate</strong>, and <strong>UICollectionViewDelegateFlowLayout</strong>. This is necessary when interfacing with the <strong>UICollectionView.</strong></p>
+
+<h3 id="2-setting-up-the-uicollectionview-in-storyboard">2. Setting Up The UICollectionView In Storyboard</h3>
+
+<p>Open up <strong>MainStoryboard.storyboard </strong>and drag a <strong>UICollectionView</strong> on to your view ensuring that it stretches the entire screen.</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-8.44.02-PM.png"><img class="alignnone size-medium wp-image-210" alt="Screen Shot 2013-07-21 at 8.44.02 PM" src="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-8.44.02-PM-172x300.png" width="172" height="300" /></a></p>
+
+<p>Then, <strong>Control-Click</strong> and drag from the <strong>UICollectionView </strong>to your <strong>ViewController </strong>Object and set it as the <strong>delegate </strong>and <strong>datasource.</strong></p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-8.41.29-PM.png"><img class="alignnone size-full wp-image-209" alt="Screen Shot 2013-07-21 at 8.41.29 PM" src="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-8.41.29-PM.png" width="265" height="181" /></a></p>
+
+<p>Finally, <strong>Control-Click </strong>and drag from <strong>View Controller </strong>to <strong>Collection View</strong> and selected <strong>collectionView </strong>to make the <strong>IBOutlet </strong>connection.</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-8.45.05-PM.png"><img class="alignnone size-full wp-image-211" alt="Screen Shot 2013-07-21 at 8.45.05 PM" src="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-8.45.05-PM.png" width="267" height="148" /></a></p>
+
+<p>Now, we need to give a <strong>Cell Identifier</strong> to the <strong>UICollectionViewCell</strong> so that we can reference it in code.  Click on the default cell inside of the <strong>UICollectionView</strong> and open the <strong>Attributes Inspector. </strong>For the <strong>Identifier</strong> type in <strong>PhotoCell.</strong> The cell might be a little tricky to see as its background color is clear, but it’s there. Simply click in the top left corner of the <strong>UICollectionView</strong>.</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-9.13.08-PM.png"><img class="alignnone size-medium wp-image-219" alt="Screen Shot 2013-07-21 at 9.13.08 PM" src="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-9.13.08-PM-300x67.png" width="300" height="67" /></a></p>
+
+<p>Now that the <strong>UICollectionView</strong> has been set up, it’s time to fetch the photos from the user’s photo library.</p>
+
+<pre style="background-color: #eee; border: 1px solid #444444;">If you are using the simulator, make sure to populate the Photo Gallery with images from the web. Simply open up a browser, do a Google Image Search, and click and hold on various images. You should have an option from the menu that pops up to save the images to your camera roll.
+
+Finally, open up the <b>Photos</b> app on the simulator to initialize the Assets Library.</pre>
+
+<h3 id="3-fetching-alassets-user-photos-from-the-alassets-library">3. Fetching ALAssets (user photos) From The ALAssets Library</h3>
+
+<p>In order to interface with the user’s photo library, we must first import the <strong>AssetsLibrary.framework </strong>framework.  To do this, click on your project in the sidebar, select the Target, then click <strong>Build Phases, </strong>expand the <strong>Link Binary With Libraries</strong> section and click the <strong>+ </strong>button.  Do a search for <strong>Assset </strong>and then double click on <strong>AssetsLibrary.framework.</strong></p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-8.57.37-PM.png"><img class="alignnone size-medium wp-image-216" alt="Screen Shot 2013-07-21 at 8.57.37 PM" src="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-8.57.37-PM-259x300.png" width="259" height="300" /></a></p>
+
+<p>It should now be added to your project and ready to use.  Now that it has been linked, we must import it into the <strong>ViewController.m </strong>file.  Open up <strong>ViewController.m </strong>and add the following import to the top of the file:</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="objc" style="font-family:monospace;"><span style="color: #6e371a;">#import &lt;AssetsLibrary/AssetsLibrary.h&gt;</span></pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>Before we can fetch the user’s photos, we need to set up an <strong>NSArray</strong> to put them in.  Add the following line within the <strong>@interface </strong>declaration at the top.</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="objc" style="font-family:monospace;"><span style="color: #a61390;">@property</span><span style="color: #002200;">&#40;</span>nonatomic, strong<span style="color: #002200;">&#41;</span> <span style="color: #400080;">NSArray</span> <span style="color: #002200;">*</span>assets;</pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>Now, add the following method to your class:</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="objc" style="font-family:monospace;"><span style="color: #002200;">+</span> <span style="color: #002200;">&#40;</span>ALAssetsLibrary <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span>defaultAssetsLibrary
+<span style="color: #002200;">&#123;</span>
+    <span style="color: #a61390;">static</span> dispatch_once_t pred <span style="color: #002200;">=</span> <span style="color: #2400d9;"></span>;
+    <span style="color: #a61390;">static</span> ALAssetsLibrary <span style="color: #002200;">*</span>library <span style="color: #002200;">=</span> <span style="color: #a61390;">nil</span>;
+    dispatch_once<span style="color: #002200;">&#40;</span><span style="color: #002200;">&amp;</span>pred, <span style="color: #002200;">^</span><span style="color: #002200;">&#123;</span>
+        library <span style="color: #002200;">=</span> <span style="color: #002200;">&#91;</span><span style="color: #002200;">&#91;</span>ALAssetsLibrary alloc<span style="color: #002200;">&#93;</span> init<span style="color: #002200;">&#93;</span>;
+    <span style="color: #002200;">&#125;</span><span style="color: #002200;">&#41;</span>;
+    <span style="color: #a61390;">return</span> library;
+<span style="color: #002200;">&#125;</span></pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>This is a static method that creates a static instance to the <strong>ALAssetsLibrary</strong>.  The reason this is needed is, when we enumerate the <strong>ALAssets</strong> in the next method, it seems that the assets get released immediately and otherwise wouldn’t be able to be used in the rest of the application. I will explain this a little more in a moment.</p>
+
+<p>Head over to <strong>viewDidLoad</strong> and add the following code:</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="objc" style="font-family:monospace;"><span style="color: #002200;">-</span> <span style="color: #002200;">&#40;</span><span style="color: #a61390;">void</span><span style="color: #002200;">&#41;</span>viewDidLoad
+<span style="color: #002200;">&#123;</span>
+    <span style="color: #002200;">&#91;</span>super viewDidLoad<span style="color: #002200;">&#93;</span>;
+&nbsp;
+    _assets <span style="color: #002200;">=</span> <span style="color: #002200;">&#91;</span>@<span style="color: #002200;">&#91;</span><span style="color: #002200;">&#93;</span> mutableCopy<span style="color: #002200;">&#93;</span>;
+    __block <span style="color: #400080;">NSMutableArray</span> <span style="color: #002200;">*</span>tmpAssets <span style="color: #002200;">=</span> <span style="color: #002200;">&#91;</span>@<span style="color: #002200;">&#91;</span><span style="color: #002200;">&#93;</span> mutableCopy<span style="color: #002200;">&#93;</span>;
+    <span style="color: #11740a; font-style: italic;">// 1</span>
+    ALAssetsLibrary <span style="color: #002200;">*</span>assetsLibrary <span style="color: #002200;">=</span> <span style="color: #002200;">&#91;</span>ViewController defaultAssetsLibrary<span style="color: #002200;">&#93;</span>;
+    <span style="color: #11740a; font-style: italic;">// 2</span>
+    <span style="color: #002200;">&#91;</span>assetsLibrary enumerateGroupsWithTypes<span style="color: #002200;">:</span>ALAssetsGroupAll usingBlock<span style="color: #002200;">:^</span><span style="color: #002200;">&#40;</span>ALAssetsGroup <span style="color: #002200;">*</span>group, <span style="color: #a61390;">BOOL</span> <span style="color: #002200;">*</span>stop<span style="color: #002200;">&#41;</span> <span style="color: #002200;">&#123;</span>
+        <span style="color: #002200;">&#91;</span>group enumerateAssetsUsingBlock<span style="color: #002200;">:^</span><span style="color: #002200;">&#40;</span>ALAsset <span style="color: #002200;">*</span>result, NSUInteger index, <span style="color: #a61390;">BOOL</span> <span style="color: #002200;">*</span>stop<span style="color: #002200;">&#41;</span> <span style="color: #002200;">&#123;</span>
+            <span style="color: #a61390;">if</span><span style="color: #002200;">&#40;</span>result<span style="color: #002200;">&#41;</span>
+            <span style="color: #002200;">&#123;</span>
+                <span style="color: #11740a; font-style: italic;">// 3</span>
+                <span style="color: #002200;">&#91;</span>tmpAssets addObject<span style="color: #002200;">:</span>result<span style="color: #002200;">&#93;</span>;
+            <span style="color: #002200;">&#125;</span>
+        <span style="color: #002200;">&#125;</span><span style="color: #002200;">&#93;</span>;
+&nbsp;
+        <span style="color: #11740a; font-style: italic;">// 4</span>
+        <span style="color: #11740a; font-style: italic;">//NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"date" ascending:NO];</span>
+        <span style="color: #11740a; font-style: italic;">//self.assets = [tmpAssets sortedArrayUsingDescriptors:@[sort]];</span>
+        self.assets <span style="color: #002200;">=</span> tmpAssets;
+&nbsp;
+        <span style="color: #11740a; font-style: italic;">// 5</span>
+        <span style="color: #002200;">&#91;</span>self.collectionView reloadData<span style="color: #002200;">&#93;</span>;
+    <span style="color: #002200;">&#125;</span> failureBlock<span style="color: #002200;">:^</span><span style="color: #002200;">&#40;</span><span style="color: #400080;">NSError</span> <span style="color: #002200;">*</span>error<span style="color: #002200;">&#41;</span> <span style="color: #002200;">&#123;</span>
+        NSLog<span style="color: #002200;">&#40;</span><span style="color: #bf1d1a;">@</span><span style="color: #bf1d1a;">"Error loading images %@"</span>, error<span style="color: #002200;">&#41;</span>;
+    <span style="color: #002200;">&#125;</span><span style="color: #002200;">&#93;</span>;
+<span style="color: #002200;">&#125;</span></pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<ol>
+  <li>Grab our static instance of the <strong>ALAssetsLibrary</strong></li>
+  <li>Enumerate through all of the <strong>ALAssets </strong>(photos) in the user’s <strong>Asset Groups</strong> (Folders)</li>
+  <li>Enumerate each folder and add it’s <strong>ALAssets </strong>to the temporary array</li>
+  <li>Sort the assets list by date (this won’t work yet, but I will show you how to fix later). For now this code is commented out and the Assets will be sorted however they come out.</li>
+  <li>Reload the <strong>UICollectionView</strong> (this won’t work yet as we haven’t set up the delegate methods)</li>
+</ol>
+
+<p>Now that we have an <strong>NSArray</strong> populated with <strong>ALAssets</strong>, let’s set up the <strong>delegate </strong>methods for the <strong>UICollectionView</strong> in order to populate it with data.</p>
+
+<h3 id="4-populating-the-uicollectionview-with-data">4. Populating the UICollectionView With Data</h3>
+
+<p>A <strong>UICollectionView</strong> functions much like a <strong>UITableView </strong>having delegate and datasource methods.  Add the following methods to your <strong>ViewController</strong> class to populate the view.</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="objc" style="font-family:monospace;"><span style="color: #6e371a;">#pragma mark - collection view data source</span>
+&nbsp;
+<span style="color: #002200;">-</span> <span style="color: #002200;">&#40;</span>NSInteger<span style="color: #002200;">&#41;</span> collectionView<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span>UICollectionView <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span>collectionView numberOfItemsInSection<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span>NSInteger<span style="color: #002200;">&#41;</span>section
+<span style="color: #002200;">&#123;</span>
+    <span style="color: #a61390;">return</span> self.assets.count;
+<span style="color: #002200;">&#125;</span>
+&nbsp;
+<span style="color: #002200;">-</span> <span style="color: #002200;">&#40;</span>UICollectionViewCell <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span> collectionView<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span>UICollectionView <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span>collectionView cellForItemAtIndexPath<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span><span style="color: #400080;">NSIndexPath</span> <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span>indexPath
+<span style="color: #002200;">&#123;</span>
+    UICollectionViewCell <span style="color: #002200;">*</span>cell <span style="color: #002200;">=</span> <span style="color: #002200;">&#40;</span>UICollectionViewCell <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span><span style="color: #002200;">&#91;</span>collectionView dequeueReusableCellWithReuseIdentifier<span style="color: #002200;">:</span><span style="color: #bf1d1a;">@</span><span style="color: #bf1d1a;">"PhotoCell"</span> forIndexPath<span style="color: #002200;">:</span>indexPath<span style="color: #002200;">&#93;</span>;
+&nbsp;
+    ALAsset <span style="color: #002200;">*</span>asset <span style="color: #002200;">=</span> self.assets<span style="color: #002200;">&#91;</span>indexPath.row<span style="color: #002200;">&#93;</span>;
+    <span style="color: #11740a; font-style: italic;">//cell.asset = asset;</span>
+    cell.backgroundColor <span style="color: #002200;">=</span> <span style="color: #002200;">&#91;</span>UIColor redColor<span style="color: #002200;">&#93;</span>;
+&nbsp;
+    <span style="color: #a61390;">return</span> cell;
+<span style="color: #002200;">&#125;</span>
+&nbsp;
+<span style="color: #002200;">-</span> <span style="color: #002200;">&#40;</span>CGFloat<span style="color: #002200;">&#41;</span> collectionView<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span>UICollectionView <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span>collectionView layout<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span>UICollectionViewLayout <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span>collectionViewLayout minimumLineSpacingForSectionAtIndex<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span>NSInteger<span style="color: #002200;">&#41;</span>section
+<span style="color: #002200;">&#123;</span>
+    <span style="color: #a61390;">return</span> <span style="color: #2400d9;">4</span>;
+<span style="color: #002200;">&#125;</span>
+&nbsp;
+<span style="color: #002200;">-</span> <span style="color: #002200;">&#40;</span>CGFloat<span style="color: #002200;">&#41;</span> collectionView<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span>UICollectionView <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span>collectionView layout<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span>UICollectionViewLayout <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span>collectionViewLayout minimumInteritemSpacingForSectionAtIndex<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span>NSInteger<span style="color: #002200;">&#41;</span>section
+<span style="color: #002200;">&#123;</span>
+    <span style="color: #a61390;">return</span> <span style="color: #2400d9;">1</span>;
+<span style="color: #002200;">&#125;</span></pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>This code should be fairly straight forward if you have ever worked with a <strong>UITableView.</strong>  The only lines to note are where ‘cell.asset = asset’ is commented out and we set the cell’s background color to red.  We will uncomment that line when we create a custom cell to display the image (for now it won’t).  I have also set the background color to red so that you can see that the number of cells is actually corresponding to the number of photos in the camera roll.</p>
+
+<p><strong>Build and Run!</strong></p>
+
+<p>Let’s take a break to do a build and run to see what happens.  If you have hooked everything up correctly, you should see a black screen with red squares on it with a count equalling the number of photos in the user’s library.</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-9.26.07-PM.png"><img class="alignnone size-medium wp-image-225" alt="Screen Shot 2013-07-21 at 9.26.07 PM" src="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-9.26.07-PM-184x300.png" width="184" height="300" /></a></p>
+
+<p>Not too exciting, however it shows that we are displaying a number of cells corresponding to the number of photos in the user’s asset library.  At least it’s showing that you have done something.  The next step is to create a custom <strong>UICollectionViewCell</strong> that actually displays the photos, which we will do next time.</p>
+
+<h3 id="5-next-time">5. Next Time</h3>
+
+<p>That’s all for today.  In a ploy to get you to come back to my site (and<a href="http://feeds.feedburner.com/brandontreb"> subscribe to my RSS feed</a>), I have chosen to break this post up into two parts.  </p>
+
+<p>Luckily for you, I wrote the above message a while ago. Click the link below to go to part 2!</p>
+
+<p><a href="http://brandontreb.com/iphone-programming-tutorial-creating-an-image-gallery-like-over-part-2">iPhone Programming Tutorial: Creating An Image Gallery Like Over – Part 2</a></p>
+
+<p>Stay tuned!</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="iPhone Programming Tutorial: Creating An Image Gallery Like Over - Part 1" data-url="http://brandontreb.com/iphone-programming-tutorial-creating-an-image-gallery-like-over-part-1" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+      <!-- <span class="post-date">12 Aug 2013</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2013-08-12T00:00:00-06:00"><a href="/iphone-programming-tutorial-creating-an-image-gallery-like-over-part-1" title="Permalink to Microblog post" class="u-url">Mon, Aug 12, 2013 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/back-to-my-roots">
+          Back To My Roots
+        </a>
+      </h1>
+
+      <p>I wrote my very first blog post back in <a href="http://www.icodeblog.com/2008/07/22/icodeblog-launched/">July of 2008</a> when I start iCodeBlog.com.  I started the blog because I saw a huge need for iOS development tutorials on the web and really wanted to help others as I progressed in my development.</p>
+
+<p>Well, quite a bit has changed since then.  I have written books, spoken at conferences, and built and shipped over 40 iOS applications.  Since selling iCodeblog in 2009, I have really let my passion for blogging fizzle.  For the first 2 years of the iCode sale, I wasn’t allowed to write tutorials on any other site.  This was very discouraging.</p>
+
+<p>Over the years, I have guest blogged iOS tutorials on several sites including <a href="http://mobile.tutsplus.com/author/brandon-trebitowski/">mobile.tutsplus.com</a> and <a href="http://www.raywenderlich.com/author/brandontreb">raywenderlich.com</a>.  This has been pretty hit or miss for me.</p>
+
+<p>As of recent, I have become an <a href="http://brandontreb.com/what-i-learned-in-my-first-month-being-a-contract-ios-developer">independent iOS developer</a> and have been solving quite a few hard problems and coming up with some interesting solutions on projects that I have been a part of.  I now want to share some of those solutions with the iOS community in the form of tutorial blog posts.  These come in all shapes in sizes from cool UIKit hacks to building simple backend services.</p>
+
+<p>So, when I say that I want to “get back to my roots”, I really want to start consistently blogging again and educating other developers using the knowledge I have gained over the years.  So stick around, <a href="http://brandontreb.com/feed">subscribe</a>,<a href="http://twitter.com/brandontreb"> follow me</a>, and please don’t hesitate to suggest tutorial ideas.</p>
+
+<p>Happy hacking…</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="Back To My Roots" data-url="http://brandontreb.com/back-to-my-roots" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+      <!-- <span class="post-date">12 Jun 2013</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2013-06-12T00:00:00-06:00"><a href="/back-to-my-roots" title="Permalink to Microblog post" class="u-url">Wed, Jun 12, 2013 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/tools-of-the-trade-what-tools-i-use-for-ios-consulting">
+          Tools of The Trade: What Tools I Use For iOS Consulting
+        </a>
+      </h1>
+
+      <p><strong>Welcome Hacker News!</strong> There’s some discussion happening in the comments; but, as always, the better conversation is on the <a href="http://news.ycombinator.com/item?id=5128793">article page</a> on Hacker News itself.</p>
+
+<p>Since going Indie, I am constantly asked about what software tools I use to facilitate the process. People are always curious about invoicing, time tracking, ticket management, etc…</p>
+
+<p>The purpose of this post is two fold. First, I want to educate others on some of the cool tools I have found that have helped me out tremndously. The other is, I would hope that veterans in the space could give their two cents as to some better tools (or better use of the current one’s). Either way, I’d love to hear from you.</p>
+
+<h2 id="1-tools-for-finding-contracts">1. Tools For Finding Contracts</h2>
+
+<p>This is perhaps the area where I am most asked about. Well, the secret is, looking for contracts isn’t that much different than looking for a job. You just need to know what to look for. Here are the few major sources where I have found sucess in finding good contracts.</p>
+
+<ul>
+  <li><a href="http://www.linkedin.com/jobs?displayHome=">Linked In Jobs</a> I love Linked In. I have found it to be <strong>the most</strong> valuable tool for job searches and connecting to date. I love that it will suggest jobs/contracts to you based on your profile and experience. Another great thing about Linked In is contract search can become passive if you are actively connecting and posting. Once your name starts flowing out there (assuming you have the exp), people will just start offering you contracts.</li>
+  <li><a href="http://www.authenticjobs.com">Authentic Jobs</a> I like this site a lot. Their interface is much cleaner than some of the other job search sites and while they had fewer contracts available, they were generally of a higher quality. In fact, I found the current contract that I’m working on here.</li>
+  <li><a href="http://www.simplyhired.com/">Simply Hired</a> Although this site generally offlinks to other sites, I found it to be a good aggrigator of what’s out there.</li>
+  <li><a href="http://google.com">Good Ol Google</a> This seems like a job, but as I mentioned in my <a href="http://brandontreb.com/what-i-learned-in-my-first-month-being-a-contract-ios-developer/">last post</a>, it’s pretty easy to type “[:field_name] contract work” and come up with a pretty good list.</li>
+</ul>
+
+<h2 id="2-tools-for-managing-clientsbilling">2. Tools For Managing Clients/Billing</h2>
+
+<p>As a new contractor, the concept of billing can seem a bit scary. You don’t want to look like a n00b, but you also don’t want to spend a lot of money. That’s where <a href="https://brandontrebitowski.freshbooks.com/refer/www">FreshBooks</a> comes in.</p>
+
+<p>I started using FreshBooks from day one and could not be happier with their service. Here are some of the pros:</p>
+
+<ul>
+  <li>Free for up to 3 clients. It says 30 day trial, but that’s just if you want more than 3 clients. So it’s perfect for when you are starting out.</li>
+  <li>Manage multiple projects for mulitiple clients with multiple tasks (‘nuff said)</li>
+  <li>Mobile app. You haven’t lived until you have sent an invoice from your smartphone. You feel super businessy. For an added bonus, send it from the gym, or your sailboat.</li>
+  <li>It handles sending invoices via mail or email automatically and reports back to you when the client has seen the invoice.</li>
+</ul>
+
+<p>Again, <a href="https://brandontrebitowski.freshbooks.com/refer/www">FreshBooks</a> is awesome! I can’t recommend it enough.</p>
+
+<h2 id="3-tools-for-ticket-management">3. Tools For Ticket Management</h2>
+
+<p>This one is tricky, because every client is going to want to work differently. Here are the few I have expereinced thus far.</p>
+
+<ul>
+  <li><a href="https://www.pivotaltracker.com">Pivotal Tracker</a> This one is my favorite. It’s a very easy to use tool to help facilitate development in an agile environment. Even if you are not running the full scrum process, it’s still a valuable tool to simply track your progress. Your clients will appreciate it.</li>
+  <li><a href="http://basecamp.com">Basecamp</a> You knew I was going to say this one. It’s an obvious choice because it’s obvioulsy a solid tool. I think it’s very valuable when you have a distributed team and need a central way to communicate.</li>
+</ul>
+
+<p>Even if your client doesn’t use a tracker, I’d suggest you use one. It helps you to keep organized and get a better feel for how long certain tasks take (which you will need to know in future scoping).</p>
+
+<p>I dont’ have a very long list here because I hate most tracking software. If you have some to add here, I would love to hear about them in the comments.</p>
+
+<h2 id="4-tools-for-software-development">4. Tools For Software Development</h2>
+
+<p>I am an iOS and rails developer, so this section may or may not be applicable to you. Again, I put this out there to let you know what <strong>I</strong> am using and would love to hear what <strong>you</strong> are using.</p>
+
+<p><strong>iOS</strong></p>
+
+<ul>
+  <li>XCode (duh)</li>
+  <li><a href="http://cocoapods.org">CocoaPods</a> – If you don’t use CocoaPods, you are doing it wrong. They are what gems are to rails and really help you manage 3rd party libraries.</li>
+  <li><a href="http://github.com">GitHub</a> – For verison control and code distribution amoung the team. (again, you know this already).</li>
+</ul>
+
+<p><strong>Rails</strong></p>
+
+<ul>
+  <li><a href="http://www.sublimetext.com">Sublime Text</a> I was big on TextMate for a while, but now I use Sublime Text full time. It has some solid plugins and can do a smart autocomplete for any file type.</li>
+  <li><a href="http://www.heroku.com">Heroku</a> Deploying rails to production sucks. Heroku makes this process easy.</li>
+</ul>
+
+<h2 id="5-tools-for-communication">5. Tools For Communication</h2>
+
+<p>Working in a distributed team can be hard at first. Especially staying connected. Here are the major forms of communication that I use.</p>
+
+<ul>
+  <li><a href="http://beta.skype.com/en/">Skype</a> Although Skype has totally gone down hill since the MS takeover, it’s still a free service that <em>most</em> clients will use. I’d suggest if you don’t have a Skype account, you get one before job searching.</li>
+  <li><a href="https://www.google.com/voice/b/0?pli=1">Google Voice</a> This service allows you to forward a number directly on your cell phone. It also has some nicities like screening your calls, voicemail, free calls, etc… It’s good to give out your Google voice number instead of your cell to clients as well as possible girl/boyfriends in case things go sour.</li>
+  <li><a href="http://www.google.com/+/learnmore/hangouts/">Google Hangout</a> Skype falls short in one area (which happens to be their business model). If you have more than 2 people on a call, they must all have a premium account to do video chat or screenshare. Google Hangout gives you all of these features for free with up to 10 people as of this writing.</li>
+  <li>Standard social networks (Twitter, Linked In, G+) (duh)</li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Well, this post is already getting a bit out of control. I could go on and on. If I have obviously omitted a large section, please feel free to troll me in the comments and I will certainly add it.</p>
+
+<p>I hope this has been able to provide you with some value, and I would love to hear your thoughts.</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="Tools of The Trade: What Tools I Use For iOS Consulting" data-url="http://brandontreb.com/tools-of-the-trade-what-tools-i-use-for-ios-consulting" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+      <!-- <span class="post-date">22 Jan 2013</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2013-01-22T00:00:00-07:00"><a href="/tools-of-the-trade-what-tools-i-use-for-ios-consulting" title="Permalink to Microblog post" class="u-url">Tue, Jan 22, 2013 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page6">Older</a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page4">Newer</a>
+    
+  
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

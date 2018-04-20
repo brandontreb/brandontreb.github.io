@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="description" content="Some Thoughts On Software Development Consulting">
+  <meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+  <meta name="author" content="Brandon Trebitowski">
+
+  <link rel="micropub" href="https://brandontreb-blog.herokuapp.com/micropub/main">
+  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+  <link href="https://twitter.com/brandontreb" rel="me">
+  <link href="http://github.com/brandontreb" rel="me">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      brandontreb.com &middot; Tips And Resources For Software Consultants
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-381854-9', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A blog about software development consulting</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+
+    <!-- <a class="sidebar-nav-item" href="/archive/v1.0.0.zip">Download</a>
+    <a class="sidebar-nav-item" href="">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v1.0.0</span> -->
+
+    <!--
+            Recent Posts
+            On my homepage I like to include a recent posts section to entice people click through and read, and also to have no content on the homepage every time I write an article. Important part of SEO!
+            You can easily change this to suit your site. Maybe you want 3 posts, instead of 2 or more words in the snippet.
+    -->
+
+    <span class="sidebar-nav-item">Subscribe: <a href="http://feeds.feedburner.com/brandontreb">RSS</a> | <a href="http://eepurl.com/bnryI5">Email</a></span>
+    <a class="sidebar-nav-item" href="/micro">Micro Blog</a>
+    <a class="sidebar-nav-item" href="http://linkedin.com/in/brandontreb">Linked In</a>
+    <a class="sidebar-nav-item" href="http://twitter.com/brandontreb">Twitter</a>
+    <a class="sidebar-nav-item" href="http://pixegon.com/more-works">Portfolio</a>
+
+    <span class="sidebar-nav-item">Recent Posts
+    
+      
+        
+      
+        
+      
+        <a class="sidebar-nav-item" href="/trying-something-new">Trying Something New</a>
+    
+      
+        <a class="sidebar-nav-item" href="/how-creating-a-call-flow-helps-sales-calls">How Creating A Call Flow Can Help Your Software Sales Calls</a>
+    
+    </span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2018. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">brandontreb.com</a>
+            <small>Tips And Resources For Software Consultants</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="posts">
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/what-i-learned-in-my-first-month-being-a-contract-ios-developer">
+          What I Learned In My First Month Being A Contract iOS Developer
+        </a>
+      </h1>
+
+      <p><strong>tl;dr Present yourself to potential clients as if you have already made it. Don’t be scared, the work it out there. Freelancing FTW!1!</strong></p>
+
+<p>In the first week of December, I got a rather unfortunate (and unexpected) call from the CEO of the company I was working for. The gist of it was “we are reorganizing, and have decided to cut your position. Effective Immediately”. At this point, I was the Director Of Mobile Engineering and was making a very decent salary. While I was planning on leaving to go freelance at some point, I hadn’t dreamed it would be this sudden.</p>
+
+<p>Well, it turns out that CEO did me one of the biggest favors of my life. He forced me to go indie. I probably would have flailed there for at least another year before even considering moving on.</p>
+
+<p>I want to share a few things (good and bad) about what I have learned in the past month and how I will never (willingly) work for a company again.</p>
+
+<h2 id="panic-sets-in">Panic Sets In</h2>
+
+<p>I had been working at the aforementioned company for the past 4 years. In fact, it was my first job out of college. So, you can imagine how scary and stressful it was going from a steady paycheck to nothing in the blink of an eye. What’s ironic about this is, many people I have talked to since going indie have told me that they wish they could do it too, but really like the “security” of their corporate job.</p>
+
+<p>At first, I freaked out a little and took the day off (I was “let go” in the morning). But, the very next day I hit the ground running in search of a contract.</p>
+
+<h2 id="contracts-contracts-everywhere">Contracts, Contracts Everywhere</h2>
+
+<p>Much to my surprise, there are contracting opportunities <strong>everywhere</strong>. Again, I had to leave the company so soon, I hadn’t had time to research this myself beforehand. A simple Google search of “[your field] contract work” should reveal plenty (assuming your field is some sort of software. I can’t speak for other industries). I even started applying for salaried jobs as a contractor. You would be surprised how many companies are open to it.</p>
+
+<p>This was immediately comforting.</p>
+
+<h2 id="talk-the-talk">Talk The Talk</h2>
+
+<p>My first few days of looking for a contract were pretty interesting. Being that I had just been let go, I felt this intense pressure to land a contract right away. This definitely came through in how I related to the recruiters and people I spoke with. My good friend <a href="http://twitter.com/slcaruso">Scott Caruso</a> sat down with me and gave me some of the most important advice I would hear for dealing with potential clients.</p>
+
+<ol>
+  <li>
+    <p>You are looking for the “right opportunity”. If you are considering freelance, you obviously feel you are an expert (or close to) in your field and that definitely has value. Don’t settle for crappy contracts at crappy rates just because you need the money. You will hate life.</p>
+  </li>
+  <li>
+    <p>Spam! During my first week, I would contact one or two people and they said they would get back to me. Well, I didn’t want to possibly have to tell them no later, so I would politely not communicate with anyone else until I heard back. That was dumb.<br />
+    Finding contracts is like shopping at Goodwill. It’s mostly crap, but if you go through enough of the crap, you will find a gem.</p>
+  </li>
+  <li>
+    <p>Leverage your existing contacts. This should be obvious. I was holding off on this early on as I didn’t want to sound lame. However, these are the people you can show a little desperation to as they are (or should be) your friends. That being said, someone always knows someone else that needs some work done. If I hadn’t done this, I for sure would have violated #1.</p>
+  </li>
+  <li>
+    <p>You are a scarce resource (at least present yourself that way): Once I started telling recruiters that I was talking to tons of others and am planning on making a deal this week, I started getting a flood of them calling me back.</p>
+  </li>
+</ol>
+
+<h2 id="the-bad">The Bad</h2>
+
+<ol>
+  <li>Everything you do starts to get a price tag. The other day, I asked my wife to <a href="http://xkcd.com/149/">make me a sandwichh</a>. She told me to make it myself, and I politely informed her that the 15 minutes spent doing that would cost us $25 so it had better be the best sandwhich I have ever made.</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>I am not sure if this feeling ever goes away (if you are a veteran freelance, I&amp;#8217;d love to hear your thoughts).
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>It’s a little scary knowing you don’t have a paycheck in X months (X being your current contract length). This was the most frightening thing at first. Now, it seems like an exciting challenge.</p>
+  </li>
+  <li>
+    <p>Tendency to overwork: Since you now have money++ and can make more just by adding hours, you will be drawn to work more. I have talked to many others who end up leaving freelance because of burnout from working too much. Sure you made $30K in 2 weeks, but you are hating life.</p>
+  </li>
+</ol>
+
+<h2 id="summary">Summary</h2>
+
+<p>So far my journey as an independent iOS developer has been incredible. I am loving every minute of it and I encourage anyone interested in it to do the same. I don’t think it’s for the n00b or the non-self starter. <a href="http://www.jamiebegin.com/how-to-become-a-successful-freelance-web-developer-and-not-kill-your-career/">This post</a> I found on Hacker News has a brilliant step by step tutorial on moving in this direction.</p>
+
+<p>I hope you have enjoyed yet another post on freelancing.</p>
+
+<p>Thanks for reading!</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="What I Learned In My First Month Being A Contract iOS Developer" data-url="http://brandontreb.com/what-i-learned-in-my-first-month-being-a-contract-ios-developer" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+      <!-- <span class="post-date">29 Dec 2012</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2012-12-29T00:00:00-07:00"><a href="/what-i-learned-in-my-first-month-being-a-contract-ios-developer" title="Permalink to Microblog post" class="u-url">Sat, Dec 29, 2012 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/5-third-party-ios-libraries-i-have-found-useful-lately">
+          5 Third Party iOS Libraries I Have Found Useful Lately
+        </a>
+      </h1>
+
+      <p>As I mature as a developer, I try to rely on other people’s code more an more. Why build something from scratch when a solution already exists that you can fit in your project. In <a href="http://itunes.apple.com/us/app/pocket-mud-pro/id511678455?mt=8">Pocket MUD Pro</a>, I used <strong>13</strong> 3rd party libraries and am using quite a bit more in the project that I’m currently working on. I figured that I would share some of the libraries that I have been using so that it might save you some time in the future.</p>
+
+<h2 id="1-cocoaasyncsocket">1. CocoaAsyncSocket</h2>
+
+<p><strong>Link:</strong> <a href="https://github.com/robbiehanson/CocoaAsyncSocket">https://github.com/robbiehanson/CocoaAsyncSocket</a></p>
+
+<p>Many of my applications involve TCP or UDP networking. There is a lot of boiler plate code involved in every networked application, and CocoaAsyncSocket solves much of that for you.</p>
+
+<h2 id="2-appirater">2. Appirater</h2>
+
+<p><strong>Link:</strong> <a href="http://github.com/arashpayan/appirater/">http://github.com/arashpayan/appirater/</a></p>
+
+<p><img src="http://arashpayan.com/blog/wp-content/uploads/2009/09/AppiraterScreenshot.png" alt="Screenshot" /></p>
+
+<p>Hopefully, you have heard of this one or a similar library by now. It’s very challenging to get users to want to review your applications, let alone give you a positive review. AppiRater allows you to prompt a user to rate your application based on either number of launches or “significant events” which you specify.</p>
+
+<h2 id="3-zip-archive">3. Zip Archive</h2>
+
+<p><strong>Link:</strong> <a href="http://code.google.com/p/ziparchive/">http://code.google.com/p/ziparchive/</a></p>
+
+<p>I try to ship small applications that download assets upon launch. A good way to send these assets over the wire is to zip them up and stick them on your server. I have written an article about this on <a href="http://www.icodeblog.com/2012/08/13/unzipping-files-using-zip-archive/">iCodeBlog</a>.</p>
+
+<h2 id="4-quick-dialog">4. Quick Dialog</h2>
+
+<p>**Link: ** <a href="https://github.com/escoz/QuickDialog">https://github.com/escoz/QuickDialog</a></p>
+
+<p>Creating forms in iOS is pretty painful. It usually involves custom table cells and a lot of delegate nonsense. QuickDialog takes away some of this pain and allows you to easily create iOS forms. You can even design them using JSON.</p>
+
+<p><img src="https://github.com/escoz/QuickDialog/raw/master/other/quickdialog2.png" alt="QuickDialog Screenshot" /></p>
+
+<h2 id="5-tsminiwebbrowser">5. TSMiniWebBrowser</h2>
+
+<p><strong>Link:</strong> <a href="https://github.com/tonisalae/TSMiniWebBrowser">https://github.com/tonisalae/TSMiniWebBrowser</a></p>
+
+<p>Often times, you want a quick and dirty browser in your application. I generally use it to point to in-app documentation or take the user to a page after tapping on a link. It’s quick and easy.</p>
+
+<p><img src="https://a248.e.akamai.net/camo.github.com/1cae2dfc9160aa6a8e0583d0682d78462c97d60f/687474703a2f2f646c2e64726f70626f782e636f6d2f752f373630343232322f4769744875622f54534d696e6957656242726f777365722f73686f745f30315f7468756d622e706e67" alt="Screenshot" /></p>
+
+<p>I hope you find some value in this list. I’d love to hear about the libraries <strong>you</strong> use frequently.</p>
+
+<p>Happy Coding!</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="5 Third Party iOS Libraries I Have Found Useful Lately" data-url="http://brandontreb.com/5-third-party-ios-libraries-i-have-found-useful-lately" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+      <!-- <span class="post-date">24 Aug 2012</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2012-08-24T00:00:00-06:00"><a href="/5-third-party-ios-libraries-i-have-found-useful-lately" title="Permalink to Microblog post" class="u-url">Fri, Aug 24, 2012 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/how-to-become-an-indie-game-developer">
+          How To Become An Indie Game Developer
+        </a>
+      </h1>
+
+      <div>
+  What programmer doesn&#8217;t want to be an indie game developer? A great article with tons of tips to help you on your way.
+</div>
+
+<div>
+</div>
+
+<p>[<a title="" href="http://www.mode7games.com/blog/2012/06/12/how-to-be-an-indie-game-developer/" target="">Article Link</a>]</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="How To Become An Indie Game Developer" data-url="http://brandontreb.com/how-to-become-an-indie-game-developer" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+      <!-- <span class="post-date">13 Jun 2012</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2012-06-13T00:00:00-06:00"><a href="/how-to-become-an-indie-game-developer" title="Permalink to Microblog post" class="u-url">Wed, Jun 13, 2012 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/my-number-one-feature-request-for-ios-6">
+          My Number One Feature Request For iOS 6
+        </a>
+      </h1>
+
+      <p><strong>Fix the Snooze button</strong>! I have no idea how this UI component got to Apple’s review team and they were like ”<em>Yep, that looks beautiful! Ship it!</em>”. If Apple changes the snooze button and slaps a 6 on iOS, I will be happy. If not, more rants to follow. Stay tuned….</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2012/06/photo.png"><img class="wp-image-208 alignleft" title="photo" src="http://brandontreb.com/wp-content/uploads/2012/06/photo.png" alt="" width="269" height="403" /></a></p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="My Number One Feature Request For iOS 6" data-url="http://brandontreb.com/my-number-one-feature-request-for-ios-6" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+      <!-- <span class="post-date">08 Jun 2012</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2012-06-08T00:00:00-06:00"><a href="/my-number-one-feature-request-for-ios-6" title="Permalink to Microblog post" class="u-url">Fri, Jun 08, 2012 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/if-there-was-ever-a-time-to-submit-a-show-hn-article-its-right-now">
+          If There Was Ever A Time To Submit A Show HN Article, It&#8217;s Right Now
+        </a>
+      </h1>
+
+      <p>Earlier today a post titled ”<a href="http://tortillasinbed.tumblr.com/post/24175048206/i-up-vote-everything" title="" target="">I Try to Up Vote Every ‘Show HN’ Post and You Should Too</a>” made it to the top of HN.  It basically talked about people posting “Show HN” posts are putting themselves out there and the least we can do is give them an up vote.  Well, people are listening and as of this posting, there are currently 15 Show HN posts in the top 30.  That’s incredible.</p>
+
+<div>
+</div>
+
+<div>
+  So, if you have recently created something cool. &nbsp;Head over to HN&#8217;s <a href="http://news.ycombinator.com/submit" title="" target="">submission page</a> and add your link making sure to add &#8220;Show HN&#8221; in the title. &nbsp;You might get some great traffic/feedback out of it.
+</div>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="If There Was Ever A Time To Submit A Show HN Article, It&#8217;s Right Now" data-url="http://brandontreb.com/if-there-was-ever-a-time-to-submit-a-show-hn-article-its-right-now" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+      <!-- <span class="post-date">01 Jun 2012</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2012-06-01T00:00:00-06:00"><a href="/if-there-was-ever-a-time-to-submit-a-show-hn-article-its-right-now" title="Permalink to Microblog post" class="u-url">Fri, Jun 01, 2012 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page7">Older</a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page5">Newer</a>
+    
+  
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

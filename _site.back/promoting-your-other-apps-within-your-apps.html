@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="description" content="Some Thoughts On Software Development Consulting">
+  <meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+  <meta name="author" content="Brandon Trebitowski">
+
+  <link rel="micropub" href="https://brandontreb-blog.herokuapp.com/micropub/main">
+  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+  <link href="https://twitter.com/brandontreb" rel="me">
+  <link href="http://github.com/brandontreb" rel="me">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Promoting Your Other Apps Within Your Apps &middot; brandontreb.com
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-381854-9', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A blog about software development consulting</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+
+    <!-- <a class="sidebar-nav-item" href="/archive/v1.0.0.zip">Download</a>
+    <a class="sidebar-nav-item" href="">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v1.0.0</span> -->
+
+    <!--
+            Recent Posts
+            On my homepage I like to include a recent posts section to entice people click through and read, and also to have no content on the homepage every time I write an article. Important part of SEO!
+            You can easily change this to suit your site. Maybe you want 3 posts, instead of 2 or more words in the snippet.
+    -->
+
+    <span class="sidebar-nav-item">Subscribe: <a href="http://feeds.feedburner.com/brandontreb">RSS</a> | <a href="http://eepurl.com/bnryI5">Email</a></span>
+    <a class="sidebar-nav-item" href="/micro">Micro Blog</a>
+    <a class="sidebar-nav-item" href="http://linkedin.com/in/brandontreb">Linked In</a>
+    <a class="sidebar-nav-item" href="http://twitter.com/brandontreb">Twitter</a>
+    <a class="sidebar-nav-item" href="http://pixegon.com/more-works">Portfolio</a>
+
+    <span class="sidebar-nav-item">Recent Posts
+    
+      
+        
+      
+        
+      
+        <a class="sidebar-nav-item" href="/trying-something-new">Trying Something New</a>
+    
+      
+        <a class="sidebar-nav-item" href="/how-creating-a-call-flow-helps-sales-calls">How Creating A Call Flow Can Help Your Software Sales Calls</a>
+    
+    </span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2018. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">brandontreb.com</a>
+            <small>Tips And Resources For Software Consultants</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  
+  <h1 class="post-title">Promoting Your Other Apps Within Your Apps</h1>
+  
+  
+  <p>First off, Happy Thanksgiving to my American readers. And a happy Thursday to everyone else. I’m sitting here on Thursday morning drinking coffee and eating Sticky Buns (kind of like gooey doughnuts). It’s been a hectic week of family and travel, so please forgive me if this is not the most verbose post.</p>
+
+<p>Showing your other applications within each of your applications (wow, the word application is starting to lose meaning) can have a tremendous impact on your sales. It’s a great way to promote your other apps for free and will give them much more exposure across a wider audience. Moving all of the promotion logic out to the web allows you to dynamically add and remove apps from the view without updating your apps in the store.</p>
+
+<p>[Insert Cool Graph Backing This Statement Up Here] //I’m not that cool yet <img src="http://brandontreb.com/wp-includes/images/smilies/frownie.png" alt=":(" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+<p>We have seen this in many popular apps. Here is a screenshot from an iDevBlogADay veteran <a href="http://www.streamingcolour.com/blog/">Owen Goss</a> promoting his other applications from inside of <a href="http://www.streamingcolour.com/games/landformer/">LandFormer</a>.</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2010/11/promo.png"><img class="alignnone size-medium wp-image-1080" title="promo" src="http://brandontreb.com/wp-content/uploads/2010/11/promo-500x333.png" alt="" width="300" height="200" /></a></p>
+
+<p>We are going to learn how to make something similar and I will provide you with a web template as well as the view controller to load it.</p>
+
+<h4 id="download-the-template">Download The Template</h4>
+
+<p>So, I’m sure there are a million more “elegant” ways to display your apps, but I went for super simple. So, 1337 web dev idevblogadayers, please go easy on me in the comments. Download the code below and look in the Web folder.</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2010/11/promotion2.zip">Download The Code Files Here</a></p>
+
+<p>Here is a screenshot of what the template will look like:</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2010/11/Screen-shot-2010-11-25-at-11.51.07-AM.png"><img class="alignnone size-medium wp-image-1085" title="Screen shot 2010-11-25 at 11.51.07 AM" src="http://brandontreb.com/wp-content/uploads/2010/11/Screen-shot-2010-11-25-at-11.51.07-AM-500x266.png" alt="" width="400" height="213" /></a></p>
+
+<p>It will also work in portrait mode.</p>
+
+<h4 id="upload-the-template-files-to-your-web-server-and-replace-my-sample-data">Upload The Template Files To Your Web Server And Replace My Sample Data</h4>
+
+<p>If you have your own website (which you probably should 😉 ), upload the template files to a subdirectory. If not, or you don’t want to waste bandwidth on it, you can always <a href="http://wiki.dropbox.com/TipsAndTricks/HostWebsites">host the files on Dropbox</a>.</p>
+
+<p>Next, upload your icons (the template auto rounds the corners so you can just use the one’s bundled with your app) and replace my sample images with yours.</p>
+
+<p>Finally, replace the URL’s with the URLs to your applications. You can also add/remove table cells to match the number of applications you are promoting.</p>
+
+<h4 id="add-the-promotion-code-to-your-iphone-app">Add The Promotion Code To Your iPhone App</h4>
+
+<p>Look in the iPhone folder from the unzipped file you downloaded above and copy the following 3 files into your project:</p>
+
+<ul>
+  <li>PromotionViewController.m</li>
+  <li>PromotionViewController.h</li>
+  <li>PromotionViewController.xib</li>
+</ul>
+
+<p>Check the box to copy them into your project folder when prompted.</p>
+
+<p>We will now take a look at how to display the promotion view when a button is clicked.</p>
+
+<div>
+  <pre>&lt;code class=’objc’&gt;- (IBAction) moreAppsTouched:(id) sender {
+    PromotionViewController *controller = [[PromotionViewController alloc]
+        initWithNibName:@"PromotionViewController"
+        bundle:[NSBundle mainBundle]];
+    controller.promotionAddress = @"http://brandontreb.com/apps/idevblogaday/promotion.html";
+    [self presentModalViewController:controller animated:YES];
+    [controller release];
+}&lt;/code&gt;</pre>
+</div>
+
+<p>Make sure you set controller.promotionAddress to the web address of your promotion.html file.</p>
+
+<p>And there you have it! When the user tapps on a button it will display our promotion view modally and will load up your promo page. I have provided a sample application that pulls up the promotion view when a button has been clicked.</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2010/11/PromotionTest1.zip">Download The Sample App Here</a></p>
+
+<p>If you have any questions or comments, feel free to leave them in the comments.</p>
+
+<p>Happy Coding!</p>
+
+<p style="font-family: ‘Lucida Grande’;">
+  &#8212;-
+</p>
+<p>&lt;/p&gt;</p>
+
+<div style="font-family: ‘Lucida Grande’;">
+  <span style="font-family: ‘Lucida Grande’;"><strong><span style="font-weight: normal;"><span style="font-family: arial, verdana, tahoma, sans-serif; font-size: 13px; line-height: 20px;"><em>﻿﻿This post is part of <a style="text-decoration: none; color: #004199; padding: 0px; margin: 0px;" href="http://idevblogaday.com/">iDevBlogADay</a>, a group of indie iOS development blogs featuring two posts per day. You can keep up with iDevBlogADay through the <a style="text-decoration: none; color: #004199; padding: 0px; margin: 0px;" href="http://idevblogaday.com/">web site</a>, <a style="text-decoration: none; color: #004199; padding: 0px; margin: 0px;" href="http://feeds.feedburner.com/idevblogaday">RSS feed</a>, or <a style="text-decoration: none; color: #004199; padding: 0px; margin: 0px;" href="http://twitter.com/#search?q=%23idevblogaday">Twitter</a>.</em></span></span></strong></span>
+</div>
+<p>&lt;/p&gt;</p>
+
+<div style="font-family: ‘Lucida Grande’;">
+  <span style="font-family: ‘Lucida Grande’;"><strong><span style="font-weight: normal;"><span style="font-family: arial, verdana, tahoma, sans-serif; font-size: 13px; line-height: 20px;"><em><br /> <br /> </em></span></span></strong></span>
+</div>
+<p>&lt;/p&gt;</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="Promoting Your Other Apps Within Your Apps" data-url="http://brandontreb.com/promoting-your-other-apps-within-your-apps" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+  <footer class="post__footer">
+    <small><time class="dt-published" datetime="2010-11-25T00:00:00-07:00">Thu, Nov 25, 2010 at 12:00am</time></small>
+  </footer>
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/11830.html">
+            
+            <small>16 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/48295.html">
+            
+            <small>16 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/trying-something-new">
+            Trying Something New
+            <small>15 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

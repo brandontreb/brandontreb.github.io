@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="description" content="Some Thoughts On Software Development Consulting">
+  <meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+  <meta name="author" content="Brandon Trebitowski">
+
+  <link rel="micropub" href="https://brandontreb-blog.herokuapp.com/micropub/main">
+  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+  <link href="https://twitter.com/brandontreb" rel="me">
+  <link href="http://github.com/brandontreb" rel="me">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Side Projects &middot; brandontreb.com
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-381854-9', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A blog about software development consulting</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+
+    <!-- <a class="sidebar-nav-item" href="/archive/v1.0.0.zip">Download</a>
+    <a class="sidebar-nav-item" href="">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v1.0.0</span> -->
+
+    <!--
+            Recent Posts
+            On my homepage I like to include a recent posts section to entice people click through and read, and also to have no content on the homepage every time I write an article. Important part of SEO!
+            You can easily change this to suit your site. Maybe you want 3 posts, instead of 2 or more words in the snippet.
+    -->
+
+    <span class="sidebar-nav-item">Subscribe: <a href="http://feeds.feedburner.com/brandontreb">RSS</a> | <a href="http://eepurl.com/bnryI5">Email</a></span>
+    <a class="sidebar-nav-item" href="/micro">Micro Blog</a>
+    <a class="sidebar-nav-item" href="http://linkedin.com/in/brandontreb">Linked In</a>
+    <a class="sidebar-nav-item" href="http://twitter.com/brandontreb">Twitter</a>
+    <a class="sidebar-nav-item" href="http://pixegon.com/more-works">Portfolio</a>
+
+    <span class="sidebar-nav-item">Recent Posts
+    
+      
+        
+      
+        
+      
+        <a class="sidebar-nav-item" href="/trying-something-new">Trying Something New</a>
+    
+      
+        <a class="sidebar-nav-item" href="/how-creating-a-call-flow-helps-sales-calls">How Creating A Call Flow Can Help Your Software Sales Calls</a>
+    
+    </span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2018. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">brandontreb.com</a>
+            <small>Tips And Resources For Software Consultants</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  
+  <h1 class="post-title">Side Projects</h1>
+  
+  
+  <p>Over at <a href="http://pixegon.com">Pixegon</a>, I really try to encourage my developers to have their own side projects.  Often times, employers look at side projects as competition and try to own the works that their developers produce.  Some will even go as far as to include this in their employee handbooks.</p>
+
+<p>In my opinion, this stifles creativity and creates a feeling of contention between the employee and company.</p>
+
+<p>People start side projects all of the time for a variety of reasons:</p>
+
+<ul>
+  <li>To make some extra cash</li>
+  <li>To learn a new technology</li>
+  <li>To sharpen one’s skills</li>
+  <li>Just for fun</li>
+</ul>
+
+<p>From an employer’s standpoint, these are all <strong>great</strong>. It allows my developers the freedom to learn new things, make mistakes, and even earn extra cash. All without me fronting the cost.</p>
+
+<p>While this might now sound selfish, it’s obviously a two-way street. Developers greatly benefit from this type of arrangement.</p>
+
+<h3 id="getting-started-with-a-side-project">Getting started with a side project</h3>
+
+<p>This is one I struggle with all of the time.  Sometimes it’s a motivation issue, sometimes I lack an idea, and sometimes I’m just feeling lazy and end up reading Hacker News instead due to my analysis paralysis.</p>
+
+<p>The best bet is to just <strong>start</strong>. Whether your idea is big or small, stupid or world changing, just start writing some code. I try to utilize this tactic in all areas of my life from code, to writing, to working out, to minimizing, and even saving money.  Once you get some momentum going, you will quickly find out what’s working and what’s not.</p>
+
+<p>Here are a few Hacker News Posts that I found particularly inspiring to get you started:</p>
+
+<ul>
+  <li><a href="http://blog.andyjiang.com/how-to-ship-side-projects/">How To Ship Side Projects</a></li>
+  <li><a href="https://news.ycombinator.com/item?id=8844083">Those making $1,000+/month on side projects – what did you make?</a> (similar posts below)
+    <ul>
+      <li><a href="https://news.ycombinator.com/item?id=12670731">https://news.ycombinator.com/item?id=12670731</a></li>
+      <li><a href="https://news.ycombinator.com/item?id=8800788">https://news.ycombinator.com/item?id=8800788</a></li>
+      <li><a href="https://news.ycombinator.com/item?id=11898992">https://news.ycombinator.com/item?id=11898992</a></li>
+    </ul>
+  </li>
+  <li><a href="http://livingliferichly.com/epic-list-of-side-project-ideas-for-programmers/">Epic List of Side Project Ideas for Programmers</a></li>
+  <li><a href="https://news.ycombinator.com/item?id=5234692">Ask HN: Where do you get ideas to build side-projects?</a></li>
+</ul>
+
+<p>Dont’ have any idea to start on? Try cloning something in one of the above posts. There are <em>tons</em> of ideas in here large and small and there’s plenty of room on the web for variances of differenct products. I probably stole most of this post from somewhere…</p>
+
+<p>If you found this post helpful and want to hear more, make sure to <a href="http://brandontreb.us3.list-manage1.com/subscribe?u=66135759856eefe4f6dcec97c&amp;id=ef6c358d78">subscribe to my newsletter</a>. It’s not spammy, just let’s you know when I post.</p>
+
+  <footer class="post__footer">
+    <small><time class="dt-published" datetime="2017-02-06T00:00:00-07:00">Mon, Feb 06, 2017 at 12:00am</time></small>
+  </footer>
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/11830.html">
+            
+            <small>16 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/48295.html">
+            
+            <small>16 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/trying-something-new">
+            Trying Something New
+            <small>15 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

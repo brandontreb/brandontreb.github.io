@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="description" content="Some Thoughts On Software Development Consulting">
+  <meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+  <meta name="author" content="Brandon Trebitowski">
+
+  <link rel="micropub" href="https://brandontreb-blog.herokuapp.com/micropub/main">
+  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+  <link href="https://twitter.com/brandontreb" rel="me">
+  <link href="http://github.com/brandontreb" rel="me">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      brandontreb.com &middot; Tips And Resources For Software Consultants
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-381854-9', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A blog about software development consulting</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+
+    <!-- <a class="sidebar-nav-item" href="/archive/v1.0.0.zip">Download</a>
+    <a class="sidebar-nav-item" href="">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v1.0.0</span> -->
+
+    <!--
+            Recent Posts
+            On my homepage I like to include a recent posts section to entice people click through and read, and also to have no content on the homepage every time I write an article. Important part of SEO!
+            You can easily change this to suit your site. Maybe you want 3 posts, instead of 2 or more words in the snippet.
+    -->
+
+    <span class="sidebar-nav-item">Subscribe: <a href="http://feeds.feedburner.com/brandontreb">RSS</a> | <a href="http://eepurl.com/bnryI5">Email</a></span>
+    <a class="sidebar-nav-item" href="/micro">Micro Blog</a>
+    <a class="sidebar-nav-item" href="http://linkedin.com/in/brandontreb">Linked In</a>
+    <a class="sidebar-nav-item" href="http://twitter.com/brandontreb">Twitter</a>
+    <a class="sidebar-nav-item" href="http://pixegon.com/more-works">Portfolio</a>
+
+    <span class="sidebar-nav-item">Recent Posts
+    
+      
+        
+      
+        
+      
+        <a class="sidebar-nav-item" href="/trying-something-new">Trying Something New</a>
+    
+      
+        <a class="sidebar-nav-item" href="/how-creating-a-call-flow-helps-sales-calls">How Creating A Call Flow Can Help Your Software Sales Calls</a>
+    
+    </span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2018. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">brandontreb.com</a>
+            <small>Tips And Resources For Software Consultants</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="posts">
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/goals-2016">
+          2016 Goals
+        </a>
+      </h1>
+
+      <p>As the new year kicks off in full swing, I am reflecting on <a href="http://brandontreb.com/goals-for-2015/">my 2015 goals</a> and setting some new ones for 2016.</p>
+
+<p>Here is how I did on each of last year’s goals:</p>
+<ul>
+    <li><strong>Create a business plan</strong> - <span style="color: #993300;">Fail</span>. I did not create a business plan for Pixegon.  This might have to carry over.</li>
+    <li><strong>Grow Pixegon (my mobile consultancy) to 2x 2014 revenue</strong> - <span style="color: #008000;">Success</span>. We not only achieved this goal, but surpassed it. Pixegon did a total of $1.1mm in revenue in 2015!</li>
+    <li><strong>Hire a “director” - </strong><span style="color: #008000;">Success</span>. OK, so this one is sort of in the middle. I didn't quite hire a director per se, however I did elevate my senior employees to more management roles. This allows them to take some of the day to day tasks off of my plate.</li>
+    <li><strong>Move to a weekly - </strong><span style="color: #993300;">Fail</span>. But I'm OK with it. This isn't very important.</li>
+    <li><strong>Morning Routine</strong> - <span style="color: #ffcc00;">Moderate</span>. Some days were better than others</li>
+    <li><strong>Blog twice a month - </strong><span style="color: #993300;">Huge Fail</span>.  I averaged .41 times per month.</li>
+    <li><strong>Take off / reduce workload - </strong><span style="color: #008000;">Success</span>. More camping!</li>
+    <li><strong>Give away more than 10% of personal income - </strong><span style="color: #008000;">Success</span>. Our family was blessed with multiple opportunities throughout the year to be a blessing to others in addition to our normal donations.</li>
+</ul>
+<p>Overall, I’d call 2015 a success. I managed to hit the goals I felt most passionate about, and more importantly, this exercise has helped me to determine what I should focus on.  With that being said here are my goals for 2016.</p>
+<ul>
+    <li><strong>Professional</strong>
+<ul>
+    <li>Land <strong>ONE</strong> new client.  Sounds crazy I know, but allow me to explain.  Pixegon has been fortunate enough to work with some <a href="http://www.pixegon.com/more-works">pretty incredible clients</a>.  Many of these clients trust us to be their primary dev team throughout the year. I intend on finding at least ONE more client like these in 2016 (Referrals welcome ;) ).</li>
+    <li>Build Something New. As I continue to build a company, it's often hard to get back to my roots of writing code and actually creating something. I miss this. It provided so much value to me over the course of the years. So, this year, I want build some "side projects".</li>
+    <li>Hire. I hope to grow the team by at least 20% this year.  (<a href="http://www.pixegon.com/join-our-team/">We are always hiring most positions</a>).</li>
+</ul>
+</li>
+    <li><strong>Personal</strong>
+<ul>
+    <li>Be more intentional about EVERYTHING.  I have really been into a few blogs lately (<a href="http://www.mrmoneymustache.com">Mr Money Mustache</a>, <a href="http://www.theminimalists.com">The Minimalists</a>, <a href="http://fourhourworkweek.com/blog/">4-Hour Workweek</a>, etc...).  What I have really learned is that I want to be more intentional about everything I do (Family, Time, Money, etc...).  Part of this is removing my dependency on my phone, simplifying my life, and scheduling undivided time for the things that are important.</li>
+    <li>Stop Complaining. I read this incredible book called <a href="http://www.amazon.com/gp/product/0770436390/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0770436390&amp;linkCode=as2&amp;tag=codnerandnon-20&amp;linkId=JCWEFBN6BTYDX2OC" rel="nofollow">A Complaint Free World</a> . He talks about the power of Not complaining. This has really resonated with me.</li>
+    <li>Blog Twice Per Month. OK This time I mean it (1 down, 23 to go! )</li>
+    <li>Read 5 books. Arbitrary amount I know, but I need something measurable.</li>
+</ul>
+</li>
+</ul>
+<p>That’s it. Here’s to a healthy and productive 2016!</p>
+
+<p>Feel free to link me to your 2016 goals blog posts in the comments.</p>
+
+      <!-- <span class="post-date">11 Jan 2016</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2016-01-11T00:00:00-07:00"><a href="/goals-2016" title="Permalink to Microblog post" class="u-url">Mon, Jan 11, 2016 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/the-value-of-quality-assurance">
+          The Value Of Quality Assurance
+        </a>
+      </h1>
+
+      <p>It’s late, you have been hacking all night to get the client a build.  Finally, around 2:30 am, you hit submit and publish something to the client and go to bed.  When you wake up in the morning, the first thing you see in your inbox is an email titled “Completely Broken!!1!”.</p>
+
+<p>How could this be? You stayed up late, you hacked, you tested and you sweat over this build to find that it crashes for the client when they try to do something obvious.</p>
+
+<p>As developers, we often can’t see the forrest through the trees.  What this means is, we get so deep into the code working on a new feature or fixes that we often don’t notice when we break things. This doesn’t mean that we are bad developers, it just means we think differently about development.  It also means we can’t personally handle <strong>everything</strong>.</p>
+
+<p>However, from a client’s perspective, failures like this can really tarnish your brand.  They start to get the impression that you are unprofessional and even worse, start to doubt your abilities as a developer.</p>
+
+<h3 id="enter-qa">Enter QA</h3>
+
+<p>QA (short for quality assurance) is an idea that someone other than the developer tests the build before the client ever sees it.  These people are responsible for</p>
+
+<ul>
+  <li>Regression testing (as in the scenario above)</li>
+  <li>Generating a test plan/matrix</li>
+  <li>Ensuring parity (if needed) between multi-platform applications</li>
+</ul>
+
+<p>If the QA team is doing it’s job, the client won’t every see these obvious failures mentioned above.  This can greatly improve the client’s perception of you/your team.</p>
+
+<h3 id="basic-process">Basic Process</h3>
+
+<p>OK, QA sounds great, how do I get started?  Well, it’s actually relatively simple. First off, I assume you are doing <em>some flavor</em> of agile, and hopefully logging tickets for each task.  If not, you should (even if you are a one man show).  Here is a rough flow that my team follows:</p>
+
+<ol>
+  <li>Developers determine which tickets to work on for the current sprint</li>
+  <li>Developers complete a ticket and move it to a “dev complete” column in the task manager (Jira, Trello, Pivotal Tracker, etc…)</li>
+  <li>Developers deliver a build internally</li>
+  <li>The QA team takes the build and goes through their testing matrix to check for regressions.
+    <ul>
+      <li>If a regression is found, a bug ticket is created for the responsible developer</li>
+    </ul>
+  </li>
+  <li>New features are added to the QA test matrix and tested
+    <ul>
+      <li>If the feature has bugs or doesn’t work as intended, the ticket is rejected and pushed back to the developer</li>
+    </ul>
+  </li>
+  <li>Once everything passes, the build is green-lit to be sent to the client (usually one build per sprint)</li>
+</ol>
+
+<p>Like anything, you may develop your own version of the above, however this should be a detailed enough outline to get you started.</p>
+
+<h3 id="pushback">Pushback</h3>
+
+<p>In my experience, clients will generally give you some pushback when you say that you are billing them for QA hours.  They will say things like “It’s OK, I can test the build myself.” or “I understand, things won’t be perfect. We will through this together”.</p>
+
+<p>While this all sounds good at the surface, the fact of the matter is, it almost always will end unfavorable.  The client might have some level of tolerance early on, but as you start sending them more and more builds, each potentially missing/breaking features, they will become less patient.  I have seen this happen plenty of times even with the most tech savvy of clients.  Here are a few ways you can build QA into your billing process:</p>
+
+<p><strong>Add it as a line item</strong></p>
+
+<p>This is where you will most likely see the most opposition.  Make sure to explain to the client that their time is valuable and you don’t want to waste it.  Also, ensure that the cost of QA is drastically less than the cost of engineering or you will get questions like “Why am I paying you full price to test?”.</p>
+
+<p>Be sure to tell the client that QA is just part of your team’s process. You simply don’t operate any other way as you <strong>know</strong> that this is the best approach for both parties.  Hopefully, this will establish your expertise in the domain and the client will respect you for that.</p>
+
+<p><strong>Bake it into the cost of engineering</strong></p>
+
+<p>Often times, you may not bother with too many line items.  You may just have something like <strong>Engineering $200/hour</strong>.  When/If the client gives any pushback about cost compared to other shops, simply inform them of all they are getting inside of that hour (Engineering, Consulting, QA, Project management, Office management, etc…).  It actually works out to be a much greater value for them than paying say $125/hour for a “code monkey”.</p>
+
+<h3 id="final-thoughts">Final Thoughts</h3>
+
+<p>I absolutely believe that QA is crucial to the success of any software agency or freelancer. Not only does it allow you to come across as more professional, it also helps keep you sharp as a developer. While I’m not suggesting QA is a silver bullet (I still believe in Unit / Automated testing), I feel that everyone should at least have some layer baked into their process.</p>
+
+      <!-- <span class="post-date">28 Jul 2015</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2015-07-28T00:00:00-06:00"><a href="/the-value-of-quality-assurance" title="Permalink to Microblog post" class="u-url">Tue, Jul 28, 2015 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/ship-products-you-are-proud-of">
+          Ship Products You Are Proud Of
+        </a>
+      </h1>
+
+      <p>There is a familiar phrase that I hear all too often when a client comes to me with an existing application.  It goes something like this:</p>
+
+<p>“Our team spent quite a bit of money on our application and we don’t want to ship it.  <strong>We are</strong> <strong>not proud of the product</strong>.”</p>
+
+<p>It blows my mind that many developers and development teams are still in business given the poor quality of products that I see getting churned out all of the time.</p>
+
+<p>When I encounter these types of situations, I immediately know that the team (or individual) behind them is much more interested in a ‘quick buck’ instead of the longevity of their company.  Poor quality in software is directly related to cutting corners.</p>
+
+<p>A few examples of cut corners:</p>
+
+<ol>
+  <li><em>Using inexperience developers without proper guidance</em>.  I am all for hiring ‘staff’ level developers, however, they must be properly mentored and trained so that there is no compromise on quality.  If you must compromise on something, compromise it on <em>time</em>.</li>
+  <li><em>Outsourcing the project without proper guidance</em>.  Although I don’t prefer outsourcing given the communication challenges, I am not opposed to it.  There are plenty of talented individuals all over the world.  However, given the varying degree of abilities and communication issues, one must not rely 100% on an outsourced team to ship a product.</li>
+  <li><em>Not following coding standards/guidelines.</em>  This could be things such as: not commenting code, not testing, not leveraging a QA team, or simply writing “smoke an mirror” code.</li>
+</ol>
+
+<p>I can usually identify immediately which of the above applies after spending a few minutes with the code.  In fact, I have built much of <a href="http://pixegon.com">my business</a> around saving these types of projects.</p>
+
+<p>So I urge you, although it might cut into my market share, *please *build something you are proud of.  This is not only the right thing to do, it is also **critical **to your future success as an independant software developer.</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="Ship Products You Are Proud Of" data-url="http://brandontreb.com/ship-products-you-are-proud-of" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+      <!-- <span class="post-date">07 Apr 2015</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2015-04-07T00:00:00-06:00"><a href="/ship-products-you-are-proud-of" title="Permalink to Microblog post" class="u-url">Tue, Apr 07, 2015 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/app-idea-likely-falls-one-three-categories">
+          Your App Idea Most Likely Falls Into One Of Three Categories
+        </a>
+      </h1>
+
+      <p>During my years of mobile development, I have heard the phrase “I have an idea for an app!” hundreds, if not thousands of times.  Sometimes it would be from family members, sometimes my dentist during a cleaning, and sometimes from a naked dude standing in the sauna at the gym.  Everyone pitches app ideas to me.</p>
+
+<p>What I have learned from hearing so many pitches is this: apps really fall into one of three (sometimes four) categories.  Allow me to elaborate.</p>
+
+<h4 id="1-theapp-has-been-done-before">1. The app has been done before</h4>
+
+<p>This is the most common category of app idea I hear.  Usually, these are along the lines of, “It’s like Instagram, but for finger painters…”, etc… where the user takes an already proven idea and tries to tweak it in some way that they feel makes it new.  Most of the time, these people have not even done any research to check as to whether or not a solution already exists.</p>
+
+<p>The biggest hurdle in developing an app that has been done before is visibility; How are they going to get people to find the app and why should they choose it over the competition?</p>
+
+<h4 id="2-theapp-idea-is-too-niche">2. The app idea is too niche</h4>
+
+<p>Every now and again, I will hear a truly unique idea.  Keep in mind, unique does not necessarily mean good.  For example, I might hear, “I want an app that you can take photo of your cat, put it on a weather balloon, and send the balloon to space.  ‘Catz In Spaze!’”.  While this is unique, and <em>technically </em>feasible, one would be hard-pressed to make a real business out of it as it would be hard to get enough users on board to make it profitable.</p>
+
+<h4 id="3-there-is-a-reason-theapp-does-not-already-exist">3. There is a reason the app does not already exist</h4>
+
+<p>“I want an app to map out all of the grocery stores layouts in the world, so husbands can finally shop efficiently!”  This is a great idea.  It really is.  So great, that I have literally heard it no less than ten times from various people over the years.  Often times, I can predict when someone is about to pitch this particular idea, just by the setup: “You know how, like, shopping is hard, and like, you can’t find stuff…”.</p>
+
+<p>There are some real technical hurdles surrounding this problem.  While there are a few apps that have tried to solve it, no app will really accomplish the goal unless they have all of the following: total store participation, a large enough group for crowdsourced data, faster and more reliable GPS to know <em>exactly</em> where you are in the store, stores stop changing layouts, etc… You get the idea.  There are a lot of reasons a solid solution for this does not exist.</p>
+
+<p>There are other countless examples of app ideas falling into this category.  Another fun one I get pitched is a killer app that converts any photo into a (caricature) [http://en.wikipedia.org/wiki/Caricature].  I’m sure someone will link one in the comments, but they are all mediocre at best.</p>
+
+<h4 id="bonus-4-the-app-is-used-to-augmenttheirexisting-business">Bonus #4: The app is used to augment their existing business</h4>
+
+<p>This is actually my favorite type of app to work with.  The user has an existing business and wants to build something that benefits their business in the mobile space.  I see ideas from evaluation tools for employees to apps that allow users to order products directly from the business.</p>
+
+<p>I like these because the success of the business does not depend entirely on an app.  Also, there is generally an audience built right in at launch time so everyone is happy.</p>
+
+<h4 id="conclusion">Conclusion</h4>
+
+<p>I am not writing this post because I’m jaded and sick of hearing app ideas.  Quite the contrary.  I love hearing app ideas and would love to hear examples challenging the stereotypes that I have created here.</p>
+
+<p>I give this spiel to clients from time to time and wanted a place that I could point them to, so feel free to send your clients to this post the next time you get the grocery store mapper pitch.</p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="Your App Idea Most Likely Falls Into One Of Three Categories" data-url="http://brandontreb.com/app-idea-likely-falls-one-three-categories" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+      <!-- <span class="post-date">27 Jan 2015</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2015-01-27T00:00:00-07:00"><a href="/app-idea-likely-falls-one-three-categories" title="Permalink to Microblog post" class="u-url">Tue, Jan 27, 2015 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/goals-2015">
+          Goals For 2015
+        </a>
+      </h1>
+
+      <p>It cannot be overstated that writing down one’s goals is critical to acheiving them. Pair that with sharing them with others who might help keep you accountable and your probabilty of achieving those goals goes way up.</p>
+
+<p>With this in mind, I have decided to share my 2015 goals here on my blog in hopes that I will do a better job of acheiving them in the new year. I tried to focus on more measurable goals rather than things like “eat better” and “exercise more”.</p>
+
+<p>So, here they are in no particular order.</p>
+
+<p><strong>Professional</strong></p>
+
+<ul>
+  <li>Create a business plan</li>
+  <li>Grow <a href="http://pixegon.com" target="_blank">Pixegon</a> (my mobile consultancy) to 2x 2014 revenue</li>
+  <li>Hire a “director” to help with oversight of current developers</li>
+  <li>Move to a weekly rate instead of hourly</li>
+</ul>
+
+<p><strong>Personal</strong></p>
+
+<ul>
+  <li>Be consistent with morning routine
+    <ul>
+      <li>wake up early, pray, blog, mediate, read Bible, write down <a href="http://zenhabits.net/purpose-your-day-most-important-task/" target="_blank">MITs</a>,</li>
+    </ul>
+  </li>
+  <li>Blog twice a month</li>
+  <li>Grow the blog’s mailing list</li>
+  <li>Take off / reduce workload on Friday’s to spend the day with my family</li>
+  <li>Launch <a href="http://alpha.autumnv.com" target="_blank">Autumn Village</a></li>
+  <li>Give away more than 10% of personal income</li>
+</ul>
+
+<p>This list is definitely not complete, however it’s a good start. I hope to refine it over the coming months and more importantly, stick with it.</p>
+
+<p>What are your 2015 goals? I would love to hear about them in the comments or <a href="mailto://brandon@brandontreb.com">via email</a>.</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="Goals For 2015" data-url="http://brandontreb.com/goals-2015" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+      <!-- <span class="post-date">29 Dec 2014</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2014-12-29T00:00:00-07:00"><a href="/goals-2015" title="Permalink to Microblog post" class="u-url">Mon, Dec 29, 2014 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page4">Older</a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page2">Newer</a>
+    
+  
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

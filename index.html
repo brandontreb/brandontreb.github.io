@@ -5,9 +5,6 @@ title: Home
 
 <div class="posts">
   {% for post in paginator.posts %}
-  {% if post.title.size == 0 %}
-    {% continue %}
-  {% else %}
     <div class="post">
       <h1 class="post-title">
         <a href="{{ site.baseurl }}/{{ post.url | remove_first:'/' }}">
@@ -20,8 +17,7 @@ title: Home
       <footer class="post__footer">
           <small><time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ post.url }}" title="Permalink to Microblog post" class="u-url">{{ post.date | date: "%a, %b %d, %Y at %I:%M%P" }}</time></a></small>
         </footer>
-    </div>
-  {% endif %}
+    </div>  
   {% endfor %}
 </div>
 

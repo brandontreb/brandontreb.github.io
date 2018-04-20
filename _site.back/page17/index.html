@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="description" content="Some Thoughts On Software Development Consulting">
+  <meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+  <meta name="author" content="Brandon Trebitowski">
+
+  <link rel="micropub" href="https://brandontreb-blog.herokuapp.com/micropub/main">
+  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+  <link href="https://twitter.com/brandontreb" rel="me">
+  <link href="http://github.com/brandontreb" rel="me">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      brandontreb.com &middot; Tips And Resources For Software Consultants
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-381854-9', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A blog about software development consulting</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+
+    <!-- <a class="sidebar-nav-item" href="/archive/v1.0.0.zip">Download</a>
+    <a class="sidebar-nav-item" href="">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v1.0.0</span> -->
+
+    <!--
+            Recent Posts
+            On my homepage I like to include a recent posts section to entice people click through and read, and also to have no content on the homepage every time I write an article. Important part of SEO!
+            You can easily change this to suit your site. Maybe you want 3 posts, instead of 2 or more words in the snippet.
+    -->
+
+    <span class="sidebar-nav-item">Subscribe: <a href="http://feeds.feedburner.com/brandontreb">RSS</a> | <a href="http://eepurl.com/bnryI5">Email</a></span>
+    <a class="sidebar-nav-item" href="/micro">Micro Blog</a>
+    <a class="sidebar-nav-item" href="http://linkedin.com/in/brandontreb">Linked In</a>
+    <a class="sidebar-nav-item" href="http://twitter.com/brandontreb">Twitter</a>
+    <a class="sidebar-nav-item" href="http://pixegon.com/more-works">Portfolio</a>
+
+    <span class="sidebar-nav-item">Recent Posts
+    
+      
+        
+      
+        
+      
+        <a class="sidebar-nav-item" href="/trying-something-new">Trying Something New</a>
+    
+      
+        <a class="sidebar-nav-item" href="/how-creating-a-call-flow-helps-sales-calls">How Creating A Call Flow Can Help Your Software Sales Calls</a>
+    
+    </span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2018. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">brandontreb.com</a>
+            <small>Tips And Resources For Software Consultants</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="posts">
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/appblogger-a-tool-for-ios-app-developers-and-bloggers">
+          AppBlogger: A Tool For iOS App Developers And Bloggers
+        </a>
+      </h1>
+
+      <p>Imagine that you have just found the coolest app in the world and just can’t wait to tell all of your followers about it. So, you head to the admin panel of your blogging engine (hopefully <a href="http://wpwithlove.com">WordPress</a>) and begin to write your review. Now, you want to insert some screenshots, icons, descriptions, app store links, etc… So, what do you do? You head on over to Bing and type in google.com. Next, you search your app name and hopefully find the iTunes URL so that you can slowly grab some information about the app. <span style="color: #ff0000;">#Fail</span></p>
+
+<p>Dum duh dum duh (trumpet noises)!</p>
+
+<p>Enter <a href="http://brandontreb.com/apps/appBlogger" target="_blank">AppBlogger</a>. <a href="http://brandontreb.com/apps/appBlogger" target="_blank">AppBlogger</a> is a little tool that I have been working on that uses “Instant Search” technology (jquery fanciness) to allow you to instantly search the app store and <strong>quickly</strong> get the information you need.</p>
+
+<p><a href="http://brandontreb.com/apps/appBlogger/"><img class="alignnone size-full wp-image-1383" title="Screen shot 2011-01-13 at 7.17.04 PM" src="http://brandontreb.com/wp-content/uploads/2011/01/Screen-shot-2011-01-13-at-7.17.04-PM.png" alt="" width="539" height="468" /></a></p>
+
+<p><strong>How Does It Work?</strong> (you say)</p>
+
+<p>As you start typing, <a href="http://brandontreb.com/apps/appBlogger/" target="_blank">AppBlogger</a> makes an asynchronous request to the iTunes web service and pulls a list of applications that match your search terms. This list is presented as a bunch of icons. You will then click on one of these icons to pull of the details page of that application.</p>
+
+<p><img class="size-full wp-image-1387 alignleft" title="Screen shot 2011-01-13 at 7.25.52 PM" src="http://brandontreb.com/wp-content/uploads/2011/01/Screen-shot-2011-01-13-at-7.25.52-PM.png" alt="" width="219" height="227" /></p>
+
+<p>The details page (see above screenshot) then contains everything you need to write a stellar blog post about that application. It provides text fields (for easy copy and paste) with icon URLs, download URL, and screenshot URLs.</p>
+
+<p>I have some plans to integrate this in the <em>near</em> future with my <a href="http://brandontreb.com/apps/linkshare">Link Share</a> tool to auto generate shortened URLs that contain your affiliate code (so you can make $). If you have any other suggestions for it, I would love to hear them.</p>
+
+<p>I know many of you are heartbroken and were expecting the next iteration of my <a href="http://brandontreb.com/creating-a-twitter-client-for-osx-part-1/">Twitter Client For Mac</a> series. I want you to know, you are not forgotten and I will continue the series next Thursday. So Stay Tuned!</p>
+
+<p>Check out <a href="http://brandontreb.com/apps/appBlogger">AppBlogger</a>!</p>
+
+<div style="font-family: ‘Lucida Grande’;">
+  <span style="font-family: ‘Lucida Grande’;"><strong><span style="font-weight: normal;"><span style="font-family: arial, verdana, tahoma, sans-serif; font-size: 13px; line-height: 20px;"><em>﻿﻿This post is part of <a style="text-decoration: none; color: #004199; padding: 0px; margin: 0px;" href="http://idevblogaday.com/">iDevBlogADay</a>, a group of indie iOS development blogs featuring two posts per day. You can keep up with iDevBlogADay through the <a style="text-decoration: none; color: #004199; padding: 0px; margin: 0px;" href="http://idevblogaday.com/">web site</a>, <a style="text-decoration: none; color: #004199; padding: 0px; margin: 0px;" href="http://feeds.feedburner.com/idevblogaday">RSS feed</a>, or <a style="text-decoration: none; color: #004199; padding: 0px; margin: 0px;" href="http://twitter.com/#search?q=%23idevblogaday">Twitter</a>.</em></span></span></strong></span>
+</div>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="AppBlogger: A Tool For iOS App Developers And Bloggers" data-url="http://brandontreb.com/appblogger-a-tool-for-ios-app-developers-and-bloggers" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+      <!-- <span class="post-date">13 Jan 2011</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2011-01-13T00:00:00-07:00"><a href="/appblogger-a-tool-for-ios-app-developers-and-bloggers" title="Permalink to Microblog post" class="u-url">Thu, Jan 13, 2011 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/image-manipulation-retrieving-and-updating-pixel-values-for-a-uiimage">
+          Image Manipulation: Retrieving And Updating Pixel Values For A UIImage
+        </a>
+      </h1>
+
+      <div id="attachment_1371" class="wp-caption alignright" style="width: 410px">
+  <a href="http://brandontreb.com/wp-content/uploads/2011/01/jobs.png"><img class="size-full wp-image-1371 " title="jobs" src="http://brandontreb.com/wp-content/uploads/2011/01/jobs.png" alt="" width="400" height="224" /></a> 
+  
+  <p class="wp-caption-text">
+    Grayscale Jobs
+  </p>
+</div>
+
+<p>With the recent success of cool photo manipulation apps such as Camera+ and Instagram, it got me wondering. How do these photo apps modify the pixel data of the image.</p>
+
+<p>After doing a bit of research on the subject, I found countless posts on Stack Overflow and the Developer forums about various methods to get and set the pixel values of a UIImage. Most of them unanswered or partially answered. I tested out many solutions and banged my head on my computer into the whee hours of the morning with no success. Every solution I tried seemed to completely destroy the image.</p>
+
+<p>It wasn’t until this morning, I had an “aha” moment, changed one line of code and was able to produce a grayscale version of a UIImage.</p>
+
+<p>Having the ability to get and set pixel values of a UIImage is super important if you want to create a photo related app that has “Filters”. Once you know the basics, you can apply your ninja math skillz to implement cool filter algorithms on the pixels. Below, I will show you onc such algorithm for converting an image to grayscale (it’s not <em>that</em> clever).</p>
+
+<p>I should note, that a good majority of my code comes from Olie’s solution on this <a href="http://stackoverflow.com/questions/448125/how-to-get-pixel-data-from-a-uiimage-cocoa-touch-or-cgimage-core-graphics">Stack Overflow post</a>. His example simply returns and array of UIColor objects for a given image. Mine will modify those colors and write them back to a UIImage.</p>
+
+<h4 id="converting-a-uiimage-into-a-pixel-array">Converting A UIImage Into A Pixel Array</h4>
+
+<p>Here is the first part of our grayscale method. It is creating a char array from a global UIImage property named workingImage.</p>
+
+<div>
+  <pre>&lt;code class=’objc’&gt;- (IBAction) grayscale:(id) sender {
+    CGContextRef ctx;
+    CGImageRef imageRef = [self.workingImage CGImage];
+    NSUInteger width = CGImageGetWidth(imageRef);
+    NSUInteger height = CGImageGetHeight(imageRef);
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    unsigned char *rawData = malloc(height * width * 4);
+    NSUInteger bytesPerPixel = 4;
+    NSUInteger bytesPerRow = bytesPerPixel * width;
+    NSUInteger bitsPerComponent = 8;
+    CGContextRef context = CGBitmapContextCreate(rawData, width, height,
+    bitsPerComponent, bytesPerRow, colorSpace,
+    kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
+    CGColorSpaceRelease(colorSpace);
+
+    CGContextDrawImage(context, CGRectMake(0, 0, width, height), imageRef);
+    CGContextRelease(context);
+    .
+    .
+    .&lt;/code&gt;</pre>
+</div>
+
+<p>This is a lot of Core Graphics fanciness that isn’t super important to understand. It’s just getting the RGBA values from the image and writing them into the rawData char array. There are 4 bytes per pixel (red, green, blue, alpha), so this array contains 4 * height * width elements.</p>
+
+<h4 id="modifying-the-pixels-of-a-uiimage">Modifying The Pixels of a UIImage</h4>
+
+<p>Here is where the magic happens. You can replace this code with the logic necessary to apply the filter you are making. Another clever way to approach this would be to pass this code in as a block into the method (I’ll leave that as an exercise for the reader :)).</p>
+
+<div>
+  <pre>&lt;code class=’objc’&gt;.
+.
+.
+    int byteIndex = 0;
+    for (int ii = 0 ; ii &lt; width * height ; ++ii)
+    {
+    int outputColor = (rawData[byteIndex] + rawData[byteIndex+1] +
+        rawData[byteIndex+2]) / 3;
+
+    rawData[byteIndex] = (char) (outputColor);
+    rawData[byteIndex+1] = (char) (outputColor);
+    rawData[byteIndex+2] = (char) (outputColor);
+
+        byteIndex += 4;
+    }
+
+.
+.
+.&lt;/code&gt;</pre>
+</div>
+
+<p>The first part is pretty straight forward, we have a for loop that goes from 0 to width * height. We index into the rawData array using a counter that we increment by 4 each time (remember 4 bytes per pixel). As you can imagine, the first pixel (rawData[byteIndex]) represents the red pixel, then green for +1, blue for +2, and finally alpha for +3. Note that the alpha byte is last because kCGImageAlphaPremultipliedLast flag above.</p>
+
+<p>In order to do grayscale, we simple set all of the color values to the average color value. So, for example the color [218,232,244] (which is the light blue color of the WordPress editor’s toolbar) would be converted to [231,231,231] which is a fairly light gray color.</p>
+
+<p>The most important step that everyone in the forums seemed to miss was casting the new value to a char. Remember we are using a char array, setting ints as values will generally screw up your image. (This was my “aha” moment that I mentioned above)</p>
+
+<h4 id="writing-the-pixels-back-to-a-uiimage">Writing The Pixels Back To a UIImage</h4>
+
+<p>The final step is to write the pixel data back to a UIImage. Again, I borrowed some of this code from somewhere else and unfortunately lost the link. If I find it, I will update the post.</p>
+
+<div>
+  <pre>&lt;code class=’objc’&gt;.
+.
+.
+    ctx = CGBitmapContextCreate(rawData,
+        CGImageGetWidth( imageRef ),
+        CGImageGetHeight( imageRef ),
+        8,
+        CGImageGetBytesPerRow( imageRef ),
+        CGImageGetColorSpace( imageRef ),
+        kCGImageAlphaPremultipliedLast ); 
+
+    imageRef = CGBitmapContextCreateImage (ctx);
+    UIImage* rawImage = [UIImage imageWithCGImage:imageRef];  
+
+    CGContextRelease(ctx);  
+
+    self.workingImage = rawImage;  
+
+    free(rawData);
+}&lt;/code&gt;</pre>
+</div>
+
+<p>All we are doing here is creating a new Bitmap Context, writing it to our CGImageRef and constructing a new UIImage from that CGImageRef. Finally, we just update our workingImage with the modified one. Fancy, I know…</p>
+
+<p>Now, much of this code is to work with my example (download below), but it could easily be tweaked to fit within your super awesome photo app. If you have any questions or comments PLEASE leave them here or send them to me on Twitter (but probably leave them here 😉 ).</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2011/01/ImageManip.zip">Download The Sample Source Project</a></p>
+
+<ul>
+  <li>Note on the sample code: Before you give me crap about doing this in the main thread, I know. Don’t do these operation on the main thread. The example is meant to be quick and dirty and by no means is ready for production. Enjoy!</li>
+</ul>
+
+<p><span style="font-family: ‘Lucida Grande’;"><strong><span style="font-weight: normal;"><span style="font-family: arial, verdana, tahoma, sans-serif; font-size: 13px; line-height: 20px;"><em>﻿﻿This post is part of <a style="text-decoration: none; color: #004199; padding: 0px; margin: 0px;" href="http://idevblogaday.com/">iDevBlogADay</a>, a group of indie iOS development blogs featuring two posts per day. You can keep up with iDevBlogADay through the <a style="text-decoration: none; color: #004199; padding: 0px; margin: 0px;" href="http://idevblogaday.com/">web site</a>, <a style="text-decoration: none; color: #004199; padding: 0px; margin: 0px;" href="http://feeds.feedburner.com/idevblogaday">RSS feed</a>, or <a style="text-decoration: none; color: #004199; padding: 0px; margin: 0px;" href="http://twitter.com/#search?q=%23idevblogaday">Twitter</a>.</em></span></span></strong></span></p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="Image Manipulation: Retrieving And Updating Pixel Values For A UIImage" data-url="http://brandontreb.com/image-manipulation-retrieving-and-updating-pixel-values-for-a-uiimage" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+      <!-- <span class="post-date">06 Jan 2011</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2011-01-06T00:00:00-07:00"><a href="/image-manipulation-retrieving-and-updating-pixel-values-for-a-uiimage" title="Permalink to Microblog post" class="u-url">Thu, Jan 06, 2011 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/pimp-wallpaper">
+          [Pi]mp Wallpaper
+        </a>
+      </h1>
+
+      <div id="attachment_1351" class="wp-caption alignnone" style="width: 548px">
+  <a href="http://brandontreb.com/wp-content/uploads/2011/01/MvTPa.jpg"><img class="size-full wp-image-1351  " title="MvTPa" src="http://brandontreb.com/wp-content/uploads/2011/01/MvTPa.jpg" alt="" width="538" height="336" /></a> 
+  
+  <p class="wp-caption-text">
+    Found on Reddit
+  </p>
+</div>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="[Pi]mp Wallpaper" data-url="http://brandontreb.com/pimp-wallpaper" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+      <!-- <span class="post-date">03 Jan 2011</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2011-01-03T00:00:00-07:00"><a href="/pimp-wallpaper" title="Permalink to Microblog post" class="u-url">Mon, Jan 03, 2011 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/what-does-your-workspace-look-like">
+          What Does Your Workspace Look Like?
+        </a>
+      </h1>
+
+      <p>I am always very fascinated with the workspaces of others and frequently check out Lifehacker’s posts on their <a href="http://lifehacker.com/tag/featured-workspace/">featured workspaces</a>. So, for this iDevBlogADay post, I thought I would keep it short and simple with a request. I want to see (and I’m sure others do too) photos of YOUR workspaces (especially those of you with s<a href="http://gamesfromwithin.com/my-standing-desk-experiment">tanding desks</a>).</p>
+
+<p>Seeing someone’s work area is especially inspring to me, I love seeing where others create and what they surround themselves with for inspiration and motivation.</p>
+
+<p>So, I’ll start by sharing a photo of my current workspace. This is where the magic happens…</p>
+
+<p><img class="alignnone size-full wp-image-1341" title="image" src="http://brandontreb.com/wp-content/uploads/2010/12/image.jpeg" alt="" width="548" height="409" /></p>
+
+<p>Within my workspace, you will find:</p>
+
+<ul>
+  <li>Macbook Pro</li>
+  <li>24” Apple LED Display</li>
+  <li>iPad with Kensington Keyboard Case</li>
+  <li>Logitec Speakers</li>
+  <li>“Just Like Jesus” Daily Devotional</li>
+  <li>Embark (Target Brand) Fitness Ball</li>
+  <li>Apple wireless keyboard and Magic Mouse</li>
+  <li>Bonsai Tree (coming soon <img src="http://brandontreb.com/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /> )</li>
+</ul>
+
+<p>So there you have, this is my workspace. Please post a link to your workspace photos or email them to brandontreb [at] gmail [dot] com and I will append them to this post. I can’t wait!</p>
+
+<p>Update: Here are some workspaces submitted by readers so far:</p>
+
+<div class="wp-caption alignnone" style="width: 508px">
+  <img class="  " title="Roaming Gamer" src="http://roaminggamer.com/wp-content/uploads/2010/12/myWorkspace.jpg" alt="" width="498" height="374" /> 
+  
+  <p class="wp-caption-text">
+    Submitted by Roaming Gamer
+  </p>
+</div>
+
+<div class="wp-caption alignnone" style="width: 517px">
+  <img class="     " title="Wayne D" src="http://cl.ly/1f08221S1I0s27370b0i/workspaceWKD.jpg" alt="" width="507" height="339" /> 
+  
+  <p class="wp-caption-text">
+    Submitted by Wayne D
+  </p>
+</div>
+
+<div class="wp-caption alignnone" style="width: 488px">
+  <img title="dwsjoquist" src="http://desmond.yfrog.com/Himg619/scaled.php?tn=0&amp;server=619&amp;filename=8jael.jpg&amp;xsize=640&amp;ysize=640" alt="" width="478" height="640" /> 
+  
+  <p class="wp-caption-text">
+    Submitted by dwsjoquist
+  </p>
+</div>
+
+<div class="wp-caption alignnone" style="width: 485px">
+  <img class="    " title="zzelladonatella" src="http://s3.amazonaws.com/twitpic/photos/large/217685907.jpg?AWSAccessKeyId=0ZRYP5X5F6FSMBCCSE82&amp;Expires=1294094520&amp;Signature=EFY%2B%2Bl4BAieFdfo124GAnn0%2FLZs%3D" alt="" width="475" height="634" /> 
+  
+  <p class="wp-caption-text">
+    Submitted by zzelladonatella
+  </p>
+</div>
+
+<div class="wp-caption alignnone" style="width: 490px">
+  <img class=" " title="beninati" src="http://desmond.yfrog.com/Himg610/scaled.php?tn=0&amp;server=610&amp;filename=0nt6.jpg&amp;xsize=640&amp;ysize=640" alt="" width="480" height="358" /> 
+  
+  <p class="wp-caption-text">
+    Submitted by beninati
+  </p>
+</div>
+
+<p><span style="font-family: ‘Lucida Grande’;"><strong><span style="font-weight: normal;"><span style="font-family: arial, verdana, tahoma, sans-serif; font-size: 13px; line-height: 20px;"><em>﻿﻿This post is part of <a style="text-decoration: none; color: #004199; padding: 0px; margin: 0px;" href="http://idevblogaday.com/">iDevBlogADay</a>, a group of indie iOS development blogs featuring two posts per day. You can keep up with iDevBlogADay through the <a style="text-decoration: none; color: #004199; padding: 0px; margin: 0px;" href="http://idevblogaday.com/">web site</a>, <a style="text-decoration: none; color: #004199; padding: 0px; margin: 0px;" href="http://feeds.feedburner.com/idevblogaday">RSS feed</a>, or <a style="text-decoration: none; color: #004199; padding: 0px; margin: 0px;" href="http://twitter.com/#search?q=%23idevblogaday">Twitter</a>.</em></span></span></strong></span></p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="What Does Your Workspace Look Like?" data-url="http://brandontreb.com/what-does-your-workspace-look-like" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+      <!-- <span class="post-date">30 Dec 2010</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2010-12-30T00:00:00-07:00"><a href="/what-does-your-workspace-look-like" title="Permalink to Microblog post" class="u-url">Thu, Dec 30, 2010 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/free-app-per-day-service">
+          Free App Per Day Service
+        </a>
+      </h1>
+
+      <p style="text-align: center;">
+  <img class="alignnone size-full wp-image-1336" title="free" src="http://brandontreb.com/wp-content/uploads/2010/12/free.jpeg" alt="" width="400" height="300" />
+</p>
+
+<p>As many of you may know, I created a site called <a href="http://freshapps.com">Fresh Apps</a>. This site started as sort of a Digg for developer submitted iPhone apps. Since then, we have added plenty of new features and have grown a community of over 10,000 iPhone users.</p>
+
+<p>Recently, I have noticed a few services sprout up that basically have a schedule of apps that shift from paid to free for a given day. The most notable being <a href="http://freeappaday.com">Free App A Day</a>.</p>
+
+<p>After doing some research, sites such as these are charging a significant amount of money (I have heard up to $10,000) for a 1 day feature.</p>
+
+<p>So, I was curious, given our user base, what do you (fellow iOS) developers think of FreshApps offering a similar service? If we did offer a similar service, here are some questions I have (and would love your feedback).</p>
+
+<ol>
+  <li>How would you change existing services? What new features would you like to see? what features are worthless?</li>
+  <li>How much would you pay for such a feature?</li>
+  <li>Would you be interested in having your app featured the first month for a minimal cost ($1 or so)?</li>
+  <li>Would you use an iPhone app that lists the upcoming paid to free apps?</li>
+</ol>
+
+<p>Thank you all so much for your feedback. I’m just in the brainstorming time of this, but I will totally keep you up to date if anything comes of it.</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="Free App Per Day Service" data-url="http://brandontreb.com/free-app-per-day-service" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+      <!-- <span class="post-date">28 Dec 2010</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2010-12-28T00:00:00-07:00"><a href="/free-app-per-day-service" title="Permalink to Microblog post" class="u-url">Tue, Dec 28, 2010 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page18">Older</a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page16">Newer</a>
+    
+  
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

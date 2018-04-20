@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="description" content="Some Thoughts On Software Development Consulting">
+  <meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+  <meta name="author" content="Brandon Trebitowski">
+
+  <link rel="micropub" href="https://brandontreb-blog.herokuapp.com/micropub/main">
+  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+  <link href="https://twitter.com/brandontreb" rel="me">
+  <link href="http://github.com/brandontreb" rel="me">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      brandontreb.com &middot; Tips And Resources For Software Consultants
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-381854-9', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A blog about software development consulting</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+
+    <!-- <a class="sidebar-nav-item" href="/archive/v1.0.0.zip">Download</a>
+    <a class="sidebar-nav-item" href="">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v1.0.0</span> -->
+
+    <!--
+            Recent Posts
+            On my homepage I like to include a recent posts section to entice people click through and read, and also to have no content on the homepage every time I write an article. Important part of SEO!
+            You can easily change this to suit your site. Maybe you want 3 posts, instead of 2 or more words in the snippet.
+    -->
+
+    <span class="sidebar-nav-item">Subscribe: <a href="http://feeds.feedburner.com/brandontreb">RSS</a> | <a href="http://eepurl.com/bnryI5">Email</a></span>
+    <a class="sidebar-nav-item" href="/micro">Micro Blog</a>
+    <a class="sidebar-nav-item" href="http://linkedin.com/in/brandontreb">Linked In</a>
+    <a class="sidebar-nav-item" href="http://twitter.com/brandontreb">Twitter</a>
+    <a class="sidebar-nav-item" href="http://pixegon.com/more-works">Portfolio</a>
+
+    <span class="sidebar-nav-item">Recent Posts
+    
+      
+        
+      
+        
+      
+        <a class="sidebar-nav-item" href="/trying-something-new">Trying Something New</a>
+    
+      
+        <a class="sidebar-nav-item" href="/how-creating-a-call-flow-helps-sales-calls">How Creating A Call Flow Can Help Your Software Sales Calls</a>
+    
+    </span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2018. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">brandontreb.com</a>
+            <small>Tips And Resources For Software Consultants</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="posts">
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/albuquerque-marathon-training">
+          Albuquerque Marathon Training
+        </a>
+      </h1>
+
+      <p><img class="alignright" title="albuquerque-marathon" src="http://www.active.com/images/upimages/Logo554.jpg" alt="" width="288" height="288" />Well, I have finally decided to put my money where my mouth is when it comes to fitness and train up for a half marathon! The marathon I’m training for is the <a href="http://www.active.com/running/albuquerque-nm/albuquerque-half-marathon-2011">Albuquerque Half Marathon</a> on Saturday, April 16th at 8 am (that logo is such an eyesore).</p>
+
+<p>Two months seems like a relatively short time to prepare, especially for my first “real” run, however I am just aiming to finish rather than being competitive. Right now, I am running about 3-4 miles per day with a longer day of ~5 miles. As the weeks pass, I intend on upping that to ~5 miles/day with a longer run at about 10 miles.</p>
+
+<p>If any of you are training for something similar, I would love any advice, feedback, criticism, encouragement, stories, etc… that you have. Just post em in the comments.</p>
+
+<p>Also, for those of you who are on <strong>nike+</strong>, please befriend me. My username is (you guessed it) <strong>brandontreb</strong>.</p>
+
+<p>I’m very excited about this goal and will be blogging along the way (amidst my other coding related posts of course).</p>
+
+<p><strong>It’s a long road ahead 😉</strong></p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="Albuquerque Marathon Training" data-url="http://brandontreb.com/albuquerque-marathon-training" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+      <!-- <span class="post-date">21 Feb 2011</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2011-02-21T00:00:00-07:00"><a href="/albuquerque-marathon-training" title="Permalink to Microblog post" class="u-url">Mon, Feb 21, 2011 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/tweet-press-3-2-update-sidebar-widget">
+          Tweet Press 3.2 Update &#8211; Sidebar Widget
+        </a>
+      </h1>
+
+      <p>I have recently had an overwhelming number of requests for a sidebar widget that displays your recent Tweetpress photos. Well, it’s finally here! The update was actually quite trivial to make. If I had known how simple it would be, I would have made it months ago.</p>
+
+<p>Make sure you update to the latest version: <a href="http://wordpress.org/extend/plugins/tweetpress/">tweetpress 3.2</a></p>
+
+<p><strong>How to use it</strong><br />
+In the WordPress admin, click on Appearance and the Widgets from the sidebar menu. If your theme supports widgets (which is should), you will see a Tweetpress widget in the available widgets list.</p>
+
+<p>Next drag that widget into the sidebar area and modify the settings.</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2011/02/20110216-065023.jpg"><img src="http://brandontreb.com/wp-content/uploads/2011/02/20110216-065023.jpg" alt="" class="alignnone size-full" /></a></p>
+
+<p>You can configure the title of the widget as well as the number of photos to be displayed. Please comment here or shoot me an email if you experience any issues with it. I’m also open to suggestions.</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="Tweet Press 3.2 Update - Sidebar Widget" data-url="http://brandontreb.com/tweet-press-3-2-update-sidebar-widget" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+      <!-- <span class="post-date">16 Feb 2011</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2011-02-16T00:00:00-07:00"><a href="/tweet-press-3-2-update-sidebar-widget" title="Permalink to Microblog post" class="u-url">Wed, Feb 16, 2011 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/its-elementary-my-dear-watson">
+          It&#8217;s Elementary My Dear Watson
+        </a>
+      </h1>
+
+      <div class="wp-caption aligncenter" style="width: 577px">
+  <img title="watson" src="http://cdn.venturebeat.com/wp-content/uploads/2011/01/watson-ai-jeopardy.jpg" alt="" width="567" height="331" /> 
+  
+  <p class="wp-caption-text">
+    IBM's Watson on Jeopardy
+  </p>
+</div>
+
+<p style="text-align: left;">
+  Last night marked the beginning of the <a href="http://www-943.ibm.com/innovation/us/watson/">IBM Jeopardy challenge</a>. For those of you who don&#8217;t know, IBM has been working for some time on a system (named Watson) that has overcome some amazing challenges. The goal: to build an entirely self-contained system that can beat the World&#8217;s best Jeopardy players.
+</p>
+
+<p>Now, I’m not going to give you a rundown on it as I’m sure that you can (or have already) read it on a website far more popular than mine. I just wanted to publicly geek out for a second…</p>
+
+<p>I was watching the episode of Jeopardy with my wife, and at first glance she was like “duh, of course a computer could win at Jeopardy”. This made me realize that to a non engineer, this seems like a trivial task since computers are magical Facebook boxes.</p>
+
+<p>Now me on the other hand, I was giddy to the point of almost wetting myself. Seeing how far we have come in AI development and language processing is absolutely incredible.</p>
+
+<p>I for one, will be glued to my tv tonight to watch Watson’s next round of Jeopardy.</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="It&#8217;s Elementary My Dear Watson" data-url="http://brandontreb.com/its-elementary-my-dear-watson" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+      <!-- <span class="post-date">15 Feb 2011</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2011-02-15T00:00:00-07:00"><a href="/its-elementary-my-dear-watson" title="Permalink to Microblog post" class="u-url">Tue, Feb 15, 2011 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/case-of-the-mondays">
+          Case Of The Mondays
+        </a>
+      </h1>
+
+      <div id="attachment_1421" class="wp-caption alignright" style="width: 330px">
+  <a href="http://brandontreb.com/wp-content/uploads/2011/02/office-spacejpg.jpeg"><img class="size-full wp-image-1421 " title="office-spacejpg" src="http://brandontreb.com/wp-content/uploads/2011/02/office-spacejpg.jpeg" alt="" width="320" height="240" /></a> 
+  
+  <p class="wp-caption-text">
+    Mondays&#8230;
+  </p>
+</div>
+
+<p>The other day, I was faced with an interesting programming challenge and wanted to share my solution. I just submitted a pretty interesting app to the app store that does a number of things (more details soon). Among those things is the ability to generate a calendar.</p>
+
+<h4 id="the-problem">The Problem</h4>
+
+<p>Generating the calendar was the easy part, however when displayed, I wanted it to highlight every Monday of the month. This turned out to be a bit trickier than I imagined.</p>
+
+<p>Really the main challenge here was to determine which day contained the <em>first</em> Monday of the month. After that, we just loop incrementing by 7 and are done.</p>
+
+<h4 id="looking-at-the-date-helpers">Looking At The Date Helpers</h4>
+
+<p>Looking at what I had to work with in NSDate, NSCalendar, and NSDateComponents, I really found only 2 things that could help me. From NSDateComponents, I could figure out the current day (numeric) and the current day of the week (numeric). Knowing this information was very important.</p>
+
+<h4 id="the-solution">The Solution</h4>
+
+<p>Having the current day and day of the week allowed me to find the date of the Monday on the current week. This was the first challenge as demonstrated below. Assume weekdayComponents is the NSDateComponents generated from the current date.</p>
+
+<div>
+  <pre>&lt;code class=’objc’&gt;NSInteger weekday = [weekdayComponents weekday];
+NSInteger day         = [weekdayComponents day];
+
+// First, find how many days we are from Monday
+int daysAwayFromMonday = weekday - 2;
+
+// Now resolve the monday of this week
+int mondayThisWeek = day - daysAwayFromMonday;
+
+// Check if monday this week falls in last month
+if(mondayThisWeek &lt;= 0) {
+    mondayThisWeek = day + (7 - daysAwayFromMonday);
+}&lt;/code&gt;</pre>
+</div>
+
+<p>mondayThisWeek will now contain the day number of the Monday of the current week. If that Monday falls on the previous month, mondayThisWeek will be negative. Line 12 resolves that by carrying it into next week.</p>
+
+<p>Finally, we just loop subtracting 7 from that Monday until mondayThisWeek is less than 7 to get the first Monday of the month.</p>
+
+<div>
+  <pre>&lt;code class=’objc’&gt;while(mondayThisWeek &gt; 7) {
+    mondayThisWeek -= 7;
+}&lt;/code&gt;</pre>
+</div>
+
+<p>And there you have it. mondayThisWeek (improperly named at this point) will contain the day number of the first Monday for the current month.</p>
+
+<p>So, this was quite a round-a-bout way to find this value. If you have a better solution, please feel free to trash on mine in the comments 😉 .</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="Case Of The Mondays" data-url="http://brandontreb.com/case-of-the-mondays" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+      <!-- <span class="post-date">14 Feb 2011</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2011-02-14T00:00:00-07:00"><a href="/case-of-the-mondays" title="Permalink to Microblog post" class="u-url">Mon, Feb 14, 2011 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/farewell-for-now-idevblogaday">
+          Farewell (For Now) iDevBlogADay
+        </a>
+      </h1>
+
+      <p style="text-align: center;">
+  <a href="http://brandontreb.com/wp-content/uploads/2011/01/44696226_farewell_ap466.jpeg"><img class="alignnone size-full wp-image-1407" title="_44696226_farewell_ap466" src="http://brandontreb.com/wp-content/uploads/2011/01/44696226_farewell_ap466.jpeg" alt="" width="466" height="300" /></a>
+</p>
+
+<p>Hey guys,</p>
+
+<p>I wanted to thank everyone for letting me be a part of the iDevBlogADay community. You guys have been super supportive and I really appreciate all of the commenting, retweeting, and upvoting of my iDevBlogADay articles.</p>
+
+<p>I have found myself in a position with life (work + family) where I may no longer be able to consistently write a post per week. So, after 2 months of writing, it is time for me to pass the torch to the next blogger on the list.</p>
+
+<p>I will still continue to blog (and continue my Twitter For Mac Series), so I really encourage you to subscribe to my <a href="http://feeds2.feedburner.com/brandontreb">RSS feed</a> (or <a href="http://twitter.com/brandontreb">Twitter feed</a>).</p>
+
+<p>Thanks again and Happy Coding!</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="Farewell (For Now) iDevBlogADay" data-url="http://brandontreb.com/farewell-for-now-idevblogaday" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+      <!-- <span class="post-date">20 Jan 2011</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2011-01-20T00:00:00-07:00"><a href="/farewell-for-now-idevblogaday" title="Permalink to Microblog post" class="u-url">Thu, Jan 20, 2011 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page17">Older</a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page15">Newer</a>
+    
+  
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="description" content="Some Thoughts On Software Development Consulting">
+  <meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+  <meta name="author" content="Brandon Trebitowski">
+
+  <link rel="micropub" href="https://brandontreb-blog.herokuapp.com/micropub/main">
+  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+  <link href="https://twitter.com/brandontreb" rel="me">
+  <link href="http://github.com/brandontreb" rel="me">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Software Development Consulting: Some Tips On Structuring Your Contracts &middot; brandontreb.com
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-381854-9', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A blog about software development consulting</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+
+    <!-- <a class="sidebar-nav-item" href="/archive/v1.0.0.zip">Download</a>
+    <a class="sidebar-nav-item" href="">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v1.0.0</span> -->
+
+    <!--
+            Recent Posts
+            On my homepage I like to include a recent posts section to entice people click through and read, and also to have no content on the homepage every time I write an article. Important part of SEO!
+            You can easily change this to suit your site. Maybe you want 3 posts, instead of 2 or more words in the snippet.
+    -->
+
+    <span class="sidebar-nav-item">Subscribe: <a href="http://feeds.feedburner.com/brandontreb">RSS</a> | <a href="http://eepurl.com/bnryI5">Email</a></span>
+    <a class="sidebar-nav-item" href="/micro">Micro Blog</a>
+    <a class="sidebar-nav-item" href="http://linkedin.com/in/brandontreb">Linked In</a>
+    <a class="sidebar-nav-item" href="http://twitter.com/brandontreb">Twitter</a>
+    <a class="sidebar-nav-item" href="http://pixegon.com/more-works">Portfolio</a>
+
+    <span class="sidebar-nav-item">Recent Posts
+    
+      
+        
+      
+        
+      
+        <a class="sidebar-nav-item" href="/trying-something-new">Trying Something New</a>
+    
+      
+        <a class="sidebar-nav-item" href="/how-creating-a-call-flow-helps-sales-calls">How Creating A Call Flow Can Help Your Software Sales Calls</a>
+    
+    </span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2018. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">brandontreb.com</a>
+            <small>Tips And Resources For Software Consultants</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  
+  <h1 class="post-title">Software Development Consulting: Some Tips On Structuring Your Contracts</h1>
+  
+  
+  <p>When I first started out as an independent software developer, one of things that stressed me out the most was how to structure contracts that I sent to clients.  Working for a consultancy in my previous work-life I had seen contracts before, however, I never really paid enough attention to them to know what type of content went into them.</p>
+
+<p>After quite a bit of research, I found an invaluable resource.  Over at techrepublic.com, Chip Camden posted a beautifully crafted consulting contract template.  You can see the post and download the template <a href="http://www.techrepublic.com/blog/it-consultant/customizable-it-consultant-sample-contract/">here</a>.  This post was a lifesaver.</p>
+
+<p>Chip goes over EVERY single section of the contract and gives an explanation of why it’s there.  You can download the template and determine which sections you need for your business, based on his explanations.  It doesn’t get much easier than that.  Of course, I would still strongly suggest you fork over a couple hundred bucks and have a lawyer look over the contract before sending it off to clients.</p>
+
+<h4 id="how-to-sign-contracts-online">How To Sign Contracts Online</h4>
+
+<p>Once you have your contract in place, you will need a way to get your clients to sign it.  You could go the old-fashioned way of scanning, both parties signing, and scanning again OR you could use an online signature service.  One that I use and highly recommend is <a href="https://rightsignature.com">RightSignature</a>. I know those guys personally and have had a great experience with the service so far.</p>
+
+<h4 id="here-is-my-process">Here is my process:</h4>
+
+<p>This is what I have found works out well for my business.  #proTip: I have my assistant do this now 😉</p>
+
+<ol>
+  <li>Complete the contract blanks in regards to rates or any other information you want the client to see before they sign the contract.</li>
+  <li>Upload the contract template to Google Drive (optional).  Make sure your company info is completed and all of the other fields (dates, signatures, etc…) are blanked out.</li>
+  <li>Once inside of your RightSignature account, you can connect to your Google Drive and import the document in.  You can also upload them directly from your computer if you don’t want to use Google Drive.</li>
+  <li>RightSignature lets you put text fields and date boxes in the blanks and specify who is responsible for filling them out (you or the client).</li>
+  <li>Finally, add the signature fields at the bottom and send off the document for signing.</li>
+  <li>Once every party has filled out the needed information, the completed document is then sent to both parties via email.</li>
+</ol>
+
+<h4 id="other-considerations">Other Considerations</h4>
+
+<p>Often times, the client will have their own contracts for you to sign.  This isn’t necessarily a bad thing.  However, make sure that you read over it carefully and run it by your lawyer.  Don’t try to force your contract on a client that already has their own.  They will usually not be open to this, in my experience.</p>
+
+<p>Make sure to have an ‘exit clause’ in your contract in case things go sour.  I seldom enter into fixed bid contracts so I usually have a clause where either party can cancel the contract with 7 days written notice.  This also makes the client feel at ease as they are not trapped with you in an event where their situation changes.</p>
+
+<p>Finally, be willing to be flexible.  Sometimes clients might not like certain clauses in your contract.  Be willing to change things like delivery dates, invoice dates, invoice periods, rates, etc… on a client to client basis.  Obviously, use your best judgement here.</p>
+
+<h4 id="conclusion">Conclusion</h4>
+
+<p>I hope that you have found this post useful and it saves you some time hunting down a contract template.  I am always open to suggestions so if you see anything else that works for you, I would love to hear about it via email or in the comments.</p>
+
+<p>Please consider <a href="http://eepurl.com/QAAhf">signing up for my email list</a> to get killer posts like this one delivered to your inbox.</p>
+
+<p><em>*Disclaimer: I am not a lawyer and do not claim to be giving any real legal advice.  I am simply stating how I do things with my business.  Make sure to consult with a lawyer before engaging in any contracts.</em></p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="Software Development Consulting: Some Tips On Structuring Your Contracts" data-url="http://brandontreb.com/software-development-consulting-contract-tips" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+  <footer class="post__footer">
+    <small><time class="dt-published" datetime="2014-03-31T00:00:00-06:00">Mon, Mar 31, 2014 at 12:00am</time></small>
+  </footer>
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/11830.html">
+            
+            <small>16 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/48295.html">
+            
+            <small>16 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/trying-something-new">
+            Trying Something New
+            <small>15 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

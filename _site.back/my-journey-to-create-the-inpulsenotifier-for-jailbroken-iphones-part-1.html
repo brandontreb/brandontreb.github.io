@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="description" content="Some Thoughts On Software Development Consulting">
+  <meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+  <meta name="author" content="Brandon Trebitowski">
+
+  <link rel="micropub" href="https://brandontreb-blog.herokuapp.com/micropub/main">
+  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+  <link href="https://twitter.com/brandontreb" rel="me">
+  <link href="http://github.com/brandontreb" rel="me">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      My Journey To Create The inPulseNotifier For Jailbroken iPhones &#8211; Part 1 &middot; brandontreb.com
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-381854-9', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A blog about software development consulting</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+
+    <!-- <a class="sidebar-nav-item" href="/archive/v1.0.0.zip">Download</a>
+    <a class="sidebar-nav-item" href="">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v1.0.0</span> -->
+
+    <!--
+            Recent Posts
+            On my homepage I like to include a recent posts section to entice people click through and read, and also to have no content on the homepage every time I write an article. Important part of SEO!
+            You can easily change this to suit your site. Maybe you want 3 posts, instead of 2 or more words in the snippet.
+    -->
+
+    <span class="sidebar-nav-item">Subscribe: <a href="http://feeds.feedburner.com/brandontreb">RSS</a> | <a href="http://eepurl.com/bnryI5">Email</a></span>
+    <a class="sidebar-nav-item" href="/micro">Micro Blog</a>
+    <a class="sidebar-nav-item" href="http://linkedin.com/in/brandontreb">Linked In</a>
+    <a class="sidebar-nav-item" href="http://twitter.com/brandontreb">Twitter</a>
+    <a class="sidebar-nav-item" href="http://pixegon.com/more-works">Portfolio</a>
+
+    <span class="sidebar-nav-item">Recent Posts
+    
+      
+        
+      
+        
+      
+        <a class="sidebar-nav-item" href="/trying-something-new">Trying Something New</a>
+    
+      
+        <a class="sidebar-nav-item" href="/how-creating-a-call-flow-helps-sales-calls">How Creating A Call Flow Can Help Your Software Sales Calls</a>
+    
+    </span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2018. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">brandontreb.com</a>
+            <small>Tips And Resources For Software Consultants</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  
+  <h1 class="post-title">My Journey To Create The inPulseNotifier For Jailbroken iPhones &#8211; Part 1</h1>
+  
+  
+  <p>Many of you may have seen my tweets or blog posts regarding my development of a native iOS interface for the <a href="http://getinpulse.com">inPulse Watch</a>. I just wanted to share a bit with you about the development process and talk about my updates moving forward.</p>
+
+<h4 id="what-is-the-inpulse-watch">What is the inPulse Watch?</h4>
+
+<p>For those of you who don’t know, the inPulse watch is a programmable wristwatch with a bluetooth controller. It can run a single app at a time on top of it’s firmware that is installed on the watch via a bluetooth interface with your computer. People have written all sorts of apps from analog clocks to roguelikes and Connway’s Game of Life. Check out <a href="http://inpulsewatch.com/watchapps.asp">http://inpulsewatch.com/watchapps.asp</a> to see the latest apps.</p>
+
+<center>
+  <br /> <img src="http://ec2-50-16-103-63.compute-1.amazonaws.com/images/inPulse.png" style="float:left;margin:25px;" width="100" /><br /> <img src="http://inpulsewatch.com/apps/logo14.JPG" style="float:left;margin:25px;" width="100" /><br /> <img src="http://inpulsewatch.com/apps/logo12.jpg" style="float:left;margin:25px;" width="100" /><br />
+</center>
+
+<div style="clear:both">
+  &#038;nbsp
+</div>
+<p>&lt;/p&gt;</p>
+
+<h4 id="it-begins">It Begins</h4>
+
+<p>After waiting about 10 days for my watch (yeah it’s a long waiting period since they have seen quite a bit of recent success), it finally came in the mail. Enthusiastically, I opened it up and followed their <a href="http://www.getinpulse.com/guide/">getting started guide</a>. Within a few minutes I was running some of the sample applications in the forums.</p>
+
+<h4 id="no-ios-support">No iOS Support?</h4>
+
+<p>One of the coolest features of the watch is the ability to have your smartphone notifications show up on it. You are able to read SMS, Email, Calendar, etc… for a wide variety of Blackberry and Android phones.</p>
+
+<p>After digging around a bit, I was disappointed to see that there was limited (no) iPhone support. They had some old file that used BTStack at some point to communicate a simple canned message to the iPhone. No documentation, no support, nada.</p>
+
+<h4 id="building-the-app">Building The App</h4>
+
+<p><img src="http://code.google.com/p/btstack/logo?cct=1278342571" style="float:left;margin:5px;" /></p>
+
+<p>As I had no experience developing for a jailbroken iPhone, I had no idea how to even compile this sample app. So, I used the Google machine and found the <a href="http://code.google.com/p/btstack/">Google repository</a> for BTStack (the bluetooth library of choice for jailbroken iOS apps). I was able to download the source and build a sample application that basically connected my iPhone to a bluetooth device.</p>
+
+<p>Well, this got me started. So I did what any curious developer would do and started plugging crap in. I replaced the sample file that was packaged with BTStack with a slightly modified version of inPulse’s sample iPhone file. Sure enough, I was able to build and install it.</p>
+
+<h4 id="we-have-connection">We Have Connection</h4>
+
+<p>After figuring out how to hardcode my watch’s address into the source, I was able to determine that the iPhone had actually connected to the watch. I monitored the packets and threw up an alert view (No NSLogging available at this point) when a connection was made.</p>
+
+<p>So, now that we are connected, let’s trying sending the sample message…fail! I couldn’t even send the time.</p>
+
+<p>At this point, I decided to move the code I had written into a sample iPhone project so that I could do attached debugging. This showed me that the packets were arriving on the watch since I received an ack packet back. So, the watch sees the messages, but doesn’t consider them notifications.</p>
+
+<h4 id="time-to-hit-the-docs">Time to hit the docs</h4>
+
+<p><img src="/img/post_images/2011/04/pulse_protocol.png" style="float:right" /><br />
+Knowing that the packets were received gave me quite a bit of hope. I figured that I must have had the protocol incorrect. So, I dug into the inPulse protocol document which outlined what the packet structures should look like. My C skills aren’t the strongest so I had to look up quite a few things.</p>
+
+<p>Sure enough, they had upped the version number of their protocol by 1 and mine was outdated. So, I updated what I could and gave it another shot…fail.</p>
+
+<p>No messages were displaying. At this point I was ready to give up. I read online somewhere that the BT implementation on the watch was not supported by inPulse and felt dead in the water. So I took a break for a couple days.</p>
+
+<p>When I came back to it, I was tapping through my watch and noticed that the calendar appointments had some data in them on the watch. Could it be? Did my notifications arrive? (I was trying to send SMS notifications). So I dug into the docs again…</p>
+
+<h4 id="we-have-a-message">We have a message!!!</h4>
+
+<p><img src="/img/post_images/2011/04/hello_world.jpg" style="float:left;margin:10px;" width="200" /></p>
+
+<p>Sure enough, I had some fields declared as * uint16_t * when they should have been * uint8_t * . My headers were the wrong size!!! All of a sudden I was able to send every type of notification to the watch and have it displayed.</p>
+
+<p>It was now time to build out an actual application for release to inPulse. The next hurdle would be hooking into the iPhone’s messaging system and forwarding along the messages. Now the real iPhone hacking begins.</p>
+
+<p><a href="/my-journey-to-create-the-inpulsenotifier-for-jailbroken-iphones-part-2">This post is continued here</a></p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="My Journey To Create The inPulseNotifier For Jailbroken iPhones - Part 1" data-url="http://brandontreb.com/my-journey-to-create-the-inpulsenotifier-for-jailbroken-iphones-part-1" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+  <footer class="post__footer">
+    <small><time class="dt-published" datetime="2011-04-12T00:00:00-06:00">Tue, Apr 12, 2011 at 12:00am</time></small>
+  </footer>
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/11830.html">
+            
+            <small>16 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/48295.html">
+            
+            <small>16 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/trying-something-new">
+            Trying Something New
+            <small>15 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_wallet</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ic_wallet" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M2,8 L2,6 C2,4.34314575 3.34314575,3 5,3 L19,3 C19.5522847,3 20,3.44771525 20,4 C20,4.55228475 19.5522847,5 19,5 L5,5 C4.44771525,5 4,5.44771525 4,6 C4,6.55228475 4.44771525,7 5,7 L21,7 C21.5522847,7 22,7.44771525 22,8 L22,10 L22,19 C22,20.1045695 21.1045695,21 20,21 L4,21 C2.8954305,21 2,20.1045695 2,19 L2,8 Z" id="Wallet" fill="#F8A035"></path>
+        <g id="Eth" transform="translate(5.000000, 9.000000)">
+            <polygon id="Path-9" fill="#FFFFFF" points="0 5.5 3 4.5 3 5.36363636 3 7"></polygon>
+            <polygon id="Path-10" fill-opacity="0.639999986" fill="#FFFFFF" points="0 5 3 0 3 3.75"></polygon>
+            <polygon id="Path-11" fill="#FFFFFF" points="3 3.75 6 5 3 0"></polygon>
+            <polygon id="Path-12" fill-opacity="0.200000018" fill="#000000" style="mix-blend-mode: multiply;" points="3 7 3 4.5 6 5.5"></polygon>
+            <polygon id="Path-13" fill="#FFFFFF" points="3 7.94444444 6 6 3 11"></polygon>
+            <polygon id="Path-14" fill-opacity="0.639999986" fill="#FFFFFF" points="3 11 0 6 3 7.94444444"></polygon>
+        </g>
+    </g>
+</svg>

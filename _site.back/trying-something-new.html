@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="description" content="Some Thoughts On Software Development Consulting">
+  <meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+  <meta name="author" content="Brandon Trebitowski">
+
+  <link rel="micropub" href="https://brandontreb-blog.herokuapp.com/micropub/main">
+  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+  <link href="https://twitter.com/brandontreb" rel="me">
+  <link href="http://github.com/brandontreb" rel="me">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Trying Something New &middot; brandontreb.com
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-381854-9', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A blog about software development consulting</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+
+    <!-- <a class="sidebar-nav-item" href="/archive/v1.0.0.zip">Download</a>
+    <a class="sidebar-nav-item" href="">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v1.0.0</span> -->
+
+    <!--
+            Recent Posts
+            On my homepage I like to include a recent posts section to entice people click through and read, and also to have no content on the homepage every time I write an article. Important part of SEO!
+            You can easily change this to suit your site. Maybe you want 3 posts, instead of 2 or more words in the snippet.
+    -->
+
+    <span class="sidebar-nav-item">Subscribe: <a href="http://feeds.feedburner.com/brandontreb">RSS</a> | <a href="http://eepurl.com/bnryI5">Email</a></span>
+    <a class="sidebar-nav-item" href="/micro">Micro Blog</a>
+    <a class="sidebar-nav-item" href="http://linkedin.com/in/brandontreb">Linked In</a>
+    <a class="sidebar-nav-item" href="http://twitter.com/brandontreb">Twitter</a>
+    <a class="sidebar-nav-item" href="http://pixegon.com/more-works">Portfolio</a>
+
+    <span class="sidebar-nav-item">Recent Posts
+    
+      
+        
+      
+        
+      
+        <a class="sidebar-nav-item" href="/trying-something-new">Trying Something New</a>
+    
+      
+        <a class="sidebar-nav-item" href="/how-creating-a-call-flow-helps-sales-calls">How Creating A Call Flow Can Help Your Software Sales Calls</a>
+    
+    </span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2018. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">brandontreb.com</a>
+            <small>Tips And Resources For Software Consultants</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  
+  <h1 class="post-title">Trying Something New</h1>
+  
+  
+  <p><strong>tl;dr</strong>: <a href="micro.blog">http://micro.blog</a> is pretty cool.</p>
+
+<p>I have recently been thinking about my process of blogging / tweeting / facebooking / etc.. and have realized that I’m burnt out on all three. I LOVE to write. I started one of the <a href="https://web.archive.org/web/20090202061853/http://icodeblog.com">first successful iOS Blogs</a>,  published numerous (software development books)[http://manning.com/trebitowski], and have been blogging since 2008.  Here are a bit of thoughts about the various platforms and ultimately my solution.</p>
+
+<h2 id="twitter">twitter</h2>
+
+<p>Having over 4,000 followers on <a href="http://twitter.com/brandontreb">Twitter</a> I used to find tremendous value in the platform.  There was a time when I would ask a programming question and get 20+ responses within 10 minutes.  I’m not sure if legit people have stopped following me or have stopped using the platform, but I am no longer getting any engagement. I probably have like 20 followers and 3,800 spam bots at this point.</p>
+
+<h2 id="blogging">blogging</h2>
+
+<p>To me, blogging has always had to be long-form.  Maybe it’s just my wannabe Tim Ferris mindset, but this has held me back from writing for quite a long time. I would wait until I had a long (usually 1K words +) post before writing anything.  So, it other words, perpetual writers block.</p>
+
+<h2 id="facebook">facebook</h2>
+
+<p>Don’t even get me started. I jumped on the <strong>#deleteFacebook</strong> bandwagon months ago.</p>
+
+<p><a href="https://deletefacebook.com/">#deleteFacebook</a></p>
+
+<h2 id="microblog">micro.blog</h2>
+
+<p>Recently, I discovered <a href="http://manton.org">Manton Reece’s</a> new platform called <a href="micro.blog">http://micro.blog</a>.  I guess the platform isn’t necessarily <em>new</em> as he launched in 2015, but after using it, it still feels like it’s in the new/exciting phase.</p>
+
+<p>Manton describes perfectly why he created the platform <a href="http://help.micro.blog/2015/why-i-created-this/">here</a> and this captures my thoughts exactly on the content-creation ecosystem.</p>
+
+<p>Here are some things that I’m super excited about the micro.blog platform:</p>
+
+<ul>
+  <li>You post to <strong>your own</strong> site, keeping all the content controlled by <strong>you</strong></li>
+  <li>You can also pay $5 monthly for a hosted blog.  This means their business is built on an actual product rather than advertising revenue.</li>
+  <li>It’s built on RSS. I have always been a huge RSS fan and am glad to see a resurgence.</li>
+  <li>It’s super NERDY. While I think micro.blog is an incredible platform, I still think it’s for geeks (in the same way crypto is).  But I love this about it since most of the people on there are devs/geeks.</li>
+  <li>It’s incredibly social. The platform really encourages conversation.</li>
+  <li>No follower count.  This is arguably the best part. No one (including yourself) can see your follower count.  This allows you the feeling to just create and not worry about the vanity of the whole thing.</li>
+</ul>
+
+<p>I still plan on using Twitter to some extent, but my primary source of content publishing will/should be <strong>this blog</strong>.  It will  become a mix of my long-form posts and my “tweet-sized” snarky comments.</p>
+
+<p>If this sounds even slightly interesting to you, def check it out and follow me on <a href="http://eepurl.com/bnryI5">here</a> or on <a href="micro.blog">http://microblog.com/brandontreb</a>.</p>
+
+<p>Cheers!</p>
+
+  <footer class="post__footer">
+    <small><time class="dt-published" datetime="2018-04-15T17:00:00-06:00">Sun, Apr 15, 2018 at 05:00pm</time></small>
+  </footer>
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/11830.html">
+            
+            <small>16 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/48295.html">
+            
+            <small>16 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/how-creating-a-call-flow-helps-sales-calls">
+            How Creating A Call Flow Can Help Your Software Sales Calls
+            <small>07 Apr 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

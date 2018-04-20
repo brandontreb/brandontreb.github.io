@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="description" content="Some Thoughts On Software Development Consulting">
+  <meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+  <meta name="author" content="Brandon Trebitowski">
+
+  <link rel="micropub" href="https://brandontreb-blog.herokuapp.com/micropub/main">
+  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+  <link href="https://twitter.com/brandontreb" rel="me">
+  <link href="http://github.com/brandontreb" rel="me">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      brandontreb.com &middot; Tips And Resources For Software Consultants
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-381854-9', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A blog about software development consulting</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+
+    <!-- <a class="sidebar-nav-item" href="/archive/v1.0.0.zip">Download</a>
+    <a class="sidebar-nav-item" href="">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v1.0.0</span> -->
+
+    <!--
+            Recent Posts
+            On my homepage I like to include a recent posts section to entice people click through and read, and also to have no content on the homepage every time I write an article. Important part of SEO!
+            You can easily change this to suit your site. Maybe you want 3 posts, instead of 2 or more words in the snippet.
+    -->
+
+    <span class="sidebar-nav-item">Subscribe: <a href="http://feeds.feedburner.com/brandontreb">RSS</a> | <a href="http://eepurl.com/bnryI5">Email</a></span>
+    <a class="sidebar-nav-item" href="/micro">Micro Blog</a>
+    <a class="sidebar-nav-item" href="http://linkedin.com/in/brandontreb">Linked In</a>
+    <a class="sidebar-nav-item" href="http://twitter.com/brandontreb">Twitter</a>
+    <a class="sidebar-nav-item" href="http://pixegon.com/more-works">Portfolio</a>
+
+    <span class="sidebar-nav-item">Recent Posts
+    
+      
+        
+      
+        
+      
+        <a class="sidebar-nav-item" href="/trying-something-new">Trying Something New</a>
+    
+      
+        <a class="sidebar-nav-item" href="/how-creating-a-call-flow-helps-sales-calls">How Creating A Call Flow Can Help Your Software Sales Calls</a>
+    
+    </span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2018. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">brandontreb.com</a>
+            <small>Tips And Resources For Software Consultants</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="posts">
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/sideprojects">
+          Side Projects
+        </a>
+      </h1>
+
+      <p>Over at <a href="http://pixegon.com">Pixegon</a>, I really try to encourage my developers to have their own side projects.  Often times, employers look at side projects as competition and try to own the works that their developers produce.  Some will even go as far as to include this in their employee handbooks.</p>
+
+<p>In my opinion, this stifles creativity and creates a feeling of contention between the employee and company.</p>
+
+<p>People start side projects all of the time for a variety of reasons:</p>
+
+<ul>
+  <li>To make some extra cash</li>
+  <li>To learn a new technology</li>
+  <li>To sharpen one’s skills</li>
+  <li>Just for fun</li>
+</ul>
+
+<p>From an employer’s standpoint, these are all <strong>great</strong>. It allows my developers the freedom to learn new things, make mistakes, and even earn extra cash. All without me fronting the cost.</p>
+
+<p>While this might now sound selfish, it’s obviously a two-way street. Developers greatly benefit from this type of arrangement.</p>
+
+<h3 id="getting-started-with-a-side-project">Getting started with a side project</h3>
+
+<p>This is one I struggle with all of the time.  Sometimes it’s a motivation issue, sometimes I lack an idea, and sometimes I’m just feeling lazy and end up reading Hacker News instead due to my analysis paralysis.</p>
+
+<p>The best bet is to just <strong>start</strong>. Whether your idea is big or small, stupid or world changing, just start writing some code. I try to utilize this tactic in all areas of my life from code, to writing, to working out, to minimizing, and even saving money.  Once you get some momentum going, you will quickly find out what’s working and what’s not.</p>
+
+<p>Here are a few Hacker News Posts that I found particularly inspiring to get you started:</p>
+
+<ul>
+  <li><a href="http://blog.andyjiang.com/how-to-ship-side-projects/">How To Ship Side Projects</a></li>
+  <li><a href="https://news.ycombinator.com/item?id=8844083">Those making $1,000+/month on side projects – what did you make?</a> (similar posts below)
+    <ul>
+      <li><a href="https://news.ycombinator.com/item?id=12670731">https://news.ycombinator.com/item?id=12670731</a></li>
+      <li><a href="https://news.ycombinator.com/item?id=8800788">https://news.ycombinator.com/item?id=8800788</a></li>
+      <li><a href="https://news.ycombinator.com/item?id=11898992">https://news.ycombinator.com/item?id=11898992</a></li>
+    </ul>
+  </li>
+  <li><a href="http://livingliferichly.com/epic-list-of-side-project-ideas-for-programmers/">Epic List of Side Project Ideas for Programmers</a></li>
+  <li><a href="https://news.ycombinator.com/item?id=5234692">Ask HN: Where do you get ideas to build side-projects?</a></li>
+</ul>
+
+<p>Dont’ have any idea to start on? Try cloning something in one of the above posts. There are <em>tons</em> of ideas in here large and small and there’s plenty of room on the web for variances of differenct products. I probably stole most of this post from somewhere…</p>
+
+<p>If you found this post helpful and want to hear more, make sure to <a href="http://brandontreb.us3.list-manage1.com/subscribe?u=66135759856eefe4f6dcec97c&amp;id=ef6c358d78">subscribe to my newsletter</a>. It’s not spammy, just let’s you know when I post.</p>
+
+      <!-- <span class="post-date">06 Feb 2017</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2017-02-06T00:00:00-07:00"><a href="/sideprojects" title="Permalink to Microblog post" class="u-url">Mon, Feb 06, 2017 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/something-new">
+          Trying Something New
+        </a>
+      </h1>
+
+      <p>Every single year since the beginning of time (at least since the beginning of this blog), I have resolved to “blog more”.  And every single year, I have absolutely failed at that.</p>
+
+<p>So, in favor of <a href="http://www.businessinsider.com/set-goals-not-resolutions-tim-ferriss-2016-12">systems over resolutions</a>, I am attempting to do something different this year.  Over the holiday, I blogged 12 posts related to my experiences as an independent software developer as well as business owner that I feel could benefit the community.  These share everything from selling contracts to hiring friends, mistakes made, and more.</p>
+
+<p>I plan on releasing one post a month on the first Monday of every month.  Given that I already have these posts written, it <em>should</em> be a no-brainer to blog consistently. I also intend on writing in-between posts, but at this point that’s probably wishful thinking.</p>
+
+<p>If you have any interest in this sort of thing (software development consulting), then be sure to add yourself to the <a href="http://brandontreb.us3.list-manage1.com/subscribe?u=66135759856eefe4f6dcec97c&amp;id=ef6c358d78">mailing list</a>.</p>
+
+<p>Wishing you a successful and exciting 2017.</p>
+
+<p><strong>Cheers!</strong></p>
+
+      <!-- <span class="post-date">02 Jan 2017</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2017-01-02T00:00:00-07:00"><a href="/something-new" title="Permalink to Microblog post" class="u-url">Mon, Jan 02, 2017 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/empathy">
+          Develop Your Empathy Muscles For Great Good
+        </a>
+      </h1>
+
+      <p>A while back,  I made a flagrant comment on Twitter about how I assumed the world worked.  It was something to the effect of “The internet levels the playing field, so someone without a job is without excuse”.  Not shortly after I hit “Tweet”, did I receive an array of Tweets back from people I highly respected.  I was immediately humbled, and it was pointed out to me that I had a severe lack of empathy.</p>
+
+<p>I’m sure I was just lamenting from a previous encounter with someone who I felt was acting entitled and felt they deserved something unearned. We tend to take situational experiences and generalize them.  I’d imagine this is how stereotypes are formed. But this conversation really opened my eyes to something I had never thought about before: <em>empathy</em>.</p>
+
+<blockquote>
+  <p><strong>em·pa·thy</strong> noun<br />
+the ability to understand and share the feelings of another.</p>
+</blockquote>
+
+<p>As software developers, it is our job to see things from other people’s perspectives.  Without practicing empathy, we end up wasting our time trying to solve problems that don’t really exist.  We also miss huge niches/opportunities simply because a problem that needs solving doesn’t relate to us.</p>
+
+<p>So, how can you practice and develop empathy?</p>
+
+<p>First, start by listening, a lot. You can’t expect to understand another person’s perspective without fully hearing what that is.  In relation to this, you need to set aside your own viewpoint or opinion.  Simply, hear the other person’s point of view without judgement.</p>
+
+<p>Second, go outside of your comfort zone. Spend some time with people you might not normally encounter.  These could be people with opposing politics/religion/world views/etc… Another good place to start is with people who are in need. I have learned many valuable lessons from visiting soup kitchens, elderly care facilities, and mission trips to impoverished countries.</p>
+
+<p>Finally, attempt to understand the needs of the people around you whether you’re in the coffee shop, grocery store, or the office. There is always opportunity to learn and to grow if you are simply mindful.</p>
+
+<p>Practicing empathy on a day to day basis will not only allow you to see and solve problems others don’t, it will also make you a better human.</p>
+
+      <!-- <span class="post-date">11 Apr 2016</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2016-04-11T00:00:00-06:00"><a href="/empathy" title="Permalink to Microblog post" class="u-url">Mon, Apr 11, 2016 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/how-to-lose-300k-in-one-conversation">
+          How To Lose $300K In One Conversation
+        </a>
+      </h1>
+
+      <blockquote>Will you work for equity?</blockquote>
+<p>After you have been consulting for any amount of time, you are bound to get asked this by a client.  You may find yourself struggling to decide whether or not to take some equity or just get paid to work on the project like you normally do.</p>
+
+<p>I had one such scenario a while back that I wanted to share. One day a few months ago, I was approached by a local VC in town.  Our relationship falls somewhere between acquaintance and friend; let’s call him Joe.  Joe has a very successful background and is one of the more wealthy people in my circle of influence.</p>
+
+<p>Joe asked me out for beers to discuss a new opportunity for a mobile project.  I, of course obliged and met him out. During this meeting, Joe proceeded to tell me about an application he wanted me to build that would be aimed at teenagers.  The gist was: <code class="highlighter-rouge">They would create rooms and the "cool kids" could vote other kids in and out of the rooms</code>.</p>
+
+<p>The offer he made was 30% of the application ownership and profits and a small share in one of his existing startups.  Given Joe’s history, I knew this would most likely be a successful endeavor, however I told him that I had to think about it.  Given the nature of the app, I had some strong moral objections to creating a tool that would allow teens to ostracize each other.  This didn’t quite sit right with me.</p>
+
+<p>After taking a few days to think I it, I ultimately told Joe that I didn’t feel right about working on the application.  He said “no worries”, and that was the end of that conversation.</p>
+
+<p><strong>6 Months Later…</strong></p>
+
+<p>Some time had passed and Joe and I eventually met up for beers.  After a bit of discussion, he said “Hey, I wanted to tell you about that app”.</p>
+
+<p>He then follows with “I found a college kid to work on the application and gave him the same offer that I gave you.  I also had a designer do some very basic mocks of the application. While I was out on a trip to Silicon Valley, I mentioned the application to a good friend of mine at Facebook.  Well, Facebook has a similar product coming out (turned out to be Rooms) and they decided to give me a quick check for $1.1mm to discontinue work on the product. I then wrote the college kid a check for $333K <strong>before he’d written a single line of code</strong>!”.</p>
+
+<p>My immediate thought was “at least I still have my values”.  It’s pretty funny to look back and think about how I could have made so much money so quickly. However, even if I had known the potential payout up front, I don’t believe I would have still taken the project.  It would have eaten me up inside.</p>
+
+<p>The takeaway of this story is twofold.   First, I’d urge you to choose your compensation wisely.  Before this encounter, I would always give a hard “no” when asked about equity share as part of compensation. I now take it on a person by person basis.  Second, don’t compromise your morals for money.  I look back on this story as a success and wouldn’t change a single thing about it.</p>
+
+      <!-- <span class="post-date">08 Feb 2016</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2016-02-08T00:00:00-07:00"><a href="/how-to-lose-300k-in-one-conversation" title="Permalink to Microblog post" class="u-url">Mon, Feb 08, 2016 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+  
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/why-consult">
+          Why Start Software Consulting
+        </a>
+      </h1>
+
+      <p>Want to jump ship and be a software development consultant? This post will detail why this path is a much more fulfilling and safer path than a traditional job.</p>
+<h3>Diversifying Income</h3>
+<p>Early in my career, I worked for a software consulting agency.  I was in my early 20’s and getting paid way more than I should.  One day, my boss called me up and let me go without notice.</p>
+
+<p>After interviewing quite a few developers in the consulting space, I quickly realized that this is a very common story.  If you work for a company, they can usually let you go at any time for any reason. Given that this is your sole source of income, you are now in an extremely risky situation.</p>
+
+<p>Contrast this with being an independent consultant.  Most likely, if you are consulting you have 1 or more clients.  In addition to that, you have some sort of pipeline set up.  So when you lose a client, you simply pull another from your pool.</p>
+<h3>Mo Clients Mo Money</h3>
+<p>The going rate of a senior software development consultant is between $100-$125/hour.  At this rate, you are looking at pulling in somewhere between $16K-$20K/month.</p>
+
+<p>Working for a traditional company, you would be hard pressed to command this salary even after having 10+ years of experience.  I’m not joking, kids who learned to code on Udemy in 6 months were making this while I had a salary cap of around $100K.</p>
+<h3>Commuting</h3>
+<p>In the U.S. , car accidents are one of the leading causes of death among young people.  Obviously, consulting can help mitigate this risk by allowing you to work from home or close to it. Therefore, further limiting your physical safety risk.</p>
+
+<p>In addition to limiting safety risk, not having to commute has financial advantages.  Since going independent, my family has cut down our need to a single vehicle saving us money on car payments, maintenance, gasoline, insurance, and most importantly <strong>time.</strong></p>
+<h3>Flexibility Of Location</h3>
+<p>When you don’t have to work in a traditional office, you are free to work anywhere in the world.  This could be coffee shops, the park, or even on a cruise ship.</p>
+
+<p>I typically like working in my shipping container office (post on that in the future) or wherever my wife has chosen to take the kids on a field trip that week.</p>
+<h3>Flexibility Of Time</h3>
+<p>When I worked at a traditional company, I was required to be signed in and available from 9-5 Monday - Saturday.  As you can imagine, this has a huge impact on how you plan your free time.   It’s also extremely limiting when you are trying to plan a trip or vacation.</p>
+
+<p>As a consultant, you have 100% control over your time.  This allows you to live life more on your terms.  If you enjoy staying up late and hacking until 3am, you can then enjoy sleeping in until 11.</p>
+
+<p>My wife and I currently homeschool our kids.  So when we want to take a trip, it’s literally a matter of leaving our house.  We don’t have to ask for time off, we don’t have to plan around other people.  We can quite literally drop everything and head to Disney World during the “deadest” parts of the year and enjoy doing things while others are “working”.</p>
+
+<p>I have found this level of flexibility has greatly improved my quality of life.</p>
+<h3>Unlimited PTO</h3>
+<p>This sort of goes with what I said above. Traditionally, if you want to take off time you need to:</p>
+<ol>
+    <li>Make sure it's cool with your boss</li>
+    <li>Make sure it's cool with your team</li>
+    <li>Give 2 weeks notice</li>
+    <li>Fill out paperwork</li>
+    <li>Burn through your limited "vacation days"</li>
+    <li>Still take calls from vacation because your are a "nice guy/gal"</li>
+</ol>
+<p>When you are a consultant, the process becomes:</p>
+<ol>
+    <li>Leave for vacation</li>
+</ol>
+<h3>You Are Your Own Boss</h3>
+<blockquote>"So, Peter, what's happening? Aahh, now, are you going to go ahead and have those TPS reports for us this afternoon?" - Bill Lumber</blockquote>
+<p>I never want to have a “boss” again. It’s true. I hate the thought of someone constantly breathing down my neck watching my every move.  I also can’t stand the idea of someone giving me a ”performance report”.</p>
+
+<p>When you become a consultant, it should be obvious, but you are the boss.  Early on, I would make the joke when my wife asked me to go on a random adventure “Let me check with my boss”.  Hilarious right?</p>
+<h3>Working In Your Underwear</h3>
+<p>Unless you are a Victoria Secret model, chances are you actually have to put on pants to go to work.  Not with consulting! I’m so glad I met my wife before I became a consultant, otherwise there would be no chance of me landing her wearing some of the choice outfits I do during work hours.</p>
+
+<p>I find my level of quality goes up with my level of comfort.  It never made sense to me why companies preferred “business casual” over “sleep professional”.  Seems like millions in lost revenue.</p>
+<h3>Other Benefits</h3>
+<p>This list is in no way meant to be exhaustive. These are just some of my favorite perks that I have been enjoying over the years. If you have some others that I have missed, please feel free to add your comments below.</p>
+
+      <!-- <span class="post-date">25 Jan 2016</span> -->
+      <footer class="post__footer">
+          <small><time class="dt-published" datetime="2016-01-25T00:00:00-07:00"><a href="/why-consult" title="Permalink to Microblog post" class="u-url">Mon, Jan 25, 2016 at 12:00am</time></a></small>
+        </footer>
+    </div>
+  
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page3">Older</a>
+  
+  
+    
+      <a class="pagination-item newer" href="/">Newer</a>
+    
+  
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

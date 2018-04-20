@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="description" content="Some Thoughts On Software Development Consulting">
+  <meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+  <meta name="author" content="Brandon Trebitowski">
+
+  <link rel="micropub" href="https://brandontreb-blog.herokuapp.com/micropub/main">
+  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+  <link href="https://twitter.com/brandontreb" rel="me">
+  <link href="http://github.com/brandontreb" rel="me">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Twitter API Programming Tutorial With PHP &#8211; Intro &middot; brandontreb.com
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-381854-9', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A blog about software development consulting</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+
+    <!-- <a class="sidebar-nav-item" href="/archive/v1.0.0.zip">Download</a>
+    <a class="sidebar-nav-item" href="">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v1.0.0</span> -->
+
+    <!--
+            Recent Posts
+            On my homepage I like to include a recent posts section to entice people click through and read, and also to have no content on the homepage every time I write an article. Important part of SEO!
+            You can easily change this to suit your site. Maybe you want 3 posts, instead of 2 or more words in the snippet.
+    -->
+
+    <span class="sidebar-nav-item">Subscribe: <a href="http://feeds.feedburner.com/brandontreb">RSS</a> | <a href="http://eepurl.com/bnryI5">Email</a></span>
+    <a class="sidebar-nav-item" href="/micro">Micro Blog</a>
+    <a class="sidebar-nav-item" href="http://linkedin.com/in/brandontreb">Linked In</a>
+    <a class="sidebar-nav-item" href="http://twitter.com/brandontreb">Twitter</a>
+    <a class="sidebar-nav-item" href="http://pixegon.com/more-works">Portfolio</a>
+
+    <span class="sidebar-nav-item">Recent Posts
+    
+      
+        
+      
+        
+      
+        <a class="sidebar-nav-item" href="/trying-something-new">Trying Something New</a>
+    
+      
+        <a class="sidebar-nav-item" href="/how-creating-a-call-flow-helps-sales-calls">How Creating A Call Flow Can Help Your Software Sales Calls</a>
+    
+    </span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2018. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">brandontreb.com</a>
+            <small>Tips And Resources For Software Consultants</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  
+  <h1 class="post-title">Twitter API Programming Tutorial With PHP &#8211; Intro</h1>
+  
+  
+  <center>
+  <a href="http://brandontreb.com/wp-content/uploads/2009/02/picture-15.png">&lt;img src="http://brandontreb.com/wp-content/uploads/2009/02/picture-15.png" alt="picture-15" title=&uuot;picture-15" width="400" height="125" class="alignnone size-full wp-image-85" /&gt;</a>
+</center>
+
+<p><span color="#000000">I have recently started using Twitter and completely fell in love with it. Being a programming, this naturally made me want to develop applications for interfacing with it. So, I scoured the internet (checking Twitter’s website as well) to find good *<span style="color: #ff0000;">simple</span> tutorials for doing this. After searching for a while, I couldn’t really find any. Ok, I lied, I found a few but they were terrible. I hate tutorials that assume the reader knows more than they actually do. </span></p>
+
+<p><span style="color: #000000;">So, I am taking it upon myself to write a series of comprehensive tutorials for interfacing with Twitter. I will first do them all in PHP and then maybe in some other languages. I may even do some in Objective-C to be implemented on the iPhone. These would be written of course at iCodeBlog.com 😉 .</span></p>
+
+<p><span style="color: #ff0000;"><span style="color: #000000;">Let’s just jump right in. Twitter offers a few ways to interface with their web services, which are all documented on their <a href="http://apiwiki.twitter.com/">API Wiki</a>. The documentation is great, assuming you know the code to get connected and make the calls. So, let’s skip all of the nerdy low level stuff and write an application.</span></span></p>
+
+<p><span style="color: #ff0000;"><span style="color: #000000;">Today, I will be teaching you how to simply connect to Twitter and update your status. This will be pretty straight forward and require very little PHP code. So, grab some coffee, open up your favorite PHP editor (notepad?).</span></span></p>
+
+<p><span>Ok, so let’s start by wrapping our code into an easy to call function. We don’t want to have to copy and paste our Twitter interface code every time we need it in a project. Wouldn’t it be nice if we could just call it like this</span></p>
+
+<div>
+  <pre>&lt;code class=’php’&gt;updateTwitter("Just Rockin Out")&lt;/code&gt;</pre>
+</div>
+
+<p><span>So let’s begin by declaring a function called <b>updateTwitter</b>. Type the following code&lt;/p&gt;</span></p>
+
+<div>
+  <pre>&lt;code class=’php’&gt;function updateTwitter($status){ 
+    // Twitter login information 
+    $username = "TwitterUsername"; 
+    $password = "TwitterPassword";&lt;/code&gt;</pre>
+</div>
+
+<p>
+  <span>Our function begins with a declaration of a username and password. This will be <i>your</i> Twitter login information. Every Twitter API call requires that you authenticate yourself. Make sure you update the code to include <i>your</i> username and password/</span>
+</p>
+
+<p>
+  <span>Next, we will add the following code to initialize the variables needed to make our Twitter API call. Continue by adding the following code.</span>
+</p>
+
+<div>
+  <pre>&lt;code class=’php’&gt;// The url of the update function 
+    $url = ‘http://twitter.com/statuses/update.xml’; 
+    // Arguments we are posting to Twitter 
+    $postargs = ‘status=’.urlencode($status); 
+    // Will store the response we get from Twitter 
+    $responseInfo=array(); 
+    // Initialize CURL 
+    $ch = curl_init($url);&lt;/code&gt;</pre>
+</div>
+
+<p>
+  <span>One thing I want to point out is the URL. Notice the update.xml at the end of it. This is telling the Twitter API we want to call the <b>update</b> function and we expect to receive <b>xml</b> back. You could also change it to be <b>update.json</b> if you want to receive json data back.</span>
+</p>
+
+<p>
+  <span>The next variable <b>postargs</b> is simply the arguments we will pass to the update function. Since these arguments get appended to the URL, they need to be urlencoded. The <b>responseInfo</b> array will contain the return data from the cURL request to Twitter. Finally, we just initialize a new cURL session. cURL is just a protocol for transferring data. You can read up on it <a href="http://en.wikipedia.org/wiki/CURL">on Wikipedia</a> if you feel so inclined.</span>
+</p>
+
+<p>
+  <span>Next, we need to tell cURL to do a POST rather than a GET and pass it our argument string</span>
+</p>
+
+<div>
+  <pre>&lt;code class=’php’&gt;// Tell CURL we are doing a POST 
+    curl_setopt ($ch, CURLOPT_POST, true); 
+    // Give CURL the arguments in the POST 
+    curl_setopt ($ch, CURLOPT_POSTFIELDS, $postargs);&lt;/code&gt;</pre>
+</div>
+
+<p>
+  <span>The next part is where the magic happens. Here is the next bit of code (I&#8217;ll explain it below)&#8230;</span>
+</p>
+
+<div>
+  <pre>&lt;code class=’php’&gt;// Set the username and password in the CURL call 
+    curl_setopt($ch, CURLOPT_USERPWD, $username.’:’.$password); 
+    // Set some cur flags (not too important) 
+    curl_setopt($ch, CURLOPT_VERBOSE, 1); 
+    curl_setopt($ch, CURLOPT_NOBODY, 0); 
+    curl_setopt($ch, CURLOPT_HEADER, 0); 
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION,1); 
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+    // execute the CURL call 
+    $response = curl_exec($ch); 
+    // Get information about the response 
+    $responseInfo=curl_getinfo($ch); 
+    // Close the CURL connection curl_close($ch);&lt;/code&gt;</pre>
+</div>
+
+<p>
+  <span>Wow! that looks like a lot of nerdy code. Good thing you only have to write it once and don&#8217;t have to understand it (unless you want to). The first line sets the username and password fields in our cURL call. When we first connect with the Twitter API, it will prompt for a username and password. cURL will automatically feed the username and password to the API. </span> <span>The next few lines are not super important. If you one of those people that get hung up on that sort of thing, you can read about them <a href="http://us.php.net/curl">here</a>. We&#8217;re almost done, I promise&#8230;</span> <span>Finally, we make the cURL call itself by calling curl_exec. This will return a response <b>from Twitter</b> which will contains some XML if your call completed successfully. The next line, gets the http response (makes sure you were able to connect to Twitter). If it is anything other than 200 (HTTP OK), it means your cURL request never even reached Twitter.</span> <span>Here is the last bit of code</span>
+</p>
+
+<div>
+  <pre>&lt;code class=’php’&gt;// Make sure we received a response from Twitter 
+    if(intval($responseInfo[‘http_code’])==200){ 
+        // Display the response from Twitter 
+        echo $response; 
+    }else{ 
+        // Something went wrong 
+        echo "Error: " . $responseInfo[‘http_code’]; 
+    } 
+} 
+?&gt;&lt;/code&gt;</pre>
+</div>
+
+<p>
+  <span>All this code really does is makes sure we got a 200 code (successfully reached Twitter). If so, it prints out the XML that Twitter returned to us. </span> <span>Now you have a handy-dandy function you can call whenever we want to update your Twitter status from your website. Simply type</span>
+</p>
+
+<div>
+  <pre>&lt;code class=’php’&gt;updateTwitter("Just finished a sweet tutorial on http://brandontreb.com")&lt;/code&gt;</pre>
+</div>
+
+<p>
+  <span>and like magic, your Twitter status will be updated. This has many different uses as you can imagine. Join me next time when I will be putting this code into a PHP class as well as implementing the rest of the Twitter API functions. We will then be able to use this Twitter class in a variety of PHP applications. So , be sure to <a href="http://feeds2.feedburner.com/brandontreb">subscribe to my RSS feed</a> and feel free to ask me any questions in the comments section of this post. You can also download the source code of this tutorial here&#8230; (insert clever tag line here (iCodeBlog&#8217;s is happy iCoding, I need a new one)). </span>
+</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="Twitter API Programming Tutorial With PHP - Intro" data-url="http://brandontreb.com/twitter-api-programming-tutorial-with-php-intro" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+  <footer class="post__footer">
+    <small><time class="dt-published" datetime="2009-02-20T00:00:00-07:00">Fri, Feb 20, 2009 at 12:00am</time></small>
+  </footer>
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/11830.html">
+            
+            <small>16 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/48295.html">
+            
+            <small>16 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/trying-something-new">
+            Trying Something New
+            <small>15 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

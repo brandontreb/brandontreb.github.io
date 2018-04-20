@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="description" content="Some Thoughts On Software Development Consulting">
+  <meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+  <meta name="author" content="Brandon Trebitowski">
+
+  <link rel="micropub" href="https://brandontreb-blog.herokuapp.com/micropub/main">
+  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+  <link href="https://twitter.com/brandontreb" rel="me">
+  <link href="http://github.com/brandontreb" rel="me">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      The Only Twitter API PHP Class You Will Ever Need &middot; brandontreb.com
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-381854-9', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A blog about software development consulting</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+
+    <!-- <a class="sidebar-nav-item" href="/archive/v1.0.0.zip">Download</a>
+    <a class="sidebar-nav-item" href="">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v1.0.0</span> -->
+
+    <!--
+            Recent Posts
+            On my homepage I like to include a recent posts section to entice people click through and read, and also to have no content on the homepage every time I write an article. Important part of SEO!
+            You can easily change this to suit your site. Maybe you want 3 posts, instead of 2 or more words in the snippet.
+    -->
+
+    <span class="sidebar-nav-item">Subscribe: <a href="http://feeds.feedburner.com/brandontreb">RSS</a> | <a href="http://eepurl.com/bnryI5">Email</a></span>
+    <a class="sidebar-nav-item" href="/micro">Micro Blog</a>
+    <a class="sidebar-nav-item" href="http://linkedin.com/in/brandontreb">Linked In</a>
+    <a class="sidebar-nav-item" href="http://twitter.com/brandontreb">Twitter</a>
+    <a class="sidebar-nav-item" href="http://pixegon.com/more-works">Portfolio</a>
+
+    <span class="sidebar-nav-item">Recent Posts
+    
+      
+        
+      
+        
+      
+        <a class="sidebar-nav-item" href="/trying-something-new">Trying Something New</a>
+    
+      
+        <a class="sidebar-nav-item" href="/how-creating-a-call-flow-helps-sales-calls">How Creating A Call Flow Can Help Your Software Sales Calls</a>
+    
+    </span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2018. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">brandontreb.com</a>
+            <small>Tips And Resources For Software Consultants</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  
+  <h1 class="post-title">The Only Twitter API PHP Class You Will Ever Need</h1>
+  
+  
+  <p><a href="http://brandontreb.com/wp-content/uploads/2009/02/twit.png"><img class="alignright size-full wp-image-123" title="twit" src="http://brandontreb.com/wp-content/uploads/2009/02/twit.png" alt="twit" width="135" height="135" /></a></p>
+
+<p><span style="color: #ff6600;"><strong><strong>Note</strong> </strong></span><strong>Twitter has switchted their entire interface to use OAUTH and this class no longer works (I should probably change the title hahaha). I will post an oauth connection tutorial in the near future, so make sure to **<a href="http://feeds2.feedburner.com/brandontreb">**subscribe to my RSS feed**</a></strong> for all of the sweet sweets updates!**</p>
+
+<p><strong>Cheers!</strong></p>
+
+<p>So, I started writing a Twitter API Programming series last week… <a href="http://brandontreb.com/twitter-api-programming-tutorial-with-php-getting-started/">Here is part 1</a>. I have found that there is not much else to teach when it comes to interfacing with Twitter. Basically, we just need to implement all of the Twitter functions.</p>
+
+<p>I have taken it upon myself to create a fully functional <strong>Twitter API PHP class</strong>. It has every Twitter function you will ever need (less the direct messages). I have also fully documented it with comments directly from the Twitter API so that the functions are easy to understand. Here is how you would use the class. The first parameter of every function is the return type. For Twitter it can be either xml, json, or rss for some functions.</p>
+
+<div>
+  <pre>&lt;code class=’php’&gt;include("Twitter.class.php");
+    $twitter = new Twitter();
+    $twitter-&gt;username = "twitteruser";
+    $twitter-&gt;password = "twitterpass";
+    // Show public timeline
+    echo $twitter-&gt;public_timeline();
+    // Update your status
+    echo $twitter-&gt;update(‘xml’,’This PHP class is flippin sweet!’);
+    // Start following a user
+    echo $twitter-&gt;create(‘xml’,’brandontreb’);&lt;/code&gt;</pre>
+</div>
+
+<p>These are just 3 of the functions implemented in this class. The full function list includes:</p>
+
+<ul>
+  <li>public_timeline</li>
+  <li>friends_timeline</li>
+  <li>user_timeline</li>
+  <li>update</li>
+  <li>replies</li>
+  <li>friends</li>
+  <li>followers</li>
+  <li>show</li>
+  <li>create</li>
+  <li>destroy</li>
+  <li>exists</li>
+</ul>
+
+<p>All of these functions are fully documented and simple to use. You can also check out Twitter’s API <a href="http://apiwiki.twitter.com/REST+API+Documentation">here</a> (but you shouldn’t need to).</p>
+
+<p>So, now you can fully **integrate Twitter into any PHP application you create! **</p>
+
+<h3 id="download-the-php-twitter-class-here-twitterclassphp">Download The PHP Twitter Class here <a href="http://brandontreb.com/wp-content/uploads/2009/02/Twitter.class.php1.zip">Twitter.class.php</a></h3>
+
+<p>Also, make sure you <a href="http://feeds2.feedburner.com/brandontreb">subscribe to my RSS feed</a>. More great programming tutorial to come.</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="The Only Twitter API PHP Class You Will Ever Need" data-url="http://brandontreb.com/the-only-twitter-api-php-class-you-will-ever-need" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+  <footer class="post__footer">
+    <small><time class="dt-published" datetime="2009-02-27T00:00:00-07:00">Fri, Feb 27, 2009 at 12:00am</time></small>
+  </footer>
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/11830.html">
+            
+            <small>16 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/48295.html">
+            
+            <small>16 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/trying-something-new">
+            Trying Something New
+            <small>15 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

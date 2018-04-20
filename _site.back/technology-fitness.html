@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="description" content="Some Thoughts On Software Development Consulting">
+  <meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+  <meta name="author" content="Brandon Trebitowski">
+
+  <link rel="micropub" href="https://brandontreb-blog.herokuapp.com/micropub/main">
+  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+  <link href="https://twitter.com/brandontreb" rel="me">
+  <link href="http://github.com/brandontreb" rel="me">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Technology + Fitness = <3 :: 3 Apps That Will Keep Even The Laziest Geek In Shape &middot; brandontreb.com
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-381854-9', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A blog about software development consulting</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+
+    <!-- <a class="sidebar-nav-item" href="/archive/v1.0.0.zip">Download</a>
+    <a class="sidebar-nav-item" href="">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v1.0.0</span> -->
+
+    <!--
+            Recent Posts
+            On my homepage I like to include a recent posts section to entice people click through and read, and also to have no content on the homepage every time I write an article. Important part of SEO!
+            You can easily change this to suit your site. Maybe you want 3 posts, instead of 2 or more words in the snippet.
+    -->
+
+    <span class="sidebar-nav-item">Subscribe: <a href="http://feeds.feedburner.com/brandontreb">RSS</a> | <a href="http://eepurl.com/bnryI5">Email</a></span>
+    <a class="sidebar-nav-item" href="/micro">Micro Blog</a>
+    <a class="sidebar-nav-item" href="http://linkedin.com/in/brandontreb">Linked In</a>
+    <a class="sidebar-nav-item" href="http://twitter.com/brandontreb">Twitter</a>
+    <a class="sidebar-nav-item" href="http://pixegon.com/more-works">Portfolio</a>
+
+    <span class="sidebar-nav-item">Recent Posts
+    
+      
+        
+      
+        
+      
+        <a class="sidebar-nav-item" href="/trying-something-new">Trying Something New</a>
+    
+      
+        <a class="sidebar-nav-item" href="/how-creating-a-call-flow-helps-sales-calls">How Creating A Call Flow Can Help Your Software Sales Calls</a>
+    
+    </span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2018. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">brandontreb.com</a>
+            <small>Tips And Resources For Software Consultants</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  
+  <h1 class="post-title">Technology + Fitness = <3 :: 3 Apps That Will Keep Even The Laziest Geek In Shape</h1>
+  
+  
+  <p>If you are reading this post you are most likely a geek. It’s true, otherwise if you were a reader of my blog and not a geek, you would be very confused ;).</p>
+
+<p>Well, being a fellow geek, I am prone to the same sort of problems as you when it comes to fitness. As geeks we sit in our chairs and more often than not end up looking like this. (sad face)</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2010/08/computer-nerd-+-Limpet-21.jpeg"><img class="alignnone size-medium wp-image-867" title="computer nerd + Limpet 2[1]" src="http://brandontreb.com/wp-content/uploads/2010/08/computer-nerd-+-Limpet-21-500x379.jpg" alt="" width="500" height="379" /></a></p>
+
+<p>Ok ok, that photo is a little cliché, but you get my point. This prolonged sitting along with a lazy (Mountain Dew + Cheetos ) diet leads to this stereotypic geek look.</p>
+
+<h2 id="the-solution">The Solution</h2>
+
+<p>Dun duh dun duh (those were trumpet sounds in case you didn’t know). Well, we all love technology (duh), so why not combine it with some basic fitness and fight the stereotype. With sweet gadgets (like the iPhone :)), we now have some incredible tools that almost make a game out of exercise.</p>
+
+<p>Here are 3 iPhone apps that I use on a daily basis to keep me in peak, geek, 1337 shape.</p>
+
+<h3 id="1-100-pushups">#1 100 Pushups</h3>
+
+<p><span style="font-weight: normal; font-size: 13px;"><a href="http://click.linksynergy.com/fs-bin/click?id=U3Wt3JDOKpI&amp;subid=0&amp;offerid=146261.1&amp;type=10&amp;tmpid=3909&amp;RD_PARM1=http%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fhundred-pushups%2Fid301174591%3Fmt%3D8%2526mt%3D8%2526buylink%3Dyes"><img class="alignnone size-full wp-image-873" title="appstore" src="http://brandontreb.com/wp-content/uploads/2010/08/appstore.png" alt="" width="300" height="109" /></a></span></p>
+
+<p>I stumbled upon this gem of an app when I started seeing my buddy <a href="http://twitter.com/oodelali">@oodelali</a> ‘s Twitter feed displaying the following.</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2010/08/Screen-shot-2010-08-31-at-11.00.48-AM.png"><img class="alignnone size-full wp-image-871" title="Screen shot 2010-08-31 at 11.00.48 AM" src="http://brandontreb.com/wp-content/uploads/2010/08/Screen-shot-2010-08-31-at-11.00.48-AM.png" alt="" width="455" height="75" /></a></p>
+
+<p>160 Pushups! Gangster right? Intrigued, I asked him about the app. After a brief synopsis, I was sold. Here is the rundown of this app (per its app store description).</p>
+
+<blockquote>
+  <p>“If you’re serious about increasing your strength, follow this six week training program and you’ll soon be on your way to completing 100 consecutive push ups!”</p>
+</blockquote>
+
+<p>Basically, this app utilizes interval training where you exercise <strong>3 times per week</strong> for about 10 minutes. After 6 weeks of this, the app claims you will be able to do <strong>100 consecutive pushups</strong>! Here is a screenshot so you can see what I’m talking about.</p>
+
+<p><img class="alignnone" title="100pushups" src="http://a1.phobos.apple.com/us/r1000/028/Purple/6e/81/55/mzl.tzrdwyxf.320x480-75.jpg" alt="" width="224" height="336" /></p>
+
+<p>So far, I’m on week 4 and am doing a total of 94 pushups (not consecutive yet).</p>
+
+<p>**Don’t have an iPhone (sad face), you can still benefit from this app by using their web interface at **<a href="http://hundredpushups.com/"><strong>http://hundredpushups.com/</strong></a>.</p>
+
+<p>The developer of this app has a whole suit of these including <a href="http://click.linksynergy.com/fs-bin/click?id=U3Wt3JDOKpI&amp;subid=0&amp;offerid=146261.1&amp;type=10&amp;tmpid=3909&amp;RD_PARM1=http%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Ftwo-hundred-situps%2Fid302001331%3Fmt%3D8%2526mt%3D8%2526buylink%3Dyes">200 Sit-ups</a>, <a href="http://click.linksynergy.com/fs-bin/click?id=U3Wt3JDOKpI&amp;subid=0&amp;offerid=146261.1&amp;type=10&amp;tmpid=3909&amp;RD_PARM1=http%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Ftwo-hundred-squats%2Fid314081637%3Fmt%3D8%2526mt%3D8%2526buylink%3Dyes">200 Squats</a>, and <a href="http://click.linksynergy.com/fs-bin/click?id=U3Wt3JDOKpI&amp;subid=0&amp;offerid=146261.1&amp;type=10&amp;tmpid=3909&amp;RD_PARM1=http%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Ftwenty-chinups%2Fid306789203%3Fmt%3D8%2526mt%3D8%2526buylink%3Dyes">Twenty Chin Ups</a>.</p>
+
+<h3 id="2-run-keeper-pro">#2 Run Keeper Pro</h3>
+
+<p><a href="http://click.linksynergy.com/fs-bin/click?id=U3Wt3JDOKpI&amp;subid=0&amp;offerid=146261.1&amp;type=10&amp;tmpid=3909&amp;RD_PARM1=http%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Frunkeeper-pro%2Fid300235330%3Fmt%3D8%2526mt%3D8%2526buylink%3Dyes"><img title="appstore" src="http://brandontreb.com/wp-content/uploads/2010/08/appstore.png" alt="" width="300" height="109" /></a></p>
+
+<p>Run Keeper Pro is a stellar app that has both paid and free versions. It uses the GPS to map our your run and gives you feedback on elevation, pace, distance, and location. I use this app every single day when I go for runs.</p>
+
+<p>One killer feature of this app is its ability to sync with the web at <a href="http://runkeeper.com/">RunKeeper.com</a>. Here you are able to track more statistics about your runs, create paths, and get more social.</p>
+
+<p><img class="alignnone" title="RunKeeper" src="http://a1.phobos.apple.com/us/r1000/045/Purple/e2/03/7f/mzl.osihoibi.320x480-75.jpg" alt="" width="224" height="336" /></p>
+
+<p>The interface is both beautiful and intuitive. (Aesthetics are super important to me. You could have the most functional app in the world and I won’t use it if it looks like feces).</p>
+
+<p>When I first started running, I could barely make it to the end of my street, and with this app, I am now running over 10 miles per week!</p>
+
+<h3 id="3-ifitness">#3 iFitness</h3>
+
+<p><a href="http://click.linksynergy.com/fs-bin/click?id=U3Wt3JDOKpI&amp;subid=0&amp;offerid=146261.1&amp;type=10&amp;tmpid=3909&amp;RD_PARM1=http%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fifitness%2Fid290451423%3Fmt%3D8%2526mt%3D8%2526buylink%3Dyes"><img title="appstore" src="http://brandontreb.com/wp-content/uploads/2010/08/appstore.png" alt="" width="300" height="109" /></a></p>
+
+<p>So, this app is for the geek that might actually go to they gym (you mean like…leave…the house). Or if you are really a hobbit, have a home gym. iFiness allows you to track all aspects of a workout. It will track what exercises you do, on what day, with how many reps for how long.</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2010/08/iPhone-Screenshot-1.jpeg"><img class="alignnone size-full wp-image-879" title="iPhone Screenshot 1" src="http://brandontreb.com/wp-content/uploads/2010/08/iPhone-Screenshot-1.jpeg" alt="" width="224" height="322" /></a></p>
+
+<p>With these killer features, it’s easy to create a fully customized workout and track it the way you want.</p>
+
+<p>“But Brandon, I have never been to the gym and don’t know how to use the weights/machines because I’m level 75 in WOW.” Well, iFitiness has got you covered! For every workout they have in the system, they provide full graphics or videos on how to perform each one. So if you are unsure about how to do anything, just take a quick peak at your phone, jump on the machine, get jacked, and the ladies (or dudes if you are a lady reading this) will be flocking from all over.</p>
+
+<p>Another great feature of this app is that it has built in workout plans to suite your lifestyle. So weather or not you want to build muscle or you just want to lose that gut you have been working on, they have a plan for you. Whoa, I am starting to sound like a <a href="http://www.beachbody.com/product/fitness_programs/best_sellers/p90x.do?tnt=P90X_SHAKE_B1&amp;code=P90XDOTCOM">P90X</a> commercial, time to pump the breaks.</p>
+
+<h2 id="take-away">Take Away</h2>
+
+<p>To wrap up, I feel that staying healthy and fit is very important. You have to make it a part of your lifestyle and these few tools are a great way to get a jump on it. Feel free to post comments, questions, or grammar corrections (expected bc we are all the grammar police) in the comments.</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="Technology + Fitness = &lt;3 :: 3 Apps That Will Keep Even The Laziest Geek In Shape" data-url="http://brandontreb.com/technology-fitness" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+  <footer class="post__footer">
+    <small><time class="dt-published" datetime="2010-09-01T00:00:00-06:00">Wed, Sep 01, 2010 at 12:00am</time></small>
+  </footer>
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/11830.html">
+            
+            <small>16 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/48295.html">
+            
+            <small>16 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/trying-something-new">
+            Trying Something New
+            <small>15 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

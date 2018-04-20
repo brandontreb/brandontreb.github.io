@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="description" content="Some Thoughts On Software Development Consulting">
+  <meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+  <meta name="author" content="Brandon Trebitowski">
+
+  <link rel="micropub" href="https://brandontreb-blog.herokuapp.com/micropub/main">
+  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+  <link href="https://twitter.com/brandontreb" rel="me">
+  <link href="http://github.com/brandontreb" rel="me">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Beginning Jailbroken iOS Development &#8211; Building And Deployment &middot; brandontreb.com
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-381854-9', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A blog about software development consulting</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+
+    <!-- <a class="sidebar-nav-item" href="/archive/v1.0.0.zip">Download</a>
+    <a class="sidebar-nav-item" href="">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v1.0.0</span> -->
+
+    <!--
+            Recent Posts
+            On my homepage I like to include a recent posts section to entice people click through and read, and also to have no content on the homepage every time I write an article. Important part of SEO!
+            You can easily change this to suit your site. Maybe you want 3 posts, instead of 2 or more words in the snippet.
+    -->
+
+    <span class="sidebar-nav-item">Subscribe: <a href="http://feeds.feedburner.com/brandontreb">RSS</a> | <a href="http://eepurl.com/bnryI5">Email</a></span>
+    <a class="sidebar-nav-item" href="/micro">Micro Blog</a>
+    <a class="sidebar-nav-item" href="http://linkedin.com/in/brandontreb">Linked In</a>
+    <a class="sidebar-nav-item" href="http://twitter.com/brandontreb">Twitter</a>
+    <a class="sidebar-nav-item" href="http://pixegon.com/more-works">Portfolio</a>
+
+    <span class="sidebar-nav-item">Recent Posts
+    
+      
+        
+      
+        
+      
+        <a class="sidebar-nav-item" href="/trying-something-new">Trying Something New</a>
+    
+      
+        <a class="sidebar-nav-item" href="/how-creating-a-call-flow-helps-sales-calls">How Creating A Call Flow Can Help Your Software Sales Calls</a>
+    
+    </span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2018. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">brandontreb.com</a>
+            <small>Tips And Resources For Software Consultants</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  
+  <h1 class="post-title">Beginning Jailbroken iOS Development &#8211; Building And Deployment</h1>
+  
+  
+  <p>Welcome to the next installment of my jailbroken iOS development series. If you haven’t already done so, read my previous post to get up to speed.</p>
+
+<p><a href="/beginning-jailbroken-ios-development-getting-the-tools/">Beginning Jailbroken iOS Development – Getting The Tools</a></p>
+
+<p>Now that your environment has been set up, it’s time to start hacking your project, building, and deploying it. This tutorial will be fairly quick and will just demonstrate how to build a .deb file and install it on your device. This will not cover creating a Cydia repository for public access (this is for a later tutorial).</p>
+
+<h4 id="introduction">Introduction</h4>
+
+<p>Start by creating a simple project. Refer to the <a href="/beginning-jailbroken-ios-development-getting-the-tools/">previous tutorial</a> to determine how to do this. I will use the example of the #1 iphone/application and will be calling it fooProject.</p>
+
+<div>
+  <pre>&lt;code class=’bash’&gt;$/opt/theos/bin/nic.pl
+NIC 1.0 - New Instance Creator
+——————————
+  [1.] iphone/application
+  [2.] iphone/library
+  [3.] iphone/preference_bundle
+  [4.] iphone/tool
+  [5.] iphone/tweak
+Choose a Template (required): 1
+Project Name (required): fooProject
+Package Name [com.yourcompany.fooproject]:    
+Author/Maintainer Name [Brandon Trebitowski]: 
+Instantiating iphone/application in fooproject/…
+Done.&lt;/code&gt;</pre>
+</div>
+
+<p>This will create a new directory for our project with the following files.</p>
+
+<ol>
+  <li><strong>control</strong>: Contains information about your application/tweak. This is the info you see when you install something from Cydia (name, author, version, etc…)</li>
+  <li><strong>[applicationName]Application.mm</strong>: This is essentially your appDelegate file. It creates a window, adds your RootViewController and displays it.</li>
+  <li><strong>main.m</strong> : Same main file that you would use in an iPhone project. Just initializes your [applicationName]Application.mm file on launch.</li>
+  <li><strong>Makefile</strong>: contains the necessary build commands to compile your project. I’ll go over this in detail in a bit</li>
+  <li><strong>Resources</strong>: This folder contains your info.plist and is also where you can place all of your images</li>
+  <li><strong>RootViewController.h/mm</strong>: A simple view controller</li>
+</ol>
+
+<h4 id="the-makefile">The Makefile</h4>
+
+<p>theos provides some great tools that simplify the build process as much as possible. I know some of you might shudder at the sound of a Makefile, but trust me, it’s very painless.</p>
+
+<p>Let’s first take a look at the anatomy of the Makefile that was generated.</p>
+
+<div>
+  <pre>&lt;code class=’bash’&gt;include theos/makefiles/common.mk&lt;/code&gt;</pre>
+</div>
+
+<p>This line simply tells theos to include the common make commands in your build script to save you some work.</p>
+
+<div>
+  <pre>&lt;code class=’bash’&gt;APPLICATION_NAME = fooProject&lt;/code&gt;</pre>
+</div>
+
+<p>The name of the application we are building. The Makefile will use this constant to do a number of things under the hood. Don’t modify this unless your application changes names.</p>
+
+<div>
+  <pre>&lt;code class=’bash’&gt;[applicationName]_FILES = main.m fooProjectApplication.mm RootViewController.mm&lt;/code&gt;</pre>
+</div>
+
+<p>This is the meat of the Makefile. It’s the list of m (or mm in this case) files that need to be compiled. *Note: you do not add your .h files here. So, whenever you add a new .m file to the project, make sure to append it to this list or it won’t get built.</p>
+
+<div>
+  <pre>&lt;code class=’bash’&gt;[applicationName]_FRAMEWORKS = UIKit Foundation QuartzCore AudioToolbox CoreGraphics&lt;/code&gt;</pre>
+</div>
+
+<p>This line is not included by default, but is needed if you want to use ANY frameworks; be them Apple’s or h4x0red ones.</p>
+
+<div>
+  <pre>&lt;code class=’bash’&gt;include $(THEOS_MAKE_PATH)/application.mk&lt;/code&gt;</pre>
+</div>
+
+<p>More defaults to help theos build your project.</p>
+
+<h4 id="setting-up-your-environment">Setting up Your Environment</h4>
+
+<p>Do you remember in the last tutorial that we had to set an environment variable in order to use theos? Well, we need to set a couple more to build and deploy.</p>
+
+<p>Here are the 3 that you MUST have.</p>
+
+<div>
+  <pre>&lt;code class=’bash’&gt;export THEOS=/opt/theos/
+export SDKVERSION=4.3
+export THEOS_DEVICE_IP=192.168.1.122&lt;/code&gt;</pre>
+</div>
+
+<p><img src="/img/post_images/2011/04/sbsettings.png" style="float:right;padding:5px" /></p>
+
+<p>The first line, you should have already done. Otherwise you would not have been able to run the nic tool above. The second defines your current SDK version. This will tell theos where to look for your frameworks and whatnot. (ex If you only have 4.2 installed, set this to 4.2). Finally, the last line, tells theos the ip address of your device.</p>
+
+<p>Once theos does the package install, it will sftp the package to your device for installation. One thing to note here is your iPhone MUST be on the same network as the computer you are developing on.</p>
+
+<p>If you don’t know your device’s ip address, it’s in the SBSettings menu. If you don’t have SBSettings, go download it from Cydia and think about why you would have a jailbroken device without this app installed…</p>
+
+<div style="clear:both">
+  &nbsp;
+</div>
+
+<h4 id="building-the-project">Building The Project</h4>
+
+<p>Building is just as easy as running the make command inside of your project’s root directory.</p>
+
+<p>Here is an example of building my fooProject app using the command:</p>
+
+<p><strong>make</strong>.</p>
+
+<div>
+  <pre>&lt;code class=’bash’&gt;$ make
+Making all for application fooProject…
+ Compiling main.m…
+ Compiling fooProjectApplication.mm…
+ Compiling RootViewController.mm…
+ Linking application fooProject…
+ Stripping fooProject…
+ Signing fooProject…&lt;/code&gt;</pre>
+</div>
+
+<p>If your project contains errors, they will be flushed out here. Also, theos treats warnings as errors (as should you) 😉 . So, if you have any warnings you won’t be able to build.</p>
+
+<p>When you are ready to distribute your application, you must build a .deb package. Luckily, theos does this for us with a simple command:</p>
+
+<p><strong>make package</strong>.</p>
+
+<div>
+  <pre>&lt;code class=’bash’&gt;make package
+Making all for application fooProject…
+make[2]: Nothing to be done for ‘internal-application-compile’.
+Making stage for application fooProject…
+ Copying resource directories into the application wrapper…
+dpkg-deb: building package ‘com.yourcompany.fooproject’ in ‘/Users/brandontreb/Desktop/fooproject/com.yourcompany.fooproject_0.0.1-1_iphoneos-arm.deb’.&lt;/code&gt;</pre>
+</div>
+
+<p>You should now see a file like <em>com.yourcompany.fooproject_0.0.1-1_iphoneos-arm.deb</em> in your project’s root directory. One great feature of theos is it handles versioning automatically. So subsequent builds will increment the build number. If you change your version in the info.plist file, it will start the build counter over (2-1, 2-2, etc…).</p>
+
+<p>At this point, you <em>could</em> sftp this file to your device and run:</p>
+
+<div>
+  <pre>&lt;code class=’bash’&gt;dpkg -i com.yourcompany.fooproject_0.0.1-1_iphoneos-arm.deb&lt;/code&gt;</pre>
+</div>
+
+<p>as root to test the installation. However, that is quite a bit of a pain. Luckily, theos will do all of this for you by simply using the command:</p>
+
+<p><strong>make package install</strong></p>
+
+<div>
+  <pre>&lt;code class=’bash’&gt;$ make package install
+Making all for application fooProject…
+make[2]: Nothing to be done for `internal-application-compile’.
+Making stage for application fooProject…
+ Copying resource directories into the application wrapper…
+dpkg-deb: building package ‘com.yourcompany.fooproject’ in ‘/Users/brandontreb/Desktop/fooproject/com.yourcompany.fooproject_0.0.1-3_iphoneos-arm.deb’.
+install.copyFile "/Users/brandontreb/Desktop/fooproject/com.yourcompany.fooproject_0.0.1-3_iphoneos-arm.deb" "com.yourcompany.fooproject_0.0.1-3_iphoneos-arm.deb"
+root@192.168.1.122’s password: 
+com.yourcompany.fooproject_0.0.1-3_iphoneos-arm.deb                                                                                                                                                                                                                              100% 4434     4.3KB/s   00:00    
+install.exec "dpkg -i com.yourcompany.fooproject_0.0.1-3_iphoneos-arm.deb"
+root@192.168.1.122’s password: 
+Selecting previously deselected package com.yourcompany.fooproject.
+(Reading database … 2006 files and directories currently installed.)
+Unpacking com.yourcompany.fooproject (from com.yourcompany.fooproject_0.0.1-3_iphoneos-arm.deb) …
+Setting up com.yourcompany.fooproject (0.0.1-3) …&lt;/code&gt;</pre>
+</div>
+
+<p>You will have to enter your password several times during the process. The default is <strong>alpine</strong>.</p>
+
+<p>After this has been run, you will need to restart (or respring) your iPhone. Respringing takes a simple button tap if you have SBSettings installed (have you installed it yet?).</p>
+
+<h4 id="conclusion">Conclusion</h4>
+
+<p>You now have all of the tools needed to start hacking your very first jailbroken iOS application. In the next tutorial, we are going to learn about MobileSubstrate hacks and how to overwrite Apple functionality. I will give a basic example of how to display an alert message every time your device boots up.</p>
+
+<p>Until next time, happy hacking!</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="Beginning Jailbroken iOS Development - Building And Deployment" data-url="http://brandontreb.com/beginning-jailbroken-ios-development-building-and-deployment" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+  <footer class="post__footer">
+    <small><time class="dt-published" datetime="2011-04-22T00:00:00-06:00">Fri, Apr 22, 2011 at 12:00am</time></small>
+  </footer>
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/11830.html">
+            
+            <small>16 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/48295.html">
+            
+            <small>16 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/trying-something-new">
+            Trying Something New
+            <small>15 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>
