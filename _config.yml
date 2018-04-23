@@ -15,7 +15,7 @@ description:         'A blog about software development consulting'
 url:                 'http://brandontreb.com'
 baseurl:             ''
 
-paginate: 5
+paginate: 25
 paginate_path: "page:num"
 
 # About/contact
