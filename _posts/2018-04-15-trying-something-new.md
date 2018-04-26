@@ -8,7 +8,7 @@ categories:
 date: 2018-04-15 17:00
 ---
 
-**tl;dr**: [http://micro.blog](micro.blog) is pretty cool.
+**tl;dr**: [micro.blog](http://micro.blog) is pretty cool.
 
 I have recently been thinking about my process of blogging / tweeting / facebooking / etc.. and have realized that I'm burnt out on all three. I LOVE to write. I started one of the [first successful iOS Blogs](https://web.archive.org/web/20090202061853/http://icodeblog.com),  published numerous (software development books)[http://manning.com/trebitowski], and have been blogging since 2008.  Here are a bit of thoughts about the various platforms and ultimately my solution.
 
@@ -43,6 +43,6 @@ Here are some things that I'm super excited about the micro.blog platform:
 
 I still plan on using Twitter to some extent, but my primary source of content publishing will/should be **this blog**.  It will  become a mix of my long-form posts and my "tweet-sized" snarky comments.
 
-If this sounds even slightly interesting to you, def check it out and follow me on [here](http://eepurl.com/bnryI5) or on [micro.blog](http://microblog.com/brandontreb).
+If this sounds even slightly interesting to you, def check it out and follow me on [here](http://eepurl.com/bnryI5) or on [micro.blog](http://micro.blog/brandontreb).
 
 Cheers!
