@@ -37,12 +37,12 @@ Here are some things that I'm super excited about the micro.blog platform:
 - You post to **your own** site, keeping all the content controlled by **you**
 - You can also pay $5 monthly for a hosted blog.  This means their business is built on an actual product rather than advertising revenue.
 - It's built on RSS. I have always been a huge RSS fan and am glad to see a resurgence.
-- It's super NERDY. While I think micro.blog is an incredible platform, I still think it's for geeks (in the same way crypto is).  But I love this about it since most of the people on there are devs/geeks.
+- It's full of developers that I already know/admire.  Guys like [@manton](http://micro.blog/manton), [@collin](http://micro.blog/collin), and [@gruber](http://micro.blog/gruber).
 - It's incredibly social. The platform really encourages conversation.
 - No follower count.  This is arguably the best part. No one (including yourself) can see your follower count.  This allows you the feeling to just create and not worry about the vanity of the whole thing.
 
 I still plan on using Twitter to some extent, but my primary source of content publishing will/should be **this blog**.  It will  become a mix of my long-form posts and my "tweet-sized" snarky comments.
 
-If this sounds even slightly interesting to you, def check it out and follow me on [here](http://eepurl.com/bnryI5) or on [http://microblog.com/brandontreb](micro.blog).
+If this sounds even slightly interesting to you, def check it out and follow me on [here](http://eepurl.com/bnryI5) or on [micro.blog](http://microblog.com/brandontreb).
 
 Cheers!
