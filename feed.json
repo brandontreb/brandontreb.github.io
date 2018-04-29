@@ -13,7 +13,13 @@ layout: null
       {% if post.title != null and post.title != '' %}
 			"title": {{ post.title | jsonify }},
 			{% endif %}
+			{% if post.mf-photo.size > 0 %}
+				{% assign quote = '"' %}
+				{% assign media = post.content | append: "<img src=" | append: quote | append: post.mf-photo[0] | append: quote | append: ">" %}
+			"content_html": {{ media | jsonify }},
+			{% else %}
 			"content_html": {{ post.content | jsonify }},
+	    {% endif %}
 			"date_published": "{{ post.date | date_to_xmlschema }}",
 			"url": "{{ site.url }}{{ post.url }}"
 		}{% if forloop.last == false %},{% endif %}
