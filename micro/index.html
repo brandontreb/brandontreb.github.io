@@ -8,7 +8,7 @@ title: Home
   {% if post.title.size == 0 %}
   <div class="post">
     {% if post.mf-photo.size > 0 %}
-      <img src="{{ post.mf-photo }}" />
+      <img width="300" src="{{ post.mf-photo }}" />
     {% endif %}
     {{ post.content }}
     <footer class="post__footer">
