@@ -9,7 +9,8 @@ plugins:
 permalink:           /:title:output_ext
 
 # Setup
-title:              brandontreb.com
+name:                'Brandon Trebitowski'
+title:               'brandontreb.com'
 tagline:             'Tips And Resources For Software Consultants'
 description:         'A blog about software development consulting'
 url:                 'http://brandontreb.com'
@@ -20,6 +21,7 @@ paginate_path: "page:num"
 
 # About/contact
 author:
+  username:          brandontreb
   name:              Brandon Trebitowski
   url:               https://twitter.com/brandontreb
   email:             brandon@pixegon.com
