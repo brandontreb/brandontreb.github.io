@@ -17,12 +17,13 @@ layout: default
   <ul class="related-posts">
     {% for post in site.related_posts limit:3 %}
       <li>
-        <div>
-          {{ post.content }}
+        {% if post.title == "" %}<div>{% else %}<h3>{% endif %}
+          {% if post.title == "" %}<div>{{post.content}}</div>{% endif %}
           <a href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
             <small>{{ post.date | date_to_string }}</small>
           </a>
-        </div>
+        {% if post.title == "" %}</div>{% else %}</h3>{% endif %}
       </li>
     {% endfor %}
   </ul>
