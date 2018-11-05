@@ -11,7 +11,7 @@ It&#39;s amazing how he can just pump out wisdom day after day and speak so arti
 
 Recently, I was inspired by a particular post called [The First 1,000 Are The Most Difficult](https://seths.blog/2018/10/the-first-1000-are-the-most-difficult/).  In it, Seth talks about blogging every single day. He even links to other readers/bloggers that took on the same challenge. This particular quote really stood out:
 
-&gt; Even if no one reads your blog, the act of writing it is clarifying, motivating and (eventually) fun.
+> Even if no one reads your blog, the act of writing it is clarifying, motivating and (eventually) fun.
 
 This got me thinking.  I often _want_ to create blog content because I absolutely love writing. Not to mention, I really do feel that I can speak more clearly and articulately having blogged consistently.  However, I often won&#39;t publish posts (or even start them) for fear of people _actually_ reading them. It&#39;s usually a worry about what others might think about the post, or fear of peers/clients reading into things that might be tangentially related to the article in which I&#39;m posting. 
 
