@@ -13,7 +13,7 @@ Recently, I was inspired by a particular post called [The First 1,000 Are The Mo
 
 > Even if no one reads your blog, the act of writing it is clarifying, motivating and (eventually) fun.
 
-This got me thinking.  I often _want_ to create blog content because I absolutely love writing. Not to mention, I really do feel that I can speak more clearly and articulately having blogged consistently.  However, I often won&#39;t publish posts (or even start them) for fear of people _actually_ reading them. It&#39;s usually a worry about what others might think about the post, or fear of peers/clients reading into things that might be tangentially related to the article in which I&#39;m posting. 
+This got me thinking.  I often _want_ to create blog content because I absolutely love writing. Not to mention, I really do feel that I can speak more clearly and articulately having blogged consistently.  However, I often won&#39;t publish posts (or even start them) for fear of people _actually_ reading them. It&#39;s usually a worry about what others might think about the post, or fear of peers/clients reading into things that might be tangentially related to the article in which I&#39;m posting.
 
 So, all that being said, I want to try to blog more consistently.  Hopefully once per day. That obviously might mean quality of posts might go down for _some_ posts, but hopefully it will increase overall as time goes on.  My wife and I have recently been blogging weekly on our site about our [School Bus Conversion](http://trebventure.com/) and it&#39;s been a total blast. I&#39;d love to apply some of that here and talk more about consulting, the business of app dev, etc…
 
