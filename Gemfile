@@ -7,7 +7,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 # gem "rails"
 
 # Added at 2018-04-14 12:10:45 -0600 by brandon:
-gem "jekyll", "~> 3.7"
+gem "jekyll", "~> 3.7.4"
 
 # Added at 2018-04-14 12:11:44 -0600 by brandon:
 gem "jekyll-paginate", "~> 1.1"
