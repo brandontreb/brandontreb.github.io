@@ -10,7 +10,7 @@ layout: default
   {% endif %}
   {{ content }}
   <footer class="post__footer">
-    <small><time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%a, %b %d, %Y at %I:%M%P" }}</time></small>
+    <small><time class="dt-published" datetime="{{ page.date | date_to_long_string }}">{{ page.date | date: "%a, %b %d, %Y at %I:%M%P" }}</time></small>
   </footer>
 </div>
 
@@ -23,7 +23,7 @@ layout: default
           {% if post.title == "" %}<div>{{post.content}}</div>{% endif %}
           <a href="{{ site.baseurl }}{{ post.url }}">
             {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
+            <small>{{ post.date | date_to_long_string }}</small>
           </a>
         {% if post.title == "" %}</div>{% else %}</h3>{% endif %}
       </li>
