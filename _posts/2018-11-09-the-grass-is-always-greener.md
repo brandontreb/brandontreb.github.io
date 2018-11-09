@@ -15,4 +15,4 @@ There&#39;s obviously another side to this coin as well. I even [wrote a whole p
 
 I guess what I&#39;m getting at is, the grass truly is greener on the other side.  Working for yourself has its advantages, but there are also some clear benefits of working for someone else.  If you want to work for yourself, do it, if you are happy and fulfilled in your job, great.  
 
-The only way to loose is to continue down a path that no longer brings you joy.  So make a change or sit tight, stop dreaming about the other side.
+The only way to lose is to continue down a path that no longer brings you joy. 
