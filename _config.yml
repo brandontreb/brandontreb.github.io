@@ -15,6 +15,7 @@ tagline:             'Tips And Resources For Software Consultants'
 description:         'A blog about software development consulting'
 url:                 'http://brandontreb.com'
 baseurl:             ''
+timezone:            'America/Denver'
 
 paginate: 25
 paginate_path: "page:num"
