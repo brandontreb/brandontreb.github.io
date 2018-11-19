@@ -5,6 +5,7 @@
 plugins:
     - jekyll-paginate
     - jekyll-sitemap
+    - jekyll-mentions
 
 permalink:           /:title:output_ext
 
@@ -19,6 +20,8 @@ timezone:            'America/Denver'
 
 paginate: 25
 paginate_path: "page:num"
+
+jekyll-mentions: https://micro.blog
 
 # About/contact
 author:

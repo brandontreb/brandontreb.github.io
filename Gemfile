@@ -14,3 +14,5 @@ gem "jekyll-paginate", "~> 1.1"
 
 # Added at 2018-04-14 12:11:59 -0600 by brandon:
 gem "jekyll-sitemap", "~> 1.2"
+
+gem 'jekyll-mentions'
