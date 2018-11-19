@@ -7,7 +7,7 @@ lang: en
 ---
 A few years back, when the company was growing particularly quickly, I made a decision to hire my friends. Although, I had been warned by many others that this was a bad idea, I was sure that I was going to do things differently. 
 
-I was going to have a management layer over my closest friends and then _they_ could have the uncomfortable conversions should they arise. 
+I was going to have a management layer over my closest friends and then _they_ could have the uncomfortable conversations should they arise. 
 
 Needless to say, this strategy worked for a time, however at some point, things got tough and I had to make some serious decisions. I had to lay-off my buddies. 
 
