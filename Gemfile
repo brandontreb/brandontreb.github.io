@@ -16,3 +16,5 @@ gem "jekyll-paginate", "~> 1.1"
 gem "jekyll-sitemap", "~> 1.2"
 
 gem 'jekyll-mentions'
+
+gem 'jekyll-webmention_io'

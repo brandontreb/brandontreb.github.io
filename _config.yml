@@ -6,6 +6,7 @@ plugins:
     - jekyll-paginate
     - jekyll-sitemap
     - jekyll-mentions
+    - jekyll-webmention-io
 
 permalink:           /:title:output_ext
 
