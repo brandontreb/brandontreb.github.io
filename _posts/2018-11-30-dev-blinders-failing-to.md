@@ -15,6 +15,6 @@ This doesn&#39;t always translate well when it comes to UX design for the end-us
 
 **The Moral**
 
-Next time you are testing your software, have as many people _not_ involved in the project test it as possible. Given them very little context. Watch them use your product. Find out what _is_ intuitive to them and what isn&#39;t.  I think you will be pleasantly surprised and your software will be better for it. 
+Next time you are testing your software, have as many people _not_ involved in the project test it as possible. Given them very little context. Watch them use your product. Find out what _is_ intuitive to them and what isn&#39;t.  You will be pleasantly surprised and your software will be better for it. 
 
 
