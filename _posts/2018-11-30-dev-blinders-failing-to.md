@@ -13,7 +13,7 @@ Sometimes, as developers, we understand these super complex systems solely becau
 
 This doesn&#39;t always translate well when it comes to UX design for the end-user.  I believe developers have a bias when looking over the product in which they are creating.  It makes sense to us, so it must to everyone else. I opted to _not_ learn about the underlying code, so that I could better QA the product by removing some of this bias.
 
-** The Moral **
+**The Moral**
 
 Next time you are testing your software, have as many people _not_ involved in the project test it as possible. Given them very little context. Watch them use your product. Find out what _is_ intuitive to them and what isn&#39;t.  I think you will be pleasantly surprised and your software will be better for it. 
 

@@ -18,3 +18,5 @@ gem "jekyll-sitemap", "~> 1.2"
 gem 'jekyll-mentions'
 
 gem 'jekyll-webmention_io'
+
+gem 'jekyll-admin', group: :jekyll_plugins
