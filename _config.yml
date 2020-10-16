@@ -12,8 +12,8 @@ permalink:           /:title:output_ext
 # Setup
 name:                'Brandon Trebitowski'
 title:               'brandontreb.com'
-tagline:             'Tips And Resources For Software Consultants'
-description:         'A blog about software development consulting'
+tagline:             'Tips And Resources For Software Developers'
+description:         'A blog about software development & consulting'
 url:                 'http://brandontreb.com'
 baseurl:             ''
 timezone:            'America/Denver'
