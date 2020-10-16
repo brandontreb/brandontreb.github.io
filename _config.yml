@@ -18,7 +18,7 @@ url:                 'http://brandontreb.com'
 baseurl:             ''
 timezone:            'America/Denver'
 
-paginate: 25
+paginate: 50
 paginate_path: "page:num"
 
 jekyll-mentions: https://micro.blog
