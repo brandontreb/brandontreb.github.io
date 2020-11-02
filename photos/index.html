@@ -2,7 +2,7 @@
 layout: default
 title: Photos for brandontreb.com
 ---
-
+<span class="photos">
 <style>
   /*
 
@@ -19,20 +19,19 @@ title: Photos for brandontreb.com
   :root {
       font-size: 10px;
   }
-
   *,
   *::before,
   *::after {
       box-sizing: border-box;
   }
 
-  /* body {
+  body {
       font-family: "Open Sans", Arial, sans-serif;
       min-height: 100vh;
       background-color: #fafafa;
       color: #262626;
       padding-bottom: 3rem;
-  } */
+  }
 
   img {
       display: block;
@@ -307,13 +306,6 @@ title: Photos for brandontreb.com
       }
   }
 
-  /* Spinner Animation */
-
-  @keyframes loader {
-      to {
-          transform: rotate(360deg);
-      }
-  }
 
   /*
 
@@ -323,7 +315,7 @@ title: Photos for brandontreb.com
 
   */
 
-  @supports (display: grid) {
+  /* @supports (display: grid) {
       .profile {
           display: grid;
           grid-template-columns: 1fr 2fr;
@@ -382,7 +374,7 @@ title: Photos for brandontreb.com
               margin: 0;
           }
       }
-  }
+  } */
 </style>
 
 <header>
@@ -393,21 +385,21 @@ title: Photos for brandontreb.com
 
 			<div class="profile-image">
 
-				<img src="https://images.unsplash.com/photo-1513721032312-6a18a42c8763?w=152&h=152&fit=crop&crop=faces" alt="">
+				<img src="./profile.png" width="152" height="152" alt="">
 
 			</div>
 
 			<div class="profile-user-settings">
 
-				<h1 class="profile-user-name">janedoe_</h1>
+				<h1 class="profile-user-name">brandontreb</h1>
 
-				<button class="btn profile-edit-btn">Edit Profile</button>
+				<!-- <button class="btn profile-edit-btn">Edit Profile</button> -->
 
-				<button class="btn profile-settings-btn" aria-label="profile settings"><i class="fas fa-cog" aria-hidden="true"></i></button>
+				<!-- <button class="btn profile-settings-btn" aria-label="profile settings"><i class="fas fa-cog" aria-hidden="true"></i></button> -->
 
 			</div>
 
-			<div class="profile-stats">
+			<!-- <div class="profile-stats">
 
 				<ul>
 					<li><span class="profile-stat-count">164</span> posts</li>
@@ -415,11 +407,19 @@ title: Photos for brandontreb.com
 					<li><span class="profile-stat-count">206</span> following</li>
 				</ul>
 
-			</div>
+			</div> -->
 
 			<div class="profile-bio">
 
-				<p><span class="profile-real-name">Jane Doe</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit 📷✈️🏕️</p>
+				<p><span class="profile-real-name">Brandon Trebitowski</span>
+          <br><br>
+          <span>
+          💻 Software<br>
+          🏕 Outdoors<br>
+          🏠 Family<br>
+          🏃‍♂️ Fitness
+          </span>
+        </p>
 
 			</div>
 
@@ -441,7 +441,7 @@ title: Photos for brandontreb.com
       {% for post in sorted-posts %}
         {% if post.mf-photo  %}
         <div class="gallery-item" tabindex="0">
-  				<img width="300" height="300" src="{{ post.mf-photo }}" class="gallery-image" alt="">
+  				<img width="300" height="300" src="{{ post.mf-photo }}" class="gallery-image" alt="" data-url="{{post.url}}">
   				<div class="gallery-item-info">
   					<ul>
   						<li class="gallery-item-likes">{{post.content}}</li>
@@ -454,9 +454,31 @@ title: Photos for brandontreb.com
 
 		</div>
 		<!-- End of gallery -->
-		
-
 
 	<!-- End of container -->
 
 </main>
+
+<script>
+  /*
+
+Full-page view:
+
+https://codepen.io/GeorgePark/full/VXrwOP/
+
+*/
+
+ const posts = document.querySelectorAll('.gallery-item');
+
+ posts.forEach(post => {
+ 	post.addEventListener('click', () => {
+ 		//Get original image URL
+ 		const imgUrl = post.firstElementChild.dataset.url;
+ 		//Open image in new tab
+ 		window.open(imgUrl, '_blank');
+ 	});
+ });
+
+
+</script>
+</span>
