@@ -63,7 +63,7 @@ GEM
       string_inflection (~> 0.1)
       uglifier (~> 4.1)
       webmention (~> 0.1.6)
-    json (2.1.0)
+    json (2.3.1)
     kramdown (1.17.0)
     link_header (0.0.8)
     liquid (4.0.1)
