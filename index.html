@@ -1,43 +1,22 @@
 ---
 layout: default
-title: brandontreb.com
 ---
 
 <div class="posts">
-  {% assign sorted-posts = paginator.posts %}
-  {% for post in sorted-posts %}
-    {% if post.title == "" %}
+  {% for post in site.posts %}    
+
+    {% if post.categories contains "social" or post.title == '' %}
       {% continue %}
     {% endif %}
-    <div class="post">
-      <h1 class="post-title">
-        <a href="{{ site.baseurl }}/{{ post.url | remove_first:'/' }}">
-          {{ post.title }}
-        </a>
-      </h1>
+    <article class="post">
+      {{ post.categories }}
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-      {{ post.content }}
-      <!-- <span class="post-date">{{ post.date | date_to_string }}</span> -->
-      <footer class="post__footer">
-          <small><time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ post.url }}" title="Permalink to Microblog post" class="u-url">{{ post.date | date: "%a, %b %d, %Y at %I:%M%P" }}</time></a></small>
-        </footer>
-    </div>
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
   {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
 </div>
