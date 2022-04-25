@@ -3,6 +3,9 @@ layout: micropubpost
 date: '2018-11-30T21:44:52.574Z'
 title: Dev Blinders - Failing To See Things From A User Perspective
 slug: dev-blinders-failing-to
+categories:
+- programming
+- featured
 lang: en
 ---
 The other day, I was having a conversation over Slack with my development team. They were working on a client project (and doing a killer job), and there was a particular UX pattern that seemed very unintuitive to me.  This app was designed by the client, so there was little the dev team could do beyond making suggestions, so they went ahead and implemented it per the spec.

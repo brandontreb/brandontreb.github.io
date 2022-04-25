@@ -11,6 +11,7 @@ tags:
   - consulting
   - contracts
   - software
+  - featured
 ---
 One of the most common questions I get from software consultants is whether or not to accept fixed bid contracts.  In this post, I&#8217;m hoping to shed some light on fixed bid vs. time and materials contracts and help you make the best decision for the project at hand.
 

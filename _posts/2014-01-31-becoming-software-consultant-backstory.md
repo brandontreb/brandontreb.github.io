@@ -9,6 +9,7 @@ categories:
   - Articles
   - Consulting
   - iPhone
+  - featured
 ---
 I recently published a post about [my first year of being an independent iPhone development consultant][1].  The feedback from my readers was incredible, however there was one important thread on Hacker News that I wanted to address.  The issues were:
 

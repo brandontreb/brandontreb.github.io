@@ -10,6 +10,7 @@ categories:
   - Consulting
   - Contracting
   - iPhone Programming
+  - featured
 tags:
   - consulting
   - contracts

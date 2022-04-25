@@ -5,6 +5,9 @@ title: 'Apple Removing Apps Older Than 2 Years'
 slug: apple-removing-apps
 mf-post-status:
   - published
+categories:
+  - apple
+  - featured
 lang: en
 ---
 [Apple says they&#39;re removing my game because it&#39;s more than 2 years old](https://news.ycombinator.com/item?id=31135972)

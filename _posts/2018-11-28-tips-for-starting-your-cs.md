@@ -3,6 +3,8 @@ layout: micropubpost
 date: '2018-11-28T03:41:37.598Z'
 title: Tips For Starting Your CS Career
 slug: tips-for-starting-your-cs
+categories:
+- programming
 lang: en
 ---
 My little brother was recently in town for the holidays. He’s about to graduate from college with a CS degree, so naturally we talked about searching for a job. 

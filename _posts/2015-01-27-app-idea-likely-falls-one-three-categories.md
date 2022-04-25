@@ -8,6 +8,7 @@ categories:
 tags:
   - apps
   - consulting
+  - featured
 ---
 During my years of mobile development, I have heard the phrase “I have an idea for an app!” hundreds, if not thousands of times.  Sometimes it would be from family members, sometimes my dentist during a cleaning, and sometimes from a naked dude standing in the sauna at the gym.  Everyone pitches app ideas to me.
 

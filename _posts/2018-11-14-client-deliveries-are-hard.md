@@ -3,6 +3,10 @@ layout: micropubpost
 date: '2018-11-14T23:04:32.216Z'
 title: Client Deliveries Are Hard
 slug: client-deliveries-are-hard
+categories:
+- programming
+- featured
+- consulting
 lang: en
 ---
 I have been building software for clients for over a decade now and have come to one solid conclusion: **deliveries suck**.

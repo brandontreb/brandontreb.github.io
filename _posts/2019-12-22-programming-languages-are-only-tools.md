@@ -3,6 +3,9 @@ layout: micropubpost
 date: '2019-12-22T14:55:22.939Z'
 title: Programming Languages Are Only Tools
 slug: programming-languages-are-only-tools
+categories:
+- programming
+- featured
 lang: en
 ---
 Some young punks overheard me talking about JavaScript at lunch today. They felt it necessary to come to my table and tell me “typescript is waybetter”. They don’t realize that this sort of thing screams “I’m a junior developer! I know very little about the tech industry!”

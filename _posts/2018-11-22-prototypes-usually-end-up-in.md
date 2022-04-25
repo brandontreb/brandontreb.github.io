@@ -3,6 +3,9 @@ layout: micropubpost
 date: '2018-11-22T00:11:59.607Z'
 title: Prototypes Usually End Up In Production
 slug: prototypes-usually-end-up-in
+categories:
+- programming
+- featured
 lang: en
 ---
 “Just hack a quick proof of concept, we’ll rebuild it when we get more funding.”  These are some words I often hear from clients who have minimal budgets. 

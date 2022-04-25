@@ -3,6 +3,8 @@ layout: micropubpost
 date: '2018-12-11T01:02:06.252Z'
 title: We Instead Of I
 slug: we-instead-of-i
+categories:
+- featured
 lang: en
 ---
 When I first started consulting, I had everything tied to my name. My company name was Treb Studios, my email was brandon@brandontreb.com, and my whole business was tied to me. 

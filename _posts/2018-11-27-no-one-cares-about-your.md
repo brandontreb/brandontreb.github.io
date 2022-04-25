@@ -3,6 +3,9 @@ layout: micropubpost
 date: '2018-11-27T00:38:32.448Z'
 title: No One Cares About Your Clever Code
 slug: no-one-cares-about-your
+categories:
+- programming
+- featured
 lang: en
 ---
 As developers, we spend so much time perfecting our craft. We are always on the hunt for hacks, tips, and tweaks. 

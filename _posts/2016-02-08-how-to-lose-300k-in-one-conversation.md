@@ -6,6 +6,7 @@ layout: post
 permalink: /how-to-lose-300k-in-one-conversation
 categories:                                                                                                     
     - Consulting 
+    - featured
 ---
 
 <blockquote>Will you work for equity?</blockquote>

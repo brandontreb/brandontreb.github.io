@@ -9,6 +9,7 @@ categories:
   - Articles
   - Consulting
   - Contracting
+  - featured
 tags:
   - consulting
   - nda

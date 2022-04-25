@@ -4,6 +4,10 @@ date: '2018-11-06T16:07:10.255Z'
 title: It's A Good Time To Be A (Good) Mobile Developer
 slug: it-s-a-good-time-to
 lang: en
+categories:
+- programming
+- featured
+- consulting
 ---
 If you are a mobile developer in 2018, and are not consulting (at least on the side), you are missing out on a huge stream of revenue.
 

@@ -5,6 +5,7 @@ layout: post
 permalink: /why-consult
 categories:
   - Consulting
+  - featured
 ---
 
 Want to jump ship and be a software development consultant? This post will detail why this path is a much more fulfilling and safer path than a traditional job.

@@ -6,14 +6,17 @@ title: Home
 <div class="posts">
   {% for post in site.posts %}
   {% if post.title.size == 0 %}
-  <div class="post">
+  <div class="post micro">
     {% if post.mf-photo.size > 0 %}
       <img width="300" src="{{ post.mf-photo }}" />
     {% endif %}
     {{ post.content }}
-    <footer class="post__footer">
+    <!-- <footer class="post__footer">
         <small><time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ post.url }}" title="Permalink to Microblog post" class="u-url">{{ post.date | date: "%a, %b %d, %Y at %I:%M%P" }}</time></a></small>
-      </footer>
+      </footer> -->
+      <div class="date">
+        Written on <a href="{{ post.url }}" title="Permalink to Microblog post" class="u-url">{{ post.date | date: "%B %e, %Y" }}</a>
+      </div>
   </div>
   {% endif %}
   {% endfor %}
