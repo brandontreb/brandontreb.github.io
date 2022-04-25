@@ -1,22 +1,17 @@
----
-layout: default
----
+--- layout: default ---
 
 <div class="posts">
-  {% for post in site.posts %}    
+  {% for post in site.posts %} {% if post.categories contains "social" or post.title == '' %} {% continue %} {% endif %}
+  <article class="post">
+    {{ post.categories }}
+    <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-    {% if post.categories contains "social" or post.title == '' %}
-      {% continue %}
-    {% endif %}
-    <article class="post">
-      {{ post.categories }}
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <div class="entry">
+      <!-- {{ post.excerpt }} -->
+      {{ post.content | strip_html | truncatewords:75 }}
+    </div>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
+    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+  </article>
   {% endfor %}
 </div>
