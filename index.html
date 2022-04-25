@@ -1,7 +1,7 @@
 --- layout: default ---
 
 <div class="posts">
-  {% for post in site.posts %} {% if post.categories contains "social" or post.title == '' %} {% continue %} {% endif %}
+  {% for post in site.posts limit:5 %} {% if post.categories contains "social" or post.title == '' %} {% continue %} {% endif %}
   <article class="post">
     {{ post.categories }}
     <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
