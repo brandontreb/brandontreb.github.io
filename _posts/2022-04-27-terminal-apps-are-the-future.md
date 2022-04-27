@@ -5,6 +5,11 @@ title: Terminal Apps Are The Future?
 mf-post-status:
   - published
 slug: terminal-apps-are-the-future
+category:
+  - terminal
+  - apps
+  - future
+  - featured
 lang: en
 ---
 I **LOVE** the idea of taking modern web apps to the Terminal.  As a heavy user of ssh, tmux, screen, etc... the idea of seldom leaving the terminal seems very romantic.
