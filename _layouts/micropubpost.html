@@ -1,6 +1,4 @@
----
-layout: default
----
+--- layout: default ---
 
 <article class="h-entry post">
   <h1>{{ page.title }}</h1>
@@ -8,27 +6,27 @@ layout: default
   <!-- Post content -->
   {% if page.mf-photo %}
   <div class="gallery-item" tabindex="0">
-    <img  src="{{ page.mf-photo }}" class="gallery-image" alt="" data-url="{{page.url}}">      
-  </div>    
+    <img src="{{ page.mf-photo }}" class="gallery-image" alt="" data-url="{{page.url}}">
+  </div>
   {% endif %}
   <div class="e-content">
     {{ page.content }}
-  </div>      
+  </div>
 
   <!-- Date -->
-  <time class="dt-published date" datetime="{{ page.date | date: "%Y-%m-%d %H:%M:00 -600" }}">
+  <time class="dt-published date" datetime="{{ page.date | date: " %Y-%m-%d %H:%M:00 -600 " }}">
     <a class="u-url" href= "{{ site.baseurl }}{{ page.url }}">
       {{ page.date | date: "%H:%M %b" }}
     </a>
-  </time>  
+  </time>
 
   <!-- Author h-card -->
-  <section class="clearfix author p-author h-card">
-    <a href="{{site.baseurl}}" class="u-url">        
-    <img class="u-photo avatar" src="{{ site.avatar }}" width="96" height="96">
-    <div>
-      <span class="p-name dark">{{ site.name }}</span>          
-    </div>      
+  <div class="clearfix author p-author h-card">
+    <a href="{{site.baseurl}}" class="u-url">
+      <img class="u-photo avatar" src="{{ site.avatar }}" width="96" height="96">
+      <div>
+        <span class="p-name dark">{{ site.name }}</span>
+      </div>
     </a>
-  </section>
+  </div>
 </article>
