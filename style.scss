@@ -116,8 +116,11 @@ img {
 }
 
 .date {
-  font-style: italic;
-  color: $gray;
+  // font-style: italic;
+  color: #999;
+  font-size: .75em;
+  // capitalize
+  text-transform: uppercase;
 }
 
 // Specify the color of the selection
@@ -242,13 +245,18 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 2em;
+  padding-bottom: 1em;
+  padding-top: 1em;
   border-bottom: 1px solid $lightGray;
 }
 
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
+}
+
+.posts > .post:first-child {
+  padding-top: 0; 
 }
 
 .post {
@@ -268,6 +276,14 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .author {
+    display: none;
   }
 }
 

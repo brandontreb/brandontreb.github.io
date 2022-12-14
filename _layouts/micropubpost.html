@@ -2,25 +2,33 @@
 layout: default
 ---
 
-<article class="post">
+<article class="h-entry post">
   <h1>{{ page.title }}</h1>
 
-  <div class="entry">
-    {% if page.mf-photo %}
-    <div class="gallery-item" tabindex="0">
-      <img width="300" src="{{ page.mf-photo }}" class="gallery-image" alt="" data-url="{{url}}">
-      <div class="gallery-item-info">
-        {{content}}
-      </div>
-    </div>
-    {% else %}
-    {{ content }}
-    {% endif %}
-  </div>
+  <!-- Post content -->
+  {% if page.mf-photo %}
+  <div class="gallery-item" tabindex="0">
+    <img  src="{{ page.mf-photo }}" class="gallery-image" alt="" data-url="{{page.url}}">      
+  </div>    
+  {% endif %}
+  <div class="e-content">
+    {{ page.content }}
+  </div>      
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+  <!-- Date -->
+  <time class="dt-published date">
+    <a class="u-url" href= "{{ site.baseurl }}{{ page.url }}">
+      {{ page.date | date: "%H:%M %b" }}
+    </a>
+  </time>  
 
-  {% include disqus.html %}
+  <!-- Author h-card -->
+  <section class="clearfix author p-author h-card">
+    <a href="{{site.baseurl}}" class="u-url">        
+    <img class="u-photo avatar" src="{{ site.avatar }}" width="96" height="96">
+    <div>
+      <span class="p-name dark">{{ site.name }}</span>          
+    </div>      
+    </a>
+  </section>
 </article>

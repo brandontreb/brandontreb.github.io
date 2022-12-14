@@ -1,22 +1,47 @@
 --- 
 layout: default 
 ---
+{% assign postsWithoutPhotos = ''|split:''%}
+{% for post in site.posts %}
+  {% if post.mf-photo %}    
+  {% else %}
+    {% assign postsWithoutPhotos = postsWithoutPhotos|push:post%}
+  {% endif %}
+{% endfor %}
 
 <div class="posts">
-  {% for post in site.categories.featured %} 
-    {% if post.categories contains "social" or post.title == '' %} 
-      {% continue %} 
-    {% endif %}
+  {% for post in postsWithoutPhotos limit:25 %} 
     <article class="post">
-      
+    <!-- Display title if title exists -->
+    {% if post.title != '' %}      
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    {% endif %}
 
-      <div class="entry">
-        <!-- {{ post.excerpt }} -->
-        {{ post.content | strip_html | truncatewords:75 }}
+      <div class="post">
+        {% if post.mf-photo %}
+          <div class="gallery-item" tabindex="0">
+            <img src="{{ post.mf-photo }}" class="gallery-image" alt="" data-url="{{url}}">
+            <div class="content">
+              {{post.content}}
+            </div>
+          </div>
+          {% else %}
+            {% if post.categories contains "social" or post.title == '' %} 
+            <div class="content">
+              <p>{{ post.content }}</p>
+            </div>
+            {% else %}
+              <p>{{ post.content | strip_html | truncatewords:75 }}</p>
+            {% endif %}            
+          {% endif %}
+      </div>      
+      <div class="date">
+        <a href= "{{ site.baseurl }}{{ post.url }}">
+          {{ post.date | date: "%I:%M %P %b %e" }}
+        </a>
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
 </div>
+
