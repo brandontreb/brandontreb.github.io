@@ -93,7 +93,9 @@ ready(async() => {
       conversationDiv.innerHTML = `
         <div>
           <img src="${conversation.author.photo}" alt="${conversation.author.name}" width="25" height="25" style="max-width: 30px;" />
-          <span class="p-name">${conversation.author.name}</span>
+          <a href="${conversation.author.url}">
+            <span class="p-name">${conversation.author.name}</span>
+          </a>
         </div>
         <div>
           <span>${conversation.content.html || conversation.content.text}</span>
