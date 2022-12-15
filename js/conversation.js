@@ -18,11 +18,11 @@ ready(async() => {
       return;
     }
 
-    conversationsDiv.innerHTML = `
-      <div class="conversations-loading">
-        <div class="spinner">Loading...</div>
-      </div>
-    `;
+    // conversationsDiv.innerHTML = `
+    //   <div class="conversations-loading">
+    //     <div class="spinner">Loading...</div>
+    //   </div>
+    // `;
 
     // let target = 'https://brandontreb.com/65326/';
     let target = encodeURIComponent(window.location.href);
