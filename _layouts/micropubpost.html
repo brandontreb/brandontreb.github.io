@@ -16,9 +16,9 @@ layout: default
   </div>
 
   <!-- Date -->
-  <time class="dt-published date" datetime="{{ page.date | date: " %Y-%m-%d %H:%M:00 -600 " }}">
+  <time class="dt-published date" datetime="{{ page.date | date: " %Y-%m-%d %H:%M:00" }}">
     <a class="u-url" href= "{{ site.baseurl }}{{ page.url }}">
-      {{ page.date | date: "%H:%M %b" }}
+      {{ page.date | date: "%I:%M %P %b %e, %Y" }}
     </a>
   </time>
 
