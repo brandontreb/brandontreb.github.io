@@ -38,7 +38,7 @@ ready(async() => {
 
     console.log(data.children);
 
-    conversationsDiv.innerHTML = `<hr /><br /><h3>Replies</h3>`;
+    conversationsDiv.innerHTML = `<hr /><h3>Replies</h3>`;
 
     data.children.forEach(conversation => {
       let conversationDiv = document.createElement('div');
