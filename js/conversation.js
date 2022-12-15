@@ -13,14 +13,14 @@ ready(async() => {
   try {
 
     var styleEl = document.createElement('style');
-    styleEl.innerHTML = '#conversations img{ \
-      float: left; \
-      margin-right: 10px; \
-    }\
-    #conversations .p-name{ \
-      font-weight: bold; \
-    }\
-    ';
+    styleEl.innerHTML = `#conversations img{ 
+      float: left; 
+      margin-right: 10px; 
+    }
+    #conversations .p-name{ 
+      font-weight: bold; 
+    }
+    `;
     document.head.appendChild(styleEl);
 
     const conversationsDiv = document.getElementById('conversations');
@@ -29,14 +29,34 @@ ready(async() => {
       return;
     }
 
+    // let target = 'https://brandontreb.com/65326/';
+    let target = encodeURIComponent(window.location.href);
+
     // conversationsDiv.innerHTML = `
     //   <div class="conversations-loading">
     //     <div class="spinner">Loading...</div>
     //   </div>
     // `;
 
-    // let target = 'https://brandontreb.com/65326/';
-    let target = encodeURIComponent(window.location.href);
+    conversationsDiv.innerHTML = `
+      <form class="webmention-form ui form" action="https://webmention.io/brandontreb.com/webmention" method="post">
+      <div class="fields">
+        <div class="">
+          <label>Have you written a <a href="https://indieweb.org/responses">response</a> to this? Let me know the URL:</label>
+          <input type="url" name="source" class="url">
+        </div>
+        <div class="four wide field">
+          <label>&nbsp;</label>
+          <input type="submit" class="ui submit button" value="Send Webmention">
+        </div>
+      </div>
+      <div class="status hidden">
+        <div class="ui message"></div>
+      </div>
+      <input type="hidden" name="target" value="${target}">
+    </form>
+    `
+
     let url = `https://webmention.io/api/mentions.jf2?target=${target}`
     const response = await fetch(url);
     let data = await response.json();
