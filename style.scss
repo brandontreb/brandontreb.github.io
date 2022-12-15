@@ -69,7 +69,7 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $gray;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
@@ -115,12 +115,16 @@ img {
   max-width: none;
 }
 
-.date {
+.date, .date a {
   // font-style: italic;
-  color: #999;
-  font-size: .75em;
+  color: $blue;
+  font-size: 0.95em;
   // capitalize
-  text-transform: uppercase;
+  text-transform: uppercase;  
+}
+
+.date a {
+text-decoration: none !important;
 }
 
 // Specify the color of the selection
@@ -273,11 +277,6 @@ nav {
     margin-top: 10px;
   }
 
-  .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
-  }
-
   img {
     max-width: 100%;
   }
@@ -285,6 +284,15 @@ nav {
   .author {
     display: none;
   }
+
+  p {
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+
+  a {
+    text-decoration: underline;
+    }
 }
 
 .wrapper-footer {

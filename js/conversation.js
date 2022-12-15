@@ -12,6 +12,17 @@ function ready(callback) {
 ready(async() => {
   try {
 
+    var styleEl = document.createElement('style');
+    styleEl.innerHTML = '#conversations img{ \
+      float: left; \
+      margin-right: 10px; \
+    }\
+    #conversations .p-name{ \
+      font-weight: bold; \
+    }\
+    ';
+    document.head.appendChild(styleEl);
+
     const conversationsDiv = document.getElementById('conversations');
     if (!conversationsDiv) {
       console.log('This theme does not support conversations. Add a div with the id conversations to your page.');
@@ -24,8 +35,8 @@ ready(async() => {
     //   </div>
     // `;
 
-    // let target = 'https://brandontreb.com/65326/';
-    let target = encodeURIComponent(window.location.href);
+    let target = 'https://brandontreb.com/65326/';
+    // let target = encodeURIComponent(window.location.href);
     let url = `https://webmention.io/api/mentions.jf2?target=${target}`
     const response = await fetch(url);
     let data = await response.json();
@@ -45,8 +56,8 @@ ready(async() => {
       conversationDiv.className = 'conversation';
       conversationDiv.innerHTML = `
         <div>
-          <img src="${conversation.author.photo}" alt="${conversation.author.name}" width="30" height="30" style="max-width: 30px;" />
-          <span>${conversation.author.name}</span>
+          <img src="${conversation.author.photo}" alt="${conversation.author.name}" width="25" height="25" style="max-width: 30px;" />
+          <span class="p-name">${conversation.author.name}</span>
         </div>
         <div>
           <span>${conversation.content.html || conversation.content.text}</span>
