@@ -17,8 +17,33 @@ ready(async() => {
       float: left; 
       margin-right: 10px; 
     }
+    #conversations a {
+      text-decoration: none;
+      font-weight: bold;      
+    }
     #conversations .p-name{ 
       font-weight: bold; 
+    }
+    #conversations .webmention-form label{
+      display: block;
+      clear: both;      
+      font-size: 1.0em;      
+    }
+    #conversations .webmention-form input[type=url]{
+      display: block;
+      width: 100%;
+      font-size: 1.0em;
+      padding: 0.5em;
+      float: left;
+    }
+    #conversations .webmention-form input[type=submit]{
+      display: block;      
+      font-size: 1.0em;
+      padding: 0.5em;
+      float: right;
+    }
+    #conversations .clear{
+      clear: both;
     }
     `;
     document.head.appendChild(styleEl);
@@ -32,29 +57,22 @@ ready(async() => {
     // let target = 'https://brandontreb.com/65326/';
     let target = encodeURIComponent(window.location.href);
 
-    // conversationsDiv.innerHTML = `
-    //   <div class="conversations-loading">
-    //     <div class="spinner">Loading...</div>
-    //   </div>
-    // `;
-
     conversationsDiv.innerHTML = `
-      <form class="webmention-form ui form" action="https://webmention.io/brandontreb.com/webmention" method="post">
-      <div class="fields">
-        <div class="">
-          <label>Have you written a <a href="https://indieweb.org/responses">response</a> to this? Let me know the URL:</label>
-          <input type="url" name="source" class="url">
-        </div>
-        <div class="four wide field">
+      <br /><hr />
+      <form class="webmention-form" action="https://webmention.io/brandontreb.com/webmention" method="post">
+      
+        <label>Have you written a <a href="https://indieweb.org/responses">response</a> to this? Let me know the URL:</label>
+        <input type="url" name="source" class="url">
+        <div>
           <label>&nbsp;</label>
           <input type="submit" class="ui submit button" value="Send Webmention">
-        </div>
-      </div>
+        </div>      
       <div class="status hidden">
         <div class="ui message"></div>
       </div>
       <input type="hidden" name="target" value="${target}">
     </form>
+    <div class="clear"></div>
     `
 
     let url = `https://webmention.io/api/mentions.jf2?target=${target}`
@@ -62,14 +80,12 @@ ready(async() => {
     let data = await response.json();
 
     if (!data || !data.children || data.children.length === 0) {
-      // conversationsDiv.innerHTML = `<p>No replies yet</p>`;
-      conversationsDiv.innerHTML = ``;
       return;
     }
 
     console.log(data.children);
 
-    conversationsDiv.innerHTML = `<br /><hr /><h3>Replies</h3>`;
+    conversationsDiv.innerHTML = `${conversationsDiv.innerHTML}<h3>Replies</h3>`;
 
     data.children.forEach(conversation => {
       let conversationDiv = document.createElement('div');
