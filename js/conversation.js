@@ -63,7 +63,7 @@ ready(async() => {
           <span>${conversation.content.html || conversation.content.text}</span>
         </div>
         <div>
-          <span><a href="${conversation.source}">${conversation.published}</a></span>
+          <span><a href="${conversation['wm-source']}">${conversation.published}</a></span>
         </div>
         `;
       conversationDiv.id = conversation.id;
