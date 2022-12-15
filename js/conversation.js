@@ -70,12 +70,12 @@ ready(async() => {
       <div class="status hidden">
         <div class="ui message"></div>
       </div>
-      <input type="hidden" name="target" value="${target}">
+      <input type="hidden" name="target" value="${window.location.href}">
     </form>
     <div class="clear"></div>
     `
 
-    let url = `https://webmention.io/api/mentions.jf2?target=${window.location.href}`
+    let url = `https://webmention.io/api/mentions.jf2?target=${target}`
     const response = await fetch(url);
     let data = await response.json();
 
