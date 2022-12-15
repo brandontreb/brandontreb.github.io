@@ -59,7 +59,7 @@ ready(async() => {
 
     conversationsDiv.innerHTML = `
       <br /><hr />
-      <form class="webmention-form" action="https://webmention.io/brandontreb.com/webmention" method="post">
+      <!-- <form class="webmention-form" action="https://webmention.io/brandontreb.com/webmention" method="post">
       
         <label>Have you written a <a href="https://indieweb.org/responses">response</a> to this? Let me know the URL:</label>
         <input type="url" name="source" class="url">
@@ -71,7 +71,7 @@ ready(async() => {
         <div class="ui message"></div>
       </div>
       <input type="hidden" name="target" value="${target}">
-    </form>
+    </form>-->
     <div class="clear"></div>
     `
 
