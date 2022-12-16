@@ -3,8 +3,21 @@ layout: default
 ---
 
 <article class="h-entry post">
-  <h1>{{ page.title }}</h1>
 
+  <!-- Date -->
+  <div class="date_container">
+    <time class="dt-published date" datetime="{{ page.date | date: " %Y-%m-%d %H:%M:00" }}">
+      <a class="u-url" href= "{{ site.baseurl }}{{ page.url }}">
+        {{ page.date | date: "%I:%M %P %b %e, %Y" }}
+      </a>
+    </time>
+  </div>
+
+  <!-- Title -->
+  {% if page.title %}
+  <h1>{{ page.title }}</h1>
+  {% endif %}
+ 
   <!-- Post content -->
   {% if page.mf-photo %}
   <div class="gallery-item" tabindex="0">
@@ -15,12 +28,14 @@ layout: default
     {{ page.content }}
   </div>
 
-  <!-- Date -->
-  <time class="dt-published date" datetime="{{ page.date | date: " %Y-%m-%d %H:%M:00" }}">
-    <a class="u-url" href= "{{ site.baseurl }}{{ page.url }}">
-      {{ page.date | date: "%I:%M %P %b %e, %Y" }}
-    </a>
-  </time>
+  <!-- Display tags -->
+  {% if post.tags.size > 0 %}
+    <div class="tags">
+      {% for tag in post.tags %}
+        <a href="{{ site.baseurl }}/tag/{{ tag | slugify }}">#{{ tag }}</a>
+      {% endfor %}
+    </div>
+  {% endif %}
 
   <!-- Author h-card -->
   <div class="clearfix author p-author h-card">

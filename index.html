@@ -3,7 +3,7 @@ layout: default
 ---
 {% assign postsWithoutPhotos = ''|split:''%}
 {% for post in site.posts %}
-  {% if post.mf-photo %}    
+  {% if post.mf-photo and post.tags contains 'family'  %}    
   {% else %}
     {% assign postsWithoutPhotos = postsWithoutPhotos|push:post%}
   {% endif %}
@@ -22,7 +22,7 @@ layout: default
           <div class="gallery-item" tabindex="0">
             <img src="{{ post.mf-photo }}" class="gallery-image" alt="" data-url="{{url}}">
             <div class="content">
-              {{post.content}}
+              {{post.content}}              
             </div>
           </div>
           {% else %}

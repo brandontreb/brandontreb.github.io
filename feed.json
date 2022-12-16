@@ -6,17 +6,27 @@ layout: null
 	"title": {{ site.author.name | jsonify }},
 	"home_page_url": "{{ site.url }}/",
 	"feed_url": "{{ site.url }}/feed.json",
-	"items": [{% for post in site.posts limit:25 %}
+	"items": [
+	{% for post in site.posts limit:25 %}
 	{
-		"id": "{{ post.slug }}",{% if post.title != null and post.title != '' %}
-		"title": {{ post.title | jsonify }},{% endif %}{% if post.mf-photo.size > 0 %}{% assign quote = '"' %}{% assign media = post.content | append: "<img src=" | append: quote | append: post.mf-photo[0] | append: quote | append: ">" %}
-		"content_html": {{ media | jsonify }},{% else %}
-		"content_html": {{ post.content | jsonify }},{% endif %}
+		"id": "{{ post.slug }}",
+		{% if post.title != null and post.title != '' %}
+		"title": {{ post.title | jsonify }},
+		{% endif %}
+		{% if post.mf-photo.size > 0 %}
+		{% assign quote = '"' %}
+		{% assign media =  "<p><img src=" | append: quote | append: post.mf-photo[0] | append: quote | append: "></p>" | append: post.content %}
+		"content_html": {{ media | jsonify }},
+		{% else %}
+		"content_html": {{ post.content | jsonify }},
+		{% endif %}
 		"date_published": "{{ post.date | date_to_xmlschema }}",
 		"url": "{{ site.url }}{{ post.url }}",
 		"author": {
 			"name" : "{{ site.author.username }}"
 		}
-	}{% if forloop.last == false %},{% endif %}{% endfor %}
+	}{% if forloop.last == false %},
+	{% endif %}
+	{% endfor %}
 	]
 }
