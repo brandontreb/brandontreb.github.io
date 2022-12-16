@@ -24,6 +24,20 @@ ready(async() => {
     #conversations .p-name{ 
       font-weight: bold; 
     }
+    #conversations p{ 
+      margin: 0;
+      margin-top: .8em;
+    }
+    #conversations .date, #conversations .date a{
+      font-size: 0.8em;
+      color: #999;
+      padding: 0;
+      margin: 0;      
+      text-transform: none !important;
+    }
+    #conversations .mention{
+      margin-bottom: 30px;
+    }
     #conversations .webmention-form label{
       display: block;
       clear: both;      
@@ -54,7 +68,7 @@ ready(async() => {
       return;
     }
 
-    // let target = 'https://brandontreb.com/65326/';
+    // let target = 'https://brandontreb.com/62614/';
     let target = encodeURIComponent(window.location.href);
 
     conversationsDiv.innerHTML = `
@@ -87,24 +101,27 @@ ready(async() => {
 
     conversationsDiv.innerHTML = `${conversationsDiv.innerHTML}<h3>Replies</h3>`;
 
-    data.children.forEach(conversation => {
+    let mentions = data.children
+      .sort(function(a, b) {
+        return new Date(a.published) - new Date(b.published);
+      });;
+
+    mentions.forEach(mention => {
       let conversationDiv = document.createElement('div');
       conversationDiv.className = 'conversation';
       conversationDiv.innerHTML = `
-        <div>
-          <img src="${conversation.author.photo}" alt="${conversation.author.name}" width="25" height="25" style="max-width: 30px;" />
-          <a href="${conversation.author.url}">
-            <span class="p-name">${conversation.author.name}</span>
-          </a>
-        </div>
-        <div>
-          <span>${conversation.content.html || conversation.content.text}</span>
-        </div>
-        <div>
-          <span><a href="${conversation['wm-source']}">${conversation.published}</a></span>
+        <div class="mention">
+          <img src="${mention.author.photo}" alt="${mention.author.name}" width="25" height="25" style="max-width: 25px;" />
+          <a href="${mention.author.url}">
+            <span class="p-name">${mention.author.name}</span>
+          </a>                
+          <span>${mention.content.html || mention.content.text}</span>                
+          <span class="date">
+            <a href="${mention['wm-source']}">${new Date(mention.published).toDateString()}</a>
+          </span>        
         </div>
         `;
-      conversationDiv.id = conversation.id;
+      conversationDiv.id = mention.id;
       conversationsDiv.appendChild(conversationDiv);
     });
 
