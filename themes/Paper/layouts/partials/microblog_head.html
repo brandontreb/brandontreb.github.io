@@ -9,12 +9,16 @@
 	<link rel="me" href="https://instagram.com/{{ . }}" />
 {{ end }}
 
-<link rel="authorization_endpoint" href="https://micro.blog/indieauth/auth" />
+
+<link rel="micropub" href="https://astonishing-khapse-b1bfa0.netlify.app/micropub" />
+<link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+
+<!-- <link rel="authorization_endpoint" href="https://micro.blog/indieauth/auth" />
 <link rel="token_endpoint" href="https://micro.blog/indieauth/token" />
 <link rel="micropub" href="https://micro.blog/micropub" />
 <link rel="microsub" href="https://micro.blog/microsub" />
 <link rel="webmention" href="https://micro.blog/webmention" />
-<link rel="subscribe" href="https://micro.blog/users/follow" />
+<link rel="subscribe" href="https://micro.blog/users/follow" /> -->
 <link rel="EditURI" type="application/rsd+xml" href="{{ "rsd.xml" | absURL }}" />
 
 {{ range .Site.Params.plugins_css }}

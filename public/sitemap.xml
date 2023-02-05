@@ -2,14 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://brandontreb.github.io/locations/</loc>
+    <lastmod>2021-03-03T13:11:25+13:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>https://brandontreb.github.io/gallery/</loc>
+    <lastmod>2021-03-03T12:42:53+13:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://brandontreb.github.io/tags/awareness/</loc>
+    <lastmod>2021-02-25T15:33:39+13:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://brandontreb.github.io/blog/</loc>
+    <lastmod>2021-02-25T15:33:39+13:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://brandontreb.github.io/categories/</loc>
+    <lastmod>2021-02-25T15:33:39+13:00</lastmod>
+  </url><url>
+    <loc>https://brandontreb.github.io/categories/conservation/</loc>
+    <lastmod>2021-02-25T15:33:39+13:00</lastmod>
+  </url><url>
+    <loc>https://brandontreb.github.io/blog/endangered-gulls/</loc>
+    <lastmod>2021-02-25T15:33:39+13:00</lastmod>
+  </url><url>
+    <loc>https://brandontreb.github.io/</loc>
+    <lastmod>2021-02-25T15:33:39+13:00</lastmod>
+  </url><url>
+    <loc>https://brandontreb.github.io/tags/sea-birds/</loc>
+    <lastmod>2021-02-25T15:33:39+13:00</lastmod>
+  </url><url>
+    <loc>https://brandontreb.github.io/tags/</loc>
+    <lastmod>2021-02-25T15:33:39+13:00</lastmod>
+  </url><url>
+    <loc>https://brandontreb.github.io/tags/bird-of-the-year/</loc>
+    <lastmod>2021-02-25T15:33:28+13:00</lastmod>
+  </url><url>
+    <loc>https://brandontreb.github.io/blog/bird-of-the-year/</loc>
+    <lastmod>2021-02-25T15:33:28+13:00</lastmod>
+  </url><url>
+    <loc>https://brandontreb.github.io/tags/conservation/</loc>
+    <lastmod>2021-02-25T15:33:09+13:00</lastmod>
+  </url><url>
+    <loc>https://brandontreb.github.io/categories/general/</loc>
+    <lastmod>2021-02-25T15:33:09+13:00</lastmod>
+  </url><url>
+    <loc>https://brandontreb.github.io/tags/history/</loc>
+    <lastmod>2021-02-25T15:33:09+13:00</lastmod>
+  </url><url>
+    <loc>https://brandontreb.github.io/blog/first-post/</loc>
+    <lastmod>2021-02-25T15:33:09+13:00</lastmod>
+  </url><url>
+    <loc>https://brandontreb.github.io/about/</loc>
   </url>
 </urlset>

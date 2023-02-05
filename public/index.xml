@@ -1,17 +1,78 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on CawCannon</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content in Home on CawCannon</description>
+    <title>Home on Brandontreb</title>
+    <link>https://brandontreb.github.io/</link>
+    <description>Recent content in Home on Brandontreb</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 Feb 2021 15:33:39 +1300</lastBuildDate><atom:link href="https://brandontreb.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Endangered bird locations</title>
+      <link>https://brandontreb.github.io/locations/</link>
+      <pubDate>Wed, 03 Mar 2021 13:11:25 +1300</pubDate>
+      
+      <guid>https://brandontreb.github.io/locations/</guid>
+      <description>Endangered bird locations Report a sighting If you think you&#39;ve spotted an endangered species, please contact one of our friendly staff to let them know.
+Kain Papagei
+Contact options: Email Facebook Twitter Aizah Kolibri
+Contact options: Email Facebook Twitter Pier Gaviota
+Contact options: Email Facebook Twitter Ethel Byrd
+Contact options: Email Facebook Twitter </description>
+    </item>
+    
+    <item>
+      <title>Gallery</title>
+      <link>https://brandontreb.github.io/gallery/</link>
+      <pubDate>Wed, 03 Mar 2021 12:42:53 +1300</pubDate>
+      
+      <guid>https://brandontreb.github.io/gallery/</guid>
+      <description>Gallery - with shortcodes Built-in shortcodes YouTube Figure Kea on a mountain Highlighting HTML: &amp;lt;div&amp;gt; &amp;lt;p&amp;gt;Lorem ipsum.&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt;
+JavaScript: // All highlighting options: // https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages const add = (a, b) =&amp;gt; (a + b); console.log(add(1, 2));
+Custom shortcode With figures Kea on a snowy mountain
+Kaka in profile
+Kereru in a tree
+Hoiho with eyes closed
+Pukeko on a wooden deck
+Tui in a harakeke/NZ flax bush
+Without figures </description>
+    </item>
+    
+    <item>
+      <title>Endangered Gulls</title>
+      <link>https://brandontreb.github.io/blog/endangered-gulls/</link>
+      <pubDate>Thu, 25 Feb 2021 15:33:39 +1300</pubDate>
+      
+      <guid>https://brandontreb.github.io/blog/endangered-gulls/</guid>
+      <description>Introduction Loud, screeching, ravenous and aggressive. For many, this is the perception of seagulls - simply an annoyance.
+But many people don&amp;rsquo;t realise the plight of these seabirds, which are in decline or heavily endangered. Being a cute and cuddly looking kakapo, critically endangered and loved by all, makes conservation efforts and public opinion trivial. But how do we get people to respect something that looks severe and is aggressive? This is a great dilemma for the much maligned gull as they, like all seabirds, play an important role in their environments and are worthy of conservation efforts, even if we don&amp;rsquo;t appreciate their behaviour.</description>
+    </item>
+    
+    <item>
+      <title>Bird of the Year</title>
+      <link>https://brandontreb.github.io/blog/bird-of-the-year/</link>
+      <pubDate>Thu, 25 Feb 2021 15:33:28 +1300</pubDate>
+      
+      <guid>https://brandontreb.github.io/blog/bird-of-the-year/</guid>
+      <description>About the competition Here in Aotearoa/New Zealand, we love our unique wildlife. In fact, most of it consists of birds, with no natural predators existing until European settlement. Unfortunately, many of these wonderful creatures had evolved - often in strange ways - to manage without the pressures of predators. This has led to many flightless birds, and a number of others with high curiosity, which has made them easy prey for newly introduced predators.</description>
+    </item>
+    
+    <item>
+      <title>Welcome to CawCannon</title>
+      <link>https://brandontreb.github.io/blog/first-post/</link>
+      <pubDate>Thu, 25 Feb 2021 15:33:09 +1300</pubDate>
+      
+      <guid>https://brandontreb.github.io/blog/first-post/</guid>
+      <description>Welcome to our site! CawCannon is all about bringing you the latest information on the birds, conservation efforts, and other caws for concern in Aotearoa - the Land of the Long White Cloud.
+Here in Aotearoa/New Zealand, we love our unusual wildlife and nature. What makes it especially unusual is that that there are essentially zero dangerous creatures or native predators. Due to separation from other continents and isolation, our flora and fauna have developed in some unique and interesting ways that hark back to life in Gondwanaland.</description>
+    </item>
+    
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://brandontreb.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://brandontreb.github.io/about/</guid>
       <description>About this site CawCannon is a blog about the wonderful and unique birds of New Zealand, featuring detailed information and photos on individual birds, as well as articles on current topics.
 Our amazing team If you think you&#39;ve spotted an endangered species, please contact one of our friendly staff to let them know.
 Kain Papagei

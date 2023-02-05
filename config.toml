@@ -5,3 +5,4 @@ theme = "Paper"
 
 [params]
   author = "CloudCannon"
+  github_username = "brandontreb"

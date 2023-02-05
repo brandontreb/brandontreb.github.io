@@ -1,10 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on CawCannon</title>
-    <link>http://localhost:1313/blog/</link>
-    <description>Recent content in Blog on CawCannon</description>
+    <title>Blog on Brandontreb</title>
+    <link>https://brandontreb.github.io/blog/</link>
+    <description>Recent content in Blog on Brandontreb</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 Feb 2021 15:33:39 +1300</lastBuildDate><atom:link href="https://brandontreb.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Endangered Gulls</title>
+      <link>https://brandontreb.github.io/blog/endangered-gulls/</link>
+      <pubDate>Thu, 25 Feb 2021 15:33:39 +1300</pubDate>
+      
+      <guid>https://brandontreb.github.io/blog/endangered-gulls/</guid>
+      <description>Introduction Loud, screeching, ravenous and aggressive. For many, this is the perception of seagulls - simply an annoyance.
+But many people don&amp;rsquo;t realise the plight of these seabirds, which are in decline or heavily endangered. Being a cute and cuddly looking kakapo, critically endangered and loved by all, makes conservation efforts and public opinion trivial. But how do we get people to respect something that looks severe and is aggressive? This is a great dilemma for the much maligned gull as they, like all seabirds, play an important role in their environments and are worthy of conservation efforts, even if we don&amp;rsquo;t appreciate their behaviour.</description>
+    </item>
+    
+    <item>
+      <title>Bird of the Year</title>
+      <link>https://brandontreb.github.io/blog/bird-of-the-year/</link>
+      <pubDate>Thu, 25 Feb 2021 15:33:28 +1300</pubDate>
+      
+      <guid>https://brandontreb.github.io/blog/bird-of-the-year/</guid>
+      <description>About the competition Here in Aotearoa/New Zealand, we love our unique wildlife. In fact, most of it consists of birds, with no natural predators existing until European settlement. Unfortunately, many of these wonderful creatures had evolved - often in strange ways - to manage without the pressures of predators. This has led to many flightless birds, and a number of others with high curiosity, which has made them easy prey for newly introduced predators.</description>
+    </item>
+    
+    <item>
+      <title>Welcome to CawCannon</title>
+      <link>https://brandontreb.github.io/blog/first-post/</link>
+      <pubDate>Thu, 25 Feb 2021 15:33:09 +1300</pubDate>
+      
+      <guid>https://brandontreb.github.io/blog/first-post/</guid>
+      <description>Welcome to our site! CawCannon is all about bringing you the latest information on the birds, conservation efforts, and other caws for concern in Aotearoa - the Land of the Long White Cloud.
+Here in Aotearoa/New Zealand, we love our unusual wildlife and nature. What makes it especially unusual is that that there are essentially zero dangerous creatures or native predators. Due to separation from other continents and isolation, our flora and fauna have developed in some unique and interesting ways that hark back to life in Gondwanaland.</description>
+    </item>
+    
   </channel>
 </rss>
