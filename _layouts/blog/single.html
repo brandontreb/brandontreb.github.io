@@ -1,0 +1,22 @@
+{{ define "main" }}
+        <div class="b-hero">
+            <img class="b-hero__image" src="{{ .Params.image }}">
+            <div class="b-hero__info">
+                <h1 class="b-hero__title">{{ .Title }}</h1>
+                <div class="b-hero__author-date">
+                    <span>Written by: {{ .Params.author }}</span>
+                    <span>{{ .Date.Format "January 2, 2006" }}</span>
+                    <div class="tag-group">
+                        {{ range .Params.tags }}
+                        <div class="tag">
+                            <span class="tag-text">
+                            <a href="/tags/{{. | urlize }}">{{.}}</a>
+                        </span>
+                    </div>
+                        {{end}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ .Content }}
+{{ end }}
