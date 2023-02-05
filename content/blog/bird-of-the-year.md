@@ -1,7 +1,7 @@
 ---
 title: "Bird of the Year"
 date: 2021-02-25T15:33:28+13:00
-draft: true
+draft: false
 tags: ["Bird of the year", "Awareness"]
 image: "/robin.jpg"
 author: CawCannon

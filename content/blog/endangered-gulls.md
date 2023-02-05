@@ -1,7 +1,7 @@
 ---
 title: "Endangered Gulls"
 date: 2021-02-25T15:33:39+13:00
-draft: true
+draft: false
 image: "/gull.jpg"
 author: CawCannon
 tags: ["Sea birds", "Awareness"]
