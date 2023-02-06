@@ -2,7 +2,7 @@
 
 <!-- $pages -->
 {{ $pages := union .RegularPages .Sections }}
-<!---->{{ if .IsHome }} {{ $pages = where site.RegularPages "Type" "blog" }}
+<!---->{{ if .IsHome }} {{ $pages = where site.RegularPages }}
 {{ end }}
 
 <!-- Articles -->
