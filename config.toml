@@ -1,8 +1,0 @@
-baseURL = "https://brandontreb.github.io"
-languageCode = "en-us"
-title = "Brandontreb"
-theme = "Paper"
-
-[params]
-  author = "CloudCannon"
-  github_username = "brandontreb"

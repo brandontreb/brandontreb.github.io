@@ -1,0 +1,3 @@
+[submodule "themes/theme-alpine"]
+	path = themes/theme-alpine
+	url = https://github.com/microdotblog/theme-alpine.git
