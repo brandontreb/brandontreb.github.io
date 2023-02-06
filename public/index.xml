@@ -6,36 +6,45 @@
     <description>Recent content in Home on Brandontreb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Feb 2021 15:33:39 +1300</lastBuildDate><atom:link href="https://brandontreb.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Feb 2023 01:53:51 +0000</lastBuildDate><atom:link href="https://brandontreb.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Endangered bird locations</title>
-      <link>https://brandontreb.github.io/locations/</link>
-      <pubDate>Wed, 03 Mar 2021 13:11:25 +1300</pubDate>
+      <title>Bear Blog</title>
+      <link>https://brandontreb.github.io/likes/bear-blog/</link>
+      <pubDate>Mon, 06 Feb 2023 01:53:51 +0000</pubDate>
       
-      <guid>https://brandontreb.github.io/locations/</guid>
-      <description>Endangered bird locations Report a sighting If you think you&#39;ve spotted an endangered species, please contact one of our friendly staff to let them know.
-Kain Papagei
-Contact options: Email Facebook Twitter Aizah Kolibri
-Contact options: Email Facebook Twitter Pier Gaviota
-Contact options: Email Facebook Twitter Ethel Byrd
-Contact options: Email Facebook Twitter </description>
+      <guid>https://brandontreb.github.io/likes/bear-blog/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Gallery</title>
-      <link>https://brandontreb.github.io/gallery/</link>
-      <pubDate>Wed, 03 Mar 2021 12:42:53 +1300</pubDate>
+      <title></title>
+      <link>https://brandontreb.github.io/notes/1675648072/</link>
+      <pubDate>Mon, 06 Feb 2023 01:47:52 +0000</pubDate>
       
-      <guid>https://brandontreb.github.io/gallery/</guid>
-      <description>Gallery - with shortcodes Built-in shortcodes YouTube Figure Kea on a mountain Highlighting HTML: &amp;lt;div&amp;gt; &amp;lt;p&amp;gt;Lorem ipsum.&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt;
-JavaScript: // All highlighting options: // https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages const add = (a, b) =&amp;gt; (a + b); console.log(add(1, 2));
-Custom shortcode With figures Kea on a snowy mountain
-Kaka in profile
-Kereru in a tree
-Hoiho with eyes closed
-Pukeko on a wooden deck
-Tui in a harakeke/NZ flax bush
-Without figures </description>
+      <guid>https://brandontreb.github.io/notes/1675648072/</guid>
+      <description>its good</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://brandontreb.github.io/notes/slug-me/</link>
+      <pubDate>Mon, 06 Feb 2023 01:46:35 +0000</pubDate>
+      
+      <guid>https://brandontreb.github.io/notes/slug-me/</guid>
+      <description>Switching from a custom blog engine to Hugo can be a great move for many bloggers and website owners. Hugo is a popular, open-source static site generator that offers a lot of benefits over custom blog engines. Firstly, Hugo is much faster than custom blog engines since it generates static HTML files, which can be quickly served to users. Secondly, Hugo is more secure since there are no dynamic components that can be exploited by malicious actors.</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://brandontreb.github.io/blog/hello-world/</link>
+      <pubDate>Wed, 25 Jan 2023 15:33:28 +1300</pubDate>
+      
+      <guid>https://brandontreb.github.io/blog/hello-world/</guid>
+      <description>This is a hello world blog post.
+Introduction This is a hello world blog post.
+Quick facts This is a hello world blog post.
+Conclusion This is a hello world blog post.
+About the competition This is a hello world blog post.</description>
     </item>
     
     <item>

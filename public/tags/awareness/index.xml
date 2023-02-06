@@ -6,7 +6,20 @@
     <description>Recent content in Awareness on Brandontreb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Feb 2021 15:33:39 +1300</lastBuildDate><atom:link href="https://brandontreb.github.io/tags/awareness/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Jan 2023 15:33:28 +1300</lastBuildDate><atom:link href="https://brandontreb.github.io/tags/awareness/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>https://brandontreb.github.io/blog/hello-world/</link>
+      <pubDate>Wed, 25 Jan 2023 15:33:28 +1300</pubDate>
+      
+      <guid>https://brandontreb.github.io/blog/hello-world/</guid>
+      <description>This is a hello world blog post.
+Introduction This is a hello world blog post.
+Quick facts This is a hello world blog post.
+Conclusion This is a hello world blog post.
+About the competition This is a hello world blog post.</description>
+    </item>
+    
     <item>
       <title>Endangered Gulls</title>
       <link>https://brandontreb.github.io/blog/endangered-gulls/</link>
