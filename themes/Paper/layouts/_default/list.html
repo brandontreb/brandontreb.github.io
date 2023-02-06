@@ -1,8 +1,7 @@
 {{ define "main" }}
 
-<!-- $pages -->
 {{ $pages := union .RegularPages .Sections }}
-<!---->{{ if .IsHome }} {{ $pages = where site.RegularPages }}
+
 {{ end }}
 
 <!-- Articles -->
