@@ -17,7 +17,7 @@ outputs:
   section:
   - HTML
   - RSS
-  - JSON
+  - JSON 
 Author:
   username: brandontreb
   email: brandontreb@gmail.com
