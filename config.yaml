@@ -1,0 +1,44 @@
+baseURL: https://brandontreb.github.io
+languageCode: en-us
+title: Brandontreb
+theme: theme-alpine
+outputFormats:
+  RSS:
+    mediatype: application/rss+xml
+    baseName: feed
+  JSON:
+    mediatype: application/json
+    baseName: feed
+outputs:
+  home:
+  - HTML
+  - RSS
+  - JSON
+  section:
+  - HTML
+  - RSS
+  - JSON
+Author:
+  username: brandontreb
+  email: brandontreb@gmail.com
+  avatar: https://avatars.githubusercontent.com/u/92844?v=4
+params:
+  github_username: brandontreb
+  github: brandontreb
+  twitter: brandontreb
+  instagram: brandontreb
+  microblog: brandontreb
+  buymeacoffee: brandontreb
+permalinks:
+  "/posts": "/:year/:month/:day/:filename"
+menu:
+  main:  
+  - name: Archive
+    url: "/archive/"
+    weight: 1
+  - name: Replies
+    url: "/replies/"
+    weight: 2
+  - name: Photos
+    url: "/photos/"
+    weight: 3
