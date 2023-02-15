@@ -2,6 +2,33 @@ baseURL: https://brandontreb.github.io
 languageCode: en-us
 title: Brandontreb
 theme: theme-alpine
+Author:
+  name: Brandon Trebitowski
+  username: brandontreb
+  email: brandontreb@gmail.com
+  avatar: https://avatars.githubusercontent.com/u/92844?v=4
+  url: https://brandontreb.com
+params:  
+  github: 
+  twitter: brandontreb
+  instagram: 
+  microblog: brandontreb
+  buymeacoffee: 
+menu:
+  main:  
+  - name: Archive
+    url: "/archive/"
+    weight: 1
+  - name: Replies
+    url: "/replies/"
+    weight: 2
+  - name: Photos
+    url: "/photos/"
+    weight: 3
+permalinks:
+  "/posts": "/:year/:month/:day/:filename"
+
+# Non configurable
 outputFormats:
   RSS:
     mediatype: application/rss+xml
@@ -21,28 +48,4 @@ Services:
     Limit: 20
   JSON:
     Limit: 20
-Author:
-  username: brandontreb
-  email: brandontreb@gmail.com
-  avatar: https://avatars.githubusercontent.com/u/92844?v=4
-params:  
-  github: 
-  twitter: brandontreb
-  instagram: 
-  microblog: brandontreb
-  buymeacoffee: 
-permalinks:
-  "/posts": "/:year/:month/:day/:filename"
-menu:
-  main:  
-  - name: Archive
-    url: "/archive/"
-    weight: 1
-  - name: Replies
-    url: "/replies/"
-    weight: 2
-  - name: Photos
-    url: "/photos/"
-    weight: 3
-
 LastMod: [ "LastMod", ":fileModTime", "publishDate"]
