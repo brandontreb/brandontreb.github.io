@@ -14,6 +14,10 @@ params:
   instagram: 
   microblog: brandontreb
   buymeacoffee: 
+  authorization_endpoint: https://indieauth.com/auth  
+  token_endpoint: https://tokens.indieauth.com/token
+  micropub_endpoint: https://astonishing-khapse-b1bfa0.netlify.app/.netlify/functions/micropub
+  webmention_endpoint: https://webmention.io/brandontreb.com/webmention
 menu:
   main:  
   - name: Archive
