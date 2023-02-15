@@ -24,3 +24,4 @@ Also, software is hard. It&#39;s especially hard to get exactly right on the ver
 We follow a pretty strict agile process, so the client usually sees their build at every...single...stage.  They also have full control to report issues, make changes, etc… during the build cycle. Still, for some reason, they are always dumbfounded when it comes time to ship.
 
 So, if you are building for clients, cut yourself some slack.  Know that deliveries will be tough and most of the time, there is nothing you can do to prevent that.
+

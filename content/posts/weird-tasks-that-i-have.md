@@ -17,3 +17,4 @@ Today, I had quite a few “bus chores” and I figured that I would share them 
 Sometimes I wonder if I have _more_ chores on the bus than in a traditional home. 
 
 Whatever, off to chop wood for my [tiny wood stove](http://www.instagram.com/trebventure/p/Bj47D7hn2U9/)...
+

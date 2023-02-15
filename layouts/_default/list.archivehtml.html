@@ -3,7 +3,7 @@
 {{ $list := where .Site.Pages.ByDate.Reverse "Type" "post" }}
 {{ range $list  }}
   <p class="h-entry">
-    <a href="{{ .Permalink }}" class="u-url"><span class="dt-published" datetime="2023-02-11T15:54:37-0600">2023-02-11</span></a>:
+    <a href="{{ .Permalink }}" class="u-url"><span class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "2006-01-02" }}</span></a>:
     {{ if .Title }}
     <span class="p-name"><b>{{ .Title }}</b></span> 
     {{ end }}

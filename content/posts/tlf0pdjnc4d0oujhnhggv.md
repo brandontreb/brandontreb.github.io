@@ -26,3 +26,4 @@ I guess I'll have to wait a little longer on buying the Lambo.
 _Do you have a crazy crypto story? I'd love to hear about it._
 
 
+

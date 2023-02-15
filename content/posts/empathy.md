@@ -23,3 +23,4 @@ Second, go outside of your comfort zone. Spend some time with people you might n
 Finally, attempt to understand the needs of the people around you whether you're in the coffee shop, grocery store, or the office. There is always opportunity to learn and to grow if you are simply mindful. 
 
 Practicing empathy on a day to day basis will not only allow you to see and solve problems others don't, it will also make you a better human.
+

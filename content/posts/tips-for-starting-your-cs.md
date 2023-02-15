@@ -18,3 +18,4 @@ I figured I would share the advice I gave to him here in hopes that it might hel
 - **Shoot for the stars, but be ok landing on the moon** This is more for new grads. Landing a job will give you that confidence boost you need to begin your life outside college. So, don’t stress about landing the dream job at Google on day one (by all means apply though). Just take a job and then see the previous bullet point. 
 
 Happy job hunting!
+

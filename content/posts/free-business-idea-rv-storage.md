@@ -30,3 +30,4 @@ In exchange for this, they allow us to rent their RV out at a price we set.  It 
 Once they return the RV, it gets cleaned and prepped for the next renter. Profits from the rental would be shared with the RV owner.
 
 There you have it. I&#39;d love to [hear your thoughts](http://twitter.com/brandontreb) and I hope to be sharing more of these in the future.
+

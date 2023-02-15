@@ -16,3 +16,4 @@ This was one of the toughest few months of my life. There was hurt and heartache
 Working with your friends is absolutely great, until it’s not. We were all fortunate to make it out on the other side and are closer than ever, however things could have easily swayed in another direction. 
 
 So, please don’t ignore the advice that I did. Keep your friends and business separate, you will all be much happier in the end. 
+

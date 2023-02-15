@@ -16,3 +16,4 @@ Another really interesting part of this software is posts are made by using a si
 Finally, everything is text-based (obviously)! I feel like the web continues to move towards heavy UI with dependency on many JS frameworks (which I still love ;) ), but there is something so refreshing about seeing such a minimal publishing interface using tools that are built into all machines.
 
 I really hope this trend continues and we start to see everything from blog engines to social networks existing solely in the terminal. 
+

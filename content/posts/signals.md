@@ -20,3 +20,4 @@ He has a great quote from the post:
 Understanding that you are always sending signals AND having empathy will not only get you further in business (since you can understand the signals you need to send on an individual basis), it will also get you further as a human being.
 
 This also has me wondering. What signals do I send to myself?
+

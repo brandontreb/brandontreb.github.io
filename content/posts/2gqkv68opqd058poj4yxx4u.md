@@ -8,3 +8,5 @@ photos:
   alt: 
 ---
 Happy New Year friends 🎆 
+
+![](https://brandontreb.com/data/uploads/1672617506494.hutf3hjnprsv1grelk5iw.jpg)

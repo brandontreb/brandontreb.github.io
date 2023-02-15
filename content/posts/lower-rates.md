@@ -39,3 +39,4 @@ Rather than just declining these types of contracts and pigeon holing yourself i
 ## Final Thoughts
 
 Rates are a weird thing. I would encourage you to constantly experiment. Raise them, lower them, exchange some for equity. Find out what works for you and your clients.
+

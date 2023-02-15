@@ -20,3 +20,4 @@ So, all that being said, I want to try to blog more consistently.  Hopefully onc
 Blogging should be for the author first and foremost, as a way to communicate their thoughts and sharpen their own skillset. Not to mention, it should be fun!  I am going to try and embrace this and re-discover my love for writing.  
 
 So feel free to [subscribe](https://us3.list-manage.com/subscribe?u=66135759856eefe4f6dcec97c&amp;id=ef6c358d78), unsubscribe, or [drop me a note](http://twitter.com/brandontreb). I&#39;d love to check out the blogs of others who are blogging near daily.  Cheers!
+

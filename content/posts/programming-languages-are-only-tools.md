@@ -15,3 +15,4 @@ If you are a newer developer, learn early that you are greatly limiting your pot
 I try to convey this to the students of our boot camps all of the time as boot camp students are the most likely to call themselves “PHP/JS/WordPress/etc developers” and not understand that there is a whole world out there beyond what was taught in camp.
 
 Ok, rant over. Get off my lawn.
+

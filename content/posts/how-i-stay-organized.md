@@ -16,3 +16,4 @@ Fortunately (and I can already feel this sounding like a sales pitch), I use [Bu
 While I don’t use every “module” that it offers, I use the system to manage todos, notes, long and short term goals, and lists (this blog post title just came from one such list). 
 
 So, if you are like I was, I highly recommend bullet journaling. It will change your life for the better (worse?). 
+

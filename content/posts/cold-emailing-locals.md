@@ -22,3 +22,4 @@ At worst, you will have connected with a likeminded individual who could/would p
 So, the next time you are cold emailing someone who’s within driving distance from you, give this post another read and consider a more personal approach. 
 
 
+

@@ -16,3 +16,4 @@ I love this idea. Often, I will read something, get super inspired, only to forg
 I feel that this is a great strategy and think it will make for an interesting post on this blog every so often. Think of it as mini book/podcast/blog reviews that highlight what I found to be important. 
 
 So my “one thing” from that episode is to start writing down the “one things” from other pieces of media. 
+

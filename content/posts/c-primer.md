@@ -12,3 +12,4 @@ Since then, I love (re)discovering the language every chance I get.
 I found this post incredibly well done with some great examples. I wish we had resources like this &quot;back in my day”.  
 
 [C Primer](https://www.enlightenment.org/docs/c/start)
+

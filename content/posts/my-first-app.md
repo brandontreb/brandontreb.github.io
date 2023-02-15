@@ -17,3 +17,4 @@ No real point to this story other than that I’m reflecting today on my career 
 
 I hope you know how lucky you are too. 
 
+

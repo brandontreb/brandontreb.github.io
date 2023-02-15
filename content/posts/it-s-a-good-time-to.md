@@ -26,3 +26,4 @@ In this model, consultants specializing in a vertical of mobile join other teams
 We have seen this model play out _many_ times over the past couple years and it has been key (for us) in surviving in this “post-agency” time of mobile app consulting.
 
 So, if you are a mobile app developer (and are particularly good), I&#39;d encourage you to branch out and try your hand at consulting. It&#39;s a great time.
+

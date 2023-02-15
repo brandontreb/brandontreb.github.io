@@ -45,3 +45,4 @@ I still plan on using Twitter to some extent, but my primary source of content p
 If this sounds even slightly interesting to you, def check it out and follow me on [here](http://eepurl.com/bnryI5) or on [micro.blog](http://micro.blog/brandontreb).
 
 Cheers!
+

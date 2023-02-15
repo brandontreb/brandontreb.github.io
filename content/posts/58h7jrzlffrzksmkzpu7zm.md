@@ -10,3 +10,5 @@ photos:
 I opened my phone’s browser after my 14 year old was using it and found this. 
 
 He and his friends are definitely up to something. 
+
+![](https://brandontreb.com/data/uploads/1676130304102.s8kqynycwfsqaymhkknj.png)

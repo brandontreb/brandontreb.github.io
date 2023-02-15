@@ -16,3 +16,4 @@ It&#39;s not all sunshine and rainbows though.  After spending 80+ hours working
 In my next post, I will discuss some of the hurdles preventing DApps from going mainstream.  There is so much room for improvement and innovation in this space, I feel that all devs should be looking at crypto like we looked at mobile dev in 2008.
 
 To the moon!
+

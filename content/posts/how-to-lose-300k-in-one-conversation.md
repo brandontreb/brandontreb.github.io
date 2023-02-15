@@ -28,3 +28,4 @@ He then follows with "I found a college kid to work on the application and gave 
 My immediate thought was "at least I still have my values".  It's pretty funny to look back and think about how I could have made so much money so quickly. However, even if I had known the potential payout up front, I don't believe I would have still taken the project.  It would have eaten me up inside.
 
 The takeaway of this story is twofold.   First, I'd urge you to choose your compensation wisely.  Before this encounter, I would always give a hard "no" when asked about equity share as part of compensation. I now take it on a person by person basis.  Second, don't compromise your morals for money.  I look back on this story as a success and wouldn't change a single thing about it.
+

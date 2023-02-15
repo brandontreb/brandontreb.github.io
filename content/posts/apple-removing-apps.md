@@ -17,3 +17,4 @@ Some of these takedowns are due to startups failing or clients deciding to go in
 It’s a strange feeling knowing that everything I have built for the past decade and a half has just disappeared into obsolescence. 
 
 While I understand that Apple needs to continue to push their techbology forward, I would at least love to see them keep apps for posterity, albeit not searchable. This could satisfy their algorithmic search goals while still allowing developers to preserve their history. 
+

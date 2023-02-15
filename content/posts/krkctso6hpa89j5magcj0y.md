@@ -10,3 +10,5 @@ photos:
 I’m having so much fun playing Link’s Awakening. 
 
 This is one of my favorite scenes in the entire game. 
+
+![](https://brandontreb.com/data/uploads/1676248517662.kipn2rws3rh24m043b0s9.jpg)

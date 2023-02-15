@@ -17,3 +17,5 @@ I absolutely LOVE this game and it looks gorgeous on this device.
 I've played through most of Links Awakening on the original Gameboy hardware, however I never completed it due to the battery dying.
 
 I'm excited to _finally_ play it all the way through!
+
+![](https://brandontreb.com/data/uploads/1675008464842.jdkjsybmd3i9jqyz5kg33o.jpeg)

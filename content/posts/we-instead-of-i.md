@@ -16,3 +16,4 @@ Clients didn’t want other developers, they wanted Brandon, because that’s wh
 It wasn’t until I started using “we” language instead of “I” language that clients fully accepted my other team members. Changing the language also had a profound effect on how I perceived the company. I began looking at everything as a real company rather than just me hacking on the side. 
 
 So, if you are building a company (even if it’s just you), start using the term “we” instead of “I” from day one. It will make the transition _much_ easier when you start growing, and it will make you feel like you are actually building something beyond yourself. 
+

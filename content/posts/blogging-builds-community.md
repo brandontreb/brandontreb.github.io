@@ -16,3 +16,4 @@ This all changed, when I made a commitment to writing daily short-form blog post
 This has been a blast as I&#39;m now able to connect with so many wonderful people in the community.  We are sharing thoughts and ideas and challenging each other’s beliefs on tech, business, etc…
 
 So, I challenge you. If you are on the fence, just stop worrying about the quality/frequency/etc... of your writing and just write.  And once you have written, share it with others.  I promise you, the community you will build is worth it!
+

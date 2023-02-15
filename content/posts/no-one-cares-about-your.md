@@ -17,3 +17,4 @@ I have seen it time after time. Developers over-optimizing their code, writing p
 When the client asks the dev about the delay on feature X, the dev proceeds to explain the super cool reusable, component-driven,state managed, highly available, future proof, buzzword, buzzword system they are creating. The client literally doesn’t care about all that. They just wants to see feature X working. 
 
 I love clever code as much as the next developer, but sometimes you’ve got to table your inner CS geek and just ship something that works. Then, refactor later. 
+

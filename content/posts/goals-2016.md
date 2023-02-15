@@ -41,3 +41,4 @@ Overall, I'd call 2015 a success. I managed to hit the goals I felt most passion
 That's it. Here's to a healthy and productive 2016!
 
 Feel free to link me to your 2016 goals blog posts in the comments.
+

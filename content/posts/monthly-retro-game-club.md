@@ -35,3 +35,4 @@ Well, it’s still too hard, but I was able to beat it in under 10 hours this ti
 The game was impossible to play without walkthroughs (due to the nature of the secrets). It makes me wonder how 80’s kids ever got through it. 
 
 Let me know if you decide to follow along and play through the games with us. I will be sure to announce them as they are selected. 
+

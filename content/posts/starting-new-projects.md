@@ -16,3 +16,4 @@ Why is it that it’s so hard to follow through on this philosophy? I said it [y
 But not this time, oh no. This time WILL BE different... 
 
 _(follow up post to come in 3 months making fun of this one)_
+

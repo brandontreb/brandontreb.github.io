@@ -8,3 +8,5 @@ photos:
   alt: 
 ---
 Friday 🏂
+
+![](https://brandontreb.com/data/uploads/1676074560998.mnaxg2mk7ftexhg2n88j.jpg)
