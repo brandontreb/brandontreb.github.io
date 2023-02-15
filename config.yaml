@@ -9,10 +9,10 @@ Author:
   avatar: https://avatars.githubusercontent.com/u/92844?v=4
   url: https://brandontreb.com
 params:  
-  github: 
-  twitter: brandontreb
-  instagram: 
-  microblog: brandontreb
+  github_username: brandontreb
+  twitter_username: brandontreb
+  instagram_username: 
+  microblog_username: brandontreb
   buymeacoffee: 
   authorization_endpoint: https://indieauth.com/auth  
   token_endpoint: https://tokens.indieauth.com/token
