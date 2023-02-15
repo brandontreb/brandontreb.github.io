@@ -5,30 +5,32 @@ theme: theme-alpine
 outputFormats:
   RSS:
     mediatype: application/rss+xml
-    baseName: feed
+    baseName: feed    
   JSON:
     mediatype: application/json
-    baseName: feed
+    baseName: feed    
 outputs:
   home:
   - HTML
   - RSS
   - JSON
   section:
-  - HTML
-  - RSS
-  - JSON 
+  - HTML    
+Services:
+  RSS:
+    Limit: 20
+  JSON:
+    Limit: 20
 Author:
   username: brandontreb
   email: brandontreb@gmail.com
   avatar: https://avatars.githubusercontent.com/u/92844?v=4
-params:
-  github_username: brandontreb
-  github: brandontreb
+params:  
+  github: 
   twitter: brandontreb
-  instagram: brandontreb
+  instagram: 
   microblog: brandontreb
-  buymeacoffee: brandontreb
+  buymeacoffee: 
 permalinks:
   "/posts": "/:year/:month/:day/:filename"
 menu:
@@ -42,3 +44,5 @@ menu:
   - name: Photos
     url: "/photos/"
     weight: 3
+
+LastMod: [ "LastMod", ":fileModTime", "publishDate"]

@@ -1,4 +1,4 @@
-_site
+public
 .sass-cache
 .DS_STORE
 yarn-error.log
