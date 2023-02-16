@@ -4,11 +4,11 @@ type: post
 post_type: note
 slug: oq5q207qyoa585dx4mem5
 photos: 
-- path: data/uploads/1672952595979.0m2qufaa623kqbathwx35bo.jpg
+- path: uploads/2023/1672952595979.0m2qufaa623kqbathwx35bo.jpg
   alt: 
 tags: 
 - family
 ---
 On more from snowboarding yesterday 🤙
 
-![](https://brandontreb.com/data/uploads/1672952595979.0m2qufaa623kqbathwx35bo.jpg)
+![](/uploads/2023/1672952595979.0m2qufaa623kqbathwx35bo.jpg)

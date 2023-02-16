@@ -4,11 +4,11 @@ type: post
 post_type: photo
 slug: krkctso6hpa89j5magcj0y
 photos: 
-- path: data/uploads/1676248517662.kipn2rws3rh24m043b0s9.jpg
+- path: uploads/2023/1676248517662.kipn2rws3rh24m043b0s9.jpg
   alt: 
 ---
 I’m having so much fun playing Link’s Awakening. 
 
 This is one of my favorite scenes in the entire game. 
 
-![](https://brandontreb.com/data/uploads/1676248517662.kipn2rws3rh24m043b0s9.jpg)
+![](/uploads/2023/1676248517662.kipn2rws3rh24m043b0s9.jpg)

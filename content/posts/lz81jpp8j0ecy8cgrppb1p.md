@@ -4,9 +4,9 @@ type: post
 post_type: photo
 slug: lz81jpp8j0ecy8cgrppb1p
 photos: 
-- path: data/uploads/1673886240902.ht8mhenz8ubx1xzhd9h8x.png
+- path: uploads/2023/1673886240902.ht8mhenz8ubx1xzhd9h8x.png
   alt: 
 ---
 It’s always a great day when you get to add the Disneyland app to your Home Screen!
 
-![](https://brandontreb.com/data/uploads/1673886240902.ht8mhenz8ubx1xzhd9h8x.png)
+![](/uploads/2023/1673886240902.ht8mhenz8ubx1xzhd9h8x.png)

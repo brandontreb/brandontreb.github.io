@@ -4,9 +4,9 @@ type: post
 post_type: photo
 slug: s7tomgbvvmfvvhemmjrbv
 photos: 
-- path: data/uploads/1673736444193.d2ucd1dod3d2usr4lfs9mp.jpg
+- path: uploads/2023/1673736444193.d2ucd1dod3d2usr4lfs9mp.jpg
   alt: 
 ---
 Soccer time ⚽️
 
-![](https://brandontreb.com/data/uploads/1673736444193.d2ucd1dod3d2usr4lfs9mp.jpg)
+![](/uploads/2023/1673736444193.d2ucd1dod3d2usr4lfs9mp.jpg)

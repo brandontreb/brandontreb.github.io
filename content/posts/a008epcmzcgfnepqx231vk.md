@@ -4,9 +4,9 @@ type: post
 post_type: photo
 slug: a008epcmzcgfnepqx231vk
 photos: 
-- path: data/uploads/1676074560998.mnaxg2mk7ftexhg2n88j.jpg
+- path: uploads/2023/1676074560998.mnaxg2mk7ftexhg2n88j.jpg
   alt: 
 ---
 Friday 🏂
 
-![](https://brandontreb.com/data/uploads/1676074560998.mnaxg2mk7ftexhg2n88j.jpg)
+![](/uploads/2023/1676074560998.mnaxg2mk7ftexhg2n88j.jpg)

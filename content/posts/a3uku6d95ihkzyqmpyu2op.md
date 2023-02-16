@@ -4,9 +4,9 @@ type: post
 post_type: photo
 slug: a3uku6d95ihkzyqmpyu2op
 photos: 
-- path: data/uploads/1672261738598.8os5cjw2tlx47zp5pa6xfp.jpg
+- path: uploads/2022/1672261738598.8os5cjw2tlx47zp5pa6xfp.jpg
   alt: writing a letter to santa
 ---
 Writing a letter to Santa
 
-![writing a letter to santa](https://brandontreb.com/data/uploads/1672261738598.8os5cjw2tlx47zp5pa6xfp.jpg)
+![writing a letter to santa](/uploads/2022/1672261738598.8os5cjw2tlx47zp5pa6xfp.jpg)

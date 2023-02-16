@@ -4,7 +4,7 @@ type: post
 post_type: note
 slug: 8ym4rm3zu2mbsqihipyi67
 photos: 
-- path: data/uploads/1675008464842.jdkjsybmd3i9jqyz5kg33o.jpeg
+- path: uploads/2023/1675008464842.jdkjsybmd3i9jqyz5kg33o.jpeg
   alt: 
 tags: 
 - retro-game-club
@@ -18,4 +18,4 @@ I've played through most of Links Awakening on the original Gameboy hardware, ho
 
 I'm excited to _finally_ play it all the way through!
 
-![](https://brandontreb.com/data/uploads/1675008464842.jdkjsybmd3i9jqyz5kg33o.jpeg)
+![](/uploads/2023/1675008464842.jdkjsybmd3i9jqyz5kg33o.jpeg)

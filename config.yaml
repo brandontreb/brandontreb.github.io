@@ -53,3 +53,8 @@ Services:
   JSON:
     Limit: 20
 LastMod: [ "LastMod", ":fileModTime", "publishDate"]
+# Allow raw html
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

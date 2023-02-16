@@ -4,9 +4,9 @@ type: post
 post_type: photo
 slug: drwaquj8mtresx1tyw6ypo
 photos: 
-- path: data/uploads/1674432900912.m46xw5fc5mtpcnqpn8rfr.jpg
+- path: uploads/2023/1674432900912.m46xw5fc5mtpcnqpn8rfr.jpg
   alt: 
 ---
 My beautiful girl at the roller rink 🛼
 
-![](https://brandontreb.com/data/uploads/1674432900912.m46xw5fc5mtpcnqpn8rfr.jpg)
+![](/uploads/2023/1674432900912.m46xw5fc5mtpcnqpn8rfr.jpg)

@@ -4,9 +4,9 @@ type: post
 post_type: photo
 slug: 2gqkv68opqd058poj4yxx4u
 photos: 
-- path: data/uploads/1672617506494.hutf3hjnprsv1grelk5iw.jpg
+- path: uploads/2023/1672617506494.hutf3hjnprsv1grelk5iw.jpg
   alt: 
 ---
 Happy New Year friends 🎆 
 
-![](https://brandontreb.com/data/uploads/1672617506494.hutf3hjnprsv1grelk5iw.jpg)
+![](/uploads/2023/1672617506494.hutf3hjnprsv1grelk5iw.jpg)
