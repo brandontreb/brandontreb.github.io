@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Journey To Create The inPulseNotifier For Jailbroken iPhones &#8211; Part 1 – Brandon Trebitowski – A builder of meaningful software</title>
+    <meta charset="utf-8" />
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+<meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+<meta name="author" content="Brandon Trebitowski">
+
+<link rel="micropub" href="http://blog.0x.cool/micropub/main">
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="webmention" href="https://webmention.io/brandontreb.com/webmention" />
+<link rel="pingback" href="https://webmention.io/brandontreb.com/xmlrpc" />
+
+<link href="https://twitter.com/brandontreb" rel="me">
+<link href="http://github.com/brandontreb" rel="me"> 
+<meta name="description" content="Many of you may have seen my tweets or blog posts regarding my development of a native iOS interface for the inPulse Watch. I just wanted to share a bit with you about the development process and talk about my updates moving forward.
+
+" />
+<meta property="og:description" content="Many of you may have seen my tweets or blog posts regarding my development of a native iOS interface for the inPulse Watch. I just wanted to share a bit with you about the development process and talk about my updates moving forward.
+
+" /> 
+<meta name="author" content="Brandon Trebitowski" /> 
+<meta property="og:title" content="My Journey To Create The inPulseNotifier For Jailbroken iPhones &#8211; Part 1" />
+<meta property="twitter:title" content="My Journey To Create The inPulseNotifier For Jailbroken iPhones &#8211; Part 1" /> 
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Brandon Trebitowski - A builder of meaningful software" href="/feed.xml" />    
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://en.gravatar.com/userimage/3515553/4a56e1cc34a936f3dd082b93032468ea.jpeg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Brandon Trebitowski</a></h1>
+            <p class="site-description">A builder of meaningful software</p>
+          </div>
+
+          <nav>
+            <a href="/">blog</a>
+            <!-- <a href="/about">About</a> -->
+            <a href="https://linkedin.com/in/brandontreb">linked in</a>
+            <a href="https://micro.blog/brandontreb">micro.blog</a>
+            <a href="https://pixegon.com">hire me</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>My Journey To Create The inPulseNotifier For Jailbroken iPhones &#8211; Part 1</h1>
+
+  <div class="entry">
+    
+    <p>Many of you may have seen my tweets or blog posts regarding my development of a native iOS interface for the <a href="http://getinpulse.com">inPulse Watch</a>. I just wanted to share a bit with you about the development process and talk about my updates moving forward.</p>
+
+<h4 id="what-is-the-inpulse-watch">What is the inPulse Watch?</h4>
+
+<p>For those of you who don’t know, the inPulse watch is a programmable wristwatch with a bluetooth controller. It can run a single app at a time on top of it’s firmware that is installed on the watch via a bluetooth interface with your computer. People have written all sorts of apps from analog clocks to roguelikes and Connway’s Game of Life. Check out <a href="http://inpulsewatch.com/watchapps.asp">http://inpulsewatch.com/watchapps.asp</a> to see the latest apps.</p>
+
+<center>
+  <br /> <img src="http://ec2-50-16-103-63.compute-1.amazonaws.com/images/inPulse.png" style="float:left;margin:25px;" width="100" /><br /> <img src="http://inpulsewatch.com/apps/logo14.JPG" style="float:left;margin:25px;" width="100" /><br /> <img src="http://inpulsewatch.com/apps/logo12.jpg" style="float:left;margin:25px;" width="100" /><br />
+</center>
+
+<div style="clear:both">
+  &#038;nbsp
+</div>
+<p>&lt;/p&gt;</p>
+
+<h4 id="it-begins">It Begins</h4>
+
+<p>After waiting about 10 days for my watch (yeah it’s a long waiting period since they have seen quite a bit of recent success), it finally came in the mail. Enthusiastically, I opened it up and followed their <a href="http://www.getinpulse.com/guide/">getting started guide</a>. Within a few minutes I was running some of the sample applications in the forums.</p>
+
+<h4 id="no-ios-support">No iOS Support?</h4>
+
+<p>One of the coolest features of the watch is the ability to have your smartphone notifications show up on it. You are able to read SMS, Email, Calendar, etc… for a wide variety of Blackberry and Android phones.</p>
+
+<p>After digging around a bit, I was disappointed to see that there was limited (no) iPhone support. They had some old file that used BTStack at some point to communicate a simple canned message to the iPhone. No documentation, no support, nada.</p>
+
+<h4 id="building-the-app">Building The App</h4>
+
+<p><img src="http://code.google.com/p/btstack/logo?cct=1278342571" style="float:left;margin:5px;" /></p>
+
+<p>As I had no experience developing for a jailbroken iPhone, I had no idea how to even compile this sample app. So, I used the Google machine and found the <a href="http://code.google.com/p/btstack/">Google repository</a> for BTStack (the bluetooth library of choice for jailbroken iOS apps). I was able to download the source and build a sample application that basically connected my iPhone to a bluetooth device.</p>
+
+<p>Well, this got me started. So I did what any curious developer would do and started plugging crap in. I replaced the sample file that was packaged with BTStack with a slightly modified version of inPulse’s sample iPhone file. Sure enough, I was able to build and install it.</p>
+
+<h4 id="we-have-connection">We Have Connection</h4>
+
+<p>After figuring out how to hardcode my watch’s address into the source, I was able to determine that the iPhone had actually connected to the watch. I monitored the packets and threw up an alert view (No NSLogging available at this point) when a connection was made.</p>
+
+<p>So, now that we are connected, let’s trying sending the sample message…fail! I couldn’t even send the time.</p>
+
+<p>At this point, I decided to move the code I had written into a sample iPhone project so that I could do attached debugging. This showed me that the packets were arriving on the watch since I received an ack packet back. So, the watch sees the messages, but doesn’t consider them notifications.</p>
+
+<h4 id="time-to-hit-the-docs">Time to hit the docs</h4>
+
+<p><img src="/img/post_images/2011/04/pulse_protocol.png" style="float:right" /><br />
+Knowing that the packets were received gave me quite a bit of hope. I figured that I must have had the protocol incorrect. So, I dug into the inPulse protocol document which outlined what the packet structures should look like. My C skills aren’t the strongest so I had to look up quite a few things.</p>
+
+<p>Sure enough, they had upped the version number of their protocol by 1 and mine was outdated. So, I updated what I could and gave it another shot…fail.</p>
+
+<p>No messages were displaying. At this point I was ready to give up. I read online somewhere that the BT implementation on the watch was not supported by inPulse and felt dead in the water. So I took a break for a couple days.</p>
+
+<p>When I came back to it, I was tapping through my watch and noticed that the calendar appointments had some data in them on the watch. Could it be? Did my notifications arrive? (I was trying to send SMS notifications). So I dug into the docs again…</p>
+
+<h4 id="we-have-a-message">We have a message!!!</h4>
+
+<p><img src="/img/post_images/2011/04/hello_world.jpg" style="float:left;margin:10px;" width="200" /></p>
+
+<p>Sure enough, I had some fields declared as * uint16_t * when they should have been * uint8_t * . My headers were the wrong size!!! All of a sudden I was able to send every type of notification to the watch and have it displayed.</p>
+
+<p>It was now time to build out an actual application for release to inPulse. The next hurdle would be hooking into the iPhone’s messaging system and forwarding along the messages. Now the real iPhone hacking begins.</p>
+
+<p><a href="/my-journey-to-create-the-inpulsenotifier-for-jailbroken-iphones-part-2">This post is continued here</a></p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="My Journey To Create The inPulseNotifier For Jailbroken iPhones - Part 1" data-url="http://brandontreb.com/my-journey-to-create-the-inpulsenotifier-for-jailbroken-iphones-part-1" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+    
+  </div>
+
+  <div class="date">
+    <a href= "">
+      
+    </a>
+  </div>  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+
+
+
+<a href="https://github.com/brandontreb"><i class="svg-icon github"></i></a>
+
+
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/brandontreb"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Money You Might Be Missing Out On &#8211; LinkShare API Integration – Brandon Trebitowski – A builder of meaningful software</title>
+    <meta charset="utf-8" />
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+<meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+<meta name="author" content="Brandon Trebitowski">
+
+<link rel="micropub" href="http://blog.0x.cool/micropub/main">
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="webmention" href="https://webmention.io/brandontreb.com/webmention" />
+<link rel="pingback" href="https://webmention.io/brandontreb.com/xmlrpc" />
+
+<link href="https://twitter.com/brandontreb" rel="me">
+<link href="http://github.com/brandontreb" rel="me"> 
+<meta name="description" content="
+  
+
+
+" />
+<meta property="og:description" content="
+  
+
+
+" /> 
+<meta name="author" content="Brandon Trebitowski" /> 
+<meta property="og:title" content="Money You Might Be Missing Out On &#8211; LinkShare API Integration" />
+<meta property="twitter:title" content="Money You Might Be Missing Out On &#8211; LinkShare API Integration" /> 
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Brandon Trebitowski - A builder of meaningful software" href="/feed.xml" />    
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://en.gravatar.com/userimage/3515553/4a56e1cc34a936f3dd082b93032468ea.jpeg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Brandon Trebitowski</a></h1>
+            <p class="site-description">A builder of meaningful software</p>
+          </div>
+
+          <nav>
+            <a href="/">blog</a>
+            <!-- <a href="/about">About</a> -->
+            <a href="https://linkedin.com/in/brandontreb">linked in</a>
+            <a href="https://micro.blog/brandontreb">micro.blog</a>
+            <a href="https://pixegon.com">hire me</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Money You Might Be Missing Out On &#8211; LinkShare API Integration</h1>
+
+  <div class="entry">
+    
+    <center>
+  <a href="http://linkshare.com"><img src="http://brandontreb.com/wp-content/uploads/2009/11/logo.gif" alt="logo" title="logo" width="232" height="80" class="alignnone size-full wp-image-605" /></a>
+</center>
+
+<p>As you may know, I am the developer of the site <a href="http://freshapps.com">FreshApps.com</a>. One thing we had been doing to make some extra money is to use <a href="http://linkshare.com">Linkshare</a> to be an affiliate for Apple.</p>
+
+<p>If you don’t know, <a href="http://linkshare.com">Linkshare</a> is a service that allows you to become an affiliate of thousands of companies. You simply select one of the companies products, get the linkshare link, and put the link on your site. Now, every time someone clicks that link and makes a purchase, you will get a percentage of the revenue.</p>
+
+<h2 id="the-problem">The Problem</h2>
+
+<p>The only problem was, we have thousands of apps and converting the links manually seemed like such a daunting process. So, as you can imagine we converted around 10 links and never looked at it again.</p>
+
+<p>Well, earlier today, the designer of the site <a href="http://vanillahd.com">JJ Mancini</a>, asked me to check and see if linkshare had an API. I checked it out and sure enough, they did and it was no more complex than interfacing with a URL shortening service. So, I wrote the script and within minutes, all of our downloads links were converted into something that can now make us some revenue.</p>
+
+<h2 id="the-solution">The Solution</h2>
+
+<p>Now that I have created the script, I figured I would pretty it up and share it with you. Keep in mind, the script is stupid easy, so if I am insulting your intelligence by showing it, I apologize.</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="php" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">&lt;?php</span>
+    <span style="color: #666666; font-style: italic;">/* linkshare.php */</span>
+&nbsp;
+    <span style="color: #666666; font-style: italic;">// Your linkshare API token</span>
+    <span style="color: #000088;">$token</span> <span style="color: #339933;">=</span> <span style="color: #0000ff;">"89705XXXXd11ab28ae548bXXXX4ad6475279faXXXX65da0ec8ed77XXXXeb067"</span><span style="color: #339933;">;</span>
+    <span style="color: #666666; font-style: italic;">// Apples Merchant ID</span>
+    <span style="color: #000088;">$mid</span>   <span style="color: #339933;">=</span> <span style="color: #0000ff;">"13508"</span><span style="color: #339933;">;</span>
+&nbsp;
+    <span style="color: #000088;">$linkShareLinks</span> <span style="color: #339933;">=</span> <span style="color: #990000;">array</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>  
+&nbsp;
+    <span style="color: #666666; font-style: italic;">// I assume links in an array of links to the app store</span>
+    <span style="color: #b1b100;">foreach</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$links</span> <span style="color: #b1b100;">as</span> <span style="color: #000088;">$link</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+        <span style="color: #000088;">$linkShareURL</span> <span style="color: #339933;">=</span> <span style="color: #0000ff;">"http://feed.linksynergy.com/createcustomlink.shtml?"</span><span style="color: #339933;">.</span>
+            <span style="color: #0000ff;">"token=<span style="color: #006699; font-weight: bold;">$token</span>&amp;mid=<span style="color: #006699; font-weight: bold;">$mid</span>&amp;murl=<span style="color: #006699; font-weight: bold;">$link</span>&amp;mt=8&amp;buylink=yes"</span><span style="color: #339933;">;</span>
+        <span style="color: #000088;">$linkShareReturn</span> <span style="color: #339933;">=</span> <span style="color: #990000;">file_get_contents</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$linkShareURL</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+&nbsp;
+        <span style="color: #b1b100;">if</span><span style="color: #009900;">&#40;</span><span style="color: #990000;">stristr</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$linkShareReturn</span><span style="color: #339933;">,</span> <span style="color: #0000ff;">"click.linksynergy.com"</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+            <span style="color: #990000;">array_push</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$linkShareLinks</span><span style="color: #339933;">,</span><span style="color: #000088;">$linkShareReturn</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+        <span style="color: #009900;">&#125;</span> 
+    <span style="color: #009900;">&#125;</span>
+&nbsp;
+    <span style="color: #990000;">print_r</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$linkShareLinks</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+<span style="color: #000000; font-weight: bold;">?&gt;</span></pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>And that’s it! The variable $linkShareLinks will now contain all of the App Store links converted to your account’s linkshare url. If you have any site with that contains ads for apps in the app store (review site, developer blog, etc…), you would be crazy not to integrate with linkshare.</p>
+
+<p>Give it a try, and feel free to ask questions in the comments section.</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="Money You Might Be Missing Out On - LinkShare API Integration" data-url="http://brandontreb.com/money-you-might-be-missing-out-on-linkshare-api-integration" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+    
+  </div>
+
+  <div class="date">
+    <a href= "">
+      
+    </a>
+  </div>  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+
+
+
+<a href="https://github.com/brandontreb"><i class="svg-icon github"></i></a>
+
+
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/brandontreb"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

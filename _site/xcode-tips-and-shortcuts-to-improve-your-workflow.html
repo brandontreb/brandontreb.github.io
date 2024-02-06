@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>XCode Tips And Shortcuts To Improve Your Workflow – Brandon Trebitowski – A builder of meaningful software</title>
+    <meta charset="utf-8" />
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+<meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+<meta name="author" content="Brandon Trebitowski">
+
+<link rel="micropub" href="http://blog.0x.cool/micropub/main">
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="webmention" href="https://webmention.io/brandontreb.com/webmention" />
+<link rel="pingback" href="https://webmention.io/brandontreb.com/xmlrpc" />
+
+<link href="https://twitter.com/brandontreb" rel="me">
+<link href="http://github.com/brandontreb" rel="me"> 
+<meta name="description" content="Intro
+
+" />
+<meta property="og:description" content="Intro
+
+" /> 
+<meta name="author" content="Brandon Trebitowski" /> 
+<meta property="og:title" content="XCode Tips And Shortcuts To Improve Your Workflow" />
+<meta property="twitter:title" content="XCode Tips And Shortcuts To Improve Your Workflow" /> 
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Brandon Trebitowski - A builder of meaningful software" href="/feed.xml" />    
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://en.gravatar.com/userimage/3515553/4a56e1cc34a936f3dd082b93032468ea.jpeg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Brandon Trebitowski</a></h1>
+            <p class="site-description">A builder of meaningful software</p>
+          </div>
+
+          <nav>
+            <a href="/">blog</a>
+            <!-- <a href="/about">About</a> -->
+            <a href="https://linkedin.com/in/brandontreb">linked in</a>
+            <a href="https://micro.blog/brandontreb">micro.blog</a>
+            <a href="https://pixegon.com">hire me</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>XCode Tips And Shortcuts To Improve Your Workflow</h1>
+
+  <div class="entry">
+    
+    <h4 id="intro">Intro</h4>
+
+<p>This is my first <a href="http://idevblogaday.com">#iDevBlogADay</a> post and I wanted to give a quick intro before jumping in. My name is Brandon Trebitowski and I’m a software developer and author from Albuquerque, New Mexico. I graduated from the University of New Mexico in 2008 with a bachelors degree in computer science. For the past 2 years, I have been writing mobile applications (primarily for the iPhone) for <a href="http://elctech.com/">ELC Technologies</a>.</p>
+
+<p>I also started <a href="http://icodeblog.com">http://icodeblog.com</a> and currently write on it about once a month.</p>
+
+<h4 id="a-post-on-xcode-shortcuts">A Post On XCode Shortcuts?</h4>
+
+<p><a href="http://www.1729.us/xcode/Xcode%20Shortcuts.png"><img class="alignleft" title="XCode Shortcuts" src="http://www.1729.us/xcode/Xcode%20Shortcuts.png" alt="" width="130" height="134" /></a>Well, I’m sure by now, you have seen countless <a href="http://www.1729.us/xcode/Xcode%20Shortcuts.png">infographics and “cheat sheets”</a> chock full of XCode shortcuts, tips, etc… These can be great resources, however, if you are anything like me, you see these, tweet the link, and move on never looking at them again. The only difference between these and the XCode key-bindings menu IMHO is a fancy background. So, I thought I would share some of the most important shortcuts that I have adopted to really improve my workflow. We spend so much time inside of XCode, it is worth the time to learn some of these.</p>
+
+<h4 id="build-commands">Build Commands</h4>
+
+<p>By now, I would hope that you don’t click the “Build and Go/Debug” with your mouse whenever you want to run your application. If you do, no worries, here are some of the build quick keys.</p>
+
+<p>**⌘ return – **This builds and launches the application in debug mode.<br />
+**shift ⌘ return **– Kills the running application in the simulator.<br />
+**shift ⌘ k – **Cleans the build target.<br />
+**shift ⌘ a – **Build and Analyze. This is quite possible the most important command to learn. This invokes the static analyzer to help spot memory issues in your code. Run this as early and often as possible.</p>
+
+<p>My general workflow after writing a bit of code is to kill the last run, clean, analyze (hopefully not spend time on memory issues), and then build and debug. These 4 commands in sequence are much faster than searching out the menu items for each of those commands.</p>
+
+<h4 id="file-management-and-navigation">File Management and Navigation</h4>
+
+<p>Navigating around files is one of the most common tasks you will perform in XCode. It is really to your advantage to speed things up.</p>
+
+<p><strong>option ⌘ ↑</strong> – This quickly switches between your .h and .m file.<br />
+**⌘ ↑ – **Move to the top of the file<br />
+**⌘ ↓ – **Move to the bottom of the file <img class="size-full wp-image-1026 alignright" title="Screen shot 2010-11-18 at 8.14.35 AM" src="http://brandontreb.com/wp-content/uploads/2010/11/Screen-shot-2010-11-18-at-8.14.35-AM.png" alt="" width="265" height="188" /><br />
+**shift ⌘ d – **This was recently showed to my by <a href="http://twitter.com/cruffenach">@cruffenach</a> and it has drastically sped up my workflow. This is the command for “Open Quickly”. It brings up a small window with a search box at the top. Typing in the box instantly searches your project and allows you to quickly open up files by pressing return on the selected file. I can’t believe I had been using XCode for so long before I found out about this command.</p>
+
+<h4 id="binding-your-own-quick-keys">Binding Your Own Quick Keys</h4>
+
+<p>Some commands simply don’t have quick keys. For example, I constantly use the <strong>Edit -&gt; Sort -&gt; By Name</strong> command to sort my source files alphabetically. By default, you must click through all of the menus and select the command to get it to work. However, XCode (like most OSX applications) will allow you to define your own quick keys and here’s how.</p>
+
+<ol>
+  <li>Open up the XCode Preferences</li>
+  <li>Click on the Key Bindings tab</li>
+  <li>Navigate to the command that you want to bind keys for. (hint: they are organized the same way they in the top menu)</li>
+  <li>Once you have found the command, double click in the Key column</li>
+  <li>Press the keys that you wish to bind (I bound <strong>option shift ⌘ s</strong> for sorting)</li>
+  <li>If there are any conflicts, XCode will let you know. Otherwise, press apply and you’re good to go.</li>
+</ol>
+
+<h4 id="wrap-up">Wrap Up</h4>
+
+<p>Well, this concludes my relatively short first post for <a href="http://idevblogaday.com">#idevblogaday</a>. If you have any shortcuts of your own that you can’t live without, please share them in the comments. I’m always up to improve my workflow.</p>
+
+<p>Thank you to everyone (especially <a href="http://twitter.com/mysterycoconut">@mysterycoconut</a>) for allowing me to be a part of this community and I look forward to sharing my knowledge and experiences with you.</p>
+
+<p>Happy Coding!</p>
+
+<p style="font-family: ‘Lucida Grande’;">
+  &#8212;-
+</p>
+<p>&lt;/p&gt;</p>
+
+<div style="font-family: ‘Lucida Grande’;">
+  <span style="font-family: ‘Lucida Grande’;"><strong><span style="font-weight: normal;"><span style="font-family: arial, verdana, tahoma, sans-serif; font-size: 13px; line-height: 20px;"><em>﻿﻿This post is part of <a style="text-decoration: none; color: #004199; padding: 0px; margin: 0px;" href="http://idevblogaday.com/">iDevBlogADay</a>, a group of indie iOS development blogs featuring two posts per day. You can keep up with iDevBlogADay through the <a style="text-decoration: none; color: #004199; padding: 0px; margin: 0px;" href="http://idevblogaday.com/">web site</a>, <a style="text-decoration: none; color: #004199; padding: 0px; margin: 0px;" href="http://feeds.feedburner.com/idevblogaday">RSS feed</a>, or <a style="text-decoration: none; color: #004199; padding: 0px; margin: 0px;" href="http://twitter.com/#search?q=%23idevblogaday">Twitter</a>.</em></span></span></strong></span>
+</div>
+<p>&lt;/p&gt;</p>
+
+<div style="font-family: ‘Lucida Grande’;">
+  <span style="font-family: ‘Lucida Grande’;"><strong><span style="font-weight: normal;"><span style="font-family: arial, verdana, tahoma, sans-serif; font-size: 13px; line-height: 20px;"><em><br /> <br /> </em></span></span></strong></span>
+</div>
+<p>&lt;/p&gt;</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="XCode Tips And Shortcuts To Improve Your Workflow" data-url="http://brandontreb.com/xcode-tips-and-shortcuts-to-improve-your-workflow" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+    
+  </div>
+
+  <div class="date">
+    <a href= "">
+      
+    </a>
+  </div>  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+
+
+
+<a href="https://github.com/brandontreb"><i class="svg-icon github"></i></a>
+
+
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/brandontreb"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

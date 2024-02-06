@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Programming Tip Of The Day #2 &#8211; Difference Between i++ and ++i – Brandon Trebitowski – A builder of meaningful software</title>
+    <meta charset="utf-8" />
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+<meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+<meta name="author" content="Brandon Trebitowski">
+
+<link rel="micropub" href="http://blog.0x.cool/micropub/main">
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="webmention" href="https://webmention.io/brandontreb.com/webmention" />
+<link rel="pingback" href="https://webmention.io/brandontreb.com/xmlrpc" />
+
+<link href="https://twitter.com/brandontreb" rel="me">
+<link href="http://github.com/brandontreb" rel="me"> 
+<meta name="description" content="To some, this should seem a bit obvious and if I am insulting your intelligence by discussing it, I am sorry. But, one of the main reasons I want to discuss this topic is, I was asked this question in a job interview for Lockheed Martin.
+
+" />
+<meta property="og:description" content="To some, this should seem a bit obvious and if I am insulting your intelligence by discussing it, I am sorry. But, one of the main reasons I want to discuss this topic is, I was asked this question in a job interview for Lockheed Martin.
+
+" /> 
+<meta name="author" content="Brandon Trebitowski" /> 
+<meta property="og:title" content="Programming Tip Of The Day #2 &#8211; Difference Between i++ and ++i" />
+<meta property="twitter:title" content="Programming Tip Of The Day #2 &#8211; Difference Between i++ and ++i" /> 
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Brandon Trebitowski - A builder of meaningful software" href="/feed.xml" />    
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://en.gravatar.com/userimage/3515553/4a56e1cc34a936f3dd082b93032468ea.jpeg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Brandon Trebitowski</a></h1>
+            <p class="site-description">A builder of meaningful software</p>
+          </div>
+
+          <nav>
+            <a href="/">blog</a>
+            <!-- <a href="/about">About</a> -->
+            <a href="https://linkedin.com/in/brandontreb">linked in</a>
+            <a href="https://micro.blog/brandontreb">micro.blog</a>
+            <a href="https://pixegon.com">hire me</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Programming Tip Of The Day #2 &#8211; Difference Between i++ and ++i</h1>
+
+  <div class="entry">
+    
+    <p>To some, this should seem a bit obvious and if I am insulting your intelligence by discussing it, I am sorry. But, one of the main reasons I want to discuss this topic is, I was asked this question in a job interview for Lockheed Martin.</p>
+
+<p><strong>What is the difference between i++ and ++i?</strong></p>
+
+<p>The answer is actually quite simple.</p>
+
+<h3 id="i-first-evaluates-the-value-of-i-and-then-increments-it"><span style="color: #00ccff;">i++</span> first evaluates the value of i and then increments it</h3>
+
+<h3 id="i-increments-the-value-of-i-and-then-evaluates-it"><span style="color: #00ccff;">++i</span> increments the value of i and then evaluates it</h3>
+
+<p>Here is a brief example to demonstrate what I mean.</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="php" style="font-family:monospace;"><span style="color: #666666; font-style: italic;">// Example: i++ </span>
+<span style="color: #000088;">$i</span> <span style="color: #339933;">=</span> <span style="color: #cc66cc;">5</span><span style="color: #339933;">;</span>
+<span style="color: #b1b100;">echo</span> <span style="color: #0000ff;">"The value of i is "</span> <span style="color: #339933;">.</span> <span style="color: #000088;">$i</span><span style="color: #339933;">++</span> <span style="color: #339933;">;</span>
+<span style="color: #666666; font-style: italic;">// Output "The value of i is 5"</span>
+<span style="color: #666666; font-style: italic;">// i = 6</span>
+&nbsp;
+<span style="color: #666666; font-style: italic;">// Example: ++i </span>
+<span style="color: #000088;">$i</span> <span style="color: #339933;">=</span> <span style="color: #cc66cc;">5</span><span style="color: #339933;">;</span>
+<span style="color: #b1b100;">echo</span> <span style="color: #0000ff;">"The value of i is "</span> <span style="color: #339933;">.</span> <span style="color: #339933;">++</span><span style="color: #000088;">$i</span><span style="color: #339933;">;</span>
+<span style="color: #666666; font-style: italic;">// Output "The value of i is 6"</span>
+<span style="color: #666666; font-style: italic;">// i = 6</span></pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>So, now if you are ever asked about this in an interview, you will have a response.</p>
+
+<p>Happy programming!</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="Programming Tip Of The Day #2 - Difference Between i++ and ++i" data-url="http://brandontreb.com/programming-tip-of-the-day-2-difference-between-i-and-i" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+    
+  </div>
+
+  <div class="date">
+    <a href= "">
+      
+    </a>
+  </div>  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+
+
+
+<a href="https://github.com/brandontreb"><i class="svg-icon github"></i></a>
+
+
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/brandontreb"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

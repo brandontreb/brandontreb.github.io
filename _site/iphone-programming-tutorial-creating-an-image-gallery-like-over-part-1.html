@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iPhone Programming Tutorial: Creating An Image Gallery Like Over &#8211; Part 1 – Brandon Trebitowski – A builder of meaningful software</title>
+    <meta charset="utf-8" />
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+<meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+<meta name="author" content="Brandon Trebitowski">
+
+<link rel="micropub" href="http://blog.0x.cool/micropub/main">
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="webmention" href="https://webmention.io/brandontreb.com/webmention" />
+<link rel="pingback" href="https://webmention.io/brandontreb.com/xmlrpc" />
+
+<link href="https://twitter.com/brandontreb" rel="me">
+<link href="http://github.com/brandontreb" rel="me"> 
+<meta name="description" content="
+
+" />
+<meta property="og:description" content="
+
+" /> 
+<meta name="author" content="Brandon Trebitowski" /> 
+<meta property="og:title" content="iPhone Programming Tutorial: Creating An Image Gallery Like Over &#8211; Part 1" />
+<meta property="twitter:title" content="iPhone Programming Tutorial: Creating An Image Gallery Like Over &#8211; Part 1" /> 
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Brandon Trebitowski - A builder of meaningful software" href="/feed.xml" />    
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://en.gravatar.com/userimage/3515553/4a56e1cc34a936f3dd082b93032468ea.jpeg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Brandon Trebitowski</a></h1>
+            <p class="site-description">A builder of meaningful software</p>
+          </div>
+
+          <nav>
+            <a href="/">blog</a>
+            <!-- <a href="/about">About</a> -->
+            <a href="https://linkedin.com/in/brandontreb">linked in</a>
+            <a href="https://micro.blog/brandontreb">micro.blog</a>
+            <a href="https://pixegon.com">hire me</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>iPhone Programming Tutorial: Creating An Image Gallery Like Over &#8211; Part 1</h1>
+
+  <div class="entry">
+    
+    <p><a href="http://brandontreb.com/wp-content/uploads/2013/08/Screen-Shot-2013-08-09-at-8.36.42-PM.png"><img class="alignright" alt="Screen Shot 2013-08-09 at 8.36.42 PM" src="http://brandontreb.com/wp-content/uploads/2013/08/Screen-Shot-2013-08-09-at-8.36.42-PM.png" width="225" height="365" /></a></p>
+
+<p> </p>
+
+<p>Recently, I have had to build an app (<a href="http://j.mp/scriptapp" target="_blank">download link</a>) that required the user to choose a photo from their photo library.  Rather than just throwing up a <strong>UIImagePickerController</strong> like many apps, I decided to add a little bit of style.  Being inspired by Over’s ultra simplistic (and beautiful) photo selection interface, I decided to fancy things up a bit.</p>
+
+<p>For this tutorial, I will start with a Fresh <strong>iOS6</strong> View-Based application that uses <strong>Storyboards</strong> and <strong>ARC</strong>. Also note that I will be optimizing for the iPhone 5 resolution.  You are free to make the tweaks necessary to deploy on the iPhone 4 and 4S.</p>
+
+<p> </p>
+
+<p>Here is a breakdown of what we will cover in this part:</p>
+
+<ol>
+  <li><span style="line-height: 14px;">Creating a <strong>UICollectionView </strong>inside of <strong>Storyboard</strong></span></li>
+  <li>Using the <strong>ALAssetsLibrary</strong> to fetch photos from the user’s <strong>Camera Roll</strong></li>
+  <li>Displaying the <strong>ALAssets</strong> inside of the <strong>UICollectionView</strong></li>
+</ol>
+
+<h3 id="1-preparing-the-iboutlets">1. Preparing The IBOutlets</h3>
+
+<p>Start by opening up <strong>ViewController.m **and replacing the **@interface</strong> declaration at the top with the following code:</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="objc" style="font-family:monospace;"><span style="color: #a61390;">@interface</span> ViewController <span style="color: #002200;">&#40;</span><span style="color: #002200;">&#41;</span>&lt;UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout&gt;
+<span style="color: #a61390;">@property</span><span style="color: #002200;">&#40;</span>nonatomic, weak<span style="color: #002200;">&#41;</span> IBOutlet UICollectionView <span style="color: #002200;">*</span>collectionView;
+<span style="color: #a61390;">@end</span></pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>This will declare the <strong>IBOutlet </strong>needed to hook up the main <strong>UICollectionView</strong> that we will be using to display the user’s photos.  I have also set up our class to be a <strong>UICollectionViewDataSource</strong>, <strong>UICollectionViewDelegate</strong>, and <strong>UICollectionViewDelegateFlowLayout</strong>. This is necessary when interfacing with the <strong>UICollectionView.</strong></p>
+
+<h3 id="2-setting-up-the-uicollectionview-in-storyboard">2. Setting Up The UICollectionView In Storyboard</h3>
+
+<p>Open up <strong>MainStoryboard.storyboard </strong>and drag a <strong>UICollectionView</strong> on to your view ensuring that it stretches the entire screen.</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-8.44.02-PM.png"><img class="alignnone size-medium wp-image-210" alt="Screen Shot 2013-07-21 at 8.44.02 PM" src="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-8.44.02-PM-172x300.png" width="172" height="300" /></a></p>
+
+<p>Then, <strong>Control-Click</strong> and drag from the <strong>UICollectionView </strong>to your <strong>ViewController </strong>Object and set it as the <strong>delegate </strong>and <strong>datasource.</strong></p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-8.41.29-PM.png"><img class="alignnone size-full wp-image-209" alt="Screen Shot 2013-07-21 at 8.41.29 PM" src="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-8.41.29-PM.png" width="265" height="181" /></a></p>
+
+<p>Finally, <strong>Control-Click </strong>and drag from <strong>View Controller </strong>to <strong>Collection View</strong> and selected <strong>collectionView </strong>to make the <strong>IBOutlet </strong>connection.</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-8.45.05-PM.png"><img class="alignnone size-full wp-image-211" alt="Screen Shot 2013-07-21 at 8.45.05 PM" src="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-8.45.05-PM.png" width="267" height="148" /></a></p>
+
+<p>Now, we need to give a <strong>Cell Identifier</strong> to the <strong>UICollectionViewCell</strong> so that we can reference it in code.  Click on the default cell inside of the <strong>UICollectionView</strong> and open the <strong>Attributes Inspector. </strong>For the <strong>Identifier</strong> type in <strong>PhotoCell.</strong> The cell might be a little tricky to see as its background color is clear, but it’s there. Simply click in the top left corner of the <strong>UICollectionView</strong>.</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-9.13.08-PM.png"><img class="alignnone size-medium wp-image-219" alt="Screen Shot 2013-07-21 at 9.13.08 PM" src="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-9.13.08-PM-300x67.png" width="300" height="67" /></a></p>
+
+<p>Now that the <strong>UICollectionView</strong> has been set up, it’s time to fetch the photos from the user’s photo library.</p>
+
+<pre style="background-color: #eee; border: 1px solid #444444;">If you are using the simulator, make sure to populate the Photo Gallery with images from the web. Simply open up a browser, do a Google Image Search, and click and hold on various images. You should have an option from the menu that pops up to save the images to your camera roll.
+
+Finally, open up the <b>Photos</b> app on the simulator to initialize the Assets Library.</pre>
+
+<h3 id="3-fetching-alassets-user-photos-from-the-alassets-library">3. Fetching ALAssets (user photos) From The ALAssets Library</h3>
+
+<p>In order to interface with the user’s photo library, we must first import the <strong>AssetsLibrary.framework </strong>framework.  To do this, click on your project in the sidebar, select the Target, then click <strong>Build Phases, </strong>expand the <strong>Link Binary With Libraries</strong> section and click the <strong>+ </strong>button.  Do a search for <strong>Assset </strong>and then double click on <strong>AssetsLibrary.framework.</strong></p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-8.57.37-PM.png"><img class="alignnone size-medium wp-image-216" alt="Screen Shot 2013-07-21 at 8.57.37 PM" src="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-8.57.37-PM-259x300.png" width="259" height="300" /></a></p>
+
+<p>It should now be added to your project and ready to use.  Now that it has been linked, we must import it into the <strong>ViewController.m </strong>file.  Open up <strong>ViewController.m </strong>and add the following import to the top of the file:</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="objc" style="font-family:monospace;"><span style="color: #6e371a;">#import &lt;AssetsLibrary/AssetsLibrary.h&gt;</span></pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>Before we can fetch the user’s photos, we need to set up an <strong>NSArray</strong> to put them in.  Add the following line within the <strong>@interface </strong>declaration at the top.</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="objc" style="font-family:monospace;"><span style="color: #a61390;">@property</span><span style="color: #002200;">&#40;</span>nonatomic, strong<span style="color: #002200;">&#41;</span> <span style="color: #400080;">NSArray</span> <span style="color: #002200;">*</span>assets;</pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>Now, add the following method to your class:</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="objc" style="font-family:monospace;"><span style="color: #002200;">+</span> <span style="color: #002200;">&#40;</span>ALAssetsLibrary <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span>defaultAssetsLibrary
+<span style="color: #002200;">&#123;</span>
+    <span style="color: #a61390;">static</span> dispatch_once_t pred <span style="color: #002200;">=</span> <span style="color: #2400d9;"></span>;
+    <span style="color: #a61390;">static</span> ALAssetsLibrary <span style="color: #002200;">*</span>library <span style="color: #002200;">=</span> <span style="color: #a61390;">nil</span>;
+    dispatch_once<span style="color: #002200;">&#40;</span><span style="color: #002200;">&amp;</span>pred, <span style="color: #002200;">^</span><span style="color: #002200;">&#123;</span>
+        library <span style="color: #002200;">=</span> <span style="color: #002200;">&#91;</span><span style="color: #002200;">&#91;</span>ALAssetsLibrary alloc<span style="color: #002200;">&#93;</span> init<span style="color: #002200;">&#93;</span>;
+    <span style="color: #002200;">&#125;</span><span style="color: #002200;">&#41;</span>;
+    <span style="color: #a61390;">return</span> library;
+<span style="color: #002200;">&#125;</span></pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>This is a static method that creates a static instance to the <strong>ALAssetsLibrary</strong>.  The reason this is needed is, when we enumerate the <strong>ALAssets</strong> in the next method, it seems that the assets get released immediately and otherwise wouldn’t be able to be used in the rest of the application. I will explain this a little more in a moment.</p>
+
+<p>Head over to <strong>viewDidLoad</strong> and add the following code:</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="objc" style="font-family:monospace;"><span style="color: #002200;">-</span> <span style="color: #002200;">&#40;</span><span style="color: #a61390;">void</span><span style="color: #002200;">&#41;</span>viewDidLoad
+<span style="color: #002200;">&#123;</span>
+    <span style="color: #002200;">&#91;</span>super viewDidLoad<span style="color: #002200;">&#93;</span>;
+&nbsp;
+    _assets <span style="color: #002200;">=</span> <span style="color: #002200;">&#91;</span>@<span style="color: #002200;">&#91;</span><span style="color: #002200;">&#93;</span> mutableCopy<span style="color: #002200;">&#93;</span>;
+    __block <span style="color: #400080;">NSMutableArray</span> <span style="color: #002200;">*</span>tmpAssets <span style="color: #002200;">=</span> <span style="color: #002200;">&#91;</span>@<span style="color: #002200;">&#91;</span><span style="color: #002200;">&#93;</span> mutableCopy<span style="color: #002200;">&#93;</span>;
+    <span style="color: #11740a; font-style: italic;">// 1</span>
+    ALAssetsLibrary <span style="color: #002200;">*</span>assetsLibrary <span style="color: #002200;">=</span> <span style="color: #002200;">&#91;</span>ViewController defaultAssetsLibrary<span style="color: #002200;">&#93;</span>;
+    <span style="color: #11740a; font-style: italic;">// 2</span>
+    <span style="color: #002200;">&#91;</span>assetsLibrary enumerateGroupsWithTypes<span style="color: #002200;">:</span>ALAssetsGroupAll usingBlock<span style="color: #002200;">:^</span><span style="color: #002200;">&#40;</span>ALAssetsGroup <span style="color: #002200;">*</span>group, <span style="color: #a61390;">BOOL</span> <span style="color: #002200;">*</span>stop<span style="color: #002200;">&#41;</span> <span style="color: #002200;">&#123;</span>
+        <span style="color: #002200;">&#91;</span>group enumerateAssetsUsingBlock<span style="color: #002200;">:^</span><span style="color: #002200;">&#40;</span>ALAsset <span style="color: #002200;">*</span>result, NSUInteger index, <span style="color: #a61390;">BOOL</span> <span style="color: #002200;">*</span>stop<span style="color: #002200;">&#41;</span> <span style="color: #002200;">&#123;</span>
+            <span style="color: #a61390;">if</span><span style="color: #002200;">&#40;</span>result<span style="color: #002200;">&#41;</span>
+            <span style="color: #002200;">&#123;</span>
+                <span style="color: #11740a; font-style: italic;">// 3</span>
+                <span style="color: #002200;">&#91;</span>tmpAssets addObject<span style="color: #002200;">:</span>result<span style="color: #002200;">&#93;</span>;
+            <span style="color: #002200;">&#125;</span>
+        <span style="color: #002200;">&#125;</span><span style="color: #002200;">&#93;</span>;
+&nbsp;
+        <span style="color: #11740a; font-style: italic;">// 4</span>
+        <span style="color: #11740a; font-style: italic;">//NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"date" ascending:NO];</span>
+        <span style="color: #11740a; font-style: italic;">//self.assets = [tmpAssets sortedArrayUsingDescriptors:@[sort]];</span>
+        self.assets <span style="color: #002200;">=</span> tmpAssets;
+&nbsp;
+        <span style="color: #11740a; font-style: italic;">// 5</span>
+        <span style="color: #002200;">&#91;</span>self.collectionView reloadData<span style="color: #002200;">&#93;</span>;
+    <span style="color: #002200;">&#125;</span> failureBlock<span style="color: #002200;">:^</span><span style="color: #002200;">&#40;</span><span style="color: #400080;">NSError</span> <span style="color: #002200;">*</span>error<span style="color: #002200;">&#41;</span> <span style="color: #002200;">&#123;</span>
+        NSLog<span style="color: #002200;">&#40;</span><span style="color: #bf1d1a;">@</span><span style="color: #bf1d1a;">"Error loading images %@"</span>, error<span style="color: #002200;">&#41;</span>;
+    <span style="color: #002200;">&#125;</span><span style="color: #002200;">&#93;</span>;
+<span style="color: #002200;">&#125;</span></pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<ol>
+  <li>Grab our static instance of the <strong>ALAssetsLibrary</strong></li>
+  <li>Enumerate through all of the <strong>ALAssets </strong>(photos) in the user’s <strong>Asset Groups</strong> (Folders)</li>
+  <li>Enumerate each folder and add it’s <strong>ALAssets </strong>to the temporary array</li>
+  <li>Sort the assets list by date (this won’t work yet, but I will show you how to fix later). For now this code is commented out and the Assets will be sorted however they come out.</li>
+  <li>Reload the <strong>UICollectionView</strong> (this won’t work yet as we haven’t set up the delegate methods)</li>
+</ol>
+
+<p>Now that we have an <strong>NSArray</strong> populated with <strong>ALAssets</strong>, let’s set up the <strong>delegate </strong>methods for the <strong>UICollectionView</strong> in order to populate it with data.</p>
+
+<h3 id="4-populating-the-uicollectionview-with-data">4. Populating the UICollectionView With Data</h3>
+
+<p>A <strong>UICollectionView</strong> functions much like a <strong>UITableView </strong>having delegate and datasource methods.  Add the following methods to your <strong>ViewController</strong> class to populate the view.</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="objc" style="font-family:monospace;"><span style="color: #6e371a;">#pragma mark - collection view data source</span>
+&nbsp;
+<span style="color: #002200;">-</span> <span style="color: #002200;">&#40;</span>NSInteger<span style="color: #002200;">&#41;</span> collectionView<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span>UICollectionView <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span>collectionView numberOfItemsInSection<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span>NSInteger<span style="color: #002200;">&#41;</span>section
+<span style="color: #002200;">&#123;</span>
+    <span style="color: #a61390;">return</span> self.assets.count;
+<span style="color: #002200;">&#125;</span>
+&nbsp;
+<span style="color: #002200;">-</span> <span style="color: #002200;">&#40;</span>UICollectionViewCell <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span> collectionView<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span>UICollectionView <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span>collectionView cellForItemAtIndexPath<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span><span style="color: #400080;">NSIndexPath</span> <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span>indexPath
+<span style="color: #002200;">&#123;</span>
+    UICollectionViewCell <span style="color: #002200;">*</span>cell <span style="color: #002200;">=</span> <span style="color: #002200;">&#40;</span>UICollectionViewCell <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span><span style="color: #002200;">&#91;</span>collectionView dequeueReusableCellWithReuseIdentifier<span style="color: #002200;">:</span><span style="color: #bf1d1a;">@</span><span style="color: #bf1d1a;">"PhotoCell"</span> forIndexPath<span style="color: #002200;">:</span>indexPath<span style="color: #002200;">&#93;</span>;
+&nbsp;
+    ALAsset <span style="color: #002200;">*</span>asset <span style="color: #002200;">=</span> self.assets<span style="color: #002200;">&#91;</span>indexPath.row<span style="color: #002200;">&#93;</span>;
+    <span style="color: #11740a; font-style: italic;">//cell.asset = asset;</span>
+    cell.backgroundColor <span style="color: #002200;">=</span> <span style="color: #002200;">&#91;</span>UIColor redColor<span style="color: #002200;">&#93;</span>;
+&nbsp;
+    <span style="color: #a61390;">return</span> cell;
+<span style="color: #002200;">&#125;</span>
+&nbsp;
+<span style="color: #002200;">-</span> <span style="color: #002200;">&#40;</span>CGFloat<span style="color: #002200;">&#41;</span> collectionView<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span>UICollectionView <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span>collectionView layout<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span>UICollectionViewLayout <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span>collectionViewLayout minimumLineSpacingForSectionAtIndex<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span>NSInteger<span style="color: #002200;">&#41;</span>section
+<span style="color: #002200;">&#123;</span>
+    <span style="color: #a61390;">return</span> <span style="color: #2400d9;">4</span>;
+<span style="color: #002200;">&#125;</span>
+&nbsp;
+<span style="color: #002200;">-</span> <span style="color: #002200;">&#40;</span>CGFloat<span style="color: #002200;">&#41;</span> collectionView<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span>UICollectionView <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span>collectionView layout<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span>UICollectionViewLayout <span style="color: #002200;">*</span><span style="color: #002200;">&#41;</span>collectionViewLayout minimumInteritemSpacingForSectionAtIndex<span style="color: #002200;">:</span><span style="color: #002200;">&#40;</span>NSInteger<span style="color: #002200;">&#41;</span>section
+<span style="color: #002200;">&#123;</span>
+    <span style="color: #a61390;">return</span> <span style="color: #2400d9;">1</span>;
+<span style="color: #002200;">&#125;</span></pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>This code should be fairly straight forward if you have ever worked with a <strong>UITableView.</strong>  The only lines to note are where ‘cell.asset = asset’ is commented out and we set the cell’s background color to red.  We will uncomment that line when we create a custom cell to display the image (for now it won’t).  I have also set the background color to red so that you can see that the number of cells is actually corresponding to the number of photos in the camera roll.</p>
+
+<p><strong>Build and Run!</strong></p>
+
+<p>Let’s take a break to do a build and run to see what happens.  If you have hooked everything up correctly, you should see a black screen with red squares on it with a count equalling the number of photos in the user’s library.</p>
+
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-9.26.07-PM.png"><img class="alignnone size-medium wp-image-225" alt="Screen Shot 2013-07-21 at 9.26.07 PM" src="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-9.26.07-PM-184x300.png" width="184" height="300" /></a></p>
+
+<p>Not too exciting, however it shows that we are displaying a number of cells corresponding to the number of photos in the user’s asset library.  At least it’s showing that you have done something.  The next step is to create a custom <strong>UICollectionViewCell</strong> that actually displays the photos, which we will do next time.</p>
+
+<h3 id="5-next-time">5. Next Time</h3>
+
+<p>That’s all for today.  In a ploy to get you to come back to my site (and<a href="http://feeds.feedburner.com/brandontreb"> subscribe to my RSS feed</a>), I have chosen to break this post up into two parts.  </p>
+
+<p>Luckily for you, I wrote the above message a while ago. Click the link below to go to part 2!</p>
+
+<p><a href="http://brandontreb.com/iphone-programming-tutorial-creating-an-image-gallery-like-over-part-2">iPhone Programming Tutorial: Creating An Image Gallery Like Over – Part 2</a></p>
+
+<p>Stay tuned!</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="iPhone Programming Tutorial: Creating An Image Gallery Like Over - Part 1" data-url="http://brandontreb.com/iphone-programming-tutorial-creating-an-image-gallery-like-over-part-1" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+    
+  </div>
+
+  <div class="date">
+    <a href= "">
+      
+    </a>
+  </div>  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+
+
+
+<a href="https://github.com/brandontreb"><i class="svg-icon github"></i></a>
+
+
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/brandontreb"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

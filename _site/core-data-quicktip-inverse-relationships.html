@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Core Data QuickTip: Inverse Relationships – Brandon Trebitowski – A builder of meaningful software</title>
+    <meta charset="utf-8" />
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+<meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+<meta name="author" content="Brandon Trebitowski">
+
+<link rel="micropub" href="http://blog.0x.cool/micropub/main">
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="webmention" href="https://webmention.io/brandontreb.com/webmention" />
+<link rel="pingback" href="https://webmention.io/brandontreb.com/xmlrpc" />
+
+<link href="https://twitter.com/brandontreb" rel="me">
+<link href="http://github.com/brandontreb" rel="me"> 
+<meta name="description" content="One thing I always wondered about Core Data is why the compiler would warn you if you didn’t specify the inverse relationship. After reading through Apple’s docs, they essentially say its to make your database more robust by reinforcing those relationships. Plus, you never know when you may have one thing and need to get to the other.
+
+" />
+<meta property="og:description" content="One thing I always wondered about Core Data is why the compiler would warn you if you didn’t specify the inverse relationship. After reading through Apple’s docs, they essentially say its to make your database more robust by reinforcing those relationships. Plus, you never know when you may have one thing and need to get to the other.
+
+" /> 
+<meta name="author" content="Brandon Trebitowski" /> 
+<meta property="og:title" content="Core Data QuickTip: Inverse Relationships" />
+<meta property="twitter:title" content="Core Data QuickTip: Inverse Relationships" /> 
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Brandon Trebitowski - A builder of meaningful software" href="/feed.xml" />    
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://en.gravatar.com/userimage/3515553/4a56e1cc34a936f3dd082b93032468ea.jpeg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Brandon Trebitowski</a></h1>
+            <p class="site-description">A builder of meaningful software</p>
+          </div>
+
+          <nav>
+            <a href="/">blog</a>
+            <!-- <a href="/about">About</a> -->
+            <a href="https://linkedin.com/in/brandontreb">linked in</a>
+            <a href="https://micro.blog/brandontreb">micro.blog</a>
+            <a href="https://pixegon.com">hire me</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Core Data QuickTip: Inverse Relationships</h1>
+
+  <div class="entry">
+    
+    <p>One thing I always wondered about Core Data is why the compiler would warn you if you didn’t specify the inverse relationship. After reading through Apple’s docs, they essentially say its to make your database more robust by reinforcing those relationships. Plus, you never know when you may have one thing and need to get to the other.</p>
+
+<p>After working on a project with an Enormous Core Data database, I found one very useful thing about inverses. When you specify one side of the relationship, core data automatically hooks up the other. Allow me to explain in code.</p>
+
+<p>Let’s say we have a person object with many pets…</p>
+
+<div>
+  <pre>&lt;code class=’objc’&gt;Person *john = [[Person alloc] init];
+Pet *pet = [[Pet alloc] init];
+
+// Add the one to many relationship from john to pets
+[john addPetObject:pet];
+
+// Add the inverse relationship
+[pet setPerson:john];&lt;/code&gt;</pre>
+</div>
+
+<p>So, I was doing this in all of my code and then forgot to one time. However, to my surprise, everything still worked. Why, because once you set up one of the relationships, Core Data automatically handles the other. So, the above code is redundant and could just as easily have been.</p>
+
+<div>
+  <pre>&lt;code class=’objc’&gt;[john addPetObject:pet];&lt;/code&gt;</pre>
+</div>
+
+<p>OR</p>
+
+<div>
+  <pre>&lt;code class=’objc’&gt;[pet setPerson:john];&lt;/code&gt;</pre>
+</div>
+
+<p>and both directions of the relationship would have been established.</p>
+
+<p>Not super exciting, but I found it to be pretty handy and also saved me quite a bit of extra code.</p>
+
+<p>Happy Coding!</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="Core Data QuickTip: Inverse Relationships" data-url="http://brandontreb.com/core-data-quicktip-inverse-relationships" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+    
+  </div>
+
+  <div class="date">
+    <a href= "">
+      
+    </a>
+  </div>  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+
+
+
+<a href="https://github.com/brandontreb"><i class="svg-icon github"></i></a>
+
+
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/brandontreb"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

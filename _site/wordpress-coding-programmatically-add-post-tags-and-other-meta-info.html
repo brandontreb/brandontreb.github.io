@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WordPress Coding: Programmatically Add Post Tags (and other meta info) – Brandon Trebitowski – A builder of meaningful software</title>
+    <meta charset="utf-8" />
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+<meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+<meta name="author" content="Brandon Trebitowski">
+
+<link rel="micropub" href="http://blog.0x.cool/micropub/main">
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="webmention" href="https://webmention.io/brandontreb.com/webmention" />
+<link rel="pingback" href="https://webmention.io/brandontreb.com/xmlrpc" />
+
+<link href="https://twitter.com/brandontreb" rel="me">
+<link href="http://github.com/brandontreb" rel="me"> 
+<meta name="description" content="
+I was recently working on a script that imports from a custom blogging platform into WordPress and had some need to programmatically add post keywords.
+
+" />
+<meta property="og:description" content="
+I was recently working on a script that imports from a custom blogging platform into WordPress and had some need to programmatically add post keywords.
+
+" /> 
+<meta name="author" content="Brandon Trebitowski" /> 
+<meta property="og:title" content="WordPress Coding: Programmatically Add Post Tags (and other meta info)" />
+<meta property="twitter:title" content="WordPress Coding: Programmatically Add Post Tags (and other meta info)" /> 
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Brandon Trebitowski - A builder of meaningful software" href="/feed.xml" />    
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://en.gravatar.com/userimage/3515553/4a56e1cc34a936f3dd082b93032468ea.jpeg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Brandon Trebitowski</a></h1>
+            <p class="site-description">A builder of meaningful software</p>
+          </div>
+
+          <nav>
+            <a href="/">blog</a>
+            <!-- <a href="/about">About</a> -->
+            <a href="https://linkedin.com/in/brandontreb">linked in</a>
+            <a href="https://micro.blog/brandontreb">micro.blog</a>
+            <a href="https://pixegon.com">hire me</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>WordPress Coding: Programmatically Add Post Tags (and other meta info)</h1>
+
+  <div class="entry">
+    
+    <p><img alt="" src="http://haacked.com/images/haacked_com/WindowsLiveWriter/CategoriesvsTags_833F/561962_price_tag[3].jpg" title="Tags" class="aligncenter" width="600" /><br />
+I was recently working on a script that imports from a custom blogging platform into WordPress and had some need to programmatically add post keywords.</p>
+
+<p>The script to do this is actually quite simple and can be used to update any post attribute.</p>
+
+<p>Here is the code:</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="php" style="font-family:monospace;"><span style="color: #666666; font-style: italic;">// Create the post array</span>
+<span style="color: #000088;">$post</span> <span style="color: #339933;">=</span> <span style="color: #990000;">array</span><span style="color: #009900;">&#40;</span>
+    ‘ID’ <span style="color: #339933;">=&gt;</span> <span style="color: #cc66cc;">5</span><span style="color: #339933;">,</span>
+    ‘tags_input’ <span style="color: #339933;">=&gt;</span> ‘foo<span style="color: #339933;">,</span>bar<span style="color: #339933;">,</span>baz’<span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>     
+&nbsp;
+<span style="color: #666666; font-style: italic;">// Update the post</span>
+wp_update_post<span style="color: #009900;">&#40;</span><span style="color: #000088;">$post</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>This will assign the keywords “foo”, “bar”, and “baz” to the post with ID 5. This task seems trivial, however it’s very powerful when you think about automation. For example, you could write a script to scrape a google search for your target keyword and find related keywords for each of your posts automatically. Hrm… plugin idea?</p>
+
+<p>Give it a shot. More info on available parameters can be found on <a href="http://codex.wordpress.org/Function_Reference/wp_insert_post">WordPress’ site here</a></p>
+
+<p>Here are some of the other fields that you are able to update this way:</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="php" style="font-family:monospace;">defaults <span style="color: #339933;">=</span> <span style="color: #990000;">array</span><span style="color: #009900;">&#40;</span>
+‘post_status’ <span style="color: #339933;">=&gt;</span> ‘draft’<span style="color: #339933;">,</span> 
+‘post_type’ <span style="color: #339933;">=&gt;</span> ‘post’<span style="color: #339933;">,</span>
+‘post_author’ <span style="color: #339933;">=&gt;</span> <span style="color: #000088;">$user_ID</span><span style="color: #339933;">,</span>
+‘ping_status’ <span style="color: #339933;">=&gt;</span> get_option<span style="color: #009900;">&#40;</span>‘default_ping_status’<span style="color: #009900;">&#41;</span><span style="color: #339933;">,</span> 
+‘post_parent’ <span style="color: #339933;">=&gt;</span> <span style="color: #cc66cc;"></span><span style="color: #339933;">,</span>
+‘menu_order’ <span style="color: #339933;">=&gt;</span> <span style="color: #cc66cc;"></span><span style="color: #339933;">,</span>
+‘to_ping’ <span style="color: #339933;">=&gt;</span>  ”<span style="color: #339933;">,</span>
+‘pinged’ <span style="color: #339933;">=&gt;</span> ”<span style="color: #339933;">,</span>
+‘post_password’ <span style="color: #339933;">=&gt;</span> ”<span style="color: #339933;">,</span>
+‘guid’ <span style="color: #339933;">=&gt;</span> ”<span style="color: #339933;">,</span>
+‘post_content_filtered’ <span style="color: #339933;">=&gt;</span> ”<span style="color: #339933;">,</span>
+‘post_excerpt’ <span style="color: #339933;">=&gt;</span> ”<span style="color: #339933;">,</span>
+‘import_id’ <span style="color: #339933;">=&gt;</span> <span style="color: #cc66cc;"></span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>Happy WPCoding!</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="Wordpress Coding: Programmatically Add Post Tags (and other meta info)" data-url="http://brandontreb.com/wordpress-coding-programmatically-add-post-tags-and-other-meta-info" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+    
+  </div>
+
+  <div class="date">
+    <a href= "">
+      
+    </a>
+  </div>  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+
+
+
+<a href="https://github.com/brandontreb"><i class="svg-icon github"></i></a>
+
+
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/brandontreb"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

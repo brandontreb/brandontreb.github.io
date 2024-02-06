@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Value Of Quality Assurance – Brandon Trebitowski – A builder of meaningful software</title>
+    <meta charset="utf-8" />
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+<meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+<meta name="author" content="Brandon Trebitowski">
+
+<link rel="micropub" href="http://blog.0x.cool/micropub/main">
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="webmention" href="https://webmention.io/brandontreb.com/webmention" />
+<link rel="pingback" href="https://webmention.io/brandontreb.com/xmlrpc" />
+
+<link href="https://twitter.com/brandontreb" rel="me">
+<link href="http://github.com/brandontreb" rel="me"> 
+<meta name="description" content="It’s late, you have been hacking all night to get the client a build.  Finally, around 2:30 am, you hit submit and publish something to the client and go to bed.  When you wake up in the morning, the first thing you see in your inbox is an email titled “Completely Broken!!1!”.
+
+" />
+<meta property="og:description" content="It’s late, you have been hacking all night to get the client a build.  Finally, around 2:30 am, you hit submit and publish something to the client and go to bed.  When you wake up in the morning, the first thing you see in your inbox is an email titled “Completely Broken!!1!”.
+
+" /> 
+<meta name="author" content="Brandon Trebitowski" /> 
+<meta property="og:title" content="The Value Of Quality Assurance" />
+<meta property="twitter:title" content="The Value Of Quality Assurance" /> 
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Brandon Trebitowski - A builder of meaningful software" href="/feed.xml" />    
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://en.gravatar.com/userimage/3515553/4a56e1cc34a936f3dd082b93032468ea.jpeg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Brandon Trebitowski</a></h1>
+            <p class="site-description">A builder of meaningful software</p>
+          </div>
+
+          <nav>
+            <a href="/">blog</a>
+            <!-- <a href="/about">About</a> -->
+            <a href="https://linkedin.com/in/brandontreb">linked in</a>
+            <a href="https://micro.blog/brandontreb">micro.blog</a>
+            <a href="https://pixegon.com">hire me</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>The Value Of Quality Assurance</h1>
+
+  <div class="entry">
+    
+    <p>It’s late, you have been hacking all night to get the client a build.  Finally, around 2:30 am, you hit submit and publish something to the client and go to bed.  When you wake up in the morning, the first thing you see in your inbox is an email titled “Completely Broken!!1!”.</p>
+
+<p>How could this be? You stayed up late, you hacked, you tested and you sweat over this build to find that it crashes for the client when they try to do something obvious.</p>
+
+<p>As developers, we often can’t see the forrest through the trees.  What this means is, we get so deep into the code working on a new feature or fixes that we often don’t notice when we break things. This doesn’t mean that we are bad developers, it just means we think differently about development.  It also means we can’t personally handle <strong>everything</strong>.</p>
+
+<p>However, from a client’s perspective, failures like this can really tarnish your brand.  They start to get the impression that you are unprofessional and even worse, start to doubt your abilities as a developer.</p>
+
+<h3 id="enter-qa">Enter QA</h3>
+
+<p>QA (short for quality assurance) is an idea that someone other than the developer tests the build before the client ever sees it.  These people are responsible for</p>
+
+<ul>
+  <li>Regression testing (as in the scenario above)</li>
+  <li>Generating a test plan/matrix</li>
+  <li>Ensuring parity (if needed) between multi-platform applications</li>
+</ul>
+
+<p>If the QA team is doing it’s job, the client won’t every see these obvious failures mentioned above.  This can greatly improve the client’s perception of you/your team.</p>
+
+<h3 id="basic-process">Basic Process</h3>
+
+<p>OK, QA sounds great, how do I get started?  Well, it’s actually relatively simple. First off, I assume you are doing <em>some flavor</em> of agile, and hopefully logging tickets for each task.  If not, you should (even if you are a one man show).  Here is a rough flow that my team follows:</p>
+
+<ol>
+  <li>Developers determine which tickets to work on for the current sprint</li>
+  <li>Developers complete a ticket and move it to a “dev complete” column in the task manager (Jira, Trello, Pivotal Tracker, etc…)</li>
+  <li>Developers deliver a build internally</li>
+  <li>The QA team takes the build and goes through their testing matrix to check for regressions.
+    <ul>
+      <li>If a regression is found, a bug ticket is created for the responsible developer</li>
+    </ul>
+  </li>
+  <li>New features are added to the QA test matrix and tested
+    <ul>
+      <li>If the feature has bugs or doesn’t work as intended, the ticket is rejected and pushed back to the developer</li>
+    </ul>
+  </li>
+  <li>Once everything passes, the build is green-lit to be sent to the client (usually one build per sprint)</li>
+</ol>
+
+<p>Like anything, you may develop your own version of the above, however this should be a detailed enough outline to get you started.</p>
+
+<h3 id="pushback">Pushback</h3>
+
+<p>In my experience, clients will generally give you some pushback when you say that you are billing them for QA hours.  They will say things like “It’s OK, I can test the build myself.” or “I understand, things won’t be perfect. We will through this together”.</p>
+
+<p>While this all sounds good at the surface, the fact of the matter is, it almost always will end unfavorable.  The client might have some level of tolerance early on, but as you start sending them more and more builds, each potentially missing/breaking features, they will become less patient.  I have seen this happen plenty of times even with the most tech savvy of clients.  Here are a few ways you can build QA into your billing process:</p>
+
+<p><strong>Add it as a line item</strong></p>
+
+<p>This is where you will most likely see the most opposition.  Make sure to explain to the client that their time is valuable and you don’t want to waste it.  Also, ensure that the cost of QA is drastically less than the cost of engineering or you will get questions like “Why am I paying you full price to test?”.</p>
+
+<p>Be sure to tell the client that QA is just part of your team’s process. You simply don’t operate any other way as you <strong>know</strong> that this is the best approach for both parties.  Hopefully, this will establish your expertise in the domain and the client will respect you for that.</p>
+
+<p><strong>Bake it into the cost of engineering</strong></p>
+
+<p>Often times, you may not bother with too many line items.  You may just have something like <strong>Engineering $200/hour</strong>.  When/If the client gives any pushback about cost compared to other shops, simply inform them of all they are getting inside of that hour (Engineering, Consulting, QA, Project management, Office management, etc…).  It actually works out to be a much greater value for them than paying say $125/hour for a “code monkey”.</p>
+
+<h3 id="final-thoughts">Final Thoughts</h3>
+
+<p>I absolutely believe that QA is crucial to the success of any software agency or freelancer. Not only does it allow you to come across as more professional, it also helps keep you sharp as a developer. While I’m not suggesting QA is a silver bullet (I still believe in Unit / Automated testing), I feel that everyone should at least have some layer baked into their process.</p>
+
+    
+  </div>
+
+  <div class="date">
+    <a href= "">
+      
+    </a>
+  </div>  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+
+
+
+<a href="https://github.com/brandontreb"><i class="svg-icon github"></i></a>
+
+
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/brandontreb"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

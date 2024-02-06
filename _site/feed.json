@@ -1,0 +1,378 @@
+{
+	"version": "https://jsonfeed.org/version/1",
+	"title": null,
+	"home_page_url": "http://localhost:4000/",
+	"feed_url": "http://localhost:4000/feed.json",
+	"items": [
+	
+	{
+		"id": "61665",
+		
+		
+		
+		
+		"content_html": "<p><img src=\"https://brandontreb.com/media/2022-12-61665/7df3188e-89f6-4142-b23c-69c96ab23631.jpeg\"></p><p>My good friends Denver and Ray recently opened a cigar shop called <a href=\"https://www.instagram.com/padrescigars/\">Padres</a>.</p>\n\n<p>The name is super clever as they both are/were pastors of local churches.</p>\n\n<p>It’s such a good way to get together with friends, hang out and have great discussions.</p>\n",
+		
+		"date_published": "2022-12-16T10:07:45-07:00",
+		"url": "http://localhost:4000/61665/",
+		"author": {
+			"name" : ""
+		}
+	},
+	
+	
+	{
+		"id": "11072",
+		
+		
+		
+		
+		"content_html": "<p><img src=\"https://brandontreb.com/media/2022-12-11072/d637a58e-36f1-4268-9c9a-7914a8949b93.jpeg\"></p><p>First fire in the Solo Stove.</p>\n\n<p>Love it! 🔥</p>\n",
+		
+		"date_published": "2022-12-15T20:04:32-07:00",
+		"url": "http://localhost:4000/11072/",
+		"author": {
+			"name" : ""
+		}
+	},
+	
+	
+	{
+		"id": "8809",
+		
+		
+		"content_html": "<p>I got Webmentions working on my blog using <a href=\"https://webmention.io/\">webmention.io</a> and some custome JS.</p>\n\n<p>It’s super cool to see my micro.blog responses show up on my site!</p>\n",
+		
+		"date_published": "2022-12-15T19:26:49-07:00",
+		"url": "http://localhost:4000/8809/",
+		"author": {
+			"name" : ""
+		}
+	},
+	
+	
+	{
+		"id": "10845",
+		
+		
+		"content_html": "<p>I’ve spent more time tinkering with my blog  <strong>today</strong> than I’ve spent blogging this entire year.</p>\n",
+		
+		"date_published": "2022-12-14T20:00:45-07:00",
+		"url": "http://localhost:4000/10845/",
+		"author": {
+			"name" : ""
+		}
+	},
+	
+	
+	{
+		"id": "65326",
+		
+		
+		"content_html": "<p>As it gets colder outside, it’s becoming increasingly difficult to do cold plunges.</p>\n\n<p>Today it was 32f outside and my cold tub is 47f. So, technically, I’m getting into a hot tub?</p>\n\n<p>🥶</p>\n",
+		
+		"date_published": "2022-12-14T11:08:46-07:00",
+		"url": "http://localhost:4000/65326/",
+		"author": {
+			"name" : ""
+		}
+	},
+	
+	
+	{
+		"id": "61717",
+		
+		
+		"content_html": "<p><a href=\"https://open.spotify.com/episode/6dMVMejS0LwF3us4oYIInd?si=7jlwpxzgS2-KNaXSWfj3Ug\">This Episode</a> of the Joe Rogan Podcast with Erika Thomson is awesome!</p>\n\n<p>She talks all about bees 🐝 and beekeeping. It’s fascinating to learn how complex and amazing bee colonies are.</p>\n\n<p>Definitely makes me want to add beekeeping to my ever growing list of hobbies!</p>\n",
+		
+		"date_published": "2022-12-13T10:08:37-07:00",
+		"url": "http://localhost:4000/61717/",
+		"author": {
+			"name" : ""
+		}
+	},
+	
+	
+	{
+		"id": "3272",
+		
+		
+		"content_html": "<p>My wife got me a <a href=\"https://www.solostove.com/en-us\">Solo Stove</a> for Christmas 🎄</p>\n\n<p>Fortunately for me, UPS delivered it while I was home, so now I get to enjoy it early 😉</p>\n",
+		
+		"date_published": "2022-12-12T17:54:32-07:00",
+		"url": "http://localhost:4000/3272/",
+		"author": {
+			"name" : ""
+		}
+	},
+	
+	
+	{
+		"id": "46",
+		
+		
+		
+		
+		"content_html": "<p><img src=\"https://brandontreb.com/media/2022-12-46/dafca23a-806d-42d4-8d59-64af5e3e004b.jpeg\"></p><p>The sunset over the Sandias tonight is unreal.</p>\n",
+		
+		"date_published": "2022-12-12T17:00:46-07:00",
+		"url": "http://localhost:4000/46/",
+		"author": {
+			"name" : ""
+		}
+	},
+	
+	
+	{
+		"id": "77846",
+		
+		
+		"content_html": "<p>I have moved the code that generates my Micro Blog from Heroku to a Raspberry Pi in my closet. This feels much more \"Indie Web\" to me.</p>\n",
+		
+		"date_published": "2022-12-12T14:37:26-07:00",
+		"url": "http://localhost:4000/77846/",
+		"author": {
+			"name" : ""
+		}
+	},
+	
+	
+	{
+		"id": "62614",
+		
+		
+		"content_html": "<p>I have recently been experimenting with <a href=\"The Artist&#39;s Way Morning Pages Journal: A Companion Volume to the Artist&#39;s Way https://a.co/d/aB5Fi7e\">Morning Pages</a> on the recommendation of Tim Ferris.</p>\n\n<p>I’m not sure that I can stick with it as strongly encourages hand-written pages. My hands cramp up so quickly and I write so small, the journaling takes almost an hour to complete.</p>\n\n<p><em>Does anyone have any suggestions on a journaling technique that has worked for you (digital or physical)?</em></p>\n\n<p><strong>Goal</strong>: clear my head</p>\n",
+		
+		"date_published": "2022-12-12T10:23:34-07:00",
+		"url": "http://localhost:4000/62614/",
+		"author": {
+			"name" : ""
+		}
+	},
+	
+	
+	{
+		"id": "57789",
+		
+		
+		"content_html": "<p>Testing…</p>\n",
+		
+		"date_published": "2022-12-12T09:03:09-07:00",
+		"url": "http://localhost:4000/57789/",
+		"author": {
+			"name" : ""
+		}
+	},
+	
+	
+	{
+		"id": "74862",
+		
+		
+		
+		
+		"content_html": "<p><img src=\"https://brandontreb.com/media/2022-11-74862/396c6b1d-6cdb-4502-8030-ab29bf4842f3.jpeg\"></p><p>Perfect day for a cold plunge 47°F</p>\n\n<p>Happy Thanksgiving!</p>\n\n<p>🦃🍁</p>\n",
+		
+		"date_published": "2022-11-24T13:47:42-07:00",
+		"url": "http://localhost:4000/74862/",
+		"author": {
+			"name" : ""
+		}
+	},
+	
+	
+	{
+		"id": "7203",
+		
+		
+		"content_html": "<p>My investment in Taylor Swift tickets has proven to be better than all of my crypto combined.</p>\n",
+		
+		"date_published": "2022-11-23T19:00:03-07:00",
+		"url": "http://localhost:4000/7203/",
+		"author": {
+			"name" : ""
+		}
+	},
+	
+	
+	{
+		"id": "10638",
+		
+		
+		
+		
+		"content_html": "<p><img src=\"https://brandontreb.com/media/2022-11-10638/36cf0839-9d55-4a3f-b5a4-abe5f5e46fbf.jpeg\"></p><p>My oldest boy turns 14 today!</p>\n\n<p>He decided that he wanted to get his nose pierced and dye his hair black to mark the occasion.</p>\n\n<p>I love this dude with all of my heart. He’s incredibly smart, funny, and personable, and I’m incredibly proud of him.</p>\n",
+		
+		"date_published": "2022-11-17T19:57:18-07:00",
+		"url": "http://localhost:4000/10638/",
+		"author": {
+			"name" : ""
+		}
+	},
+	
+	
+	{
+		"id": "60667",
+		
+		
+		"content_html": "<p>I would hate to be on Ticketmaster's dev ops team.</p>\n",
+		
+		"date_published": "2022-11-15T09:51:07-07:00",
+		"url": "http://localhost:4000/60667/",
+		"author": {
+			"name" : ""
+		}
+	},
+	
+	
+	{
+		"id": "59126",
+		
+		
+		"content_html": "<p>Here we go again… This time I'm waiting with multiple devices in the queue to purchase tickets to the Taylor Swift tour. Wish me luck!</p>\n",
+		
+		"date_published": "2022-11-15T09:25:26-07:00",
+		"url": "http://localhost:4000/59126/",
+		"author": {
+			"name" : ""
+		}
+	},
+	
+	
+	{
+		"id": "62147",
+		
+		
+		"content_html": "<p>When we were in Ensenada, Mexico this past weekend, one of the street vendors called me “Rambo”, which pretty much made my year. 💪</p>\n",
+		
+		"date_published": "2022-11-14T10:15:47-07:00",
+		"url": "http://localhost:4000/62147/",
+		"author": {
+			"name" : ""
+		}
+	},
+	
+	
+	{
+		"id": "81246",
+		
+		
+		
+		
+		"content_html": "<p><img src=\"https://brandontreb.com/media/2022-11-81246/5e9cb963-3a39-49ab-888b-068a1c9cb4e7.jpeg\"></p><p>We had an absolute blast on the <a href=\"http://emosnotdeadcruise.com\">Emos Not Dead Cruise</a> this past week.</p>\n\n<p>We got to meet so many of of favorite bands! (I got to workout in the ships gym with Underoath!)</p>\n\n<p>I’m still on Cloud 9</p>\n",
+		
+		"date_published": "2022-11-13T15:34:06-07:00",
+		"url": "http://localhost:4000/81246/",
+		"author": {
+			"name" : ""
+		}
+	},
+	
+	
+	{
+		"id": "58704",
+		
+		
+		"content_html": "<p>Today is the first time in recent memory that I opened my calendar and didn’t have a single event scheduled (except Halloween of course :))</p>\n\n<p>Feels great.</p>\n",
+		
+		"date_published": "2022-10-31T10:18:24-06:00",
+		"url": "http://localhost:4000/58704/",
+		"author": {
+			"name" : ""
+		}
+	},
+	
+	
+	{
+		"id": "56553",
+		
+		
+		
+		
+		"content_html": "<p><img src=\"https://brandontreb.com/media/2022-10-56553/19da942a-dbdb-4941-ba9d-5a6d965e1cc7.jpeg\"></p><p>We dressed up as our “high school self”.</p>\n\n<p>Turns out, I dress exactly the same now. I just wear looser clothes, don’t sag my pants, and have <em>fewer</em> rings in my face. 🎃</p>\n",
+		
+		"date_published": "2022-10-31T09:42:33-06:00",
+		"url": "http://localhost:4000/56553/",
+		"author": {
+			"name" : ""
+		}
+	},
+	
+	
+	{
+		"id": "18527",
+		
+		
+		"content_html": "<p>I’m currently running a caffeine Ponzi scheme in which I have to keep drinking coffee to blunt the negative effects of previous coffees. ☕️</p>\n",
+		
+		"date_published": "2022-10-19T23:08:47-06:00",
+		"url": "http://localhost:4000/18527/",
+		"author": {
+			"name" : ""
+		}
+	},
+	
+	
+	{
+		"id": "62763",
+		
+		
+		
+		
+		"content_html": "<p><img src=\"https://brandontreb.com/media/2022-10-62763/screen-shot-2022-10-12-at-11.25.19-am.png\"></p><p>We're going to Blink!</p>\n",
+		
+		"date_published": "2022-10-12T11:26:03-06:00",
+		"url": "http://localhost:4000/62763/",
+		"author": {
+			"name" : ""
+		}
+	},
+	
+	
+	{
+		"id": "78808",
+		
+		
+		"content_html": "<p>So, this is bizarre. After almost a decade of being down and transitioning between multiple owners, the site I originally created <a href=\"https://icodeblog.com\">https://icodeblog.com</a> to teach people about iOS development, has randomly appeared again with all of its content in tact.</p>\n\n<p>There must be a glitch in the Matrix</p>\n",
+		
+		"date_published": "2022-10-09T15:53:28-06:00",
+		"url": "http://localhost:4000/78808/",
+		"author": {
+			"name" : ""
+		}
+	},
+	
+	
+	{
+		"id": "76052",
+		
+		
+		
+		
+		"content_html": "<p><img src=\"https://brandontreb.com/media/2022-10-76052/8aa25ead-44f7-4b56-96fb-4c2932a35d0b.jpeg\"></p><p>Beautiful view! (the scenery wasn’t too bad either 😉</p>\n",
+		
+		"date_published": "2022-10-06T15:07:32-06:00",
+		"url": "http://localhost:4000/76052/",
+		"author": {
+			"name" : ""
+		}
+	},
+	
+	
+	{
+		"id": "60562",
+		
+		
+		
+		
+		"content_html": "<p><img src=\"https://brandontreb.com/media/2022-10-60562/1ea607b0-d14f-4e86-8e90-c392a481d8c8.jpeg\"></p><p>Cigars on the Lanai with my little bro!</p>\n",
+		
+		"date_published": "2022-10-05T10:49:22-06:00",
+		"url": "http://localhost:4000/60562/",
+		"author": {
+			"name" : ""
+		}
+	}
+	
+	]
+}

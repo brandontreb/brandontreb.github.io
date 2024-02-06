@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lua Scripting The UI For Pocket MUD Pro – Brandon Trebitowski – A builder of meaningful software</title>
+    <meta charset="utf-8" />
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+<meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+<meta name="author" content="Brandon Trebitowski">
+
+<link rel="micropub" href="http://blog.0x.cool/micropub/main">
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="webmention" href="https://webmention.io/brandontreb.com/webmention" />
+<link rel="pingback" href="https://webmention.io/brandontreb.com/xmlrpc" />
+
+<link href="https://twitter.com/brandontreb" rel="me">
+<link href="http://github.com/brandontreb" rel="me"> 
+<meta name="description" content="I have just updated my MUD client [Pocket MUD Pro] to be a universal library. It was surprisingly easy to add the iPad support as most of the application was comprised of UITableViews.
+
+" />
+<meta property="og:description" content="I have just updated my MUD client [Pocket MUD Pro] to be a universal library. It was surprisingly easy to add the iPad support as most of the application was comprised of UITableViews.
+
+" /> 
+<meta name="author" content="Brandon Trebitowski" /> 
+<meta property="og:title" content="Lua Scripting The UI For Pocket MUD Pro" />
+<meta property="twitter:title" content="Lua Scripting The UI For Pocket MUD Pro" /> 
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Brandon Trebitowski - A builder of meaningful software" href="/feed.xml" />    
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://en.gravatar.com/userimage/3515553/4a56e1cc34a936f3dd082b93032468ea.jpeg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Brandon Trebitowski</a></h1>
+            <p class="site-description">A builder of meaningful software</p>
+          </div>
+
+          <nav>
+            <a href="/">blog</a>
+            <!-- <a href="/about">About</a> -->
+            <a href="https://linkedin.com/in/brandontreb">linked in</a>
+            <a href="https://micro.blog/brandontreb">micro.blog</a>
+            <a href="https://pixegon.com">hire me</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Lua Scripting The UI For Pocket MUD Pro</h1>
+
+  <div class="entry">
+    
+    <p>I have just updated my MUD client [<a href="http://itunes.apple.com/us/app/pocket-mud-pro/id511678455?mt=8">Pocket MUD Pro</a>] to be a universal library. It was surprisingly easy to add the iPad support as most of the application was comprised of UITableViews.</p>
+
+<p>The main “MUD” view was the most challenging part as it contains a couple UIWebViews, UIButons, and a UITextField. However, I chose to do something I feel is pretty cool.</p>
+
+<h4 id="scripting-the-ui-with-lua">Scripting The UI With Lua</h4>
+
+<p>If I haven’t said it enough, I love lua. Especially in the context of scripting within other applications. Pocket MUD Pro already has complete lua support in triggers in aliases, so I figured I might as well apply that same logic to the UI.</p>
+
+<p>Pocket MUD Pro has 3 core sections for the UI not counting the text input field. The main view (UIWebview), the prompt view (UIWebview), and the button bar (custom UIView).</p>
+
+<p>One of the core challenges I faced on the iPhone, was resizing/reorienting all of these views on orientation change as well as when the keyboard was visible and when it wasn’t. To be honest, I spent most of my cycles getting this part right. On the iPad, I decided to things a little differently which improved the speed of my development overall and paved the way for future updates that will allow user-scripted UIs.</p>
+
+<h4 id="the-ui-script">The UI Script</h4>
+
+<p>I want to start by showing you the lua code that is used to script the UI by default.</p>
+
+<div>
+  <pre><code class="’lua’">–MUD 
+mudFrame = Frame:new(&quot;mud_frame&quot;) 
+mudFrame.type = FrameTypeMUD
+mudFrame.portraitFrame = {0,0,768,931}
+mudFrame.portraitFrameKeyboard = {0,0,768,667}
+mudFrame.landscapeFrame = {0,0,1024,675}
+mudFrame.landscapeFrameKeyboard = {0,0,1024,323}
+createFrame(mudFrame)</code></pre>
+</div>
+
+<p>What’s happening here is, I have created a Frame class that has some properties (type, name, etc…) and injected it into the global lua space for use inside of the UIScripts. Then when the interface gets drawn, I reference the UI script for each of the MUD servers and use it to render the interface.</p>
+
+<p>One interesting thing here is, I set the frames for each of the possible layout scenarios. Portrait, Landscape, with and without the keyboard. That way, when the keyboard hides/dismisses or the user rotates the device, I just reference the this script again and re-render the frame accordingly. This could have been achieved with auto-resizing masks however, it gets much more complex and things get tricky when you want to have a dynamic number of windows.</p>
+
+<p>I follow this exact pattern for the button frames and the prompt frames. As you might have guessed, in a future release, I will open this script area up to MUDders and give the user the ability to script the interface however they would like. Some examples might be:</p>
+
+<ul>
+  <li>Dedicated map window</li>
+  <li>Dedicated chat window</li>
+  <li>Customized movement buttons</li>
+  <li>Customized backgrounds/borders/themes</li>
+  <li>Custom health/status/mana</li>
+</ul>
+
+<p>Given this powerful UI Scripting style, a user will be able to create complex interfaces such as the one below from inside the app:</p>
+
+<p><img class="alignnone" title="Achaea" alt="" src="http://img.brothersoft.com/screenshots/softimage/a/achaea-300819-1263188763.jpeg" width="450" /></p>
+
+<p>I still have a ways to go with exposing various functionalities via my custom lua bridge. But things seem to be moving along quite smoothly.</p>
+
+<p>If you want to learn how I was able to bridge lua into my application, consider checking out my talk on lua scripting at <a href="http://360idev.com/">360iDev 2012</a> later this year!</p>
+
+<p>Happy Coding!</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="Lua Scripting The UI For Pocket MUD Pro" data-url="http://brandontreb.com/lua-scripting-the-ui-for-pocket-mud-pro" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+    
+  </div>
+
+  <div class="date">
+    <a href= "">
+      
+    </a>
+  </div>  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+
+
+
+<a href="https://github.com/brandontreb"><i class="svg-icon github"></i></a>
+
+
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/brandontreb"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

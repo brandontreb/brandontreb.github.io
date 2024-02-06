@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fluid For Mac – Brandon Trebitowski – A builder of meaningful software</title>
+    <meta charset="utf-8" />
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+<meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+<meta name="author" content="Brandon Trebitowski">
+
+<link rel="micropub" href="http://blog.0x.cool/micropub/main">
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="webmention" href="https://webmention.io/brandontreb.com/webmention" />
+<link rel="pingback" href="https://webmention.io/brandontreb.com/xmlrpc" />
+
+<link href="https://twitter.com/brandontreb" rel="me">
+<link href="http://github.com/brandontreb" rel="me"> 
+<meta name="description" content="As of OSX Lion, I have started to seriously loathe some of the build-it Mac apps (such as Mail, and iCal). While I previously had no issues with them, they now seem to be very clunky and crash quite often. Being a developer, I thought “why don’t I write an app that wraps web apps for you so you basically get “native web apps” that have icons and are launchable?”.
+
+" />
+<meta property="og:description" content="As of OSX Lion, I have started to seriously loathe some of the build-it Mac apps (such as Mail, and iCal). While I previously had no issues with them, they now seem to be very clunky and crash quite often. Being a developer, I thought “why don’t I write an app that wraps web apps for you so you basically get “native web apps” that have icons and are launchable?”.
+
+" /> 
+<meta name="author" content="Brandon Trebitowski" /> 
+<meta property="og:title" content="Fluid For Mac" />
+<meta property="twitter:title" content="Fluid For Mac" /> 
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Brandon Trebitowski - A builder of meaningful software" href="/feed.xml" />    
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://en.gravatar.com/userimage/3515553/4a56e1cc34a936f3dd082b93032468ea.jpeg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Brandon Trebitowski</a></h1>
+            <p class="site-description">A builder of meaningful software</p>
+          </div>
+
+          <nav>
+            <a href="/">blog</a>
+            <!-- <a href="/about">About</a> -->
+            <a href="https://linkedin.com/in/brandontreb">linked in</a>
+            <a href="https://micro.blog/brandontreb">micro.blog</a>
+            <a href="https://pixegon.com">hire me</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Fluid For Mac</h1>
+
+  <div class="entry">
+    
+    <p>As of OSX Lion, I have started to seriously loathe some of the build-it Mac apps (such as Mail, and iCal). While I previously had no issues with them, they now seem to be very clunky and crash quite often. Being a developer, I thought “why don’t I write an app that wraps web apps for you so you basically get “native web apps” that have icons and are launchable?”.</p>
+
+<p>After a quick Google search, I realized <strong><a href="http://fluidapp.com/">this already exists!</a></strong>. The app is called Fluid and it does an incredible job of what I described above and more.</p>
+
+<p><img src="http://fluidapp.com/images/dock_large.png" width="400" /></p>
+
+<p>Here are the feature highlights.</p>
+
+<ul>
+  <li>Create a “native” Mac app for any web app</li>
+  <li>Custom icon for each “native” app you create</li>
+  <li>Full screen mode</li>
+  <li>User scripps. These are my favorite. They allow you to update the badge count based on information in the browser. See below for a sample user script.</li>
+</ul>
+
+<p><strong>Sample User Script For Twitter</strong></p>
+
+<div>
+  <pre>&lt;code class=’javascript’&gt;(function () {
+        if (window.fluid) {
+            setInterval(function updateBadge() {
+                var counts = /\d+/.exec(document.title);
+                if (counts &amp;&amp; counts[0] &gt; 0) {
+                    window.fluid.dockBadge = counts[0] &gt; 99 ? ‘99+’ : counts[0];
+                } else {
+                    window.fluid.dockBadge = ”;
+                }
+            }, 2000);
+        }
+    })();&lt;/code&gt;</pre>
+</div>
+
+<p><a href="http://userscripts.org/scripts/review/88425">Source</a></p>
+
+<p>Fluid is free with some minimal features, but I urge you to drop the $4.99 to gain full screen mode and user scripts. It’s well worth it. I am not affiliated with them in any way, just a happy customer.</p>
+
+<p><a href="http://fluidapp.com/">Download Fluid</a></p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="Fluid For Mac" data-url="http://brandontreb.com/fluid-for-mac" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+    
+  </div>
+
+  <div class="date">
+    <a href= "">
+      
+    </a>
+  </div>  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+
+
+
+<a href="https://github.com/brandontreb"><i class="svg-icon github"></i></a>
+
+
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/brandontreb"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

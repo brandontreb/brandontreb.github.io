@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="formFieldDiv">
+		<fieldset>
+ 			<legend>Inputs</legend>
+ 			<label for="guess">Your Guess:</label> <br />
+ 			<input type="text" id="guess" value="523" /> <br />
+ 			<label id="guessesRemaining">Guesses</label>
+ 			<input type="button" onclick="yourGuess()" value="submit" />
+ 			<input type="button" id="showguesses" onclick="showGuesses()" value="Show My Guesses" />  
+ 			<input type="button" onclick="generateNumberToGuess(true)" value="New Game" /><br />
+ 			<input id="cheat" type="checkbox" value="cheat" onclick="showNumberToGuess()" />
+ 			<label for="cheat">Cheat</label>
+ 			<div id="cheatShow" style="display: none;">
+  			<input id="numberToGuess" type="text" />
+  			<label for="numberToGuess">Number to guess</label>
+ 			</div>
+		</fieldset>
+		<fieldset id="guesses" class="guesses">
+ 			<legend> Output </legend>
+ 			<textarea id="output" name="output" rows="5" style="width: 100%;"></textarea>
+		</fieldset>
+	</div>
+
+<script type="text/javascript" src="guess.js"></script>
+
+</body>
+</html>
+
+
+

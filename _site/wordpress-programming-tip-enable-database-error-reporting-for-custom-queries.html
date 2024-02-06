@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WordPress Programming Tip: Enable Database Error Reporting For Custom Queries – Brandon Trebitowski – A builder of meaningful software</title>
+    <meta charset="utf-8" />
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+<meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+<meta name="author" content="Brandon Trebitowski">
+
+<link rel="micropub" href="http://blog.0x.cool/micropub/main">
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="webmention" href="https://webmention.io/brandontreb.com/webmention" />
+<link rel="pingback" href="https://webmention.io/brandontreb.com/xmlrpc" />
+
+<link href="https://twitter.com/brandontreb" rel="me">
+<link href="http://github.com/brandontreb" rel="me"> 
+<meta name="description" content="So this one should seem pretty obvious, but it wasn’t apparent to me at first.  It was only after digging through the wp-db.php file that I discovered how to enable error reporting.
+
+" />
+<meta property="og:description" content="So this one should seem pretty obvious, but it wasn’t apparent to me at first.  It was only after digging through the wp-db.php file that I discovered how to enable error reporting.
+
+" /> 
+<meta name="author" content="Brandon Trebitowski" /> 
+<meta property="og:title" content="WordPress Programming Tip: Enable Database Error Reporting For Custom Queries" />
+<meta property="twitter:title" content="WordPress Programming Tip: Enable Database Error Reporting For Custom Queries" /> 
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Brandon Trebitowski - A builder of meaningful software" href="/feed.xml" />    
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://en.gravatar.com/userimage/3515553/4a56e1cc34a936f3dd082b93032468ea.jpeg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Brandon Trebitowski</a></h1>
+            <p class="site-description">A builder of meaningful software</p>
+          </div>
+
+          <nav>
+            <a href="/">blog</a>
+            <!-- <a href="/about">About</a> -->
+            <a href="https://linkedin.com/in/brandontreb">linked in</a>
+            <a href="https://micro.blog/brandontreb">micro.blog</a>
+            <a href="https://pixegon.com">hire me</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>WordPress Programming Tip: Enable Database Error Reporting For Custom Queries</h1>
+
+  <div class="entry">
+    
+    <p>So this one should seem pretty obvious, but it wasn’t apparent to me at first.  It was only after digging through the wp-db.php file that I discovered how to enable error reporting.</p>
+
+<h4 id="the-problem">The Problem</h4>
+
+<p>As you may have discovered, the wp_query() function isn’t a “one size fit’s all” solution.  Often times, you may need to query the WordPress database using a custom MySQL query.  Especially  if you are using WordPress for anything other than a blog (ie <a href="http://freshapps.com">freshapps.com</a>).</p>
+
+<p>When writing custom queries, it can often be frustrating if you make a mistake in the SQL syntax as WordPress will simply display no results.  For example:</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="php" style="font-family:monospace;"><span style="color: #000088;">$results</span> <span style="color: #339933;">=</span> <span style="color: #000088;">$wpdb</span><span style="color: #339933;">-&gt;</span><span style="color: #004000;">get_results</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">"SELECT * FROM <span style="color: #006699; font-weight: bold;">$wpdb-&gt;posts</span> 
+   WHERE post_title = ‘foo bar baz"</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+<span style="color: #990000;">print_r</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$results</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+&nbsp;
+<span style="color: #666666; font-style: italic;">// Outputs Array ( )</span></pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>Since we have made an error in our SQL statement (I didn’t add the second single quote), WordPress will suppress it and simply return an empty array. This is not very helpful for debugging.</p>
+
+<h4 id="the-solution">The Solution</h4>
+
+<p>The solution is actually quite simple. The global $wpdb object has a property called show_errors. Setting this property to true will cause WordPress to output the SQL errors to the screen for a given query.</p>
+
+<p>Here it is with our example above</p>
+
+<div class="wp_syntax">
+  <table>
+    <tr>
+      <td class="code">
+        <pre class="php" style="font-family:monospace;"><span style="color: #666666; font-style: italic;">// Enables Wordpress’s DB Error reporting</span>
+<span style="color: #000088;">$wpdb</span><span style="color: #339933;">-&gt;</span><span style="color: #004000;">show_errors</span> <span style="color: #339933;">=</span> <span style="color: #009900; font-weight: bold;">true</span><span style="color: #339933;">;</span>
+&nbsp;
+<span style="color: #000088;">$results</span> <span style="color: #339933;">=</span> <span style="color: #000088;">$wpdb</span><span style="color: #339933;">-&gt;</span><span style="color: #004000;">get_results</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">"SELECT * FROM <span style="color: #006699; font-weight: bold;">$wpdb-&gt;posts</span> 
+   WHERE post_title = ‘foo bar baz"</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+<span style="color: #990000;">print_r</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$results</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+&nbsp;
+<span style="color: #666666; font-style: italic;">// Outputs </span>
+<span style="color: #666666; font-style: italic;">// WordPress database error: [You have an error in your </span>
+<span style="color: #666666; font-style: italic;">// SQL syntax; check the manual that corresponds to your </span>
+<span style="color: #666666; font-style: italic;">// MySQL server version for the right syntax to use near </span>
+<span style="color: #666666; font-style: italic;">// ”foo bar baz’ at line 1]</span>
+<span style="color: #666666; font-style: italic;">// SELECT * FROM wp_posts WHERE post_title = ‘foo bar baz</span></pre>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>Now we know what went wrong with our query rather than just receiving empty results.</p>
+
+<p>Let me know if you have any questions or comments.</p>
+
+<p>Happy WPCoding!</p>
+
+<div class="zemanta-pixie" style="margin-top:10px;height:15px">
+  <a class="zemanta-pixie-a" href="http://reblog.zemanta.com/zemified/a1d99446-c73f-4722-97e6-3e584300069e/" title="Reblog this post [with Zemanta]"><img class="zemanta-pixie-img" src="http://img.zemanta.com/reblog_e.png?x-id=a1d99446-c73f-4722-97e6-3e584300069e" alt="Reblog this post [with Zemanta]" style="border:none;float:right" /></a><span class="zem-script more-related pretty-attribution"></span>
+</div>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="WordPress Programming Tip: Enable Database Error Reporting For Custom Queries" data-url="http://brandontreb.com/wordpress-programming-tip-enable-database-error-reporting-for-custom-queries" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+    
+  </div>
+
+  <div class="date">
+    <a href= "">
+      
+    </a>
+  </div>  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+
+
+
+<a href="https://github.com/brandontreb"><i class="svg-icon github"></i></a>
+
+
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/brandontreb"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Only Twitter API PHP Class You Will Ever Need – Brandon Trebitowski – A builder of meaningful software</title>
+    <meta charset="utf-8" />
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+<meta name="keywords" content="iOS Developer,iOS Development, Albuquerque, Albuquerque iPhone Developer, Albuquerque Software Developer, Software,Developer,Programmer, Software Consultant, Freelance Developer">
+<meta name="author" content="Brandon Trebitowski">
+
+<link rel="micropub" href="http://blog.0x.cool/micropub/main">
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="webmention" href="https://webmention.io/brandontreb.com/webmention" />
+<link rel="pingback" href="https://webmention.io/brandontreb.com/xmlrpc" />
+
+<link href="https://twitter.com/brandontreb" rel="me">
+<link href="http://github.com/brandontreb" rel="me"> 
+<meta name="description" content="
+
+" />
+<meta property="og:description" content="
+
+" /> 
+<meta name="author" content="Brandon Trebitowski" /> 
+<meta property="og:title" content="The Only Twitter API PHP Class You Will Ever Need" />
+<meta property="twitter:title" content="The Only Twitter API PHP Class You Will Ever Need" /> 
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Brandon Trebitowski - A builder of meaningful software" href="/feed.xml" />    
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://en.gravatar.com/userimage/3515553/4a56e1cc34a936f3dd082b93032468ea.jpeg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Brandon Trebitowski</a></h1>
+            <p class="site-description">A builder of meaningful software</p>
+          </div>
+
+          <nav>
+            <a href="/">blog</a>
+            <!-- <a href="/about">About</a> -->
+            <a href="https://linkedin.com/in/brandontreb">linked in</a>
+            <a href="https://micro.blog/brandontreb">micro.blog</a>
+            <a href="https://pixegon.com">hire me</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>The Only Twitter API PHP Class You Will Ever Need</h1>
+
+  <div class="entry">
+    
+    <p><a href="http://brandontreb.com/wp-content/uploads/2009/02/twit.png"><img class="alignright size-full wp-image-123" title="twit" src="http://brandontreb.com/wp-content/uploads/2009/02/twit.png" alt="twit" width="135" height="135" /></a></p>
+
+<p><span style="color: #ff6600;"><strong><strong>Note</strong> </strong></span><strong>Twitter has switchted their entire interface to use OAUTH and this class no longer works (I should probably change the title hahaha). I will post an oauth connection tutorial in the near future, so make sure to **<a href="http://feeds2.feedburner.com/brandontreb">**subscribe to my RSS feed**</a></strong> for all of the sweet sweets updates!**</p>
+
+<p><strong>Cheers!</strong></p>
+
+<p>So, I started writing a Twitter API Programming series last week… <a href="http://brandontreb.com/twitter-api-programming-tutorial-with-php-getting-started/">Here is part 1</a>. I have found that there is not much else to teach when it comes to interfacing with Twitter. Basically, we just need to implement all of the Twitter functions.</p>
+
+<p>I have taken it upon myself to create a fully functional <strong>Twitter API PHP class</strong>. It has every Twitter function you will ever need (less the direct messages). I have also fully documented it with comments directly from the Twitter API so that the functions are easy to understand. Here is how you would use the class. The first parameter of every function is the return type. For Twitter it can be either xml, json, or rss for some functions.</p>
+
+<div>
+  <pre>&lt;code class=’php’&gt;include("Twitter.class.php");
+    $twitter = new Twitter();
+    $twitter-&gt;username = "twitteruser";
+    $twitter-&gt;password = "twitterpass";
+    // Show public timeline
+    echo $twitter-&gt;public_timeline();
+    // Update your status
+    echo $twitter-&gt;update(‘xml’,’This PHP class is flippin sweet!’);
+    // Start following a user
+    echo $twitter-&gt;create(‘xml’,’brandontreb’);&lt;/code&gt;</pre>
+</div>
+
+<p>These are just 3 of the functions implemented in this class. The full function list includes:</p>
+
+<ul>
+  <li>public_timeline</li>
+  <li>friends_timeline</li>
+  <li>user_timeline</li>
+  <li>update</li>
+  <li>replies</li>
+  <li>friends</li>
+  <li>followers</li>
+  <li>show</li>
+  <li>create</li>
+  <li>destroy</li>
+  <li>exists</li>
+</ul>
+
+<p>All of these functions are fully documented and simple to use. You can also check out Twitter’s API <a href="http://apiwiki.twitter.com/REST+API+Documentation">here</a> (but you shouldn’t need to).</p>
+
+<p>So, now you can fully **integrate Twitter into any PHP application you create! **</p>
+
+<h3 id="download-the-php-twitter-class-here-twitterclassphp">Download The PHP Twitter Class here <a href="http://brandontreb.com/wp-content/uploads/2009/02/Twitter.class.php1.zip">Twitter.class.php</a></h3>
+
+<p>Also, make sure you <a href="http://feeds2.feedburner.com/brandontreb">subscribe to my RSS feed</a>. More great programming tutorial to come.</p>
+
+<div style="">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="The Only Twitter API PHP Class You Will Ever Need" data-url="http://brandontreb.com/the-only-twitter-api-php-class-you-will-ever-need" data-via="brandontreb" data-related="brandontreb:">Tweet</a>
+</div>
+
+
+    
+  </div>
+
+  <div class="date">
+    <a href= "">
+      
+    </a>
+  </div>  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+
+
+
+<a href="https://github.com/brandontreb"><i class="svg-icon github"></i></a>
+
+
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/brandontreb"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>
