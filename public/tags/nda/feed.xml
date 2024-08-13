@@ -1,0 +1,55 @@
+<rss version="2.0">
+  <channel>
+    <title>nda on Hack The Planet</title>
+    <link>https://brandontreb.ngrok.io/tags/nda/</link>
+    <description></description>
+    
+    <language>en-us</language>
+    
+    <lastBuildDate>Fri, 28 Feb 2014 01:00:00 -0600</lastBuildDate>
+    
+    <item>
+      <title>Being An Indie Software Developer And Signing NDAs</title>
+      <link>https://brandontreb.ngrok.io/2014/02/28/indie-software-developer-signing-ndas/</link>
+      <pubDate>Fri, 28 Feb 2014 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2014/02/28/indie-software-developer-signing-ndas/</guid>
+      <description>&lt;p&gt;Very frequently, I receive emails that go something like this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Hey Brandon, I have a killer project idea. Do you want to work on it?  Please sign the NDA so we can talk.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Early on when I first started consulting, I would have responded with something like “Sure send it over!” and signed the thing without hesitation.  As of late, I have changed my view on NDAs; at least in this type of situation.&lt;/p&gt;
+&lt;p&gt;For those that don’t know, an NDA (non disclosure agreement) is a contract that is intended to protect the intellectual property of the client.  They make a lot of sense, especially in the event that the deal goes sour.  Say a client has some great idea for how to better take selfies that is going to revolutionize the selfie game.  If he doesn’t get a developer to sign an NDA, the developer could potentially be free to discuss the idea with others, leaving the idea open to be stolen.&lt;/p&gt;
+&lt;h3 id=&#34;why-i-dont-sign-preliminary-ndas&#34;&gt;Why I Don’t Sign Preliminary NDAs&lt;/h3&gt;
+&lt;p&gt;In the scenario I mentioned above, it would be very unwise of me to sign this NDA as I don’t have enough information about the product.  This puts me as a consultant at a huge risk.&lt;/p&gt;
+&lt;p&gt;Say for example I am working on a photo/video sharing app (I get roughly 1 request a week for some spin on Instagram). Now, say the incoming project is some variant on photo sharing. If I sign the NDA, it now now puts me in a conflict of interest with my existing project.&lt;/p&gt;
+&lt;p&gt;Even if I knew that the project was a photo/video sharing application up front, I still would not sign the NDA.  Much of the time (as mentioned above) clients want &lt;strong&gt;very&lt;/strong&gt; similar applications.  If I went around signing every single NDA that came across our desks, I would be out of business after the first client.&lt;/p&gt;
+&lt;h3 id=&#34;when-i-will-sign-ndas&#34;&gt;When I Will Sign NDAs&lt;/h3&gt;
+&lt;p&gt;Well, the first thing that I do is ask for clarification on the project and tell them my NDA policy.  I basically tell them that I am happy to sign the NDA if one of the following conditions are met:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;There is extremely proprietary information (you can’t land a big enterprise contract without first signing an NDA)&lt;/li&gt;
+&lt;li&gt;We are ready for project kickoff and all parties are aware of any potential conflicts&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In addition to that, if I am currently working on a project that is of similar type, it would be worthwhile to disclose that information to the potential new client (not the proprietary info, just that there is some overlap) so that they can choose whether or not to proceed.  Better to possibly lose the new client than end up in a crazy legal battle.&lt;/p&gt;
+&lt;p&gt;If the new client refuses to give you any more information, then they are not worth your time.  They will most likely be too challenging to work with down the road anyway.&lt;/p&gt;
+&lt;h3 id=&#34;ndas-are-not-set-in-stone&#34;&gt;NDAs Are Not Set In Stone&lt;/h3&gt;
+&lt;p&gt;When you do finally decide to sign the NDA, know that it is not complete until you sign it. If you see something that you don’t like or want to add any additional clauses, feel free to propose those to the client.  Most clients will be very understanding.&lt;/p&gt;
+&lt;p&gt;That being said, it’s VERY IMPORTANT that you read all the way through an NDA and possibly run it by your lawyer before signing.&lt;/p&gt;
+&lt;h3 id=&#34;suggestion-if-you-want-your-nda-signed&#34;&gt;Suggestion If You Want Your NDA Signed&lt;/h3&gt;
+&lt;p&gt;If you want a developer to sign your NDA, make sure to give him enough information about your project for him to make an educated decision.  If you just say “I want a photo sharing app” and expect an NDA signed, good luck.  Make sure that they know there is proprietary information involved and that you are doing something different that must be kept private.&lt;/p&gt;
+&lt;p&gt;An NDA is not required if you want to make say an “Instagram Clone For Puppies” or a “Miley Cyrus Flappy Bird Clone”.  Be sensitive to the uniqueness of your idea and decide if it really warrants an NDA.&lt;/p&gt;
+&lt;p&gt;Also note that developers are not out to steal your idea.  They get pitched hundreds of ideas and most of the time your idea falls into 3 categories anyway:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;It’s not unique&lt;/li&gt;
+&lt;li&gt;There is a technical challenge and that’s why it hasn’t been done (I get pitched a lot of ‘Map a grocery store so that my list will navigate me around’ ideas)&lt;/li&gt;
+&lt;li&gt;Your idea is so niche and so unique that the general audience won’t get it and it won’t be profitable anyway&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I’m not saying that every idea falls into these categories. But a good majority do. Most of them fall under #1 and that’s not necessarily a bad thing.  Google fell into #1 and look where they are today.  Just keep these things in mind when requiring a signed NDAs before you will give out any info.&lt;/p&gt;
+&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;There has been quite a bit of discussion lately (especially on Hacker News) about whether or not to sign NDAs.  Most of the recent articles I have read are simply titled “I Will Not Sign Your NDA”.  I feel that NDAs have there place, but you should sign them only with extreme caution.  Examine each NDA on a case by case basis and determine how it will affect your business in the long run.&lt;/p&gt;
+&lt;p&gt;*&lt;em&gt;Disclaimer: I am not a lawyer and do not claim to be giving any real legal advice.  I am simply stating how I do things.  Make sure to consult with a lawyer before engaging in any contracts.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

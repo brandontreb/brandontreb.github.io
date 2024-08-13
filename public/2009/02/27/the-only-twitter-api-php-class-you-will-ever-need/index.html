@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>
+      
+      Hack The Planet - The Only Twitter API PHP Class You Will Ever Need
+      
+  </title>
+
+  <meta name="description" content="this is meta :)">
+
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%f0%9f%a6%a0</text></svg>">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/custom.css">
+  <link rel="canonical" href="https://brandontreb.ngrok.io/2009/02/27/the-only-twitter-api-php-class-you-will-ever-need/">
+
+	<link rel="me" href="https://brandontreb.ngrok.io" />
+	
+	
+	
+	<link rel="authorization_endpoint" href="/indieauth/auth" />
+	<link rel="token_endpoint" href="/indieauth/token" />
+	<link rel="micropub" href="https://brandontreb.ngrok.io/micropub" />
+	<link rel="microsub" href="https://brandontreb.ngrok.io/microsub" />
+	<link rel="webmention" href="https://brandontreb.ngrok.io/webmention" />	
+  
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Hack The Planet</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+		
+			
+				<a class="page-link" href="/archive/">Archive</a>
+			
+		
+			
+				<a class="page-link" href="/photos/">Photos</a>
+			
+		
+			
+				<a class="page-link" href="/replies/">Replies</a>
+			
+		
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+		
+<div class="post h-entry">
+
+  <header class="post-header">
+	
+	  	<h1 class="p-name">The Only Twitter API PHP Class You Will Ever Need</h1>
+  	
+    <p class="post-meta">
+	<a href="https://brandontreb.ngrok.io/2009/02/27/the-only-twitter-api-php-class-you-will-ever-need/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2009-02-27 01:00:00 -0600">Feb 27, 2009</time></span></a>
+	
+	</p>
+  </header>
+
+  <article class="post-content e-content">
+	<p><a href="http://brandontreb.com/wp-content/uploads/2009/02/twit.png"><img src="/uploads/2009/twit.png" alt="twit" title="twit"></a></p>
+<p><strong><strong>Note</strong></strong> <strong>Twitter has switchted their entire interface to use OAUTH and this class no longer works (I should probably change the title hahaha). I will post an oauth connection tutorial in the near future, so make sure to <strong><a href="http://feeds2.feedburner.com/brandontreb"><strong>subscribe to my RSS feed</strong></a></strong> for all of the sweet sweets updates!</strong></p>
+<p><strong>Cheers!</strong></p>
+<p>So, I started writing a Twitter API Programming series last week… <a href="http://brandontreb.com/twitter-api-programming-tutorial-with-php-getting-started/">Here is part 1</a>. I have found that there is not much else to teach when it comes to interfacing with Twitter. Basically, we just need to implement all of the Twitter functions.</p>
+<p>I have taken it upon myself to create a fully functional <strong>Twitter API PHP class</strong>. It has every Twitter function you will ever need (less the direct messages). I have also fully documented it with comments directly from the Twitter API so that the functions are easy to understand. Here is how you would use the class. The first parameter of every function is the return type. For Twitter it can be either xml, json, or rss for some functions.</p>
+<pre tabindex="0"><code>&lt;code class=’php’&gt;include(&#34;Twitter.class.php&#34;);
+    $twitter = new Twitter();
+    $twitter-&gt;username = &#34;twitteruser&#34;;
+    $twitter-&gt;password = &#34;twitterpass&#34;;
+    // Show public timeline
+    echo $twitter-&gt;public_timeline();
+    // Update your status
+    echo $twitter-&gt;update(‘xml’,’This PHP class is flippin sweet!’);
+    // Start following a user
+    echo $twitter-&gt;create(‘xml’,’brandontreb’);&lt;/code&gt;
+</code></pre><p>These are just 3 of the functions implemented in this class. The full function list includes:</p>
+<ul>
+<li>public_timeline</li>
+<li>friends_timeline</li>
+<li>user_timeline</li>
+<li>update</li>
+<li>replies</li>
+<li>friends</li>
+<li>followers</li>
+<li>show</li>
+<li>create</li>
+<li>destroy</li>
+<li>exists</li>
+</ul>
+<p>All of these functions are fully documented and simple to use. You can also check out Twitter’s API <a href="http://apiwiki.twitter.com/REST+API+Documentation">here</a> (but you shouldn’t need to).</p>
+<p>So, now you can fully **integrate Twitter into any PHP application you create! **</p>
+<h3 id="download-the-php-twitter-class-here-twitterclassphphttpbrandontrebcomwp-contentuploads200902twitterclassphp1zip">Download The PHP Twitter Class here <a href="http://brandontreb.com/wp-content/uploads/2009/02/Twitter.class.php1.zip">Twitter.class.php</a></h3>
+<p>Also, make sure you <a href="http://feeds2.feedburner.com/brandontreb">subscribe to my RSS feed</a>. More great programming tutorial to come.</p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+	<div id="post-meta" class="clearfix p-author h-card">
+  <a href="/" class="u-url" rel="me">
+  <img class="u-photo avatar" src="https://brandontreb.ngrok.io/avatar.png" width="96" height="96">
+  <div>
+    <span class="p-name dark">|ZeroCool|</span>
+    <span><a href="https://brandontreb.ngrok.io">@</a></span>
+    <p class="p-note"></p>
+  </div>	
+  </a>
+</div>
+  </article>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-3">
+        <p class="text"></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+    
+    
+    
+  </body>
+
+</html>

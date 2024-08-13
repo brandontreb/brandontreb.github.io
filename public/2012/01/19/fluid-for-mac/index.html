@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>
+      
+      Hack The Planet - Fluid For Mac
+      
+  </title>
+
+  <meta name="description" content="this is meta :)">
+
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%f0%9f%a6%a0</text></svg>">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/custom.css">
+  <link rel="canonical" href="https://brandontreb.ngrok.io/2012/01/19/fluid-for-mac/">
+
+	<link rel="me" href="https://brandontreb.ngrok.io" />
+	
+	
+	
+	<link rel="authorization_endpoint" href="/indieauth/auth" />
+	<link rel="token_endpoint" href="/indieauth/token" />
+	<link rel="micropub" href="https://brandontreb.ngrok.io/micropub" />
+	<link rel="microsub" href="https://brandontreb.ngrok.io/microsub" />
+	<link rel="webmention" href="https://brandontreb.ngrok.io/webmention" />	
+  
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Hack The Planet</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+		
+			
+				<a class="page-link" href="/archive/">Archive</a>
+			
+		
+			
+				<a class="page-link" href="/photos/">Photos</a>
+			
+		
+			
+				<a class="page-link" href="/replies/">Replies</a>
+			
+		
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+		
+<div class="post h-entry">
+
+  <header class="post-header">
+	
+	  	<h1 class="p-name">Fluid For Mac</h1>
+  	
+    <p class="post-meta">
+	<a href="https://brandontreb.ngrok.io/2012/01/19/fluid-for-mac/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2012-01-19 01:00:00 -0600">Jan 19, 2012</time></span></a>
+	
+	</p>
+  </header>
+
+  <article class="post-content e-content">
+	<p>As of OSX Lion, I have started to seriously loathe some of the build-it Mac apps (such as Mail, and iCal). While I previously had no issues with them, they now seem to be very clunky and crash quite often. Being a developer, I thought “why don’t I write an app that wraps web apps for you so you basically get “native web apps” that have icons and are launchable?”.</p>
+<p>After a quick Google search, I realized <strong><a href="http://fluidapp.com/">this already exists!</a></strong>. The app is called Fluid and it does an incredible job of what I described above and more.</p>
+<p><img src="/uploads/2012/dock_large.png" alt="">
+Here are the feature highlights.</p>
+<ul>
+<li>Create a “native” Mac app for any web app</li>
+<li>Custom icon for each “native” app you create</li>
+<li>Full screen mode</li>
+<li>User scripps. These are my favorite. They allow you to update the badge count based on information in the browser. See below for a sample user script.</li>
+</ul>
+<p><strong>Sample User Script For Twitter</strong></p>
+<pre tabindex="0"><code>&lt;code class=’javascript’&gt;(function () {
+        if (window.fluid) {
+            setInterval(function updateBadge() {
+                var counts = /\d+/.exec(document.title);
+                if (counts &amp;&amp; counts[0] &gt; 0) {
+                    window.fluid.dockBadge = counts[0] &gt; 99 ? ‘99+’ : counts[0];
+                } else {
+                    window.fluid.dockBadge = ”;
+                }
+            }, 2000);
+        }
+    })();&lt;/code&gt;
+</code></pre><p><a href="http://userscripts.org/scripts/review/88425">Source</a></p>
+<p>Fluid is free with some minimal features, but I urge you to drop the $4.99 to gain full screen mode and user scripts. It’s well worth it. I am not affiliated with them in any way, just a happy customer.</p>
+<p><a href="http://fluidapp.com/">Download Fluid</a></p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+	<div id="post-meta" class="clearfix p-author h-card">
+  <a href="/" class="u-url" rel="me">
+  <img class="u-photo avatar" src="https://brandontreb.ngrok.io/avatar.png" width="96" height="96">
+  <div>
+    <span class="p-name dark">|ZeroCool|</span>
+    <span><a href="https://brandontreb.ngrok.io">@</a></span>
+    <p class="p-note"></p>
+  </div>	
+  </a>
+</div>
+  </article>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-3">
+        <p class="text"></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+    
+    
+    
+  </body>
+
+</html>

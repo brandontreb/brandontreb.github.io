@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>
+      
+      Hack The Planet - AppBlogger: A Tool For iOS App Developers And Bloggers
+      
+  </title>
+
+  <meta name="description" content="this is meta :)">
+
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%f0%9f%a6%a0</text></svg>">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/custom.css">
+  <link rel="canonical" href="https://brandontreb.ngrok.io/2011/01/13/appblogger-a-tool-for-ios-app-developers-and-bloggers/">
+
+	<link rel="me" href="https://brandontreb.ngrok.io" />
+	
+	
+	
+	<link rel="authorization_endpoint" href="/indieauth/auth" />
+	<link rel="token_endpoint" href="/indieauth/token" />
+	<link rel="micropub" href="https://brandontreb.ngrok.io/micropub" />
+	<link rel="microsub" href="https://brandontreb.ngrok.io/microsub" />
+	<link rel="webmention" href="https://brandontreb.ngrok.io/webmention" />	
+  
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Hack The Planet</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+		
+			
+				<a class="page-link" href="/archive/">Archive</a>
+			
+		
+			
+				<a class="page-link" href="/photos/">Photos</a>
+			
+		
+			
+				<a class="page-link" href="/replies/">Replies</a>
+			
+		
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+		
+<div class="post h-entry">
+
+  <header class="post-header">
+	
+	  	<h1 class="p-name">AppBlogger: A Tool For iOS App Developers And Bloggers</h1>
+  	
+    <p class="post-meta">
+	<a href="https://brandontreb.ngrok.io/2011/01/13/appblogger-a-tool-for-ios-app-developers-and-bloggers/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2011-01-13 01:00:00 -0600">Jan 13, 2011</time></span></a>
+	
+	</p>
+  </header>
+
+  <article class="post-content e-content">
+	<p>Imagine that you have just found the coolest app in the world and just can’t wait to tell all of your followers about it. So, you head to the admin panel of your blogging engine (hopefully <a href="http://wpwithlove.com">WordPress</a>) and begin to write your review. Now, you want to insert some screenshots, icons, descriptions, app store links, etc… So, what do you do? You head on over to Bing and type in <a href="http://google.com">google.com</a>. Next, you search your app name and hopefully find the iTunes URL so that you can slowly grab some information about the app. #Fail</p>
+<p>Dum duh dum duh (trumpet noises)!</p>
+<p>Enter <a href="http://brandontreb.com/apps/appBlogger">AppBlogger</a>. <a href="http://brandontreb.com/apps/appBlogger">AppBlogger</a> is a little tool that I have been working on that uses “Instant Search” technology (jquery fanciness) to allow you to instantly search the app store and <strong>quickly</strong> get the information you need.</p>
+<p><a href="http://brandontreb.com/apps/appBlogger/"><img src="/uploads/2011/Screen-shot-2011-01-13-at-7.17.04-PM.png" alt="" title="Screen shot 2011-01-13 at 7.17.04 PM"></a></p>
+<p><strong>How Does It Work?</strong> (you say)</p>
+<p>As you start typing, <a href="http://brandontreb.com/apps/appBlogger/">AppBlogger</a> makes an asynchronous request to the iTunes web service and pulls a list of applications that match your search terms. This list is presented as a bunch of icons. You will then click on one of these icons to pull of the details page of that application.</p>
+<p><img src="/uploads/2011/Screen-shot-2011-01-13-at-7.25.52-PM.png" alt="" title="Screen shot 2011-01-13 at 7.25.52 PM">
+The details page (see above screenshot) then contains everything you need to write a stellar blog post about that application. It provides text fields (for easy copy and paste) with icon URLs, download URL, and screenshot URLs.</p>
+<p>I have some plans to integrate this in the <em>near</em> future with my <a href="http://brandontreb.com/apps/linkshare">Link Share</a> tool to auto generate shortened URLs that contain your affiliate code (so you can make $). If you have any other suggestions for it, I would love to hear them.</p>
+<p>I know many of you are heartbroken and were expecting the next iteration of my <a href="http://brandontreb.com/creating-a-twitter-client-for-osx-part-1/">Twitter Client For Mac</a> series. I want you to know, you are not forgotten and I will continue the series next Thursday. So Stay Tuned!</p>
+<p>Check out <a href="http://brandontreb.com/apps/appBlogger">AppBlogger</a>!</p>
+<p><em><strong>﻿﻿This post is part of <a href="http://idevblogaday.com/">iDevBlogADay</a>, a group of indie iOS development blogs featuring two posts per day. You can keep up with iDevBlogADay through the <a href="http://idevblogaday.com/">web site</a>, <a href="http://feeds.feedburner.com/idevblogaday">RSS feed</a>, or <a href="http://twitter.com/#search?q=%23idevblogaday">Twitter</a>.</strong></em></p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+	<div id="post-meta" class="clearfix p-author h-card">
+  <a href="/" class="u-url" rel="me">
+  <img class="u-photo avatar" src="https://brandontreb.ngrok.io/avatar.png" width="96" height="96">
+  <div>
+    <span class="p-name dark">|ZeroCool|</span>
+    <span><a href="https://brandontreb.ngrok.io">@</a></span>
+    <p class="p-note"></p>
+  </div>	
+  </a>
+</div>
+  </article>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-3">
+        <p class="text"></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+    
+    
+    
+  </body>
+
+</html>

@@ -1,0 +1,42 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>
+      {{ block "title" . }}
+      {{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Site.Title }} - {{ .Title }}{{ end }}
+      {{ end }}
+  </title>
+
+  <meta name="description" content="{{ .Site.Params.Meta_description }}">
+
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ .Site.Params.Favicon }}</text></svg>">
+
+  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "custom.css" | relURL }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+
+	<link rel="me" href="{{ .Site.BaseURL }}" />
+	{{ with .Site.Params.twitter_username }}
+		<link rel="me" href="https://twitter.com/{{ . }}" />
+	{{ end }}
+	{{ with .Site.Params.github_username }}
+		<link rel="me" href="https://github.com/{{ . }}" />
+	{{ end }}
+	{{ with .Site.Params.instagram_username }}
+		<link rel="me" href="https://instagram.com/{{ . }}" />
+	{{ end }}
+	<link rel="authorization_endpoint" href="{{.Site.Params.Authorization_endpoint}}" />
+	<link rel="token_endpoint" href="{{.Site.Params.Token_endpoint}}" />
+	<link rel="micropub" href="{{.Site.BaseURL}}/micropub" />
+	<link rel="microsub" href="{{.Site.BaseURL}}/microsub" />
+	<link rel="webmention" href="{{.Site.BaseURL}}/webmention" />	
+  
+  {{ range .Site.Params.plugins_css }}
+    <link rel="stylesheet" href="{{ . }}" />
+  {{ end }}
+  {{ range $filename := .Site.Params.plugins_html }}
+    {{ partial $filename $ }}
+  {{ end }}
+</head>

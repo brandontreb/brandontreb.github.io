@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>
+      
+      Hack The Planet - PoV&amp;#8217;s Challenge: Week 1
+      
+  </title>
+
+  <meta name="description" content="this is meta :)">
+
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%f0%9f%a6%a0</text></svg>">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/custom.css">
+  <link rel="canonical" href="https://brandontreb.ngrok.io/2010/10/07/povs-challenge-week-1/">
+
+	<link rel="me" href="https://brandontreb.ngrok.io" />
+	
+	
+	
+	<link rel="authorization_endpoint" href="/indieauth/auth" />
+	<link rel="token_endpoint" href="/indieauth/token" />
+	<link rel="micropub" href="https://brandontreb.ngrok.io/micropub" />
+	<link rel="microsub" href="https://brandontreb.ngrok.io/microsub" />
+	<link rel="webmention" href="https://brandontreb.ngrok.io/webmention" />	
+  
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Hack The Planet</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+		
+			
+				<a class="page-link" href="/archive/">Archive</a>
+			
+		
+			
+				<a class="page-link" href="/photos/">Photos</a>
+			
+		
+			
+				<a class="page-link" href="/replies/">Replies</a>
+			
+		
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+		
+<div class="post h-entry">
+
+  <header class="post-header">
+	
+	  	<h1 class="p-name">PoV&amp;#8217;s Challenge: Week 1</h1>
+  	
+    <p class="post-meta">
+	<a href="https://brandontreb.ngrok.io/2010/10/07/povs-challenge-week-1/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-10-07 00:00:00 -0600">Oct 7, 2010</time></span></a>
+	
+	</p>
+  </header>
+
+  <article class="post-content e-content">
+	<p>After a week of studying my butt off with OpenGL ES, I have finally started work on my game engine for my <a href="http://www.ludumdare.com/compo/2010/09/22/povs-challenge-make-a-game-sell-1-copy/">Pov’s Challenge</a> game.</p>
+<p>As you can tell from the screenshot below, I have been playing entirely too much Minecraft and have cube art on the brain.</p>
+<p>It’s not much right now, but I do have a basic cube rendering engine that takes in a level file and renders the environment. Here is a screenshot of a very simple level.</p>
+<p><a href="http://brandontreb.com/wp-content/uploads/2010/10/Screen-shot-2010-10-06-at-10.48.28-PM.png"><img src="/uploads/2010/Screen-shot-2010-10-06-at-10.48.28-PM-362x500.png" alt="" title="Screen shot 2010-10-06 at 10.48.28 PM"></a>It’s not looking super killer at the moment, but I have yet to do fancier lighting or any texture mapping.</p>
+<p><strong>Ohh My Game Idea You Ask?</strong></p>
+<p>Well, without going into too much detail, it’s pretty much an epic battle of mass proportion set in a 3D cube environment (hint: it’s not iMinecraft ;)).</p>
+<p>I will give more details as I go about the month and near the completion of my game.</p>
+<p>Also, in case you are interested, here is what the level file looks like for the generated environment.</p>
+<pre tabindex="0"><code>**GG,GG,GG,G,GG,GG,GG
+GG,G,G,G,G,G,GG
+GG,G,G,G,G,G,GG
+GG,G,G,G,G,G,GG
+G,G,G,GG,G,G,G
+GG,G,G,G,G,G,GG
+GG,G,G,G,G,G,GG
+GG,G,G,G,G,G,GG
+GG,GG,GG,G,GG,GG,GG**
+</code></pre><p>The number of G’s that appear represent the height at that location.</p>
+<p><strong>The current roadmap is:</strong></p>
+<ul>
+<li>Texturing &amp; Lighting</li>
+<li>Collision Detection / Navigation</li>
+<li>Gameplay &amp; Audio</li>
+<li>AI</li>
+<li>Menus / Title / Pause (<a href="http://www.36peas.com/blog/2010/10/6/just-add-the-secret-sauce-a-tried-and-tested-recipe-for-a-fi.html">secret sauce ingredients</a>)</li>
+</ul>
+<p>By next week, I should have some sort of level editor and some basic skinning going on.</p>
+<p>Hopefully I can finish this sucker by the end of the month. Its’s been an intense journey learning openGL from scratch in 7 days and I know that I still have quite a ways to go. Again, if you are participating in this challenge, link me to your development blog in the comments.</p>
+<p>Happy coding!</p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+	<div id="post-meta" class="clearfix p-author h-card">
+  <a href="/" class="u-url" rel="me">
+  <img class="u-photo avatar" src="https://brandontreb.ngrok.io/avatar.png" width="96" height="96">
+  <div>
+    <span class="p-name dark">|ZeroCool|</span>
+    <span><a href="https://brandontreb.ngrok.io">@</a></span>
+    <p class="p-note"></p>
+  </div>	
+  </a>
+</div>
+  </article>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-3">
+        <p class="text"></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+    
+    
+    
+  </body>
+
+</html>

@@ -1,0 +1,168 @@
+
+    <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
+<link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>
+
+</text></svg>">
+<link rel="alternate icon" href="/favicon.ico" type="image/x-icon" sizes="48x48" />
+<title>
+  👨‍💻 Brandon Trebitowski
+</title>
+
+<!-- Primary Meta Tags -->
+<meta name="title" content="👨‍💻 Brandon Trebitowski">
+<meta name="description" content="The personal blog of Brandon Trebitowski. I talk about Family, Fitness, and Software Development. ">
+<meta name="author" content="👨‍💻 Brandon Trebitowski">
+<meta name="keywords" content="" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="👨‍💻 Brandon Trebitowski">
+<meta property="og:url" content="https://brandontreb.com">
+<meta property="og:title" content="👨‍💻 Brandon Trebitowski">
+<meta property="og:description" content="The personal blog of Brandon Trebitowski. I talk about Family, Fitness, and Software Development. ">
+<meta property="og:image" content="https://brandontreb.comdata/uploads/avatar.jpeg" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary">
+<meta property="twitter:url" content="https://brandontreb.com">
+<meta property="twitter:title" content="👨‍💻 Brandon Trebitowski">
+<meta property="twitter:description" content="The personal blog of Brandon Trebitowski. I talk about Family, Fitness, and Software Development. ">
+<meta property="twitter:image" content="https://brandontreb.comdata/uploads/avatar.jpeg">
+
+<!-- Microdata -->
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Website",
+    "name": "👨‍💻 Brandon Trebitowski>",
+    "url": "https://brandontreb.com",
+    "description": "The personal blog of Brandon Trebitowski. I talk about Family, Fitness, and Software Development. ",
+    "about": {
+      "@type": "👨‍💻 Brandon Trebitowski>",
+      "description": "The personal blog of Brandon Trebitowski. I talk about Family, Fitness, and Software Development. "
+    },
+  }
+</script>
+
+
+  <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+  
+    <style>
+      
+    </style>
+         
+    <!-- Feeds -->  
+    <link rel="alternate" type="application/json" title="brandontreb" href="https://brandontreb.com/feed.json" />
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml" />    
+    <!-- Indie Web -->
+    <link rel="me" href="mailto:brandontreb@gmail.com">
+    <link rel="me" href="https://micro.blog/brandontreb">
+    <link rel="authorization_endpoint" href="https://brandontreb.com/indieWeb/indieAuth/authorize">
+    <link rel="token_endpoint" href="https://brandontreb.com/indieWeb/indieAuth/token">
+    <link rel="micropub" href="https://brandontreb.com/indieWeb/micropub">
+    <link rel="webmention" href="https://webmention.io/brandontreb.com/webmention" />
+    <link rel="pingback" href="https://webmention.io/brandontreb.com/xmlrpc" />      
+    <!-- Styles -->
+    <link rel="stylesheet" href="/data/themes/default/default.css">       
+    <!-- Scripts -->
+    <script id="script_conversation" data-blog_url="brandontreb.com" src="/scripts/conversation.js"></script>
+    
+      <script>
+        const numItemsToGenerate = 1;
+
+        function renderItem() {
+          // array of 20 random words
+          const words = [
+            "Sunset",
+            "Beach",
+            "Mountains",
+            "Waterfall",
+            "Forest",
+            "Wildlife",
+            "Flowers",
+            "Cityscape",
+            "Landscape",
+            "Night-sky",
+            "Lighthouse",
+            "Sunflower",
+            "Cherry-blossom",
+            "Tulip",
+            "Rose",
+            "Lavender",
+            "Poppy",
+            "Peony",
+            "Sunflower",
+            "Daisy"
+          ];
+          // get random word from array
+          let randomWord = words[Math.floor(Math.random() * words.length)];
+          fetch(`https://source.unsplash.com/1600x900/?${randomWord}`).then((response) => {
+            let item = document.createElement('div');
+            item.classList.add('item');
+            item.innerHTML = `
+            <img load="lazy" class="beach-image" src="${response.url}" alt="${randomWord} image"/>
+          `
+            document.getElementById('unsplash-photo').innerHTML = item.innerHTML;
+          })
+        }
+        for (let i = 0; i < numItemsToGenerate; i++) {
+          renderItem();
+        }
+      </script>
+</head>
+
+<body lang="en">
+  <header>
+    <nav>
+  <span class="avatar">
+    <a href="https://brandontreb.com">      
+                
+        <img src="https://brandontreb.com/data/uploads/avatar.jpeg" alt="profile photo" width="100" height="100"/>                
+      
+    </a>
+  </span>  
+  <h1>
+    👨‍💻 Brandon Trebitowski
+  </h1>    
+    <p><a href="/">Home</a>
+<a href="/archive/">Archive</a>
+<a href="/replies/">Replies</a>
+<a href="https://pixegon.com">Hire Me</a></p>
+      
+</nav>
+<div class="u-clear"></div>
+<hr />
+  </header>
+
+
+  <main>
+    <content>
+      <h1>Not Found</h1>
+      <p>Sorry, but the post or page you were looking for does not exist.</p>
+      <p id="unsplash-photo">
+
+      </p>
+    </content>
+    <span class="separator">
+      <span class="divider"></span>
+    </span>
+  </main>
+
+  <br><br>
+
+  <!-- Footer -->
+  <footer>
+    <a href="/feed.xml">RSS</a> | 
+<a href="/feed.json">JSON</a> | 
+Made with <a href="https://spore.blog">spore.blog</a>
+  </footer>
+</body>
+
+</html>
+      

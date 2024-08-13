@@ -1,0 +1,27 @@
+---
+date: 2022-12-29T00:33:15-0600
+slug: 5vcmvk45xxxn3fiqgzyw
+title: 
+type: post
+post_type: note
+
+tags: []
+---
+Maybe I’m missing something, but I just can’t understand how to get into the Cobra Kai show. Maybe I’m not it’s target demographic.
+
+
+
+> 
+> “You can’t hurt me, I’m running on Whiskey and White Claw”.
+> 
+> 
+> 
+
+
+I overheard this line while my son was watching it.
+
+
+The dialog is way *too* cringe.
+
+
+

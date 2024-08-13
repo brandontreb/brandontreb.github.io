@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>
+      
+      Hack The Planet - Lua Scripting The UI For Pocket MUD Pro
+      
+  </title>
+
+  <meta name="description" content="this is meta :)">
+
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%f0%9f%a6%a0</text></svg>">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/custom.css">
+  <link rel="canonical" href="https://brandontreb.ngrok.io/2012/05/29/lua-scripting-the-ui-for-pocket-mud-pro/">
+
+	<link rel="me" href="https://brandontreb.ngrok.io" />
+	
+	
+	
+	<link rel="authorization_endpoint" href="/indieauth/auth" />
+	<link rel="token_endpoint" href="/indieauth/token" />
+	<link rel="micropub" href="https://brandontreb.ngrok.io/micropub" />
+	<link rel="microsub" href="https://brandontreb.ngrok.io/microsub" />
+	<link rel="webmention" href="https://brandontreb.ngrok.io/webmention" />	
+  
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Hack The Planet</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+		
+			
+				<a class="page-link" href="/archive/">Archive</a>
+			
+		
+			
+				<a class="page-link" href="/photos/">Photos</a>
+			
+		
+			
+				<a class="page-link" href="/replies/">Replies</a>
+			
+		
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+		
+<div class="post h-entry">
+
+  <header class="post-header">
+	
+	  	<h1 class="p-name">Lua Scripting The UI For Pocket MUD Pro</h1>
+  	
+    <p class="post-meta">
+	<a href="https://brandontreb.ngrok.io/2012/05/29/lua-scripting-the-ui-for-pocket-mud-pro/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2012-05-29 00:00:00 -0600">May 29, 2012</time></span></a>
+	
+	</p>
+  </header>
+
+  <article class="post-content e-content">
+	<p>I have just updated my MUD client [<a href="http://itunes.apple.com/us/app/pocket-mud-pro/id511678455?mt=8">Pocket MUD Pro</a>] to be a universal library. It was surprisingly easy to add the iPad support as most of the application was comprised of UITableViews.</p>
+<p>The main “MUD” view was the most challenging part as it contains a couple UIWebViews, UIButons, and a UITextField. However, I chose to do something I feel is pretty cool.</p>
+<h4 id="scripting-the-ui-with-lua">Scripting The UI With Lua</h4>
+<p>If I haven’t said it enough, I love lua. Especially in the context of scripting within other applications. Pocket MUD Pro already has complete lua support in triggers in aliases, so I figured I might as well apply that same logic to the UI.</p>
+<p>Pocket MUD Pro has 3 core sections for the UI not counting the text input field. The main view (UIWebview), the prompt view (UIWebview), and the button bar (custom UIView).</p>
+<p>One of the core challenges I faced on the iPhone, was resizing/reorienting all of these views on orientation change as well as when the keyboard was visible and when it wasn’t. To be honest, I spent most of my cycles getting this part right. On the iPad, I decided to things a little differently which improved the speed of my development overall and paved the way for future updates that will allow user-scripted UIs.</p>
+<h4 id="the-ui-script">The UI Script</h4>
+<p>I want to start by showing you the lua code that is used to script the UI by default.</p>
+<pre tabindex="0"><code>–MUD 
+mudFrame = Frame:new(&#34;mud_frame&#34;) 
+mudFrame.type = FrameTypeMUD
+mudFrame.portraitFrame = {0,0,768,931}
+mudFrame.portraitFrameKeyboard = {0,0,768,667}
+mudFrame.landscapeFrame = {0,0,1024,675}
+mudFrame.landscapeFrameKeyboard = {0,0,1024,323}
+createFrame(mudFrame)
+</code></pre><p>What’s happening here is, I have created a Frame class that has some properties (type, name, etc…) and injected it into the global lua space for use inside of the UIScripts. Then when the interface gets drawn, I reference the UI script for each of the MUD servers and use it to render the interface.</p>
+<p>One interesting thing here is, I set the frames for each of the possible layout scenarios. Portrait, Landscape, with and without the keyboard. That way, when the keyboard hides/dismisses or the user rotates the device, I just reference the this script again and re-render the frame accordingly. This could have been achieved with auto-resizing masks however, it gets much more complex and things get tricky when you want to have a dynamic number of windows.</p>
+<p>I follow this exact pattern for the button frames and the prompt frames. As you might have guessed, in a future release, I will open this script area up to MUDders and give the user the ability to script the interface however they would like. Some examples might be:</p>
+<ul>
+<li>Dedicated map window</li>
+<li>Dedicated chat window</li>
+<li>Customized movement buttons</li>
+<li>Customized backgrounds/borders/themes</li>
+<li>Custom health/status/mana</li>
+</ul>
+<p>Given this powerful UI Scripting style, a user will be able to create complex interfaces such as the one below from inside the app:</p>
+<p><img src="/uploads/2012/achaea-300819-1263188763.jpeg" alt="" title="Achaea">
+I still have a ways to go with exposing various functionalities via my custom lua bridge. But things seem to be moving along quite smoothly.</p>
+<p>If you want to learn how I was able to bridge lua into my application, consider checking out my talk on lua scripting at <a href="http://360idev.com/">360iDev 2012</a> later this year!</p>
+<p>Happy Coding!</p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+	<div id="post-meta" class="clearfix p-author h-card">
+  <a href="/" class="u-url" rel="me">
+  <img class="u-photo avatar" src="https://brandontreb.ngrok.io/avatar.png" width="96" height="96">
+  <div>
+    <span class="p-name dark">|ZeroCool|</span>
+    <span><a href="https://brandontreb.ngrok.io">@</a></span>
+    <p class="p-note"></p>
+  </div>	
+  </a>
+</div>
+  </article>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-3">
+        <p class="text"></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+    
+    
+    
+  </body>
+
+</html>

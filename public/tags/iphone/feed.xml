@@ -1,0 +1,1119 @@
+<rss version="2.0">
+  <channel>
+    <title>iPhone on Hack The Planet</title>
+    <link>https://brandontreb.ngrok.io/tags/iphone/</link>
+    <description></description>
+    
+    <language>en-us</language>
+    
+    <lastBuildDate>Fri, 31 Jan 2014 01:00:00 -0600</lastBuildDate>
+    
+    <item>
+      <title>Becoming A Software Consultant: My Backstory</title>
+      <link>https://brandontreb.ngrok.io/2014/01/31/becoming-software-consultant-backstory/</link>
+      <pubDate>Fri, 31 Jan 2014 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2014/01/31/becoming-software-consultant-backstory/</guid>
+      <description>&lt;p&gt;I recently published a post about &lt;a href=&#34;http://brandontreb.com/learned-first-year-ios-consulting&#34;&gt;my first year of being an independent iPhone development consultant&lt;/a&gt;.  The feedback from my readers was incredible, however there was one important thread on Hacker News that I wanted to address.  The issues were:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;One of my common hangups with these kind of posts is the lack of history as to what lead people to these consulting gigs. Where were you before, and how long were you there?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I found this to be a very valid point.  Far too often you see guys posting their end of the year profits from their consulting gigs and they make it sound extremely easy.  This can be dangerous as joe n00b might be so inspired that he quits his job and jumps right into the deep end without first preparing himself and assessing the risks involved.&lt;/p&gt;
+&lt;p&gt;That being said, I wanted to write a bit about my backstory and how it ultimately lead to my ability to strike it out on my own as a consultant.  I have read stories similar to mine and there are a few key points that seem to be common, which I will highlight as I go.&lt;/p&gt;
+&lt;p&gt;**Circa Summer 2008 – Just Before Apple Releases The iPhone (not iOS) SDK **&lt;/p&gt;
+&lt;p&gt;In the summer of 2008, I was preparing to enter my senior year of college for Computer Science at UNM.  A quick note about CS in New Mexico.  There are TONS of government contractors (Sandia, Ultramain, Honeywell, Lockheed, etc.) in NM and college CS courses seem very much tailored to preparing students to head down this road towards one of these contractors.  This is where most of my buddies from college ultimately ended up.&lt;/p&gt;
+&lt;p&gt;So, like any good UNM CS student, I got a job at Intel hacking C# tools for their engineers to use during testing.  It was fine, but I knew I could not work in a cube forever.&lt;/p&gt;
+&lt;p&gt;Around that time, one of my buddies had the original iPhone and I was crazy jealous.  I think I had some silly Windows CE brick or a Palm Treo or something.  It was obvious that the iPhone was the “next big thing” and I took notice.  So I started developing web apps for the iPhone, as that was the primary way to get custom apps for the devices.  Apple even had a terrible (non mobile formatted) interface for exploring such web apps.&lt;/p&gt;
+&lt;p&gt;I built &lt;em&gt;cool&lt;/em&gt; things like a Weight Watchers Point Calculator (my wife’s idea) and Minesweeper and to my surprise made a couple bucks a day on ads.  This really fueled my excitement.  Then, Apple announced the official SDK.&lt;/p&gt;
+&lt;p&gt;**An Aventure In iCodeBlog And Other NDA Violations **&lt;/p&gt;
+&lt;p&gt;When Apple first released the SDK, the App Store didn’t exist yet.  All developers were forced under Apple’s NDA, stating that we weren’t able to discuss any aspect of the SDK on the web.  As you can imagine, this left very little resources available for learning how to actually do development.  There were no blogs, no books, and the only source of information was Apple’s documentation.  I saw this as a HUGE opportunity.&lt;/p&gt;
+&lt;p&gt;I very quickly registered the domain &lt;a href=&#34;http://icodeblog.com&#34;&gt;icodeblog.com&lt;/a&gt; and setup WordPress.  This led to my very &lt;a href=&#34;http://www.icodeblog.com/2008/07/22/icodeblog-launched/&#34;&gt;first post&lt;/a&gt; in July of 2008. I had no idea what I was doing; it was my first blog ever, but I knew I would be able to learn more effectively if I was teaching others as I went along.&lt;/p&gt;
+&lt;p&gt;Being a Java developer, I was comfortable reading documentation so I dug right in to the iOS docs.  I spent all of my free time (the time that wasn’t spent with my wife) learning and blogging.  I was violating the NDA by discussing it on the web, but my page views were growing every day.  Other blogs started to sprout up but I soon had the most popular iOS development blog on the web.  I had over 10K RSS subscribers one month after my blog launch.&lt;/p&gt;
+&lt;p&gt;Things were really exciting, however, I had to start thinking about my future and how I was going to support my family.  Still being a bit narrow-minded with my career choices, I applied for a job at Lockheed Martin and got a position.  It was all set; I would graduate college in the spring and head to the “cube farm”.  Destined for a life of “here’s your input, give me this output”, TPS Reports, and other corporate stereotype jokes…&lt;/p&gt;
+&lt;p&gt;That’s when I got my first iOS programming job offer…&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Enter RightSprite&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As you can imagine, the popularity of iCodeBlog did not go unnoticed.  I received job inquiries quite often and one them happened to be from a guy who lived in Ireland named Jonathan.  He was a wealthy American entrepreneur who had added a mobile offering to his already successful rails consultancy called RightSprite.  However, he started his business by outsourcing to the Ukraine, which yielded fairly poor results.&lt;/p&gt;
+&lt;p&gt;So, in the winter of 2008 I received an email that they wanted to purchase iCodeBlog and give me a job replacing their outsourced team.  He also happened to have an employee in NM named Josh.  Josh and I met at a “hip” food place that I had never heard of and I was blown away that this was considered “business”.  Needless to say, I was excited.&lt;/p&gt;
+&lt;p&gt;So here I am, about to graduate with a perfect job lined up, and I get an offer like this.  I had no idea what to do.  The idea of working remote was foreign to me and had never even crossed my mind.  People can actually do that?  I can work in my pajamas??&lt;/p&gt;
+&lt;p&gt;So I decided to take a risk, sell him my blog, and accept the job offer.  I was terrified-especially when he told me that my first check was coming out of his personal bank account and that was why it was late.  Little did I know, this would be one of the best career decisions I could ever make…&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Build, Hire, Repeat&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I graduated from college and my career was in full swing.  I was the sole developer at a consultancy that had more mobile work than it knew what to do with.  My family had no idea what I did.  They though I was a drug dealer or something just as lucrative.  At one point, my grandma asked me, “When are you going to get a &lt;em&gt;real&lt;/em&gt; job like your cousin Michael (he works for the city)”.  I could’t quite believe this was a legitimate job myself.&lt;/p&gt;
+&lt;p&gt;Things started to get very exciting.  Jonathan asked me to help hire our next employee.  Luckily, a guy by the name of Collin reached out to me and asked if he could guest blog on iCodeBlog.  A few tutorials later and we offered him a job.&lt;/p&gt;
+&lt;p&gt;RightsSprite continued to scale up and I helped hire quite a few new developers.  They eventually moved to a physical building in Portland, Oregon while I still worked remotely from NM.  The team continued to grow.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A Book Deal&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Even though I didn’t own iCodeBlog anymore, I still contributed to it from time to time.  This lead to me being contacted by a few publishing companies with book offers.  A book offer?  It doesn’t sound that cool now, but in 2009, when there weren’t many iOS development books, it sounded incredible.&lt;/p&gt;
+&lt;p&gt;I decided to go with Manning Publishing and I updated their iPhone development book from web app-centric to SDK-centric.  It amazed me that I struggled to write four paragraph essays in high school but I was now writing a four hundred page book with ease.&lt;/p&gt;
+&lt;p&gt;The book did fairly well and sold around 10,000 copies.  Unfortunately, when you are an author of a tech book, that amounts to just about nothing in profit.  As you can imagine, I had little motivation to do the update the next year when Apple updated the SDK.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A New Sheriff In Town&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Shortly after moving the offices to Portland, the owner sold the company and we had a new president and CEO.  He ran things a bit differently but ultimately things were cruising forward.  Our team continued to expand and eventually I hired our first Android developers.&lt;/p&gt;
+&lt;p&gt;In December of 2011, I was promoted to the Director of Mobile Engineering.  It was a fancy title and I was entirely proud to hand out business cards with that printed on them.  I had helped build the team up to around sixteen mobile developers and it was now my job to manage them, as well as work closely with sales to land larger contracts.&lt;/p&gt;
+&lt;p&gt;2012 was a great year of working on cool projects including the Food Network and Google Fiber TV.  I got to attend WWDC and spend a few weeks on Google’s campuses.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Things Get Shaken Up&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Little did I know, there was some unrest in the company with the higher-up managers.  One day, there was a company memo that the three people who were higher ranked than myself had all left.  There were rumors as to why they left, but no one really had the true story.  This caused a stir in the company and a few more developers began to follow suit.&lt;/p&gt;
+&lt;p&gt;This, of course, led to some company restructuring which put me right at the top with one other team member.  I was now one of the highest paid people in the company and solely in charge of the entire mobile team.&lt;/p&gt;
+&lt;p&gt;I thought everything was perfect until one day in December of 2012, I received the following message when I logged into Gmail:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Your account has been suspended, please contact the administrator.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This made me considerably suspicious.  I knew there was a lot of restructuring in the recent history and I immediately wondered if I was next on the chopping block.  I was logged into Linked In at the time and noticed the company owner was the last person to view my profile.  “He suspects me of looking for other jobs and is checking up on me”, I thought.&lt;/p&gt;
+&lt;p&gt;That’s when I received a message on Skype from him.  It said:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Brandon, do you have time to talk?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;My heart jumped into my throat.  I knew what was coming next.  He was soon up on video chat and proceeded to tell me that the company was undergoing some restructuring and my position has been eliminated.  “Eliminated?” I thought.  And then I asked him what that meant for me.  He repeated the sentence again, said thanks, and hung up.  That was it; I no longer had a job.&lt;/p&gt;
+&lt;p&gt;My “secure” job that I had been working at for four years disappeared in a matter of seconds with very little “real” explanation.  I was speechless.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Taking The Plunge&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;After getting “let go”, I took the rest of the day off and went out with my family (wife and two kids).  We were shocked, but I knew what I had to do.  It was what I had been dreaming of doing for quite some time.&lt;/p&gt;
+&lt;p&gt;Armed with the knowledge of the entire software pipeline-from sales, to development, to maintenance-I hit the ground running the very next day in search of my first contract.&lt;/p&gt;
+&lt;p&gt;I wrote &lt;a href=&#34;http://brandontreb.com/what-i-learned-in-my-first-month-being-a-contract-ios-developer&#34;&gt;this blog post&lt;/a&gt; documenting that very first month.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Takeaway&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;It has been a little over a year since I’ve had a “secure” job.  I put that word in quotes because I now believe the only way to have a secure career is to make one for yourself.  You could be let go at any time, for any reason.&lt;/p&gt;
+&lt;p&gt;I was very fortunate to have a first job that allowed me to learn the needed skills to do what I’m passionate about; building consumer facing apps that get used by thousands of people.  If you want to do the same, I would encourage you to find a job that lets you explore all of the aspects of consulting to find out if it’s right for you.&lt;/p&gt;
+&lt;p&gt;Sometimes I wonder why everyone is not a consultant.  It feels so free to be able to hack outside on a nice day or go sailing with my buddies on a random Wednesday.  But that’s just one side of the coin.  Other days, I wonder why I am even doing it.  I often wish I had a simple job with a well-defined task where once I got “off work”, I could go home and not think about it again until the next day but I don’t have that luxury.  There are real risks and stresses involved with working for yourself so I urge you to weigh them out before taking the plunge.&lt;/p&gt;
+&lt;p&gt;I have received so many good questions through my last few posts about consulting.  They have inspired me and I intend on taking this year to diligently blog about topics such as finding clients, health insurance, contracts, etc.&lt;/p&gt;
+&lt;p&gt;So please share and subscribe; I hope to help you on your journey to becoming free of your corporate chains.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This post is part of a series about becoming and independent software consultant.  I am participating in this series with my good friend Josh. &lt;a href=&#34;http://joshuastephenson.com/2014/02/06/on-becoming-an-independent-software-consultant/&#34;&gt;You can read his take on this post here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What I Learned In My First Year Of iOS Consulting</title>
+      <link>https://brandontreb.ngrok.io/2014/01/01/learned-first-year-ios-consulting/</link>
+      <pubDate>Wed, 01 Jan 2014 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2014/01/01/learned-first-year-ios-consulting/</guid>
+      <description>&lt;p&gt;Wow, I can’t believe it has already been a full year since I struck it out on my own.  Last year, I &lt;a href=&#34;http://brandontreb.com/what-i-learned-in-my-first-month-being-a-contract-ios-developer&#34;&gt;published a post&lt;/a&gt; after my first month on doing contract iOS development.  Needless to say, I have grown and learned quite a bit over the past year and I wanted to share some of those experiences.&lt;/p&gt;
+&lt;h3 id=&#34;income&#34;&gt;Income&lt;/h3&gt;
+&lt;p&gt;While I won’t share exact numbers, I left my 6 figure/year job to pursue the indie/consulting life.  During the course of the year, I was able to amass 40% more income in 2013 than I had at my previous position.&lt;/p&gt;
+&lt;p&gt;In addition to that, I had the time to launch a couple iOS applications and thus upping my Apple income by about 20% this year.&lt;/p&gt;
+&lt;h3 id=&#34;network-network-network&#34;&gt;Network Network Network&lt;/h3&gt;
+&lt;p&gt;I would say spending time networking and meeting people is just as important as being able to write code if you want to be successful on your own.  Through out the year, I dedicated at least five to ten hours a week just meeting with people, talking on the phone, and making new connections.&lt;/p&gt;
+&lt;p&gt;Often times, I would get contract opportunities that I knew for sure that I wasn’t going to take; either because I didn’t love the project, or (more often than not) because I didn’t have the bandwidth to take them on.  However, rather than just writing the client back “&lt;em&gt;I don’t have time&lt;/em&gt;“, I would take the call (or meeting in town), make the connection, and even listen to details about the contract.&lt;/p&gt;
+&lt;p&gt;My wife would tell me to stop wasting my time and that those hours would be better spent on project work that actually made money.  However, these contacts are arguably &lt;strong&gt;more&lt;/strong&gt; valuable than the hours “lost”.  In many situations, I have reached out to those potential clients weeks or months later once I hired a new developer and was then able signed a contract.  If I had declined the meeting to begin with, they probably wouldn’t have been as inclined to work with me so readily.&lt;/p&gt;
+&lt;h3 id=&#34;subcontractors&#34;&gt;&lt;strong&gt;Subcontractors&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Subcontracting has been a mixed bag for me.  It seems to be the only (safe-ish) way to expand your business as a consultant, other than hiring full time developers.  So, if you want to be able to work less yourself (which is almost never the case) or increase your companies revenue, you need to hire out.  &lt;/p&gt;
+&lt;p&gt;Once I found the right people, subcontracting was a dream.  I was able to reach more clients, still deliver the same value in the work, and achieve the client’s goals, all while expanding my business.&lt;/p&gt;
+&lt;p&gt;The main challenge I have had is deciding whether to hire subcontractors from here in the states or “offshore”.  They both have their benefits and complications. Here are some I have found:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Benefits of hiring in the states:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Communication – Most of the time their timezones are close enough that one of you is not inconvenienced to communicate in real time.&lt;/li&gt;
+&lt;li&gt;Trust From Clients – Some clients still have some issues with “offshore”, especially because many of them have tried their hand at the ODesk lottery and have lost.  So, saying you have US based team members sometimes makes them more comfortable. It’s unfortunate, but I have seen it to be true in some cases.&lt;/li&gt;
+&lt;li&gt;Colleagues – Often times you already know or have worked with these guys since starting with acquaintances/friends is a good place to look for developers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Complications hiring in the states&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cost – US devs are expensive.  Most of the time they have full time jobs and want to do consulting on the side.  So it is important that they get paid more to do contract work than their day job pays.&lt;/li&gt;
+&lt;li&gt;Colleagues – This is on the negative list as well because hiring people you know can get weird if things go awry.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;**Benefit of Offshore developers **&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cost – I put this here, however that doesn’t mean I hire “cheap” developers.  Honestly, if you are not paying a contractor well, you are either under paying him and should give him a raise OR he shouldn’t be working for you as he’s probably too junior.&lt;/li&gt;
+&lt;li&gt;Perspective – I have some incredible developers in other countries that have taught me quite a bit whether it’s about development, process, culture, or even my own code.  It’s a great opportunity to learn.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;**Problems with Offshore developers **&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Location – Timezone issues &lt;em&gt;can&lt;/em&gt; be a problem if you let them.  For example, I have a developer who lives in a completely different timezone than my own.  However, he does a fantastic job of being available when he is needed.  I have had other instances where it was very challenging to reach my developer in an event where I needed information on short notice.&lt;/li&gt;
+&lt;li&gt;Vetting Process – Finding developers is a little more tricky.  With devs in the states, you can just head to a local meet up or conference, but finding GOOD “offshore” devs is a little trickier.  I have lucked out a few times, but for the most part it’s a bit more work.  I would suggest spending a little of your own money to adequately search and vet each candidate.&lt;/li&gt;
+&lt;li&gt;Language – While doing iOS development, you may need your client and your developer to communicate with one another.  That being said, it’s vital to find a developer who &lt;em&gt;you&lt;/em&gt; can understand and who can understand you in order to make communication possible.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;hiring-an-assistant&#34;&gt;Hiring An Assistant&lt;/h3&gt;
+&lt;p&gt;Taking a page from Tim Ferris’ &lt;em&gt;4 Hour Work Week&lt;/em&gt;, I decided to hire an assistant.  Ferris suggests “virtual”, however, I have hired one locally (she’ll be proofreading this post 😉 ).  I think it’s one of the best decisions I have made as a business owner.  Here is just a short list of things she handles for me:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Contracts&lt;/li&gt;
+&lt;li&gt;Invoicing&lt;/li&gt;
+&lt;li&gt;Payments of contractors&lt;/li&gt;
+&lt;li&gt;Research&lt;/li&gt;
+&lt;li&gt;Phone calls&lt;/li&gt;
+&lt;li&gt;Personal issues (like returns, purchasing equipment, etc.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Even if she saves me two hours per week, she has paid for herself, and believe me, she saves me much more than that.&lt;/p&gt;
+&lt;h3 id=&#34;never-decline-a-contract&#34;&gt;Never Decline A Contract&lt;/h3&gt;
+&lt;p&gt;I mentioned this earlier in the post, but I want to reiterate it here.  I seldom tell clients “no” and I really feel that it has worked out to my benefit.  At the very least, I hear them out and add them as a contact to keep in mind for the future.&lt;/p&gt;
+&lt;p&gt;What I generally do when I can’t take on a client is I will give them an estimate of when myself or a member of my team will be available.  That way, if they are okay with the timeline, I can keep the pipeline open.  If not, there is no harm done.  Also, if I hire another developer before the time I said I was available, sometimes the client will still have the need and I am able to fill it.&lt;/p&gt;
+&lt;p&gt;If I absolutely don’t have time or don’t want a particular contract, I will refer the client out to other dev shops.  I don’t look at this as competition, but rather opportunity as I would hope they would do the same for me one day.  As an added bonus, some of them have a referral fee so you can at least profit from pairing the client up.&lt;/p&gt;
+&lt;h3 id=&#34;taxes&#34;&gt;Taxes&lt;/h3&gt;
+&lt;p&gt;I have found out that taxes are less fun when you are self-employed than when you are employed by a business.  Luckily my wife is MUCH better at money management than I am, so she set up a separate tax account where roughly 40% of our income would go.&lt;/p&gt;
+&lt;p&gt;One of the other good decisions I made besides hiring an assistant was hiring a CPA.  She has saved me countless hours and fees and is worth her weight in gold.&lt;/p&gt;
+&lt;p&gt;Hire a CPA from day one; you will never regret it.&lt;/p&gt;
+&lt;h3 id=&#34;family&#34;&gt;Family&lt;/h3&gt;
+&lt;p&gt;I know this is a “business” related post, but I have to mention this.  Having a wife and kids, I am very much a family man.  Working for myself has been such a blessing since I have been able to spend considerably more time with my family than when I was employed by someone else.&lt;/p&gt;
+&lt;p&gt;For example, if it’s a nice summer day and the family decides to head to the zoo, I can just go without asking a boss for time off or taking PTO.  I simply work in the evening or more hours the next day to recoup the time.  Personal time management is key to be able to have this kind of freedom.&lt;/p&gt;
+&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+&lt;p&gt;Overall, 2013 was an incredible year.  While I did make mistakes (a ton), I gained so much knowledge and had a blast doing so.  Going solo isn’t for everyone (some days I wonder why everyone** isn’t** doing it, and others I wonder why I &lt;strong&gt;am&lt;/strong&gt;), but it’s been one of the most exciting experiences of my life.&lt;/p&gt;
+&lt;p&gt;I look forward to what 2014 brings and seeing how I can continue to grow my consultancy.&lt;/p&gt;
+&lt;p&gt;Happy New Year and Happy Hacking!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Top 5 Places To Find Good Software Developers/Contractors</title>
+      <link>https://brandontreb.ngrok.io/2013/08/20/the-top-5-places-to-find-good-developerscontractors-to-work-on-your-projects/</link>
+      <pubDate>Tue, 20 Aug 2013 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2013/08/20/the-top-5-places-to-find-good-developerscontractors-to-work-on-your-projects/</guid>
+      <description>&lt;p&gt;One thing I am often asked is “Where can I find good developers/contractors/subcontractors?” While I have found talent many different ways, I wanted to share my top 5 with you.&lt;/p&gt;
+&lt;p&gt;This post should be useful to you if you have a project and are looking to find a developer OR are a developer looking to subcontract some of your work.  I am sharing these based solely on my experiences with them and hope you find value in this list.&lt;/p&gt;
+&lt;h3 id=&#34;1-local-meetups&#34;&gt;1. Local Meetups&lt;/h3&gt;
+&lt;p&gt;Local meet ups are the absolute best place in my opinion to find developers.  Almost every city in the nation has some sort of group meeting on a regular bases for a given focus of development.  You should have no problems finding a rails meetup group, iOS, Android, etc…&lt;/p&gt;
+&lt;p&gt;I would suggest finding out about such meetups in your area by Googling phrases such as “[your area] iOS meetup (sub iOS for rails, python, etc…).  I regularly attend a “Cocoa Heads” group full of incredibly smart and capable mobile developers all willing to work on projects.&lt;/p&gt;
+&lt;p&gt;These types of groups are always excited to have clients come in and pitch their ideas.  One piece of advice though, don’t go in to these groups and start with “I have a great idea and I will give you a percentage of the company in exchange for development”. They will stop listening immediately.&lt;/p&gt;
+&lt;h3 id=&#34;2-popular-developersmailing-lists&#34;&gt;2. Popular Developers/Mailing Lists&lt;/h3&gt;
+&lt;p&gt;This one is going to require a bit of work and research on your part, but I will get you started.  Around the internet, there are a few of what I call “celebrity developers”.  These are generally guys who have made a name for themselves and who are established as experts in their space.&lt;/p&gt;
+&lt;p&gt;While many of them are not taking on contract work themselves, they may or may not have a mailing list of interested contractors.  One such person that does exactly this is &lt;a href=&#34;http://raywenderlich.com&#34;&gt;Ray Wenderlich&lt;/a&gt; and I happen to receive emails on his contractor list.&lt;/p&gt;
+&lt;p&gt;Even if these developers don’t have lists, they generally have plenty of connections to point you in the right direction.  Like I said, this method isn’t easy, but it can definitely have one of the biggest payoffs in terms of quality developers.&lt;/p&gt;
+&lt;h3 id=&#34;3-specialize-project-sites&#34;&gt;3. Specialize Project Sites&lt;/h3&gt;
+&lt;p&gt;As of late, quite a few interesting sites have been popping up that have solved a fundamental issue when it comes to pairing developers with projects. The problems are 1. it’s hard to find good developers and 2. it’s hard to find clients with realistic cost expectations. That’s why ODesk exists 😉&lt;/p&gt;
+&lt;p&gt;The first of these sites that I have found is &lt;a href=&#34;http://ooomf.com&#34;&gt;OOOMF&lt;/a&gt;.  OOOMF is relatively new and you must be reviewed and accepted by their team in order to be a part of it.  It’s basically a private network for pairing developers with projects and it supports all different project types (mobile, web, design, etc…).&lt;/p&gt;
+&lt;p&gt;Project owners can put their project up with a relative budget and developers can “apply”.  The process then moves forward with communication between the client and the developers until a price and scope have been reached.&lt;/p&gt;
+&lt;p&gt;There is an additional overhead of 15% for using this service, but I think it’s well worth it.&lt;/p&gt;
+&lt;p&gt;Another one of these sites that is more mobile centric is&lt;a href=&#34;http://apphappening.com&#34;&gt;http://apphappening.com&lt;/a&gt;.  This site is very new and I have only just begun to use it.  I should have a better review of them shortly.&lt;/p&gt;
+&lt;h3 id=&#34;4-twitter-and-appnethttpappnet&#34;&gt;4. Twitter and &lt;a href=&#34;http://App.net&#34;&gt;App.net&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Twitter and &lt;a href=&#34;http://app.net&#34;&gt;app.net&lt;/a&gt; are definitely the preferred social network of serious developers.  I would steer clear of Facebook and Linked in as this is generally where the recruiters hang out. Your message will most likely get dismissed as spam.&lt;/p&gt;
+&lt;p&gt;I’d suggest searching Twitter/App.net for the keywords of your project (iOS developer, rails, etc…) and find the folks with a ton of follows and a very small following to follower ratio. You will know them right away.  Also, most of their blogs come up first in Google for many related keywords.&lt;/p&gt;
+&lt;h3 id=&#34;5-developer-conferences&#34;&gt;5. Developer Conferences&lt;/h3&gt;
+&lt;p&gt;This one might cost you a bit of money, but is definitely well worth it.  There are conferences for every focus of software development and they occur all throughout the year.  These conferences generally have a HUGE percentage of professional developers who are just as eager to work on a project as you are to have them.&lt;/p&gt;
+&lt;p&gt;One of my favorite iOS conferences is &lt;a href=&#34;http://360idev.com&#34;&gt;360iDev&lt;/a&gt;. It’s very indie-centric and offers an incredible community of iOS developers of all abilities.  If you are looking to get a mobile project done, I strongly urge you to attend.  While I can’t speak for conferences in other areas(web, etc…), I would really love some suggestions in the comments of this post if you are up for it!&lt;/p&gt;
+&lt;h3 id=&#34;6-bonus--right-here&#34;&gt;6. Bonus – Right Here&lt;/h3&gt;
+&lt;p&gt;Shameless plug time.  If you are looking for professional mobile app (iOS or Android), I have a team of developers and am always looking to work on new and exciting projects.  If you want to hear more about it head over to my &lt;a href=&#34;http://pixegon.com/&#34;&gt;Hire Us&lt;/a&gt; page or shoot me an email brandon @ pixegon [dot] com.&lt;/p&gt;
+&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;Whether you are a person/company looking to hire developers or a developer looking to hire contractors, I hope you have found this post useful.  Your feedback in the comments is greatly appreciated.  Best of luck with your search!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>iPhone Programming Tutorial: Creating An Image Gallery Like Over &amp;#8211; Part 1</title>
+      <link>https://brandontreb.ngrok.io/2013/08/12/iphone-programming-tutorial-creating-an-image-gallery-like-over-part-1/</link>
+      <pubDate>Mon, 12 Aug 2013 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2013/08/12/iphone-programming-tutorial-creating-an-image-gallery-like-over-part-1/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-08-09-at-8.36.42-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-08-09-at-8.36.42-PM.png&#34; alt=&#34;Screen Shot 2013-08-09 at 8.36.42 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Recently, I have had to build an app (&lt;a href=&#34;http://j.mp/scriptapp&#34;&gt;download link&lt;/a&gt;) that required the user to choose a photo from their photo library.  Rather than just throwing up a &lt;strong&gt;UIImagePickerController&lt;/strong&gt; like many apps, I decided to add a little bit of style.  Being inspired by Over’s ultra simplistic (and beautiful) photo selection interface, I decided to fancy things up a bit.&lt;/p&gt;
+&lt;p&gt;For this tutorial, I will start with a Fresh &lt;strong&gt;iOS6&lt;/strong&gt; View-Based application that uses &lt;strong&gt;Storyboards&lt;/strong&gt; and &lt;strong&gt;ARC&lt;/strong&gt;. Also note that I will be optimizing for the iPhone 5 resolution.  You are free to make the tweaks necessary to deploy on the iPhone 4 and 4S.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Here is a breakdown of what we will cover in this part:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Creating a &lt;strong&gt;UICollectionView&lt;/strong&gt;inside of &lt;strong&gt;Storyboard&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Using the &lt;strong&gt;ALAssetsLibrary&lt;/strong&gt; to fetch photos from the user’s &lt;strong&gt;Camera Roll&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Displaying the &lt;strong&gt;ALAssets&lt;/strong&gt; inside of the &lt;strong&gt;UICollectionView&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;1-preparing-the-iboutlets&#34;&gt;1. Preparing The IBOutlets&lt;/h3&gt;
+&lt;p&gt;Start by opening up **ViewController.m **and replacing the &lt;strong&gt;@interface&lt;/strong&gt; declaration at the top with the following code:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;@interface ViewController ()&amp;lt;UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout&amp;gt;
+@property(nonatomic, weak) IBOutlet UICollectionView \*collectionView;
+@end
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;|&lt;/p&gt;
+&lt;p&gt;This will declare the **IBOutlet **needed to hook up the main &lt;strong&gt;UICollectionView&lt;/strong&gt; that we will be using to display the user’s photos.  I have also set up our class to be a &lt;strong&gt;UICollectionViewDataSource&lt;/strong&gt;, &lt;strong&gt;UICollectionViewDelegate&lt;/strong&gt;, and &lt;strong&gt;UICollectionViewDelegateFlowLayout&lt;/strong&gt;. This is necessary when interfacing with the &lt;strong&gt;UICollectionView.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2-setting-up-the-uicollectionview-in-storyboard&#34;&gt;2. Setting Up The UICollectionView In Storyboard&lt;/h3&gt;
+&lt;p&gt;Open up **MainStoryboard.storyboard **and drag a &lt;strong&gt;UICollectionView&lt;/strong&gt; on to your view ensuring that it stretches the entire screen.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-8.44.02-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-21-at-8.44.02-PM-172x300.png&#34; alt=&#34;Screen Shot 2013-07-21 at 8.44.02 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Then, &lt;strong&gt;Control-Click&lt;/strong&gt; and drag from the **UICollectionView **to your **ViewController **Object and set it as the **delegate **and &lt;strong&gt;datasource.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-21-at-8.41.29-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-21-at-8.41.29-PM.png&#34; alt=&#34;Screen Shot 2013-07-21 at 8.41.29 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Finally, **Control-Click **and drag from **View Controller **to &lt;strong&gt;Collection View&lt;/strong&gt; and selected **collectionView **to make the **IBOutlet **connection.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-21-at-8.45.05-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-21-at-8.45.05-PM.png&#34; alt=&#34;Screen Shot 2013-07-21 at 8.45.05 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now, we need to give a &lt;strong&gt;Cell Identifier&lt;/strong&gt; to the &lt;strong&gt;UICollectionViewCell&lt;/strong&gt; so that we can reference it in code.  Click on the default cell inside of the &lt;strong&gt;UICollectionView&lt;/strong&gt; and open the **Attributes Inspector. **For the &lt;strong&gt;Identifier&lt;/strong&gt; type in &lt;strong&gt;PhotoCell.&lt;/strong&gt; The cell might be a little tricky to see as its background color is clear, but it’s there. Simply click in the top left corner of the &lt;strong&gt;UICollectionView&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-9.13.08-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-21-at-9.13.08-PM-300x67.png&#34; alt=&#34;Screen Shot 2013-07-21 at 9.13.08 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now that the &lt;strong&gt;UICollectionView&lt;/strong&gt; has been set up, it’s time to fetch the photos from the user’s photo library.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;If you are using the simulator, make sure to populate the Photo Gallery with images from the web. Simply open up a browser, do a Google Image Search, and click and hold on various images. You should have an option from the menu that pops up to save the images to your camera roll.
+Finally, open up the **Photos** app on the simulator to initialize the Assets Library.
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;3-fetching-alassets-user-photos-from-the-alassets-library&#34;&gt;3. Fetching ALAssets (user photos) From The ALAssets Library&lt;/h3&gt;
+&lt;p&gt;In order to interface with the user’s photo library, we must first import the **AssetsLibrary.framework **framework.  To do this, click on your project in the sidebar, select the Target, then click **Build Phases, **expand the &lt;strong&gt;Link Binary With Libraries&lt;/strong&gt; section and click the **+ **button.  Do a search for **Assset **and then double click on &lt;strong&gt;AssetsLibrary.framework.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-8.57.37-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-21-at-8.57.37-PM-259x300.png&#34; alt=&#34;Screen Shot 2013-07-21 at 8.57.37 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It should now be added to your project and ready to use.  Now that it has been linked, we must import it into the **ViewController.m **file.  Open up **ViewController.m **and add the following import to the top of the file:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#import &amp;lt;AssetsLibrary/AssetsLibrary.h&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;|&lt;/p&gt;
+&lt;p&gt;Before we can fetch the user’s photos, we need to set up an &lt;strong&gt;NSArray&lt;/strong&gt; to put them in.  Add the following line within the **@interface **declaration at the top.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;@property(nonatomic, strong) NSArray \*assets;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;|&lt;/p&gt;
+&lt;p&gt;Now, add the following method to your class:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;+ (ALAssetsLibrary \*)defaultAssetsLibrary
+{
+    static dispatch_once_t pred = ;
+    static ALAssetsLibrary \*library = nil;
+    dispatch_once(&amp;amp;pred, ^{
+        library = [[ALAssetsLibrary alloc] init];
+    });
+    return library;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;|&lt;/p&gt;
+&lt;p&gt;This is a static method that creates a static instance to the &lt;strong&gt;ALAssetsLibrary&lt;/strong&gt;.  The reason this is needed is, when we enumerate the &lt;strong&gt;ALAssets&lt;/strong&gt; in the next method, it seems that the assets get released immediately and otherwise wouldn’t be able to be used in the rest of the application. I will explain this a little more in a moment.&lt;/p&gt;
+&lt;p&gt;Head over to &lt;strong&gt;viewDidLoad&lt;/strong&gt; and add the following code:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;- (void)viewDidLoad
+{
+    [super viewDidLoad];
+ 
+    _assets = [@[] mutableCopy];
+    __block NSMutableArray \*tmpAssets = [@[] mutableCopy];
+    // 1
+    ALAssetsLibrary \*assetsLibrary = [ViewController defaultAssetsLibrary];
+    // 2
+    [assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAll usingBlock:^(ALAssetsGroup \*group, BOOL \*stop) {
+        [group enumerateAssetsUsingBlock:^(ALAsset \*result, NSUInteger index, BOOL \*stop) {
+            if(result)
+            {
+                // 3
+                [tmpAssets addObject:result];
+            }
+        }];
+ 
+        // 4
+        //NSSortDescriptor \*sort = [NSSortDescriptor sortDescriptorWithKey:@&amp;#34;date&amp;#34; ascending:NO];
+        //self.assets = [tmpAssets sortedArrayUsingDescriptors:@[sort]];
+        self.assets = tmpAssets;
+ 
+        // 5
+        [self.collectionView reloadData];
+    } failureBlock:^(NSError \*error) {
+        NSLog(@&amp;#34;Error loading images %@&amp;#34;, error);
+    }];
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;|&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Grab our static instance of the &lt;strong&gt;ALAssetsLibrary&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Enumerate through all of the **ALAssets **(photos) in the user’s &lt;strong&gt;Asset Groups&lt;/strong&gt; (Folders)&lt;/li&gt;
+&lt;li&gt;Enumerate each folder and add it’s **ALAssets **to the temporary array&lt;/li&gt;
+&lt;li&gt;Sort the assets list by date (this won’t work yet, but I will show you how to fix later). For now this code is commented out and the Assets will be sorted however they come out.&lt;/li&gt;
+&lt;li&gt;Reload the &lt;strong&gt;UICollectionView&lt;/strong&gt; (this won’t work yet as we haven’t set up the delegate methods)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now that we have an &lt;strong&gt;NSArray&lt;/strong&gt; populated with &lt;strong&gt;ALAssets&lt;/strong&gt;, let’s set up the **delegate **methods for the &lt;strong&gt;UICollectionView&lt;/strong&gt; in order to populate it with data.&lt;/p&gt;
+&lt;h3 id=&#34;4-populating-the-uicollectionview-with-data&#34;&gt;4. Populating the UICollectionView With Data&lt;/h3&gt;
+&lt;p&gt;A &lt;strong&gt;UICollectionView&lt;/strong&gt; functions much like a **UITableView **having delegate and datasource methods.  Add the following methods to your &lt;strong&gt;ViewController&lt;/strong&gt; class to populate the view.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#pragma mark - collection view data source
+ 
+- (NSInteger) collectionView:(UICollectionView \*)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return self.assets.count;
+}
+ 
+- (UICollectionViewCell \*) collectionView:(UICollectionView \*)collectionView cellForItemAtIndexPath:(NSIndexPath \*)indexPath
+{
+    UICollectionViewCell \*cell = (UICollectionViewCell \*)[collectionView dequeueReusableCellWithReuseIdentifier:@&amp;#34;PhotoCell&amp;#34; forIndexPath:indexPath];
+ 
+    ALAsset \*asset = self.assets[indexPath.row];
+    //cell.asset = asset;
+    cell.backgroundColor = [UIColor redColor];
+ 
+    return cell;
+}
+ 
+- (CGFloat) collectionView:(UICollectionView \*)collectionView layout:(UICollectionViewLayout \*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
+{
+    return 4;
+}
+ 
+- (CGFloat) collectionView:(UICollectionView \*)collectionView layout:(UICollectionViewLayout \*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
+{
+    return 1;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;|&lt;/p&gt;
+&lt;p&gt;This code should be fairly straight forward if you have ever worked with a &lt;strong&gt;UITableView.&lt;/strong&gt;  The only lines to note are where ‘cell.asset = asset’ is commented out and we set the cell’s background color to red.  We will uncomment that line when we create a custom cell to display the image (for now it won’t).  I have also set the background color to red so that you can see that the number of cells is actually corresponding to the number of photos in the camera roll.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Build and Run!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Let’s take a break to do a build and run to see what happens.  If you have hooked everything up correctly, you should see a black screen with red squares on it with a count equalling the number of photos in the user’s library.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-9.26.07-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-21-at-9.26.07-PM-184x300.png&#34; alt=&#34;Screen Shot 2013-07-21 at 9.26.07 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Not too exciting, however it shows that we are displaying a number of cells corresponding to the number of photos in the user’s asset library.  At least it’s showing that you have done something.  The next step is to create a custom &lt;strong&gt;UICollectionViewCell&lt;/strong&gt; that actually displays the photos, which we will do next time.&lt;/p&gt;
+&lt;h3 id=&#34;5-next-time&#34;&gt;5. Next Time&lt;/h3&gt;
+&lt;p&gt;That’s all for today.  In a ploy to get you to come back to my site (and &lt;a href=&#34;http://feeds.feedburner.com/brandontreb&#34;&gt;subscribe to my RSS feed&lt;/a&gt;), I have chosen to break this post up into two parts.&lt;/p&gt;
+&lt;p&gt;Luckily for you, I wrote the above message a while ago. Click the link below to go to part 2!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/iphone-programming-tutorial-creating-an-image-gallery-like-over-part-2&#34;&gt;iPhone Programming Tutorial: Creating An Image Gallery Like Over – Part 2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Stay tuned!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>5 Third Party iOS Libraries I Have Found Useful Lately</title>
+      <link>https://brandontreb.ngrok.io/2012/08/24/5-third-party-ios-libraries-i-have-found-useful-lately/</link>
+      <pubDate>Fri, 24 Aug 2012 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2012/08/24/5-third-party-ios-libraries-i-have-found-useful-lately/</guid>
+      <description>&lt;p&gt;As I mature as a developer, I try to rely on other people’s code more an more. Why build something from scratch when a solution already exists that you can fit in your project. In &lt;a href=&#34;http://itunes.apple.com/us/app/pocket-mud-pro/id511678455?mt=8&#34;&gt;Pocket MUD Pro&lt;/a&gt;, I used &lt;strong&gt;13&lt;/strong&gt; 3rd party libraries and am using quite a bit more in the project that I’m currently working on. I figured that I would share some of the libraries that I have been using so that it might save you some time in the future.&lt;/p&gt;
+&lt;h2 id=&#34;1-cocoaasyncsocket&#34;&gt;1. CocoaAsyncSocket&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Link:&lt;/strong&gt; &lt;a href=&#34;https://github.com/robbiehanson/CocoaAsyncSocket&#34;&gt;https://github.com/robbiehanson/CocoaAsyncSocket&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Many of my applications involve TCP or UDP networking. There is a lot of boiler plate code involved in every networked application, and CocoaAsyncSocket solves much of that for you.&lt;/p&gt;
+&lt;h2 id=&#34;2-appirater&#34;&gt;2. Appirater&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Link:&lt;/strong&gt; &lt;a href=&#34;http://github.com/arashpayan/appirater/&#34;&gt;http://github.com/arashpayan/appirater/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2012/AppiraterScreenshot.png&#34; alt=&#34;Screenshot&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Hopefully, you have heard of this one or a similar library by now. It’s very challenging to get users to want to review your applications, let alone give you a positive review. AppiRater allows you to prompt a user to rate your application based on either number of launches or “significant events” which you specify.&lt;/p&gt;
+&lt;h2 id=&#34;3-zip-archive&#34;&gt;3. Zip Archive&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Link:&lt;/strong&gt; &lt;a href=&#34;http://code.google.com/p/ziparchive/&#34;&gt;http://code.google.com/p/ziparchive/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I try to ship small applications that download assets upon launch. A good way to send these assets over the wire is to zip them up and stick them on your server. I have written an article about this on &lt;a href=&#34;http://www.icodeblog.com/2012/08/13/unzipping-files-using-zip-archive/&#34;&gt;iCodeBlog&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;4-quick-dialog&#34;&gt;4. Quick Dialog&lt;/h2&gt;
+&lt;p&gt;**Link: ** &lt;a href=&#34;https://github.com/escoz/QuickDialog&#34;&gt;https://github.com/escoz/QuickDialog&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Creating forms in iOS is pretty painful. It usually involves custom table cells and a lot of delegate nonsense. QuickDialog takes away some of this pain and allows you to easily create iOS forms. You can even design them using JSON.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2012/quickdialog2.png&#34; alt=&#34;QuickDialog Screenshot&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;5-tsminiwebbrowser&#34;&gt;5. TSMiniWebBrowser&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Link:&lt;/strong&gt; &lt;a href=&#34;https://github.com/tonisalae/TSMiniWebBrowser&#34;&gt;https://github.com/tonisalae/TSMiniWebBrowser&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Often times, you want a quick and dirty browser in your application. I generally use it to point to in-app documentation or take the user to a page after tapping on a link. It’s quick and easy.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2012/687474703a2f2f646c2e64726f70626f782e636f6d2f752f373630343232322f4769744875622f54534d696e6957656242726f777365722f73686f745f30315f7468756d622e706e67&#34; alt=&#34;Screenshot&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I hope you find some value in this list. I’d love to hear about the libraries &lt;strong&gt;you&lt;/strong&gt; use frequently.&lt;/p&gt;
+&lt;p&gt;Happy Coding!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Beginning Jailbroken iOS Development &amp;#8211; Building And Deployment</title>
+      <link>https://brandontreb.ngrok.io/2011/04/22/beginning-jailbroken-ios-development-building-and-deployment/</link>
+      <pubDate>Fri, 22 Apr 2011 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2011/04/22/beginning-jailbroken-ios-development-building-and-deployment/</guid>
+      <description>&lt;p&gt;Welcome to the next installment of my jailbroken iOS development series. If you haven’t already done so, read my previous post to get up to speed.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://brandontreb.ngrok.io/beginning-jailbroken-ios-development-getting-the-tools/&#34;&gt;Beginning Jailbroken iOS Development – Getting The Tools&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now that your environment has been set up, it’s time to start hacking your project, building, and deploying it. This tutorial will be fairly quick and will just demonstrate how to build a .deb file and install it on your device. This will not cover creating a Cydia repository for public access (this is for a later tutorial).&lt;/p&gt;
+&lt;h4 id=&#34;introduction&#34;&gt;Introduction&lt;/h4&gt;
+&lt;p&gt;Start by creating a simple project. Refer to the &lt;a href=&#34;https://brandontreb.ngrok.io/beginning-jailbroken-ios-development-getting-the-tools/&#34;&gt;previous tutorial&lt;/a&gt; to determine how to do this. I will use the example of the #1 iphone/application and will be calling it fooProject.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’bash’&amp;gt;$/opt/theos/bin/nic.pl
+NIC 1.0 - New Instance Creator
+——————————
+  [1.] iphone/application
+  [2.] iphone/library
+  [3.] iphone/preference_bundle
+  [4.] iphone/tool
+  [5.] iphone/tweak
+Choose a Template (required): 1
+Project Name (required): fooProject
+Package Name [com.yourcompany.fooproject]:    
+Author/Maintainer Name [Brandon Trebitowski]: 
+Instantiating iphone/application in fooproject/…
+Done.&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This will create a new directory for our project with the following files.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;control&lt;/strong&gt;: Contains information about your application/tweak. This is the info you see when you install something from Cydia (name, author, version, etc…)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[applicationName]&lt;a href=&#34;http://Application.mm&#34;&gt;Application.mm&lt;/a&gt;&lt;/strong&gt;: This is essentially your appDelegate file. It creates a window, adds your RootViewController and displays it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;main.m&lt;/strong&gt; : Same main file that you would use in an iPhone project. Just initializes your [applicationName]&lt;a href=&#34;http://Application.mm&#34;&gt;Application.mm&lt;/a&gt; file on launch.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Makefile&lt;/strong&gt;: contains the necessary build commands to compile your project. I’ll go over this in detail in a bit&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Resources&lt;/strong&gt;: This folder contains your info.plist and is also where you can place all of your images&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RootViewController.h/mm&lt;/strong&gt;: A simple view controller&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;the-makefile&#34;&gt;The Makefile&lt;/h4&gt;
+&lt;p&gt;theos provides some great tools that simplify the build process as much as possible. I know some of you might shudder at the sound of a Makefile, but trust me, it’s very painless.&lt;/p&gt;
+&lt;p&gt;Let’s first take a look at the anatomy of the Makefile that was generated.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’bash’&amp;gt;include theos/makefiles/common.mk&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This line simply tells theos to include the common make commands in your build script to save you some work.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’bash’&amp;gt;APPLICATION_NAME = fooProject&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The name of the application we are building. The Makefile will use this constant to do a number of things under the hood. Don’t modify this unless your application changes names.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’bash’&amp;gt;[applicationName]_FILES = main.m fooProjectApplication.mm RootViewController.mm&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This is the meat of the Makefile. It’s the list of m (or mm in this case) files that need to be compiled. *Note: you do not add your .h files here. So, whenever you add a new .m file to the project, make sure to append it to this list or it won’t get built.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’bash’&amp;gt;[applicationName]_FRAMEWORKS = UIKit Foundation QuartzCore AudioToolbox CoreGraphics&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This line is not included by default, but is needed if you want to use ANY frameworks; be them Apple’s or h4x0red ones.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’bash’&amp;gt;include $(THEOS_MAKE_PATH)/application.mk&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;More defaults to help theos build your project.&lt;/p&gt;
+&lt;h4 id=&#34;setting-up-your-environment&#34;&gt;Setting up Your Environment&lt;/h4&gt;
+&lt;p&gt;Do you remember in the last tutorial that we had to set an environment variable in order to use theos? Well, we need to set a couple more to build and deploy.&lt;/p&gt;
+&lt;p&gt;Here are the 3 that you MUST have.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’bash’&amp;gt;export THEOS=/opt/theos/
+export SDKVERSION=4.3
+export THEOS_DEVICE_IP=192.168.1.122&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2011/sbsettings.png&#34; alt=&#34;&#34;&gt;
+The first line, you should have already done. Otherwise you would not have been able to run the nic tool above. The second defines your current SDK version. This will tell theos where to look for your frameworks and whatnot. (ex If you only have 4.2 installed, set this to 4.2). Finally, the last line, tells theos the ip address of your device.&lt;/p&gt;
+&lt;p&gt;Once theos does the package install, it will sftp the package to your device for installation. One thing to note here is your iPhone MUST be on the same network as the computer you are developing on.&lt;/p&gt;
+&lt;p&gt;If you don’t know your device’s ip address, it’s in the SBSettings menu. If you don’t have SBSettings, go download it from Cydia and think about why you would have a jailbroken device without this app installed…&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h4 id=&#34;building-the-project&#34;&gt;Building The Project&lt;/h4&gt;
+&lt;p&gt;Building is just as easy as running the make command inside of your project’s root directory.&lt;/p&gt;
+&lt;p&gt;Here is an example of building my fooProject app using the command:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;make&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’bash’&amp;gt;$ make
+Making all for application fooProject…
+ Compiling main.m…
+ Compiling fooProjectApplication.mm…
+ Compiling RootViewController.mm…
+ Linking application fooProject…
+ Stripping fooProject…
+ Signing fooProject…&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If your project contains errors, they will be flushed out here. Also, theos treats warnings as errors (as should you) 😉 . So, if you have any warnings you won’t be able to build.&lt;/p&gt;
+&lt;p&gt;When you are ready to distribute your application, you must build a .deb package. Luckily, theos does this for us with a simple command:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;make package&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’bash’&amp;gt;make package
+Making all for application fooProject…
+make[2]: Nothing to be done for ‘internal-application-compile’.
+Making stage for application fooProject…
+ Copying resource directories into the application wrapper…
+dpkg-deb: building package ‘com.yourcompany.fooproject’ in ‘/Users/brandontreb/Desktop/fooproject/com.yourcompany.fooproject_0.0.1-1_iphoneos-arm.deb’.&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You should now see a file like &lt;em&gt;com.yourcompany.fooproject_0.0.1-1_iphoneos-arm.deb&lt;/em&gt; in your project’s root directory. One great feature of theos is it handles versioning automatically. So subsequent builds will increment the build number. If you change your version in the info.plist file, it will start the build counter over (2-1, 2-2, etc…).&lt;/p&gt;
+&lt;p&gt;At this point, you &lt;em&gt;could&lt;/em&gt; sftp this file to your device and run:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’bash’&amp;gt;dpkg -i com.yourcompany.fooproject_0.0.1-1_iphoneos-arm.deb&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;as root to test the installation. However, that is quite a bit of a pain. Luckily, theos will do all of this for you by simply using the command:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;make package install&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’bash’&amp;gt;$ make package install
+Making all for application fooProject…
+make[2]: Nothing to be done for `internal-application-compile’.
+Making stage for application fooProject…
+ Copying resource directories into the application wrapper…
+dpkg-deb: building package ‘com.yourcompany.fooproject’ in ‘/Users/brandontreb/Desktop/fooproject/com.yourcompany.fooproject_0.0.1-3_iphoneos-arm.deb’.
+install.copyFile &amp;#34;/Users/brandontreb/Desktop/fooproject/com.yourcompany.fooproject_0.0.1-3_iphoneos-arm.deb&amp;#34; &amp;#34;com.yourcompany.fooproject_0.0.1-3_iphoneos-arm.deb&amp;#34;
+root@192.168.1.122’s password: 
+com.yourcompany.fooproject_0.0.1-3_iphoneos-arm.deb                                                                                                                                                                                                                              100% 4434     4.3KB/s   00:00    
+install.exec &amp;#34;dpkg -i com.yourcompany.fooproject_0.0.1-3_iphoneos-arm.deb&amp;#34;
+root@192.168.1.122’s password: 
+Selecting previously deselected package com.yourcompany.fooproject.
+(Reading database … 2006 files and directories currently installed.)
+Unpacking com.yourcompany.fooproject (from com.yourcompany.fooproject_0.0.1-3_iphoneos-arm.deb) …
+Setting up com.yourcompany.fooproject (0.0.1-3) …&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You will have to enter your password several times during the process. The default is &lt;strong&gt;alpine&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;After this has been run, you will need to restart (or respring) your iPhone. Respringing takes a simple button tap if you have SBSettings installed (have you installed it yet?).&lt;/p&gt;
+&lt;h4 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h4&gt;
+&lt;p&gt;You now have all of the tools needed to start hacking your very first jailbroken iOS application. In the next tutorial, we are going to learn about MobileSubstrate hacks and how to overwrite Apple functionality. I will give a basic example of how to display an alert message every time your device boots up.&lt;/p&gt;
+&lt;p&gt;Until next time, happy hacking!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My Journey To Create The inPulseNotifier For Jailbroken iPhones &amp;#8211; Part 2</title>
+      <link>https://brandontreb.ngrok.io/2011/04/13/my-journey-to-create-the-inpulsenotifier-for-jailbroken-iphones-part-2/</link>
+      <pubDate>Wed, 13 Apr 2011 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2011/04/13/my-journey-to-create-the-inpulsenotifier-for-jailbroken-iphones-part-2/</guid>
+      <description>&lt;p&gt;This post is a continuation from my previous post &lt;a href=&#34;https://brandontreb.ngrok.io/my-journey-to-create-the-inpulsenotifier-for-jailbroken-iphones-part-1/&#34;&gt;found here&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;a-mobilesubstrate-tweak&#34;&gt;A MobileSubstrate Tweak?&lt;/h4&gt;
+&lt;p&gt;After I completed a basic app that allowed me to send various notification types from my iPhone to my inPulse watch, I quickly realized that this would not work if I wanted to hook into the iPhone’s notification system. A Google search revealed to me that I had to make MobileSubstrate hack to overwrite the default notification functionally.&lt;/p&gt;
+&lt;p&gt;** What the heck is Mobile Substrate? **&lt;/p&gt;
+&lt;p&gt;Here is the description according to &lt;a href=&#34;http://iphonedevwiki.net/index.php/MobileSubstrate&#34;&gt;iPhoneDevWiki.net&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;MobileSubstrate is the de facto framework that allows 3rd-party developers to provide run-time&lt;/p&gt;
+&lt;p&gt;patches (“MobileSubstrate extensions”) to system functions, similar to Application Enhancer on&lt;/p&gt;
+&lt;p&gt;the OS X. MobileSubstrate consists of 3 major components: MobileHooker, MobileLoader and safe mode.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Basically, it allows you to “hook” into any method of any class on the iPhone. I will talk in a later tutorial about how to see what methods are available. Here is a sample for hooking into the CFShow() method:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’objc’&amp;gt;static void (*original_CFShow)(CFTypeRef obj);  // a function pointer to store the original CFShow().
+void replaced_CFShow(CFTypeRef obj) {           // our replacement of CFShow().
+  printf(&amp;#34;Calling original CFShow(%p)…&amp;#34;, obj);
+  original_CFShow(obj);                         // calls the original CFShow.
+  printf(&amp;#34; done.\n&amp;#34;);
+}
+…
+// hook CFShow to our own implementation.
+MSHookFunction(CFShow, replaced_CFShow, &amp;amp;original_CFShow);
+// From now on any call to CFShow will pass through replaced_CFShow first.
+…
+CFShow(CFSTR(&amp;#34;test&amp;#34;));&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Yeah… this looks pretty intense. Luckily, I found a super helpful tool that greatly simplifies this process called &lt;a href=&#34;http://iphonedevwiki.net/index.php/Theos/Getting_Started&#34;&gt;theos&lt;/a&gt;. Check out my &lt;a href=&#34;https://brandontreb.ngrok.io/beginning-jailbroken-ios-development-getting-the-tools/&#34;&gt;tutorial on getting started with theos&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;What lead me to theos was the incredible work of &lt;a href=&#34;http://www.peterhajas.com/&#34;&gt;Peter Hajas&lt;/a&gt;. He wrote and &lt;a href=&#34;https://github.com/peterhajas/MobileNotifier&#34;&gt;open sourced&lt;/a&gt; his fantastic notifications app called Mobile Notifier. Without it, I would have been dead in the water. After chatting downloading his code and nagging him on &lt;a href=&#34;https://twitter.com/#!/peterhajas&#34;&gt;Twitter&lt;/a&gt;, he pointed me to theos.&lt;/p&gt;
+&lt;h4 id=&#34;working-with-theos&#34;&gt;Working With theos&lt;/h4&gt;
+&lt;p&gt;As I mentioned in &lt;a href=&#34;https://brandontreb.ngrok.io/beginning-jailbroken-ios-development-getting-the-tools/&#34;&gt;my tutorial&lt;/a&gt;, theos is a great tool to aid in the development of a Mobile Substrate Tweak. Instead of the complexities above to hook into the functionality of classes, you simply do something like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’objc’&amp;gt;%hook SpringBoard
+-(void)applicationDidFinishLaunching:(id)application
+{  
+
+%orig;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;INPreferenceManager *preferenceManager = [[[INPreferenceManager alloc] init] autorelease];
+BOOL enabled = [[preferenceManager.preferences valueForKey:@&amp;ldquo;inpulseEnabled&amp;rdquo;] boolValue];
+if(enabled) {
+manager = [[INAlertManager alloc] init];
+[manager connectToWatch];
+}&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+}
+
+
+* (void) dealloc {
+[manager release];
+manager = nil;
+%orig;
+}
+
+
+%end;&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This is a simple hook that allows me to overwrite the functionality of Springboard’s applicationDidFinishLaunching method. &lt;a href=&#34;https://twitter.com/#!/dhowett&#34;&gt;DHowett&lt;/a&gt; (creator of theos), has done a brilliant job giving devs quite a few commands like %orig (which calls the original method) and %hook (starts a hook).&lt;/p&gt;
+&lt;p&gt;The reason this works is, the file you code in (called Tweaks.xm) gets run through a preprocessor called Logos (which he also wrote). It replaces these simple commands with the complex stuff you see above before compiling your project. Using this technique, you can hook into anything. I will have a tutorial on this in the very near future, so make sure you &lt;a href=&#34;feeds.feedburner.com/brandontreb&#34;&gt;subscribe to my RSS feed&lt;/a&gt; if you haven’t already.&lt;/p&gt;
+&lt;h4 id=&#34;copy-and-paste&#34;&gt;Copy And Paste&lt;/h4&gt;
+&lt;p&gt;OK, so I copied some of Peter’s code (he’s well cited in the source and I kept his license in the headers too). He had already solved the problem of capturing most of the iPhone’s notifications and this is precisely what I needed. So I Frankensteined my code and his to create the first version of &lt;a href=&#34;https://github.com/brandontreb/inPulseNotifier&#34;&gt;inPulseNotifier&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This current version supports SMS, Push Notifications, Local Notifications, and Calendar Notifications.&lt;/p&gt;
+&lt;h4 id=&#34;deployment&#34;&gt;Deployment&lt;/h4&gt;
+&lt;p&gt;Even though I open sourced the code for the app, I couldn’t possibly expect users to build the code themselves and install it on their devices. So I had to learn about setting up my own Cydia repository.&lt;/p&gt;
+&lt;p&gt;A Cydia repository allows users to browse your applications/tweaks through the Cydia application &lt;a href=&#34;http://www.saurik.com/&#34;&gt;created by Saurik&lt;/a&gt;. This is the method of choice for deploying jailbroken iPhone applications.&lt;/p&gt;
+&lt;p&gt;Saurik has a very detailed tutorial on creating a Cydia repository &lt;a href=&#34;http://www.saurik.com/id/7&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;(In case you are wondering, my Cydia repo is hosted at &lt;a href=&#34;http://brandontreb.com/cydia&#34;&gt;http://brandontreb.com/cydia&lt;/a&gt; )&lt;/p&gt;
+&lt;h4 id=&#34;ok-how-do-i-install-it&#34;&gt;OK, How Do I Install It?&lt;/h4&gt;
+&lt;p&gt;Great question I assume you might ask. I have written a tutorial about installing it on your iPhone &lt;a href=&#34;http://www.getinpulse.com/hack/forum/viewtopic.php?p=545#p545&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;plans-for-the-future&#34;&gt;Plans For The Future&lt;/h4&gt;
+&lt;p&gt;Well, at the moment development has slowed as I prepare for a few changes in my life. However, in the coming months, I intend on doing the following updates.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Remove the dependency on Insomnia for preventing the phone from sleeping. I have found a version of their source that I can integrate into my own code.&lt;/li&gt;
+&lt;li&gt;Add support for phone calls&lt;/li&gt;
+&lt;li&gt;Add support for emails&lt;/li&gt;
+&lt;li&gt;Create an SBSettings toggle to allow rapid enabling/disabling&lt;/li&gt;
+&lt;li&gt;Auto-reconnect after disconnecting from the watch&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h4&gt;
+&lt;p&gt;Hacking for the inPulse watch has been a new and exciting experience. The team over there has really created something special and I can’t wait to see what the future holds for them (hopefully a touchscreen).&lt;/p&gt;
+&lt;p&gt;I’d love to hear your thoughts in the comments. And &lt;a href=&#34;feeds.feedburner.com/brandontreb&#34;&gt;stay tuned&lt;/a&gt; for some jailbroken dev tutorials based on my experiences.&lt;/p&gt;
+&lt;p&gt;Happy Coding!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My Journey To Create The inPulseNotifier For Jailbroken iPhones &amp;#8211; Part 1</title>
+      <link>https://brandontreb.ngrok.io/2011/04/12/my-journey-to-create-the-inpulsenotifier-for-jailbroken-iphones-part-1/</link>
+      <pubDate>Tue, 12 Apr 2011 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2011/04/12/my-journey-to-create-the-inpulsenotifier-for-jailbroken-iphones-part-1/</guid>
+      <description>&lt;p&gt;Many of you may have seen my tweets or blog posts regarding my development of a native iOS interface for the &lt;a href=&#34;http://getinpulse.com&#34;&gt;inPulse Watch&lt;/a&gt;. I just wanted to share a bit with you about the development process and talk about my updates moving forward.&lt;/p&gt;
+&lt;h4 id=&#34;what-is-the-inpulse-watch&#34;&gt;What is the inPulse Watch?&lt;/h4&gt;
+&lt;p&gt;For those of you who don’t know, the inPulse watch is a programmable wristwatch with a bluetooth controller. It can run a single app at a time on top of it’s firmware that is installed on the watch via a bluetooth interface with your computer. People have written all sorts of apps from analog clocks to roguelikes and Connway’s Game of Life. Check out &lt;a href=&#34;http://inpulsewatch.com/watchapps.asp&#34;&gt;http://inpulsewatch.com/watchapps.asp&lt;/a&gt; to see the latest apps.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2011/inPulse.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2011/logo14.JPG&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2011/logo12.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&amp;amp;nbsp&lt;/p&gt;
+&lt;h4 id=&#34;it-begins&#34;&gt;It Begins&lt;/h4&gt;
+&lt;p&gt;After waiting about 10 days for my watch (yeah it’s a long waiting period since they have seen quite a bit of recent success), it finally came in the mail. Enthusiastically, I opened it up and followed their &lt;a href=&#34;http://www.getinpulse.com/guide/&#34;&gt;getting started guide&lt;/a&gt;. Within a few minutes I was running some of the sample applications in the forums.&lt;/p&gt;
+&lt;h4 id=&#34;no-ios-support&#34;&gt;No iOS Support?&lt;/h4&gt;
+&lt;p&gt;One of the coolest features of the watch is the ability to have your smartphone notifications show up on it. You are able to read SMS, Email, Calendar, etc… for a wide variety of Blackberry and Android phones.&lt;/p&gt;
+&lt;p&gt;After digging around a bit, I was disappointed to see that there was limited (no) iPhone support. They had some old file that used BTStack at some point to communicate a simple canned message to the iPhone. No documentation, no support, nada.&lt;/p&gt;
+&lt;h4 id=&#34;building-the-app&#34;&gt;Building The App&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2011/logo?cct=1278342571&#34; alt=&#34;&#34;&gt;
+As I had no experience developing for a jailbroken iPhone, I had no idea how to even compile this sample app. So, I used the Google machine and found the &lt;a href=&#34;http://code.google.com/p/btstack/&#34;&gt;Google repository&lt;/a&gt; for BTStack (the bluetooth library of choice for jailbroken iOS apps). I was able to download the source and build a sample application that basically connected my iPhone to a bluetooth device.&lt;/p&gt;
+&lt;p&gt;Well, this got me started. So I did what any curious developer would do and started plugging crap in. I replaced the sample file that was packaged with BTStack with a slightly modified version of inPulse’s sample iPhone file. Sure enough, I was able to build and install it.&lt;/p&gt;
+&lt;h4 id=&#34;we-have-connection&#34;&gt;We Have Connection&lt;/h4&gt;
+&lt;p&gt;After figuring out how to hardcode my watch’s address into the source, I was able to determine that the iPhone had actually connected to the watch. I monitored the packets and threw up an alert view (No NSLogging available at this point) when a connection was made.&lt;/p&gt;
+&lt;p&gt;So, now that we are connected, let’s trying sending the sample message…fail! I couldn’t even send the time.&lt;/p&gt;
+&lt;p&gt;At this point, I decided to move the code I had written into a sample iPhone project so that I could do attached debugging. This showed me that the packets were arriving on the watch since I received an ack packet back. So, the watch sees the messages, but doesn’t consider them notifications.&lt;/p&gt;
+&lt;h4 id=&#34;time-to-hit-the-docs&#34;&gt;Time to hit the docs&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2011/pulse_protocol.png&#34; alt=&#34;&#34;&gt;
+Knowing that the packets were received gave me quite a bit of hope. I figured that I must have had the protocol incorrect. So, I dug into the inPulse protocol document which outlined what the packet structures should look like. My C skills aren’t the strongest so I had to look up quite a few things.
+Sure enough, they had upped the version number of their protocol by 1 and mine was outdated. So, I updated what I could and gave it another shot…fail.&lt;/p&gt;
+&lt;p&gt;No messages were displaying. At this point I was ready to give up. I read online somewhere that the BT implementation on the watch was not supported by inPulse and felt dead in the water. So I took a break for a couple days.&lt;/p&gt;
+&lt;p&gt;When I came back to it, I was tapping through my watch and noticed that the calendar appointments had some data in them on the watch. Could it be? Did my notifications arrive? (I was trying to send SMS notifications). So I dug into the docs again…&lt;/p&gt;
+&lt;h4 id=&#34;we-have-a-message&#34;&gt;We have a message!!!&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2011/hello_world.jpg&#34; alt=&#34;&#34;&gt;
+Sure enough, I had some fields declared as * uint16_t * when they should have been * uint8_t * . My headers were the wrong size!!! All of a sudden I was able to send every type of notification to the watch and have it displayed.&lt;/p&gt;
+&lt;p&gt;It was now time to build out an actual application for release to inPulse. The next hurdle would be hooking into the iPhone’s messaging system and forwarding along the messages. Now the real iPhone hacking begins.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://brandontreb.ngrok.io/my-journey-to-create-the-inpulsenotifier-for-jailbroken-iphones-part-2&#34;&gt;This post is continued here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Beginning Jailbroken iOS Development &amp;#8211; Getting The Tools</title>
+      <link>https://brandontreb.ngrok.io/2011/04/11/beginning-jailbroken-ios-development-getting-the-tools/</link>
+      <pubDate>Mon, 11 Apr 2011 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2011/04/11/beginning-jailbroken-ios-development-getting-the-tools/</guid>
+      <description>&lt;p&gt;Developing for &lt;a href=&#34;http://en.wikipedia.org/wiki/IOS_jailbreaking&#34;&gt;jailbroken&lt;/a&gt; is actually quite similar to regular iOS development with one addition. More Power! oh oh oh (said in a Tim Taylor voice (sorry for non-Americans that don’t get the reference)). With your device jailbroken, you have the ability to hook in to pretty much every class that Apple writes allowing you quite a bit of control over the iPhone’s functionality.&lt;/p&gt;
+&lt;p&gt;In today’s tutorial, I will simply be discussing the best way to get up and running with the tools necessary to write a jailbroken iPhone app. We will not be doing any coding, however this tutorial will be necessary for all posts going forward.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Theos&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;There are many ways to go about writing a jailbroken iOS app. Most of them are quite complex. &lt;a href=&#34;http://twitter.com/dhowett&#34;&gt;@DHowett&lt;/a&gt; has come up with a brilliant tool called &lt;a href=&#34;http://iphonedevwiki.net/index.php/Theos/Getting_Started&#34;&gt;theos&lt;/a&gt; which drastically simplifies the process. My tutorial will pretty much be a regurgitation of his tutorial &lt;a href=&#34;http://iphonedevwiki.net/index.php/Theos/Getting_Started&#34;&gt;found here&lt;/a&gt; with some added cheesy jokes.&lt;/p&gt;
+&lt;p&gt;Theos is a command line utility that essentially generates a template for creating applications, libraries, preference bundles, tools, and mobile substrate hacks. These cover 99% of the jailbroken apps that you are likely to create.&lt;/p&gt;
+&lt;p&gt;One thing to note is DHowett talks about doing jailbroken iOS development on both Mac and Linux; my tutorials will be Mac-only.&lt;/p&gt;
+&lt;h4 id=&#34;step-1-install-the-ios-sdk&#34;&gt;Step 1: Install the iOS SDK&lt;/h4&gt;
+&lt;p&gt;You will first need to install the official iOS SDK.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://developer.apple.com/devcenter/ios/index.action&#34;&gt;http://developer.apple.com/devcenter/ios/index.action&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can register for a free account and download the latest SDK. Once installed reboot your Mac and come back here. I’ll wait…&lt;/p&gt;
+&lt;h4 id=&#34;step-2-setting-up-the-environment-variables&#34;&gt;Step 2: Setting Up The Environment Variables&lt;/h4&gt;
+&lt;p&gt;Start by deciding on a good location to install theos. The suggested location is &lt;em&gt;/opt/theos&lt;/em&gt;. The only issue with doing it here is you will need to have administrator permissions as well as have to enter your password when updating files. For teaching purposes, I am going to assume you will install it here too.&lt;/p&gt;
+&lt;p&gt;Open the terminal and type:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’bash’&amp;gt;export THEOS=/opt/theos&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;What we are doing is setting an environment variable. You can always see if this variable is set by typing &lt;em&gt;echo $THEOS&lt;/em&gt; in the command line. It will need to be (re)set every time you reopen the terminal to develop a jailbroken app.&lt;/p&gt;
+&lt;h4 id=&#34;step-3-getting-theos&#34;&gt;Step 3: Getting theos&lt;/h4&gt;
+&lt;p&gt;DHowett uses subversion for version control on theos, so you need to make sure and have it installed. If you followed step one above, it should have been installed by default. We will be checking out theos into the THEOS directory specified in step 2.&lt;/p&gt;
+&lt;p&gt;In the terminal type:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’bash’&amp;gt;svn co http://svn.howett.net/svn/theos/trunk $THEOS&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You most likely will be asked for your password. You should now see the &lt;em&gt;/opt/theos&lt;/em&gt; directory created with theos installed.&lt;/p&gt;
+&lt;h4 id=&#34;step-4-getting-ldid&#34;&gt;Step 4: Getting ldid&lt;/h4&gt;
+&lt;p&gt;We now need to install the ldid tool. ldid is a tool written by &lt;a href=&#34;http://www.saurik.com/&#34;&gt;Saurik&lt;/a&gt; (if you don’t know who he is, stop reading now). Basically, it simulates the signing process for the iPhone, allowing you to install your jailbroken apps/hacks on an actual device.&lt;/p&gt;
+&lt;p&gt;You can find this tool in many places, however DHowett has generously hosted it for us on his dropbox account.&lt;/p&gt;
+&lt;p&gt;Now, I had a tricky time getting this to download directly to my &lt;em&gt;/opt/theos&lt;/em&gt; folder. So, I downloaded it to my desktop and then moved it in to &lt;em&gt;/opt/theos/bin/ldid&lt;/em&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’bash’&amp;gt;curl -s http://dl.dropbox.com/u/3157793/ldid &amp;gt; ~/Desktop/ldid
+chmod +x ~/Desktop/ldid
+mv ~/Desktop/ldid $THEOS/bin/ldid&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Alternatively, if you can get it to work properly, do it like DHowett suggests and download it directly into place.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’bash’&amp;gt;curl -s http://dl.dropbox.com/u/3157793/ldid &amp;gt; $THEOS/bin/ldid; chmod +x $THEOS/bin/ldid&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;step-5-install-dpkg&#34;&gt;Step 5: Install dpkg&lt;/h4&gt;
+&lt;p&gt;Dpkg is a tool to bundle up your app into a Debian package for distribution in a Cydia repository. You can install it through Macports.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’bash’&amp;gt;sudo port install dpkg&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;step-6-creating-a-new-project&#34;&gt;Step 6: Creating A New Project&lt;/h4&gt;
+&lt;p&gt;theos uses a tool called nic (new instance creator) to create a new project. Simply run nic by typing:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’bash’&amp;gt;$THEOS/bin/nic.pl&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;and it starts the new instance creator. Here is a sample of making a jailbroken application.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’bash’&amp;gt;brandon-trebitowskis-macbook-pro:Desktop brandontreb$ $THEOS/bin/nic.pl
+NIC 1.0 - New Instance Creator
+——————————
+  [1.] iphone/application
+  [2.] iphone/library
+  [3.] iphone/preference_bundle
+  [4.] iphone/tool
+  [5.] iphone/tweak
+Choose a Template (required): 1
+Project Name (required): FartLight
+Package Name [com.yourcompany.fartlight]: com.brandontreb.fartlight
+Author/Maintainer Name [Brandon Trebitowski]: 
+Instantiating iphone/application in fartlight/…
+Done.&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This will create a new folder with a basic template called fartlight (killer project, I know). In addition to the usual files it will contain a Makefile (for building the application) and a control file (information about the application when it’s in a Cydia repository).&lt;/p&gt;
+&lt;p&gt;This should now give you the basis for creating a jailbroken application/tweak/hack. In the next tutorial we will go over building, signing, and deployment. For now, you can check out the project I created with nic called &lt;a href=&#34;https://github.com/brandontreb/inPulseNotifier&#34;&gt;inPulseNotifier&lt;/a&gt;. It’s a combination of a tweak (5) and a preference bundle (3) for the app settings.&lt;/p&gt;
+&lt;p&gt;Feel free to ask me a question in the comments and check out #theos on IRC.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt; &lt;a href=&#34;https://brandontreb.ngrok.io/beginning-jailbroken-ios-development-building-and-deployment/&#34;&gt;Check out the next tutorial in this series here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Happy coding!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Jailbroken iPhone Development &amp;#8211; Would You Be Into It?</title>
+      <link>https://brandontreb.ngrok.io/2011/04/07/jailbroken-iphone-development-would-you-be-into-it/</link>
+      <pubDate>Thu, 07 Apr 2011 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2011/04/07/jailbroken-iphone-development-would-you-be-into-it/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2011/photo.JPG&#34; alt=&#34;&#34; title=&#34;iPulseNotifier app receiving a message from Twitter&#34;&gt;
+As of recent I have had a ton of interest in doing development for Jailbroken iPhones. I love the power, being able to hack &lt;em&gt;anything&lt;/em&gt; on the device. It opens up a whole new world of possibilities.&lt;/p&gt;
+&lt;p&gt;My most current project (inPulseNotifier) is a Mobile Substrate hack which allows the iPhone to interface with an &lt;a href=&#34;http://getinpulse.com&#34;&gt;inPulse watch&lt;/a&gt;. It uses BTStack and boots up during the init method of your springboard. I will do a full writeup on this in the near future, but basically it forwards all of your phone’s notifications (SMS, Local, Push, Calendar) to your watch!&lt;/p&gt;
+&lt;h4 id=&#34;serious-lack-of-resources&#34;&gt;Serious Lack Of Resources&lt;/h4&gt;
+&lt;p&gt;InPulseNotifier was a blast to create, however I found it &lt;strong&gt;incredibly&lt;/strong&gt; challenging to find many resources about doing jailbroken development. I finally found &lt;a href=&#34;http://iphonedevwiki.net/index.php/Theos/Getting_Started&#34;&gt;theos&lt;/a&gt; which was a total lifesaver. Also, I had the code for &lt;a href=&#34;http://www.peterhajas.com/blog/2011/2/27/mobilenotifier-beta3-copious-corn-flakes-1.html&#34;&gt;mobileNotifier&lt;/a&gt; to follow along with.&lt;/p&gt;
+&lt;p&gt;IRC (yeah I’m a true hacker ;)) was also huge help, but there simply aren’t enough tutorials/examples on the web related to jailbroken iPhone dev. My guesses are either 1. it’s quite hard, 2. there’s not enough &amp;lt;font color&amp;quot;green&amp;quot;&amp;gt;$$$ in it, or 3. jailbreakers like to stay “underground”.&lt;/p&gt;
+&lt;p&gt;I haven’t quite figured it out, but I was curious what YOU thought about it as I’m considering doing some jailbroken iOS development tutorials on my blog. Please let me know in the comments. Are you down to “Hack the planet”?&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Huge Update To Smart Lockscreen Creator &#43; Promo Codes</title>
+      <link>https://brandontreb.ngrok.io/2011/03/08/huge-update-to-smart-lockscreen-creator-promo-codes/</link>
+      <pubDate>Tue, 08 Mar 2011 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2011/03/08/huge-update-to-smart-lockscreen-creator-promo-codes/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2011/mzl.vipehwvy.png&#34; alt=&#34;&#34; title=&#34;Smart Lockscreen Creator&#34;&gt;I have just updated Smart Lockscreen Creator and am giving away 10 copies!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://j.mp/haelbH&#34;&gt;Download It Here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I know you probably aren’t reading this as you race to see if any of the promos aren’t taken but…&lt;/p&gt;
+&lt;h4 id=&#34;here-is-whats-new&#34;&gt;Here is what’s new:&lt;/h4&gt;
+&lt;p&gt;Misc&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added ability to generate a new image on startup. Just turn Auto-Start on in the settings&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Weather&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Toggle Fahrenheit and Celsius&lt;/li&gt;
+&lt;li&gt;Added missing weather images&lt;/li&gt;
+&lt;li&gt;Updated weather icons&lt;/li&gt;
+&lt;li&gt;Improved performance and stability of retrieving weather&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Customization&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Customize separator color and height&lt;/li&gt;
+&lt;li&gt;Customize which day of the week to highlight for a calendar&lt;/li&gt;
+&lt;li&gt;Ability to customize the background color of each widget&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Minor Bug Fixes&lt;/p&gt;
+&lt;h4 id=&#34;the-promo-codes&#34;&gt;The Promo Codes&lt;/h4&gt;
+&lt;p&gt;METL6KNXW6TL&lt;/p&gt;
+&lt;p&gt;TWFHLKT7RYWK&lt;/p&gt;
+&lt;p&gt;J6JXJ7JPNJRN&lt;/p&gt;
+&lt;p&gt;XLP9FF9RAEA9&lt;/p&gt;
+&lt;p&gt;L74ATPTYXJ4F&lt;/p&gt;
+&lt;p&gt;A6KJPTLWE97P&lt;/p&gt;
+&lt;p&gt;HNWP6L7F6JW9&lt;/p&gt;
+&lt;p&gt;XEHNFKJPMR6Y&lt;/p&gt;
+&lt;p&gt;MFH3MNHKXF3A&lt;/p&gt;
+&lt;p&gt;FENRH4M9PAEA&lt;/p&gt;
+&lt;p&gt;Please leave a &lt;del&gt;5 star&lt;/del&gt; review &lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2011/simple-smile.png&#34; alt=&#34;:)&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://j.mp/haelbH&#34;&gt;Download It Here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Free App Per Day Service</title>
+      <link>https://brandontreb.ngrok.io/2010/12/28/free-app-per-day-service/</link>
+      <pubDate>Tue, 28 Dec 2010 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2010/12/28/free-app-per-day-service/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2010/free.jpeg&#34; alt=&#34;&#34; title=&#34;free&#34;&gt;&lt;/p&gt;
+&lt;p&gt;As many of you may know, I created a site called &lt;a href=&#34;http://freshapps.com&#34;&gt;Fresh Apps&lt;/a&gt;. This site started as sort of a Digg for developer submitted iPhone apps. Since then, we have added plenty of new features and have grown a community of over 10,000 iPhone users.&lt;/p&gt;
+&lt;p&gt;Recently, I have noticed a few services sprout up that basically have a schedule of apps that shift from paid to free for a given day. The most notable being &lt;a href=&#34;http://freeappaday.com&#34;&gt;Free App A Day&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After doing some research, sites such as these are charging a significant amount of money (I have heard up to $10,000) for a 1 day feature.&lt;/p&gt;
+&lt;p&gt;So, I was curious, given our user base, what do you (fellow iOS) developers think of FreshApps offering a similar service? If we did offer a similar service, here are some questions I have (and would love your feedback).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;How would you change existing services? What new features would you like to see? what features are worthless?&lt;/li&gt;
+&lt;li&gt;How much would you pay for such a feature?&lt;/li&gt;
+&lt;li&gt;Would you be interested in having your app featured the first month for a minimal cost ($1 or so)?&lt;/li&gt;
+&lt;li&gt;Would you use an iPhone app that lists the upcoming paid to free apps?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thank you all so much for your feedback. I’m just in the brainstorming time of this, but I will totally keep you up to date if anything comes of it.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New Year, New Blog Theme</title>
+      <link>https://brandontreb.ngrok.io/2010/12/27/new-year-new-blog-theme/</link>
+      <pubDate>Mon, 27 Dec 2010 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2010/12/27/new-year-new-blog-theme/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.e-junkie.com/ecom/gb.php?ii=606601&amp;amp;c=ib&amp;amp;aff=149540&amp;amp;cl=64302&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2010/screenshot.png&#34; alt=&#34;&#34; title=&#34;Standard Theme&#34;&gt;&lt;/a&gt;I seem to change my WordPress theme more often than I change my socks. I just tend to get very bored with my blog aesthetics. Not to mention, I will always find someone out there with a cooler blog theme than mine.&lt;/p&gt;
+&lt;p&gt;After setting up a blog site for the pastor of my church (&lt;a href=&#34;http://brownbishop.com&#34;&gt;http://brownbishop.com&lt;/a&gt;), I fell in love with the &lt;a href=&#34;https://www.e-junkie.com/ecom/gb.php?ii=606601&amp;amp;c=ib&amp;amp;aff=149540&amp;amp;cl=64302&#34;&gt;Standard WordPress Theme&lt;/a&gt;. Not only is the theme absolutely beautiful out of the box, it’s also a theme framework giving you TONS of configuration options including custom layouts, social network integration, and analytics integration. I have seen quite a few amazing blogs built on top of the Standard Theme framework that all look incredible but completely different.&lt;/p&gt;
+&lt;p&gt;So, I urge you to &lt;a href=&#34;https://www.e-junkie.com/ecom/gb.php?ii=606601&amp;amp;c=ib&amp;amp;aff=149540&amp;amp;cl=64302&#34;&gt;check it out&lt;/a&gt;, It’s kind of pricey ($50), but well worth worth it in my opinion.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pocket MUD Update Approved</title>
+      <link>https://brandontreb.ngrok.io/2010/12/21/pocket-mud-update-approved/</link>
+      <pubDate>Tue, 21 Dec 2010 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2010/12/21/pocket-mud-update-approved/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://bit.ly/eazB6u&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2010/iPhone-Screenshot-1.jpeg&#34; alt=&#34;&#34; title=&#34;iPhone Screenshot 1&#34;&gt;&lt;/a&gt;Wow, in record time (2 business days!), Apple approved the update to my iPhone app &lt;a href=&#34;http://bit.ly/eazB6u&#34;&gt;Pocket Mud&lt;/a&gt;. For those of you who don’t know, Pocket MUD is my FREE MUD client for the iPhone.&lt;/p&gt;
+&lt;p&gt;Here is whats included in the update:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for Landscape!&lt;/li&gt;
+&lt;li&gt;Auto-reconnect on reopen&lt;/li&gt;
+&lt;li&gt;Multiple actions for triggers (just separate the actions with commas)&lt;/li&gt;
+&lt;li&gt;Added ability to play sounds when a trigger fires (please send sound suggestions to &lt;a href=&#34;mailto:brandontreb@gmail.com&#34;&gt;brandontreb@gmail.com&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The app is free, so please check it out and leave some (positive) feedback! &lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2010/simple-smile.png&#34; alt=&#34;:)&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://bit.ly/eazB6u&#34;&gt;Download on iTunes&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ludum Dare Competition: Week 2 Update</title>
+      <link>https://brandontreb.ngrok.io/2010/10/20/ludum-dare-competition-week-2-update/</link>
+      <pubDate>Wed, 20 Oct 2010 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2010/10/20/ludum-dare-competition-week-2-update/</guid>
+      <description>&lt;p&gt;So another week has gone by and I have made quite a bit of progress, here are the additions since I last posted.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Texturing&lt;/li&gt;
+&lt;li&gt;Lighting&lt;/li&gt;
+&lt;li&gt;Skybox&lt;/li&gt;
+&lt;li&gt;Better Terrain generation&lt;/li&gt;
+&lt;li&gt;Environment Fog&lt;/li&gt;
+&lt;li&gt;Basic navigation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So judging by the screenshot, you might really be thinking that I’m working on Minecraft for the iPhone (I used textures that someone created for Minecraft). While this isn’t my intention, it is starting to look like my engine would be perfect for a simple port. Perhaps, I may consider creating something inspired by Minecraft in the future. For now, I will be sticking to my current game idea which I call Cube Hive.&lt;/p&gt;
+&lt;p&gt;As I continue to update this blog, the game idea will become more and more apparent but basically I want to create a game &lt;a href=&#34;http://sites.google.com/site/handkor/hive%E2%80%99sprojectpage&#34;&gt;similar to this&lt;/a&gt; on the iPhone in a cube environment.&lt;/p&gt;
+&lt;p&gt;Anyway, here is a screenshot of where I’m at:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2010/10/Screen-shot-2010-10-19-at-2.37.00-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2010/Screen-shot-2010-10-19-at-2.37.00-PM-500x350.png&#34; alt=&#34;&#34; title=&#34;Screen shot 2010-10-19 at 2.37.00 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Oh, and BTW doing Fog in OpenGL ES is crazy easy. Here is the code (thanks to &lt;a href=&#34;http://twitter.com/#!/mikedaley&#34;&gt;Mike Daley&lt;/a&gt; of &lt;a href=&#34;http://www.71squared.com/&#34;&gt;71 Squared&lt;/a&gt; for showing me this)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’objc’&amp;gt;GLfloat fogColor[] = {1.0f, 1.0f, 1.0f, 1.0f};
+    glFogf(GL_FOG_MODE, GL_LINEAR);
+    glFogfv(GL_FOG_COLOR, fogColor);
+    glFogf(GL_FOG_DENSITY, 0.5f);
+    glHint(GL_FOG_HINT, GL_DONT_CARE);
+    glFogf(GL_FOG_START, 10);
+    glFogf(GL_FOG_END, 20);
+    glEnable(GL_FOG);&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;That’s it! Such a great effect with so little effort.&lt;/p&gt;
+&lt;p&gt;Anyway, I don’t foresee my game being completed by the end of this month for the Ludum Dare competition. However, I have been working on a killer MUD client for the iPhone that I will most likely submit. I feel that current solutions are clunky, ugly, and unintuitive (sorry if you are a reader and a dev of one of these :/).&lt;/p&gt;
+&lt;p&gt;I should have some screenshots up soon.&lt;/p&gt;
+&lt;p&gt;I would love to hear thoughts/opinions of doing a Minecraft inspired game as well?&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Calculator Creator Released &#43; Promo Codes</title>
+      <link>https://brandontreb.ngrok.io/2010/10/14/calculator-creator-released-promo-codes/</link>
+      <pubDate>Thu, 14 Oct 2010 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2010/10/14/calculator-creator-released-promo-codes/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2010/10/icon512x512.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2010/icon512x512.png&#34; alt=&#34;&#34; title=&#34;icon512x512&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I have recently been developing an iPhone app in my free time called &lt;a href=&#34;http://bit.ly/bkOfAT&#34;&gt;Calculator Creator&lt;/a&gt;. This application has been an idea of mine for quite some time and I finally found the time to complete it. Here is the complete description of the app.&lt;/p&gt;
+&lt;p&gt;The last calculation app you will need to buy!&lt;/p&gt;
+&lt;p&gt;With Calculator Creator, you are easily able to build your own “Calculators” as long as you know their equations. The process couldn’t be easier.&lt;/p&gt;
+&lt;p&gt;Simply:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Name your calculator (ex Cost Per Square Foot)&lt;/li&gt;
+&lt;li&gt;Add the fields involved (ex Cost, Square Foot)&lt;/li&gt;
+&lt;li&gt;Create the equation (ex Cost/Square Foot)&lt;/li&gt;
+&lt;li&gt;Use the calculator whenever you like&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Why purchase a unit conversion application for more, when you could have EVERY unit conversion in one clean application.&lt;/p&gt;
+&lt;p&gt;Calculator Creator also comes packed with over 20 sample calculators including:&lt;/p&gt;
+&lt;p&gt;– Unit Conversions&lt;br&gt;
+– Mortgage Payments Calculator&lt;br&gt;
+– Temperature Conversions&lt;br&gt;
+– Tip Calculators&lt;br&gt;
+– and more!&lt;/p&gt;
+&lt;p&gt;If you are reading this and want a free copy of my Calculator Creator, try using one of the promo codes below. Also, please consider leaving me an iTunes review (especially if you are getting the app for free! :))&lt;/p&gt;
+&lt;p&gt;I would love to hear suggestions for future improvements and features.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://bit.ly/bkOfAT&#34;&gt;Download Calculator Creator on iTunes&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;PROMO CODES&lt;/strong&gt;&lt;br&gt;
+LRREPTP3E64Y&lt;br&gt;
+L6RPN9KYHLFR&lt;br&gt;
+9P3YETKR4XTW&lt;br&gt;
+H4HF4R4L9K7L&lt;br&gt;
+KTRAJYF4M97L&lt;br&gt;
+M34ALYRTHJRY&lt;br&gt;
+MMFFM7LRJTAP&lt;br&gt;
+A3WYL4EKF797&lt;br&gt;
+T93FK4479AWX&lt;br&gt;
+RHWWJEKNE3AM&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2010/mzl.gjkqowqp.320x480-75.jpg&#34; alt=&#34;&#34; title=&#34;CC1&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2010/mzl.pbjsknpd.320x480-75.jpg&#34; alt=&#34;&#34; title=&#34;CC2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PoV&amp;#8217;s Challenge: Week 1</title>
+      <link>https://brandontreb.ngrok.io/2010/10/07/povs-challenge-week-1/</link>
+      <pubDate>Thu, 07 Oct 2010 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2010/10/07/povs-challenge-week-1/</guid>
+      <description>&lt;p&gt;After a week of studying my butt off with OpenGL ES, I have finally started work on my game engine for my &lt;a href=&#34;http://www.ludumdare.com/compo/2010/09/22/povs-challenge-make-a-game-sell-1-copy/&#34;&gt;Pov’s Challenge&lt;/a&gt; game.&lt;/p&gt;
+&lt;p&gt;As you can tell from the screenshot below, I have been playing entirely too much Minecraft and have cube art on the brain.&lt;/p&gt;
+&lt;p&gt;It’s not much right now, but I do have a basic cube rendering engine that takes in a level file and renders the environment. Here is a screenshot of a very simple level.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2010/10/Screen-shot-2010-10-06-at-10.48.28-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2010/Screen-shot-2010-10-06-at-10.48.28-PM-362x500.png&#34; alt=&#34;&#34; title=&#34;Screen shot 2010-10-06 at 10.48.28 PM&#34;&gt;&lt;/a&gt;It’s not looking super killer at the moment, but I have yet to do fancier lighting or any texture mapping.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ohh My Game Idea You Ask?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Well, without going into too much detail, it’s pretty much an epic battle of mass proportion set in a 3D cube environment (hint: it’s not iMinecraft ;)).&lt;/p&gt;
+&lt;p&gt;I will give more details as I go about the month and near the completion of my game.&lt;/p&gt;
+&lt;p&gt;Also, in case you are interested, here is what the level file looks like for the generated environment.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;**GG,GG,GG,G,GG,GG,GG
+GG,G,G,G,G,G,GG
+GG,G,G,G,G,G,GG
+GG,G,G,G,G,G,GG
+G,G,G,GG,G,G,G
+GG,G,G,G,G,G,GG
+GG,G,G,G,G,G,GG
+GG,G,G,G,G,G,GG
+GG,GG,GG,G,GG,GG,GG**
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The number of G’s that appear represent the height at that location.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The current roadmap is:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Texturing &amp;amp; Lighting&lt;/li&gt;
+&lt;li&gt;Collision Detection / Navigation&lt;/li&gt;
+&lt;li&gt;Gameplay &amp;amp; Audio&lt;/li&gt;
+&lt;li&gt;AI&lt;/li&gt;
+&lt;li&gt;Menus / Title / Pause (&lt;a href=&#34;http://www.36peas.com/blog/2010/10/6/just-add-the-secret-sauce-a-tried-and-tested-recipe-for-a-fi.html&#34;&gt;secret sauce ingredients&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;By next week, I should have some sort of level editor and some basic skinning going on.&lt;/p&gt;
+&lt;p&gt;Hopefully I can finish this sucker by the end of the month. Its’s been an intense journey learning openGL from scratch in 7 days and I know that I still have quite a ways to go. Again, if you are participating in this challenge, link me to your development blog in the comments.&lt;/p&gt;
+&lt;p&gt;Happy coding!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Game Dev Challenge &#43; OpenGL ES Resource List</title>
+      <link>https://brandontreb.ngrok.io/2010/09/30/game-dev-challenge-opengl-es-resource-list/</link>
+      <pubDate>Thu, 30 Sep 2010 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2010/09/30/game-dev-challenge-opengl-es-resource-list/</guid>
+      <description>&lt;p&gt;The other day, I was reading &lt;a href=&#34;http://www.ludumdare.com/&#34;&gt;Ludum Dare&lt;/a&gt; and saw a very interesting post. It was a call to action for all game developers to get serious and actually put something out there. Here is a link to the post:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.ludumdare.com/compo/2010/09/22/povs-challenge-make-a-game-sell-1-copy/&#34; title=&#34;Permanent Link: PoV’s Challenge: Make a game, sell 1 copy&#34;&gt;PoV’s Challenge: Make a game, sell 1 copy&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The idea is for would-be indie game developers to create a game in the month of October and sell at least &lt;strong&gt;one copy&lt;/strong&gt;. There are no judges, it’s not a competition with anyone other than yourself. According to PoV from Ludum Dare:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Think of this as a race (or a &lt;a href=&#34;http://www.nanowrimo.com/&#34;&gt;Nanowrimo&lt;/a&gt; for games+business). Have something &lt;strong&gt;new&lt;/strong&gt; for sale and in a store by the end of October. And if you can sell a copy (or sign a licensing deal, or earn $1 in ad revenue), &lt;strong&gt;you win&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I have been attempting to learn OpenGL since my early days of programming 10 years ago and it has never stuck. I figured this would be a perfect opportunity to really buckle down and learn it. Recently, I have stumbled upon some really great **OpenGL ES resources and tutorials **that have really made things “click” for me. I wanted to share them in this post.&lt;/p&gt;
+&lt;h2 id=&#34;1-opengl-es-from-the-ground-up&#34;&gt;1. OpenGL ES From The Ground Up&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2010/colorico.jpg?imgmax=800&#34; alt=&#34;&#34; title=&#34;iphone developement - opengl es&#34;&gt;URL: &lt;a href=&#34;http://iphonedevelopment.blogspot.com/2009/05/opengl-es-from-ground-up-table-of.html&#34;&gt;http://iphonedevelopment.blogspot.com/2009/05/opengl-es-from-ground-up-table-of.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is a blog created by Apress author Jeff Lamarche. Jeff has been blogging about opengl es for quite some time and probably has one of the best opengl series out there. His tutorials are aimed at the absolute beginner and he takes a very nice approach to teaching OpenGL ES.&lt;/p&gt;
+&lt;p&gt;The link above will take you to his table of contents of tutorials. Where you can read up on his articles ranging from drawing basic triangles to importing 3D models from Blender.&lt;/p&gt;
+&lt;p&gt;_&lt;/p&gt;
+&lt;h2 id=&#34;2-simon-maurice-iphone-opengl-es&#34;&gt;2. Simon Maurice iPhone OpenGL ES&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2010/09/3dimage.jpg&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2010/3dimage.jpg&#34; alt=&#34;&#34; title=&#34;3dimage&#34;&gt;&lt;/a&gt;URL: &lt;a href=&#34;http://www.cocoachina.com/wiki/index.php?title=Category:Simon_Maurice_iPhone_OpenGL_ES&#34;&gt;http://www.cocoachina.com/wiki/index.php?title=Category:Simon_Maurice_iPhone_OpenGL_ES&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is an incredible 20 part series that was translated from Chinese to English and posted on the CocoaChina Wiki. These articles take a slightly different approach, while still doing a great job of teaching you OpenGL ES.&lt;/p&gt;
+&lt;p&gt;The articles are well written and quite comprehensive. It is obvious that the approach isn’t quite as professional as Jeff Lamarche’s blog, however this series goes a lot more in depth and will teach you more complex concepts such as handling touch and &lt;strong&gt;moving in 3D&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;3-nehe-opengl-tutorials&#34;&gt;3. NeHe OpenGL Tutorials&lt;/h3&gt;
+&lt;p&gt;URL : &lt;a href=&#34;http://nehe.gamedev.net/lesson.asp?index=01&#34;&gt;http://nehe.gamedev.net/lesson.asp?index=01&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2010/lesson05.jpg&#34; alt=&#34;&#34; title=&#34;neho&#34;&gt;These are oldies but goodies. The NeHe tutorials have been around for years and years. In fact, I attempted to understand them in my early days of coding when I declared every method as static in Java so I didn’t have to instantiate the class to call it (fail). Either way, these tutorials are a staple in the Open GL community.&lt;/p&gt;
+&lt;p&gt;Although they are not written for ES, they still provide some solid OpenGL concepts. I would strongly suggest reading these after you have read through the other 2. There are some limitation of OpenGL ES (like not supporting GL_QUADS), that will quickly confuse you if you try to write the Nehe tutorials on the iPhone.&lt;/p&gt;
+&lt;p&gt;One killer thing about the first link I mentioned is, Jeff Lamarche actually ported the first 6 Nehe tutorials to the iPhone and they can be found on the page I linked to.&lt;/p&gt;
+&lt;p&gt;I will be studying these resources carefully over the coming month. I intend to take the plunge and developer a simple OpenGL ES game in the month of October and &lt;strong&gt;sell 1 copy&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;So, please join me! If you decide to do this and are journaling your progress, link your blog in the comments. I would love to follow it. I will be doing the same here.&lt;/p&gt;
+&lt;p&gt;Happy Coding!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>App Store (Link Share) Affiliate Link Generator</title>
+      <link>https://brandontreb.ngrok.io/2010/09/21/app-store-link-share-affiliate-link-generator/</link>
+      <pubDate>Tue, 21 Sep 2010 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2010/09/21/app-store-link-share-affiliate-link-generator/</guid>
+      <description>&lt;p&gt;A while back, I wrote a post called ”&lt;a href=&#34;http://brandontreb.com/money-you-might-be-missing-out-on-linkshare-api-integration/&#34;&gt;Money You Might Be Missing Out On&lt;/a&gt;” where I discussed the &lt;a href=&#34;http://click.linksynergy.com/fs-bin/stat?id=U3Wt3JDOKpI&amp;amp;offerid=7097.10000073&amp;amp;subid=0&amp;amp;type=4&#34;&gt;Linkshare&lt;/a&gt; API. Well, I took it upon myself to create a simple tool that I have been using in my blog posts to quickly generate affiliate iTunes links for iPhone apps. Here is a screenshot of the app.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/apps/linkshare/&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2010/Screen-shot-2010-09-21-at-8.24.18-AM.png&#34; alt=&#34;&#34; title=&#34;Screen shot 2010-09-21 at 8.24.18 AM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The generator is quite simple and perfect for bloggers that are discussing apps. Here is how it works.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Sign up for &lt;a href=&#34;http://click.linksynergy.com/fs-bin/stat?id=U3Wt3JDOKpI&amp;amp;offerid=7097.10000073&amp;amp;subid=0&amp;amp;type=4&#34;&gt;LinkShare&lt;/a&gt; (if you haven’t already done so)&lt;/li&gt;
+&lt;li&gt;Go to &lt;a href=&#34;http://brandontreb.com/apps/linkshare/&#34;&gt;http://brandontreb.com/apps/linkshare/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Enter your &lt;a href=&#34;http://click.linksynergy.com/fs-bin/stat?id=U3Wt3JDOKpI&amp;amp;offerid=7097.10000073&amp;amp;subid=0&amp;amp;type=4&#34;&gt;LinkShare&lt;/a&gt; Token. You get this in the Web Services section if the &lt;a href=&#34;http://click.linksynergy.com/fs-bin/stat?id=U3Wt3JDOKpI&amp;amp;offerid=7097.10000073&amp;amp;subid=0&amp;amp;type=4&#34;&gt;LinkShare&lt;/a&gt; site when you sign up.&lt;/li&gt;
+&lt;li&gt;Select a merchant. By default, I have already populated it with Apple iTunes. Linkshare supports thousands of affiliate programs, so you can click other if you are using it for something else besides the app store.&lt;/li&gt;
+&lt;li&gt;Enter the App Store URL of the application that you wish to get an affiliate link for. (ex &lt;a href=&#34;http://itunes.apple.com/us/app/hundred-pushups/id301174591?mt=8&#34;&gt;http://itunes.apple.com/us/app/hundred-pushups/id301174591?mt=8&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Click submit&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now, it will interface with the LinkShare API and produce an affiliate link for your account.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2010/09/Screen-shot-2010-09-21-at-8.30.33-AM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2010/Screen-shot-2010-09-21-at-8.30.33-AM.png&#34; alt=&#34;&#34; title=&#34;Screen shot 2010-09-21 at 8.30.33 AM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I hope you find this tool as useful as I do.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>iPhone In Action Book</title>
+      <link>https://brandontreb.ngrok.io/2009/08/29/iphone-in-action-book/</link>
+      <pubDate>Sat, 29 Aug 2009 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2009/08/29/iphone-in-action-book/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2009/08/iphone-in-action.jpg&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2009/iphone-in-action-300x300.jpg&#34; alt=&#34;iphone-in-action&#34; title=&#34;iphone-in-action&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A couple months ago, I was asked by someone on Twitter if they could “introduce me to someone”. I found this question a little odd so I responded with “like a girl or a developer?”. I often tweet about my wife, so I was hoping he was not referring to a girl. He replied with “no, someone at Manning Publishing, they are looking for an author for their book iPhone In Action”. So, I was put in contact with Manning and they eventually offered me the position as one of the authors on the book iPhone In Action.&lt;/p&gt;
+&lt;p&gt;iPhone In Action is a book (that is already out) and details how to program for the webkit as well as the native iPhone OS. I will be removing the webkit chapters, updating some of the dated chapters, and writing about 6 new chapters related to OS 3.0.&lt;/p&gt;
+&lt;p&gt;I will be posting about the book and my progress along the way (don’t worry I won’t stop my random tutorials about Twitter, WordPress, etc…). Just wanted to share that and say go out and buy the book (in December when I am finished and will get the commission &lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2009/simple-smile.png&#34; alt=&#34;:)&#34;&gt; ).&lt;/p&gt;
+&lt;p&gt;Happy Coding!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Free Leaderboard Solution for iPhone Game Developers</title>
+      <link>https://brandontreb.ngrok.io/2009/03/24/free-leaderboard-solution-for-iphone-game-developers/</link>
+      <pubDate>Tue, 24 Mar 2009 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2009/03/24/free-leaderboard-solution-for-iphone-game-developers/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://iphonelb.com&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2009/logo.png&#34; alt=&#34;&#34; title=&#34;Free iPhone Leaderboardds&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;What makes most multiplayer games more exciting that single player games? It’s competition! People love to compete with eachother.&lt;/p&gt;
+&lt;p&gt;And how can competition be achieved in single player games? &lt;a href=&#34;http://iphonelb.com&#34;&gt;Leaderboards&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A leaderboard is basically a table ranking players based on their scores in the game. This allows players to see how they stack up against other players.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Problem&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Many programmers either know how to do web development or system development. They don’t know both and certainly don’t know how to integrate the two. This is why I believe there are not more single player games with leaderboards in the App Store.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Solution&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This is where &lt;a href=&#34;http://iphonelb.com&#34;&gt;iPhone Leaderboards&lt;/a&gt; comes in. It’s an online hosted leaderboard that is incredibly easy to integrate with any iPhone game. The code to integrate with iPhoneLB is given to you to paste directly into your own. It couldn’t be easier.&lt;/p&gt;
+&lt;p&gt;Try it out and let me know what you think!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Part 3 of iPhone Game Programming Tutorial Posted On iCodeBlog</title>
+      <link>https://brandontreb.ngrok.io/2009/03/19/part-3-of-iphone-game-programming-tutorial-posted-on-icodeblog/</link>
+      <pubDate>Thu, 19 Mar 2009 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2009/03/19/part-3-of-iphone-game-programming-tutorial-posted-on-icodeblog/</guid>
+      <description>&lt;p&gt;It’s been a while, but I finally posted part 3 of the &lt;a href=&#34;http://icodeblog.com/2009/03/18/iphone-game-programming-tutorial-part-3-splash-screen/&#34;&gt;iPhone Game Programming tutorial&lt;/a&gt; series on &lt;a href=&#34;http://iCodeblog.com&#34;&gt;iCodeblog.com&lt;/a&gt;. The focus of this tutorial was to create a splash page for your game that fades into your game’s main view.&lt;/p&gt;
+&lt;p&gt;I chose to create this tutorial after seeing many games that just jump right in to the main game play. A splash page makes the game feel more “professional” as well as gives the developer a chance to brand the app by displaying a company logo or something to that extent.&lt;/p&gt;
+&lt;p&gt;Hopefully, I will be able to get part 4 up in a timely fashion to teach developers how to incorporate sounds into their games.&lt;/p&gt;
+&lt;p&gt;So, go ahead and check out part 3 of the &lt;a href=&#34;http://icodeblog.com/2009/03/18/iphone-game-programming-tutorial-part-3-splash-screen/&#34;&gt;iPhone Game Programming Tutorial Series&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Why Many iPhone Apps Suck</title>
+      <link>https://brandontreb.ngrok.io/2009/02/25/why-many-iphone-apps-suck/</link>
+      <pubDate>Wed, 25 Feb 2009 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2009/02/25/why-many-iphone-apps-suck/</guid>
+      <description>&lt;p&gt;I have been downloading many different iPhone apps lately and have noticed that many of them suck.&lt;/p&gt;
+&lt;p&gt;When I say they suck, I’m not necesarily referring to the content of the app. What I am talking about is the programming of the app. But Brandon, how do you know the programming sucks. Well, frequent crashing is an obvious indicator. Also, taking too long to do various computations as well as overall awkwardness.&lt;/p&gt;
+&lt;p&gt;This is because many non-programmers or hobby programmers decide they want to make an iPhone app without first learning the objective-c language. People just use jank copy and pasted code frankensteined from different examples, close their eyes and pray. This is the architecture of many iPhone apps.&lt;/p&gt;
+&lt;p&gt;So, who’s fault is this? Well, at first I wanted to say Apple for their lack of tutorials/explanations. After thinking about it, I feel it’s simply lazy programmers driven by trying to make money rather than the desire create a solid and useful applications. It’s quite sad actually.&lt;/p&gt;
+&lt;p&gt;One challenge here is the iPhone is a terrible platform to learn programming with. The forced program design assumes you have a solid understaning of object oriented programming design patterns as well as many other advanced programming topics. Many CS students don’t even get this until their second year in college! So how can a novice programmer jump right in and make an iPhone app? They code a pile of crap.&lt;/p&gt;
+&lt;p&gt;So what’s the solution to this? Well I’ll tell you. Teaching people objective-c from the ground up (that, and Apple being more selective when approving apps). I intend to write a whole series of beginner objective-c tutorials (using the mac as a platform rather than the iPhone). I’m not sure yet if these will be posted here or on &lt;a href=&#34;http://icodeblog.com&#34;&gt;icodeblog.com&lt;/a&gt;. I have yet to decide.&lt;/p&gt;
+&lt;p&gt;So stay tuned for the first Mac Application Development tutorials.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Buzzword Is Now In The App Store</title>
+      <link>https://brandontreb.ngrok.io/2009/02/23/buzzword-is-now-in-the-app-store/</link>
+      <pubDate>Mon, 23 Feb 2009 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2009/02/23/buzzword-is-now-in-the-app-store/</guid>
+      <description>&lt;p&gt;Well, after anxiously waiting for the past 6 days (feels like forever) I have finally gotten that magical email from Apple stating that my “application is ready for sale”. The application of course referring to a game I created called Buzzword.&lt;/p&gt;
+&lt;p&gt;Buzzword is essentially a clone of the popular party game CatchPhrase ported on to the iPhone.  &lt;a href=&#34;http://brandontreb.com/buzzword/&#34;&gt;Click Her&lt;/a&gt;e for all the details on Buzzword.&lt;/p&gt;
+&lt;p&gt;I am asking a huge favor to anyone that wants to participate. I will give you a free copy of Buzzword (wow saves you a whole buck) if you would kindly write a review of it on your blog or website. If you are interested, either post a comment in this post, &lt;a href=&#34;http://brandontreb.com/contact-me/&#34;&gt;contact me&lt;/a&gt;, or hit me up on &lt;a href=&#34;http://twitter.com/brandontreb&#34;&gt;Twitter.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Click on the image below to download Buzzword now.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://tinyurl.com/at53fu&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2009/avail_on_app_store.png&#34; alt=&#34;Download Buzzword In The App Store&#34; title=&#34;Download Buzzword In The App Store&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Binary Game &amp;#8211; iPhone App Review</title>
+      <link>https://brandontreb.ngrok.io/2009/02/19/binary-game-iphone-app-review/</link>
+      <pubDate>Thu, 19 Feb 2009 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2009/02/19/binary-game-iphone-app-review/</guid>
+      <description>&lt;p&gt;Just posted an app review of B1nary Game over at FreshApps. &lt;a href=&#34;http://freshapps.com/iphone-app-review-binary-game&#34;&gt;Check it out&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New iPhone Game Programming Tutorial Post On iCodeBlog</title>
+      <link>https://brandontreb.ngrok.io/2009/02/18/new-iphone-game-programming-tutorial-post-on-icodeblog/</link>
+      <pubDate>Wed, 18 Feb 2009 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2009/02/18/new-iphone-game-programming-tutorial-post-on-icodeblog/</guid>
+      <description>&lt;p&gt;Well, it had taken me a while to slot in the time, but I finally finished part 2 of the iPhone Game Programming series iTennis on &lt;a href=&#34;http://iCodeBlog.com&#34;&gt;iCodeBlog.com&lt;/a&gt; . The game is shaping up to be pretty cool and I am really enjoying teaching about game programming.&lt;/p&gt;
+&lt;p&gt;I think that game programming is perfect for teaching people how to program a certain language. This is because games generally encompasses many aspects of programming (interface, logic, math, animation, AI, etc…). The only problem is, they take forever to code/teach. Here are the links for the iPhone Game Programming Tutorials Series:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://icodeblog.com/2009/01/15/iphone-game-programming-tutorial-part-1/&#34; title=&#34;Permanent Link to iPhone Game Programming Tutorial - Part 1&#34;&gt;iPhone Game Programming Tutorial – Part 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://icodeblog.com/2009/02/18/iphone-game-programming-tutorial-part-2-user-interaction-simple-ai-game-logic/&#34; title=&#34;Permanent Link to iPhone Game Programming Tutorial Part 2- User Interaction, Simple AI, Game Logic&#34;&gt;iPhone Game Programming Tutorial Part 2- User Interaction, Simple AI, Game Logic&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Be sure to check them out. Let me know what you think. Also, hit me up if you have tutorial suggestions.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>iPhone App: Buzzword Submitted to the App Store</title>
+      <link>https://brandontreb.ngrok.io/2009/02/17/iphone-app-buzzword-submitted-to-the-app-store/</link>
+      <pubDate>Tue, 17 Feb 2009 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2009/02/17/iphone-app-buzzword-submitted-to-the-app-store/</guid>
+      <description>&lt;p&gt;I have just submitted an iPhone app that I have been developing in my free time. The app is called Buzzword. It’s basically a game similar to the game catchphrase. So wherever you go, you and your friends can bust out a game of Buzzword…&lt;/p&gt;
+&lt;p&gt;Here are some screenshots:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2009/screenshot_3-300x200.png&#34; alt=&#34;screenshot_3&#34; title=&#34;screenshot_3&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2009/screenshot_2-300x200.png&#34; alt=&#34;screenshot_2&#34; title=&#34;screenshot_2&#34;&gt;
+Once approved, Buzzword will only cost a buck. I’m not kidding, it will probably be the best dollar you have spent and will spend in your entire life. Stay tuned, I’ll be giving out promo codes to people at random…&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

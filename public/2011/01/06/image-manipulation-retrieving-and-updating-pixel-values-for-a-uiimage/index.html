@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>
+      
+      Hack The Planet - Image Manipulation: Retrieving And Updating Pixel Values For A UIImage
+      
+  </title>
+
+  <meta name="description" content="this is meta :)">
+
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%f0%9f%a6%a0</text></svg>">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/custom.css">
+  <link rel="canonical" href="https://brandontreb.ngrok.io/2011/01/06/image-manipulation-retrieving-and-updating-pixel-values-for-a-uiimage/">
+
+	<link rel="me" href="https://brandontreb.ngrok.io" />
+	
+	
+	
+	<link rel="authorization_endpoint" href="/indieauth/auth" />
+	<link rel="token_endpoint" href="/indieauth/token" />
+	<link rel="micropub" href="https://brandontreb.ngrok.io/micropub" />
+	<link rel="microsub" href="https://brandontreb.ngrok.io/microsub" />
+	<link rel="webmention" href="https://brandontreb.ngrok.io/webmention" />	
+  
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Hack The Planet</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+		
+			
+				<a class="page-link" href="/archive/">Archive</a>
+			
+		
+			
+				<a class="page-link" href="/photos/">Photos</a>
+			
+		
+			
+				<a class="page-link" href="/replies/">Replies</a>
+			
+		
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+		
+<div class="post h-entry">
+
+  <header class="post-header">
+	
+	  	<h1 class="p-name">Image Manipulation: Retrieving And Updating Pixel Values For A UIImage</h1>
+  	
+    <p class="post-meta">
+	<a href="https://brandontreb.ngrok.io/2011/01/06/image-manipulation-retrieving-and-updating-pixel-values-for-a-uiimage/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2011-01-06 01:00:00 -0600">Jan 6, 2011</time></span></a>
+	
+	</p>
+  </header>
+
+  <article class="post-content e-content">
+	<p><a href="http://brandontreb.com/wp-content/uploads/2011/01/jobs.png"><img src="/uploads/2011/jobs.png" alt="" title="jobs"></a></p>
+<p>Grayscale Jobs</p>
+<p>With the recent success of cool photo manipulation apps such as Camera+ and Instagram, it got me wondering. How do these photo apps modify the pixel data of the image.</p>
+<p>After doing a bit of research on the subject, I found countless posts on Stack Overflow and the Developer forums about various methods to get and set the pixel values of a UIImage. Most of them unanswered or partially answered. I tested out many solutions and banged my head on my computer into the whee hours of the morning with no success. Every solution I tried seemed to completely destroy the image.</p>
+<p>It wasn’t until this morning, I had an “aha” moment, changed one line of code and was able to produce a grayscale version of a UIImage.</p>
+<p>Having the ability to get and set pixel values of a UIImage is super important if you want to create a photo related app that has “Filters”. Once you know the basics, you can apply your ninja math skillz to implement cool filter algorithms on the pixels. Below, I will show you onc such algorithm for converting an image to grayscale (it’s not <em>that</em> clever).</p>
+<p>I should note, that a good majority of my code comes from Olie’s solution on this <a href="http://stackoverflow.com/questions/448125/how-to-get-pixel-data-from-a-uiimage-cocoa-touch-or-cgimage-core-graphics">Stack Overflow post</a>. His example simply returns and array of UIColor objects for a given image. Mine will modify those colors and write them back to a UIImage.</p>
+<h4 id="converting-a-uiimage-into-a-pixel-array">Converting A UIImage Into A Pixel Array</h4>
+<p>Here is the first part of our grayscale method. It is creating a char array from a global UIImage property named workingImage.</p>
+<pre tabindex="0"><code>&lt;code class=’objc’&gt;- (IBAction) grayscale:(id) sender {
+    CGContextRef ctx;
+    CGImageRef imageRef = [self.workingImage CGImage];
+    NSUInteger width = CGImageGetWidth(imageRef);
+    NSUInteger height = CGImageGetHeight(imageRef);
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    unsigned char *rawData = malloc(height * width * 4);
+    NSUInteger bytesPerPixel = 4;
+    NSUInteger bytesPerRow = bytesPerPixel * width;
+    NSUInteger bitsPerComponent = 8;
+    CGContextRef context = CGBitmapContextCreate(rawData, width, height,
+    bitsPerComponent, bytesPerRow, colorSpace,
+    kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
+    CGColorSpaceRelease(colorSpace);
+</code></pre><p>CGContextDrawImage(context, CGRectMake(0, 0, width, height), imageRef);
+CGContextRelease(context);
+.
+.
+.&lt;/code&gt;</pre></p>
+<pre tabindex="0"><code></code></pre><p>This is a lot of Core Graphics fanciness that isn’t super important to understand. It’s just getting the RGBA values from the image and writing them into the rawData char array. There are 4 bytes per pixel (red, green, blue, alpha), so this array contains 4 * height * width elements.</p>
+<h4 id="modifying-the-pixels-of-a-uiimage">Modifying The Pixels of a UIImage</h4>
+<p>Here is where the magic happens. You can replace this code with the logic necessary to apply the filter you are making. Another clever way to approach this would be to pass this code in as a block into the method (I’ll leave that as an exercise for the reader :)).</p>
+<pre tabindex="0"><code>&lt;code class=’objc’&gt;.
+.
+.
+    int byteIndex = 0;
+    for (int ii = 0 ; ii &lt; width * height ; ++ii)
+    {
+    int outputColor = (rawData[byteIndex] + rawData[byteIndex+1] +
+        rawData[byteIndex+2]) / 3;
+</code></pre><p>rawData[byteIndex] = (char) (outputColor);
+rawData[byteIndex+1] = (char) (outputColor);
+rawData[byteIndex+2] = (char) (outputColor);</p>
+<pre tabindex="0"><code>byteIndex += 4;
+</code></pre><p>}</p>
+<pre tabindex="0"><code>
+.
+.
+.&lt;/code&gt;
+</code></pre><p>The first part is pretty straight forward, we have a for loop that goes from 0 to width * height. We index into the rawData array using a counter that we increment by 4 each time (remember 4 bytes per pixel). As you can imagine, the first pixel (rawData[byteIndex]) represents the red pixel, then green for +1, blue for +2, and finally alpha for +3. Note that the alpha byte is last because kCGImageAlphaPremultipliedLast flag above.</p>
+<p>In order to do grayscale, we simple set all of the color values to the average color value. So, for example the color [218,232,244] (which is the light blue color of the WordPress editor’s toolbar) would be converted to [231,231,231] which is a fairly light gray color.</p>
+<p>The most important step that everyone in the forums seemed to miss was casting the new value to a char. Remember we are using a char array, setting ints as values will generally screw up your image. (This was my “aha” moment that I mentioned above)</p>
+<h4 id="writing-the-pixels-back-to-a-uiimage">Writing The Pixels Back To a UIImage</h4>
+<p>The final step is to write the pixel data back to a UIImage. Again, I borrowed some of this code from somewhere else and unfortunately lost the link. If I find it, I will update the post.</p>
+<pre tabindex="0"><code>&lt;code class=’objc’&gt;.
+.
+.
+    ctx = CGBitmapContextCreate(rawData,
+        CGImageGetWidth( imageRef ),
+        CGImageGetHeight( imageRef ),
+        8,
+        CGImageGetBytesPerRow( imageRef ),
+        CGImageGetColorSpace( imageRef ),
+        kCGImageAlphaPremultipliedLast ); 
+</code></pre><p>imageRef = CGBitmapContextCreateImage (ctx);
+UIImage* rawImage = [UIImage imageWithCGImage:imageRef];<br>
+CGContextRelease(ctx);</p>
+<p>self.workingImage = rawImage;</p>
+<p>free(rawData);</p>
+<pre tabindex="0"><code>
+}&lt;/code&gt;
+</code></pre><p>All we are doing here is creating a new Bitmap Context, writing it to our CGImageRef and constructing a new UIImage from that CGImageRef. Finally, we just update our workingImage with the modified one. Fancy, I know…</p>
+<p>Now, much of this code is to work with my example (download below), but it could easily be tweaked to fit within your super awesome photo app. If you have any questions or comments PLEASE leave them here or send them to me on Twitter (but probably leave them here 😉 ).</p>
+<p><a href="http://brandontreb.com/wp-content/uploads/2011/01/ImageManip.zip">Download The Sample Source Project</a></p>
+<ul>
+<li>Note on the sample code: Before you give me crap about doing this in the main thread, I know. Don’t do these operation on the main thread. The example is meant to be quick and dirty and by no means is ready for production. Enjoy!</li>
+</ul>
+<p><em><strong>﻿﻿This post is part of <a href="http://idevblogaday.com/">iDevBlogADay</a>, a group of indie iOS development blogs featuring two posts per day. You can keep up with iDevBlogADay through the <a href="http://idevblogaday.com/">web site</a>, <a href="http://feeds.feedburner.com/idevblogaday">RSS feed</a>, or <a href="http://twitter.com/#search?q=%23idevblogaday">Twitter</a>.</strong></em></p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+	<div id="post-meta" class="clearfix p-author h-card">
+  <a href="/" class="u-url" rel="me">
+  <img class="u-photo avatar" src="https://brandontreb.ngrok.io/avatar.png" width="96" height="96">
+  <div>
+    <span class="p-name dark">|ZeroCool|</span>
+    <span><a href="https://brandontreb.ngrok.io">@</a></span>
+    <p class="p-note"></p>
+  </div>	
+  </a>
+</div>
+  </article>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-3">
+        <p class="text"></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+    
+    
+    
+  </body>
+
+</html>

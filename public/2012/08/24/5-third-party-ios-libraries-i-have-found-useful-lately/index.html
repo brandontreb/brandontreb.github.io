@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>
+      
+      Hack The Planet - 5 Third Party iOS Libraries I Have Found Useful Lately
+      
+  </title>
+
+  <meta name="description" content="this is meta :)">
+
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%f0%9f%a6%a0</text></svg>">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/custom.css">
+  <link rel="canonical" href="https://brandontreb.ngrok.io/2012/08/24/5-third-party-ios-libraries-i-have-found-useful-lately/">
+
+	<link rel="me" href="https://brandontreb.ngrok.io" />
+	
+	
+	
+	<link rel="authorization_endpoint" href="/indieauth/auth" />
+	<link rel="token_endpoint" href="/indieauth/token" />
+	<link rel="micropub" href="https://brandontreb.ngrok.io/micropub" />
+	<link rel="microsub" href="https://brandontreb.ngrok.io/microsub" />
+	<link rel="webmention" href="https://brandontreb.ngrok.io/webmention" />	
+  
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Hack The Planet</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+		
+			
+				<a class="page-link" href="/archive/">Archive</a>
+			
+		
+			
+				<a class="page-link" href="/photos/">Photos</a>
+			
+		
+			
+				<a class="page-link" href="/replies/">Replies</a>
+			
+		
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+		
+<div class="post h-entry">
+
+  <header class="post-header">
+	
+	  	<h1 class="p-name">5 Third Party iOS Libraries I Have Found Useful Lately</h1>
+  	
+    <p class="post-meta">
+	<a href="https://brandontreb.ngrok.io/2012/08/24/5-third-party-ios-libraries-i-have-found-useful-lately/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2012-08-24 00:00:00 -0600">Aug 24, 2012</time></span></a>
+	
+	</p>
+  </header>
+
+  <article class="post-content e-content">
+	<p>As I mature as a developer, I try to rely on other people’s code more an more. Why build something from scratch when a solution already exists that you can fit in your project. In <a href="http://itunes.apple.com/us/app/pocket-mud-pro/id511678455?mt=8">Pocket MUD Pro</a>, I used <strong>13</strong> 3rd party libraries and am using quite a bit more in the project that I’m currently working on. I figured that I would share some of the libraries that I have been using so that it might save you some time in the future.</p>
+<h2 id="1-cocoaasyncsocket">1. CocoaAsyncSocket</h2>
+<p><strong>Link:</strong> <a href="https://github.com/robbiehanson/CocoaAsyncSocket">https://github.com/robbiehanson/CocoaAsyncSocket</a></p>
+<p>Many of my applications involve TCP or UDP networking. There is a lot of boiler plate code involved in every networked application, and CocoaAsyncSocket solves much of that for you.</p>
+<h2 id="2-appirater">2. Appirater</h2>
+<p><strong>Link:</strong> <a href="http://github.com/arashpayan/appirater/">http://github.com/arashpayan/appirater/</a></p>
+<p><img src="/uploads/2012/AppiraterScreenshot.png" alt="Screenshot"></p>
+<p>Hopefully, you have heard of this one or a similar library by now. It’s very challenging to get users to want to review your applications, let alone give you a positive review. AppiRater allows you to prompt a user to rate your application based on either number of launches or “significant events” which you specify.</p>
+<h2 id="3-zip-archive">3. Zip Archive</h2>
+<p><strong>Link:</strong> <a href="http://code.google.com/p/ziparchive/">http://code.google.com/p/ziparchive/</a></p>
+<p>I try to ship small applications that download assets upon launch. A good way to send these assets over the wire is to zip them up and stick them on your server. I have written an article about this on <a href="http://www.icodeblog.com/2012/08/13/unzipping-files-using-zip-archive/">iCodeBlog</a>.</p>
+<h2 id="4-quick-dialog">4. Quick Dialog</h2>
+<p>**Link: ** <a href="https://github.com/escoz/QuickDialog">https://github.com/escoz/QuickDialog</a></p>
+<p>Creating forms in iOS is pretty painful. It usually involves custom table cells and a lot of delegate nonsense. QuickDialog takes away some of this pain and allows you to easily create iOS forms. You can even design them using JSON.</p>
+<p><img src="/uploads/2012/quickdialog2.png" alt="QuickDialog Screenshot"></p>
+<h2 id="5-tsminiwebbrowser">5. TSMiniWebBrowser</h2>
+<p><strong>Link:</strong> <a href="https://github.com/tonisalae/TSMiniWebBrowser">https://github.com/tonisalae/TSMiniWebBrowser</a></p>
+<p>Often times, you want a quick and dirty browser in your application. I generally use it to point to in-app documentation or take the user to a page after tapping on a link. It’s quick and easy.</p>
+<p><img src="/uploads/2012/687474703a2f2f646c2e64726f70626f782e636f6d2f752f373630343232322f4769744875622f54534d696e6957656242726f777365722f73686f745f30315f7468756d622e706e67" alt="Screenshot"></p>
+<p>I hope you find some value in this list. I’d love to hear about the libraries <strong>you</strong> use frequently.</p>
+<p>Happy Coding!</p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+	<div id="post-meta" class="clearfix p-author h-card">
+  <a href="/" class="u-url" rel="me">
+  <img class="u-photo avatar" src="https://brandontreb.ngrok.io/avatar.png" width="96" height="96">
+  <div>
+    <span class="p-name dark">|ZeroCool|</span>
+    <span><a href="https://brandontreb.ngrok.io">@</a></span>
+    <p class="p-note"></p>
+  </div>	
+  </a>
+</div>
+  </article>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-3">
+        <p class="text"></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+    
+    
+    
+  </body>
+
+</html>

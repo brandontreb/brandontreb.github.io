@@ -1,0 +1,63 @@
+<rss version="2.0">
+  <channel>
+    <title>quality on Hack The Planet</title>
+    <link>https://brandontreb.ngrok.io/tags/quality/</link>
+    <description></description>
+    
+    <language>en-us</language>
+    
+    <lastBuildDate>Tue, 28 Jul 2015 00:00:00 -0600</lastBuildDate>
+    
+    <item>
+      <title>The Value Of Quality Assurance</title>
+      <link>https://brandontreb.ngrok.io/2015/07/28/the-value-of-quality-assurance/</link>
+      <pubDate>Tue, 28 Jul 2015 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2015/07/28/the-value-of-quality-assurance/</guid>
+      <description>&lt;p&gt;It’s late, you have been hacking all night to get the client a build. Finally, around 2:30 am, you hit submit and publish something to the client and go to bed. When you wake up in the morning, the first thing you see in your inbox is an email titled “Completely Broken!!1!”.&lt;/p&gt;
+&lt;p&gt;How could this be? You stayed up late, you hacked, you tested and you sweat over this build to find that it crashes for the client when they try to do something obvious.&lt;/p&gt;
+&lt;p&gt;As developers, we often can’t see the forrest through the trees. What this means is, we get so deep into the code working on a new feature or fixes that we often don’t notice when we break things. This doesn’t mean that we are bad developers, it just means we think differently about development. It also means we can’t personally handle &lt;strong&gt;everything&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;However, from a client’s perspective, failures like this can really tarnish your brand. They start to get the impression that you are unprofessional and even worse, start to doubt your abilities as a developer.&lt;/p&gt;
+&lt;h3 id=&#34;enter-qa&#34;&gt;Enter QA&lt;/h3&gt;
+&lt;p&gt;QA (short for quality assurance) is an idea that someone other than the developer tests the build before the client ever sees it. These people are responsible for&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Regression testing (as in the scenario above)&lt;/li&gt;
+&lt;li&gt;Generating a test plan/matrix&lt;/li&gt;
+&lt;li&gt;Ensuring parity (if needed) between multi-platform applications&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If the QA team is doing it’s job, the client won’t every see these obvious failures mentioned above. This can greatly improve the client’s perception of you/your team.&lt;/p&gt;
+&lt;h3 id=&#34;basic-process&#34;&gt;Basic Process&lt;/h3&gt;
+&lt;p&gt;OK, QA sounds great, how do I get started? Well, it’s actually relatively simple. First off, I assume you are doing &lt;em&gt;some flavor&lt;/em&gt; of agile, and hopefully logging tickets for each task. If not, you should (even if you are a one man show). Here is a rough flow that my team follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Developers determine which tickets to work on for the current sprint&lt;/li&gt;
+&lt;li&gt;Developers complete a ticket and move it to a “dev complete” column in the task manager (Jira, Trello, Pivotal Tracker, etc…)&lt;/li&gt;
+&lt;li&gt;Developers deliver a build internally&lt;/li&gt;
+&lt;li&gt;The QA team takes the build and goes through their testing matrix to check for regressions.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;If a regression is found, a bug ticket is created for the responsible developer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;New features are added to the QA test matrix and tested&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;If the feature has bugs or doesn’t work as intended, the ticket is rejected and pushed back to the developer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;Once everything passes, the build is green-lit to be sent to the client (usually one build per sprint)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Like anything, you may develop your own version of the above, however this should be a detailed enough outline to get you started.&lt;/p&gt;
+&lt;h3 id=&#34;pushback&#34;&gt;Pushback&lt;/h3&gt;
+&lt;p&gt;In my experience, clients will generally give you some pushback when you say that you are billing them for QA hours. They will say things like “It’s OK, I can test the build myself.” or “I understand, things won’t be perfect. We will through this together”.&lt;/p&gt;
+&lt;p&gt;While this all sounds good at the surface, the fact of the matter is, it almost always will end unfavorable. The client might have some level of tolerance early on, but as you start sending them more and more builds, each potentially missing/breaking features, they will become less patient. I have seen this happen plenty of times even with the most tech savvy of clients. Here are a few ways you can build QA into your billing process:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Add it as a line item&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This is where you will most likely see the most opposition. Make sure to explain to the client that their time is valuable and you don’t want to waste it. Also, ensure that the cost of QA is drastically less than the cost of engineering or you will get questions like “Why am I paying you full price to test?”.&lt;/p&gt;
+&lt;p&gt;Be sure to tell the client that QA is just part of your team’s process. You simply don’t operate any other way as you &lt;strong&gt;know&lt;/strong&gt; that this is the best approach for both parties. Hopefully, this will establish your expertise in the domain and the client will respect you for that.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bake it into the cost of engineering&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Often times, you may not bother with too many line items. You may just have something like &lt;strong&gt;Engineering $200/hour&lt;/strong&gt;. When/If the client gives any pushback about cost compared to other shops, simply inform them of all they are getting inside of that hour (Engineering, Consulting, QA, Project management, Office management, etc…). It actually works out to be a much greater value for them than paying say $125/hour for a “code monkey”.&lt;/p&gt;
+&lt;h3 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h3&gt;
+&lt;p&gt;I absolutely believe that QA is crucial to the success of any software agency or freelancer. Not only does it allow you to come across as more professional, it also helps keep you sharp as a developer. While I’m not suggesting QA is a silver bullet (I still believe in Unit / Automated testing), I feel that everyone should at least have some layer baked into their process.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

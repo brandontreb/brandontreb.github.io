@@ -1,0 +1,44 @@
+<rss version="2.0">
+  <channel>
+    <title>freelancing on Hack The Planet</title>
+    <link>https://brandontreb.ngrok.io/tags/freelancing/</link>
+    <description></description>
+    
+    <language>en-us</language>
+    
+    <lastBuildDate>Mon, 31 Mar 2014 00:00:00 -0600</lastBuildDate>
+    
+    <item>
+      <title>Software Development Consulting: Some Tips On Structuring Your Contracts</title>
+      <link>https://brandontreb.ngrok.io/2014/03/31/software-development-consulting-contract-tips/</link>
+      <pubDate>Mon, 31 Mar 2014 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2014/03/31/software-development-consulting-contract-tips/</guid>
+      <description>&lt;p&gt;When I first started out as an independent software developer, one of things that stressed me out the most was how to structure contracts that I sent to clients.  Working for a consultancy in my previous work-life I had seen contracts before, however, I never really paid enough attention to them to know what type of content went into them.&lt;/p&gt;
+&lt;p&gt;After quite a bit of research, I found an invaluable resource.  Over at &lt;a href=&#34;http://techrepublic.com&#34;&gt;techrepublic.com&lt;/a&gt;, Chip Camden posted a beautifully crafted consulting contract template.  You can see the post and download the template &lt;a href=&#34;http://www.techrepublic.com/blog/it-consultant/customizable-it-consultant-sample-contract/&#34;&gt;here&lt;/a&gt;.  This post was a lifesaver.&lt;/p&gt;
+&lt;p&gt;Chip goes over EVERY single section of the contract and gives an explanation of why it’s there.  You can download the template and determine which sections you need for your business, based on his explanations.  It doesn’t get much easier than that.  Of course, I would still strongly suggest you fork over a couple hundred bucks and have a lawyer look over the contract before sending it off to clients.&lt;/p&gt;
+&lt;h4 id=&#34;how-to-sign-contracts-online&#34;&gt;How To Sign Contracts Online&lt;/h4&gt;
+&lt;p&gt;Once you have your contract in place, you will need a way to get your clients to sign it.  You could go the old-fashioned way of scanning, both parties signing, and scanning again OR you could use an online signature service.  One that I use and highly recommend is &lt;a href=&#34;https://rightsignature.com&#34;&gt;RightSignature&lt;/a&gt;. I know those guys personally and have had a great experience with the service so far.&lt;/p&gt;
+&lt;h4 id=&#34;here-is-my-process&#34;&gt;Here is my process:&lt;/h4&gt;
+&lt;p&gt;This is what I have found works out well for my business.  #proTip: I have my assistant do this now 😉&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Complete the contract blanks in regards to rates or any other information you want the client to see before they sign the contract.&lt;/li&gt;
+&lt;li&gt;Upload the contract template to Google Drive (optional).  Make sure your company info is completed and all of the other fields (dates, signatures, etc…) are blanked out.&lt;/li&gt;
+&lt;li&gt;Once inside of your RightSignature account, you can connect to your Google Drive and import the document in.  You can also upload them directly from your computer if you don’t want to use Google Drive.&lt;/li&gt;
+&lt;li&gt;RightSignature lets you put text fields and date boxes in the blanks and specify who is responsible for filling them out (you or the client).&lt;/li&gt;
+&lt;li&gt;Finally, add the signature fields at the bottom and send off the document for signing.&lt;/li&gt;
+&lt;li&gt;Once every party has filled out the needed information, the completed document is then sent to both parties via email.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;other-considerations&#34;&gt;Other Considerations&lt;/h4&gt;
+&lt;p&gt;Often times, the client will have their own contracts for you to sign.  This isn’t necessarily a bad thing.  However, make sure that you read over it carefully and run it by your lawyer.  Don’t try to force your contract on a client that already has their own.  They will usually not be open to this, in my experience.&lt;/p&gt;
+&lt;p&gt;Make sure to have an ‘exit clause’ in your contract in case things go sour.  I seldom enter into fixed bid contracts so I usually have a clause where either party can cancel the contract with 7 days written notice.  This also makes the client feel at ease as they are not trapped with you in an event where their situation changes.&lt;/p&gt;
+&lt;p&gt;Finally, be willing to be flexible.  Sometimes clients might not like certain clauses in your contract.  Be willing to change things like delivery dates, invoice dates, invoice periods, rates, etc… on a client to client basis.  Obviously, use your best judgement here.&lt;/p&gt;
+&lt;h4 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h4&gt;
+&lt;p&gt;I hope that you have found this post useful and it saves you some time hunting down a contract template.  I am always open to suggestions so if you see anything else that works for you, I would love to hear about it via email or in the comments.&lt;/p&gt;
+&lt;p&gt;Please consider &lt;a href=&#34;http://eepurl.com/QAAhf&#34;&gt;signing up for my email list&lt;/a&gt; to get killer posts like this one delivered to your inbox.&lt;/p&gt;
+&lt;p&gt;*&lt;em&gt;Disclaimer: I am not a lawyer and do not claim to be giving any real legal advice.  I am simply stating how I do things with my business.  Make sure to consult with a lawyer before engaging in any contracts.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

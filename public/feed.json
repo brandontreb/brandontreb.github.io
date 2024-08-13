@@ -1,0 +1,184 @@
+{
+	"version": "https://jsonfeed.org/version/1",
+	"title": "Hack The Planet",
+	"icon": "https://brandontreb.ngrok.io/avatar.png",
+	"home_page_url": "https://brandontreb.ngrok.io",
+	"feed_url": "https://brandontreb.ngrok.iofeed.json",
+	"items": [
+			{
+				"id": "https://brandontreb.ngrok.io/2024/05/28/another-draft-test/",
+				"title": "Another Draft Test",
+				"content_html": "<p>this shoudl not publish</p>",
+				"date_published": "2024-05-28T23:35:13-06:00",
+				"url": "https://brandontreb.ngrok.io/2024/05/28/another-draft-test/"
+			},
+			{
+				"id": "https://brandontreb.ngrok.io/2024/05/28/draft-test/",
+				"title": "Draft Test",
+				"content_html": "<p>this is a draft</p>",
+				"date_published": "2024-05-28T23:32:56-06:00",
+				"url": "https://brandontreb.ngrok.io/2024/05/28/draft-test/"
+			},
+			{
+				"id": "https://brandontreb.ngrok.io/2024/05/28/2bk92konc3525hza/",
+				
+				"content_html": "<p>my dude</p>\n<p><img src=\"https://brandontreb.ngrok.io/uploads/2024/1716960599250.uIIxCwOi0PyzPjc7.JPG\" alt=\"\"></p>\n",
+				"date_published": "2024-05-28T23:30:21-06:00",
+				"url": "https://brandontreb.ngrok.io/2024/05/28/2bk92konc3525hza/"
+			},
+			{
+				"id": "https://brandontreb.ngrok.io/2024/05/28/diiv7prls5jmhgsp/",
+				
+				"content_html": "<p>a super quick test note</p>\n",
+				"date_published": "2024-05-28T23:28:40-06:00",
+				"url": "https://brandontreb.ngrok.io/2024/05/28/diiv7prls5jmhgsp/"
+			},
+			{
+				"id": "https://brandontreb.ngrok.io/2024/05/28/7kluisla2wdjay5r/",
+				
+				"content_html": "<p>post test</p>\n<p><img src=\"https://brandontreb.ngrok.io/uploads/2024/1716960376100.pmlK3gbuiSB3oiht.jpg\" alt=\"\"></p>\n",
+				"date_published": "2024-05-28T23:26:36-06:00",
+				"url": "https://brandontreb.ngrok.io/2024/05/28/7kluisla2wdjay5r/"
+			},
+			{
+				"id": "https://brandontreb.ngrok.io/2024/02/13/cux48w8iy7v2nkugclkx8q/",
+				
+				"content_html": "<p>Shred</p>\n<p><img src=\"/uploads/2024/1707783742359.c8l8hv8mtyf18r7oota3rs.jpeg\" alt=\"\"></p>\n",
+				"date_published": "2024-02-13T01:22:28-06:00",
+				"url": "https://brandontreb.ngrok.io/2024/02/13/cux48w8iy7v2nkugclkx8q/"
+			},
+			{
+				"id": "https://brandontreb.ngrok.io/2024/02/11/hhutd92dtvocxkcmniij/",
+				
+				"content_html": "<p>Whiskey party 🥃</p>\n<p><img src=\"/uploads/2024/1707678630694.wyyliqqpepmw32dzlof9.jpeg\" alt=\"\"></p>\n",
+				"date_published": "2024-02-11T20:10:51-06:00",
+				"url": "https://brandontreb.ngrok.io/2024/02/11/hhutd92dtvocxkcmniij/"
+			},
+			{
+				"id": "https://brandontreb.ngrok.io/2024/01/23/qs42ukvjrvgdxl0rauxkf4/",
+				
+				"content_html": "<p>My 15yo son just told me he “wants to get into CD’s because they’re ’vintage’”. Now I feel ancient.</p>\n",
+				"date_published": "2024-01-23T22:15:17-06:00",
+				"url": "https://brandontreb.ngrok.io/2024/01/23/qs42ukvjrvgdxl0rauxkf4/"
+			},
+			{
+				"id": "https://brandontreb.ngrok.io/2023/12/14/v21fbrx59youkcrr6tuws/",
+				
+				"content_html": "<p>ice skating with the kids</p>\n<p><img src=\"/uploads/2023/1702567697954.t1beqg49tgnlc8sw9udmvd.jpeg\" alt=\"\"></p>\n<p><img src=\"/uploads/2023/1702567711727.wyp29dtmzalh9dsb9rg5yo.jpeg\" alt=\"\"></p>\n",
+				"date_published": "2023-12-14T16:28:41-06:00",
+				"url": "https://brandontreb.ngrok.io/2023/12/14/v21fbrx59youkcrr6tuws/"
+			},
+			{
+				"id": "https://brandontreb.ngrok.io/2023/12/11/9t3ph5xgjlldp8nj7iinne/",
+				
+				"content_html": "<p>Steezy</p>\n<p><img src=\"/uploads/2023/1702305179554.q0x48hjz9yo406joqu23.jpeg\" alt=\"\"></p>\n<p><img src=\"/uploads/2023/1702305196663.m3a5gdp5dsenlrydubw20s.jpeg\" alt=\"\"></p>\n<p><img src=\"/uploads/2023/1702305163754.j26dwf766hb7hh4che6mcu.jpeg\" alt=\"\"></p>\n<p><img src=\"/uploads/2023/1702305222223.7glt3ee29yogxzdyvj9db.jpeg\" alt=\"\"></p>\n",
+				"date_published": "2023-12-11T15:33:49-06:00",
+				"url": "https://brandontreb.ngrok.io/2023/12/11/9t3ph5xgjlldp8nj7iinne/"
+			},
+			{
+				"id": "https://brandontreb.ngrok.io/2023/11/24/hkckadj31rbf0m5r517vci/",
+				
+				"content_html": "<p>&lt;3</p>\n<p><img src=\"/uploads/2023/1700800632123.ap1e3k4dz89fesec6z4vfe.jpeg\" alt=\"\"></p>\n",
+				"date_published": "2023-11-24T05:37:20-06:00",
+				"url": "https://brandontreb.ngrok.io/2023/11/24/hkckadj31rbf0m5r517vci/"
+			},
+			{
+				"id": "https://brandontreb.ngrok.io/2023/11/09/8e3eul15pv938547ong1b3/",
+				
+				"content_html": "<p>The Tesla FSD feels like being in an Uber in your own car.</p>\n",
+				"date_published": "2023-11-09T21:16:38-06:00",
+				"url": "https://brandontreb.ngrok.io/2023/11/09/8e3eul15pv938547ong1b3/"
+			},
+			{
+				"id": "https://brandontreb.ngrok.io/2023/11/05/dn1zknay4uowej6vb510u8/",
+				
+				"content_html": "<p>Sushi with the boys</p>\n<p><img src=\"/uploads/2023/1699209857363.fnevcrnt3lz7l8sdz7gg.jpeg\" alt=\"\"></p>\n",
+				"date_published": "2023-11-05T19:44:24-06:00",
+				"url": "https://brandontreb.ngrok.io/2023/11/05/dn1zknay4uowej6vb510u8/"
+			},
+			{
+				"id": "https://brandontreb.ngrok.io/2023/11/01/pao3yjnv7wgcq2xelq3jum/",
+				
+				"content_html": "<p>Playing pretend</p>\n<p><img src=\"/uploads/2023/1698879278996.e6p97culgsgf61e51lmq.jpeg\" alt=\"\"></p>\n<p><img src=\"/uploads/2023/1698879264683.35ilu8de4xkh6ykildpoxu.jpeg\" alt=\"\"></p>\n",
+				"date_published": "2023-11-01T22:55:49-06:00",
+				"url": "https://brandontreb.ngrok.io/2023/11/01/pao3yjnv7wgcq2xelq3jum/"
+			},
+			{
+				"id": "https://brandontreb.ngrok.io/2023/10/30/jijmd5wfihdgwan274gmau/",
+				
+				"content_html": "<p>Pumpkin carving with the fam. My heart is full.</p>\n<p><img src=\"/uploads/2023/1698705154071.2khgyqph29qbkz4gqultx.jpeg\" alt=\"\"></p>\n<p><img src=\"/uploads/2023/1698705169736.9tyn21kl3bst6i8t34mvnm.jpeg\" alt=\"\"></p>\n<p><img src=\"/uploads/2023/1698705182622.xw8sxzs76cdberqlg8shcn.jpeg\" alt=\"\"></p>\n<p><img src=\"/uploads/2023/1698705136616.t5xhhgowu6o1wt0qsim34m.jpeg\" alt=\"\"></p>\n<p><img src=\"/uploads/2023/1698705195334.2ylm1xl38yysv2m31cyemi.jpeg\" alt=\"\"></p>\n",
+				"date_published": "2023-10-30T22:33:20-06:00",
+				"url": "https://brandontreb.ngrok.io/2023/10/30/jijmd5wfihdgwan274gmau/"
+			},
+			{
+				"id": "https://brandontreb.ngrok.io/2023/10/24/4z6c7ohzeymm5g4753zl/",
+				
+				"content_html": "<p>🖤</p>\n<p><img src=\"/uploads/2023/1698106187931.ffwdg73abbaauutldbphgl.jpeg\" alt=\"\"></p>\n",
+				"date_published": "2023-10-24T00:10:07-06:00",
+				"url": "https://brandontreb.ngrok.io/2023/10/24/4z6c7ohzeymm5g4753zl/"
+			},
+			{
+				"id": "https://brandontreb.ngrok.io/2023/10/23/9dxuvo70q7ckkl4cuw90a/",
+				
+				"content_html": "<p>This weekend was an absolute dream.</p>\n<p>We packed so much into a short amount of time. Dancing until 4am, great food, Vegas bingo , 12 hours of bands, Tony Hawk, rooftop pools, terrifying Uber Rides, countless laughs and incredible company.</p>\n<p>I feel so grateful for these wonderful people in my life.</p>\n<p><img src=\"/uploads/2023/1698028129305.45ywqlb6m7r65o0f3or2b.jpeg\" alt=\"\"></p>\n<p><img src=\"/uploads/2023/1698028111380.tfksl9qcgzao8r1gyji01p.jpeg\" alt=\"\"></p>\n",
+				"date_published": "2023-10-23T02:29:27-06:00",
+				"url": "https://brandontreb.ngrok.io/2023/10/23/9dxuvo70q7ckkl4cuw90a/"
+			},
+			{
+				"id": "https://brandontreb.ngrok.io/2023/10/17/i6vj5uc1uwsg0kso5v19pg/",
+				
+				"content_html": "<p>Dinner date with the kids while my wife is out of town. (Cayden is not amused)</p>\n<p><img src=\"/uploads/2023/1697582870402.k5ap8shl8ujyi4ga1k3qgd.jpeg\" alt=\"\"></p>\n",
+				"date_published": "2023-10-17T22:48:13-06:00",
+				"url": "https://brandontreb.ngrok.io/2023/10/17/i6vj5uc1uwsg0kso5v19pg/"
+			},
+			{
+				"id": "https://brandontreb.ngrok.io/2023/10/17/4jgagkqw6zi6rl3xuudtyo/",
+				
+				"content_html": "<p>My 15yo asked me to go to lunch with him today. It was an incredibly special time. (Not pictured: my 15yo because he hates being photographed)</p>\n<p><img src=\"/uploads/2023/1697582751654.s3ym37hxz4g3yvq5h156i.jpeg\" alt=\"\"></p>\n",
+				"date_published": "2023-10-17T22:46:53-06:00",
+				"url": "https://brandontreb.ngrok.io/2023/10/17/4jgagkqw6zi6rl3xuudtyo/"
+			},
+			{
+				"id": "https://brandontreb.ngrok.io/2023/10/13/rwa9hlzyabbd8l0j9oo6gq/",
+				
+				"content_html": "<p>Another rock show with the homie</p>\n<p><img src=\"/uploads/2023/1697222216679.cle05derxg1rj4gqxr27.jpeg\" alt=\"\"></p>\n",
+				"date_published": "2023-10-13T18:37:05-06:00",
+				"url": "https://brandontreb.ngrok.io/2023/10/13/rwa9hlzyabbd8l0j9oo6gq/"
+			},
+			{
+				"id": "https://brandontreb.ngrok.io/2023/10/13/smvmesf6kelih4nn5of8q/",
+				
+				"content_html": "<p>My wife and I got <em>complementary</em> tattoos.</p>\n<p>I have made it 37 years on this planet without getting a single tattoo. A few weeks back, I went with Ashley to her tattoo appointment. She wanted to get a phrase from one of her favorite books tattooed on her arm and a Boba Fett helmet on her finger.</p>\n<p>When we arrived, she said she had a surprise for me, but I couldn’t know until the artist started. After she got her first two tattoos, the artist began on a third.</p>\n<p>As the words were materializing, I recognized the lyrics from a song called <a href=\"https://spotify.link/Fpp2dLnYRDb\">Piece of Your Heart</a> by Mayday Parade, which is my favorite band of all time.</p>\n<p>The lyrics said “You are the brightest I’ve seen”.</p>\n<p>Being so incredibly touched by this, I impulsively asked the artist if he could tattoo the next line of the lyric on my arm. He agreed and I got “You are the best side of me” on my arm.</p>\n<p>It was an absolutely beautiful experience to share with my wife and I couldn’t be happier.</p>\n<p><img src=\"/uploads/2023/1697221060255.0yvorvhilo1k8y844wv1ms.jpeg\" alt=\"\"></p>\n",
+				"date_published": "2023-10-13T18:17:48-06:00",
+				"url": "https://brandontreb.ngrok.io/2023/10/13/smvmesf6kelih4nn5of8q/"
+			},
+			{
+				"id": "https://brandontreb.ngrok.io/2023/10/10/xpv1t7q0spdaxvh1ey69/",
+				
+				"content_html": "<p>I absolutely love this time of year in Albuquerque. Green chili roasting, cool mornings and the sounds of hundreds of hot air balloons flying over my house.</p>\n",
+				"date_published": "2023-10-10T13:43:33-06:00",
+				"url": "https://brandontreb.ngrok.io/2023/10/10/xpv1t7q0spdaxvh1ey69/"
+			},
+			{
+				"id": "https://brandontreb.ngrok.io/2023/10/10/lpd3h5dv5pq1zdwigmmb4r/",
+				
+				"content_html": "<p>Albuquerque International Balloon Fiesta 2023</p>\n<p>What a beautiful time with the family. I’m cherishing every single one of these fleeting moments.</p>\n<p><img src=\"/uploads/2023/1696944973371.p0mi7ovstxohdpn2kew.jpeg\" alt=\"\"></p>\n<p><img src=\"/uploads/2023/1696944905008.wwgo5ibczygflurts7i0on.jpeg\" alt=\"\"></p>\n<p><img src=\"/uploads/2023/1696944931377.gm55iija6nw340x0n2o0gl.jpeg\" alt=\"\"></p>\n<p><img src=\"/uploads/2023/1696944949739.ym5fnueishj6xm23xaz1d.jpeg\" alt=\"\"></p>\n<p><img src=\"/uploads/2023/1696944840011.09l8rjkaev7tcrl0cdsss6t.jpeg\" alt=\"\"></p>\n",
+				"date_published": "2023-10-10T13:37:20-06:00",
+				"url": "https://brandontreb.ngrok.io/2023/10/10/lpd3h5dv5pq1zdwigmmb4r/"
+			},
+			{
+				"id": "https://brandontreb.ngrok.io/2023/10/08/k6wvss1gh9hyaydef324er/",
+				
+				"content_html": "<p>Love this girl 🖤</p>\n<p><img src=\"/uploads/2023/1696773598999.sjv70a1p91slnko92igd.jpeg\" alt=\"\"></p>\n",
+				"date_published": "2023-10-08T14:00:14-06:00",
+				"url": "https://brandontreb.ngrok.io/2023/10/08/k6wvss1gh9hyaydef324er/"
+			},
+			{
+				"id": "https://brandontreb.ngrok.io/2023/10/08/g1ru4ar4vc0pcr8jd175nf/",
+				
+				"content_html": "<p>Balloons over our house</p>\n<p><img src=\"/uploads/2023/1696732103541.eqm20aoimk2sw8g6leold.jpeg\" alt=\"\"></p>\n",
+				"date_published": "2023-10-08T02:28:30-06:00",
+				"url": "https://brandontreb.ngrok.io/2023/10/08/g1ru4ar4vc0pcr8jd175nf/"
+			}
+	]
+}

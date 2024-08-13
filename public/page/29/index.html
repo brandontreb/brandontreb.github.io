@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+	<meta name="generator" content="Hugo 0.110.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>
+      
+      Hack The Planet
+      
+  </title>
+
+  <meta name="description" content="this is meta :)">
+
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%f0%9f%a6%a0</text></svg>">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/custom.css">
+  <link rel="canonical" href="https://brandontreb.ngrok.io/">
+
+	<link rel="me" href="https://brandontreb.ngrok.io" />
+	
+	
+	
+	<link rel="authorization_endpoint" href="/indieauth/auth" />
+	<link rel="token_endpoint" href="/indieauth/token" />
+	<link rel="micropub" href="https://brandontreb.ngrok.io/micropub" />
+	<link rel="microsub" href="https://brandontreb.ngrok.io/microsub" />
+	<link rel="webmention" href="https://brandontreb.ngrok.io/webmention" />	
+  
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Hack The Planet</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+		
+			
+				<a class="page-link" href="/archive/">Archive</a>
+			
+		
+			
+				<a class="page-link" href="/photos/">Photos</a>
+			
+		
+			
+				<a class="page-link" href="/replies/">Replies</a>
+			
+		
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+		
+<div class="home h-feed">
+
+  <ul class="post-list">
+	
+	
+      <li class="h-entry">
+		
+			<h1 class="p-name"><a href="https://brandontreb.ngrok.io/2010/10/20/ludum-dare-competition-week-2-update/">Ludum Dare Competition: Week 2 Update</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2010/10/20/ludum-dare-competition-week-2-update/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-10-20 00:00:00 -0600">Oct 20, 2010</time></span></a>
+
+        <div class="e-content">
+         	<p>So another week has gone by and I have made quite a bit of progress, here are the additions since I last posted.</p>
+<ul>
+<li>Texturing</li>
+<li>Lighting</li>
+<li>Skybox</li>
+<li>Better Terrain generation</li>
+<li>Environment Fog</li>
+<li>Basic navigation</li>
+</ul>
+<p>So judging by the screenshot, you might really be thinking that I’m working on Minecraft for the iPhone (I used textures that someone created for Minecraft). While this isn’t my intention, it is starting to look like my engine would be perfect for a simple port. Perhaps, I may consider creating something inspired by Minecraft in the future. For now, I will be sticking to my current game idea which I call Cube Hive.</p>
+<p>As I continue to update this blog, the game idea will become more and more apparent but basically I want to create a game <a href="http://sites.google.com/site/handkor/hive%E2%80%99sprojectpage">similar to this</a> on the iPhone in a cube environment.</p>
+<p>Anyway, here is a screenshot of where I’m at:</p>
+<p><a href="http://brandontreb.com/wp-content/uploads/2010/10/Screen-shot-2010-10-19-at-2.37.00-PM.png"><img src="/uploads/2010/Screen-shot-2010-10-19-at-2.37.00-PM-500x350.png" alt="" title="Screen shot 2010-10-19 at 2.37.00 PM"></a></p>
+<p>Oh, and BTW doing Fog in OpenGL ES is crazy easy. Here is the code (thanks to <a href="http://twitter.com/#!/mikedaley">Mike Daley</a> of <a href="http://www.71squared.com/">71 Squared</a> for showing me this)</p>
+<pre tabindex="0"><code>&lt;code class=’objc’&gt;GLfloat fogColor[] = {1.0f, 1.0f, 1.0f, 1.0f};
+    glFogf(GL_FOG_MODE, GL_LINEAR);
+    glFogfv(GL_FOG_COLOR, fogColor);
+    glFogf(GL_FOG_DENSITY, 0.5f);
+    glHint(GL_FOG_HINT, GL_DONT_CARE);
+    glFogf(GL_FOG_START, 10);
+    glFogf(GL_FOG_END, 20);
+    glEnable(GL_FOG);&lt;/code&gt;
+</code></pre><p>That’s it! Such a great effect with so little effort.</p>
+<p>Anyway, I don’t foresee my game being completed by the end of this month for the Ludum Dare competition. However, I have been working on a killer MUD client for the iPhone that I will most likely submit. I feel that current solutions are clunky, ugly, and unintuitive (sorry if you are a reader and a dev of one of these :/).</p>
+<p>I should have some screenshots up soon.</p>
+<p>I would love to hear thoughts/opinions of doing a Minecraft inspired game as well?</p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+        </div>
+      </li>
+    
+      <li class="h-entry">
+		
+			<h1 class="p-name"><a href="https://brandontreb.ngrok.io/2010/10/14/calculator-creator-released-promo-codes/">Calculator Creator Released &#43; Promo Codes</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2010/10/14/calculator-creator-released-promo-codes/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-10-14 00:00:00 -0600">Oct 14, 2010</time></span></a>
+
+        <div class="e-content">
+         	<p><a href="http://brandontreb.com/wp-content/uploads/2010/10/icon512x512.png"><img src="/uploads/2010/icon512x512.png" alt="" title="icon512x512"></a></p>
+<p>I have recently been developing an iPhone app in my free time called <a href="http://bit.ly/bkOfAT">Calculator Creator</a>. This application has been an idea of mine for quite some time and I finally found the time to complete it. Here is the complete description of the app.</p>
+<p>The last calculation app you will need to buy!</p>
+<p>With Calculator Creator, you are easily able to build your own “Calculators” as long as you know their equations. The process couldn’t be easier.</p>
+<p>Simply:</p>
+<ol>
+<li>Name your calculator (ex Cost Per Square Foot)</li>
+<li>Add the fields involved (ex Cost, Square Foot)</li>
+<li>Create the equation (ex Cost/Square Foot)</li>
+<li>Use the calculator whenever you like</li>
+</ol>
+<p>Why purchase a unit conversion application for more, when you could have EVERY unit conversion in one clean application.</p>
+<p>Calculator Creator also comes packed with over 20 sample calculators including:</p>
+<p>– Unit Conversions<br>
+– Mortgage Payments Calculator<br>
+– Temperature Conversions<br>
+– Tip Calculators<br>
+– and more!</p>
+<p>If you are reading this and want a free copy of my Calculator Creator, try using one of the promo codes below. Also, please consider leaving me an iTunes review (especially if you are getting the app for free! :))</p>
+<p>I would love to hear suggestions for future improvements and features.</p>
+<p><a href="http://bit.ly/bkOfAT">Download Calculator Creator on iTunes</a></p>
+<p><strong>PROMO CODES</strong><br>
+LRREPTP3E64Y<br>
+L6RPN9KYHLFR<br>
+9P3YETKR4XTW<br>
+H4HF4R4L9K7L<br>
+KTRAJYF4M97L<br>
+M34ALYRTHJRY<br>
+MMFFM7LRJTAP<br>
+A3WYL4EKF797<br>
+T93FK4479AWX<br>
+RHWWJEKNE3AM</p>
+<p><img src="/uploads/2010/mzl.gjkqowqp.320x480-75.jpg" alt="" title="CC1"><img src="/uploads/2010/mzl.pbjsknpd.320x480-75.jpg" alt="" title="CC2"></p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+        </div>
+      </li>
+    
+      <li class="h-entry">
+		
+			<h1 class="p-name"><a href="https://brandontreb.ngrok.io/2010/10/07/povs-challenge-week-1/">PoV&amp;#8217;s Challenge: Week 1</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2010/10/07/povs-challenge-week-1/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-10-07 00:00:00 -0600">Oct 7, 2010</time></span></a>
+
+        <div class="e-content">
+         	<p>After a week of studying my butt off with OpenGL ES, I have finally started work on my game engine for my <a href="http://www.ludumdare.com/compo/2010/09/22/povs-challenge-make-a-game-sell-1-copy/">Pov’s Challenge</a> game.</p>
+<p>As you can tell from the screenshot below, I have been playing entirely too much Minecraft and have cube art on the brain.</p>
+<p>It’s not much right now, but I do have a basic cube rendering engine that takes in a level file and renders the environment. Here is a screenshot of a very simple level.</p>
+<p><a href="http://brandontreb.com/wp-content/uploads/2010/10/Screen-shot-2010-10-06-at-10.48.28-PM.png"><img src="/uploads/2010/Screen-shot-2010-10-06-at-10.48.28-PM-362x500.png" alt="" title="Screen shot 2010-10-06 at 10.48.28 PM"></a>It’s not looking super killer at the moment, but I have yet to do fancier lighting or any texture mapping.</p>
+<p><strong>Ohh My Game Idea You Ask?</strong></p>
+<p>Well, without going into too much detail, it’s pretty much an epic battle of mass proportion set in a 3D cube environment (hint: it’s not iMinecraft ;)).</p>
+<p>I will give more details as I go about the month and near the completion of my game.</p>
+<p>Also, in case you are interested, here is what the level file looks like for the generated environment.</p>
+<pre tabindex="0"><code>**GG,GG,GG,G,GG,GG,GG
+GG,G,G,G,G,G,GG
+GG,G,G,G,G,G,GG
+GG,G,G,G,G,G,GG
+G,G,G,GG,G,G,G
+GG,G,G,G,G,G,GG
+GG,G,G,G,G,G,GG
+GG,G,G,G,G,G,GG
+GG,GG,GG,G,GG,GG,GG**
+</code></pre><p>The number of G’s that appear represent the height at that location.</p>
+<p><strong>The current roadmap is:</strong></p>
+<ul>
+<li>Texturing &amp; Lighting</li>
+<li>Collision Detection / Navigation</li>
+<li>Gameplay &amp; Audio</li>
+<li>AI</li>
+<li>Menus / Title / Pause (<a href="http://www.36peas.com/blog/2010/10/6/just-add-the-secret-sauce-a-tried-and-tested-recipe-for-a-fi.html">secret sauce ingredients</a>)</li>
+</ul>
+<p>By next week, I should have some sort of level editor and some basic skinning going on.</p>
+<p>Hopefully I can finish this sucker by the end of the month. Its’s been an intense journey learning openGL from scratch in 7 days and I know that I still have quite a ways to go. Again, if you are participating in this challenge, link me to your development blog in the comments.</p>
+<p>Happy coding!</p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+        </div>
+      </li>
+    
+      <li class="h-entry">
+		
+			<h1 class="p-name"><a href="https://brandontreb.ngrok.io/2010/09/30/game-dev-challenge-opengl-es-resource-list/">Game Dev Challenge &#43; OpenGL ES Resource List</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2010/09/30/game-dev-challenge-opengl-es-resource-list/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-09-30 00:00:00 -0600">Sep 30, 2010</time></span></a>
+
+        <div class="e-content">
+         	<p>The other day, I was reading <a href="http://www.ludumdare.com/">Ludum Dare</a> and saw a very interesting post. It was a call to action for all game developers to get serious and actually put something out there. Here is a link to the post:</p>
+<p><a href="http://www.ludumdare.com/compo/2010/09/22/povs-challenge-make-a-game-sell-1-copy/" title="Permanent Link: PoV’s Challenge: Make a game, sell 1 copy">PoV’s Challenge: Make a game, sell 1 copy</a></p>
+<p>The idea is for would-be indie game developers to create a game in the month of October and sell at least <strong>one copy</strong>. There are no judges, it’s not a competition with anyone other than yourself. According to PoV from Ludum Dare:</p>
+<blockquote>
+<p>Think of this as a race (or a <a href="http://www.nanowrimo.com/">Nanowrimo</a> for games+business). Have something <strong>new</strong> for sale and in a store by the end of October. And if you can sell a copy (or sign a licensing deal, or earn $1 in ad revenue), <strong>you win</strong>.</p>
+</blockquote>
+<p>I have been attempting to learn OpenGL since my early days of programming 10 years ago and it has never stuck. I figured this would be a perfect opportunity to really buckle down and learn it. Recently, I have stumbled upon some really great **OpenGL ES resources and tutorials **that have really made things “click” for me. I wanted to share them in this post.</p>
+<h2 id="1-opengl-es-from-the-ground-up">1. OpenGL ES From The Ground Up</h2>
+<p><img src="/uploads/2010/colorico.jpg?imgmax=800" alt="" title="iphone developement - opengl es">URL: <a href="http://iphonedevelopment.blogspot.com/2009/05/opengl-es-from-ground-up-table-of.html">http://iphonedevelopment.blogspot.com/2009/05/opengl-es-from-ground-up-table-of.html</a></p>
+<p>This is a blog created by Apress author Jeff Lamarche. Jeff has been blogging about opengl es for quite some time and probably has one of the best opengl series out there. His tutorials are aimed at the absolute beginner and he takes a very nice approach to teaching OpenGL ES.</p>
+<p>The link above will take you to his table of contents of tutorials. Where you can read up on his articles ranging from drawing basic triangles to importing 3D models from Blender.</p>
+<p>_</p>
+<h2 id="2-simon-maurice-iphone-opengl-es">2. Simon Maurice iPhone OpenGL ES</h2>
+<p><a href="http://brandontreb.com/wp-content/uploads/2010/09/3dimage.jpg"><img src="/uploads/2010/3dimage.jpg" alt="" title="3dimage"></a>URL: <a href="http://www.cocoachina.com/wiki/index.php?title=Category:Simon_Maurice_iPhone_OpenGL_ES">http://www.cocoachina.com/wiki/index.php?title=Category:Simon_Maurice_iPhone_OpenGL_ES</a></p>
+<p>This is an incredible 20 part series that was translated from Chinese to English and posted on the CocoaChina Wiki. These articles take a slightly different approach, while still doing a great job of teaching you OpenGL ES.</p>
+<p>The articles are well written and quite comprehensive. It is obvious that the approach isn’t quite as professional as Jeff Lamarche’s blog, however this series goes a lot more in depth and will teach you more complex concepts such as handling touch and <strong>moving in 3D</strong>.</p>
+<h3 id="3-nehe-opengl-tutorials">3. NeHe OpenGL Tutorials</h3>
+<p>URL : <a href="http://nehe.gamedev.net/lesson.asp?index=01">http://nehe.gamedev.net/lesson.asp?index=01</a></p>
+<p><img src="/uploads/2010/lesson05.jpg" alt="" title="neho">These are oldies but goodies. The NeHe tutorials have been around for years and years. In fact, I attempted to understand them in my early days of coding when I declared every method as static in Java so I didn’t have to instantiate the class to call it (fail). Either way, these tutorials are a staple in the Open GL community.</p>
+<p>Although they are not written for ES, they still provide some solid OpenGL concepts. I would strongly suggest reading these after you have read through the other 2. There are some limitation of OpenGL ES (like not supporting GL_QUADS), that will quickly confuse you if you try to write the Nehe tutorials on the iPhone.</p>
+<p>One killer thing about the first link I mentioned is, Jeff Lamarche actually ported the first 6 Nehe tutorials to the iPhone and they can be found on the page I linked to.</p>
+<p>I will be studying these resources carefully over the coming month. I intend to take the plunge and developer a simple OpenGL ES game in the month of October and <strong>sell 1 copy</strong>.</p>
+<p>So, please join me! If you decide to do this and are journaling your progress, link your blog in the comments. I would love to follow it. I will be doing the same here.</p>
+<p>Happy Coding!</p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+        </div>
+      </li>
+    
+      <li class="h-entry">
+		
+			<h1 class="p-name"><a href="https://brandontreb.ngrok.io/2010/09/22/this-pretty-much-sums-it-up/">This Pretty Much Sums It Up</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2010/09/22/this-pretty-much-sums-it-up/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-09-22 00:00:00 -0600">Sep 22, 2010</time></span></a>
+
+        <div class="e-content">
+         	<p><img src="/uploads/2010/hf0oR.png" alt="" title="This Pretty Much Sums It Up">
+<a href="http://www.reddit.com/r/pics/comments/dh8g0/actually_this_pretty_much_sums_it_up_as_well/">Source</a></p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+        </div>
+      </li>
+    
+      <li class="h-entry">
+		
+			<h1 class="p-name"><a href="https://brandontreb.ngrok.io/2010/09/21/app-store-link-share-affiliate-link-generator/">App Store (Link Share) Affiliate Link Generator</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2010/09/21/app-store-link-share-affiliate-link-generator/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-09-21 00:00:00 -0600">Sep 21, 2010</time></span></a>
+
+        <div class="e-content">
+         	<p>A while back, I wrote a post called ”<a href="http://brandontreb.com/money-you-might-be-missing-out-on-linkshare-api-integration/">Money You Might Be Missing Out On</a>” where I discussed the <a href="http://click.linksynergy.com/fs-bin/stat?id=U3Wt3JDOKpI&amp;offerid=7097.10000073&amp;subid=0&amp;type=4">Linkshare</a> API. Well, I took it upon myself to create a simple tool that I have been using in my blog posts to quickly generate affiliate iTunes links for iPhone apps. Here is a screenshot of the app.</p>
+<p><a href="http://brandontreb.com/apps/linkshare/"><img src="/uploads/2010/Screen-shot-2010-09-21-at-8.24.18-AM.png" alt="" title="Screen shot 2010-09-21 at 8.24.18 AM"></a></p>
+<p>The generator is quite simple and perfect for bloggers that are discussing apps. Here is how it works.</p>
+<ol>
+<li>Sign up for <a href="http://click.linksynergy.com/fs-bin/stat?id=U3Wt3JDOKpI&amp;offerid=7097.10000073&amp;subid=0&amp;type=4">LinkShare</a> (if you haven’t already done so)</li>
+<li>Go to <a href="http://brandontreb.com/apps/linkshare/">http://brandontreb.com/apps/linkshare/</a></li>
+<li>Enter your <a href="http://click.linksynergy.com/fs-bin/stat?id=U3Wt3JDOKpI&amp;offerid=7097.10000073&amp;subid=0&amp;type=4">LinkShare</a> Token. You get this in the Web Services section if the <a href="http://click.linksynergy.com/fs-bin/stat?id=U3Wt3JDOKpI&amp;offerid=7097.10000073&amp;subid=0&amp;type=4">LinkShare</a> site when you sign up.</li>
+<li>Select a merchant. By default, I have already populated it with Apple iTunes. Linkshare supports thousands of affiliate programs, so you can click other if you are using it for something else besides the app store.</li>
+<li>Enter the App Store URL of the application that you wish to get an affiliate link for. (ex <a href="http://itunes.apple.com/us/app/hundred-pushups/id301174591?mt=8">http://itunes.apple.com/us/app/hundred-pushups/id301174591?mt=8</a>)</li>
+<li>Click submit</li>
+</ol>
+<p>Now, it will interface with the LinkShare API and produce an affiliate link for your account.</p>
+<p><a href="http://brandontreb.com/wp-content/uploads/2010/09/Screen-shot-2010-09-21-at-8.30.33-AM.png"><img src="/uploads/2010/Screen-shot-2010-09-21-at-8.30.33-AM.png" alt="" title="Screen shot 2010-09-21 at 8.30.33 AM"></a></p>
+<p>I hope you find this tool as useful as I do.</p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+        </div>
+      </li>
+    
+      <li class="h-entry">
+		
+			<h1 class="p-name"><a href="https://brandontreb.ngrok.io/2010/09/17/great-wordpress-plugin-to-connect-your-wordpress-blog-to-your-tumblr/">Great WordPress Plugin To Connect Your WordPress Blog To Your Tumblr</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2010/09/17/great-wordpress-plugin-to-connect-your-wordpress-blog-to-your-tumblr/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-09-17 00:00:00 -0600">Sep 17, 2010</time></span></a>
+
+        <div class="e-content">
+         	<p>Ok, so maybe this is stupid, reposting your own content in multiple areas. As far as SEO goes, it may not be the best idea. However, I really love Tumblr and I really love WordPress. I can’t seem to part with either yet I don’t quite have the time for both.</p>
+<p>I put out a quick tweet earlier today (and this is why I flippin love Twitter), asking if anyone knew of a good way to connect WordPress to Twitter. Here are the popular options.</p>
+<ol>
+<li>Use Tumblr’s feed importer (suggested by <a href="http://twitter.com/abrahamvegh">@abrahamvegh</a>). This option requires you to enter your blog’s RSS feed. Tumblr then scans your RSS feed every so often and pulls the new posts. I didn’t care too much for this approach because it’s not instantaneous. I added my feed and it told me that it would refresh in about an hour. After an hour it still didn’t pull my WordPress posts and had a status of queued.</li>
+</ol>
+<p><a href="http://brandontreb.com/wp-content/uploads/2010/09/Screen-shot-2010-09-16-at-10.20.58-PM.png"><img src="/uploads/2010/Screen-shot-2010-09-16-at-10.20.58-PM.png" alt="" title="Screen shot 2010-09-16 at 10.20.58 PM"></a>
+2. There are quite a few Tumblr WordPress plugins out there. I have tried a few and have seen no success. Until one of my twitter followers (**<a href="http://twitter.com/#!/TheSilber">@TheSilber</a>) **suggested that I use <a href="http://wordpress.org/extend/plugins/tumblrize/">tumblrize</a>. Tumblrize is a great plugin that worked perfectly right out of the box. It was easy to set up and boasts quite a few options.”Tumblrize posts to Tumblr whenever you hit the “publish” button. It uses Tumblr’s simple API to keep posts in sync; when you edit your WordPress post, it updates your Tumblr post.”</p>
+<p><img src="/uploads/2010/tumblrize.png" alt="" title="Tumblrize"></p>
+<p>I would highly recommend option 2 if you are planning on syncing your WordPress blog with your Tumblr.</p>
+<p><a href="http://wordpress.org/extend/plugins/tumblrize/">Download Tumblr.ize Here</a></p>
+<p>Would love to hear about some other interesting solutions. Feel free to post them in the comments.</p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+        </div>
+      </li>
+    
+      <li class="h-entry">
+		
+			<h1 class="p-name"><a href="https://brandontreb.ngrok.io/2010/09/16/seo-works-every-time/">SEO: Works Every Time</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2010/09/16/seo-works-every-time/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-09-16 00:00:00 -0600">Sep 16, 2010</time></span></a>
+
+        <div class="e-content">
+         	<p>So I received an internal email at work the other day about how we could SEO our company website (<a href="http://elctech.com">http://elctech.com</a>). Here was my suggestion:</p>
+<blockquote>
+<p>“Just put up a few #  tags that state (in this order) Rails, Coding, Consulting, Porn, Free Porn, Porn on Rails, Viagra, iPhone, development, hot chicks, elc.</p>
+<p>Guaranteed hits!”</p>
+</blockquote>
+<p>Genius right? So after a while, a fellow employee (<a href="http://twitter.com/maxmurphy">@maxmurphy</a>) suggested we implement this rails solution:</p>
+<pre tabindex="0"><code>&lt;code class=’ruby’&gt;[&#34;Rails&#34;, &#34;Coding&#34;, &#34;Consulting&#34;, &#34;Porn&#34;, &#34;Free Porn&#34;, &#34;Porn on Rails&#34;, &#34;Viagra&#34;,
+&#34;iPhone&#34;, &#34;development&#34;, &#34;hot chicks&#34;, &#34;elc&#34;].each do |seo|
+  &#34;#{seo} \n ELC ROCKS #{seo}&#34;
+end&lt;/code&gt;
+</code></pre><p>Perfect!</p>
+<p>Feel free to steal this and you too can be an SEO Guru!</p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+        </div>
+      </li>
+    
+      <li class="h-entry">
+		
+			<h1 class="p-name"><a href="https://brandontreb.ngrok.io/2010/09/16/6-traits-of-a-successful-developer/">6 Traits Of A Successful Developer</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2010/09/16/6-traits-of-a-successful-developer/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-09-16 00:00:00 -0600">Sep 16, 2010</time></span></a>
+
+        <div class="e-content">
+         	<p>I really enjoyed this article on traits of developers.</p>
+<p><a href="http://www.turnleafdesign.com/6-traits-of-successful-developers">http://www.turnleafdesign.com/6-traits-of-successful-developers</a></p>
+<p>In my experience, developers tend to become arrogant and totally ignore #1 (see Windows Devs). I feel that this is the most important trait of all.</p>
+<blockquote>
+<p>“For a developer to be successful over any period of time a continued commitment to learning is absolutely vital. The field is too large, too quickly changing, and too in depth for any developer to ever “know it all.” Luckily there are a lot of resources a developer can use to learn; books, co-workers, classes, <a href="http://www.turnleafdesign.com/">blogs</a>, among many others.”</p>
+</blockquote>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+        </div>
+      </li>
+    
+      <li class="h-entry">
+		
+			<h1 class="p-name"><a href="https://brandontreb.ngrok.io/2010/09/07/great-html5-infographic/">Great HTML5 Infographic</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2010/09/07/great-html5-infographic/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-09-07 00:00:00 -0600">Sep 7, 2010</time></span></a>
+
+        <div class="e-content">
+         	<p>This info graphic just about sums it up in terms of what is HTML, and why we should care. It includes browser readyness, various API support, comparison of competition, and more. Check it out.</p>
+<p><a href="http://media.focus.com/images/uploaded/fyi/wtf-html5-infographic/HTML5__.jpg"><img src="/uploads/2010/HTML5__.jpg" alt="" title="HTML5"></a></p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+        </div>
+      </li>
+    
+      <li class="h-entry">
+		
+			<h1 class="p-name"><a href="https://brandontreb.ngrok.io/2010/09/01/technology-fitness/">Technology &#43; Fitness = &lt;3 :: 3 Apps That Will Keep Even The Laziest Geek In Shape</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2010/09/01/technology-fitness/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-09-01 00:00:00 -0600">Sep 1, 2010</time></span></a>
+
+        <div class="e-content">
+         	<p>If you are reading this post you are most likely a geek. It’s true, otherwise if you were a reader of my blog and not a geek, you would be very confused ;).</p>
+<p>Well, being a fellow geek, I am prone to the same sort of problems as you when it comes to fitness. As geeks we sit in our chairs and more often than not end up looking like this. (sad face)</p>
+<p><a href="http://brandontreb.com/wp-content/uploads/2010/08/computer-nerd-+-Limpet-21.jpeg"><img src="/uploads/2010/computer-nerd-+-Limpet-21-500x379.jpg" alt="" title="computer nerd + Limpet 2[1]"></a></p>
+<p>Ok ok, that photo is a little cliché, but you get my point. This prolonged sitting along with a lazy (Mountain Dew + Cheetos ) diet leads to this stereotypic geek look.</p>
+<h2 id="the-solution">The Solution</h2>
+<p>Dun duh dun duh (those were trumpet sounds in case you didn’t know). Well, we all love technology (duh), so why not combine it with some basic fitness and fight the stereotype. With sweet gadgets (like the iPhone :)), we now have some incredible tools that almost make a game out of exercise.</p>
+<p>Here are 3 iPhone apps that I use on a daily basis to keep me in peak, geek, 1337 shape.</p>
+<h3 id="1-100-pushups">#1 100 Pushups</h3>
+<p><a href="http://click.linksynergy.com/fs-bin/click?id=U3Wt3JDOKpI&amp;subid=0&amp;offerid=146261.1&amp;type=10&amp;tmpid=3909&amp;RD_PARM1=http%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fhundred-pushups%2Fid301174591%3Fmt%3D8%2526mt%3D8%2526buylink%3Dyes"><img src="/uploads/2010/appstore.png" alt="" title="appstore"></a></p>
+<p>I stumbled upon this gem of an app when I started seeing my buddy <a href="http://twitter.com/oodelali">@oodelali</a> ‘s Twitter feed displaying the following.</p>
+<p><a href="http://brandontreb.com/wp-content/uploads/2010/08/Screen-shot-2010-08-31-at-11.00.48-AM.png"><img src="/uploads/2010/Screen-shot-2010-08-31-at-11.00.48-AM.png" alt="" title="Screen shot 2010-08-31 at 11.00.48 AM"></a></p>
+<p>160 Pushups! Gangster right? Intrigued, I asked him about the app. After a brief synopsis, I was sold. Here is the rundown of this app (per its app store description).</p>
+<blockquote>
+<p>“If you’re serious about increasing your strength, follow this six week training program and you’ll soon be on your way to completing 100 consecutive push ups!”</p>
+</blockquote>
+<p>Basically, this app utilizes interval training where you exercise <strong>3 times per week</strong> for about 10 minutes. After 6 weeks of this, the app claims you will be able to do <strong>100 consecutive pushups</strong>! Here is a screenshot so you can see what I’m talking about.</p>
+<p><img src="/uploads/2010/mzl.tzrdwyxf.320x480-75.jpg" alt="" title="100pushups">
+So far, I’m on week 4 and am doing a total of 94 pushups (not consecutive yet).</p>
+<p>**Don’t have an iPhone (sad face), you can still benefit from this app by using their web interface at **<a href="http://hundredpushups.com/"><strong>http://hundredpushups.com/</strong></a>.</p>
+<p>The developer of this app has a whole suit of these including <a href="http://click.linksynergy.com/fs-bin/click?id=U3Wt3JDOKpI&amp;subid=0&amp;offerid=146261.1&amp;type=10&amp;tmpid=3909&amp;RD_PARM1=http%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Ftwo-hundred-situps%2Fid302001331%3Fmt%3D8%2526mt%3D8%2526buylink%3Dyes">200 Sit-ups</a>, <a href="http://click.linksynergy.com/fs-bin/click?id=U3Wt3JDOKpI&amp;subid=0&amp;offerid=146261.1&amp;type=10&amp;tmpid=3909&amp;RD_PARM1=http%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Ftwo-hundred-squats%2Fid314081637%3Fmt%3D8%2526mt%3D8%2526buylink%3Dyes">200 Squats</a>, and <a href="http://click.linksynergy.com/fs-bin/click?id=U3Wt3JDOKpI&amp;subid=0&amp;offerid=146261.1&amp;type=10&amp;tmpid=3909&amp;RD_PARM1=http%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Ftwenty-chinups%2Fid306789203%3Fmt%3D8%2526mt%3D8%2526buylink%3Dyes">Twenty Chin Ups</a>.</p>
+<h3 id="2-run-keeper-pro">#2 Run Keeper Pro</h3>
+<p><a href="http://click.linksynergy.com/fs-bin/click?id=U3Wt3JDOKpI&amp;subid=0&amp;offerid=146261.1&amp;type=10&amp;tmpid=3909&amp;RD_PARM1=http%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Frunkeeper-pro%2Fid300235330%3Fmt%3D8%2526mt%3D8%2526buylink%3Dyes"><img src="/uploads/2010/appstore.png" alt="" title="appstore"></a></p>
+<p>Run Keeper Pro is a stellar app that has both paid and free versions. It uses the GPS to map our your run and gives you feedback on elevation, pace, distance, and location. I use this app every single day when I go for runs.</p>
+<p>One killer feature of this app is its ability to sync with the web at <a href="http://runkeeper.com/">RunKeeper.com</a>. Here you are able to track more statistics about your runs, create paths, and get more social.</p>
+<p><img src="/uploads/2010/mzl.osihoibi.320x480-75.jpg" alt="" title="RunKeeper">
+The interface is both beautiful and intuitive. (Aesthetics are super important to me. You could have the most functional app in the world and I won’t use it if it looks like feces).</p>
+<p>When I first started running, I could barely make it to the end of my street, and with this app, I am now running over 10 miles per week!</p>
+<h3 id="3-ifitness">#3 iFitness</h3>
+<p><a href="http://click.linksynergy.com/fs-bin/click?id=U3Wt3JDOKpI&amp;subid=0&amp;offerid=146261.1&amp;type=10&amp;tmpid=3909&amp;RD_PARM1=http%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fifitness%2Fid290451423%3Fmt%3D8%2526mt%3D8%2526buylink%3Dyes"><img src="/uploads/2010/appstore.png" alt="" title="appstore"></a></p>
+<p>So, this app is for the geek that might actually go to they gym (you mean like…leave…the house). Or if you are really a hobbit, have a home gym. iFiness allows you to track all aspects of a workout. It will track what exercises you do, on what day, with how many reps for how long.</p>
+<p><a href="http://brandontreb.com/wp-content/uploads/2010/08/iPhone-Screenshot-1.jpeg"><img src="/uploads/2010/iPhone-Screenshot-1.jpeg" alt="" title="iPhone Screenshot 1"></a></p>
+<p>With these killer features, it’s easy to create a fully customized workout and track it the way you want.</p>
+<p>“But Brandon, I have never been to the gym and don’t know how to use the weights/machines because I’m level 75 in WOW.” Well, iFitiness has got you covered! For every workout they have in the system, they provide full graphics or videos on how to perform each one. So if you are unsure about how to do anything, just take a quick peak at your phone, jump on the machine, get jacked, and the ladies (or dudes if you are a lady reading this) will be flocking from all over.</p>
+<p>Another great feature of this app is that it has built in workout plans to suite your lifestyle. So weather or not you want to build muscle or you just want to lose that gut you have been working on, they have a plan for you. Whoa, I am starting to sound like a <a href="http://www.beachbody.com/product/fitness_programs/best_sellers/p90x.do?tnt=P90X_SHAKE_B1&amp;code=P90XDOTCOM">P90X</a> commercial, time to pump the breaks.</p>
+<h2 id="take-away">Take Away</h2>
+<p>To wrap up, I feel that staying healthy and fit is very important. You have to make it a part of your lifestyle and these few tools are a great way to get a jump on it. Feel free to post comments, questions, or grammar corrections (expected bc we are all the grammar police) in the comments.</p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+        </div>
+      </li>
+    
+      <li class="h-entry">
+		
+			<h1 class="p-name"><a href="https://brandontreb.ngrok.io/2010/08/30/wordpress-for-iphoneipad-nsxmlparsererrordomain-error-64-resolved/">WordPress For iPhone/iPad NSXMLParserErrorDomain Error 64 Resolved</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2010/08/30/wordpress-for-iphoneipad-nsxmlparsererrordomain-error-64-resolved/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-08-30 00:00:00 -0600">Aug 30, 2010</time></span></a>
+
+        <div class="e-content">
+         	<p>If you have a WordPress blog and an iPhone/iPad, then you most likely have the <a href="http://itunes.apple.com/us/app/wordpress/id335703880?mt=8">WordPress for iOS</a> app. If you don’t, you <a href="http://itunes.apple.com/us/app/wordpress/id335703880?mt=8">should</a>.</p>
+<p>Over the past couple of days, I have been receiving the following error when trying to add my blog to the iPhone app.</p>
+<p><a href="http://brandontreb.com/wp-content/uploads/2010/08/photo.png"><img src="/uploads/2010/photo-333x500.png" alt="" title="photo"></a></p>
+<p>After scouring the internet, I found that this could be the result of a few issues.</p>
+<ul>
+<li>Special characters in a post body that are not supported by NSXMLParser</li>
+<li>Special characters in a comment</li>
+<li>Invalid post or comment RSS</li>
+<li>An error in a theme/plugin file</li>
+</ul>
+<p>For me, this turned out to be an issue with the comments RSS feed. I loaded it up in the browser and long behold, even the browser threw an error. But what could be causing this? Turns out, I had left a space in a plugin that I created. This caused a space to be output at the beginning of the comments XML, causing it to error. Notice the space between ?&gt; and &lt;?php below. (Face Palm)</p>
+<p><a href="http://brandontreb.com/wp-content/uploads/2010/08/Screen-shot-2010-08-30-at-10.05.22-AM.png"><img src="/uploads/2010/Screen-shot-2010-08-30-at-10.05.22-AM.png" alt="" title="Screen shot 2010-08-30 at 10.05.22 AM"></a></p>
+<p>After removing the space from this plugin, I loaded up WordPress for iPhone and it added my blog without a problem.</p>
+<p>So, the take away from this is <strong>don’t output spaces when you create a plugin.</strong></p>
+<p>I hope this post has proven useful for you, I can’t imagine that I’m the only person with this issue 😉</p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+        </div>
+      </li>
+    
+      <li class="h-entry">
+		
+			<h1 class="p-name"><a href="https://brandontreb.ngrok.io/2010/08/27/feedburner-anywhere-plugin-updated/">Feedburner Anywhere Plugin Updated</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2010/08/27/feedburner-anywhere-plugin-updated/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-08-27 00:00:00 -0600">Aug 27, 2010</time></span></a>
+
+        <div class="e-content">
+         	<p>I have updated my WordPress plugin Feedburner Anywhere. In case you are unfamiliar with it, it’s a plugin that allows you to output your Feedburner subscriber count anywhere on your blog.</p>
+<p>**The Problem: **Since Google took over Feedburner, I feel that it has been quite unreliable. A few times a week, Feedburner would return 0 for your subscriber count. This was an issue with the plugin. If the return value was 0 when the plugin pulled and cached the feedburner data, you would look like you had no subscribers.</p>
+<p><strong>The Fix:</strong> I am now caching the values returned from Feedburner. If for any reason Feedburner returns a 0 subscriber count, the last known value (greater than 0) is used instead.</p>
+<p><a href="http://wordpress.org/extend/plugins/feedburner-anywhere/">Download the updated plugin here</a></p>
+<p>If you have any other suggestions for the plugin, please let me know.</p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+        </div>
+      </li>
+    
+      <li class="h-entry">
+		
+			<h1 class="p-name"><a href="https://brandontreb.ngrok.io/2010/08/21/simple-office-fitness-replace-your-office-chair-with-an-exercise-ball/">Simple Office Fitness: Replace Your Office Chair With An Exercise Ball</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2010/08/21/simple-office-fitness-replace-your-office-chair-with-an-exercise-ball/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-08-21 00:00:00 -0600">Aug 21, 2010</time></span></a>
+
+        <div class="e-content">
+         	<p><a href="http://www.amazon.com/gp/product/B000FH2W4A?ie=UTF8&amp;tag=codnerandnon-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B000FH2W4A"><img src="/uploads/2010/513N0EDXN5L._SS500_-300x300.jpg" alt="" title="513N0EDXN5L._SS500_"></a></p>
+<p>When I was in Portland this past month, I saw that many people in my work’s office were sitting on large exercise balls instead of office chairs. Curious, I researched the benefits and decided to <a href="http://www.amazon.com/gp/product/B000FH2W4A?ie=UTF8&amp;tag=codnerandnon-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B000FH2W4A">purchase one</a> for my home office. The benefits include:</p>
+<ul>
+<li>Improved posture – sitting on the ball forces you to sit up straight of you won’t be very comfortable</li>
+<li>Constant movement – Sitting for long periods of time can be bad for you, even when you exercise. Check out this <a href="http://well.blogs.nytimes.com/2010/07/14/phys-ed-the-men-who-stare-at-screens/">recent study</a> that was discussed on the New York Times. When you use an exercise ball for a chair, you are constantly repositioning yourself and are combatting this issue.</li>
+<li>Getting Jacked! – having a ball for a chair has encouraged me to exercise during my down time. Code is compiling…bang out some crunches. I will now do ~ 300 crunches per day while waiting for various tasks to complete.</li>
+<li>They are cheap – Most exercise balls range from $15-$25. <a href="http://www.amazon.com/gp/product/B000FH2W4A?ie=UTF8&amp;tag=codnerandnon-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B000FH2W4A">Check out Amazon for some deals</a>. I recently purchased one at Target on sale for $9.</li>
+<li>It’s fun – Need a break? Just bounce a bit on the ball 😉</li>
+</ul>
+<p>While I’m not saying to completely replace your office chair with an exercise ball (you will end up switching back an fourth a bit), it is a great way to stay in shape and enforce good posture while at work.</p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+        </div>
+      </li>
+    
+      <li class="h-entry">
+		
+			<h1 class="p-name"><a href="https://brandontreb.ngrok.io/2010/07/06/test-version-of-tweetpress-3-0/">Test Version of TweetPress 3.0</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2010/07/06/test-version-of-tweetpress-3-0/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-07-06 00:00:00 -0600">Jul 6, 2010</time></span></a>
+
+        <div class="e-content">
+         	<p>So WordPress 3.0 has broken Tweetpress for many people. If you are daring, willing to help, and experiencing issues with Tweetpress, please download the 3.0 test build of Tweetpress and install it on your WordPress blog.</p>
+<p>Here are your next steps after installation:</p>
+<ol>
+<li>Make sure you add your Twitter username and Password to the Tweetpress settings in your wp-admin and save it</li>
+<li>Attempt to post a photo to Twitter using Twitter for iPhone</li>
+<li>If it works, you win, let me know, if not do this:
+<ol>
+<li>go back to the tweetpress admin in wp-admin</li>
+<li>click the log link at the very bottom</li>
+<li>copy the text and email it to brandontreb [at] gmail [dot] com with the subject “Tweetpress Log”</li>
+</ol>
+</li>
+</ol>
+<p>This will really help me troubleshoot the issues that everyone has been having.</p>
+<p>Thanks!</p>
+<p><a href="http://brandontreb.com/wp-content/uploads/2010/07/tweetpress.zip">Download Tweetpress Test Build 3.0</a></p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+        </div>
+      </li>
+    
+      <li class="h-entry">
+		
+			<h1 class="p-name"><a href="https://brandontreb.ngrok.io/2010/06/08/feedburner-anywhere-plugin-released/">Feedburner Anywhere Plugin Released</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2010/06/08/feedburner-anywhere-plugin-released/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-06-08 00:00:00 -0600">Jun 8, 2010</time></span></a>
+
+        <div class="e-content">
+         	<p><a href="http://www.crunchbase.com/company/feedburner"><img src="/uploads/2010/3292v1-max-250x250.png" alt="Image representing FeedBurner as depicted in C…" title="Image representing FeedBurner as depicted in C…"></a></p>
+<pre tabindex="0"><code>&lt;p class=&#34;wp-caption-text&#34;&gt;
+  Image via CrunchBase
+&lt;/p&gt;
+</code></pre><p>I have just released another WordPress plugin called Feedburner Anywhere.</p>
+<p>What it does is allow you to display your RSS subscriber count anywhere on your blog.</p>
+<p>You have the choice of using the built-in widget, embedding it in your posts/pages, or a combination of both.</p>
+<p>Check out my sidebar for an example of usage.</p>
+<p><a href="http://wordpress.org/extend/plugins/feedburner-anywhere/">Download Feedburner Anywhere at WordPress.org</a></p>
+<p><a href="http://reblog.zemanta.com/zemified/a163a219-5486-4b37-b958-bc2e76dc02f2/" title="Reblog this post [with Zemanta]"><img src="/uploads/2010/reblog_e.png?x-id=a163a219-5486-4b37-b958-bc2e76dc02f2" alt="Reblog this post [with Zemanta]"></a></p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+        </div>
+      </li>
+    
+      <li class="h-entry">
+		
+			<h1 class="p-name"><a href="https://brandontreb.ngrok.io/2010/04/15/heck-yes-c-macro-for-when-something-is-really-true/">HECK YES C Macro, For When Something Is REALLY True</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2010/04/15/heck-yes-c-macro-for-when-something-is-really-true/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-04-15 00:00:00 -0600">Apr 15, 2010</time></span></a>
+
+        <div class="e-content">
+         	<p>Quite possibly the most useful macro you will ever use.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<pre tabindex="0"><code>#define HECK\_YES true &amp;&amp; true
+ 
+// Usage
+if(self.sleepy)
+{
+   self.needsCoffee = HECK_YES;
+}
+</code></pre><p>|</p>
+<p>Now if only I could replace semi colons with exclamation points…</p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+        </div>
+      </li>
+    
+      <li class="h-entry">
+		
+			<h1 class="p-name"><a href="https://brandontreb.ngrok.io/2010/04/06/dynamically-load-wordpress-post-images-like-mashable-com/">Dynamically Load WordPress Post Images Like Mashable.com</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2010/04/06/dynamically-load-wordpress-post-images-like-mashable-com/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-04-06 00:00:00 -0600">Apr 6, 2010</time></span></a>
+
+        <div class="e-content">
+         	<h4 id="heading"></h4>
+<h4 id="what">What?</h4>
+<p>Have you ever noticed that the content on <a href="http://mashable.com/">Mashable.com</a> loads Incredibly fast? Also, have you noticed that as you scroll the images seem to ‘fade’ in? Well, this isn’t due to some crazy h4x0r code written specifically by Mashable Engineers. It’s a simple JQuery plugin that loads the images ‘Lazily’.</p>
+<p>The Jquery plugin can be found <a href="http://plugins.jquery.com/project/lazyload">here</a> and a nice tutorial for implementing it can be found <a href="http://ajaxian.com/archives/lazy-load-plugin-for-jquery">here</a>.</p>
+<p>If you don’t feel like hacking it yourself, read on and I will point you in the direction of a great WordPress plugin that handles this automagically.</p>
+<h4 id="where">Where?</h4>
+<p>Luckily the hard work has been done for you and you can <a href="http://wordpress.org/extend/plugins/jquery-image-lazy-loading/">download a WordPress plugin</a> that will automatically add this functionality to your WordPress blog.</p>
+<p>You can <a href="http://wordpress.org/extend/plugins/jquery-image-lazy-loading/">download the plugin from WordPress.org</a></p>
+<p>This plugin will work for EVERY image on your blog. Even the Gravatar icons of the commenters.</p>
+<h4 id="thats-it">Thats It?</h4>
+<p>Yep, try it out. Just scroll down on my homepage and watch as the images magically fade in.</p>
+<p>Happy Wp-ing!</p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+        </div>
+      </li>
+    
+      <li class="h-entry">
+		
+			<h1 class="p-name"><a href="https://brandontreb.ngrok.io/2010/03/17/wordpress-coding-programmatically-add-post-tags-and-other-meta-info/">WordPress Coding: Programmatically Add Post Tags (and other meta info)</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2010/03/17/wordpress-coding-programmatically-add-post-tags-and-other-meta-info/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-03-17 00:00:00 -0600">Mar 17, 2010</time></span></a>
+
+        <div class="e-content">
+         	<p><img src="/uploads/2010/561962_price_tag%5B3%5D.jpg" alt="" title="Tags">
+I was recently working on a script that imports from a custom blogging platform into WordPress and had some need to programmatically add post keywords.
+The script to do this is actually quite simple and can be used to update any post attribute.</p>
+<p>Here is the code:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<pre tabindex="0"><code>// Create the post array
+$post = array(
+    ‘ID’ =&gt; 5,
+    ‘tags_input’ =&gt; ‘foo,bar,baz’);     
+ 
+// Update the post
+wp_update_post($post);
+</code></pre><p>|</p>
+<p>This will assign the keywords “foo”, “bar”, and “baz” to the post with ID 5. This task seems trivial, however it’s very powerful when you think about automation. For example, you could write a script to scrape a google search for your target keyword and find related keywords for each of your posts automatically. Hrm… plugin idea?</p>
+<p>Give it a shot. More info on available parameters can be found on <a href="http://codex.wordpress.org/Function_Reference/wp_insert_post">WordPress’ site here</a></p>
+<p>Here are some of the other fields that you are able to update this way:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<pre tabindex="0"><code>defaults = array(
+‘post_status’ =&gt; ‘draft’, 
+‘post_type’ =&gt; ‘post’,
+‘post_author’ =&gt; $user\_ID,
+‘ping_status’ =&gt; get_option(‘default_ping_status’), 
+‘post_parent’ =&gt; ,
+‘menu_order’ =&gt; ,
+‘to_ping’ =&gt;  ”,
+‘pinged’ =&gt; ”,
+‘post_password’ =&gt; ”,
+‘guid’ =&gt; ”,
+‘post_content_filtered’ =&gt; ”,
+‘post_excerpt’ =&gt; ”,
+‘import_id’ =&gt; );
+</code></pre><p>|</p>
+<p>Happy WPCoding!</p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+        </div>
+      </li>
+    
+      <li class="h-entry">
+		
+			<h1 class="p-name"><a href="https://brandontreb.ngrok.io/2010/03/12/wordpress-programming-tip-enable-database-error-reporting-for-custom-queries/">WordPress Programming Tip: Enable Database Error Reporting For Custom Queries</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2010/03/12/wordpress-programming-tip-enable-database-error-reporting-for-custom-queries/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-03-12 01:00:00 -0600">Mar 12, 2010</time></span></a>
+
+        <div class="e-content">
+         	<p>So this one should seem pretty obvious, but it wasn’t apparent to me at first.  It was only after digging through the wp-db.php file that I discovered how to enable error reporting.</p>
+<h4 id="the-problem">The Problem</h4>
+<p>As you may have discovered, the wp_query() function isn’t a “one size fit’s all” solution.  Often times, you may need to query the WordPress database using a custom MySQL query.  Especially  if you are using WordPress for anything other than a blog (ie <a href="http://freshapps.com">freshapps.com</a>).</p>
+<p>When writing custom queries, it can often be frustrating if you make a mistake in the SQL syntax as WordPress will simply display no results.  For example:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<pre tabindex="0"><code>$results = $wpdb-&gt;get\_results(&#34;SELECT \* FROM $wpdb-&gt;posts 
+ WHERE post\_title = ‘foo bar baz&#34;);
+print\_r($results);
+ 
+// Outputs Array ( )
+</code></pre><p>|</p>
+<p>Since we have made an error in our SQL statement (I didn’t add the second single quote), WordPress will suppress it and simply return an empty array. This is not very helpful for debugging.</p>
+<h4 id="the-solution">The Solution</h4>
+<p>The solution is actually quite simple. The global $wpdb object has a property called show_errors. Setting this property to true will cause WordPress to output the SQL errors to the screen for a given query.</p>
+<p>Here it is with our example above</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<pre tabindex="0"><code>// Enables Wordpress’s DB Error reporting
+$wpdb-&gt;show\_errors = true;
+ 
+$results = $wpdb-&gt;get\_results(&#34;SELECT \* FROM $wpdb-&gt;posts 
+ WHERE post\_title = ‘foo bar baz&#34;);
+print\_r($results);
+ 
+// Outputs 
+// WordPress database error: [You have an error in your 
+// SQL syntax; check the manual that corresponds to your 
+// MySQL server version for the right syntax to use near 
+// ”foo bar baz’ at line 1]
+// SELECT \* FROM wp\_posts WHERE post\_title = ‘foo bar baz
+</code></pre><p>|</p>
+<p>Now we know what went wrong with our query rather than just receiving empty results.</p>
+<p>Let me know if you have any questions or comments.</p>
+<p>Happy WPCoding!</p>
+<p><a href="http://reblog.zemanta.com/zemified/a1d99446-c73f-4722-97e6-3e584300069e/" title="Reblog this post [with Zemanta]"><img src="/uploads/2010/reblog_e.png?x-id=a1d99446-c73f-4722-97e6-3e584300069e" alt="Reblog this post [with Zemanta]"></a></p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+        </div>
+      </li>
+    
+      <li class="h-entry">
+		
+			<h1 class="p-name"><a href="https://brandontreb.ngrok.io/2010/01/29/emacs-for-osx-is-out/">Emacs For OSX Is Out!</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2010/01/29/emacs-for-osx-is-out/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-01-29 01:00:00 -0600">Jan 29, 2010</time></span></a>
+
+        <div class="e-content">
+         	<p><a href="http://emacsformacosx.com/"><img src="/uploads/2010/Screen-shot-2010-01-29-at-2.39.44-PM-500x498.png" alt="" title="Screen shot 2010-01-29 at 2.39.44 PM"></a></p>
+<p>For all you Vi using, Emacs haters out there, I will fight you!</p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+        </div>
+      </li>
+    
+      <li class="h-entry">
+		
+			<h1 class="p-name"><a href="https://brandontreb.ngrok.io/2010/01/27/the-ipad-is-out-and-it-sounds-like-ipod-while-plugging-your-nose/">The iPad Is Out And It Sounds Like iPod While Plugging Your Nose</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2010/01/27/the-ipad-is-out-and-it-sounds-like-ipod-while-plugging-your-nose/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-01-27 01:00:00 -0600">Jan 27, 2010</time></span></a>
+
+        <div class="e-content">
+         	<p><img src="/uploads/2010/appletabletb113-500x332.jpg" alt="" title="appletabletb113"></p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+        </div>
+      </li>
+    
+      <li class="h-entry">
+		
+			<h1 class="p-name"><a href="https://brandontreb.ngrok.io/2010/01/21/watch-out-apple-the-kindle-dev-kit-is-almost-live/">Watch Out Apple, The Kindle Dev Kit Is Almost Live</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2010/01/21/watch-out-apple-the-kindle-dev-kit-is-almost-live/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-01-21 01:00:00 -0600">Jan 21, 2010</time></span></a>
+
+        <div class="e-content">
+         	<p><a href="http://brandontreb.com/wp-content/uploads/2010/01/kindel-dev-gameboy.png"><img src="/uploads/2010/kindel-dev-gameboy-500x333.png" alt="" title="kindel-dev-gameboy"></a></p>
+<p>With the success of the <a href="http://www.apple.com/iphone/appstore/" title="App Store">Apple App Store</a>, it seems that everyone is wanting a piece of the pie.</p>
+<p>Amazon is now looking to throw their hat into the ring and is releasing their own dev kit for their ever so popular Kindle.</p>
+<p><a href="http://www.amazon.com/gp/feature.html/?ie=UTF8&amp;docId=1000476231">http://www.amazon.com/gp/feature.html/?ie=UTF8&amp;docId=1000476231</a></p>
+<p>It appears that big name game developers Electronic Arts is also getting involved (WTH?!?!)</p>
+<p>This just seems like it will be an epic fail. Who really wants to play video games on their Kindle? Maybe they can port <a href="http://brandontreb.com/code-monkey-music-video/">Kirby’s Dreamland</a> from the original Game Boy <img src="/uploads/2010/simple-smile.png" alt=":)"> .</p>
+<h6 id="heading"></h6>
+<p>Related articles by Zemanta</p>
+<ul>
+<li><a href="http://gizmodo.com/5453395/amazon-opens-kindle-up-for-development-app-store-ahoy">Amazon Opens Kindle Up for Development: App Store Ahoy [Kindle]</a> (gizmodo.com)</li>
+<li><a href="http://news.cnet.com/8301-13577_3-10438661-36.html?part=rss&amp;subj=news&amp;tag=2547-1_3-0-20">Amazon: Kindle app store on the way</a> (news.cnet.com)</li>
+</ul>
+<p><a href="http://reblog.zemanta.com/zemified/f48c6302-1cf7-4b20-aa9c-3b2147192e8f/" title="Reblog this post [with Zemanta]"><img src="/uploads/2010/reblog_e.png?x-id=f48c6302-1cf7-4b20-aa9c-3b2147192e8f" alt="Reblog this post [with Zemanta]"></a></p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+        </div>
+      </li>
+    
+      <li class="h-entry">
+		
+			<h1 class="p-name"><a href="https://brandontreb.ngrok.io/2010/01/20/code-monkey-music-video/">Code Monkey Music Video</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2010/01/20/code-monkey-music-video/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-01-20 01:00:00 -0600">Jan 20, 2010</time></span></a>
+
+        <div class="e-content">
+         	<p>Watching this video makes me appreciate the fact that I work from home.</p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+        </div>
+      </li>
+    
+      <li class="h-entry">
+		
+			<h1 class="p-name"><a href="https://brandontreb.ngrok.io/2010/01/04/hacking-redbox-how-to-get-free-dvds/">Hacking Redbox &amp;#8211; How To Get Free DVDs</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2010/01/04/hacking-redbox-how-to-get-free-dvds/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-01-04 01:00:00 -0600">Jan 4, 2010</time></span></a>
+
+        <div class="e-content">
+         	<p><a href="http://commons.wikipedia.org/wiki/Image:Red_Box_Video_Rental_Automat.jpg"><img src="/uploads/2010/300px-Red_Box_Video_Rental_Automat.jpg" alt="Red Box, Video Rental Automat, found in a Wal-…"></a></p>
+<pre tabindex="0"><code>&lt;p class=&#34;wp-caption-text&#34;&gt;
+  Image via Wikipedia
+&lt;/p&gt;
+</code></pre><p>I was at Wally-World the other day getting a movie from RedBox with my wife when I noticed some guy enter in a code into the machine. The code was BREAKROOM. After watching him for a moment, I realized this code entitled him a free DVD rental.</p>
+<p>Now, RedBox is pretty stinking cheap ($1.50/night), but if you’re an avid movie watcher, this really adds up.</p>
+<p>So, I did some searching on the Google machine and sure enough, there are new RedBox codes that go into circulation every day. Each one giving you a free DVD.</p>
+<p>The site that offers the RedBox codes is <a href="http://www.insideredbox.com/redbox-codes/">http://www.insideredbox.com/redbox-codes/</a></p>
+<p>Users submit the codes and update the site with the last time they were used. That way, you always know which codes are currently working.</p>
+<p>You simply need to enter the coupon code from the main screen or just before checkout at your local Redbox kiosk. When you do, you will receive a one-day free rental. Any additional days you keep the movie will be charged at the usual $1.50/day.</p>
+<p>Update: <a href="http://twitter.com/diemer">@diemer</a> on Twitter pointed out to me that inside Redbox also has an iPhone app. The link for the app is <a href="http://itunes.apple.com/us/app/inside-redbox-pro/id306217360?mt=8">http://itunes.apple.com/us/app/inside-redbox-pro/id306217360?mt=8</a></p>
+<p>I may actually cancel my Netflix account now…</p>
+<p><a href="http://reblog.zemanta.com/zemified/ef29dfb8-87cb-4d2b-9100-d8798440ec70/" title="Reblog this post [with Zemanta]"><img src="/uploads/2010/reblog_e.png?x-id=ef29dfb8-87cb-4d2b-9100-d8798440ec70" alt="Reblog this post [with Zemanta]"></a></p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+        </div>
+      </li>
+    
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="https://brandontreb.ngrok.io/feed.xml">via RSS</a></p>
+
+</div>
+<div id="post-meta" class="clearfix p-author h-card">
+  <a href="/" class="u-url" rel="me">
+  <img class="u-photo avatar" src="https://brandontreb.ngrok.io/avatar.png" width="96" height="96">
+  <div>
+    <span class="p-name dark">|ZeroCool|</span>
+    <span><a href="https://brandontreb.ngrok.io">@</a></span>
+    <p class="p-note"></p>
+  </div>	
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-3">
+        <p class="text"></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+    
+    
+    
+  </body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>
+      
+      Hack The Planet - Displaying Your FeedBurner Subscriber Count Anywhere &amp;#8211; PHP Coding Tutorial
+      
+  </title>
+
+  <meta name="description" content="this is meta :)">
+
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%f0%9f%a6%a0</text></svg>">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/custom.css">
+  <link rel="canonical" href="https://brandontreb.ngrok.io/2009/08/10/displaying-your-feedburner-subscriber-count-anywhere-php-coding-tutorial/">
+
+	<link rel="me" href="https://brandontreb.ngrok.io" />
+	
+	
+	
+	<link rel="authorization_endpoint" href="/indieauth/auth" />
+	<link rel="token_endpoint" href="/indieauth/token" />
+	<link rel="micropub" href="https://brandontreb.ngrok.io/micropub" />
+	<link rel="microsub" href="https://brandontreb.ngrok.io/microsub" />
+	<link rel="webmention" href="https://brandontreb.ngrok.io/webmention" />	
+  
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Hack The Planet</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+		
+			
+				<a class="page-link" href="/archive/">Archive</a>
+			
+		
+			
+				<a class="page-link" href="/photos/">Photos</a>
+			
+		
+			
+				<a class="page-link" href="/replies/">Replies</a>
+			
+		
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+		
+<div class="post h-entry">
+
+  <header class="post-header">
+	
+	  	<h1 class="p-name">Displaying Your FeedBurner Subscriber Count Anywhere &amp;#8211; PHP Coding Tutorial</h1>
+  	
+    <p class="post-meta">
+	<a href="https://brandontreb.ngrok.io/2009/08/10/displaying-your-feedburner-subscriber-count-anywhere-php-coding-tutorial/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2009-08-10 00:00:00 -0600">Aug 10, 2009</time></span></a>
+	
+	</p>
+  </header>
+
+  <article class="post-content e-content">
+	<p><a href="http://feedburner.com"><img src="/uploads/2009/feedburner-logo1.png" alt="feedburner-logo1" title="feedburner-logo1"></a></p>
+<p>If you are a serious blogger (and I’m sure you are), you probably track your RSS subscribers with <a href="http://feedburner.com">FeedBurner</a>. If you don’t, you should be. One thing that has always bugged me about FeedBurner is if you ever wanted to display the number of subscribers on your blog, you were stuck using their image. The image looks like this:</p>
+<p><a href="http://feeds.feedburner.com/brandontreb"><img src="/uploads/2009/brandontreb?bg=99ccff&amp;fg=444444&amp;anim=0" alt=""></a></p>
+<p>I’m sure you have seen this logo everywhere. Well, not too many people know it, but FeedBurner actually has a very simple API that allows you to just get the subscriber count so you can display it however you would like.</p>
+<p>So rather than being limited to this boring icon, you can display your live subscriber count anywhere on your blog. If you are feeling adventurous, you could even super impose it on to your own custom image using the GD library (tutorial to come if sufficient interest, post in the comments if you would like to see it).</p>
+<p>Let’s get started…</p>
+<h2 id="1-activate-the-awareness-api-inside-of-feedburner">1. Activate the Awareness API Inside Of Feedburner</h2>
+<p>Log in to FeedBurner. Click the <strong>Publicize</strong> tab and the click <strong>Awareness API</strong>. Finally, click <strong>Activate</strong>. The service is now enabled.</p>
+<p><a href="http://brandontreb.com/wp-content/uploads/2009/08/awareness_api.jpg"><img src="/uploads/2009/awareness_api.jpg" alt="awareness_api" title="awareness_api"></a></p>
+<h2 id="2-write-the-php-code-to-interface-with-feedburner">2. Write The PHP Code To Interface With FeedBurner</h2>
+<p>There is a lot of data that you could potentially get from FeedBurner, but the code below will just show you how to get your <strong>subscriber count</strong>.</p>
+<p>All you need to do is make a simple GET request using CURL to the URL <a href="https://feedburner.google.com/api/awareness/1.0/GetFeedData?uri=brandontreb">https://feedburner.google.com/api/awareness/1.0/GetFeedData?uri=brandontreb</a> . Of course replacing <strong>brandontreb</strong> with your feed’s name.</p>
+<pre tabindex="0"><code>&lt;code class=’php’&gt;&lt;?php
+$url = “&lt;https://feedburner.google.com/api/awareness/1.0/GetFeedData?uri=brandontreb&gt;”;
+$ch = curl\_init();
+curl\_setopt($ch, CURLOPT\_RETURNTRANSFER, 1);
+curl\_setopt($ch, CURLOPT\_URL, $url);
+$data = curl\_exec($ch);
+curl\_close($ch);  
+
+if ($data) {
+echo $data;
+preg\_match(‘/circulation=&#34;([0-9]+)&#34;/’,$data, $matches);
+if ($matches[1](http://feedburner.com) != 0) {
+$subscriberCount = $matches[1](http://feedburner.com);
+}
+}
+
+
+echo “Join the other $subscriberCount people and subscriber to my RSS feed.”
+
+
+?&gt;&lt;/code&gt;
+</code></pre><p>This code is pretty straight forward with a little trickiness to parse the XML. We first make a <a href="http://us3.php.net/curl">CURL</a> connection to the URL. Just replace <strong>brandontreb</strong> with the title of your RSS feed inside of FeedBurner.</p>
+<p>Next we print the data. Note: You won’t see the data in your browser unless you do a <strong>view source</strong>. Since it is XML, your browser will treat it like HTML and not display it. So, we do a <a href="http://us3.php.net/manual/en/function.preg-match.php">preg_match</a> for the element <strong>circulation</strong> and get it’s value. (Pretty sick right?). The value of our <strong>subscriber count</strong> will be at index 1 of the matches array.</p>
+<p>Then, we just print the subscriber count and voila!</p>
+<p>Now, you are no longer a slave to that generic FeedBurner subscriber count icon. Be sure to <a href="http://code.google.com/apis/feedburner/awareness_api.html">check out their API</a> for other cool things that you can do with their web services. If you have any questions, feel free to leave them in the comments section of this post. Happy Coding!</p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+	<div id="post-meta" class="clearfix p-author h-card">
+  <a href="/" class="u-url" rel="me">
+  <img class="u-photo avatar" src="https://brandontreb.ngrok.io/avatar.png" width="96" height="96">
+  <div>
+    <span class="p-name dark">|ZeroCool|</span>
+    <span><a href="https://brandontreb.ngrok.io">@</a></span>
+    <p class="p-note"></p>
+  </div>	
+  </a>
+</div>
+  </article>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-3">
+        <p class="text"></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+    
+    
+    
+  </body>
+
+</html>

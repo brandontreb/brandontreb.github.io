@@ -1,0 +1,491 @@
+<rss version="2.0">
+  <channel>
+    <title>featured on Hack The Planet</title>
+    <link>https://brandontreb.ngrok.io/tags/featured/</link>
+    <description></description>
+    
+    <language>en-us</language>
+    
+    <lastBuildDate>Mon, 25 Apr 2022 13:49:34 -0600</lastBuildDate>
+    
+    <item>
+      <title>Apple Removing Apps Older Than 2 Years</title>
+      <link>https://brandontreb.ngrok.io/2022/04/25/apple-removing-apps/</link>
+      <pubDate>Mon, 25 Apr 2022 13:49:34 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2022/04/25/apple-removing-apps/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://news.ycombinator.com/item?id=31135972&#34;&gt;Apple says they&amp;rsquo;re removing my game because it&amp;rsquo;s more than 2 years old&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This HN thread really resonated with me. I have been building and publishing iOS apps since the dawn of the App Store in 2008. In those 14 years, I have shipped over 200 apps, and do you want to know how many are still in the App Store? &lt;strong&gt;Zero&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Some of these takedowns are due to startups failing or clients deciding to go in another direction, but still quite a few are forced out due to Apple’s update policy.&lt;/p&gt;
+&lt;p&gt;It’s a strange feeling knowing that everything I have built for the past decade and a half has just disappeared into obsolescence.&lt;/p&gt;
+&lt;p&gt;While I understand that Apple needs to continue to push their techbology forward, I would at least love to see them keep apps for posterity, albeit not searchable. This could satisfy their algorithmic search goals while still allowing developers to preserve their history.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Programming Languages Are Only Tools</title>
+      <link>https://brandontreb.ngrok.io/2019/12/22/programming-languages-are-only-tools/</link>
+      <pubDate>Sun, 22 Dec 2019 15:55:22 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2019/12/22/programming-languages-are-only-tools/</guid>
+      <description>&lt;p&gt;Some young punks overheard me talking about JavaScript at lunch today. They felt it necessary to come to my table and tell me “typescript is waybetter”. They don’t realize that this sort of thing screams “I’m a junior developer! I know very little about the tech industry!”&lt;/p&gt;
+&lt;p&gt;If you are a newer developer, learn early that you are greatly limiting your potential by marrying a subset of programming languages. You will greatly increase your value by being open to learning and building in any language that is best suited for the project.&lt;/p&gt;
+&lt;p&gt;I try to convey this to the students of our boot camps all of the time as boot camp students are the most likely to call themselves “PHP/JS/WordPress/etc developers” and not understand that there is a whole world out there beyond what was taught in camp.&lt;/p&gt;
+&lt;p&gt;Ok, rant over. Get off my lawn.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>We Instead Of I</title>
+      <link>https://brandontreb.ngrok.io/2018/12/11/we-instead-of-i/</link>
+      <pubDate>Tue, 11 Dec 2018 02:02:06 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2018/12/11/we-instead-of-i/</guid>
+      <description>&lt;p&gt;When I first started consulting, I had everything tied to my name. My company name was Treb Studios, my email was &lt;a href=&#34;mailto:brandon@brandontreb.com&#34;&gt;brandon@brandontreb.com&lt;/a&gt;, and my whole business was tied to me.&lt;/p&gt;
+&lt;p&gt;This was fine for a while…until I started growing. I hired contractors with the intention of replacing myself on my existing projects. This proved to be &lt;em&gt;very&lt;/em&gt; challenging.&lt;/p&gt;
+&lt;p&gt;Clients didn’t want other developers, they wanted Brandon, because that’s what they were promised.&lt;/p&gt;
+&lt;p&gt;It wasn’t until I started using “we” language instead of “I” language that clients fully accepted my other team members. Changing the language also had a profound effect on how I perceived the company. I began looking at everything as a real company rather than just me hacking on the side.&lt;/p&gt;
+&lt;p&gt;So, if you are building a company (even if it’s just you), start using the term “we” instead of “I” from day one. It will make the transition &lt;em&gt;much&lt;/em&gt; easier when you start growing, and it will make you feel like you are actually building something beyond yourself.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dev Blinders - Failing To See Things From A User Perspective</title>
+      <link>https://brandontreb.ngrok.io/2018/11/30/dev-blinders-failing-to/</link>
+      <pubDate>Fri, 30 Nov 2018 22:44:52 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2018/11/30/dev-blinders-failing-to/</guid>
+      <description>&lt;p&gt;The other day, I was having a conversation over Slack with my development team. They were working on a client project (and doing a killer job), and there was a particular UX pattern that seemed very unintuitive to me. This app was designed by the client, so there was little the dev team could do beyond making suggestions, so they went ahead and implemented it per the spec.&lt;/p&gt;
+&lt;p&gt;After fiddling around with it for a few minutes, I literally couldn&amp;rsquo;t understand how to complete the particular task and had to ask the team lead for some help. He assured me that it made sense and offered to walk me through the architecture and data models to help me better understand the flow.&lt;/p&gt;
+&lt;p&gt;Sometimes, as developers, we understand these super complex systems solely because we architected them. They seem intuitive to us because we know the underlying data structures and algorithms involved. When we are speaking to other developers about those systems, they usually get it too, because they understand things at a software level.&lt;/p&gt;
+&lt;p&gt;This doesn&amp;rsquo;t always translate well when it comes to UX design for the end-user. I believe developers have a bias when looking over the product in which they are creating. It makes sense to us, so it must to everyone else. I opted to &lt;em&gt;not&lt;/em&gt; learn about the underlying code, so that I could better QA the product by removing some of this bias.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Moral&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Next time you are testing your software, have as many people &lt;em&gt;not&lt;/em&gt; involved in the project test it as possible. Given them very little context. Watch them use your product. Find out what &lt;em&gt;is&lt;/em&gt; intuitive to them and what isn&amp;rsquo;t. You will be pleasantly surprised and your software will be better for it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>No One Cares About Your Clever Code</title>
+      <link>https://brandontreb.ngrok.io/2018/11/27/no-one-cares-about-your/</link>
+      <pubDate>Tue, 27 Nov 2018 01:38:32 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2018/11/27/no-one-cares-about-your/</guid>
+      <description>&lt;p&gt;As developers, we spend so much time perfecting our craft. We are always on the hunt for hacks, tips, and tweaks.&lt;/p&gt;
+&lt;p&gt;We always set out to write the most clever and reusable code possible. This is all great…until it’s time to ship.&lt;/p&gt;
+&lt;p&gt;I have seen it time after time. Developers over-optimizing their code, writing protocol after protocol. All the while, they slip further and further behind schedule.&lt;/p&gt;
+&lt;p&gt;When the client asks the dev about the delay on feature X, the dev proceeds to explain the super cool reusable, component-driven,state managed, highly available, future proof, buzzword, buzzword system they are creating. The client literally doesn’t care about all that. They just wants to see feature X working.&lt;/p&gt;
+&lt;p&gt;I love clever code as much as the next developer, but sometimes you’ve got to table your inner CS geek and just ship something that works. Then, refactor later.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Prototypes Usually End Up In Production</title>
+      <link>https://brandontreb.ngrok.io/2018/11/22/prototypes-usually-end-up-in/</link>
+      <pubDate>Thu, 22 Nov 2018 01:11:59 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2018/11/22/prototypes-usually-end-up-in/</guid>
+      <description>&lt;p&gt;“Just hack a quick proof of concept, we’ll rebuild it when we get more funding.” These are some words I often hear from clients who have minimal budgets.&lt;/p&gt;
+&lt;p&gt;They generally want my team to build something small/quick/cheap to get their concept across in hopes of securing more funds down the road.&lt;/p&gt;
+&lt;p&gt;What I have learned by saying “yes” to these types of requests in the past is, those quickly hacked prototypes often end up in production.&lt;/p&gt;
+&lt;p&gt;While this is not necessarily a bad thing, it’s sometimes problematic if we viewed the code as disposable up front. Normally, a client will have you ship a prototype and then will want to quickly iterate. If you are not careful, you will soon accrue technical debt and eventually sour your relationship with the client due to underperforming.&lt;/p&gt;
+&lt;p&gt;So, if you are ever asked to do a quick prototype, do yourself a favor and treat it as if it will be production-ready from day one. You never know how long you will be supporting it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Client Deliveries Are Hard</title>
+      <link>https://brandontreb.ngrok.io/2018/11/15/client-deliveries-are-hard/</link>
+      <pubDate>Thu, 15 Nov 2018 00:04:32 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2018/11/15/client-deliveries-are-hard/</guid>
+      <description>&lt;p&gt;I have been building software for clients for over a decade now and have come to one solid conclusion: &lt;strong&gt;deliveries suck&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Maybe I&amp;rsquo;m just the worst developer in the world and have worked with the worst teams and have had the worst clients… but I doubt it.&lt;/p&gt;
+&lt;p&gt;I have delivered early, on time, late, with more functionality, exactly the same, and in some cases less functionality (usually due to lack of funding) and still…rough deliveries.&lt;/p&gt;
+&lt;p&gt;When I say “rough deliveries”, I usually mean angry clients and stressed out developers. Maybe not angry like the hulk (though I have seen it), but at the very least, passive aggressive comments, notes of disappointment, etc…&lt;/p&gt;
+&lt;p&gt;The reason deliveries are hard is because of a misalignment of expectations. When a client has an idea in their head of how their product should look/feel/function and it&amp;rsquo;s been burning in their mind forever, us developers are doomed from the get go. We can never deliver perfectly to match this magic piece of software that only exists in our client&amp;rsquo;s mind.&lt;/p&gt;
+&lt;p&gt;Also, software is hard. It&amp;rsquo;s especially hard to get exactly right on the very first pass. Software is a living and breathing entity that needs lots of care and feeding. It&amp;rsquo;s very tricky to articulate this to someone who doesn&amp;rsquo;t understand that and is paying you 10&amp;rsquo;s of thousands of dollars to build their dream.&lt;/p&gt;
+&lt;p&gt;We follow a pretty strict agile process, so the client usually sees their build at every…single…stage. They also have full control to report issues, make changes, etc… during the build cycle. Still, for some reason, they are always dumbfounded when it comes time to ship.&lt;/p&gt;
+&lt;p&gt;So, if you are building for clients, cut yourself some slack. Know that deliveries will be tough and most of the time, there is nothing you can do to prevent that.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>It&#39;s A Good Time To Be A (Good) Mobile Developer</title>
+      <link>https://brandontreb.ngrok.io/2018/11/06/it-s-a-good-time-to/</link>
+      <pubDate>Tue, 06 Nov 2018 17:07:10 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2018/11/06/it-s-a-good-time-to/</guid>
+      <description>&lt;p&gt;If you are a mobile developer in 2018, and are not consulting (at least on the side), you are missing out on a huge stream of revenue.&lt;/p&gt;
+&lt;p&gt;In the early days of mobile app development (2008/2009), it was fairly easy for an iOS or Android developer to get a gig with large companies (Food Network, ESPN, huge list of other names…). At that time, mobile was so new, that none of these companies had internal resources to support this budding vertical.&lt;/p&gt;
+&lt;p&gt;Throughout the next few years, mobile would sky rocket and all of these companies would hire internal teams to support their products.&lt;/p&gt;
+&lt;p&gt;This shift caused a huge disruption for mobile agencies who in the previous years were turning down $200+/hour because they simply didn&amp;rsquo;t have the capacity. Many of them had to downsize or close their doors altogether. I was a part of one such company and have seen these shifts during the past 6 years of running &lt;a href=&#34;http://pixegon.com&#34;&gt;mine&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I now believe the cycle is coming back around as there is a need for &lt;strong&gt;good&lt;/strong&gt; mobile developers. The truth is, mobile is hard and there is a lot of competition in the space. Companies are discovering that they can&amp;rsquo;t just hire a &amp;ldquo;full stack&amp;rdquo; dev and tell them to build a quality mobile app. It requires a lot of dedication and understanding of the ecosystem. Also, many of the small-medium consultancy in the space have since closed their doors. So supply is down and demand is way up.&lt;/p&gt;
+&lt;p&gt;I do however feel that the way in which consultants engage with companies has changed a bit. In previous years, most companies were interested in consulting teams / agencies to build their entire solution for them. These days, a &amp;ldquo;staff augmentation&amp;rdquo; model seems to make more sense.&lt;/p&gt;
+&lt;p&gt;In this model, consultants specializing in a vertical of mobile join other teams that lack a particular senior resource. This is a win-win for everyone as a consultant can attain consistent work and a company can hire temporary developers to solve their current problem at hand with no long term commitment. As a mobile developer, if you establish enough of these relationships, you are set on work for the foreseeable future.&lt;/p&gt;
+&lt;p&gt;We have seen this model play out &lt;em&gt;many&lt;/em&gt; times over the past couple years and it has been key (for us) in surviving in this “post-agency” time of mobile app consulting.&lt;/p&gt;
+&lt;p&gt;So, if you are a mobile app developer (and are particularly good), I&amp;rsquo;d encourage you to branch out and try your hand at consulting. It&amp;rsquo;s a great time.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How To Lose $300K In One Conversation</title>
+      <link>https://brandontreb.ngrok.io/2016/02/08/how-to-lose-300k-in-one-conversation/</link>
+      <pubDate>Mon, 08 Feb 2016 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2016/02/08/how-to-lose-300k-in-one-conversation/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Will you work for equity?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;After you have been consulting for any amount of time, you are bound to get asked this by a client.  You may find yourself struggling to decide whether or not to take some equity or just get paid to work on the project like you normally do.
+I had one such scenario a while back that I wanted to share. One day a few months ago, I was approached by a local VC in town.  Our relationship falls somewhere between acquaintance and friend; let’s call him Joe.  Joe has a very successful background and is one of the more wealthy people in my circle of influence.&lt;/p&gt;
+&lt;p&gt;Joe asked me out for beers to discuss a new opportunity for a mobile project.  I, of course obliged and met him out. During this meeting, Joe proceeded to tell me about an application he wanted me to build that would be aimed at teenagers.  The gist was: &lt;code&gt;They would create rooms and the &amp;quot;cool kids&amp;quot; could vote other kids in and out of the rooms&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The offer he made was 30% of the application ownership and profits and a small share in one of his existing startups.  Given Joe’s history, I knew this would most likely be a successful endeavor, however I told him that I had to think about it.  Given the nature of the app, I had some strong moral objections to creating a tool that would allow teens to ostracize each other.  This didn’t quite sit right with me.&lt;/p&gt;
+&lt;p&gt;After taking a few days to think I it, I ultimately told Joe that I didn’t feel right about working on the application.  He said “no worries”, and that was the end of that conversation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;6 Months Later…&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Some time had passed and Joe and I eventually met up for beers.  After a bit of discussion, he said “Hey, I wanted to tell you about that app”.&lt;/p&gt;
+&lt;p&gt;He then follows with “I found a college kid to work on the application and gave him the same offer that I gave you.  I also had a designer do some very basic mocks of the application. While I was out on a trip to Silicon Valley, I mentioned the application to a good friend of mine at Facebook.  Well, Facebook has a similar product coming out (turned out to be Rooms) and they decided to give me a quick check for $1.1mm to discontinue work on the product. I then wrote the college kid a check for $333K &lt;strong&gt;before he’d written a single line of code&lt;/strong&gt;!”.&lt;/p&gt;
+&lt;p&gt;My immediate thought was “at least I still have my values”.  It’s pretty funny to look back and think about how I could have made so much money so quickly. However, even if I had known the potential payout up front, I don’t believe I would have still taken the project.  It would have eaten me up inside.&lt;/p&gt;
+&lt;p&gt;The takeaway of this story is twofold.   First, I’d urge you to choose your compensation wisely.  Before this encounter, I would always give a hard “no” when asked about equity share as part of compensation. I now take it on a person by person basis.  Second, don’t compromise your morals for money.  I look back on this story as a success and wouldn’t change a single thing about it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Why Start Software Consulting</title>
+      <link>https://brandontreb.ngrok.io/2016/01/25/why-consult/</link>
+      <pubDate>Mon, 25 Jan 2016 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2016/01/25/why-consult/</guid>
+      <description>&lt;p&gt;Want to jump ship and be a software development consultant? This post will detail why this path is a much more fulfilling and safer path than a traditional job.&lt;/p&gt;
+&lt;h3 id=&#34;diversifying-income&#34;&gt;Diversifying Income&lt;/h3&gt;
+&lt;p&gt;Early in my career, I worked for a software consulting agency.  I was in my early 20&amp;rsquo;s and getting paid way more than I should.  One day, my boss called me up and let me go without notice.
+After interviewing quite a few developers in the consulting space, I quickly realized that this is a very common story.  If you work for a company, they can usually let you go at any time for any reason. Given that this is your sole source of income, you are now in an extremely risky situation.&lt;/p&gt;
+&lt;p&gt;Contrast this with being an independent consultant.  Most likely, if you are consulting you have 1 or more clients.  In addition to that, you have some sort of pipeline set up.  So when you lose a client, you simply pull another from your pool.&lt;/p&gt;
+&lt;h3 id=&#34;mo-clients-mo-money&#34;&gt;Mo Clients Mo Money&lt;/h3&gt;
+&lt;p&gt;The going rate of a senior software development consultant is between $100-$125/hour.  At this rate, you are looking at pulling in somewhere between $16K-$20K/month.
+Working for a traditional company, you would be hard pressed to command this salary even after having 10+ years of experience.  I’m not joking, kids who learned to code on Udemy in 6 months were making this while I had a salary cap of around $100K.&lt;/p&gt;
+&lt;h3 id=&#34;commuting&#34;&gt;Commuting&lt;/h3&gt;
+&lt;p&gt;In the U.S. , car accidents are one of the leading causes of death among young people.  Obviously, consulting can help mitigate this risk by allowing you to work from home or close to it. Therefore, further limiting your physical safety risk.
+In addition to limiting safety risk, not having to commute has financial advantages.  Since going independent, my family has cut down our need to a single vehicle saving us money on car payments, maintenance, gasoline, insurance, and most importantly &lt;strong&gt;time.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;flexibility-of-location&#34;&gt;Flexibility Of Location&lt;/h3&gt;
+&lt;p&gt;When you don&amp;rsquo;t have to work in a traditional office, you are free to work anywhere in the world.  This could be coffee shops, the park, or even on a cruise ship.
+I typically like working in my shipping container office (post on that in the future) or wherever my wife has chosen to take the kids on a field trip that week.&lt;/p&gt;
+&lt;h3 id=&#34;flexibility-of-time&#34;&gt;Flexibility Of Time&lt;/h3&gt;
+&lt;p&gt;When I worked at a traditional company, I was required to be signed in and available from 9-5 Monday - Saturday.  As you can imagine, this has a huge impact on how you plan your free time.   It&amp;rsquo;s also extremely limiting when you are trying to plan a trip or vacation.
+As a consultant, you have 100% control over your time.  This allows you to live life more on your terms.  If you enjoy staying up late and hacking until 3am, you can then enjoy sleeping in until 11.&lt;/p&gt;
+&lt;p&gt;My wife and I currently homeschool our kids.  So when we want to take a trip, it’s literally a matter of leaving our house.  We don’t have to ask for time off, we don’t have to plan around other people.  We can quite literally drop everything and head to Disney World during the “deadest” parts of the year and enjoy doing things while others are “working”.&lt;/p&gt;
+&lt;p&gt;I have found this level of flexibility has greatly improved my quality of life.&lt;/p&gt;
+&lt;h3 id=&#34;unlimited-pto&#34;&gt;Unlimited PTO&lt;/h3&gt;
+&lt;p&gt;This sort of goes with what I said above. Traditionally, if you want to take off time you need to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Make sure it&amp;rsquo;s cool with your boss&lt;/li&gt;
+&lt;li&gt;Make sure it&amp;rsquo;s cool with your team&lt;/li&gt;
+&lt;li&gt;Give 2 weeks notice&lt;/li&gt;
+&lt;li&gt;Fill out paperwork&lt;/li&gt;
+&lt;li&gt;Burn through your limited &amp;ldquo;vacation days&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Still take calls from vacation because your are a &amp;ldquo;nice guy/gal&amp;rdquo;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When you are a consultant, the process becomes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Leave for vacation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;you-are-your-own-boss&#34;&gt;You Are Your Own Boss&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;So, Peter, what&amp;rsquo;s happening? Aahh, now, are you going to go ahead and have those TPS reports for us this afternoon?&amp;rdquo; - Bill Lumber&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I never want to have a &amp;ldquo;boss&amp;rdquo; again. It&amp;rsquo;s true. I hate the thought of someone constantly breathing down my neck watching my every move.  I also can&amp;rsquo;t stand the idea of someone giving me a &amp;ldquo;performance report&amp;rdquo;.
+When you become a consultant, it should be obvious, but you are the boss.  Early on, I would make the joke when my wife asked me to go on a random adventure “Let me check with my boss”.  Hilarious right?&lt;/p&gt;
+&lt;h3 id=&#34;working-in-your-underwear&#34;&gt;Working In Your Underwear&lt;/h3&gt;
+&lt;p&gt;Unless you are a Victoria Secret model, chances are you actually have to put on pants to go to work.  Not with consulting! I&amp;rsquo;m so glad I met my wife before I became a consultant, otherwise there would be no chance of me landing her wearing some of the choice outfits I do during work hours.
+I find my level of quality goes up with my level of comfort.  It never made sense to me why companies preferred “business casual” over “sleep professional”.  Seems like millions in lost revenue.&lt;/p&gt;
+&lt;h3 id=&#34;other-benefits&#34;&gt;Other Benefits&lt;/h3&gt;
+&lt;p&gt;This list is in no way meant to be exhaustive. These are just some of my favorite perks that I have been enjoying over the years. If you have some others that I have missed, please feel free to add your comments below.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ship Products You Are Proud Of</title>
+      <link>https://brandontreb.ngrok.io/2015/04/07/ship-products-you-are-proud-of/</link>
+      <pubDate>Tue, 07 Apr 2015 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2015/04/07/ship-products-you-are-proud-of/</guid>
+      <description>&lt;p&gt;There is a familiar phrase that I hear all too often when a client comes to me with an existing application.  It goes something like this:&lt;/p&gt;
+&lt;p&gt;“Our team spent quite a bit of money on our application and we don’t want to ship it.  &lt;strong&gt;We are&lt;/strong&gt; &lt;strong&gt;not proud of the product&lt;/strong&gt;.”&lt;/p&gt;
+&lt;p&gt;It blows my mind that many developers and development teams are still in business given the poor quality of products that I see getting churned out all of the time.&lt;/p&gt;
+&lt;p&gt;When I encounter these types of situations, I immediately know that the team (or individual) behind them is much more interested in a ‘quick buck’ instead of the longevity of their company.  Poor quality in software is directly related to cutting corners.&lt;/p&gt;
+&lt;p&gt;A few examples of cut corners:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Using inexperience developers without proper guidance&lt;/em&gt;.  I am all for hiring ‘staff’ level developers, however, they must be properly mentored and trained so that there is no compromise on quality.  If you must compromise on something, compromise it on &lt;em&gt;time&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Outsourcing the project without proper guidance&lt;/em&gt;.  Although I don’t prefer outsourcing given the communication challenges, I am not opposed to it.  There are plenty of talented individuals all over the world.  However, given the varying degree of abilities and communication issues, one must not rely 100% on an outsourced team to ship a product.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Not following coding standards/guidelines.&lt;/em&gt;  This could be things such as: not commenting code, not testing, not leveraging a QA team, or simply writing “smoke an mirror” code.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I can usually identify immediately which of the above applies after spending a few minutes with the code.  In fact, I have built much of &lt;a href=&#34;http://pixegon.com&#34;&gt;my business&lt;/a&gt; around saving these types of projects.&lt;/p&gt;
+&lt;p&gt;So I urge you, although it might cut into my market share, *please *build something you are proud of.  This is not only the right thing to do, it is also **critical **to your future success as an independant software developer.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Your App Idea Most Likely Falls Into One Of Three Categories</title>
+      <link>https://brandontreb.ngrok.io/2015/01/27/app-idea-likely-falls-one-three-categories/</link>
+      <pubDate>Tue, 27 Jan 2015 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2015/01/27/app-idea-likely-falls-one-three-categories/</guid>
+      <description>&lt;p&gt;During my years of mobile development, I have heard the phrase “I have an idea for an app!” hundreds, if not thousands of times.  Sometimes it would be from family members, sometimes my dentist during a cleaning, and sometimes from a naked dude standing in the sauna at the gym.  Everyone pitches app ideas to me.&lt;/p&gt;
+&lt;p&gt;What I have learned from hearing so many pitches is this: apps really fall into one of three (sometimes four) categories.  Allow me to elaborate.&lt;/p&gt;
+&lt;h4 id=&#34;1-theapp-has-been-done-before&#34;&gt;1. The app has been done before&lt;/h4&gt;
+&lt;p&gt;This is the most common category of app idea I hear.  Usually, these are along the lines of, “It’s like Instagram, but for finger painters…”, etc… where the user takes an already proven idea and tries to tweak it in some way that they feel makes it new.  Most of the time, these people have not even done any research to check as to whether or not a solution already exists.&lt;/p&gt;
+&lt;p&gt;The biggest hurdle in developing an app that has been done before is visibility; How are they going to get people to find the app and why should they choose it over the competition?&lt;/p&gt;
+&lt;h4 id=&#34;2-theapp-idea-is-too-niche&#34;&gt;2. The app idea is too niche&lt;/h4&gt;
+&lt;p&gt;Every now and again, I will hear a truly unique idea.  Keep in mind, unique does not necessarily mean good.  For example, I might hear, “I want an app that you can take photo of your cat, put it on a weather balloon, and send the balloon to space.  ‘Catz In Spaze!’”.  While this is unique, and *technically *feasible, one would be hard-pressed to make a real business out of it as it would be hard to get enough users on board to make it profitable.&lt;/p&gt;
+&lt;h4 id=&#34;3-there-is-a-reason-theapp-does-not-already-exist&#34;&gt;3. There is a reason the app does not already exist&lt;/h4&gt;
+&lt;p&gt;“I want an app to map out all of the grocery stores layouts in the world, so husbands can finally shop efficiently!”  This is a great idea.  It really is.  So great, that I have literally heard it no less than ten times from various people over the years.  Often times, I can predict when someone is about to pitch this particular idea, just by the setup: “You know how, like, shopping is hard, and like, you can’t find stuff…”.&lt;/p&gt;
+&lt;p&gt;There are some real technical hurdles surrounding this problem.  While there are a few apps that have tried to solve it, no app will really accomplish the goal unless they have all of the following: total store participation, a large enough group for crowdsourced data, faster and more reliable GPS to know &lt;em&gt;exactly&lt;/em&gt; where you are in the store, stores stop changing layouts, etc… You get the idea.  There are a lot of reasons a solid solution for this does not exist.&lt;/p&gt;
+&lt;p&gt;There are other countless examples of app ideas falling into this category.  Another fun one I get pitched is a killer app that converts any photo into a (caricature) [&lt;a href=&#34;http://en.wikipedia.org/wiki/Caricature&#34;&gt;http://en.wikipedia.org/wiki/Caricature&lt;/a&gt;].  I’m sure someone will link one in the comments, but they are all mediocre at best.&lt;/p&gt;
+&lt;h4 id=&#34;bonus-4-the-app-is-used-to-augmenttheirexisting-business&#34;&gt;Bonus #4: The app is used to augment their existing business&lt;/h4&gt;
+&lt;p&gt;This is actually my favorite type of app to work with.  The user has an existing business and wants to build something that benefits their business in the mobile space.  I see ideas from evaluation tools for employees to apps that allow users to order products directly from the business.&lt;/p&gt;
+&lt;p&gt;I like these because the success of the business does not depend entirely on an app.  Also, there is generally an audience built right in at launch time so everyone is happy.&lt;/p&gt;
+&lt;h4 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h4&gt;
+&lt;p&gt;I am not writing this post because I’m jaded and sick of hearing app ideas.  Quite the contrary.  I love hearing app ideas and would love to hear examples challenging the stereotypes that I have created here.&lt;/p&gt;
+&lt;p&gt;I give this spiel to clients from time to time and wanted a place that I could point them to, so feel free to send your clients to this post the next time you get the grocery store mapper pitch.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Software Consultant Contracts: Fixed Bid VS Time And Materials</title>
+      <link>https://brandontreb.ngrok.io/2014/12/09/software-development-contracts-fixed-bid-vs-time-materials/</link>
+      <pubDate>Tue, 09 Dec 2014 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2014/12/09/software-development-contracts-fixed-bid-vs-time-materials/</guid>
+      <description>&lt;p&gt;One of the most common questions I get from software consultants is whether or not to accept fixed bid contracts.  In this post, I’m hoping to shed some light on fixed bid vs. time and materials contracts and help you make the best decision for the project at hand.&lt;/p&gt;
+&lt;p&gt;Let’s start with some definitions to help you better understand what I am talking about.&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;fixed bid&lt;/strong&gt; &lt;strong&gt;contract&lt;/strong&gt; is a contract where the developer and the client agree on a price and/or timeline up front for a particular contract.  If additional time is needed, there must be some sort of change order issued to and signed by the client.&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;Time and Materials contract&lt;/strong&gt; is a contract where the developer and the client agree on an hourly rate for the development of a project.  While there should be some initial estimates up front, the developer is not locked into a certain number of total hours/dollars.  If more time is needed than stated in the original estimate, the developer has the freedom to continue as the client’s budget (and patience) permits.&lt;/p&gt;
+&lt;p&gt;Below, I’ll compare and contrast the pros and cons of both fixed bid and time and materials contracts.  Note, this is just from my experience and your experience might vary.  In fact, if it does, I’d love to hear about it in the comments.&lt;/p&gt;
+&lt;h4 id=&#34;fixed-bid-pros&#34;&gt;Fixed Bid: Pros&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;You can potentially make a lot more money&lt;/em&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you are a good estimator (or a bad one and the client accepts an overbid), then this is your chance to get paid whatever you want to get paid per hour.  If you bid 100 hours and get it done in 50, you have essentially doubled your rate.
+2. *It’s easier to manage the pipeline.&lt;/p&gt;
+&lt;p&gt;*Generally, when you do a fixed bid contract (again assuming you are decent at estimations), fixing a contract allows you to plan out more contracts ahead of time.  Typically the fixed cost comes with a (roughly) fixed timeline.  This allows you to project future availability for yourself to work on other projects.
+3. *You know what you are building up front.&lt;/p&gt;
+&lt;p&gt;*If you have done your due diligence (gathering requirements, specking things out, etc…) there &lt;em&gt;should&lt;/em&gt; be no surprises.  Everything is already laid out for you and if the client wants to change anything, it will require a change order.
+4. *You are selling value instead of time.&lt;/p&gt;
+&lt;p&gt;*This is actually a hot topic lately.  Many will argue never to sell by the hour as so much more goes into your rate than just time (your knowlege, history, expertise, etc…) The client wants to pay your for a solution to their problem and that’s infinitely much more valueable than your time.
+5. *It’s sometimes easier to land contracts.&lt;/p&gt;
+&lt;p&gt;*Some clients have a very specific budget.  If you can provide a solution to them inside of their budget, then the contract is yours every time.&lt;/p&gt;
+&lt;h4 id=&#34;fixed-bid-cons&#34;&gt;Fixed Bid: Cons&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;You can potentially lose a lot more money&lt;/em&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There is a joke that goes something like this: There are only 2 hard problems in software development, knowing when to expire a cache and accurately estimating working.  Generally, the overzealous developer will error on the side of too few hours in order to ‘land the contract’ or ‘please the client’.  This usually results in the developer bidding 50 hours and realistically working the 100.
+2. &lt;em&gt;Feature Creep.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Clients WILL feature creep.  Feel free to tweet that or write it on your forehead.  It’s just a fact of life.  You, being the super nice developer that you are, will want to please the client and will say something like “it’s outside of scope, but I’ll make an exception”.  Before you know it, the app has pivoted and you are building things WAY outside the scope of the initial contract.
+3. &lt;em&gt;Can I…? NO! Well, what about…? NO! Just This… NO, NO, NO!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;With a fixed bid contract, if you are an experienced developer, you will ALWAYS be telling the client NO.  If you are wondering why, see #2.  While feature creep creates a tension, so does not allowing the client to change course, if needed.
+4. *It’s sometimes harder to land contracts&lt;/p&gt;
+&lt;p&gt;*If I take a fixed bid contract, I generally error on the side of overbidding.  This allows padding for things like QA, small changes, App Store submission, etc.  Given the high bid, your client might baulk at the contract and attempt to outsource to India himself, where he will eventually spend double.&lt;/p&gt;
+&lt;h4 id=&#34;heading&#34;&gt;&lt;/h4&gt;
+&lt;h4 id=&#34;time-and-materials-pros&#34;&gt;&lt;strong&gt;Time And Materials: Pros&lt;/strong&gt;&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;*Your work is always compensated&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;*Given that you are getting paid per hour, you can always count on a steady stream of revenue coming in.  This is very comforting to developers since you know you will always get paid the rate you want for the work you do.
+2. *Landing contracts can be easier&lt;/p&gt;
+&lt;p&gt;*Clients don’t always know what they want up front and the idea of not committing to a certain dollar amount is sometimes comforting. It also gives them MUCH MORE freedom to make changes and pivot down the road.
+3. *It gives clients the freedom to prioritize features&lt;/p&gt;
+&lt;p&gt;*This is one of the biggest selling points that clients appreciate when I sell a time and materials contract.  Given that my team follows a version of the agile development methodology, clients love that they have some insight as to how much each feature roughly costs.  They can see the estimates and translate that into cost.  If they feel a less important feature is too costly, they can prioritize the backlog to get more (less complex) features for the same price.
+4. *Less Risk&lt;/p&gt;
+&lt;p&gt;*Since you are only selling the client your time, you don’t necessarily owe them anything except work.  Most of the time, time and materials contracts don’t even have an official scope of work attached.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Time And Materials: Cons&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;*It doesn’t scale&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;*You can never make more money than your time will allow. If you charge $100/hour and work 40 hours/week, then you can never make more than $4,000/week unless you work more.
+2. *You are a commodity&lt;/p&gt;
+&lt;p&gt;*The client doesn’t so much look at you as someone who is providing them a solution as they do a “resource”.  You are perceived as less valuable and therefore could easily be replaced.
+3. *More Risk&lt;/p&gt;
+&lt;p&gt;*I know this type of contract is listed as less of a risk above, but there is also some riskiness to it.  If you get in the weeds on a task or start introducing too many bugs, the client might feel that you are misleading them or incapable of performing and you risk getting released from the project.&lt;/p&gt;
+&lt;h4 id=&#34;takeaways&#34;&gt;Takeaways&lt;/h4&gt;
+&lt;p&gt;While I have only scratched the surface in comparing these two types of contracts, I hope you have a better understanding about which route to pursue for you.  My advice is to not be too rigid stating “I’m only going to use contract type X forever” because each contract situation may vary.  Use your best judgement and make the decision that is best suited for each individual project and client.  At some point in the future, I will post a few tips for making this decision based on some factors, but that is for a later date.&lt;/p&gt;
+&lt;p&gt;Until then, happy consulting!&lt;/p&gt;
+&lt;p&gt;P.S. Make sure to sign up for the newsletter below to be notified about awesome posts like this in the future!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Being An Indie Software Developer And Signing NDAs</title>
+      <link>https://brandontreb.ngrok.io/2014/02/28/indie-software-developer-signing-ndas/</link>
+      <pubDate>Fri, 28 Feb 2014 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2014/02/28/indie-software-developer-signing-ndas/</guid>
+      <description>&lt;p&gt;Very frequently, I receive emails that go something like this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Hey Brandon, I have a killer project idea. Do you want to work on it?  Please sign the NDA so we can talk.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Early on when I first started consulting, I would have responded with something like “Sure send it over!” and signed the thing without hesitation.  As of late, I have changed my view on NDAs; at least in this type of situation.&lt;/p&gt;
+&lt;p&gt;For those that don’t know, an NDA (non disclosure agreement) is a contract that is intended to protect the intellectual property of the client.  They make a lot of sense, especially in the event that the deal goes sour.  Say a client has some great idea for how to better take selfies that is going to revolutionize the selfie game.  If he doesn’t get a developer to sign an NDA, the developer could potentially be free to discuss the idea with others, leaving the idea open to be stolen.&lt;/p&gt;
+&lt;h3 id=&#34;why-i-dont-sign-preliminary-ndas&#34;&gt;Why I Don’t Sign Preliminary NDAs&lt;/h3&gt;
+&lt;p&gt;In the scenario I mentioned above, it would be very unwise of me to sign this NDA as I don’t have enough information about the product.  This puts me as a consultant at a huge risk.&lt;/p&gt;
+&lt;p&gt;Say for example I am working on a photo/video sharing app (I get roughly 1 request a week for some spin on Instagram). Now, say the incoming project is some variant on photo sharing. If I sign the NDA, it now now puts me in a conflict of interest with my existing project.&lt;/p&gt;
+&lt;p&gt;Even if I knew that the project was a photo/video sharing application up front, I still would not sign the NDA.  Much of the time (as mentioned above) clients want &lt;strong&gt;very&lt;/strong&gt; similar applications.  If I went around signing every single NDA that came across our desks, I would be out of business after the first client.&lt;/p&gt;
+&lt;h3 id=&#34;when-i-will-sign-ndas&#34;&gt;When I Will Sign NDAs&lt;/h3&gt;
+&lt;p&gt;Well, the first thing that I do is ask for clarification on the project and tell them my NDA policy.  I basically tell them that I am happy to sign the NDA if one of the following conditions are met:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;There is extremely proprietary information (you can’t land a big enterprise contract without first signing an NDA)&lt;/li&gt;
+&lt;li&gt;We are ready for project kickoff and all parties are aware of any potential conflicts&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In addition to that, if I am currently working on a project that is of similar type, it would be worthwhile to disclose that information to the potential new client (not the proprietary info, just that there is some overlap) so that they can choose whether or not to proceed.  Better to possibly lose the new client than end up in a crazy legal battle.&lt;/p&gt;
+&lt;p&gt;If the new client refuses to give you any more information, then they are not worth your time.  They will most likely be too challenging to work with down the road anyway.&lt;/p&gt;
+&lt;h3 id=&#34;ndas-are-not-set-in-stone&#34;&gt;NDAs Are Not Set In Stone&lt;/h3&gt;
+&lt;p&gt;When you do finally decide to sign the NDA, know that it is not complete until you sign it. If you see something that you don’t like or want to add any additional clauses, feel free to propose those to the client.  Most clients will be very understanding.&lt;/p&gt;
+&lt;p&gt;That being said, it’s VERY IMPORTANT that you read all the way through an NDA and possibly run it by your lawyer before signing.&lt;/p&gt;
+&lt;h3 id=&#34;suggestion-if-you-want-your-nda-signed&#34;&gt;Suggestion If You Want Your NDA Signed&lt;/h3&gt;
+&lt;p&gt;If you want a developer to sign your NDA, make sure to give him enough information about your project for him to make an educated decision.  If you just say “I want a photo sharing app” and expect an NDA signed, good luck.  Make sure that they know there is proprietary information involved and that you are doing something different that must be kept private.&lt;/p&gt;
+&lt;p&gt;An NDA is not required if you want to make say an “Instagram Clone For Puppies” or a “Miley Cyrus Flappy Bird Clone”.  Be sensitive to the uniqueness of your idea and decide if it really warrants an NDA.&lt;/p&gt;
+&lt;p&gt;Also note that developers are not out to steal your idea.  They get pitched hundreds of ideas and most of the time your idea falls into 3 categories anyway:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;It’s not unique&lt;/li&gt;
+&lt;li&gt;There is a technical challenge and that’s why it hasn’t been done (I get pitched a lot of ‘Map a grocery store so that my list will navigate me around’ ideas)&lt;/li&gt;
+&lt;li&gt;Your idea is so niche and so unique that the general audience won’t get it and it won’t be profitable anyway&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I’m not saying that every idea falls into these categories. But a good majority do. Most of them fall under #1 and that’s not necessarily a bad thing.  Google fell into #1 and look where they are today.  Just keep these things in mind when requiring a signed NDAs before you will give out any info.&lt;/p&gt;
+&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;There has been quite a bit of discussion lately (especially on Hacker News) about whether or not to sign NDAs.  Most of the recent articles I have read are simply titled “I Will Not Sign Your NDA”.  I feel that NDAs have there place, but you should sign them only with extreme caution.  Examine each NDA on a case by case basis and determine how it will affect your business in the long run.&lt;/p&gt;
+&lt;p&gt;*&lt;em&gt;Disclaimer: I am not a lawyer and do not claim to be giving any real legal advice.  I am simply stating how I do things.  Make sure to consult with a lawyer before engaging in any contracts.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Becoming A Software Consultant: My Backstory</title>
+      <link>https://brandontreb.ngrok.io/2014/01/31/becoming-software-consultant-backstory/</link>
+      <pubDate>Fri, 31 Jan 2014 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2014/01/31/becoming-software-consultant-backstory/</guid>
+      <description>&lt;p&gt;I recently published a post about &lt;a href=&#34;http://brandontreb.com/learned-first-year-ios-consulting&#34;&gt;my first year of being an independent iPhone development consultant&lt;/a&gt;.  The feedback from my readers was incredible, however there was one important thread on Hacker News that I wanted to address.  The issues were:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;One of my common hangups with these kind of posts is the lack of history as to what lead people to these consulting gigs. Where were you before, and how long were you there?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I found this to be a very valid point.  Far too often you see guys posting their end of the year profits from their consulting gigs and they make it sound extremely easy.  This can be dangerous as joe n00b might be so inspired that he quits his job and jumps right into the deep end without first preparing himself and assessing the risks involved.&lt;/p&gt;
+&lt;p&gt;That being said, I wanted to write a bit about my backstory and how it ultimately lead to my ability to strike it out on my own as a consultant.  I have read stories similar to mine and there are a few key points that seem to be common, which I will highlight as I go.&lt;/p&gt;
+&lt;p&gt;**Circa Summer 2008 – Just Before Apple Releases The iPhone (not iOS) SDK **&lt;/p&gt;
+&lt;p&gt;In the summer of 2008, I was preparing to enter my senior year of college for Computer Science at UNM.  A quick note about CS in New Mexico.  There are TONS of government contractors (Sandia, Ultramain, Honeywell, Lockheed, etc.) in NM and college CS courses seem very much tailored to preparing students to head down this road towards one of these contractors.  This is where most of my buddies from college ultimately ended up.&lt;/p&gt;
+&lt;p&gt;So, like any good UNM CS student, I got a job at Intel hacking C# tools for their engineers to use during testing.  It was fine, but I knew I could not work in a cube forever.&lt;/p&gt;
+&lt;p&gt;Around that time, one of my buddies had the original iPhone and I was crazy jealous.  I think I had some silly Windows CE brick or a Palm Treo or something.  It was obvious that the iPhone was the “next big thing” and I took notice.  So I started developing web apps for the iPhone, as that was the primary way to get custom apps for the devices.  Apple even had a terrible (non mobile formatted) interface for exploring such web apps.&lt;/p&gt;
+&lt;p&gt;I built &lt;em&gt;cool&lt;/em&gt; things like a Weight Watchers Point Calculator (my wife’s idea) and Minesweeper and to my surprise made a couple bucks a day on ads.  This really fueled my excitement.  Then, Apple announced the official SDK.&lt;/p&gt;
+&lt;p&gt;**An Aventure In iCodeBlog And Other NDA Violations **&lt;/p&gt;
+&lt;p&gt;When Apple first released the SDK, the App Store didn’t exist yet.  All developers were forced under Apple’s NDA, stating that we weren’t able to discuss any aspect of the SDK on the web.  As you can imagine, this left very little resources available for learning how to actually do development.  There were no blogs, no books, and the only source of information was Apple’s documentation.  I saw this as a HUGE opportunity.&lt;/p&gt;
+&lt;p&gt;I very quickly registered the domain &lt;a href=&#34;http://icodeblog.com&#34;&gt;icodeblog.com&lt;/a&gt; and setup WordPress.  This led to my very &lt;a href=&#34;http://www.icodeblog.com/2008/07/22/icodeblog-launched/&#34;&gt;first post&lt;/a&gt; in July of 2008. I had no idea what I was doing; it was my first blog ever, but I knew I would be able to learn more effectively if I was teaching others as I went along.&lt;/p&gt;
+&lt;p&gt;Being a Java developer, I was comfortable reading documentation so I dug right in to the iOS docs.  I spent all of my free time (the time that wasn’t spent with my wife) learning and blogging.  I was violating the NDA by discussing it on the web, but my page views were growing every day.  Other blogs started to sprout up but I soon had the most popular iOS development blog on the web.  I had over 10K RSS subscribers one month after my blog launch.&lt;/p&gt;
+&lt;p&gt;Things were really exciting, however, I had to start thinking about my future and how I was going to support my family.  Still being a bit narrow-minded with my career choices, I applied for a job at Lockheed Martin and got a position.  It was all set; I would graduate college in the spring and head to the “cube farm”.  Destined for a life of “here’s your input, give me this output”, TPS Reports, and other corporate stereotype jokes…&lt;/p&gt;
+&lt;p&gt;That’s when I got my first iOS programming job offer…&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Enter RightSprite&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As you can imagine, the popularity of iCodeBlog did not go unnoticed.  I received job inquiries quite often and one them happened to be from a guy who lived in Ireland named Jonathan.  He was a wealthy American entrepreneur who had added a mobile offering to his already successful rails consultancy called RightSprite.  However, he started his business by outsourcing to the Ukraine, which yielded fairly poor results.&lt;/p&gt;
+&lt;p&gt;So, in the winter of 2008 I received an email that they wanted to purchase iCodeBlog and give me a job replacing their outsourced team.  He also happened to have an employee in NM named Josh.  Josh and I met at a “hip” food place that I had never heard of and I was blown away that this was considered “business”.  Needless to say, I was excited.&lt;/p&gt;
+&lt;p&gt;So here I am, about to graduate with a perfect job lined up, and I get an offer like this.  I had no idea what to do.  The idea of working remote was foreign to me and had never even crossed my mind.  People can actually do that?  I can work in my pajamas??&lt;/p&gt;
+&lt;p&gt;So I decided to take a risk, sell him my blog, and accept the job offer.  I was terrified-especially when he told me that my first check was coming out of his personal bank account and that was why it was late.  Little did I know, this would be one of the best career decisions I could ever make…&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Build, Hire, Repeat&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I graduated from college and my career was in full swing.  I was the sole developer at a consultancy that had more mobile work than it knew what to do with.  My family had no idea what I did.  They though I was a drug dealer or something just as lucrative.  At one point, my grandma asked me, “When are you going to get a &lt;em&gt;real&lt;/em&gt; job like your cousin Michael (he works for the city)”.  I could’t quite believe this was a legitimate job myself.&lt;/p&gt;
+&lt;p&gt;Things started to get very exciting.  Jonathan asked me to help hire our next employee.  Luckily, a guy by the name of Collin reached out to me and asked if he could guest blog on iCodeBlog.  A few tutorials later and we offered him a job.&lt;/p&gt;
+&lt;p&gt;RightsSprite continued to scale up and I helped hire quite a few new developers.  They eventually moved to a physical building in Portland, Oregon while I still worked remotely from NM.  The team continued to grow.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A Book Deal&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Even though I didn’t own iCodeBlog anymore, I still contributed to it from time to time.  This lead to me being contacted by a few publishing companies with book offers.  A book offer?  It doesn’t sound that cool now, but in 2009, when there weren’t many iOS development books, it sounded incredible.&lt;/p&gt;
+&lt;p&gt;I decided to go with Manning Publishing and I updated their iPhone development book from web app-centric to SDK-centric.  It amazed me that I struggled to write four paragraph essays in high school but I was now writing a four hundred page book with ease.&lt;/p&gt;
+&lt;p&gt;The book did fairly well and sold around 10,000 copies.  Unfortunately, when you are an author of a tech book, that amounts to just about nothing in profit.  As you can imagine, I had little motivation to do the update the next year when Apple updated the SDK.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A New Sheriff In Town&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Shortly after moving the offices to Portland, the owner sold the company and we had a new president and CEO.  He ran things a bit differently but ultimately things were cruising forward.  Our team continued to expand and eventually I hired our first Android developers.&lt;/p&gt;
+&lt;p&gt;In December of 2011, I was promoted to the Director of Mobile Engineering.  It was a fancy title and I was entirely proud to hand out business cards with that printed on them.  I had helped build the team up to around sixteen mobile developers and it was now my job to manage them, as well as work closely with sales to land larger contracts.&lt;/p&gt;
+&lt;p&gt;2012 was a great year of working on cool projects including the Food Network and Google Fiber TV.  I got to attend WWDC and spend a few weeks on Google’s campuses.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Things Get Shaken Up&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Little did I know, there was some unrest in the company with the higher-up managers.  One day, there was a company memo that the three people who were higher ranked than myself had all left.  There were rumors as to why they left, but no one really had the true story.  This caused a stir in the company and a few more developers began to follow suit.&lt;/p&gt;
+&lt;p&gt;This, of course, led to some company restructuring which put me right at the top with one other team member.  I was now one of the highest paid people in the company and solely in charge of the entire mobile team.&lt;/p&gt;
+&lt;p&gt;I thought everything was perfect until one day in December of 2012, I received the following message when I logged into Gmail:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Your account has been suspended, please contact the administrator.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This made me considerably suspicious.  I knew there was a lot of restructuring in the recent history and I immediately wondered if I was next on the chopping block.  I was logged into Linked In at the time and noticed the company owner was the last person to view my profile.  “He suspects me of looking for other jobs and is checking up on me”, I thought.&lt;/p&gt;
+&lt;p&gt;That’s when I received a message on Skype from him.  It said:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Brandon, do you have time to talk?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;My heart jumped into my throat.  I knew what was coming next.  He was soon up on video chat and proceeded to tell me that the company was undergoing some restructuring and my position has been eliminated.  “Eliminated?” I thought.  And then I asked him what that meant for me.  He repeated the sentence again, said thanks, and hung up.  That was it; I no longer had a job.&lt;/p&gt;
+&lt;p&gt;My “secure” job that I had been working at for four years disappeared in a matter of seconds with very little “real” explanation.  I was speechless.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Taking The Plunge&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;After getting “let go”, I took the rest of the day off and went out with my family (wife and two kids).  We were shocked, but I knew what I had to do.  It was what I had been dreaming of doing for quite some time.&lt;/p&gt;
+&lt;p&gt;Armed with the knowledge of the entire software pipeline-from sales, to development, to maintenance-I hit the ground running the very next day in search of my first contract.&lt;/p&gt;
+&lt;p&gt;I wrote &lt;a href=&#34;http://brandontreb.com/what-i-learned-in-my-first-month-being-a-contract-ios-developer&#34;&gt;this blog post&lt;/a&gt; documenting that very first month.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Takeaway&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;It has been a little over a year since I’ve had a “secure” job.  I put that word in quotes because I now believe the only way to have a secure career is to make one for yourself.  You could be let go at any time, for any reason.&lt;/p&gt;
+&lt;p&gt;I was very fortunate to have a first job that allowed me to learn the needed skills to do what I’m passionate about; building consumer facing apps that get used by thousands of people.  If you want to do the same, I would encourage you to find a job that lets you explore all of the aspects of consulting to find out if it’s right for you.&lt;/p&gt;
+&lt;p&gt;Sometimes I wonder why everyone is not a consultant.  It feels so free to be able to hack outside on a nice day or go sailing with my buddies on a random Wednesday.  But that’s just one side of the coin.  Other days, I wonder why I am even doing it.  I often wish I had a simple job with a well-defined task where once I got “off work”, I could go home and not think about it again until the next day but I don’t have that luxury.  There are real risks and stresses involved with working for yourself so I urge you to weigh them out before taking the plunge.&lt;/p&gt;
+&lt;p&gt;I have received so many good questions through my last few posts about consulting.  They have inspired me and I intend on taking this year to diligently blog about topics such as finding clients, health insurance, contracts, etc.&lt;/p&gt;
+&lt;p&gt;So please share and subscribe; I hope to help you on your journey to becoming free of your corporate chains.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This post is part of a series about becoming and independent software consultant.  I am participating in this series with my good friend Josh. &lt;a href=&#34;http://joshuastephenson.com/2014/02/06/on-becoming-an-independent-software-consultant/&#34;&gt;You can read his take on this post here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What I Learned In My First Year Of iOS Consulting</title>
+      <link>https://brandontreb.ngrok.io/2014/01/01/learned-first-year-ios-consulting/</link>
+      <pubDate>Wed, 01 Jan 2014 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2014/01/01/learned-first-year-ios-consulting/</guid>
+      <description>&lt;p&gt;Wow, I can’t believe it has already been a full year since I struck it out on my own.  Last year, I &lt;a href=&#34;http://brandontreb.com/what-i-learned-in-my-first-month-being-a-contract-ios-developer&#34;&gt;published a post&lt;/a&gt; after my first month on doing contract iOS development.  Needless to say, I have grown and learned quite a bit over the past year and I wanted to share some of those experiences.&lt;/p&gt;
+&lt;h3 id=&#34;income&#34;&gt;Income&lt;/h3&gt;
+&lt;p&gt;While I won’t share exact numbers, I left my 6 figure/year job to pursue the indie/consulting life.  During the course of the year, I was able to amass 40% more income in 2013 than I had at my previous position.&lt;/p&gt;
+&lt;p&gt;In addition to that, I had the time to launch a couple iOS applications and thus upping my Apple income by about 20% this year.&lt;/p&gt;
+&lt;h3 id=&#34;network-network-network&#34;&gt;Network Network Network&lt;/h3&gt;
+&lt;p&gt;I would say spending time networking and meeting people is just as important as being able to write code if you want to be successful on your own.  Through out the year, I dedicated at least five to ten hours a week just meeting with people, talking on the phone, and making new connections.&lt;/p&gt;
+&lt;p&gt;Often times, I would get contract opportunities that I knew for sure that I wasn’t going to take; either because I didn’t love the project, or (more often than not) because I didn’t have the bandwidth to take them on.  However, rather than just writing the client back “&lt;em&gt;I don’t have time&lt;/em&gt;“, I would take the call (or meeting in town), make the connection, and even listen to details about the contract.&lt;/p&gt;
+&lt;p&gt;My wife would tell me to stop wasting my time and that those hours would be better spent on project work that actually made money.  However, these contacts are arguably &lt;strong&gt;more&lt;/strong&gt; valuable than the hours “lost”.  In many situations, I have reached out to those potential clients weeks or months later once I hired a new developer and was then able signed a contract.  If I had declined the meeting to begin with, they probably wouldn’t have been as inclined to work with me so readily.&lt;/p&gt;
+&lt;h3 id=&#34;subcontractors&#34;&gt;&lt;strong&gt;Subcontractors&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Subcontracting has been a mixed bag for me.  It seems to be the only (safe-ish) way to expand your business as a consultant, other than hiring full time developers.  So, if you want to be able to work less yourself (which is almost never the case) or increase your companies revenue, you need to hire out.  &lt;/p&gt;
+&lt;p&gt;Once I found the right people, subcontracting was a dream.  I was able to reach more clients, still deliver the same value in the work, and achieve the client’s goals, all while expanding my business.&lt;/p&gt;
+&lt;p&gt;The main challenge I have had is deciding whether to hire subcontractors from here in the states or “offshore”.  They both have their benefits and complications. Here are some I have found:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Benefits of hiring in the states:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Communication – Most of the time their timezones are close enough that one of you is not inconvenienced to communicate in real time.&lt;/li&gt;
+&lt;li&gt;Trust From Clients – Some clients still have some issues with “offshore”, especially because many of them have tried their hand at the ODesk lottery and have lost.  So, saying you have US based team members sometimes makes them more comfortable. It’s unfortunate, but I have seen it to be true in some cases.&lt;/li&gt;
+&lt;li&gt;Colleagues – Often times you already know or have worked with these guys since starting with acquaintances/friends is a good place to look for developers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Complications hiring in the states&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cost – US devs are expensive.  Most of the time they have full time jobs and want to do consulting on the side.  So it is important that they get paid more to do contract work than their day job pays.&lt;/li&gt;
+&lt;li&gt;Colleagues – This is on the negative list as well because hiring people you know can get weird if things go awry.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;**Benefit of Offshore developers **&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cost – I put this here, however that doesn’t mean I hire “cheap” developers.  Honestly, if you are not paying a contractor well, you are either under paying him and should give him a raise OR he shouldn’t be working for you as he’s probably too junior.&lt;/li&gt;
+&lt;li&gt;Perspective – I have some incredible developers in other countries that have taught me quite a bit whether it’s about development, process, culture, or even my own code.  It’s a great opportunity to learn.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;**Problems with Offshore developers **&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Location – Timezone issues &lt;em&gt;can&lt;/em&gt; be a problem if you let them.  For example, I have a developer who lives in a completely different timezone than my own.  However, he does a fantastic job of being available when he is needed.  I have had other instances where it was very challenging to reach my developer in an event where I needed information on short notice.&lt;/li&gt;
+&lt;li&gt;Vetting Process – Finding developers is a little more tricky.  With devs in the states, you can just head to a local meet up or conference, but finding GOOD “offshore” devs is a little trickier.  I have lucked out a few times, but for the most part it’s a bit more work.  I would suggest spending a little of your own money to adequately search and vet each candidate.&lt;/li&gt;
+&lt;li&gt;Language – While doing iOS development, you may need your client and your developer to communicate with one another.  That being said, it’s vital to find a developer who &lt;em&gt;you&lt;/em&gt; can understand and who can understand you in order to make communication possible.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;hiring-an-assistant&#34;&gt;Hiring An Assistant&lt;/h3&gt;
+&lt;p&gt;Taking a page from Tim Ferris’ &lt;em&gt;4 Hour Work Week&lt;/em&gt;, I decided to hire an assistant.  Ferris suggests “virtual”, however, I have hired one locally (she’ll be proofreading this post 😉 ).  I think it’s one of the best decisions I have made as a business owner.  Here is just a short list of things she handles for me:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Contracts&lt;/li&gt;
+&lt;li&gt;Invoicing&lt;/li&gt;
+&lt;li&gt;Payments of contractors&lt;/li&gt;
+&lt;li&gt;Research&lt;/li&gt;
+&lt;li&gt;Phone calls&lt;/li&gt;
+&lt;li&gt;Personal issues (like returns, purchasing equipment, etc.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Even if she saves me two hours per week, she has paid for herself, and believe me, she saves me much more than that.&lt;/p&gt;
+&lt;h3 id=&#34;never-decline-a-contract&#34;&gt;Never Decline A Contract&lt;/h3&gt;
+&lt;p&gt;I mentioned this earlier in the post, but I want to reiterate it here.  I seldom tell clients “no” and I really feel that it has worked out to my benefit.  At the very least, I hear them out and add them as a contact to keep in mind for the future.&lt;/p&gt;
+&lt;p&gt;What I generally do when I can’t take on a client is I will give them an estimate of when myself or a member of my team will be available.  That way, if they are okay with the timeline, I can keep the pipeline open.  If not, there is no harm done.  Also, if I hire another developer before the time I said I was available, sometimes the client will still have the need and I am able to fill it.&lt;/p&gt;
+&lt;p&gt;If I absolutely don’t have time or don’t want a particular contract, I will refer the client out to other dev shops.  I don’t look at this as competition, but rather opportunity as I would hope they would do the same for me one day.  As an added bonus, some of them have a referral fee so you can at least profit from pairing the client up.&lt;/p&gt;
+&lt;h3 id=&#34;taxes&#34;&gt;Taxes&lt;/h3&gt;
+&lt;p&gt;I have found out that taxes are less fun when you are self-employed than when you are employed by a business.  Luckily my wife is MUCH better at money management than I am, so she set up a separate tax account where roughly 40% of our income would go.&lt;/p&gt;
+&lt;p&gt;One of the other good decisions I made besides hiring an assistant was hiring a CPA.  She has saved me countless hours and fees and is worth her weight in gold.&lt;/p&gt;
+&lt;p&gt;Hire a CPA from day one; you will never regret it.&lt;/p&gt;
+&lt;h3 id=&#34;family&#34;&gt;Family&lt;/h3&gt;
+&lt;p&gt;I know this is a “business” related post, but I have to mention this.  Having a wife and kids, I am very much a family man.  Working for myself has been such a blessing since I have been able to spend considerably more time with my family than when I was employed by someone else.&lt;/p&gt;
+&lt;p&gt;For example, if it’s a nice summer day and the family decides to head to the zoo, I can just go without asking a boss for time off or taking PTO.  I simply work in the evening or more hours the next day to recoup the time.  Personal time management is key to be able to have this kind of freedom.&lt;/p&gt;
+&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+&lt;p&gt;Overall, 2013 was an incredible year.  While I did make mistakes (a ton), I gained so much knowledge and had a blast doing so.  Going solo isn’t for everyone (some days I wonder why everyone** isn’t** doing it, and others I wonder why I &lt;strong&gt;am&lt;/strong&gt;), but it’s been one of the most exciting experiences of my life.&lt;/p&gt;
+&lt;p&gt;I look forward to what 2014 brings and seeing how I can continue to grow my consultancy.&lt;/p&gt;
+&lt;p&gt;Happy New Year and Happy Hacking!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

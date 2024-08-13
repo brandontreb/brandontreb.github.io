@@ -1,0 +1,44 @@
+<rss version="2.0">
+  <channel>
+    <title>link on Hack The Planet</title>
+    <link>https://brandontreb.ngrok.io/tags/link/</link>
+    <description></description>
+    
+    <language>en-us</language>
+    
+    <lastBuildDate>Wed, 25 Jan 2012 01:00:00 -0600</lastBuildDate>
+    
+    <item>
+      <title>Vim For iOS Is Incredible</title>
+      <link>https://brandontreb.ngrok.io/2012/01/25/vim-for-ios-is-incredible/</link>
+      <pubDate>Wed, 25 Jan 2012 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2012/01/25/vim-for-ios-is-incredible/</guid>
+      <description>&lt;p&gt;I used to be an Emacs guy and would battle to the death on the war between Vim and Emacs. It wasn’t until a coworker of mine sat down and really showed me just how cool/simple/powerful Vim can be. Just using Vim is a new adventure every day and has really improved my productivity. I now use it to code, blog, and even jot down quick notes.&lt;/p&gt;
+&lt;p&gt;Last week, I saw on Hacker News a link announcing &lt;a href=&#34;http://applidium.com/en/applications/vim/&#34;&gt;Vim has been ported to iOS&lt;/a&gt;. I have spent a week or so with it and can honestly say the port is almost perfect!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2012/overview.jpg?13270539&#34; alt=&#34;&#34;&gt;
+It has &lt;em&gt;most&lt;/em&gt; of the major Vim features and commands including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Automatic indentation&lt;/li&gt;
+&lt;li&gt;Visual mode (block operations)&lt;/li&gt;
+&lt;li&gt;Language-aware syntax highlighting&lt;/li&gt;
+&lt;li&gt;Integrated scripting language that lets you extend functionalities&lt;/li&gt;
+&lt;li&gt;Macros recording and playback&lt;/li&gt;
+&lt;li&gt;Markers management (to quickly move around the edited file)&lt;/li&gt;
+&lt;li&gt;Multiple clipboards&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You even have access to the config file to remap keys and define your own custom macros.&lt;/p&gt;
+&lt;p&gt;There are a few features that would make this better on mobile however:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Dropbox Support – Currently you must use iTunes to work with Vim documents on mobile. There needs to be an easier way to share these.&lt;/li&gt;
+&lt;li&gt;Keyboard bar – Since you have to switch modes so frequently and there are some keys you type often ( “:” ), it would be nice to have quick access to these.&lt;/li&gt;
+&lt;li&gt;Plugin support – This is an Apple limitation &lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2012/frownie.png&#34; alt=&#34;:(&#34;&gt;&lt;/li&gt;
+&lt;li&gt;NERDTree – The file browser that’s built in doesn’t work too well.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;With Vim mobile, you can now look &lt;em&gt;even more&lt;/em&gt; nerdy on your iPhone 😉&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://itunes.apple.com/app/vim/id492668168&#34;&gt;Download Vim For iOS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

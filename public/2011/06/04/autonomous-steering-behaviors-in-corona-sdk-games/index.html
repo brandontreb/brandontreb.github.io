@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>
+      
+      Hack The Planet - Autonomous Steering Behaviors In Corona SDK Games
+      
+  </title>
+
+  <meta name="description" content="this is meta :)">
+
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%f0%9f%a6%a0</text></svg>">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/custom.css">
+  <link rel="canonical" href="https://brandontreb.ngrok.io/2011/06/04/autonomous-steering-behaviors-in-corona-sdk-games/">
+
+	<link rel="me" href="https://brandontreb.ngrok.io" />
+	
+	
+	
+	<link rel="authorization_endpoint" href="/indieauth/auth" />
+	<link rel="token_endpoint" href="/indieauth/token" />
+	<link rel="micropub" href="https://brandontreb.ngrok.io/micropub" />
+	<link rel="microsub" href="https://brandontreb.ngrok.io/microsub" />
+	<link rel="webmention" href="https://brandontreb.ngrok.io/webmention" />	
+  
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Hack The Planet</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+		
+			
+				<a class="page-link" href="/archive/">Archive</a>
+			
+		
+			
+				<a class="page-link" href="/photos/">Photos</a>
+			
+		
+			
+				<a class="page-link" href="/replies/">Replies</a>
+			
+		
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+		
+<div class="post h-entry">
+
+  <header class="post-header">
+	
+	  	<h1 class="p-name">Autonomous Steering Behaviors In Corona SDK Games</h1>
+  	
+    <p class="post-meta">
+	<a href="https://brandontreb.ngrok.io/2011/06/04/autonomous-steering-behaviors-in-corona-sdk-games/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2011-06-04 00:00:00 -0600">Jun 4, 2011</time></span></a>
+	
+	</p>
+  </header>
+
+  <article class="post-content e-content">
+	<p>Wow, it’s already been 5 months since I was last blogging for #iDevBlogADay. The time has flown by!</p>
+<p>Recently, I have been dabbling with <a href="http://www.anscamobile.com/corona/">Corona SDK</a> and have been getting really excited about the possibilities. For those of you who don’t know, Corona SDK is a multi platform game engine that allows you to write your code in Lua and deploy on iOS and Android devices.</p>
+<p>Today I want to chat with you about Autonomous Steering Behaviors and show you how I have implemented a few of them in a small game that I’m working on.</p>
+<p>Here is a short demo video of what we will be creating</p>
+<p><a href="http://vimeo.com/24649841">Boids Demo</a> from <a href="http://vimeo.com/user2413855">Brandon Trebitowski</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+<h4 id="heading"></h4>
+<p>What Are Autonomous Steering Behaviors</p>
+<p>The name does sound pretty fancy. At the core they are just behaviors that define how a character interacts with the world around them in a life-like manner. Some of the main behaviors include wandering, path following, flocking, pursing and evading. The theory and algorithms for all of these behaviors and more can be found in a paper published by Craig Reynolds in the 80’s called <a href="http://www.red3d.com/cwr/steer/">Steering Behaviors For Autonomous Characters</a>.</p>
+<p>While I admit I didn’t quite read all of it, the paper contains some incredible gems in terms of making your character AI seem much more life like.</p>
+<p>There are plenty of examples (especially in games) where these behaviors come in handy. Perhaps the easiest behavior to implement is wander. Say for example you have an NPC (non player character) that walks around a village. The wander algorithm is a perfect fit to make it seem like that NPC is actually “thinking” about where he’s going and keeps your animations looking smooth.</p>
+<p>The seek and evade is another interesting algorithm. Often times in our games, we want enemies to chase after us without it seeming like they have the exact shortest path to use. It adds a bit of randomness and makes your enemies seem much more realistic.</p>
+<h4 id="heading-1"></h4>
+<p>How Can I Use Them In My Corona SDK Game?</p>
+<p>After doing a bit of research, I found this <a href="http://www.shiffman.net/teaching/nature/steering/">incredible site by daniel shiffman</a> that detailed some of the algorithms using processing. This at least took the words from the paper and made them in to some code. I really suggest that you read up on that page to get a solid understanding of what we are doing here. Rather than simply regurgitating what Daniel wrote, I’m going to focus on showing you how his code can be ported for use in your Corona SDK games.</p>
+<p>The first challenge was, the code relies heavily on using 2D vectors. Now, I didn’t see a nice built-in way to do this in Corona or Lua for that matter. So I decided to roll my own Vector2D class. For those Corona SDK veterans reading this, feel free to blast me in the comments if I’m reinventing the wheel with this and just failed to fully read the documentation. Otherwise, enjoy this Vector2D class!</p>
+<p><a href="https://gist.github.com/1006414">Here is the link</a> to the gist containing that file.</p>
+<p>Here is a short snippet of that class just to add to the aesthetics of this post:</p>
+<pre tabindex="0"><code>&lt;code class=’lua’&gt;function Vector2D:new(x, y)  – The constructor
+  local object = { x = x, y = y }
+  setmetatable(object, { __index = Vector2D })  – Inheritance
+  return object
+end
+function Vector2D:normalize()
+local temp
+temp = self:magnitude()
+if temp &gt; 0 then
+self.x = self.x / temp
+self.y = self.y / temp
+end
+end
+
+
+function Vector2D:dot(vec)
+return self.x \* vec.x + self.y \* vec.y
+end&lt;/code&gt;
+</code></pre><p>Basically it’s a lua “object” that has an x and y with some helper methods for doing vector math. The lower case methods act on the current self object and the upper case methods act as static class level methods meant to return a new vector. The file is a little sloppy but it gets the job done.</p>
+<h4 id="heading-2"></h4>
+<p>Creating A Boid</p>
+<p>In the paper, an autonomous character is called a Boid. There are basically 2 actions that we need to implement that are needed in most of the behaviors. They are <strong>steer</strong> and <strong>seek</strong>. <strong>Steer</strong> is the basis for all of the autonomous behaviors. Given a Vector2D as the target, it will return a new Vector2D for the boid’s acceleration in the direction of the target. We simply wrap this call in the <strong>seek</strong> method. Now, any behavior can call <strong>seek</strong> in order to direct the boid towards a target.</p>
+<p><a href="https://github.com/brandontreb/Boids/blob/master/Boid.lua">Here is a link to our Boid on github</a></p>
+<p>A snippet of the wander function</p>
+<pre tabindex="0"><code>&lt;code class=’lua’&gt;function Boid:wander()
+    local wanderR = 16.0
+    local wanderD = 60.0
+    local change  = 0.5
+</code></pre><p>local negChange = math.random(2)
+local randomNum = math.random() * change
+if negChange == 2 then
+self.wanderTheta = self.wanderTheta - randomNum
+else
+self.wanderTheta = self.wanderTheta + randomNum
+end
+local circleLoc = self.vel:copy()</p>
+<p>circleLoc:normalize()
+circleLoc:mult(wanderD)
+circleLoc:add(self.loc)</p>
+<p>local circleOffset = Vector2D:new(wanderR<em>math.cos(self.wanderTheta),
+wanderR</em>math.sin(self.wanderTheta))
+local target = circleLoc:copy()
+target:add(circleOffset)</p>
+<p>self.acc:add(self:steer(target))</p>
+<pre tabindex="0"><code>
+end&lt;/code&gt;
+</code></pre><p>What I have done is taken the code from <a href="http://www.shiffman.net/itp/classes/nature/week06_s09/wander/">Daniel Shiffman’s processing project</a> and ported it directly to lua. As of right now, I have only implemented wander, however you can see how easy it is to implement other behaviors using the same techniques. Since Daniel has processing code for each of them, it’s a simple matter of making them work in your lua class.</p>
+<p>The way wander works is, it picks random points on a circle to steer towards. These random points only vary by a fraction of a radian (defined by the <strong>change</strong> variable above) from the current steer point. The larger the change value is, the more your boid will appear jittery. This value must be tweaked to fit the wander style for your game. Based on my testing, .5 seems to generate a pretty smooth wander path.</p>
+<h4 id="heading-3"></h4>
+<p>Putting It All Together</p>
+<p>In your own code you might want to build directly on top of my boid class or subclass it for each boid type. In the following example, I’m going to show you how to simply run our boid class and watch some dots wander around (hang on to your hats).</p>
+<p><a href="https://github.com/brandontreb/Boids/blob/master/main.lua">Here is a link to main.lua on github</a>, but I have also pasted it here so we can talk about it.</p>
+<pre tabindex="0"><code>&lt;code class=’lua’&gt;local Boid = require(‘Boid’)
+– Define some limiting constants
+MAX\_FORCE = 1.75
+MAX\_SPEED = 2.0
+
+
+local wanderers = {}
+
+
+function animate(event)
+for i=1,#wanderers do
+local wanderer = wanderers[i]
+wanderer:wander()
+wanderer:run()
+end
+end
+
+
+function Main()
+math.randomseed( os.time() )
+</code></pre><p>for i=1,10 do
+local loc = Vector2D:new(display.contentWidth / 2,display.contentWidth / 2)
+local wanderer = Boid:new(loc,MAX_FORCE,MAX_SPEED)
+table.insert(wanderers,wanderer)
+end
+Runtime:addEventListener( &ldquo;enterFrame&rdquo;, animate );</p>
+<pre tabindex="0"><code>
+end
+
+
+Main()&lt;/code&gt;
+</code></pre><p>Here we declare an array of wanderers. In the Main() method we initialize each one, insert them into the array, and add a hook to call our animate method for each frame. Inside of the animate method, we simply tell each wanderer to wander and then run itself. The boid class will take care of the rest.</p>
+<p>One thing to note is, the boids are unaware of each other at this time. That requires a cohesion method. I have it written and might post it up at a later time; I just want to keep things simple for now. Please feel free to ask me questions in the comments or <a href="http://twitter.com/brandontreb">write me on Twitter</a>.</p>
+<p>You can download or fork the full source for this project <a href="https://github.com/brandontreb/Boids">here</a>.</p>
+<p>Happy Coding!</p>
+<p><em><strong>﻿﻿This post is part of <a href="http://idevblogaday.com/">iDevBlogADay</a>, a group of indie iOS development blogs featuring two posts per day. You can keep up with iDevBlogADay through the <a href="http://idevblogaday.com/">web site</a>, <a href="http://feeds.feedburner.com/idevblogaday">RSS feed</a>, or <a href="http://twitter.com/#search?q=%23idevblogaday">Twitter</a>.</strong></em></p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+	<div id="post-meta" class="clearfix p-author h-card">
+  <a href="/" class="u-url" rel="me">
+  <img class="u-photo avatar" src="https://brandontreb.ngrok.io/avatar.png" width="96" height="96">
+  <div>
+    <span class="p-name dark">|ZeroCool|</span>
+    <span><a href="https://brandontreb.ngrok.io">@</a></span>
+    <p class="p-note"></p>
+  </div>	
+  </a>
+</div>
+  </article>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-3">
+        <p class="text"></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+    
+    
+    
+  </body>
+
+</html>

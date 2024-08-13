@@ -1,0 +1,521 @@
+<rss version="2.0">
+  <channel>
+    <title>iPhone App Development on Hack The Planet</title>
+    <link>https://brandontreb.ngrok.io/tags/iphone-app-development/</link>
+    <description></description>
+    
+    <language>en-us</language>
+    
+    <lastBuildDate>Thu, 15 Aug 2013 00:00:00 -0600</lastBuildDate>
+    
+    <item>
+      <title>iPhone Programming Tutorial: Creating An Image Gallery Like Over &amp;#8211; Part 2</title>
+      <link>https://brandontreb.ngrok.io/2013/08/15/iphone-programming-tutorial-creating-an-image-gallery-like-over-part-2/</link>
+      <pubDate>Thu, 15 Aug 2013 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2013/08/15/iphone-programming-tutorial-creating-an-image-gallery-like-over-part-2/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-08-09-at-8.36.42-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-08-09-at-8.36.42-PM.png&#34; alt=&#34;Screen Shot 2013-08-09 at 8.36.42 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Welcome to the second part of my tutorial series “&lt;strong&gt;Creating An Image Gallery Like Over”.&lt;/strong&gt;  In this part of the tutorial, you will learn how to actually display the photos in the UICollectionView as well as give the user the ability to take photos with their camera.&lt;/p&gt;
+&lt;p&gt;If you haven’t already done so, please go back and &lt;a href=&#34;http://brandontreb.com/iphone-programming-tutorial-creating-an-image-gallery-like-over-part-1&#34;&gt;complete part 1&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;1-custom-uicollectionviewcell&#34;&gt;1. Custom UICollectionViewCell&lt;/h3&gt;
+&lt;p&gt;Start by creating a new subclass of &lt;strong&gt;UICollectionViewCell&lt;/strong&gt; and naming it **PhotoCell.  **Now, open up PhotoCell.h and add the following code:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#import &amp;lt;AssetsLibrary/AssetsLibrary.h&amp;gt;
+ 
+@interface PhotoCell : UICollectionViewCell
+@property(nonatomic, strong) ALAsset \*asset;
+@end
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;|&lt;/p&gt;
+&lt;p&gt;Now, open PhotoCell.m and add the following code:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#import &amp;#34;PhotoCell.h&amp;#34;
+ 
+@interface PhotoCell ()
+// 1
+@property(nonatomic, weak) IBOutlet UIImageView \*photoImageView;
+@end
+ 
+@implementation PhotoCell
+- (void) setAsset:(ALAsset \*)asset
+{
+    // 2
+    _asset = asset;
+    self.photoImageView.image = [UIImage imageWithCGImage:[asset thumbnail]];
+}
+@end
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;|&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;This is an **IBOutlet **to a &lt;strong&gt;UIImageView&lt;/strong&gt; that we will create inside of the Storyboard&lt;/li&gt;
+&lt;li&gt;We overwrite the setter method for the asset in order to convert the asset’s thumbnail into a UIImage and set it to the contents of the UIImageView&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now that we have the custom cell created, we need to hook it up and create the UIImageView inside of Storyboard.  Open **MainStoryboard.storyboard **and click on the default &lt;strong&gt;UICollectionViewCell&lt;/strong&gt; inside of your &lt;strong&gt;UICollectionView.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;It might be tricky to see the cell as it has a white background and blends in, but it’s there.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-24-at-6.43.38-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-24-at-6.43.38-PM-300x281.png&#34; alt=&#34;Screen Shot 2013-07-24 at 6.43.38 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now, click on the &lt;strong&gt;Identity Inspector&lt;/strong&gt; from the right side bar and change the class to &lt;strong&gt;PhotoCell.&lt;/strong&gt;  This will inform interface builder that this object is of the type PhotoCell and let us hook up the photoImageView outlet.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-24-at-6.46.35-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-24-at-6.46.35-PM.png&#34; alt=&#34;Screen Shot 2013-07-24 at 6.46.35 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Next, open the size inspector, change the size to **Custom, **the width to **104 **and the height to &lt;strong&gt;104.&lt;/strong&gt;  This will give us nice sized images, with a good amount of padding between them.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-24-at-6.49.51-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-24-at-6.49.51-PM.png&#34; alt=&#34;Screen Shot 2013-07-24 at 6.49.51 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;UICollectionView&lt;/strong&gt; will overwrite these sizes, so we need to change it in one other location.  To ensure that the cells stay the correct size, click on the &lt;strong&gt;Collection View&lt;/strong&gt; in left side bar and open it’s &lt;strong&gt;Size Inspector&lt;/strong&gt;.  Then set the &lt;strong&gt;Cell Size&lt;/strong&gt; width and height to 104.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-24-at-7.07.14-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-24-at-7.07.14-PM.png&#34; alt=&#34;Screen Shot 2013-07-24 at 7.07.14 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The final step here is to drag a &lt;strong&gt;UIImageView&lt;/strong&gt; on to your cell (scaling it to fit the entire cell size), and hook up the &lt;strong&gt;IBOutlet&lt;/strong&gt; to the photoImageView. Do this by control-click and dragging from Photo Cell to the ImageView and selecting &lt;strong&gt;photoImageView&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-24-at-6.52.32-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-24-at-6.52.32-PM-300x147.png&#34; alt=&#34;Screen Shot 2013-07-24 at 6.52.32 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you build and run at this stage, nothing will be different.  That’s because we still need to tell the ViewController class about our new &lt;strong&gt;PhotoCell&lt;/strong&gt;.  Open **ViewController.m **and import &lt;strong&gt;PhotoCell.h&lt;/strong&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#import &amp;#34;PhotoCell.h&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;|&lt;/p&gt;
+&lt;p&gt;Now, head down to the &lt;strong&gt;collectionView:cellForItemAtIndexPath&lt;/strong&gt; method and replace the contents of it with the following code:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;- (UICollectionViewCell \*) collectionView:(UICollectionView \*)collectionView cellForItemAtIndexPath:(NSIndexPath \*)indexPath
+{
+    PhotoCell \*cell = (PhotoCell \*)[collectionView dequeueReusableCellWithReuseIdentifier:@&amp;#34;PhotoCell&amp;#34; forIndexPath:indexPath];
+ 
+    ALAsset \*asset = self.assets[indexPath.row];
+    cell.asset = asset;
+    cell.backgroundColor = [UIColor redColor];
+ 
+    return cell;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;|&lt;/p&gt;
+&lt;p&gt;What’s changed here is, we are now telling the &lt;strong&gt;UICollectionView&lt;/strong&gt; that the cell it’s returning is of the type &lt;strong&gt;PhotoCell&lt;/strong&gt;. Also, we are fetching the &lt;strong&gt;ALAsset&lt;/strong&gt; out of our array at each index and sending it to the cell so that it can display it’s thumbnail.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Build And Run!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-24-at-7.10.39-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-24-at-7.10.39-PM-184x300.png&#34; alt=&#34;Screen Shot 2013-07-24 at 7.10.39 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Whoohoo**! **You should now see your photos populating the **UICollectionView. Congratulations! &lt;/p&gt;
+&lt;p&gt;While, this is definitely cool, you might now be wondering “how do I select a photo?”.  Great question, and here is the solution.&lt;/p&gt;
+&lt;h3 id=&#34;2-selecting-photos&#34;&gt;2. Selecting Photos&lt;/h3&gt;
+&lt;p&gt;Now that you have all of the groundwork in place, selecting photos from the collection could not be easier.  Open up &lt;strong&gt;ViewController.m&lt;/strong&gt; and replace the **collectionView:didSelectItemAtIndexPath **method with the following code:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;- (void) collectionView:(UICollectionView \*)collectionView didSelectItemAtIndexPath:(NSIndexPath \*)indexPath
+{
+    ALAsset \*asset = self.assets[indexPath.row];
+    ALAssetRepresentation \*defaultRep = [asset defaultRepresentation];
+    UIImage \*image = [UIImage imageWithCGImage:[defaultRep fullScreenImage] scale:[defaultRep scale] orientation:];
+    // Do something with the image
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;|&lt;/p&gt;
+&lt;p&gt;This will get the selected asset and convert it to a UIImage. You are now free to use the UIImage how you want. Perhaps you create a protocol for this class and make a callback to a delegate OR maybe you add this to a UINavigationController stack and push a new view controller on to the stack containing this image. The sky is the limit!&lt;/p&gt;
+&lt;p&gt;If you look at the Over app and back to your image gallery that you just created, you will notice something is still missing.  What if the user wants to take a photo or access other albums?  This is where Over adds a bar across the top of the interface with 2 buttons that fall back to the “default” style of fetching images if the user wants to take a photo or access a different photo album.  Let’s build this out now.&lt;/p&gt;
+&lt;h3 id=&#34;3-building-the-interface-to-take-photos-and-access-albums&#34;&gt;3. Building The Interface To Take Photos And Access Albums&lt;/h3&gt;
+&lt;p&gt;Start by setting up the &lt;strong&gt;IBActions&lt;/strong&gt; for theses buttons.  Open &lt;strong&gt;ViewController.m&lt;/strong&gt; and add the following empty methods:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#pragma mark - Actions
+ 
+- (IBAction)takePhotoButtonTapped:(id)sender
+{
+ 
+}
+ 
+- (IBAction)albumsButtonTapped:(id)sender
+{
+ 
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;|&lt;/p&gt;
+&lt;p&gt;We don’t need to add the code yet since we still need to build the UI and hook up the &lt;strong&gt;IBOutlets&lt;/strong&gt;. Now open **MainStoryboard.storyboard **and drag a **UIView **right on top of your &lt;strong&gt;UIView.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;One issue you might run in to here is the view will want to become a subview of the collection view.  To combat this, drag the view outside of the collection view inside the left bar so the hierarchy will look like this:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-25-at-12.35.06-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-25-at-12.35.06-PM.png&#34; alt=&#34;Screen Shot 2013-07-25 at 12.35.06 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;One other “gotcha” is, you must ensure that the view is positioned &lt;strong&gt;below&lt;/strong&gt; the collection view in this list, otherwise it won’t show above it on screen.&lt;/p&gt;
+&lt;p&gt;Now, let’s manually size and position the view as Interface Building will make things hard on us if we want to position it over our collection view.&lt;/p&gt;
+&lt;p&gt;Select the view and open the &lt;strong&gt;Size Inspector.&lt;/strong&gt; Set the values as follows:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-25-at-12.44.23-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-25-at-12.44.23-PM.png&#34; alt=&#34;Screen Shot 2013-07-25 at 12.44.23 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Again, remember this positioning is optimized for the iPhone 5. So make sure you are testing with that simulator or you won’t see this bar.&lt;/p&gt;
+&lt;p&gt;After this, the bar still won’t be visible inside of Interface Builder.  We need to set the background color to black with some transparency.  Open the &lt;strong&gt;Attributes Inspector&lt;/strong&gt; and click on the background color.  Then set the color to black with 80% opacity:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-25-at-12.40.13-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-25-at-12.40.13-PM-177x300.png&#34; alt=&#34;Screen Shot 2013-07-25 at 12.40.13 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;You should now see the bar positioned on the screen like this:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-25-at-12.41.54-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-25-at-12.41.54-PM-154x300.png&#34; alt=&#34;Screen Shot 2013-07-25 at 12.41.54 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Now drag a **UIButton **on to the view you just created. There are a few things that must be done to style the button:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Position it at 0,0&lt;/li&gt;
+&lt;li&gt;Set the width to 160px and the height to 70x&lt;/li&gt;
+&lt;li&gt;Change the type to custom&lt;/li&gt;
+&lt;li&gt;Change the text to “Take Photo”&lt;/li&gt;
+&lt;li&gt;Change the font to “Helvetica Neue Condensed Black” size 20&lt;/li&gt;
+&lt;li&gt;Set the text color to white&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When you have completed these steps, the button should look like this:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-25-at-12.47.26-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-25-at-12.47.26-PM-300x213.png&#34; alt=&#34;Screen Shot 2013-07-25 at 12.47.26 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Now, hook up the &lt;strong&gt;IBAction &lt;strong&gt;by opening the &lt;strong&gt;Connections Inspector&lt;/strong&gt; and dragging from &lt;strong&gt;Touch Up Inside&lt;/strong&gt; to the &lt;strong&gt;View Controller&lt;/strong&gt; object and selecting t&lt;/strong&gt;akePhotoButtonTapped:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Finally, duplicate this button (copy and paste), rename the title to “Albums”, move it next to the “Take Photo” button and hook its &lt;strong&gt;Touch Up Inside&lt;/strong&gt; to &lt;strong&gt;albumsButtonTapped:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The final Interface should look like this:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-25-at-12.51.25-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-25-at-12.51.25-PM-300x221.png&#34; alt=&#34;Screen Shot 2013-07-25 at 12.51.25 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Go ahead and do a &lt;strong&gt;Build and Run&lt;/strong&gt; and this stage and marvel at your interface development prowess!&lt;/p&gt;
+&lt;h3 id=&#34;4-actually-taking-photos-and-accessing-albums&#34;&gt;4. Actually Taking Photos And Accessing Albums&lt;/h3&gt;
+&lt;p&gt;The final step for this tutorial is to implement the code to bring up the camera as well as bring up the photo albums.  Let’s start with the camera.  Open &lt;strong&gt;ViewController.m&lt;/strong&gt; and add the following code to the &lt;strong&gt;takePhotosButtonTapped:&lt;/strong&gt; method:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;- (IBAction)takePhotoButtonTapped:(id)sender
+{
+    if (([UIImagePickerController isSourceTypeAvailable:
+          UIImagePickerControllerSourceTypeCamera] == NO))
+        return; // 1
+ 
+    // 2
+    UIImagePickerController \*mediaUI = [[UIImagePickerController alloc] init];
+    mediaUI.sourceType = UIImagePickerControllerSourceTypeCamera;
+    mediaUI.allowsEditing = NO;
+    mediaUI.delegate = self;
+    // 3
+    [self presentViewController:mediaUI animated:YES completion:nil];
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;|&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Makes sure that the photo library is available.  If the user declines photo access, this will be the case.&lt;/li&gt;
+&lt;li&gt;Create the &lt;strong&gt;UIImagePickerController&lt;/strong&gt; and set its source type to &lt;strong&gt;UIImagePickerControllerSourceTypeCamera&lt;/strong&gt;.  This lets the media picker know to use the camera and not the image library.&lt;/li&gt;
+&lt;li&gt;Finally, present the view controller modally&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The method to bring up the photo albums is almost identical to the method above.  Add the following code to the &lt;strong&gt;albumsButtonTapped:&lt;/strong&gt; method.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;- (IBAction)albumsButtonTapped:(id)sender
+{
+    if (([UIImagePickerController isSourceTypeAvailable:
+          UIImagePickerControllerSourceTypePhotoLibrary] == NO))
+        return;
+ 
+    UIImagePickerController \*mediaUI = [[UIImagePickerController alloc] init];
+    mediaUI.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;    
+    mediaUI.allowsEditing = NO;
+    mediaUI.delegate = self;
+    [self presentViewController:mediaUI animated:YES completion:nil];
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;|&lt;/p&gt;
+&lt;p&gt;As I said before, this method is almost identical with the only difference being, we are using **UIImagePickerControllerSourceTypePhotoLibrary **to open up the photo albums.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Build and Run&lt;/strong&gt; and tap the “Take Photo” button. Make sure you are testing on the device at this stage or nothing will happen since the simulator doesn’t have a camera.  You can however test the “Albums” button assuming you have some photos in your photo library.&lt;/p&gt;
+&lt;p&gt;Now that you are able to pick a photo, you need to be able to access the photo that was selected or taken.  To do this implement the following delegate method for &lt;strong&gt;UIImagePickerController.&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#pragma mark - image picker delegate
+ 
+- (void) imagePickerController:(UIImagePickerController \*)picker didFinishPickingMediaWithInfo:(NSDictionary \*)info
+{
+    UIImage \*image = (UIImage \*) [info objectForKey:
+                                          UIImagePickerControllerOriginalImage];    
+    [self dismissViewControllerAnimated:YES completion:^{
+        // Do something with the image
+    }];
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;|&lt;/p&gt;
+&lt;p&gt;This method fetches the selected (or taken) image and stores. It then dismisses the camera or photo albums allowing you to do whatever is needed with the image.&lt;/p&gt;
+&lt;h3 id=&#34;5-next-steps&#34;&gt;5. Next Steps&lt;/h3&gt;
+&lt;p&gt;By now, you should have learned how to use the **ALAssets **library to interact with a user’s photos and use them to build a custom interface. You also learned how to use a &lt;strong&gt;UICollectionView&lt;/strong&gt; to display a grid of photos.&lt;/p&gt;
+&lt;p&gt;With this knowledge in hand, you should now be able to make much more interesting photo selection interfaces than the default one Apple has to offer.  Other apps like Google+ and Instagram both have very slick photo pickers and I hope this tutorial has your gears going thinking about other interesting photo selection interfaces.&lt;/p&gt;
+&lt;p&gt;You can download the source from this tutorial on &lt;a href=&#34;https://github.com/brandontreb/OverPicker&#34;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Feel free to leave a comment if you have any questions. Happy Hacking!&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>iPhone Programming Tutorial: Creating An Image Gallery Like Over &amp;#8211; Part 1</title>
+      <link>https://brandontreb.ngrok.io/2013/08/12/iphone-programming-tutorial-creating-an-image-gallery-like-over-part-1/</link>
+      <pubDate>Mon, 12 Aug 2013 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2013/08/12/iphone-programming-tutorial-creating-an-image-gallery-like-over-part-1/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-08-09-at-8.36.42-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-08-09-at-8.36.42-PM.png&#34; alt=&#34;Screen Shot 2013-08-09 at 8.36.42 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Recently, I have had to build an app (&lt;a href=&#34;http://j.mp/scriptapp&#34;&gt;download link&lt;/a&gt;) that required the user to choose a photo from their photo library.  Rather than just throwing up a &lt;strong&gt;UIImagePickerController&lt;/strong&gt; like many apps, I decided to add a little bit of style.  Being inspired by Over’s ultra simplistic (and beautiful) photo selection interface, I decided to fancy things up a bit.&lt;/p&gt;
+&lt;p&gt;For this tutorial, I will start with a Fresh &lt;strong&gt;iOS6&lt;/strong&gt; View-Based application that uses &lt;strong&gt;Storyboards&lt;/strong&gt; and &lt;strong&gt;ARC&lt;/strong&gt;. Also note that I will be optimizing for the iPhone 5 resolution.  You are free to make the tweaks necessary to deploy on the iPhone 4 and 4S.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Here is a breakdown of what we will cover in this part:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Creating a &lt;strong&gt;UICollectionView&lt;/strong&gt;inside of &lt;strong&gt;Storyboard&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Using the &lt;strong&gt;ALAssetsLibrary&lt;/strong&gt; to fetch photos from the user’s &lt;strong&gt;Camera Roll&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Displaying the &lt;strong&gt;ALAssets&lt;/strong&gt; inside of the &lt;strong&gt;UICollectionView&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;1-preparing-the-iboutlets&#34;&gt;1. Preparing The IBOutlets&lt;/h3&gt;
+&lt;p&gt;Start by opening up **ViewController.m **and replacing the &lt;strong&gt;@interface&lt;/strong&gt; declaration at the top with the following code:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;@interface ViewController ()&amp;lt;UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout&amp;gt;
+@property(nonatomic, weak) IBOutlet UICollectionView \*collectionView;
+@end
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;|&lt;/p&gt;
+&lt;p&gt;This will declare the **IBOutlet **needed to hook up the main &lt;strong&gt;UICollectionView&lt;/strong&gt; that we will be using to display the user’s photos.  I have also set up our class to be a &lt;strong&gt;UICollectionViewDataSource&lt;/strong&gt;, &lt;strong&gt;UICollectionViewDelegate&lt;/strong&gt;, and &lt;strong&gt;UICollectionViewDelegateFlowLayout&lt;/strong&gt;. This is necessary when interfacing with the &lt;strong&gt;UICollectionView.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2-setting-up-the-uicollectionview-in-storyboard&#34;&gt;2. Setting Up The UICollectionView In Storyboard&lt;/h3&gt;
+&lt;p&gt;Open up **MainStoryboard.storyboard **and drag a &lt;strong&gt;UICollectionView&lt;/strong&gt; on to your view ensuring that it stretches the entire screen.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-8.44.02-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-21-at-8.44.02-PM-172x300.png&#34; alt=&#34;Screen Shot 2013-07-21 at 8.44.02 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Then, &lt;strong&gt;Control-Click&lt;/strong&gt; and drag from the **UICollectionView **to your **ViewController **Object and set it as the **delegate **and &lt;strong&gt;datasource.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-21-at-8.41.29-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-21-at-8.41.29-PM.png&#34; alt=&#34;Screen Shot 2013-07-21 at 8.41.29 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Finally, **Control-Click **and drag from **View Controller **to &lt;strong&gt;Collection View&lt;/strong&gt; and selected **collectionView **to make the **IBOutlet **connection.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-21-at-8.45.05-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-21-at-8.45.05-PM.png&#34; alt=&#34;Screen Shot 2013-07-21 at 8.45.05 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now, we need to give a &lt;strong&gt;Cell Identifier&lt;/strong&gt; to the &lt;strong&gt;UICollectionViewCell&lt;/strong&gt; so that we can reference it in code.  Click on the default cell inside of the &lt;strong&gt;UICollectionView&lt;/strong&gt; and open the **Attributes Inspector. **For the &lt;strong&gt;Identifier&lt;/strong&gt; type in &lt;strong&gt;PhotoCell.&lt;/strong&gt; The cell might be a little tricky to see as its background color is clear, but it’s there. Simply click in the top left corner of the &lt;strong&gt;UICollectionView&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-9.13.08-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-21-at-9.13.08-PM-300x67.png&#34; alt=&#34;Screen Shot 2013-07-21 at 9.13.08 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now that the &lt;strong&gt;UICollectionView&lt;/strong&gt; has been set up, it’s time to fetch the photos from the user’s photo library.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;If you are using the simulator, make sure to populate the Photo Gallery with images from the web. Simply open up a browser, do a Google Image Search, and click and hold on various images. You should have an option from the menu that pops up to save the images to your camera roll.
+Finally, open up the **Photos** app on the simulator to initialize the Assets Library.
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;3-fetching-alassets-user-photos-from-the-alassets-library&#34;&gt;3. Fetching ALAssets (user photos) From The ALAssets Library&lt;/h3&gt;
+&lt;p&gt;In order to interface with the user’s photo library, we must first import the **AssetsLibrary.framework **framework.  To do this, click on your project in the sidebar, select the Target, then click **Build Phases, **expand the &lt;strong&gt;Link Binary With Libraries&lt;/strong&gt; section and click the **+ **button.  Do a search for **Assset **and then double click on &lt;strong&gt;AssetsLibrary.framework.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-8.57.37-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-21-at-8.57.37-PM-259x300.png&#34; alt=&#34;Screen Shot 2013-07-21 at 8.57.37 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It should now be added to your project and ready to use.  Now that it has been linked, we must import it into the **ViewController.m **file.  Open up **ViewController.m **and add the following import to the top of the file:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#import &amp;lt;AssetsLibrary/AssetsLibrary.h&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;|&lt;/p&gt;
+&lt;p&gt;Before we can fetch the user’s photos, we need to set up an &lt;strong&gt;NSArray&lt;/strong&gt; to put them in.  Add the following line within the **@interface **declaration at the top.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;@property(nonatomic, strong) NSArray \*assets;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;|&lt;/p&gt;
+&lt;p&gt;Now, add the following method to your class:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;+ (ALAssetsLibrary \*)defaultAssetsLibrary
+{
+    static dispatch_once_t pred = ;
+    static ALAssetsLibrary \*library = nil;
+    dispatch_once(&amp;amp;pred, ^{
+        library = [[ALAssetsLibrary alloc] init];
+    });
+    return library;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;|&lt;/p&gt;
+&lt;p&gt;This is a static method that creates a static instance to the &lt;strong&gt;ALAssetsLibrary&lt;/strong&gt;.  The reason this is needed is, when we enumerate the &lt;strong&gt;ALAssets&lt;/strong&gt; in the next method, it seems that the assets get released immediately and otherwise wouldn’t be able to be used in the rest of the application. I will explain this a little more in a moment.&lt;/p&gt;
+&lt;p&gt;Head over to &lt;strong&gt;viewDidLoad&lt;/strong&gt; and add the following code:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;- (void)viewDidLoad
+{
+    [super viewDidLoad];
+ 
+    _assets = [@[] mutableCopy];
+    __block NSMutableArray \*tmpAssets = [@[] mutableCopy];
+    // 1
+    ALAssetsLibrary \*assetsLibrary = [ViewController defaultAssetsLibrary];
+    // 2
+    [assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAll usingBlock:^(ALAssetsGroup \*group, BOOL \*stop) {
+        [group enumerateAssetsUsingBlock:^(ALAsset \*result, NSUInteger index, BOOL \*stop) {
+            if(result)
+            {
+                // 3
+                [tmpAssets addObject:result];
+            }
+        }];
+ 
+        // 4
+        //NSSortDescriptor \*sort = [NSSortDescriptor sortDescriptorWithKey:@&amp;#34;date&amp;#34; ascending:NO];
+        //self.assets = [tmpAssets sortedArrayUsingDescriptors:@[sort]];
+        self.assets = tmpAssets;
+ 
+        // 5
+        [self.collectionView reloadData];
+    } failureBlock:^(NSError \*error) {
+        NSLog(@&amp;#34;Error loading images %@&amp;#34;, error);
+    }];
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;|&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Grab our static instance of the &lt;strong&gt;ALAssetsLibrary&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Enumerate through all of the **ALAssets **(photos) in the user’s &lt;strong&gt;Asset Groups&lt;/strong&gt; (Folders)&lt;/li&gt;
+&lt;li&gt;Enumerate each folder and add it’s **ALAssets **to the temporary array&lt;/li&gt;
+&lt;li&gt;Sort the assets list by date (this won’t work yet, but I will show you how to fix later). For now this code is commented out and the Assets will be sorted however they come out.&lt;/li&gt;
+&lt;li&gt;Reload the &lt;strong&gt;UICollectionView&lt;/strong&gt; (this won’t work yet as we haven’t set up the delegate methods)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now that we have an &lt;strong&gt;NSArray&lt;/strong&gt; populated with &lt;strong&gt;ALAssets&lt;/strong&gt;, let’s set up the **delegate **methods for the &lt;strong&gt;UICollectionView&lt;/strong&gt; in order to populate it with data.&lt;/p&gt;
+&lt;h3 id=&#34;4-populating-the-uicollectionview-with-data&#34;&gt;4. Populating the UICollectionView With Data&lt;/h3&gt;
+&lt;p&gt;A &lt;strong&gt;UICollectionView&lt;/strong&gt; functions much like a **UITableView **having delegate and datasource methods.  Add the following methods to your &lt;strong&gt;ViewController&lt;/strong&gt; class to populate the view.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#pragma mark - collection view data source
+ 
+- (NSInteger) collectionView:(UICollectionView \*)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return self.assets.count;
+}
+ 
+- (UICollectionViewCell \*) collectionView:(UICollectionView \*)collectionView cellForItemAtIndexPath:(NSIndexPath \*)indexPath
+{
+    UICollectionViewCell \*cell = (UICollectionViewCell \*)[collectionView dequeueReusableCellWithReuseIdentifier:@&amp;#34;PhotoCell&amp;#34; forIndexPath:indexPath];
+ 
+    ALAsset \*asset = self.assets[indexPath.row];
+    //cell.asset = asset;
+    cell.backgroundColor = [UIColor redColor];
+ 
+    return cell;
+}
+ 
+- (CGFloat) collectionView:(UICollectionView \*)collectionView layout:(UICollectionViewLayout \*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
+{
+    return 4;
+}
+ 
+- (CGFloat) collectionView:(UICollectionView \*)collectionView layout:(UICollectionViewLayout \*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
+{
+    return 1;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;|&lt;/p&gt;
+&lt;p&gt;This code should be fairly straight forward if you have ever worked with a &lt;strong&gt;UITableView.&lt;/strong&gt;  The only lines to note are where ‘cell.asset = asset’ is commented out and we set the cell’s background color to red.  We will uncomment that line when we create a custom cell to display the image (for now it won’t).  I have also set the background color to red so that you can see that the number of cells is actually corresponding to the number of photos in the camera roll.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Build and Run!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Let’s take a break to do a build and run to see what happens.  If you have hooked everything up correctly, you should see a black screen with red squares on it with a count equalling the number of photos in the user’s library.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-9.26.07-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2013/Screen-Shot-2013-07-21-at-9.26.07-PM-184x300.png&#34; alt=&#34;Screen Shot 2013-07-21 at 9.26.07 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Not too exciting, however it shows that we are displaying a number of cells corresponding to the number of photos in the user’s asset library.  At least it’s showing that you have done something.  The next step is to create a custom &lt;strong&gt;UICollectionViewCell&lt;/strong&gt; that actually displays the photos, which we will do next time.&lt;/p&gt;
+&lt;h3 id=&#34;5-next-time&#34;&gt;5. Next Time&lt;/h3&gt;
+&lt;p&gt;That’s all for today.  In a ploy to get you to come back to my site (and &lt;a href=&#34;http://feeds.feedburner.com/brandontreb&#34;&gt;subscribe to my RSS feed&lt;/a&gt;), I have chosen to break this post up into two parts.&lt;/p&gt;
+&lt;p&gt;Luckily for you, I wrote the above message a while ago. Click the link below to go to part 2!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/iphone-programming-tutorial-creating-an-image-gallery-like-over-part-2&#34;&gt;iPhone Programming Tutorial: Creating An Image Gallery Like Over – Part 2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Stay tuned!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

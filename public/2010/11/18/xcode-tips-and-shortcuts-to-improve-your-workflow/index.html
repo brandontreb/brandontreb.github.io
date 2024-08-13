@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>
+      
+      Hack The Planet - XCode Tips And Shortcuts To Improve Your Workflow
+      
+  </title>
+
+  <meta name="description" content="this is meta :)">
+
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%f0%9f%a6%a0</text></svg>">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/custom.css">
+  <link rel="canonical" href="https://brandontreb.ngrok.io/2010/11/18/xcode-tips-and-shortcuts-to-improve-your-workflow/">
+
+	<link rel="me" href="https://brandontreb.ngrok.io" />
+	
+	
+	
+	<link rel="authorization_endpoint" href="/indieauth/auth" />
+	<link rel="token_endpoint" href="/indieauth/token" />
+	<link rel="micropub" href="https://brandontreb.ngrok.io/micropub" />
+	<link rel="microsub" href="https://brandontreb.ngrok.io/microsub" />
+	<link rel="webmention" href="https://brandontreb.ngrok.io/webmention" />	
+  
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Hack The Planet</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+		
+			
+				<a class="page-link" href="/archive/">Archive</a>
+			
+		
+			
+				<a class="page-link" href="/photos/">Photos</a>
+			
+		
+			
+				<a class="page-link" href="/replies/">Replies</a>
+			
+		
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+		
+<div class="post h-entry">
+
+  <header class="post-header">
+	
+	  	<h1 class="p-name">XCode Tips And Shortcuts To Improve Your Workflow</h1>
+  	
+    <p class="post-meta">
+	<a href="https://brandontreb.ngrok.io/2010/11/18/xcode-tips-and-shortcuts-to-improve-your-workflow/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-11-18 01:00:00 -0600">Nov 18, 2010</time></span></a>
+	
+	</p>
+  </header>
+
+  <article class="post-content e-content">
+	<h4 id="intro">Intro</h4>
+<p>This is my first <a href="http://idevblogaday.com">#iDevBlogADay</a> post and I wanted to give a quick intro before jumping in. My name is Brandon Trebitowski and I’m a software developer and author from Albuquerque, New Mexico. I graduated from the University of New Mexico in 2008 with a bachelors degree in computer science. For the past 2 years, I have been writing mobile applications (primarily for the iPhone) for <a href="http://elctech.com/">ELC Technologies</a>.</p>
+<p>I also started <a href="http://icodeblog.com">http://icodeblog.com</a> and currently write on it about once a month.</p>
+<h4 id="a-post-on-xcode-shortcuts">A Post On XCode Shortcuts?</h4>
+<p><a href="http://www.1729.us/xcode/Xcode%20Shortcuts.png"><img src="/uploads/2010/Xcode%20Shortcuts.png" alt="" title="XCode Shortcuts"></a>Well, I’m sure by now, you have seen countless <a href="http://www.1729.us/xcode/Xcode%20Shortcuts.png">infographics and “cheat sheets”</a> chock full of XCode shortcuts, tips, etc… These can be great resources, however, if you are anything like me, you see these, tweet the link, and move on never looking at them again. The only difference between these and the XCode key-bindings menu IMHO is a fancy background. So, I thought I would share some of the most important shortcuts that I have adopted to really improve my workflow. We spend so much time inside of XCode, it is worth the time to learn some of these.</p>
+<h4 id="build-commands">Build Commands</h4>
+<p>By now, I would hope that you don’t click the “Build and Go/Debug” with your mouse whenever you want to run your application. If you do, no worries, here are some of the build quick keys.</p>
+<p>**⌘ return – **This builds and launches the application in debug mode.</p>
+<p>**shift ⌘ return **– Kills the running application in the simulator.</p>
+<p>**shift ⌘ k – **Cleans the build target.</p>
+<p>**shift ⌘ a – **Build and Analyze. This is quite possible the most important command to learn. This invokes the static analyzer to help spot memory issues in your code. Run this as early and often as possible.</p>
+<p>My general workflow after writing a bit of code is to kill the last run, clean, analyze (hopefully not spend time on memory issues), and then build and debug. These 4 commands in sequence are much faster than searching out the menu items for each of those commands.</p>
+<h4 id="file-management-and-navigation">File Management and Navigation</h4>
+<p>Navigating around files is one of the most common tasks you will perform in XCode. It is really to your advantage to speed things up.</p>
+<p><strong>option ⌘ ↑</strong> – This quickly switches between your .h and .m file.</p>
+<p>**⌘ ↑ – **Move to the top of the file</p>
+<p>**⌘ ↓ – **Move to the bottom of the file <img src="/uploads/2010/Screen-shot-2010-11-18-at-8.14.35-AM.png" alt="" title="Screen shot 2010-11-18 at 8.14.35 AM"></p>
+<p>**shift ⌘ d – **This was recently showed to my by <a href="http://twitter.com/cruffenach">@cruffenach</a> and it has drastically sped up my workflow. This is the command for “Open Quickly”. It brings up a small window with a search box at the top. Typing in the box instantly searches your project and allows you to quickly open up files by pressing return on the selected file. I can’t believe I had been using XCode for so long before I found out about this command.</p>
+<h4 id="binding-your-own-quick-keys">Binding Your Own Quick Keys</h4>
+<p>Some commands simply don’t have quick keys. For example, I constantly use the <strong>Edit -&gt; Sort -&gt; By Name</strong> command to sort my source files alphabetically. By default, you must click through all of the menus and select the command to get it to work. However, XCode (like most OSX applications) will allow you to define your own quick keys and here’s how.</p>
+<ol>
+<li>Open up the XCode Preferences</li>
+<li>Click on the Key Bindings tab</li>
+<li>Navigate to the command that you want to bind keys for. (hint: they are organized the same way they in the top menu)</li>
+<li>Once you have found the command, double click in the Key column</li>
+<li>Press the keys that you wish to bind (I bound <strong>option shift ⌘ s</strong> for sorting)</li>
+<li>If there are any conflicts, XCode will let you know. Otherwise, press apply and you’re good to go.</li>
+</ol>
+<h4 id="wrap-up">Wrap Up</h4>
+<p>Well, this concludes my relatively short first post for <a href="http://idevblogaday.com">#idevblogaday</a>. If you have any shortcuts of your own that you can’t live without, please share them in the comments. I’m always up to improve my workflow.</p>
+<p>Thank you to everyone (especially <a href="http://twitter.com/mysterycoconut">@mysterycoconut</a>) for allowing me to be a part of this community and I look forward to sharing my knowledge and experiences with you.</p>
+<p>Happy Coding!</p>
+<p>—-</p>
+<p><em><strong>﻿﻿This post is part of <a href="http://idevblogaday.com/">iDevBlogADay</a>, a group of indie iOS development blogs featuring two posts per day. You can keep up with iDevBlogADay through the <a href="http://idevblogaday.com/">web site</a>, <a href="http://feeds.feedburner.com/idevblogaday">RSS feed</a>, or <a href="http://twitter.com/#search?q=%23idevblogaday">Twitter</a>.</strong></em></p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+	<div id="post-meta" class="clearfix p-author h-card">
+  <a href="/" class="u-url" rel="me">
+  <img class="u-photo avatar" src="https://brandontreb.ngrok.io/avatar.png" width="96" height="96">
+  <div>
+    <span class="p-name dark">|ZeroCool|</span>
+    <span><a href="https://brandontreb.ngrok.io">@</a></span>
+    <p class="p-note"></p>
+  </div>	
+  </a>
+</div>
+  </article>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-3">
+        <p class="text"></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+    
+    
+    
+  </body>
+
+</html>

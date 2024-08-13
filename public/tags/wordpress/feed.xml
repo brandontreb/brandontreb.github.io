@@ -1,0 +1,452 @@
+<rss version="2.0">
+  <channel>
+    <title>Wordpress on Hack The Planet</title>
+    <link>https://brandontreb.ngrok.io/tags/wordpress/</link>
+    <description></description>
+    
+    <language>en-us</language>
+    
+    <lastBuildDate>Mon, 28 Mar 2011 00:00:00 -0600</lastBuildDate>
+    
+    <item>
+      <title>Considering Leaving WordPress For Jekyll</title>
+      <link>https://brandontreb.ngrok.io/2011/03/28/considering-leaving-wordpress-for-jekyll/</link>
+      <pubDate>Mon, 28 Mar 2011 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2011/03/28/considering-leaving-wordpress-for-jekyll/</guid>
+      <description>&lt;p&gt;So, after my 6 year relationship with WordPress, I have been having some strong feelings for another (blog engine). &lt;a href=&#34;http://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt; does everything that I want my wordpress to do.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Not suck at security&lt;/li&gt;
+&lt;li&gt;Not be bloated&lt;/li&gt;
+&lt;li&gt;Not have a sucky post editor&lt;/li&gt;
+&lt;li&gt;Expense – I have a few blogs hosted on Rackspace and my bill has gotten pretty pricey. I’m hoping to host my Jekyll site on App Engine for frizzle (free).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That’s about it. In case you live in a box (which most of us do since most houses are relatively square) and haven’t hear of it, Jekyll is a new blogging engine written in Ruby. Simply put, you write posts, run a command and it spits out static pages. You just upload these pages to your server (how old skool right?) Now you no longer have a dependancies on any server side language, fancy server configs, etc…&lt;/p&gt;
+&lt;p&gt;Jekyll has no(minimal) features, no comments, track backs etc… and no built-in SEO. It doesn’t even have an admin (since you are serving up static content). Sounds like a blast right? I’ll blog a bit about it as I make the migration and you will see, it’s going to be great!&lt;/p&gt;
+&lt;p&gt;I just finished reading &lt;a href=&#34;http://vitobotta.com/how-to-migrate-from-wordpress-to-jekyll/&#34;&gt;this post&lt;/a&gt; from Hacker News, which was pretty much the nail in the coffin.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tweet Press 3.2 Update &amp;#8211; Sidebar Widget</title>
+      <link>https://brandontreb.ngrok.io/2011/02/16/tweet-press-3-2-update-sidebar-widget/</link>
+      <pubDate>Wed, 16 Feb 2011 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2011/02/16/tweet-press-3-2-update-sidebar-widget/</guid>
+      <description>&lt;p&gt;I have recently had an overwhelming number of requests for a sidebar widget that displays your recent Tweetpress photos. Well, it’s finally here! The update was actually quite trivial to make. If I had known how simple it would be, I would have made it months ago.&lt;/p&gt;
+&lt;p&gt;Make sure you update to the latest version: &lt;a href=&#34;http://wordpress.org/extend/plugins/tweetpress/&#34;&gt;tweetpress 3.2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How to use it&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In the WordPress admin, click on Appearance and the Widgets from the sidebar menu. If your theme supports widgets (which is should), you will see a Tweetpress widget in the available widgets list.&lt;/p&gt;
+&lt;p&gt;Next drag that widget into the sidebar area and modify the settings.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://brandontreb.ngrok.io/uploads/2011/20110216-065023.jpg&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2011/20110216-065023.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can configure the title of the widget as well as the number of photos to be displayed. Please comment here or shoot me an email if you experience any issues with it. I’m also open to suggestions.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tweetpress Plugin Updated</title>
+      <link>https://brandontreb.ngrok.io/2010/10/28/tweetpress-plugin-updated/</link>
+      <pubDate>Thu, 28 Oct 2010 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2010/10/28/tweetpress-plugin-updated/</guid>
+      <description>&lt;p&gt;I have just posted an update to my plugin Tweetpress! In case you don’t know, Tweetpress is a plugin I created that allows you to post images to your WordPress blog from mobile Twitter clients instead of a 3rd party service like Twitpic. Here is what’s new in this version.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Revert back to WordPress login by default&lt;/li&gt;
+&lt;li&gt;Custom CSS&lt;/li&gt;
+&lt;li&gt;Updated so that the thumbs don’t get a size of 0px when used with SEO images plugin&lt;/li&gt;
+&lt;li&gt;Bug fixes&lt;/li&gt;
+&lt;li&gt;Revert back to WordPress login by default* Custom CSS* Updated so that the thumbs don’t get a size of 0px when used with SEO images plugin* Bug fixes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This update really focused on authentication, I have also updated the about pages for installing the plugin as well as configuring your Twitter client. Here are the important links.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://wordpress.org/extend/plugins/tweetpress/&#34;&gt;Download Tweetpress from WordPress.org&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/tweetpress/&#34;&gt;Tweetpress setup&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/tweetpress-now-supported-by-twittelator-pro/&#34;&gt;Twittelator setup&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/tutorial-tweetpress-integration-with-tweetie/&#34;&gt;Twitter for iPhone setup&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Great WordPress Plugin To Connect Your WordPress Blog To Your Tumblr</title>
+      <link>https://brandontreb.ngrok.io/2010/09/17/great-wordpress-plugin-to-connect-your-wordpress-blog-to-your-tumblr/</link>
+      <pubDate>Fri, 17 Sep 2010 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2010/09/17/great-wordpress-plugin-to-connect-your-wordpress-blog-to-your-tumblr/</guid>
+      <description>&lt;p&gt;Ok, so maybe this is stupid, reposting your own content in multiple areas. As far as SEO goes, it may not be the best idea. However, I really love Tumblr and I really love WordPress. I can’t seem to part with either yet I don’t quite have the time for both.&lt;/p&gt;
+&lt;p&gt;I put out a quick tweet earlier today (and this is why I flippin love Twitter), asking if anyone knew of a good way to connect WordPress to Twitter. Here are the popular options.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Use Tumblr’s feed importer (suggested by &lt;a href=&#34;http://twitter.com/abrahamvegh&#34;&gt;@abrahamvegh&lt;/a&gt;). This option requires you to enter your blog’s RSS feed. Tumblr then scans your RSS feed every so often and pulls the new posts. I didn’t care too much for this approach because it’s not instantaneous. I added my feed and it told me that it would refresh in about an hour. After an hour it still didn’t pull my WordPress posts and had a status of queued.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2010/09/Screen-shot-2010-09-16-at-10.20.58-PM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2010/Screen-shot-2010-09-16-at-10.20.58-PM.png&#34; alt=&#34;&#34; title=&#34;Screen shot 2010-09-16 at 10.20.58 PM&#34;&gt;&lt;/a&gt;
+2. There are quite a few Tumblr WordPress plugins out there. I have tried a few and have seen no success. Until one of my twitter followers (**&lt;a href=&#34;http://twitter.com/#!/TheSilber&#34;&gt;@TheSilber&lt;/a&gt;) **suggested that I use &lt;a href=&#34;http://wordpress.org/extend/plugins/tumblrize/&#34;&gt;tumblrize&lt;/a&gt;. Tumblrize is a great plugin that worked perfectly right out of the box. It was easy to set up and boasts quite a few options.”Tumblrize posts to Tumblr whenever you hit the “publish” button. It uses Tumblr’s simple API to keep posts in sync; when you edit your WordPress post, it updates your Tumblr post.”&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2010/tumblrize.png&#34; alt=&#34;&#34; title=&#34;Tumblrize&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I would highly recommend option 2 if you are planning on syncing your WordPress blog with your Tumblr.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://wordpress.org/extend/plugins/tumblrize/&#34;&gt;Download Tumblr.ize Here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Would love to hear about some other interesting solutions. Feel free to post them in the comments.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>WordPress For iPhone/iPad NSXMLParserErrorDomain Error 64 Resolved</title>
+      <link>https://brandontreb.ngrok.io/2010/08/30/wordpress-for-iphoneipad-nsxmlparsererrordomain-error-64-resolved/</link>
+      <pubDate>Mon, 30 Aug 2010 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2010/08/30/wordpress-for-iphoneipad-nsxmlparsererrordomain-error-64-resolved/</guid>
+      <description>&lt;p&gt;If you have a WordPress blog and an iPhone/iPad, then you most likely have the &lt;a href=&#34;http://itunes.apple.com/us/app/wordpress/id335703880?mt=8&#34;&gt;WordPress for iOS&lt;/a&gt; app. If you don’t, you &lt;a href=&#34;http://itunes.apple.com/us/app/wordpress/id335703880?mt=8&#34;&gt;should&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Over the past couple of days, I have been receiving the following error when trying to add my blog to the iPhone app.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2010/08/photo.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2010/photo-333x500.png&#34; alt=&#34;&#34; title=&#34;photo&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After scouring the internet, I found that this could be the result of a few issues.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Special characters in a post body that are not supported by NSXMLParser&lt;/li&gt;
+&lt;li&gt;Special characters in a comment&lt;/li&gt;
+&lt;li&gt;Invalid post or comment RSS&lt;/li&gt;
+&lt;li&gt;An error in a theme/plugin file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For me, this turned out to be an issue with the comments RSS feed. I loaded it up in the browser and long behold, even the browser threw an error. But what could be causing this? Turns out, I had left a space in a plugin that I created. This caused a space to be output at the beginning of the comments XML, causing it to error. Notice the space between ?&amp;gt; and &amp;lt;?php below. (Face Palm)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2010/08/Screen-shot-2010-08-30-at-10.05.22-AM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2010/Screen-shot-2010-08-30-at-10.05.22-AM.png&#34; alt=&#34;&#34; title=&#34;Screen shot 2010-08-30 at 10.05.22 AM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After removing the space from this plugin, I loaded up WordPress for iPhone and it added my blog without a problem.&lt;/p&gt;
+&lt;p&gt;So, the take away from this is &lt;strong&gt;don’t output spaces when you create a plugin.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I hope this post has proven useful for you, I can’t imagine that I’m the only person with this issue 😉&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Feedburner Anywhere Plugin Updated</title>
+      <link>https://brandontreb.ngrok.io/2010/08/27/feedburner-anywhere-plugin-updated/</link>
+      <pubDate>Fri, 27 Aug 2010 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2010/08/27/feedburner-anywhere-plugin-updated/</guid>
+      <description>&lt;p&gt;I have updated my WordPress plugin Feedburner Anywhere. In case you are unfamiliar with it, it’s a plugin that allows you to output your Feedburner subscriber count anywhere on your blog.&lt;/p&gt;
+&lt;p&gt;**The Problem: **Since Google took over Feedburner, I feel that it has been quite unreliable. A few times a week, Feedburner would return 0 for your subscriber count. This was an issue with the plugin. If the return value was 0 when the plugin pulled and cached the feedburner data, you would look like you had no subscribers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Fix:&lt;/strong&gt; I am now caching the values returned from Feedburner. If for any reason Feedburner returns a 0 subscriber count, the last known value (greater than 0) is used instead.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://wordpress.org/extend/plugins/feedburner-anywhere/&#34;&gt;Download the updated plugin here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you have any other suggestions for the plugin, please let me know.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Test Version of TweetPress 3.0</title>
+      <link>https://brandontreb.ngrok.io/2010/07/06/test-version-of-tweetpress-3-0/</link>
+      <pubDate>Tue, 06 Jul 2010 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2010/07/06/test-version-of-tweetpress-3-0/</guid>
+      <description>&lt;p&gt;So WordPress 3.0 has broken Tweetpress for many people. If you are daring, willing to help, and experiencing issues with Tweetpress, please download the 3.0 test build of Tweetpress and install it on your WordPress blog.&lt;/p&gt;
+&lt;p&gt;Here are your next steps after installation:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Make sure you add your Twitter username and Password to the Tweetpress settings in your wp-admin and save it&lt;/li&gt;
+&lt;li&gt;Attempt to post a photo to Twitter using Twitter for iPhone&lt;/li&gt;
+&lt;li&gt;If it works, you win, let me know, if not do this:
+&lt;ol&gt;
+&lt;li&gt;go back to the tweetpress admin in wp-admin&lt;/li&gt;
+&lt;li&gt;click the log link at the very bottom&lt;/li&gt;
+&lt;li&gt;copy the text and email it to brandontreb [at] gmail [dot] com with the subject “Tweetpress Log”&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This will really help me troubleshoot the issues that everyone has been having.&lt;/p&gt;
+&lt;p&gt;Thanks!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2010/07/tweetpress.zip&#34;&gt;Download Tweetpress Test Build 3.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Feedburner Anywhere Plugin Released</title>
+      <link>https://brandontreb.ngrok.io/2010/06/08/feedburner-anywhere-plugin-released/</link>
+      <pubDate>Tue, 08 Jun 2010 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2010/06/08/feedburner-anywhere-plugin-released/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.crunchbase.com/company/feedburner&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2010/3292v1-max-250x250.png&#34; alt=&#34;Image representing FeedBurner as depicted in C…&#34; title=&#34;Image representing FeedBurner as depicted in C…&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;p class=&amp;#34;wp-caption-text&amp;#34;&amp;gt;
+  Image via CrunchBase
+&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I have just released another WordPress plugin called Feedburner Anywhere.&lt;/p&gt;
+&lt;p&gt;What it does is allow you to display your RSS subscriber count anywhere on your blog.&lt;/p&gt;
+&lt;p&gt;You have the choice of using the built-in widget, embedding it in your posts/pages, or a combination of both.&lt;/p&gt;
+&lt;p&gt;Check out my sidebar for an example of usage.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://wordpress.org/extend/plugins/feedburner-anywhere/&#34;&gt;Download Feedburner Anywhere at WordPress.org&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://reblog.zemanta.com/zemified/a163a219-5486-4b37-b958-bc2e76dc02f2/&#34; title=&#34;Reblog this post [with Zemanta]&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2010/reblog_e.png?x-id=a163a219-5486-4b37-b958-bc2e76dc02f2&#34; alt=&#34;Reblog this post [with Zemanta]&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dynamically Load WordPress Post Images Like Mashable.com</title>
+      <link>https://brandontreb.ngrok.io/2010/04/06/dynamically-load-wordpress-post-images-like-mashable-com/</link>
+      <pubDate>Tue, 06 Apr 2010 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2010/04/06/dynamically-load-wordpress-post-images-like-mashable-com/</guid>
+      <description>&lt;h4 id=&#34;heading&#34;&gt;&lt;/h4&gt;
+&lt;h4 id=&#34;what&#34;&gt;What?&lt;/h4&gt;
+&lt;p&gt;Have you ever noticed that the content on &lt;a href=&#34;http://mashable.com/&#34;&gt;Mashable.com&lt;/a&gt; loads Incredibly fast? Also, have you noticed that as you scroll the images seem to ‘fade’ in? Well, this isn’t due to some crazy h4x0r code written specifically by Mashable Engineers. It’s a simple JQuery plugin that loads the images ‘Lazily’.&lt;/p&gt;
+&lt;p&gt;The Jquery plugin can be found &lt;a href=&#34;http://plugins.jquery.com/project/lazyload&#34;&gt;here&lt;/a&gt; and a nice tutorial for implementing it can be found &lt;a href=&#34;http://ajaxian.com/archives/lazy-load-plugin-for-jquery&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you don’t feel like hacking it yourself, read on and I will point you in the direction of a great WordPress plugin that handles this automagically.&lt;/p&gt;
+&lt;h4 id=&#34;where&#34;&gt;Where?&lt;/h4&gt;
+&lt;p&gt;Luckily the hard work has been done for you and you can &lt;a href=&#34;http://wordpress.org/extend/plugins/jquery-image-lazy-loading/&#34;&gt;download a WordPress plugin&lt;/a&gt; that will automatically add this functionality to your WordPress blog.&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&#34;http://wordpress.org/extend/plugins/jquery-image-lazy-loading/&#34;&gt;download the plugin from WordPress.org&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This plugin will work for EVERY image on your blog. Even the Gravatar icons of the commenters.&lt;/p&gt;
+&lt;h4 id=&#34;thats-it&#34;&gt;Thats It?&lt;/h4&gt;
+&lt;p&gt;Yep, try it out. Just scroll down on my homepage and watch as the images magically fade in.&lt;/p&gt;
+&lt;p&gt;Happy Wp-ing!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>WordPress Coding: Programmatically Add Post Tags (and other meta info)</title>
+      <link>https://brandontreb.ngrok.io/2010/03/17/wordpress-coding-programmatically-add-post-tags-and-other-meta-info/</link>
+      <pubDate>Wed, 17 Mar 2010 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2010/03/17/wordpress-coding-programmatically-add-post-tags-and-other-meta-info/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2010/561962_price_tag%5B3%5D.jpg&#34; alt=&#34;&#34; title=&#34;Tags&#34;&gt;
+I was recently working on a script that imports from a custom blogging platform into WordPress and had some need to programmatically add post keywords.
+The script to do this is actually quite simple and can be used to update any post attribute.&lt;/p&gt;
+&lt;p&gt;Here is the code:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// Create the post array
+$post = array(
+    ‘ID’ =&amp;gt; 5,
+    ‘tags_input’ =&amp;gt; ‘foo,bar,baz’);     
+ 
+// Update the post
+wp_update_post($post);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;|&lt;/p&gt;
+&lt;p&gt;This will assign the keywords “foo”, “bar”, and “baz” to the post with ID 5. This task seems trivial, however it’s very powerful when you think about automation. For example, you could write a script to scrape a google search for your target keyword and find related keywords for each of your posts automatically. Hrm… plugin idea?&lt;/p&gt;
+&lt;p&gt;Give it a shot. More info on available parameters can be found on &lt;a href=&#34;http://codex.wordpress.org/Function_Reference/wp_insert_post&#34;&gt;WordPress’ site here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here are some of the other fields that you are able to update this way:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;defaults = array(
+‘post_status’ =&amp;gt; ‘draft’, 
+‘post_type’ =&amp;gt; ‘post’,
+‘post_author’ =&amp;gt; $user\_ID,
+‘ping_status’ =&amp;gt; get_option(‘default_ping_status’), 
+‘post_parent’ =&amp;gt; ,
+‘menu_order’ =&amp;gt; ,
+‘to_ping’ =&amp;gt;  ”,
+‘pinged’ =&amp;gt; ”,
+‘post_password’ =&amp;gt; ”,
+‘guid’ =&amp;gt; ”,
+‘post_content_filtered’ =&amp;gt; ”,
+‘post_excerpt’ =&amp;gt; ”,
+‘import_id’ =&amp;gt; );
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;|&lt;/p&gt;
+&lt;p&gt;Happy WPCoding!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>WordPress Programming Tip: Enable Database Error Reporting For Custom Queries</title>
+      <link>https://brandontreb.ngrok.io/2010/03/12/wordpress-programming-tip-enable-database-error-reporting-for-custom-queries/</link>
+      <pubDate>Fri, 12 Mar 2010 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2010/03/12/wordpress-programming-tip-enable-database-error-reporting-for-custom-queries/</guid>
+      <description>&lt;p&gt;So this one should seem pretty obvious, but it wasn’t apparent to me at first.  It was only after digging through the wp-db.php file that I discovered how to enable error reporting.&lt;/p&gt;
+&lt;h4 id=&#34;the-problem&#34;&gt;The Problem&lt;/h4&gt;
+&lt;p&gt;As you may have discovered, the wp_query() function isn’t a “one size fit’s all” solution.  Often times, you may need to query the WordPress database using a custom MySQL query.  Especially  if you are using WordPress for anything other than a blog (ie &lt;a href=&#34;http://freshapps.com&#34;&gt;freshapps.com&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;When writing custom queries, it can often be frustrating if you make a mistake in the SQL syntax as WordPress will simply display no results.  For example:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$results = $wpdb-&amp;gt;get\_results(&amp;#34;SELECT \* FROM $wpdb-&amp;gt;posts 
+ WHERE post\_title = ‘foo bar baz&amp;#34;);
+print\_r($results);
+ 
+// Outputs Array ( )
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;|&lt;/p&gt;
+&lt;p&gt;Since we have made an error in our SQL statement (I didn’t add the second single quote), WordPress will suppress it and simply return an empty array. This is not very helpful for debugging.&lt;/p&gt;
+&lt;h4 id=&#34;the-solution&#34;&gt;The Solution&lt;/h4&gt;
+&lt;p&gt;The solution is actually quite simple. The global $wpdb object has a property called show_errors. Setting this property to true will cause WordPress to output the SQL errors to the screen for a given query.&lt;/p&gt;
+&lt;p&gt;Here it is with our example above&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// Enables Wordpress’s DB Error reporting
+$wpdb-&amp;gt;show\_errors = true;
+ 
+$results = $wpdb-&amp;gt;get\_results(&amp;#34;SELECT \* FROM $wpdb-&amp;gt;posts 
+ WHERE post\_title = ‘foo bar baz&amp;#34;);
+print\_r($results);
+ 
+// Outputs 
+// WordPress database error: [You have an error in your 
+// SQL syntax; check the manual that corresponds to your 
+// MySQL server version for the right syntax to use near 
+// ”foo bar baz’ at line 1]
+// SELECT \* FROM wp\_posts WHERE post\_title = ‘foo bar baz
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;|&lt;/p&gt;
+&lt;p&gt;Now we know what went wrong with our query rather than just receiving empty results.&lt;/p&gt;
+&lt;p&gt;Let me know if you have any questions or comments.&lt;/p&gt;
+&lt;p&gt;Happy WPCoding!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://reblog.zemanta.com/zemified/a1d99446-c73f-4722-97e6-3e584300069e/&#34; title=&#34;Reblog this post [with Zemanta]&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2010/reblog_e.png?x-id=a1d99446-c73f-4722-97e6-3e584300069e&#34; alt=&#34;Reblog this post [with Zemanta]&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Increase Your Twitter Following Using Your WordPress Blog</title>
+      <link>https://brandontreb.ngrok.io/2009/11/27/increase-your-twitter-following-using-your-wordpress-blog/</link>
+      <pubDate>Fri, 27 Nov 2009 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2009/11/27/increase-your-twitter-following-using-your-wordpress-blog/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2009/11/twitter64.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2009/twitter64.png&#34; alt=&#34;twitter_bird&#34; title=&#34;twitter_bird&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://downloads.wordpress.org/plugin/twitpop.zip&#34;&gt;Download TwitPop Now&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;TwitPop is a WordPress plugin I wrote with one goal…To make you more popular on Twitter. There are sites that spring up from time to time claiming to get you more followers on Twitter if you follow X amount of people on the follow train. Well, now you can create your own Twitter train on your wordpress blog and really get more followers.&lt;/p&gt;
+&lt;p&gt;The best part is, you add your username in the admin panel and EVERYONE FOLLOWS YOU! Think of the possibilities… You could be a Twitlebrity.&lt;/p&gt;
+&lt;p&gt;To add to the excitement, everyone that uses your TwitPop plugin will Tweet a link back to your blog. This promotes your blog as well as your Twitter account. Check out how TwitPop works below.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Instructions&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Log in to your Twitter account below. You will automatically follow the people that have visited this page before you (no more than 20).&lt;/p&gt;
+&lt;p&gt;Then, your Twitter username will be added to the list and you will be followed by the next 20 people to use this plugin.&lt;/p&gt;
+&lt;p&gt;[twitpop]&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://downloads.wordpress.org/plugin/twitpop.zip&#34;&gt;Download TwitPop Now&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TweetPress Now Supported By Twittelator Pro</title>
+      <link>https://brandontreb.ngrok.io/2009/10/06/tweetpress-now-supported-by-twittelator-pro/</link>
+      <pubDate>Tue, 06 Oct 2009 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2009/10/06/tweetpress-now-supported-by-twittelator-pro/</guid>
+      <description>&lt;p&gt;For many of you this is old new. But since it’s latest release, Twittelator Pro has supported TweetPress as one of the options for Photo Posting. Here are the steps to configure Twittelator Pro:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;First, make sure you have TweetPress installed on your WordPress blog by following the installation instructions &lt;a href=&#34;http://brandontreb.com/tweetpress/&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Tap the &lt;strong&gt;Settings&lt;/strong&gt; tab&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;WordPress&lt;/strong&gt; from the dropdown under &lt;strong&gt;Choose Photo Service&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2009/p_480_320_74ABB206-5D4F-424E-BE39-380AC8611ED1.jpeg&#34; alt=&#34;&#34;&gt;
+4. ** **Tap **Other Services **(you should see the WordPress logo) and then tap **Tweetpress for iPhone **&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2009/p_480_320_F52EAD4F-B44E-497E-AB49-13C8AB565EF4.jpeg&#34; alt=&#34;&#34;&gt;
+5. **** Enter in your WordPress credentials
+1. Site Link: The URL of the hompage of your wordpress blog
+2. Username – your wordpress username
+3. Password – your wordpress password&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;img class=&amp;#34;alignnone size-full wp-image-364&amp;#34; src=&amp;#34;http://brandontreb.com/wp-content/uploads/2009/10/p_480_320_B39E129D-6327-41C5-94DE-474D13974ED7.jpeg&amp;#34; alt=&amp;#34;&amp;#34; width=&amp;#34;200&amp;#34; height=&amp;#34;300&amp;#34; /&amp;gt;&amp;lt;/li&amp;gt; 
+* Tap Done&amp;lt;/ol&amp;gt;
+
+
+You should now be good to go. Any time you choose to post a photo to your Twitter stream, it will use your TweetPress plugin on your WordPress blog. Please let me know if you encounter any issues or have suggestions for Tweetpress.
+
+
+I have been in contact with developers of other popular Twitter clients and hope to get Tweetpress integrated in them soon.
+
+
+[][2]
+
+
+&amp;lt;div style=&amp;#34;&amp;#34;&amp;gt;
+&amp;lt;a href=&amp;#34;&amp;lt;http://twitter.com/share&amp;amp;quot&amp;gt;; class=&amp;#34;twitter-share-button&amp;#34; data-count=&amp;#34;horizontal&amp;#34; data-text=&amp;#34;TweetPress Now Supported By Twittelator Pro&amp;#34; data-url=&amp;#34;&amp;lt;http://brandontreb.com/tweetpress-now-supported-by-twittelator-pro&amp;amp;quot&amp;gt;; data-via=&amp;#34;brandontreb&amp;#34; data-related=&amp;#34;brandontreb:&amp;#34;&amp;gt;Tweet&amp;lt;/a&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Post Photos To Twitter From Your WordPress Blog With TweetPress</title>
+      <link>https://brandontreb.ngrok.io/2009/09/18/post-photos-to-twitter-from-your-wordpress-blog-with-tweetpress/</link>
+      <pubDate>Fri, 18 Sep 2009 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2009/09/18/post-photos-to-twitter-from-your-wordpress-blog-with-tweetpress/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2009/twit-500x207.png&#34; alt=&#34;twit&#34; title=&#34;twit&#34;&gt;&lt;/p&gt;
+&lt;p&gt;That’s right. With the latest release of TweetPress (version 1.1.1), you can post photos directly to Twitter from your WordPress blog’s gallery page. Here are the steps to do it.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Navigate to the TweetPress admin &lt;strong&gt;Settings &amp;gt; TweetPress&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Enter your Twitter username and password&lt;/li&gt;
+&lt;li&gt;Press the &lt;strong&gt;Save Twitter Settings&lt;/strong&gt; button
+&lt;ol&gt;
+&lt;li&gt;TweetPress will verify your username and password with Twitter&lt;/li&gt;
+&lt;li&gt;If they are incorrect, it will let you know and you must re enter them&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Navigate to your gallery page&lt;/li&gt;
+&lt;li&gt;You should now see a form that has a text box and an upload button&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;browse&lt;/strong&gt; to find an image on your computer to post&lt;/li&gt;
+&lt;li&gt;Enter your Tweet in the box&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Post&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It’s very quick and easy. If you have any suggestions for TweetPress please &lt;a href=&#34;http://brandontreb.com/contact-me/&#34;&gt;contact me&lt;/a&gt;, or leave comments in this post.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TweetPress coming soon to a Twitter Client Near You</title>
+      <link>https://brandontreb.ngrok.io/2009/09/10/tweetpress-coming-soon-to-a-twitter-client-near-you/</link>
+      <pubDate>Thu, 10 Sep 2009 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2009/09/10/tweetpress-coming-soon-to-a-twitter-client-near-you/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;TweetPress is the WordPress plugin that gives you total control and ownership of the photos you post to Twitter, sending your traffic back to your own blog, instead of a third party site&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I just finished development of this WordPress plugin and Andrew Stone of Twittelator has integrated it into his latest version of &lt;a href=&#34;http://stone.com/Twittelator/index.html&#34;&gt;Twittelator Pro&lt;/a&gt;. As of this post, that version is still in review, so you will have to wait until it is approved to make use of TweetPress.&lt;/p&gt;
+&lt;p&gt;I have some other very big plans for future releases of TweetPress and if you have any feature requests, feel free to drop me a line. I will do a post as soon as the latest version of Twittelator is approved and demo how it integrates with TweetPress.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2009/Twittelator.png&#34; alt=&#34;Twittelator&#34; title=&#34;Twittelator&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>WordPress Plugin To Increase Twitter Popularity</title>
+      <link>https://brandontreb.ngrok.io/2009/03/31/wordpress-plugin-to-increase-twitter-popularity/</link>
+      <pubDate>Tue, 31 Mar 2009 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2009/03/31/wordpress-plugin-to-increase-twitter-popularity/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2009/03/twitterpluswordpress.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2009/twitterpluswordpress.png&#34; alt=&#34;twitterpluswordpress&#34; title=&#34;twitterpluswordpress&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If there are two things I love on the intenets, they are &lt;a href=&#34;http://wordpress.org&#34;&gt;WordPress&lt;/a&gt; and &lt;a href=&#34;http://twitter.com/brandontreb&#34;&gt;Twitter&lt;/a&gt;. Recently there have been many plugins developed to integrate the two. Mainly, updating your Twitter from your blog or vice-versa. But the question is, do these benefit one another?&lt;/p&gt;
+&lt;p&gt;Does your Twitter send traffic to your WordPress blog or your WordPress blog get you more followers? Maybe if you are &lt;a href=&#34;http://twitter.com/kevinrose&#34;&gt;@kevinrose&lt;/a&gt; but in my opinion, not really…&lt;/p&gt;
+&lt;p&gt;I’m currently developing a plugin that will incredibly benenfit your Twitter following using your WordPress blog. It’s called TwitPop and should be available shortly for download. So be sure to &lt;a href=&#34;http://feeds2.feedburner.com/brandontreb&#34;&gt;subscribe to the RSS feed&lt;/a&gt; and check back soon.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>WordPress For iPhone Gets A Much Needed Update</title>
+      <link>https://brandontreb.ngrok.io/2009/03/25/wordpress-for-iphone-gets-a-much-needed-update/</link>
+      <pubDate>Wed, 25 Mar 2009 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2009/03/25/wordpress-for-iphone-gets-a-much-needed-update/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2009/03/wordpress-icon-512.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2009/wordpress-icon-512-300x300.png&#34; alt=&#34;wordpress-icon-512&#34; title=&#34;wordpress-icon-512&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A few days ago, the popular blogging tool &lt;a href=&#34;http://wordpress.org&#34;&gt;WordPress&lt;/a&gt; released a much needed update to their iPhone application. The main features included in the update were:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Landscape mode for writing posts – This is a huge one. It was a total pain in the butt writing blog posts with the vertical keyboard&lt;/li&gt;
+&lt;li&gt;Page Editing/Creation – Meh… How often do you do this?&lt;/li&gt;
+&lt;li&gt;Comment Moderation – Very excited about this feature. I love being able to check out comments quickly without loading my entire blog.&lt;/li&gt;
+&lt;li&gt;Photo resizing – Very cool option. Makes photo uploads go much quicker.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you have both an iPhone AND a WordPress blog (your own host or &lt;a href=&#34;http://WordPress.com&#34;&gt;WordPress.com&lt;/a&gt;), I would highly suggest &lt;a href=&#34;http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=285073074&amp;amp;mt=8&#34;&gt;downloading&lt;/a&gt; the WordPress iPhone app for blogging on the go.&lt;/p&gt;
+&lt;p&gt;Hopefully, having the landscape keyboard mode will motivate me to blog more often.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=285073074&amp;amp;mt=8&#34;&gt;Click here&lt;/a&gt; to download the WordPress application for the iPhone&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

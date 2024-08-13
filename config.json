@@ -1,0 +1,102 @@
+{
+  "baseURL": "https://brandontreb.ngrok.io",
+  "languageCode": "en-us",
+  "title": "Hack The Planet",
+  "theme": "theme-default",
+  "Author": {
+    "email": "brandontreb@gmail.com",
+    "name": "|ZeroCool|",
+    "url": "https://brandontreb.ngrok.io",
+    "note": "",
+    "avatar": "https://brandontreb.ngrok.io/avatar.png"
+  },
+  "params": {
+    "github_username": null,
+    "twitter_username": null,
+    "instagram_username": null,
+    "microblog_username": null,
+    "buymeacoffee": null,
+    "authorization_endpoint": "/indieauth/auth",
+    "token_endpoint": "/indieauth/token",
+    "micropub_endpoint": "/micropub",
+    "webmention_endpoint": "https://webmention.io/[BASE_URL]/webmention",
+    "theme_seconds": 1,
+    "meta_description": "this is meta :)",
+    "favicon": "🦠"
+  },
+  "menu": {
+    "main": [
+      {
+        "url": "/archive/",
+        "name": "Archive",
+        "weight": "1"
+      },
+      {
+        "url": "/photos/",
+        "name": "Photos",
+        "weight": "2"
+      },
+      {
+        "url": "/replies/",
+        "name": "Replies",
+        "weight": "3"
+      }
+    ]
+  },
+  "permalinks": {
+    "/posts": "/:year/:month/:day/:filename",
+    "/replies": "/replies/:year/:month/:day/:filename",
+    "/pages": "/:filename",
+    "/redirects": "/:filename"
+  },
+  "outputFormats": {
+    "RSS": {
+      "mediatype": "application/rss+xml",
+      "baseName": "feed"
+    },
+    "JSON": {
+      "mediatype": "application/json",
+      "baseName": "feed"
+    }
+  },
+  "outputs": {
+    "home": [
+      "HTML",
+      "RSS",
+      "JSON"
+    ],
+    "section": [
+      "HTML"
+    ],
+    "taxonomy": [
+      "JSON"
+    ],
+    "page": [
+      "HTML",
+      "JSON"
+    ]
+  },
+  "Services": {
+    "RSS": {
+      "Limit": 20
+    },
+    "JSON": {
+      "Limit": 20
+    }
+  },
+  "LastMod": [
+    "LastMod",
+    ":fileModTime",
+    "publishDate"
+  ],
+  "markup": {
+    "goldmark": {
+      "renderer": {
+        "unsafe": true
+      }
+    }
+  },
+  "ignoreErrors": [
+    "error-output-taxonomy"
+  ]
+}

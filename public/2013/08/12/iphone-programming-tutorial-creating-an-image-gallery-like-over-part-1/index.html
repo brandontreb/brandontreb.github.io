@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>
+      
+      Hack The Planet - iPhone Programming Tutorial: Creating An Image Gallery Like Over &amp;#8211; Part 1
+      
+  </title>
+
+  <meta name="description" content="this is meta :)">
+
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%f0%9f%a6%a0</text></svg>">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/custom.css">
+  <link rel="canonical" href="https://brandontreb.ngrok.io/2013/08/12/iphone-programming-tutorial-creating-an-image-gallery-like-over-part-1/">
+
+	<link rel="me" href="https://brandontreb.ngrok.io" />
+	
+	
+	
+	<link rel="authorization_endpoint" href="/indieauth/auth" />
+	<link rel="token_endpoint" href="/indieauth/token" />
+	<link rel="micropub" href="https://brandontreb.ngrok.io/micropub" />
+	<link rel="microsub" href="https://brandontreb.ngrok.io/microsub" />
+	<link rel="webmention" href="https://brandontreb.ngrok.io/webmention" />	
+  
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Hack The Planet</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+		
+			
+				<a class="page-link" href="/archive/">Archive</a>
+			
+		
+			
+				<a class="page-link" href="/photos/">Photos</a>
+			
+		
+			
+				<a class="page-link" href="/replies/">Replies</a>
+			
+		
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+		
+<div class="post h-entry">
+
+  <header class="post-header">
+	
+	  	<h1 class="p-name">iPhone Programming Tutorial: Creating An Image Gallery Like Over &amp;#8211; Part 1</h1>
+  	
+    <p class="post-meta">
+	<a href="https://brandontreb.ngrok.io/2013/08/12/iphone-programming-tutorial-creating-an-image-gallery-like-over-part-1/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2013-08-12 00:00:00 -0600">Aug 12, 2013</time></span></a>
+	
+	</p>
+  </header>
+
+  <article class="post-content e-content">
+	<p><a href="/uploads/2013/Screen-Shot-2013-08-09-at-8.36.42-PM.png"><img src="/uploads/2013/Screen-Shot-2013-08-09-at-8.36.42-PM.png" alt="Screen Shot 2013-08-09 at 8.36.42 PM"></a></p>
+<p> </p>
+<p>Recently, I have had to build an app (<a href="http://j.mp/scriptapp">download link</a>) that required the user to choose a photo from their photo library.  Rather than just throwing up a <strong>UIImagePickerController</strong> like many apps, I decided to add a little bit of style.  Being inspired by Over’s ultra simplistic (and beautiful) photo selection interface, I decided to fancy things up a bit.</p>
+<p>For this tutorial, I will start with a Fresh <strong>iOS6</strong> View-Based application that uses <strong>Storyboards</strong> and <strong>ARC</strong>. Also note that I will be optimizing for the iPhone 5 resolution.  You are free to make the tweaks necessary to deploy on the iPhone 4 and 4S.</p>
+<p> </p>
+<p>Here is a breakdown of what we will cover in this part:</p>
+<ol>
+<li>Creating a <strong>UICollectionView</strong>inside of <strong>Storyboard</strong></li>
+<li>Using the <strong>ALAssetsLibrary</strong> to fetch photos from the user’s <strong>Camera Roll</strong></li>
+<li>Displaying the <strong>ALAssets</strong> inside of the <strong>UICollectionView</strong></li>
+</ol>
+<h3 id="1-preparing-the-iboutlets">1. Preparing The IBOutlets</h3>
+<p>Start by opening up **ViewController.m **and replacing the <strong>@interface</strong> declaration at the top with the following code:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<pre tabindex="0"><code>@interface ViewController ()&lt;UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout&gt;
+@property(nonatomic, weak) IBOutlet UICollectionView \*collectionView;
+@end
+</code></pre><p>|</p>
+<p>This will declare the **IBOutlet **needed to hook up the main <strong>UICollectionView</strong> that we will be using to display the user’s photos.  I have also set up our class to be a <strong>UICollectionViewDataSource</strong>, <strong>UICollectionViewDelegate</strong>, and <strong>UICollectionViewDelegateFlowLayout</strong>. This is necessary when interfacing with the <strong>UICollectionView.</strong></p>
+<h3 id="2-setting-up-the-uicollectionview-in-storyboard">2. Setting Up The UICollectionView In Storyboard</h3>
+<p>Open up **MainStoryboard.storyboard **and drag a <strong>UICollectionView</strong> on to your view ensuring that it stretches the entire screen.</p>
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-8.44.02-PM.png"><img src="/uploads/2013/Screen-Shot-2013-07-21-at-8.44.02-PM-172x300.png" alt="Screen Shot 2013-07-21 at 8.44.02 PM"></a></p>
+<p>Then, <strong>Control-Click</strong> and drag from the **UICollectionView **to your **ViewController **Object and set it as the **delegate **and <strong>datasource.</strong></p>
+<p><a href="/uploads/2013/Screen-Shot-2013-07-21-at-8.41.29-PM.png"><img src="/uploads/2013/Screen-Shot-2013-07-21-at-8.41.29-PM.png" alt="Screen Shot 2013-07-21 at 8.41.29 PM"></a></p>
+<p>Finally, **Control-Click **and drag from **View Controller **to <strong>Collection View</strong> and selected **collectionView **to make the **IBOutlet **connection.</p>
+<p><a href="/uploads/2013/Screen-Shot-2013-07-21-at-8.45.05-PM.png"><img src="/uploads/2013/Screen-Shot-2013-07-21-at-8.45.05-PM.png" alt="Screen Shot 2013-07-21 at 8.45.05 PM"></a></p>
+<p>Now, we need to give a <strong>Cell Identifier</strong> to the <strong>UICollectionViewCell</strong> so that we can reference it in code.  Click on the default cell inside of the <strong>UICollectionView</strong> and open the **Attributes Inspector. **For the <strong>Identifier</strong> type in <strong>PhotoCell.</strong> The cell might be a little tricky to see as its background color is clear, but it’s there. Simply click in the top left corner of the <strong>UICollectionView</strong>.</p>
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-9.13.08-PM.png"><img src="/uploads/2013/Screen-Shot-2013-07-21-at-9.13.08-PM-300x67.png" alt="Screen Shot 2013-07-21 at 9.13.08 PM"></a></p>
+<p>Now that the <strong>UICollectionView</strong> has been set up, it’s time to fetch the photos from the user’s photo library.</p>
+<pre tabindex="0"><code>If you are using the simulator, make sure to populate the Photo Gallery with images from the web. Simply open up a browser, do a Google Image Search, and click and hold on various images. You should have an option from the menu that pops up to save the images to your camera roll.
+Finally, open up the **Photos** app on the simulator to initialize the Assets Library.
+</code></pre><h3 id="3-fetching-alassets-user-photos-from-the-alassets-library">3. Fetching ALAssets (user photos) From The ALAssets Library</h3>
+<p>In order to interface with the user’s photo library, we must first import the **AssetsLibrary.framework **framework.  To do this, click on your project in the sidebar, select the Target, then click **Build Phases, **expand the <strong>Link Binary With Libraries</strong> section and click the **+ **button.  Do a search for **Assset **and then double click on <strong>AssetsLibrary.framework.</strong></p>
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-8.57.37-PM.png"><img src="/uploads/2013/Screen-Shot-2013-07-21-at-8.57.37-PM-259x300.png" alt="Screen Shot 2013-07-21 at 8.57.37 PM"></a></p>
+<p>It should now be added to your project and ready to use.  Now that it has been linked, we must import it into the **ViewController.m **file.  Open up **ViewController.m **and add the following import to the top of the file:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<pre tabindex="0"><code>#import &lt;AssetsLibrary/AssetsLibrary.h&gt;
+</code></pre><p>|</p>
+<p>Before we can fetch the user’s photos, we need to set up an <strong>NSArray</strong> to put them in.  Add the following line within the **@interface **declaration at the top.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<pre tabindex="0"><code>@property(nonatomic, strong) NSArray \*assets;
+</code></pre><p>|</p>
+<p>Now, add the following method to your class:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<pre tabindex="0"><code>+ (ALAssetsLibrary \*)defaultAssetsLibrary
+{
+    static dispatch_once_t pred = ;
+    static ALAssetsLibrary \*library = nil;
+    dispatch_once(&amp;pred, ^{
+        library = [[ALAssetsLibrary alloc] init];
+    });
+    return library;
+}
+</code></pre><p>|</p>
+<p>This is a static method that creates a static instance to the <strong>ALAssetsLibrary</strong>.  The reason this is needed is, when we enumerate the <strong>ALAssets</strong> in the next method, it seems that the assets get released immediately and otherwise wouldn’t be able to be used in the rest of the application. I will explain this a little more in a moment.</p>
+<p>Head over to <strong>viewDidLoad</strong> and add the following code:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<pre tabindex="0"><code>- (void)viewDidLoad
+{
+    [super viewDidLoad];
+ 
+    _assets = [@[] mutableCopy];
+    __block NSMutableArray \*tmpAssets = [@[] mutableCopy];
+    // 1
+    ALAssetsLibrary \*assetsLibrary = [ViewController defaultAssetsLibrary];
+    // 2
+    [assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAll usingBlock:^(ALAssetsGroup \*group, BOOL \*stop) {
+        [group enumerateAssetsUsingBlock:^(ALAsset \*result, NSUInteger index, BOOL \*stop) {
+            if(result)
+            {
+                // 3
+                [tmpAssets addObject:result];
+            }
+        }];
+ 
+        // 4
+        //NSSortDescriptor \*sort = [NSSortDescriptor sortDescriptorWithKey:@&#34;date&#34; ascending:NO];
+        //self.assets = [tmpAssets sortedArrayUsingDescriptors:@[sort]];
+        self.assets = tmpAssets;
+ 
+        // 5
+        [self.collectionView reloadData];
+    } failureBlock:^(NSError \*error) {
+        NSLog(@&#34;Error loading images %@&#34;, error);
+    }];
+}
+</code></pre><p>|</p>
+<ol>
+<li>Grab our static instance of the <strong>ALAssetsLibrary</strong></li>
+<li>Enumerate through all of the **ALAssets **(photos) in the user’s <strong>Asset Groups</strong> (Folders)</li>
+<li>Enumerate each folder and add it’s **ALAssets **to the temporary array</li>
+<li>Sort the assets list by date (this won’t work yet, but I will show you how to fix later). For now this code is commented out and the Assets will be sorted however they come out.</li>
+<li>Reload the <strong>UICollectionView</strong> (this won’t work yet as we haven’t set up the delegate methods)</li>
+</ol>
+<p>Now that we have an <strong>NSArray</strong> populated with <strong>ALAssets</strong>, let’s set up the **delegate **methods for the <strong>UICollectionView</strong> in order to populate it with data.</p>
+<h3 id="4-populating-the-uicollectionview-with-data">4. Populating the UICollectionView With Data</h3>
+<p>A <strong>UICollectionView</strong> functions much like a **UITableView **having delegate and datasource methods.  Add the following methods to your <strong>ViewController</strong> class to populate the view.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<pre tabindex="0"><code>#pragma mark - collection view data source
+ 
+- (NSInteger) collectionView:(UICollectionView \*)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return self.assets.count;
+}
+ 
+- (UICollectionViewCell \*) collectionView:(UICollectionView \*)collectionView cellForItemAtIndexPath:(NSIndexPath \*)indexPath
+{
+    UICollectionViewCell \*cell = (UICollectionViewCell \*)[collectionView dequeueReusableCellWithReuseIdentifier:@&#34;PhotoCell&#34; forIndexPath:indexPath];
+ 
+    ALAsset \*asset = self.assets[indexPath.row];
+    //cell.asset = asset;
+    cell.backgroundColor = [UIColor redColor];
+ 
+    return cell;
+}
+ 
+- (CGFloat) collectionView:(UICollectionView \*)collectionView layout:(UICollectionViewLayout \*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
+{
+    return 4;
+}
+ 
+- (CGFloat) collectionView:(UICollectionView \*)collectionView layout:(UICollectionViewLayout \*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
+{
+    return 1;
+}
+</code></pre><p>|</p>
+<p>This code should be fairly straight forward if you have ever worked with a <strong>UITableView.</strong>  The only lines to note are where ‘cell.asset = asset’ is commented out and we set the cell’s background color to red.  We will uncomment that line when we create a custom cell to display the image (for now it won’t).  I have also set the background color to red so that you can see that the number of cells is actually corresponding to the number of photos in the camera roll.</p>
+<p><strong>Build and Run!</strong></p>
+<p>Let’s take a break to do a build and run to see what happens.  If you have hooked everything up correctly, you should see a black screen with red squares on it with a count equalling the number of photos in the user’s library.</p>
+<p><a href="http://brandontreb.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-21-at-9.26.07-PM.png"><img src="/uploads/2013/Screen-Shot-2013-07-21-at-9.26.07-PM-184x300.png" alt="Screen Shot 2013-07-21 at 9.26.07 PM"></a></p>
+<p>Not too exciting, however it shows that we are displaying a number of cells corresponding to the number of photos in the user’s asset library.  At least it’s showing that you have done something.  The next step is to create a custom <strong>UICollectionViewCell</strong> that actually displays the photos, which we will do next time.</p>
+<h3 id="5-next-time">5. Next Time</h3>
+<p>That’s all for today.  In a ploy to get you to come back to my site (and <a href="http://feeds.feedburner.com/brandontreb">subscribe to my RSS feed</a>), I have chosen to break this post up into two parts.</p>
+<p>Luckily for you, I wrote the above message a while ago. Click the link below to go to part 2!</p>
+<p><a href="http://brandontreb.com/iphone-programming-tutorial-creating-an-image-gallery-like-over-part-2">iPhone Programming Tutorial: Creating An Image Gallery Like Over – Part 2</a></p>
+<p>Stay tuned!</p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+	<div id="post-meta" class="clearfix p-author h-card">
+  <a href="/" class="u-url" rel="me">
+  <img class="u-photo avatar" src="https://brandontreb.ngrok.io/avatar.png" width="96" height="96">
+  <div>
+    <span class="p-name dark">|ZeroCool|</span>
+    <span><a href="https://brandontreb.ngrok.io">@</a></span>
+    <p class="p-note"></p>
+  </div>	
+  </a>
+</div>
+  </article>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-3">
+        <p class="text"></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+    
+    
+    
+  </body>
+
+</html>

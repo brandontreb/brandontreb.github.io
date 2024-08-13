@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>
+      
+      Hack The Planet - Why I Went Back To Jekyll &amp;#8211; Also Rackspace Sucks
+      
+  </title>
+
+  <meta name="description" content="this is meta :)">
+
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%f0%9f%a6%a0</text></svg>">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/custom.css">
+  <link rel="canonical" href="https://brandontreb.ngrok.io/2012/01/03/why-i-went-back-to-jekyll-also-rackspace-sucks/">
+
+	<link rel="me" href="https://brandontreb.ngrok.io" />
+	
+	
+	
+	<link rel="authorization_endpoint" href="/indieauth/auth" />
+	<link rel="token_endpoint" href="/indieauth/token" />
+	<link rel="micropub" href="https://brandontreb.ngrok.io/micropub" />
+	<link rel="microsub" href="https://brandontreb.ngrok.io/microsub" />
+	<link rel="webmention" href="https://brandontreb.ngrok.io/webmention" />	
+  
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Hack The Planet</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+		
+			
+				<a class="page-link" href="/archive/">Archive</a>
+			
+		
+			
+				<a class="page-link" href="/photos/">Photos</a>
+			
+		
+			
+				<a class="page-link" href="/replies/">Replies</a>
+			
+		
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+		
+<div class="post h-entry">
+
+  <header class="post-header">
+	
+	  	<h1 class="p-name">Why I Went Back To Jekyll &amp;#8211; Also Rackspace Sucks</h1>
+  	
+    <p class="post-meta">
+	<a href="https://brandontreb.ngrok.io/2012/01/03/why-i-went-back-to-jekyll-also-rackspace-sucks/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2012-01-03 01:00:00 -0600">Jan 3, 2012</time></span></a>
+	
+	</p>
+  </header>
+
+  <article class="post-content e-content">
+	<p>Recently, I was pretty humbled when a post of mine titled <a href="http://brandontreb.com/wordpress-to-jekyll-and-back-again/">WordPress To Jekyll And Back Again</a> made it to the front page of Hacker News. I was a little down on Jekyll for the reasons listed in that post and was feeling pretty good about my WordPress install.</p>
+<p>At the time, I was running my own virtual instance on Rackspace cloud hosting (we’ll get to this momentarily). I also had all of the caching and optimization plugins installed and welcomed the Hacker News traffic.</p>
+<p>As you can imagine, the influx of HN traffic crashed the server multiple times and I was (with good reason) mocked in the comments (“must be because he’s ‘back to WordPress’”). So, I asked for advice and further “beefed up” my setup switching from Apache to Nginx, upping the ram, and switching caching plugins. WordPress is a beast and hard to optimize. That’s not even the kicker as to why I switched away.</p>
+<h4 id="a-call-from-rackspace">A Call From Rackspace…</h4>
+<p>About a month ago, I realized my blog was down. I figured that it might have been that I was featured somewhere else which was crashing it (again I was rolling my eyes at WordPress). But then, I got a call and email from a <em>very</em> helpful Rackspace employee. The email went like this:</p>
+<blockquote>
+<p>Despite the very best efforts of or our Engineering and Datacenter Operations Teams, unfortunately the host machine that your cloud server ‘Websites’ resides on was not able to be recovered. At this point, we are looking at complete data loss.</p>
+</blockquote>
+<p>and… Rackspace, in this poorly phrased email, was basically like. “Well, sucks to be you, hope you had a backup!”. Well, I admit this is partially my fault for not having a backup as I am a bit of a n00b when it comes to server admin, but I had been hosting for years on (don’t judge me) GoDaddy before that and a couple years on Rackspace. I had no idea that hosting companies didn’t have backups of their own. It would seem that this might be crucial to their business.</p>
+<p>Needless to say, I lost everything including a jewelry site that I ran (not many sales), an iPhone leaderboard site (not very popular), 2 of my buddies WordPress blogs, and my current WordPress blog.</p>
+<h4 id="jekyll-to-the-rescue">Jekyll To The Rescue</h4>
+<p>I was pretty angry at Rackspace and myself for never making a backup, but then it hit me that <em>most</em> of my posts had been converted to Jekyll and were backed up in a github repository. I was able to restore my blog within a few minutes (now hosted on GitHub) and recover the WordPress posts from the <a href="http://feeds.feedburner.com/brandontreb">Feedburner cache</a> of my site.</p>
+<p>As for my buddies’ sites… I feel for them <img src="/uploads/2012/frownie.png" alt=":("></p>
+<h4 id="new-list-of-why-jekyll-is-awesome">New List Of Why Jekyll Is Awesome</h4>
+<ul>
+<li><strong>Automatically backed up</strong> – This is huge. If not for switching to Jekyll at one point, I would have lost <strong>years</strong> worth of content. If you have every tried to back up WordPress, it’s a huge frackin pain since the database dump usually gets HUGE.</li>
+<li><strong>Free To Host</strong> – I’m not sure why I was so stubborn about doing my own hosting. I am now hosting on <a href="https://github.com/brandontreb/brandontreb.github.com">GitHub</a> and it couldn’t be more stable and fast.</li>
+<li><strong>Mobile Blogging</strong> – This was my largest gripe about Jekyll. I was jealous that I couldn’t blog from my iPhone like WordPress users. Well, I have found a pretty decent solution (tutorial to follow), which involves a combo of Prompt, Screen, and Vim.</li>
+<li><strong>Content Oriented</strong> – WordPress makes it super easy to dump tons of images into your posts. While blogging with Jekyll (inside of Vim in my case), it’s a little bit more of a pain to add your own images. That being said you must be choosy forcing you to focus more on the content and less on using visual crutches.</li>
+<li><strong>Blog Anywhere</strong> – This was another limitation I was placing on Jekyll in my last post. However, I just wasn’t using Jekyll to its full potential. I was building my site locally and rsyncing it up to my server. This process was a little tedious and discouraged me from writing many new posts. Now, hosting with github, posting is as simple as a quick push to the repo.</li>
+<li><strong>Ninja Fast</strong> – This one should be obvious.</li>
+</ul>
+<h4 id="conclusion">Conclusion</h4>
+<p>I am quite happy blogging with Jekyll. As far as I’m concerned there is no reason to ever host my own blog again (as long as Github doesn’t ditch pages 😉 ). Also, if you currently have stuff on Rackspace, <strong>go make a backup now</strong> (or ditch them altogether). Thanks for reading and <a href="http://feeds.feedburner.com/brandontreb">look out</a> for my next post about mobile blogging with Jekyll.</p>
+<p>Happy Blogging!</p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+	<div id="post-meta" class="clearfix p-author h-card">
+  <a href="/" class="u-url" rel="me">
+  <img class="u-photo avatar" src="https://brandontreb.ngrok.io/avatar.png" width="96" height="96">
+  <div>
+    <span class="p-name dark">|ZeroCool|</span>
+    <span><a href="https://brandontreb.ngrok.io">@</a></span>
+    <p class="p-note"></p>
+  </div>	
+  </a>
+</div>
+  </article>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-3">
+        <p class="text"></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+    
+    
+    
+  </body>
+
+</html>

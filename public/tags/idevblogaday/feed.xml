@@ -1,0 +1,336 @@
+<rss version="2.0">
+  <channel>
+    <title>iDevBlogADay on Hack The Planet</title>
+    <link>https://brandontreb.ngrok.io/tags/idevblogaday/</link>
+    <description></description>
+    
+    <language>en-us</language>
+    
+    <lastBuildDate>Tue, 20 Aug 2013 00:00:00 -0600</lastBuildDate>
+    
+    <item>
+      <title>The Top 5 Places To Find Good Software Developers/Contractors</title>
+      <link>https://brandontreb.ngrok.io/2013/08/20/the-top-5-places-to-find-good-developerscontractors-to-work-on-your-projects/</link>
+      <pubDate>Tue, 20 Aug 2013 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2013/08/20/the-top-5-places-to-find-good-developerscontractors-to-work-on-your-projects/</guid>
+      <description>&lt;p&gt;One thing I am often asked is “Where can I find good developers/contractors/subcontractors?” While I have found talent many different ways, I wanted to share my top 5 with you.&lt;/p&gt;
+&lt;p&gt;This post should be useful to you if you have a project and are looking to find a developer OR are a developer looking to subcontract some of your work.  I am sharing these based solely on my experiences with them and hope you find value in this list.&lt;/p&gt;
+&lt;h3 id=&#34;1-local-meetups&#34;&gt;1. Local Meetups&lt;/h3&gt;
+&lt;p&gt;Local meet ups are the absolute best place in my opinion to find developers.  Almost every city in the nation has some sort of group meeting on a regular bases for a given focus of development.  You should have no problems finding a rails meetup group, iOS, Android, etc…&lt;/p&gt;
+&lt;p&gt;I would suggest finding out about such meetups in your area by Googling phrases such as “[your area] iOS meetup (sub iOS for rails, python, etc…).  I regularly attend a “Cocoa Heads” group full of incredibly smart and capable mobile developers all willing to work on projects.&lt;/p&gt;
+&lt;p&gt;These types of groups are always excited to have clients come in and pitch their ideas.  One piece of advice though, don’t go in to these groups and start with “I have a great idea and I will give you a percentage of the company in exchange for development”. They will stop listening immediately.&lt;/p&gt;
+&lt;h3 id=&#34;2-popular-developersmailing-lists&#34;&gt;2. Popular Developers/Mailing Lists&lt;/h3&gt;
+&lt;p&gt;This one is going to require a bit of work and research on your part, but I will get you started.  Around the internet, there are a few of what I call “celebrity developers”.  These are generally guys who have made a name for themselves and who are established as experts in their space.&lt;/p&gt;
+&lt;p&gt;While many of them are not taking on contract work themselves, they may or may not have a mailing list of interested contractors.  One such person that does exactly this is &lt;a href=&#34;http://raywenderlich.com&#34;&gt;Ray Wenderlich&lt;/a&gt; and I happen to receive emails on his contractor list.&lt;/p&gt;
+&lt;p&gt;Even if these developers don’t have lists, they generally have plenty of connections to point you in the right direction.  Like I said, this method isn’t easy, but it can definitely have one of the biggest payoffs in terms of quality developers.&lt;/p&gt;
+&lt;h3 id=&#34;3-specialize-project-sites&#34;&gt;3. Specialize Project Sites&lt;/h3&gt;
+&lt;p&gt;As of late, quite a few interesting sites have been popping up that have solved a fundamental issue when it comes to pairing developers with projects. The problems are 1. it’s hard to find good developers and 2. it’s hard to find clients with realistic cost expectations. That’s why ODesk exists 😉&lt;/p&gt;
+&lt;p&gt;The first of these sites that I have found is &lt;a href=&#34;http://ooomf.com&#34;&gt;OOOMF&lt;/a&gt;.  OOOMF is relatively new and you must be reviewed and accepted by their team in order to be a part of it.  It’s basically a private network for pairing developers with projects and it supports all different project types (mobile, web, design, etc…).&lt;/p&gt;
+&lt;p&gt;Project owners can put their project up with a relative budget and developers can “apply”.  The process then moves forward with communication between the client and the developers until a price and scope have been reached.&lt;/p&gt;
+&lt;p&gt;There is an additional overhead of 15% for using this service, but I think it’s well worth it.&lt;/p&gt;
+&lt;p&gt;Another one of these sites that is more mobile centric is&lt;a href=&#34;http://apphappening.com&#34;&gt;http://apphappening.com&lt;/a&gt;.  This site is very new and I have only just begun to use it.  I should have a better review of them shortly.&lt;/p&gt;
+&lt;h3 id=&#34;4-twitter-and-appnethttpappnet&#34;&gt;4. Twitter and &lt;a href=&#34;http://App.net&#34;&gt;App.net&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Twitter and &lt;a href=&#34;http://app.net&#34;&gt;app.net&lt;/a&gt; are definitely the preferred social network of serious developers.  I would steer clear of Facebook and Linked in as this is generally where the recruiters hang out. Your message will most likely get dismissed as spam.&lt;/p&gt;
+&lt;p&gt;I’d suggest searching Twitter/App.net for the keywords of your project (iOS developer, rails, etc…) and find the folks with a ton of follows and a very small following to follower ratio. You will know them right away.  Also, most of their blogs come up first in Google for many related keywords.&lt;/p&gt;
+&lt;h3 id=&#34;5-developer-conferences&#34;&gt;5. Developer Conferences&lt;/h3&gt;
+&lt;p&gt;This one might cost you a bit of money, but is definitely well worth it.  There are conferences for every focus of software development and they occur all throughout the year.  These conferences generally have a HUGE percentage of professional developers who are just as eager to work on a project as you are to have them.&lt;/p&gt;
+&lt;p&gt;One of my favorite iOS conferences is &lt;a href=&#34;http://360idev.com&#34;&gt;360iDev&lt;/a&gt;. It’s very indie-centric and offers an incredible community of iOS developers of all abilities.  If you are looking to get a mobile project done, I strongly urge you to attend.  While I can’t speak for conferences in other areas(web, etc…), I would really love some suggestions in the comments of this post if you are up for it!&lt;/p&gt;
+&lt;h3 id=&#34;6-bonus--right-here&#34;&gt;6. Bonus – Right Here&lt;/h3&gt;
+&lt;p&gt;Shameless plug time.  If you are looking for professional mobile app (iOS or Android), I have a team of developers and am always looking to work on new and exciting projects.  If you want to hear more about it head over to my &lt;a href=&#34;http://pixegon.com/&#34;&gt;Hire Us&lt;/a&gt; page or shoot me an email brandon @ pixegon [dot] com.&lt;/p&gt;
+&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;Whether you are a person/company looking to hire developers or a developer looking to hire contractors, I hope you have found this post useful.  Your feedback in the comments is greatly appreciated.  Best of luck with your search!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lua Scripting The UI For Pocket MUD Pro</title>
+      <link>https://brandontreb.ngrok.io/2012/05/29/lua-scripting-the-ui-for-pocket-mud-pro/</link>
+      <pubDate>Tue, 29 May 2012 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2012/05/29/lua-scripting-the-ui-for-pocket-mud-pro/</guid>
+      <description>&lt;p&gt;I have just updated my MUD client [&lt;a href=&#34;http://itunes.apple.com/us/app/pocket-mud-pro/id511678455?mt=8&#34;&gt;Pocket MUD Pro&lt;/a&gt;] to be a universal library. It was surprisingly easy to add the iPad support as most of the application was comprised of UITableViews.&lt;/p&gt;
+&lt;p&gt;The main “MUD” view was the most challenging part as it contains a couple UIWebViews, UIButons, and a UITextField. However, I chose to do something I feel is pretty cool.&lt;/p&gt;
+&lt;h4 id=&#34;scripting-the-ui-with-lua&#34;&gt;Scripting The UI With Lua&lt;/h4&gt;
+&lt;p&gt;If I haven’t said it enough, I love lua. Especially in the context of scripting within other applications. Pocket MUD Pro already has complete lua support in triggers in aliases, so I figured I might as well apply that same logic to the UI.&lt;/p&gt;
+&lt;p&gt;Pocket MUD Pro has 3 core sections for the UI not counting the text input field. The main view (UIWebview), the prompt view (UIWebview), and the button bar (custom UIView).&lt;/p&gt;
+&lt;p&gt;One of the core challenges I faced on the iPhone, was resizing/reorienting all of these views on orientation change as well as when the keyboard was visible and when it wasn’t. To be honest, I spent most of my cycles getting this part right. On the iPad, I decided to things a little differently which improved the speed of my development overall and paved the way for future updates that will allow user-scripted UIs.&lt;/p&gt;
+&lt;h4 id=&#34;the-ui-script&#34;&gt;The UI Script&lt;/h4&gt;
+&lt;p&gt;I want to start by showing you the lua code that is used to script the UI by default.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;–MUD 
+mudFrame = Frame:new(&amp;#34;mud_frame&amp;#34;) 
+mudFrame.type = FrameTypeMUD
+mudFrame.portraitFrame = {0,0,768,931}
+mudFrame.portraitFrameKeyboard = {0,0,768,667}
+mudFrame.landscapeFrame = {0,0,1024,675}
+mudFrame.landscapeFrameKeyboard = {0,0,1024,323}
+createFrame(mudFrame)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;What’s happening here is, I have created a Frame class that has some properties (type, name, etc…) and injected it into the global lua space for use inside of the UIScripts. Then when the interface gets drawn, I reference the UI script for each of the MUD servers and use it to render the interface.&lt;/p&gt;
+&lt;p&gt;One interesting thing here is, I set the frames for each of the possible layout scenarios. Portrait, Landscape, with and without the keyboard. That way, when the keyboard hides/dismisses or the user rotates the device, I just reference the this script again and re-render the frame accordingly. This could have been achieved with auto-resizing masks however, it gets much more complex and things get tricky when you want to have a dynamic number of windows.&lt;/p&gt;
+&lt;p&gt;I follow this exact pattern for the button frames and the prompt frames. As you might have guessed, in a future release, I will open this script area up to MUDders and give the user the ability to script the interface however they would like. Some examples might be:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dedicated map window&lt;/li&gt;
+&lt;li&gt;Dedicated chat window&lt;/li&gt;
+&lt;li&gt;Customized movement buttons&lt;/li&gt;
+&lt;li&gt;Customized backgrounds/borders/themes&lt;/li&gt;
+&lt;li&gt;Custom health/status/mana&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Given this powerful UI Scripting style, a user will be able to create complex interfaces such as the one below from inside the app:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2012/achaea-300819-1263188763.jpeg&#34; alt=&#34;&#34; title=&#34;Achaea&#34;&gt;
+I still have a ways to go with exposing various functionalities via my custom lua bridge. But things seem to be moving along quite smoothly.&lt;/p&gt;
+&lt;p&gt;If you want to learn how I was able to bridge lua into my application, consider checking out my talk on lua scripting at &lt;a href=&#34;http://360idev.com/&#34;&gt;360iDev 2012&lt;/a&gt; later this year!&lt;/p&gt;
+&lt;p&gt;Happy Coding!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Beginning Jailbroken iOS Development &amp;#8211; Your First Tweak</title>
+      <link>https://brandontreb.ngrok.io/2011/08/24/beginning-jailbroken-ios-development-your-first-tweak/</link>
+      <pubDate>Wed, 24 Aug 2011 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2011/08/24/beginning-jailbroken-ios-development-your-first-tweak/</guid>
+      <description>&lt;p&gt;This is the 3rd installment of my jailbroken iOS development series. If you haven’t already, make sure you read the following tutorials to get up to speed.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://brandontreb.com/beginning-jailbroken-ios-development-getting-the-tools/&#34;&gt;Beginning Jailbroken iOS Development – Getting The Tools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://brandontreb.com/beginning-jailbroken-ios-development-building-and-deployment/&#34;&gt;Beginning Jailbroken iOS Development – Building And Deployment&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Today I’m going to show you how to patch any internal Apple method that you want. In this demo, we are going to hook into the init method of Springboard and show a UIAlertView upon starting your phone up. It’s not the &lt;em&gt;coolest&lt;/em&gt; of applications, but the design pattern and concepts used can be applied to patching any other internal method of any class.&lt;/p&gt;
+&lt;h4 id=&#34;getting-set-up&#34;&gt;Getting Set Up&lt;/h4&gt;
+&lt;p&gt;In order to create a tweak, you must interface with Saurik’s libsubstrate.dylib dynamic library. This might come packaged with theos, but if not, you need to download a fresh copy. One can be found on this &lt;strong&gt;very spammy&lt;/strong&gt; site. &lt;a href=&#34;http://www.mediafire.com/?2upm53uzzj0488u&#34;&gt;Download libsubstrate.dylib&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Once you have downloaded it, copy it to the folder /opt/theos/lib. This is the folder where you will copy any other dynamic libraries that you might need to use in your application.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The iOS Headers&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Most likely, theos came with the iOS headers that you need. If not, you need to obtain them by doing a header dump on the device OR Googling around for them. I suggest the latter as someone else has surely done the work for you. Once you have these headers, you need to put them in the folder /opt/theos/include. For this example you should have a folder in there called Springboard containing all of the Springboard headers.&lt;/p&gt;
+&lt;h4 id=&#34;creating-the-project&#34;&gt;Creating The Project&lt;/h4&gt;
+&lt;p&gt;The process for creating the project is simple. I’m going to assume that you already have all of your environment variables in place that we discussed in the &lt;a href=&#34;http://brandontreb.com/beginning-jailbroken-ios-development-building-and-deployment/&#34;&gt;last tutorial&lt;/a&gt;. If not, you will get errors.&lt;/p&gt;
+&lt;p&gt;Open the console, cd into the directory where you want to create your application and type the following command to create a new Tweak application.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’bash’&amp;gt;$THEOS/bin/nic.pl&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now, when prompted select the number &lt;a href=&#34;http://cl.ly/1u0l0U0y2I0T1g2s3D0O&#34;&gt;5&lt;/a&gt; for a tweak. Next, you will enter all of the information about your project. The resulting output should look like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’bash’&amp;gt;NIC 1.0 - New Instance Creator
+——————————
+  [1.] iphone/application
+  [2.] iphone/library
+  [3.] iphone/preference_bundle
+  [4.] iphone/tool
+  [5.] iphone/tweak
+Choose a Template (required): 5
+Project Name (required): WelcomeWagon 
+Package Name [com.yourcompany.welcomewagon]:                 
+Author/Maintainer Name [Brandon Trebitowski]: 
+MobileSubstrate Bundle filter [com.apple.springboard]: 
+Instantiating iphone/tweak in welcomewagon/…
+Done.&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;the-tweaks-file&#34;&gt;The Tweaks File&lt;/h4&gt;
+&lt;p&gt;Once your project has been created, you can open in up in your favorite editor. I prefer TextMate. Theos creates a file for you called Tweak.xm. This is a special file that will run through theos’s preprocessor in order to hook into the classes and methods that you specify. So, rather than us having to write tons of boilerplate/crazy hook code, Theos does that all for us with a nice interface.&lt;/p&gt;
+&lt;p&gt;By default, EVERYTHING in that file is commented out. It took me longer than I care to admit to figure that out when I created my first Jailbroken iOS app.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Preprocessor commands&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;There are a few commands that you need to know in order to hook into a class:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;%hook and %end&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’objc’&amp;gt;%hook Springboard
+// overwrite methods here
+%end&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The first command is called %hook followed by the name of the class you are hooking in to. You choose the methods to overwrite within the context of %hook className and %end. In the above code, we are saying that we want to hook into some methods in the SpringBoard class.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;%orig&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;When inside a method, the %orig command will call the original method. You can even pass arguments to the command like this %orig(arg1,arg2). One thing to note is, if you don’t call %orig, the original method will never be called. So, if you hook SpringBoard’s init command and fail to call %orig, SpringBoard will never start and your phone will be unusable until you delete your app via ssh.&lt;/p&gt;
+&lt;h4 id=&#34;hooking-into-springboard&#34;&gt;Hooking Into Springboard&lt;/h4&gt;
+&lt;p&gt;Open up Tweak.xm and add the following code. Don’t worry, I will explain it afterwards.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’objc’&amp;gt;#import &amp;lt;SpringBoard/SpringBoard.h&amp;gt;
+%hook SpringBoard
+
+
+-(void)applicationDidFinishLaunching:(id)application {
+%orig;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@&amp;ldquo;Welcome&amp;rdquo;
+message:@&amp;ldquo;Welcome to your iPhone Brandon!&amp;rdquo;
+delegate:nil
+cancelButtonTitle:@&amp;ldquo;Thanks&amp;rdquo;
+otherButtonTitles:nil];
+[alert show];
+[alert release];&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+}
+
+
+%end&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;OK, so what’s going on here. First, we import the Springboard.h header. This will allow us access to springboard. Next, we tell the preprocessor to hook into the Springboard class.&lt;/p&gt;
+&lt;p&gt;The method that we are overriding here is the applicationDidFinishLaunching: method. This will of course fire right when SpringBoard starts up. Notice that we make the %orig call. If we omit this, our phone would never boot up properly as SpringBoard needs it’s initialization method.&lt;/p&gt;
+&lt;p&gt;Finally, we just throw up a UIAlertView. Again, not too exciting, but you get the point.&lt;/p&gt;
+&lt;h4 id=&#34;adding-additional-frameworks&#34;&gt;Adding Additional Frameworks&lt;/h4&gt;
+&lt;p&gt;If you were to type build to build this project at this point you would see an error like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’bash’&amp;gt;Tweak.xm: In function ‘objc_object* $_ungrouped$SpringBoard$init(SpringBoard*, objc_selector*)’:
+Tweak.xm:6: error: declaration of ‘objc_object* self’ shadows a parameter&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This is because we depend on the UIKit framework to show alerts. In order to tell theos that we want to link in UIKit, we must create an addition to the Makefile. Add the following line to your Makefile.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’bash’&amp;gt;WelcomeWagon_FRAMEWORKS = UIKit&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This will ensure that UIKit gets linked in.&lt;/p&gt;
+&lt;h4 id=&#34;building-packaging-and-installing&#34;&gt;Building, Packaging, And Installing&lt;/h4&gt;
+&lt;p&gt;In the terminal, cd into your project’s directory. At this point, you can type make to simply build your project. Theos has provided a nice way to automatically install your library on your device. In order for it to work you must have the THEOS_DEVICE_IP environment variable set to your iPhone/iPod’s IP address. This is explained in the &lt;a href=&#34;http://brandontreb.com/beginning-jailbroken-ios-development-building-and-deployment/&#34;&gt;previous tutorial&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In the terminal type:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’bash’&amp;gt;make install&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This will build your tweak and install it on your device. When prompted to enter your password, the default is “alpine”. Also, make sure that SSH is installed on your device.&lt;/p&gt;
+&lt;p&gt;After installation, your device will respring and you will be greeted with your custom message like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2011/IMG_0001.PNG&#34; alt=&#34;Jailbroken App Development&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h4&gt;
+&lt;p&gt;You should now have a basic understand of how to patch any method inside of iOS. With this knowledge, you can customize ANYTHING that you don’t like about the device. If you have any questions or comments, feel free to leave them in the comments section of this post.&lt;/p&gt;
+&lt;p&gt;You can download the source code for this tutorial &lt;a href=&#34;http://cl.ly/1u0l0U0y2I0T1g2s3D0O&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Happy Jailbreaking!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;﻿﻿This post is part of &lt;a href=&#34;http://idevblogaday.com/&#34;&gt;iDevBlogADay&lt;/a&gt;, a group of indie iOS development blogs featuring two posts per day. You can keep up with iDevBlogADay through the &lt;a href=&#34;http://idevblogaday.com/&#34;&gt;web site&lt;/a&gt;, &lt;a href=&#34;http://feeds.feedburner.com/idevblogaday&#34;&gt;RSS feed&lt;/a&gt;, or &lt;a href=&#34;http://twitter.com/#search?q=%23idevblogaday&#34;&gt;Twitter&lt;/a&gt;.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>AppBlogger: A Tool For iOS App Developers And Bloggers</title>
+      <link>https://brandontreb.ngrok.io/2011/01/13/appblogger-a-tool-for-ios-app-developers-and-bloggers/</link>
+      <pubDate>Thu, 13 Jan 2011 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2011/01/13/appblogger-a-tool-for-ios-app-developers-and-bloggers/</guid>
+      <description>&lt;p&gt;Imagine that you have just found the coolest app in the world and just can’t wait to tell all of your followers about it. So, you head to the admin panel of your blogging engine (hopefully &lt;a href=&#34;http://wpwithlove.com&#34;&gt;WordPress&lt;/a&gt;) and begin to write your review. Now, you want to insert some screenshots, icons, descriptions, app store links, etc… So, what do you do? You head on over to Bing and type in &lt;a href=&#34;http://google.com&#34;&gt;google.com&lt;/a&gt;. Next, you search your app name and hopefully find the iTunes URL so that you can slowly grab some information about the app. #Fail&lt;/p&gt;
+&lt;p&gt;Dum duh dum duh (trumpet noises)!&lt;/p&gt;
+&lt;p&gt;Enter &lt;a href=&#34;http://brandontreb.com/apps/appBlogger&#34;&gt;AppBlogger&lt;/a&gt;. &lt;a href=&#34;http://brandontreb.com/apps/appBlogger&#34;&gt;AppBlogger&lt;/a&gt; is a little tool that I have been working on that uses “Instant Search” technology (jquery fanciness) to allow you to instantly search the app store and &lt;strong&gt;quickly&lt;/strong&gt; get the information you need.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/apps/appBlogger/&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2011/Screen-shot-2011-01-13-at-7.17.04-PM.png&#34; alt=&#34;&#34; title=&#34;Screen shot 2011-01-13 at 7.17.04 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How Does It Work?&lt;/strong&gt; (you say)&lt;/p&gt;
+&lt;p&gt;As you start typing, &lt;a href=&#34;http://brandontreb.com/apps/appBlogger/&#34;&gt;AppBlogger&lt;/a&gt; makes an asynchronous request to the iTunes web service and pulls a list of applications that match your search terms. This list is presented as a bunch of icons. You will then click on one of these icons to pull of the details page of that application.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2011/Screen-shot-2011-01-13-at-7.25.52-PM.png&#34; alt=&#34;&#34; title=&#34;Screen shot 2011-01-13 at 7.25.52 PM&#34;&gt;
+The details page (see above screenshot) then contains everything you need to write a stellar blog post about that application. It provides text fields (for easy copy and paste) with icon URLs, download URL, and screenshot URLs.&lt;/p&gt;
+&lt;p&gt;I have some plans to integrate this in the &lt;em&gt;near&lt;/em&gt; future with my &lt;a href=&#34;http://brandontreb.com/apps/linkshare&#34;&gt;Link Share&lt;/a&gt; tool to auto generate shortened URLs that contain your affiliate code (so you can make $). If you have any other suggestions for it, I would love to hear them.&lt;/p&gt;
+&lt;p&gt;I know many of you are heartbroken and were expecting the next iteration of my &lt;a href=&#34;http://brandontreb.com/creating-a-twitter-client-for-osx-part-1/&#34;&gt;Twitter Client For Mac&lt;/a&gt; series. I want you to know, you are not forgotten and I will continue the series next Thursday. So Stay Tuned!&lt;/p&gt;
+&lt;p&gt;Check out &lt;a href=&#34;http://brandontreb.com/apps/appBlogger&#34;&gt;AppBlogger&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;﻿﻿This post is part of &lt;a href=&#34;http://idevblogaday.com/&#34;&gt;iDevBlogADay&lt;/a&gt;, a group of indie iOS development blogs featuring two posts per day. You can keep up with iDevBlogADay through the &lt;a href=&#34;http://idevblogaday.com/&#34;&gt;web site&lt;/a&gt;, &lt;a href=&#34;http://feeds.feedburner.com/idevblogaday&#34;&gt;RSS feed&lt;/a&gt;, or &lt;a href=&#34;http://twitter.com/#search?q=%23idevblogaday&#34;&gt;Twitter&lt;/a&gt;.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Image Manipulation: Retrieving And Updating Pixel Values For A UIImage</title>
+      <link>https://brandontreb.ngrok.io/2011/01/06/image-manipulation-retrieving-and-updating-pixel-values-for-a-uiimage/</link>
+      <pubDate>Thu, 06 Jan 2011 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2011/01/06/image-manipulation-retrieving-and-updating-pixel-values-for-a-uiimage/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2011/01/jobs.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2011/jobs.png&#34; alt=&#34;&#34; title=&#34;jobs&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Grayscale Jobs&lt;/p&gt;
+&lt;p&gt;With the recent success of cool photo manipulation apps such as Camera+ and Instagram, it got me wondering. How do these photo apps modify the pixel data of the image.&lt;/p&gt;
+&lt;p&gt;After doing a bit of research on the subject, I found countless posts on Stack Overflow and the Developer forums about various methods to get and set the pixel values of a UIImage. Most of them unanswered or partially answered. I tested out many solutions and banged my head on my computer into the whee hours of the morning with no success. Every solution I tried seemed to completely destroy the image.&lt;/p&gt;
+&lt;p&gt;It wasn’t until this morning, I had an “aha” moment, changed one line of code and was able to produce a grayscale version of a UIImage.&lt;/p&gt;
+&lt;p&gt;Having the ability to get and set pixel values of a UIImage is super important if you want to create a photo related app that has “Filters”. Once you know the basics, you can apply your ninja math skillz to implement cool filter algorithms on the pixels. Below, I will show you onc such algorithm for converting an image to grayscale (it’s not &lt;em&gt;that&lt;/em&gt; clever).&lt;/p&gt;
+&lt;p&gt;I should note, that a good majority of my code comes from Olie’s solution on this &lt;a href=&#34;http://stackoverflow.com/questions/448125/how-to-get-pixel-data-from-a-uiimage-cocoa-touch-or-cgimage-core-graphics&#34;&gt;Stack Overflow post&lt;/a&gt;. His example simply returns and array of UIColor objects for a given image. Mine will modify those colors and write them back to a UIImage.&lt;/p&gt;
+&lt;h4 id=&#34;converting-a-uiimage-into-a-pixel-array&#34;&gt;Converting A UIImage Into A Pixel Array&lt;/h4&gt;
+&lt;p&gt;Here is the first part of our grayscale method. It is creating a char array from a global UIImage property named workingImage.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’objc’&amp;gt;- (IBAction) grayscale:(id) sender {
+    CGContextRef ctx;
+    CGImageRef imageRef = [self.workingImage CGImage];
+    NSUInteger width = CGImageGetWidth(imageRef);
+    NSUInteger height = CGImageGetHeight(imageRef);
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    unsigned char *rawData = malloc(height * width * 4);
+    NSUInteger bytesPerPixel = 4;
+    NSUInteger bytesPerRow = bytesPerPixel * width;
+    NSUInteger bitsPerComponent = 8;
+    CGContextRef context = CGBitmapContextCreate(rawData, width, height,
+    bitsPerComponent, bytesPerRow, colorSpace,
+    kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
+    CGColorSpaceRelease(colorSpace);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;CGContextDrawImage(context, CGRectMake(0, 0, width, height), imageRef);
+CGContextRelease(context);
+.
+.
+.&amp;lt;/code&amp;gt;&lt;/pre&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This is a lot of Core Graphics fanciness that isn’t super important to understand. It’s just getting the RGBA values from the image and writing them into the rawData char array. There are 4 bytes per pixel (red, green, blue, alpha), so this array contains 4 * height * width elements.&lt;/p&gt;
+&lt;h4 id=&#34;modifying-the-pixels-of-a-uiimage&#34;&gt;Modifying The Pixels of a UIImage&lt;/h4&gt;
+&lt;p&gt;Here is where the magic happens. You can replace this code with the logic necessary to apply the filter you are making. Another clever way to approach this would be to pass this code in as a block into the method (I’ll leave that as an exercise for the reader :)).&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’objc’&amp;gt;.
+.
+.
+    int byteIndex = 0;
+    for (int ii = 0 ; ii &amp;lt; width * height ; ++ii)
+    {
+    int outputColor = (rawData[byteIndex] + rawData[byteIndex+1] +
+        rawData[byteIndex+2]) / 3;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;rawData[byteIndex] = (char) (outputColor);
+rawData[byteIndex+1] = (char) (outputColor);
+rawData[byteIndex+2] = (char) (outputColor);&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;byteIndex += 4;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;}&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+.
+.
+.&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The first part is pretty straight forward, we have a for loop that goes from 0 to width * height. We index into the rawData array using a counter that we increment by 4 each time (remember 4 bytes per pixel). As you can imagine, the first pixel (rawData[byteIndex]) represents the red pixel, then green for +1, blue for +2, and finally alpha for +3. Note that the alpha byte is last because kCGImageAlphaPremultipliedLast flag above.&lt;/p&gt;
+&lt;p&gt;In order to do grayscale, we simple set all of the color values to the average color value. So, for example the color [218,232,244] (which is the light blue color of the WordPress editor’s toolbar) would be converted to [231,231,231] which is a fairly light gray color.&lt;/p&gt;
+&lt;p&gt;The most important step that everyone in the forums seemed to miss was casting the new value to a char. Remember we are using a char array, setting ints as values will generally screw up your image. (This was my “aha” moment that I mentioned above)&lt;/p&gt;
+&lt;h4 id=&#34;writing-the-pixels-back-to-a-uiimage&#34;&gt;Writing The Pixels Back To a UIImage&lt;/h4&gt;
+&lt;p&gt;The final step is to write the pixel data back to a UIImage. Again, I borrowed some of this code from somewhere else and unfortunately lost the link. If I find it, I will update the post.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’objc’&amp;gt;.
+.
+.
+    ctx = CGBitmapContextCreate(rawData,
+        CGImageGetWidth( imageRef ),
+        CGImageGetHeight( imageRef ),
+        8,
+        CGImageGetBytesPerRow( imageRef ),
+        CGImageGetColorSpace( imageRef ),
+        kCGImageAlphaPremultipliedLast ); 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;imageRef = CGBitmapContextCreateImage (ctx);
+UIImage* rawImage = [UIImage imageWithCGImage:imageRef];&lt;br&gt;
+CGContextRelease(ctx);&lt;/p&gt;
+&lt;p&gt;self.workingImage = rawImage;&lt;/p&gt;
+&lt;p&gt;free(rawData);&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+}&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;All we are doing here is creating a new Bitmap Context, writing it to our CGImageRef and constructing a new UIImage from that CGImageRef. Finally, we just update our workingImage with the modified one. Fancy, I know…&lt;/p&gt;
+&lt;p&gt;Now, much of this code is to work with my example (download below), but it could easily be tweaked to fit within your super awesome photo app. If you have any questions or comments PLEASE leave them here or send them to me on Twitter (but probably leave them here 😉 ).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2011/01/ImageManip.zip&#34;&gt;Download The Sample Source Project&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Note on the sample code: Before you give me crap about doing this in the main thread, I know. Don’t do these operation on the main thread. The example is meant to be quick and dirty and by no means is ready for production. Enjoy!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;﻿﻿This post is part of &lt;a href=&#34;http://idevblogaday.com/&#34;&gt;iDevBlogADay&lt;/a&gt;, a group of indie iOS development blogs featuring two posts per day. You can keep up with iDevBlogADay through the &lt;a href=&#34;http://idevblogaday.com/&#34;&gt;web site&lt;/a&gt;, &lt;a href=&#34;http://feeds.feedburner.com/idevblogaday&#34;&gt;RSS feed&lt;/a&gt;, or &lt;a href=&#34;http://twitter.com/#search?q=%23idevblogaday&#34;&gt;Twitter&lt;/a&gt;.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Promoting Your Other Apps Within Your Apps</title>
+      <link>https://brandontreb.ngrok.io/2010/11/25/promoting-your-other-apps-within-your-apps/</link>
+      <pubDate>Thu, 25 Nov 2010 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2010/11/25/promoting-your-other-apps-within-your-apps/</guid>
+      <description>&lt;p&gt;First off, Happy Thanksgiving to my American readers. And a happy Thursday to everyone else. I’m sitting here on Thursday morning drinking coffee and eating Sticky Buns (kind of like gooey doughnuts). It’s been a hectic week of family and travel, so please forgive me if this is not the most verbose post.&lt;/p&gt;
+&lt;p&gt;Showing your other applications within each of your applications (wow, the word application is starting to lose meaning) can have a tremendous impact on your sales. It’s a great way to promote your other apps for free and will give them much more exposure across a wider audience. Moving all of the promotion logic out to the web allows you to dynamically add and remove apps from the view without updating your apps in the store.&lt;/p&gt;
+&lt;p&gt;[Insert Cool Graph Backing This Statement Up Here] //I’m not that cool yet &lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2010/frownie.png&#34; alt=&#34;:(&#34;&gt;&lt;/p&gt;
+&lt;p&gt;We have seen this in many popular apps. Here is a screenshot from an iDevBlogADay veteran &lt;a href=&#34;http://www.streamingcolour.com/blog/&#34;&gt;Owen Goss&lt;/a&gt; promoting his other applications from inside of &lt;a href=&#34;http://www.streamingcolour.com/games/landformer/&#34;&gt;LandFormer&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2010/11/promo.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2010/promo-500x333.png&#34; alt=&#34;&#34; title=&#34;promo&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We are going to learn how to make something similar and I will provide you with a web template as well as the view controller to load it.&lt;/p&gt;
+&lt;h4 id=&#34;download-the-template&#34;&gt;Download The Template&lt;/h4&gt;
+&lt;p&gt;So, I’m sure there are a million more “elegant” ways to display your apps, but I went for super simple. So, 1337 web dev idevblogadayers, please go easy on me in the comments. Download the code below and look in the Web folder.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2010/11/promotion2.zip&#34;&gt;Download The Code Files Here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here is a screenshot of what the template will look like:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2010/11/Screen-shot-2010-11-25-at-11.51.07-AM.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2010/Screen-shot-2010-11-25-at-11.51.07-AM-500x266.png&#34; alt=&#34;&#34; title=&#34;Screen shot 2010-11-25 at 11.51.07 AM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It will also work in portrait mode.&lt;/p&gt;
+&lt;h4 id=&#34;upload-the-template-files-to-your-web-server-and-replace-my-sample-data&#34;&gt;Upload The Template Files To Your Web Server And Replace My Sample Data&lt;/h4&gt;
+&lt;p&gt;If you have your own website (which you probably should 😉 ), upload the template files to a subdirectory. If not, or you don’t want to waste bandwidth on it, you can always &lt;a href=&#34;http://wiki.dropbox.com/TipsAndTricks/HostWebsites&#34;&gt;host the files on Dropbox&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Next, upload your icons (the template auto rounds the corners so you can just use the one’s bundled with your app) and replace my sample images with yours.&lt;/p&gt;
+&lt;p&gt;Finally, replace the URL’s with the URLs to your applications. You can also add/remove table cells to match the number of applications you are promoting.&lt;/p&gt;
+&lt;h4 id=&#34;add-the-promotion-code-to-your-iphone-app&#34;&gt;Add The Promotion Code To Your iPhone App&lt;/h4&gt;
+&lt;p&gt;Look in the iPhone folder from the unzipped file you downloaded above and copy the following 3 files into your project:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PromotionViewController.m&lt;/li&gt;
+&lt;li&gt;PromotionViewController.h&lt;/li&gt;
+&lt;li&gt;PromotionViewController.xib&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Check the box to copy them into your project folder when prompted.&lt;/p&gt;
+&lt;p&gt;We will now take a look at how to display the promotion view when a button is clicked.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’objc’&amp;gt;- (IBAction) moreAppsTouched:(id) sender {
+    PromotionViewController *controller = [[PromotionViewController alloc]
+        initWithNibName:@&amp;#34;PromotionViewController&amp;#34;
+        bundle:[NSBundle mainBundle]];
+    controller.promotionAddress = @&amp;#34;http://brandontreb.com/apps/idevblogaday/promotion.html&amp;#34;;
+    [self presentModalViewController:controller animated:YES];
+    [controller release];
+}&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Make sure you set controller.promotionAddress to the web address of your promotion.html file.&lt;/p&gt;
+&lt;p&gt;And there you have it! When the user tapps on a button it will display our promotion view modally and will load up your promo page. I have provided a sample application that pulls up the promotion view when a button has been clicked.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2010/11/PromotionTest1.zip&#34;&gt;Download The Sample App Here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you have any questions or comments, feel free to leave them in the comments.&lt;/p&gt;
+&lt;p&gt;Happy Coding!&lt;/p&gt;
+&lt;p&gt;—-&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;﻿﻿This post is part of &lt;a href=&#34;http://idevblogaday.com/&#34;&gt;iDevBlogADay&lt;/a&gt;, a group of indie iOS development blogs featuring two posts per day. You can keep up with iDevBlogADay through the &lt;a href=&#34;http://idevblogaday.com/&#34;&gt;web site&lt;/a&gt;, &lt;a href=&#34;http://feeds.feedburner.com/idevblogaday&#34;&gt;RSS feed&lt;/a&gt;, or &lt;a href=&#34;http://twitter.com/#search?q=%23idevblogaday&#34;&gt;Twitter&lt;/a&gt;.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="404" />
+  <meta name="twitter:description" content="You've been Haacked is a blog about Technology, Software, Management, and Open Source. It's full of good stuff.
+" />
+  <meta name="twitter:url" content="https://haacked.com" />
+  <meta name="twitter:image" content="https://2.gravatar.com/avatar/cdf546b601bf29a7eb4ca777544d11cd?s=160" /><meta name="twitter:site" content="@haacked" />
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>404 | You’ve Been Haacked</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="404" />
+<meta name="author" content="Phil Haack" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="You’ve been Haacked is a blog about Technology, Software, Management, and Open Source. It’s full of good stuff." />
+<meta property="og:description" content="You’ve been Haacked is a blog about Technology, Software, Management, and Open Source. It’s full of good stuff." />
+<link rel="canonical" href="https://haacked.com/404.html" />
+<meta property="og:url" content="https://haacked.com/404.html" />
+<meta property="og:site_name" content="You’ve Been Haacked" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="404" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Phil Haack"},"description":"You’ve been Haacked is a blog about Technology, Software, Management, and Open Source. It’s full of good stuff.","headline":"404","url":"https://haacked.com/404.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link type="application/atom+xml" rel="alternate" href="https://haacked.com/atom.xml" title="You've Been Haacked" />
+  
+    <script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-177588-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+  <script src="/assets/js/utils.js"></script>
+  <script src="/assets/js/slash.js" async></script>
+  
+	<script src="/assets/js/md5.min.js" async></script>
+  <script src="/assets/js/comment-box.js" async></script>
+  
+  <link href="https://fonts.googleapis.com/css?family=Mate|Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
+</head>
+
+  <body>
+    <header class="header" class="inner"><div class="site-header">
+  <div class="profilepic">
+    
+    <img src="https://2.gravatar.com/avatar/cdf546b601bf29a7eb4ca777544d11cd?s=160" alt="Profile Picture" />
+    
+  </div>
+
+  
+  <a class="site-title" rel="author" href="/">You&#39;ve Been Haacked</a>
+  
+  <div class="site-subtitle">…and you like it</div>
+  
+  
+  
+    <nav class="site-nav">
+      <ul>
+          
+          
+          
+          
+          <li><a class="page-link" href="/about/">About</a></li>
+          
+        
+          
+          
+          
+          <li><a class="page-link" href="/archives/">Archives</a></li>
+          
+        
+          
+          
+          
+          <li><a class="page-link" href="/contributors/">Contributors</a></li>
+          
+        
+        
+        <li><a class="page-link" href="https://github.com/Haacked/feedback/issues/new">Contact</a></li>
+        
+      </ul>
+    </nav>
+  
+  <div class="social-footer">
+    <ul class="social-media-list">
+  
+  
+  
+  <li><a href="https://github.com/haacked"><svg class="svg-icon"><use xlink:href="/assets/svg/minima-social-icons.svg#github"></use></svg> <span class="username">haacked</span></a></li>
+  
+  
+  
+  <li><a href="https://twitter.com/haacked"><svg class="svg-icon"><use xlink:href="/assets/svg/minima-social-icons.svg#twitter"></use></svg> <span class="username">haacked</span></a></li>
+  <li><a rel="me" href="https://hachyderm.io/@haacked"><svg class="svg-icon"><use xlink:href="/assets/svg/minima-social-icons.svg#mastodon"></use></svg> <span class="username">@haacked@hachyderm.io</span></a></li>
+  
+  
+  <li><a href="http://feeds.haacked.com/haacked"><svg class="svg-icon"><use xlink:href="/assets/svg/minima-social-icons.svg#rss"></use></svg> <span>rss</span></a></li>
+</ul>
+
+
+<!--  viewBox="0 1 16 14" -->
+  </div>
+</div>
+</header>
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="page">
+
+  <header class="post-header">
+    <h1 class="post-title">404</h1>
+  </header>
+
+  <div class="post-content">
+    <p><strong>Page not found :(</strong></p>
+
+<p>The requested page could not be found.</p>
+
+  </div>
+
+</article>
+
+      </div>
+      <footer class="site-footer h-card">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">
+            
+              Phil Haack
+            
+            </li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+  
+  
+  
+  <li><a href="https://github.com/haacked"><svg class="svg-icon"><use xlink:href="/assets/svg/minima-social-icons.svg#github"></use></svg> <span class="username">haacked</span></a></li>
+  
+  
+  
+  <li><a href="https://twitter.com/haacked"><svg class="svg-icon"><use xlink:href="/assets/svg/minima-social-icons.svg#twitter"></use></svg> <span class="username">haacked</span></a></li>
+  <li><a rel="me" href="https://hachyderm.io/@haacked"><svg class="svg-icon"><use xlink:href="/assets/svg/minima-social-icons.svg#mastodon"></use></svg> <span class="username">@haacked@hachyderm.io</span></a></li>
+  
+  
+  <li><a href="http://feeds.haacked.com/haacked"><svg class="svg-icon"><use xlink:href="/assets/svg/minima-social-icons.svg#rss"></use></svg> <span>rss</span></a></li>
+</ul>
+
+
+<!--  viewBox="0 1 16 14" -->
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>You&#39;ve been Haacked is a blog about Technology, Software, Management, and Open Source. It&#39;s full of good stuff.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+    </main>
+  </body>
+</html>

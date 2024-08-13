@@ -1,0 +1,56 @@
+<rss version="2.0">
+  <channel>
+    <title>article on Hack The Planet</title>
+    <link>https://brandontreb.ngrok.io/tags/article/</link>
+    <description></description>
+    
+    <language>en-us</language>
+    
+    <lastBuildDate>Tue, 01 May 2012 00:00:00 -0600</lastBuildDate>
+    
+    <item>
+      <title>Why you Should Check Out Unity</title>
+      <link>https://brandontreb.ngrok.io/2012/05/01/why-you-should-check-out-unity/</link>
+      <pubDate>Tue, 01 May 2012 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2012/05/01/why-you-should-check-out-unity/</guid>
+      <description>&lt;p&gt;A while back, my buddy &lt;a href=&#34;http://twitter.com/seantron&#34;&gt;seantron&lt;/a&gt; showed me some of his 3D games he’d been working on &lt;a href=&#34;http://itunes.apple.com/us/app/hamsteria!/id470730689?mt=8&#34;&gt;including this one&lt;/a&gt;. My initial reaction was “how the heck did he get the chopps to do that?”. While, Sean is an incredible developer with a ton of creativity, doing things like loading models, texture mapping, or even basic 3D projects are flippin hard.&lt;/p&gt;
+&lt;p&gt;A while back I &lt;a href=&#34;http://brandontreb.com/ludum-dare-competition-week-2-update/&#34;&gt;tried my hand at 3D&lt;/a&gt; and made sort of a &lt;em&gt;basic&lt;/em&gt; Minecraft style game from scratch using OpenGL ES. Let me tell you, it was brutal (and I have been coding for almost 10 years). This project took me a week or so to ramp up, get basic cubes and textures going and a simple first person view.&lt;/p&gt;
+&lt;h4 id=&#34;enter-unity&#34;&gt;Enter Unity&lt;/h4&gt;
+&lt;p&gt;Sean had mentioned to me that he used this 3D engine called Unity to create his games. While I had tried XNA, I had never heard of Unity and figured it was similar (basically a framework with some convenience methods for loading models, mapping, etc…). Boy was I wrong…&lt;/p&gt;
+&lt;p&gt;Unity 3D is more than just an engine. It is an application that allows even the most novice of developers to create beautiful, rich, 3D games. I’m serious. Check out this demo below of an app I made in unity in about 3 hours using &lt;a href=&#34;http://active.tutsplus.com/tutorials/unity/getting-started-with-unity/&#34;&gt;this tutorial&lt;/a&gt;. The crazy part is, I wrote &lt;em&gt;almost&lt;/em&gt; no code. Much of the interactions and game were developed using drag and drop and &lt;strong&gt;free&lt;/strong&gt; assets.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://dl.dropbox.com/u/1574088/unity/tuts-plus/TutsPlus.html&#34;&gt;Link to my awesome game&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h4&gt;
+&lt;p&gt;I was very reluctant to learn Unity at first as the interface appears to be a bit daunting. However, once you check out a few tutorials, it becomes second nature. Here are a few places to get started:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.youtube.com/watch?v=QMWhtKjUr10&#34;&gt;InfinitAmmo’s Unity 3D tutorial series&lt;/a&gt; – This was where I first began. He does a great job at going over the basics of Unity while keeping things interesting.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://active.tutsplus.com/tutorials/unity/getting-started-with-unity/&#34;&gt;Getting Started With Unity on Active Tuts+&lt;/a&gt; – This is where I made the game you checked out above. Take an hour and do the first in the series, you will be very surprised with the outcome.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://unity3d.com/support/resources/tutorials/&#34;&gt;Unity 3D tutorials&lt;/a&gt; – Unity has a wealth of information and demo projects on their website. They come with the source and comprehensive PDFs detailing various aspects of each of their demo games.&lt;/p&gt;
+&lt;p&gt;After completing at least the top two series’, you &lt;em&gt;should&lt;/em&gt; have enough knowledge to begin hacking on a game of your own. I know that I do &lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2012/simple-smile.png&#34; alt=&#34;:)&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h4&gt;
+&lt;p&gt;I hope this has been enlightening and I really urge you to check out Unity.&lt;/p&gt;
+&lt;p&gt;Happing Coding!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://unity3d.com/&#34;&gt;Unity 3D’s Website&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;﻿﻿This post is part of &lt;a href=&#34;http://idevblogaday.com/&#34;&gt;iDevBlogADay&lt;/a&gt;, a group of indie iOS development blogs featuring two posts per day. You can keep up with iDevBlogADay through the &lt;a href=&#34;http://idevblogaday.com/&#34;&gt;web site&lt;/a&gt;, &lt;a href=&#34;http://feeds.feedburner.com/idevblogaday&#34;&gt;RSS feed&lt;/a&gt;, or &lt;a href=&#34;http://twitter.com/#search?q=%23idevblogaday&#34;&gt;Twitter&lt;/a&gt;.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>I Suck At Blogging (Lately)</title>
+      <link>https://brandontreb.ngrok.io/2012/04/27/i-suck-at-blogging-lately/</link>
+      <pubDate>Fri, 27 Apr 2012 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2012/04/27/i-suck-at-blogging-lately/</guid>
+      <description>&lt;p&gt;OK, so the title isn’t entirely true (I have maintained quite a few blogs in my day). But, one thing is for sure, I have sucked at blogging &lt;strong&gt;lately&lt;/strong&gt;. So much so, I just had to think hard about having to bold lately using markdown in the previous sentence &lt;em&gt;#meta&lt;/em&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;burnout&#34;&gt;Burnout&lt;/h4&gt;
+&lt;p&gt;I was blogging very consistently for the &lt;a href=&#34;http://envato.com&#34;&gt;Envato Network&lt;/a&gt; on their &lt;a href=&#34;http://mobile.tutsplus.com&#34;&gt;Mobile Tuts Plus&lt;/a&gt; as well as on &lt;a href=&#34;http://icodeblog.com&#34;&gt;iCodeBlog&lt;/a&gt; and here. Eventually, I got burnt out and gave up blogging on every blog (for the month).&lt;/p&gt;
+&lt;p&gt;What happened was, I was blogging to make money (Envato pays $250/post!) and no longer for fun. This sucks and I was missing deadlines and writing crappy content which needed much revision.&lt;/p&gt;
+&lt;h4 id=&#34;new-plan&#34;&gt;New Plan&lt;/h4&gt;
+&lt;p&gt;Write here only (for fun!) and infrequently on icode if time permits as I can do that during work time 😉 That being said, expect to see more content here for better or worse. Once a week is the new goal.&lt;/p&gt;
+&lt;h4 id=&#34;shutup&#34;&gt;Shutup&lt;/h4&gt;
+&lt;p&gt;That’s what you are saying to me. I hate these “Sorry I haven’t been around in a while. I promise to post more” posts that are usually the last posts on a blog for like 5 years just as much as you do. Let’s hope that’s not the case here. You will just have to trust me and &lt;a href=&#34;http://feeds.feedburner.com/brandontreb&#34;&gt;subscribe&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Also, I have a sweet new theme from &lt;a href=&#34;http://jekyllbootstrap.com/&#34;&gt;Jekyll Bootstrap&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

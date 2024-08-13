@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>
+      
+      Hack The Planet - Promoting Your Other Apps Within Your Apps
+      
+  </title>
+
+  <meta name="description" content="this is meta :)">
+
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%f0%9f%a6%a0</text></svg>">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/custom.css">
+  <link rel="canonical" href="https://brandontreb.ngrok.io/2010/11/25/promoting-your-other-apps-within-your-apps/">
+
+	<link rel="me" href="https://brandontreb.ngrok.io" />
+	
+	
+	
+	<link rel="authorization_endpoint" href="/indieauth/auth" />
+	<link rel="token_endpoint" href="/indieauth/token" />
+	<link rel="micropub" href="https://brandontreb.ngrok.io/micropub" />
+	<link rel="microsub" href="https://brandontreb.ngrok.io/microsub" />
+	<link rel="webmention" href="https://brandontreb.ngrok.io/webmention" />	
+  
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Hack The Planet</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+		
+			
+				<a class="page-link" href="/archive/">Archive</a>
+			
+		
+			
+				<a class="page-link" href="/photos/">Photos</a>
+			
+		
+			
+				<a class="page-link" href="/replies/">Replies</a>
+			
+		
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+		
+<div class="post h-entry">
+
+  <header class="post-header">
+	
+	  	<h1 class="p-name">Promoting Your Other Apps Within Your Apps</h1>
+  	
+    <p class="post-meta">
+	<a href="https://brandontreb.ngrok.io/2010/11/25/promoting-your-other-apps-within-your-apps/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2010-11-25 01:00:00 -0600">Nov 25, 2010</time></span></a>
+	
+	</p>
+  </header>
+
+  <article class="post-content e-content">
+	<p>First off, Happy Thanksgiving to my American readers. And a happy Thursday to everyone else. I’m sitting here on Thursday morning drinking coffee and eating Sticky Buns (kind of like gooey doughnuts). It’s been a hectic week of family and travel, so please forgive me if this is not the most verbose post.</p>
+<p>Showing your other applications within each of your applications (wow, the word application is starting to lose meaning) can have a tremendous impact on your sales. It’s a great way to promote your other apps for free and will give them much more exposure across a wider audience. Moving all of the promotion logic out to the web allows you to dynamically add and remove apps from the view without updating your apps in the store.</p>
+<p>[Insert Cool Graph Backing This Statement Up Here] //I’m not that cool yet <img src="/uploads/2010/frownie.png" alt=":("></p>
+<p>We have seen this in many popular apps. Here is a screenshot from an iDevBlogADay veteran <a href="http://www.streamingcolour.com/blog/">Owen Goss</a> promoting his other applications from inside of <a href="http://www.streamingcolour.com/games/landformer/">LandFormer</a>.</p>
+<p><a href="http://brandontreb.com/wp-content/uploads/2010/11/promo.png"><img src="/uploads/2010/promo-500x333.png" alt="" title="promo"></a></p>
+<p>We are going to learn how to make something similar and I will provide you with a web template as well as the view controller to load it.</p>
+<h4 id="download-the-template">Download The Template</h4>
+<p>So, I’m sure there are a million more “elegant” ways to display your apps, but I went for super simple. So, 1337 web dev idevblogadayers, please go easy on me in the comments. Download the code below and look in the Web folder.</p>
+<p><a href="http://brandontreb.com/wp-content/uploads/2010/11/promotion2.zip">Download The Code Files Here</a></p>
+<p>Here is a screenshot of what the template will look like:</p>
+<p><a href="http://brandontreb.com/wp-content/uploads/2010/11/Screen-shot-2010-11-25-at-11.51.07-AM.png"><img src="/uploads/2010/Screen-shot-2010-11-25-at-11.51.07-AM-500x266.png" alt="" title="Screen shot 2010-11-25 at 11.51.07 AM"></a></p>
+<p>It will also work in portrait mode.</p>
+<h4 id="upload-the-template-files-to-your-web-server-and-replace-my-sample-data">Upload The Template Files To Your Web Server And Replace My Sample Data</h4>
+<p>If you have your own website (which you probably should 😉 ), upload the template files to a subdirectory. If not, or you don’t want to waste bandwidth on it, you can always <a href="http://wiki.dropbox.com/TipsAndTricks/HostWebsites">host the files on Dropbox</a>.</p>
+<p>Next, upload your icons (the template auto rounds the corners so you can just use the one’s bundled with your app) and replace my sample images with yours.</p>
+<p>Finally, replace the URL’s with the URLs to your applications. You can also add/remove table cells to match the number of applications you are promoting.</p>
+<h4 id="add-the-promotion-code-to-your-iphone-app">Add The Promotion Code To Your iPhone App</h4>
+<p>Look in the iPhone folder from the unzipped file you downloaded above and copy the following 3 files into your project:</p>
+<ul>
+<li>PromotionViewController.m</li>
+<li>PromotionViewController.h</li>
+<li>PromotionViewController.xib</li>
+</ul>
+<p>Check the box to copy them into your project folder when prompted.</p>
+<p>We will now take a look at how to display the promotion view when a button is clicked.</p>
+<pre tabindex="0"><code>&lt;code class=’objc’&gt;- (IBAction) moreAppsTouched:(id) sender {
+    PromotionViewController *controller = [[PromotionViewController alloc]
+        initWithNibName:@&#34;PromotionViewController&#34;
+        bundle:[NSBundle mainBundle]];
+    controller.promotionAddress = @&#34;http://brandontreb.com/apps/idevblogaday/promotion.html&#34;;
+    [self presentModalViewController:controller animated:YES];
+    [controller release];
+}&lt;/code&gt;
+</code></pre><p>Make sure you set controller.promotionAddress to the web address of your promotion.html file.</p>
+<p>And there you have it! When the user tapps on a button it will display our promotion view modally and will load up your promo page. I have provided a sample application that pulls up the promotion view when a button has been clicked.</p>
+<p><a href="http://brandontreb.com/wp-content/uploads/2010/11/PromotionTest1.zip">Download The Sample App Here</a></p>
+<p>If you have any questions or comments, feel free to leave them in the comments.</p>
+<p>Happy Coding!</p>
+<p>—-</p>
+<p><em><strong>﻿﻿This post is part of <a href="http://idevblogaday.com/">iDevBlogADay</a>, a group of indie iOS development blogs featuring two posts per day. You can keep up with iDevBlogADay through the <a href="http://idevblogaday.com/">web site</a>, <a href="http://feeds.feedburner.com/idevblogaday">RSS feed</a>, or <a href="http://twitter.com/#search?q=%23idevblogaday">Twitter</a>.</strong></em></p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+	<div id="post-meta" class="clearfix p-author h-card">
+  <a href="/" class="u-url" rel="me">
+  <img class="u-photo avatar" src="https://brandontreb.ngrok.io/avatar.png" width="96" height="96">
+  <div>
+    <span class="p-name dark">|ZeroCool|</span>
+    <span><a href="https://brandontreb.ngrok.io">@</a></span>
+    <p class="p-note"></p>
+  </div>	
+  </a>
+</div>
+  </article>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-3">
+        <p class="text"></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+    
+    
+    
+  </body>
+
+</html>

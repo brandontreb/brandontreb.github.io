@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>
+      
+      Hack The Planet - My Journey To Create The inPulseNotifier For Jailbroken iPhones &amp;#8211; Part 1
+      
+  </title>
+
+  <meta name="description" content="this is meta :)">
+
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%f0%9f%a6%a0</text></svg>">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/custom.css">
+  <link rel="canonical" href="https://brandontreb.ngrok.io/2011/04/12/my-journey-to-create-the-inpulsenotifier-for-jailbroken-iphones-part-1/">
+
+	<link rel="me" href="https://brandontreb.ngrok.io" />
+	
+	
+	
+	<link rel="authorization_endpoint" href="/indieauth/auth" />
+	<link rel="token_endpoint" href="/indieauth/token" />
+	<link rel="micropub" href="https://brandontreb.ngrok.io/micropub" />
+	<link rel="microsub" href="https://brandontreb.ngrok.io/microsub" />
+	<link rel="webmention" href="https://brandontreb.ngrok.io/webmention" />	
+  
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Hack The Planet</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+		
+			
+				<a class="page-link" href="/archive/">Archive</a>
+			
+		
+			
+				<a class="page-link" href="/photos/">Photos</a>
+			
+		
+			
+				<a class="page-link" href="/replies/">Replies</a>
+			
+		
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+		
+<div class="post h-entry">
+
+  <header class="post-header">
+	
+	  	<h1 class="p-name">My Journey To Create The inPulseNotifier For Jailbroken iPhones &amp;#8211; Part 1</h1>
+  	
+    <p class="post-meta">
+	<a href="https://brandontreb.ngrok.io/2011/04/12/my-journey-to-create-the-inpulsenotifier-for-jailbroken-iphones-part-1/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2011-04-12 00:00:00 -0600">Apr 12, 2011</time></span></a>
+	
+	</p>
+  </header>
+
+  <article class="post-content e-content">
+	<p>Many of you may have seen my tweets or blog posts regarding my development of a native iOS interface for the <a href="http://getinpulse.com">inPulse Watch</a>. I just wanted to share a bit with you about the development process and talk about my updates moving forward.</p>
+<h4 id="what-is-the-inpulse-watch">What is the inPulse Watch?</h4>
+<p>For those of you who don’t know, the inPulse watch is a programmable wristwatch with a bluetooth controller. It can run a single app at a time on top of it’s firmware that is installed on the watch via a bluetooth interface with your computer. People have written all sorts of apps from analog clocks to roguelikes and Connway’s Game of Life. Check out <a href="http://inpulsewatch.com/watchapps.asp">http://inpulsewatch.com/watchapps.asp</a> to see the latest apps.</p>
+<p><img src="/uploads/2011/inPulse.png" alt=""><br>
+<img src="/uploads/2011/logo14.JPG" alt=""><br>
+<img src="/uploads/2011/logo12.jpg" alt=""></p>
+<p>&amp;nbsp</p>
+<h4 id="it-begins">It Begins</h4>
+<p>After waiting about 10 days for my watch (yeah it’s a long waiting period since they have seen quite a bit of recent success), it finally came in the mail. Enthusiastically, I opened it up and followed their <a href="http://www.getinpulse.com/guide/">getting started guide</a>. Within a few minutes I was running some of the sample applications in the forums.</p>
+<h4 id="no-ios-support">No iOS Support?</h4>
+<p>One of the coolest features of the watch is the ability to have your smartphone notifications show up on it. You are able to read SMS, Email, Calendar, etc… for a wide variety of Blackberry and Android phones.</p>
+<p>After digging around a bit, I was disappointed to see that there was limited (no) iPhone support. They had some old file that used BTStack at some point to communicate a simple canned message to the iPhone. No documentation, no support, nada.</p>
+<h4 id="building-the-app">Building The App</h4>
+<p><img src="/uploads/2011/logo?cct=1278342571" alt="">
+As I had no experience developing for a jailbroken iPhone, I had no idea how to even compile this sample app. So, I used the Google machine and found the <a href="http://code.google.com/p/btstack/">Google repository</a> for BTStack (the bluetooth library of choice for jailbroken iOS apps). I was able to download the source and build a sample application that basically connected my iPhone to a bluetooth device.</p>
+<p>Well, this got me started. So I did what any curious developer would do and started plugging crap in. I replaced the sample file that was packaged with BTStack with a slightly modified version of inPulse’s sample iPhone file. Sure enough, I was able to build and install it.</p>
+<h4 id="we-have-connection">We Have Connection</h4>
+<p>After figuring out how to hardcode my watch’s address into the source, I was able to determine that the iPhone had actually connected to the watch. I monitored the packets and threw up an alert view (No NSLogging available at this point) when a connection was made.</p>
+<p>So, now that we are connected, let’s trying sending the sample message…fail! I couldn’t even send the time.</p>
+<p>At this point, I decided to move the code I had written into a sample iPhone project so that I could do attached debugging. This showed me that the packets were arriving on the watch since I received an ack packet back. So, the watch sees the messages, but doesn’t consider them notifications.</p>
+<h4 id="time-to-hit-the-docs">Time to hit the docs</h4>
+<p><img src="/uploads/2011/pulse_protocol.png" alt="">
+Knowing that the packets were received gave me quite a bit of hope. I figured that I must have had the protocol incorrect. So, I dug into the inPulse protocol document which outlined what the packet structures should look like. My C skills aren’t the strongest so I had to look up quite a few things.
+Sure enough, they had upped the version number of their protocol by 1 and mine was outdated. So, I updated what I could and gave it another shot…fail.</p>
+<p>No messages were displaying. At this point I was ready to give up. I read online somewhere that the BT implementation on the watch was not supported by inPulse and felt dead in the water. So I took a break for a couple days.</p>
+<p>When I came back to it, I was tapping through my watch and noticed that the calendar appointments had some data in them on the watch. Could it be? Did my notifications arrive? (I was trying to send SMS notifications). So I dug into the docs again…</p>
+<h4 id="we-have-a-message">We have a message!!!</h4>
+<p><img src="/uploads/2011/hello_world.jpg" alt="">
+Sure enough, I had some fields declared as * uint16_t * when they should have been * uint8_t * . My headers were the wrong size!!! All of a sudden I was able to send every type of notification to the watch and have it displayed.</p>
+<p>It was now time to build out an actual application for release to inPulse. The next hurdle would be hooking into the iPhone’s messaging system and forwarding along the messages. Now the real iPhone hacking begins.</p>
+<p><a href="/my-journey-to-create-the-inpulsenotifier-for-jailbroken-iphones-part-2">This post is continued here</a></p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+	<div id="post-meta" class="clearfix p-author h-card">
+  <a href="/" class="u-url" rel="me">
+  <img class="u-photo avatar" src="https://brandontreb.ngrok.io/avatar.png" width="96" height="96">
+  <div>
+    <span class="p-name dark">|ZeroCool|</span>
+    <span><a href="https://brandontreb.ngrok.io">@</a></span>
+    <p class="p-note"></p>
+  </div>	
+  </a>
+</div>
+  </article>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-3">
+        <p class="text"></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+    
+    
+    
+  </body>
+
+</html>

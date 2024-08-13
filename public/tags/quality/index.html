@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>
+      
+      Hack The Planet - quality
+      
+  </title>
+
+  <meta name="description" content="this is meta :)">
+
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%f0%9f%a6%a0</text></svg>">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/custom.css">
+  <link rel="canonical" href="https://brandontreb.ngrok.io/tags/quality/">
+
+	<link rel="me" href="https://brandontreb.ngrok.io" />
+	
+	
+	
+	<link rel="authorization_endpoint" href="/indieauth/auth" />
+	<link rel="token_endpoint" href="/indieauth/token" />
+	<link rel="micropub" href="https://brandontreb.ngrok.io/micropub" />
+	<link rel="microsub" href="https://brandontreb.ngrok.io/microsub" />
+	<link rel="webmention" href="https://brandontreb.ngrok.io/webmention" />	
+  
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Hack The Planet</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+		
+			
+				<a class="page-link" href="/archive/">Archive</a>
+			
+		
+			
+				<a class="page-link" href="/photos/">Photos</a>
+			
+		
+			
+				<a class="page-link" href="/replies/">Replies</a>
+			
+		
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+		
+<div class="home h-feed">
+
+  <ul class="post-list">
+	
+	
+      <li class="h-entry">
+		
+			<h1><a href="https://brandontreb.ngrok.io/2015/07/28/the-value-of-quality-assurance/">The Value Of Quality Assurance</a></h1>
+		
+
+        <a href="https://brandontreb.ngrok.io/2015/07/28/the-value-of-quality-assurance/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2015-07-28 00:00:00 -0600">Jul 28, 2015</time></span></a>
+
+        <div class="e-content">
+         	<p>It’s late, you have been hacking all night to get the client a build. Finally, around 2:30 am, you hit submit and publish something to the client and go to bed. When you wake up in the morning, the first thing you see in your inbox is an email titled “Completely Broken!!1!”.</p>
+<p>How could this be? You stayed up late, you hacked, you tested and you sweat over this build to find that it crashes for the client when they try to do something obvious.</p>
+<p>As developers, we often can’t see the forrest through the trees. What this means is, we get so deep into the code working on a new feature or fixes that we often don’t notice when we break things. This doesn’t mean that we are bad developers, it just means we think differently about development. It also means we can’t personally handle <strong>everything</strong>.</p>
+<p>However, from a client’s perspective, failures like this can really tarnish your brand. They start to get the impression that you are unprofessional and even worse, start to doubt your abilities as a developer.</p>
+<h3 id="enter-qa">Enter QA</h3>
+<p>QA (short for quality assurance) is an idea that someone other than the developer tests the build before the client ever sees it. These people are responsible for</p>
+<ul>
+<li>Regression testing (as in the scenario above)</li>
+<li>Generating a test plan/matrix</li>
+<li>Ensuring parity (if needed) between multi-platform applications</li>
+</ul>
+<p>If the QA team is doing it’s job, the client won’t every see these obvious failures mentioned above. This can greatly improve the client’s perception of you/your team.</p>
+<h3 id="basic-process">Basic Process</h3>
+<p>OK, QA sounds great, how do I get started? Well, it’s actually relatively simple. First off, I assume you are doing <em>some flavor</em> of agile, and hopefully logging tickets for each task. If not, you should (even if you are a one man show). Here is a rough flow that my team follows:</p>
+<ol>
+<li>Developers determine which tickets to work on for the current sprint</li>
+<li>Developers complete a ticket and move it to a “dev complete” column in the task manager (Jira, Trello, Pivotal Tracker, etc…)</li>
+<li>Developers deliver a build internally</li>
+<li>The QA team takes the build and goes through their testing matrix to check for regressions.</li>
+</ol>
+<ul>
+<li>If a regression is found, a bug ticket is created for the responsible developer</li>
+</ul>
+<ol start="5">
+<li>New features are added to the QA test matrix and tested</li>
+</ol>
+<ul>
+<li>If the feature has bugs or doesn’t work as intended, the ticket is rejected and pushed back to the developer</li>
+</ul>
+<ol start="6">
+<li>Once everything passes, the build is green-lit to be sent to the client (usually one build per sprint)</li>
+</ol>
+<p>Like anything, you may develop your own version of the above, however this should be a detailed enough outline to get you started.</p>
+<h3 id="pushback">Pushback</h3>
+<p>In my experience, clients will generally give you some pushback when you say that you are billing them for QA hours. They will say things like “It’s OK, I can test the build myself.” or “I understand, things won’t be perfect. We will through this together”.</p>
+<p>While this all sounds good at the surface, the fact of the matter is, it almost always will end unfavorable. The client might have some level of tolerance early on, but as you start sending them more and more builds, each potentially missing/breaking features, they will become less patient. I have seen this happen plenty of times even with the most tech savvy of clients. Here are a few ways you can build QA into your billing process:</p>
+<p><strong>Add it as a line item</strong></p>
+<p>This is where you will most likely see the most opposition. Make sure to explain to the client that their time is valuable and you don’t want to waste it. Also, ensure that the cost of QA is drastically less than the cost of engineering or you will get questions like “Why am I paying you full price to test?”.</p>
+<p>Be sure to tell the client that QA is just part of your team’s process. You simply don’t operate any other way as you <strong>know</strong> that this is the best approach for both parties. Hopefully, this will establish your expertise in the domain and the client will respect you for that.</p>
+<p><strong>Bake it into the cost of engineering</strong></p>
+<p>Often times, you may not bother with too many line items. You may just have something like <strong>Engineering $200/hour</strong>. When/If the client gives any pushback about cost compared to other shops, simply inform them of all they are getting inside of that hour (Engineering, Consulting, QA, Project management, Office management, etc…). It actually works out to be a much greater value for them than paying say $125/hour for a “code monkey”.</p>
+<h3 id="final-thoughts">Final Thoughts</h3>
+<p>I absolutely believe that QA is crucial to the success of any software agency or freelancer. Not only does it allow you to come across as more professional, it also helps keep you sharp as a developer. While I’m not suggesting QA is a silver bullet (I still believe in Unit / Automated testing), I feel that everyone should at least have some layer baked into their process.</p>
+
+        </div>
+      </li>
+    
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="https://brandontreb.ngrok.io/feed.xml">via RSS</a></p>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-3">
+        <p class="text"></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+    
+    
+    
+  </body>
+
+</html>

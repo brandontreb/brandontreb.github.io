@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>
+      
+      Hack The Planet - My Journey To Create The inPulseNotifier For Jailbroken iPhones &amp;#8211; Part 2
+      
+  </title>
+
+  <meta name="description" content="this is meta :)">
+
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%f0%9f%a6%a0</text></svg>">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/custom.css">
+  <link rel="canonical" href="https://brandontreb.ngrok.io/2011/04/13/my-journey-to-create-the-inpulsenotifier-for-jailbroken-iphones-part-2/">
+
+	<link rel="me" href="https://brandontreb.ngrok.io" />
+	
+	
+	
+	<link rel="authorization_endpoint" href="/indieauth/auth" />
+	<link rel="token_endpoint" href="/indieauth/token" />
+	<link rel="micropub" href="https://brandontreb.ngrok.io/micropub" />
+	<link rel="microsub" href="https://brandontreb.ngrok.io/microsub" />
+	<link rel="webmention" href="https://brandontreb.ngrok.io/webmention" />	
+  
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Hack The Planet</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+		
+			
+				<a class="page-link" href="/archive/">Archive</a>
+			
+		
+			
+				<a class="page-link" href="/photos/">Photos</a>
+			
+		
+			
+				<a class="page-link" href="/replies/">Replies</a>
+			
+		
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+		
+<div class="post h-entry">
+
+  <header class="post-header">
+	
+	  	<h1 class="p-name">My Journey To Create The inPulseNotifier For Jailbroken iPhones &amp;#8211; Part 2</h1>
+  	
+    <p class="post-meta">
+	<a href="https://brandontreb.ngrok.io/2011/04/13/my-journey-to-create-the-inpulsenotifier-for-jailbroken-iphones-part-2/" class="u-url"><span class="post-meta"><time class="dt-published" datetime="2011-04-13 00:00:00 -0600">Apr 13, 2011</time></span></a>
+	
+	</p>
+  </header>
+
+  <article class="post-content e-content">
+	<p>This post is a continuation from my previous post <a href="/my-journey-to-create-the-inpulsenotifier-for-jailbroken-iphones-part-1/">found here</a>.</p>
+<h4 id="a-mobilesubstrate-tweak">A MobileSubstrate Tweak?</h4>
+<p>After I completed a basic app that allowed me to send various notification types from my iPhone to my inPulse watch, I quickly realized that this would not work if I wanted to hook into the iPhone’s notification system. A Google search revealed to me that I had to make MobileSubstrate hack to overwrite the default notification functionally.</p>
+<p>** What the heck is Mobile Substrate? **</p>
+<p>Here is the description according to <a href="http://iphonedevwiki.net/index.php/MobileSubstrate">iPhoneDevWiki.net</a>.</p>
+<blockquote>
+<p>MobileSubstrate is the de facto framework that allows 3rd-party developers to provide run-time</p>
+<p>patches (“MobileSubstrate extensions”) to system functions, similar to Application Enhancer on</p>
+<p>the OS X. MobileSubstrate consists of 3 major components: MobileHooker, MobileLoader and safe mode.</p>
+</blockquote>
+<p>Basically, it allows you to “hook” into any method of any class on the iPhone. I will talk in a later tutorial about how to see what methods are available. Here is a sample for hooking into the CFShow() method:</p>
+<pre tabindex="0"><code>&lt;code class=’objc’&gt;static void (*original_CFShow)(CFTypeRef obj);  // a function pointer to store the original CFShow().
+void replaced_CFShow(CFTypeRef obj) {           // our replacement of CFShow().
+  printf(&#34;Calling original CFShow(%p)…&#34;, obj);
+  original_CFShow(obj);                         // calls the original CFShow.
+  printf(&#34; done.\n&#34;);
+}
+…
+// hook CFShow to our own implementation.
+MSHookFunction(CFShow, replaced_CFShow, &amp;original_CFShow);
+// From now on any call to CFShow will pass through replaced_CFShow first.
+…
+CFShow(CFSTR(&#34;test&#34;));&lt;/code&gt;
+</code></pre><p>Yeah… this looks pretty intense. Luckily, I found a super helpful tool that greatly simplifies this process called <a href="http://iphonedevwiki.net/index.php/Theos/Getting_Started">theos</a>. Check out my <a href="/beginning-jailbroken-ios-development-getting-the-tools/">tutorial on getting started with theos</a>.</p>
+<p>What lead me to theos was the incredible work of <a href="http://www.peterhajas.com/">Peter Hajas</a>. He wrote and <a href="https://github.com/peterhajas/MobileNotifier">open sourced</a> his fantastic notifications app called Mobile Notifier. Without it, I would have been dead in the water. After chatting downloading his code and nagging him on <a href="https://twitter.com/#!/peterhajas">Twitter</a>, he pointed me to theos.</p>
+<h4 id="working-with-theos">Working With theos</h4>
+<p>As I mentioned in <a href="/beginning-jailbroken-ios-development-getting-the-tools/">my tutorial</a>, theos is a great tool to aid in the development of a Mobile Substrate Tweak. Instead of the complexities above to hook into the functionality of classes, you simply do something like this:</p>
+<pre tabindex="0"><code>&lt;code class=’objc’&gt;%hook SpringBoard
+-(void)applicationDidFinishLaunching:(id)application
+{  
+
+%orig;
+</code></pre><p>INPreferenceManager *preferenceManager = [[[INPreferenceManager alloc] init] autorelease];
+BOOL enabled = [[preferenceManager.preferences valueForKey:@&ldquo;inpulseEnabled&rdquo;] boolValue];
+if(enabled) {
+manager = [[INAlertManager alloc] init];
+[manager connectToWatch];
+}</p>
+<pre tabindex="0"><code>
+}
+
+
+* (void) dealloc {
+[manager release];
+manager = nil;
+%orig;
+}
+
+
+%end;&lt;/code&gt;
+</code></pre><p>This is a simple hook that allows me to overwrite the functionality of Springboard’s applicationDidFinishLaunching method. <a href="https://twitter.com/#!/dhowett">DHowett</a> (creator of theos), has done a brilliant job giving devs quite a few commands like %orig (which calls the original method) and %hook (starts a hook).</p>
+<p>The reason this works is, the file you code in (called Tweaks.xm) gets run through a preprocessor called Logos (which he also wrote). It replaces these simple commands with the complex stuff you see above before compiling your project. Using this technique, you can hook into anything. I will have a tutorial on this in the very near future, so make sure you <a href="feeds.feedburner.com/brandontreb">subscribe to my RSS feed</a> if you haven’t already.</p>
+<h4 id="copy-and-paste">Copy And Paste</h4>
+<p>OK, so I copied some of Peter’s code (he’s well cited in the source and I kept his license in the headers too). He had already solved the problem of capturing most of the iPhone’s notifications and this is precisely what I needed. So I Frankensteined my code and his to create the first version of <a href="https://github.com/brandontreb/inPulseNotifier">inPulseNotifier</a>.</p>
+<p>This current version supports SMS, Push Notifications, Local Notifications, and Calendar Notifications.</p>
+<h4 id="deployment">Deployment</h4>
+<p>Even though I open sourced the code for the app, I couldn’t possibly expect users to build the code themselves and install it on their devices. So I had to learn about setting up my own Cydia repository.</p>
+<p>A Cydia repository allows users to browse your applications/tweaks through the Cydia application <a href="http://www.saurik.com/">created by Saurik</a>. This is the method of choice for deploying jailbroken iPhone applications.</p>
+<p>Saurik has a very detailed tutorial on creating a Cydia repository <a href="http://www.saurik.com/id/7">here</a>.</p>
+<p>(In case you are wondering, my Cydia repo is hosted at <a href="http://brandontreb.com/cydia">http://brandontreb.com/cydia</a> )</p>
+<h4 id="ok-how-do-i-install-it">OK, How Do I Install It?</h4>
+<p>Great question I assume you might ask. I have written a tutorial about installing it on your iPhone <a href="http://www.getinpulse.com/hack/forum/viewtopic.php?p=545#p545">here</a>.</p>
+<h4 id="plans-for-the-future">Plans For The Future</h4>
+<p>Well, at the moment development has slowed as I prepare for a few changes in my life. However, in the coming months, I intend on doing the following updates.</p>
+<ol>
+<li>Remove the dependency on Insomnia for preventing the phone from sleeping. I have found a version of their source that I can integrate into my own code.</li>
+<li>Add support for phone calls</li>
+<li>Add support for emails</li>
+<li>Create an SBSettings toggle to allow rapid enabling/disabling</li>
+<li>Auto-reconnect after disconnecting from the watch</li>
+</ol>
+<h4 id="conclusion">Conclusion</h4>
+<p>Hacking for the inPulse watch has been a new and exciting experience. The team over there has really created something special and I can’t wait to see what the future holds for them (hopefully a touchscreen).</p>
+<p>I’d love to hear your thoughts in the comments. And <a href="feeds.feedburner.com/brandontreb">stay tuned</a> for some jailbroken dev tutorials based on my experiences.</p>
+<p>Happy Coding!</p>
+<p><a href="http://twitter.com/share">Tweet</a></p>
+
+	<div id="post-meta" class="clearfix p-author h-card">
+  <a href="/" class="u-url" rel="me">
+  <img class="u-photo avatar" src="https://brandontreb.ngrok.io/avatar.png" width="96" height="96">
+  <div>
+    <span class="p-name dark">|ZeroCool|</span>
+    <span><a href="https://brandontreb.ngrok.io">@</a></span>
+    <p class="p-note"></p>
+  </div>	
+  </a>
+</div>
+  </article>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-3">
+        <p class="text"></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+    
+    
+    
+  </body>
+
+</html>

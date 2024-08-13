@@ -1,0 +1,128 @@
+<rss version="2.0">
+  <channel>
+    <title>ios on Hack The Planet</title>
+    <link>https://brandontreb.ngrok.io/tags/ios/</link>
+    <description></description>
+    
+    <language>en-us</language>
+    
+    <lastBuildDate>Mon, 31 Mar 2014 00:00:00 -0600</lastBuildDate>
+    
+    <item>
+      <title>Software Development Consulting: Some Tips On Structuring Your Contracts</title>
+      <link>https://brandontreb.ngrok.io/2014/03/31/software-development-consulting-contract-tips/</link>
+      <pubDate>Mon, 31 Mar 2014 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2014/03/31/software-development-consulting-contract-tips/</guid>
+      <description>&lt;p&gt;When I first started out as an independent software developer, one of things that stressed me out the most was how to structure contracts that I sent to clients.  Working for a consultancy in my previous work-life I had seen contracts before, however, I never really paid enough attention to them to know what type of content went into them.&lt;/p&gt;
+&lt;p&gt;After quite a bit of research, I found an invaluable resource.  Over at &lt;a href=&#34;http://techrepublic.com&#34;&gt;techrepublic.com&lt;/a&gt;, Chip Camden posted a beautifully crafted consulting contract template.  You can see the post and download the template &lt;a href=&#34;http://www.techrepublic.com/blog/it-consultant/customizable-it-consultant-sample-contract/&#34;&gt;here&lt;/a&gt;.  This post was a lifesaver.&lt;/p&gt;
+&lt;p&gt;Chip goes over EVERY single section of the contract and gives an explanation of why it’s there.  You can download the template and determine which sections you need for your business, based on his explanations.  It doesn’t get much easier than that.  Of course, I would still strongly suggest you fork over a couple hundred bucks and have a lawyer look over the contract before sending it off to clients.&lt;/p&gt;
+&lt;h4 id=&#34;how-to-sign-contracts-online&#34;&gt;How To Sign Contracts Online&lt;/h4&gt;
+&lt;p&gt;Once you have your contract in place, you will need a way to get your clients to sign it.  You could go the old-fashioned way of scanning, both parties signing, and scanning again OR you could use an online signature service.  One that I use and highly recommend is &lt;a href=&#34;https://rightsignature.com&#34;&gt;RightSignature&lt;/a&gt;. I know those guys personally and have had a great experience with the service so far.&lt;/p&gt;
+&lt;h4 id=&#34;here-is-my-process&#34;&gt;Here is my process:&lt;/h4&gt;
+&lt;p&gt;This is what I have found works out well for my business.  #proTip: I have my assistant do this now 😉&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Complete the contract blanks in regards to rates or any other information you want the client to see before they sign the contract.&lt;/li&gt;
+&lt;li&gt;Upload the contract template to Google Drive (optional).  Make sure your company info is completed and all of the other fields (dates, signatures, etc…) are blanked out.&lt;/li&gt;
+&lt;li&gt;Once inside of your RightSignature account, you can connect to your Google Drive and import the document in.  You can also upload them directly from your computer if you don’t want to use Google Drive.&lt;/li&gt;
+&lt;li&gt;RightSignature lets you put text fields and date boxes in the blanks and specify who is responsible for filling them out (you or the client).&lt;/li&gt;
+&lt;li&gt;Finally, add the signature fields at the bottom and send off the document for signing.&lt;/li&gt;
+&lt;li&gt;Once every party has filled out the needed information, the completed document is then sent to both parties via email.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;other-considerations&#34;&gt;Other Considerations&lt;/h4&gt;
+&lt;p&gt;Often times, the client will have their own contracts for you to sign.  This isn’t necessarily a bad thing.  However, make sure that you read over it carefully and run it by your lawyer.  Don’t try to force your contract on a client that already has their own.  They will usually not be open to this, in my experience.&lt;/p&gt;
+&lt;p&gt;Make sure to have an ‘exit clause’ in your contract in case things go sour.  I seldom enter into fixed bid contracts so I usually have a clause where either party can cancel the contract with 7 days written notice.  This also makes the client feel at ease as they are not trapped with you in an event where their situation changes.&lt;/p&gt;
+&lt;p&gt;Finally, be willing to be flexible.  Sometimes clients might not like certain clauses in your contract.  Be willing to change things like delivery dates, invoice dates, invoice periods, rates, etc… on a client to client basis.  Obviously, use your best judgement here.&lt;/p&gt;
+&lt;h4 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h4&gt;
+&lt;p&gt;I hope that you have found this post useful and it saves you some time hunting down a contract template.  I am always open to suggestions so if you see anything else that works for you, I would love to hear about it via email or in the comments.&lt;/p&gt;
+&lt;p&gt;Please consider &lt;a href=&#34;http://eepurl.com/QAAhf&#34;&gt;signing up for my email list&lt;/a&gt; to get killer posts like this one delivered to your inbox.&lt;/p&gt;
+&lt;p&gt;*&lt;em&gt;Disclaimer: I am not a lawyer and do not claim to be giving any real legal advice.  I am simply stating how I do things with my business.  Make sure to consult with a lawyer before engaging in any contracts.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What I Learned In My First Year Of iOS Consulting</title>
+      <link>https://brandontreb.ngrok.io/2014/01/01/learned-first-year-ios-consulting/</link>
+      <pubDate>Wed, 01 Jan 2014 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2014/01/01/learned-first-year-ios-consulting/</guid>
+      <description>&lt;p&gt;Wow, I can’t believe it has already been a full year since I struck it out on my own.  Last year, I &lt;a href=&#34;http://brandontreb.com/what-i-learned-in-my-first-month-being-a-contract-ios-developer&#34;&gt;published a post&lt;/a&gt; after my first month on doing contract iOS development.  Needless to say, I have grown and learned quite a bit over the past year and I wanted to share some of those experiences.&lt;/p&gt;
+&lt;h3 id=&#34;income&#34;&gt;Income&lt;/h3&gt;
+&lt;p&gt;While I won’t share exact numbers, I left my 6 figure/year job to pursue the indie/consulting life.  During the course of the year, I was able to amass 40% more income in 2013 than I had at my previous position.&lt;/p&gt;
+&lt;p&gt;In addition to that, I had the time to launch a couple iOS applications and thus upping my Apple income by about 20% this year.&lt;/p&gt;
+&lt;h3 id=&#34;network-network-network&#34;&gt;Network Network Network&lt;/h3&gt;
+&lt;p&gt;I would say spending time networking and meeting people is just as important as being able to write code if you want to be successful on your own.  Through out the year, I dedicated at least five to ten hours a week just meeting with people, talking on the phone, and making new connections.&lt;/p&gt;
+&lt;p&gt;Often times, I would get contract opportunities that I knew for sure that I wasn’t going to take; either because I didn’t love the project, or (more often than not) because I didn’t have the bandwidth to take them on.  However, rather than just writing the client back “&lt;em&gt;I don’t have time&lt;/em&gt;“, I would take the call (or meeting in town), make the connection, and even listen to details about the contract.&lt;/p&gt;
+&lt;p&gt;My wife would tell me to stop wasting my time and that those hours would be better spent on project work that actually made money.  However, these contacts are arguably &lt;strong&gt;more&lt;/strong&gt; valuable than the hours “lost”.  In many situations, I have reached out to those potential clients weeks or months later once I hired a new developer and was then able signed a contract.  If I had declined the meeting to begin with, they probably wouldn’t have been as inclined to work with me so readily.&lt;/p&gt;
+&lt;h3 id=&#34;subcontractors&#34;&gt;&lt;strong&gt;Subcontractors&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Subcontracting has been a mixed bag for me.  It seems to be the only (safe-ish) way to expand your business as a consultant, other than hiring full time developers.  So, if you want to be able to work less yourself (which is almost never the case) or increase your companies revenue, you need to hire out.  &lt;/p&gt;
+&lt;p&gt;Once I found the right people, subcontracting was a dream.  I was able to reach more clients, still deliver the same value in the work, and achieve the client’s goals, all while expanding my business.&lt;/p&gt;
+&lt;p&gt;The main challenge I have had is deciding whether to hire subcontractors from here in the states or “offshore”.  They both have their benefits and complications. Here are some I have found:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Benefits of hiring in the states:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Communication – Most of the time their timezones are close enough that one of you is not inconvenienced to communicate in real time.&lt;/li&gt;
+&lt;li&gt;Trust From Clients – Some clients still have some issues with “offshore”, especially because many of them have tried their hand at the ODesk lottery and have lost.  So, saying you have US based team members sometimes makes them more comfortable. It’s unfortunate, but I have seen it to be true in some cases.&lt;/li&gt;
+&lt;li&gt;Colleagues – Often times you already know or have worked with these guys since starting with acquaintances/friends is a good place to look for developers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Complications hiring in the states&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cost – US devs are expensive.  Most of the time they have full time jobs and want to do consulting on the side.  So it is important that they get paid more to do contract work than their day job pays.&lt;/li&gt;
+&lt;li&gt;Colleagues – This is on the negative list as well because hiring people you know can get weird if things go awry.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;**Benefit of Offshore developers **&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cost – I put this here, however that doesn’t mean I hire “cheap” developers.  Honestly, if you are not paying a contractor well, you are either under paying him and should give him a raise OR he shouldn’t be working for you as he’s probably too junior.&lt;/li&gt;
+&lt;li&gt;Perspective – I have some incredible developers in other countries that have taught me quite a bit whether it’s about development, process, culture, or even my own code.  It’s a great opportunity to learn.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;**Problems with Offshore developers **&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Location – Timezone issues &lt;em&gt;can&lt;/em&gt; be a problem if you let them.  For example, I have a developer who lives in a completely different timezone than my own.  However, he does a fantastic job of being available when he is needed.  I have had other instances where it was very challenging to reach my developer in an event where I needed information on short notice.&lt;/li&gt;
+&lt;li&gt;Vetting Process – Finding developers is a little more tricky.  With devs in the states, you can just head to a local meet up or conference, but finding GOOD “offshore” devs is a little trickier.  I have lucked out a few times, but for the most part it’s a bit more work.  I would suggest spending a little of your own money to adequately search and vet each candidate.&lt;/li&gt;
+&lt;li&gt;Language – While doing iOS development, you may need your client and your developer to communicate with one another.  That being said, it’s vital to find a developer who &lt;em&gt;you&lt;/em&gt; can understand and who can understand you in order to make communication possible.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;hiring-an-assistant&#34;&gt;Hiring An Assistant&lt;/h3&gt;
+&lt;p&gt;Taking a page from Tim Ferris’ &lt;em&gt;4 Hour Work Week&lt;/em&gt;, I decided to hire an assistant.  Ferris suggests “virtual”, however, I have hired one locally (she’ll be proofreading this post 😉 ).  I think it’s one of the best decisions I have made as a business owner.  Here is just a short list of things she handles for me:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Contracts&lt;/li&gt;
+&lt;li&gt;Invoicing&lt;/li&gt;
+&lt;li&gt;Payments of contractors&lt;/li&gt;
+&lt;li&gt;Research&lt;/li&gt;
+&lt;li&gt;Phone calls&lt;/li&gt;
+&lt;li&gt;Personal issues (like returns, purchasing equipment, etc.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Even if she saves me two hours per week, she has paid for herself, and believe me, she saves me much more than that.&lt;/p&gt;
+&lt;h3 id=&#34;never-decline-a-contract&#34;&gt;Never Decline A Contract&lt;/h3&gt;
+&lt;p&gt;I mentioned this earlier in the post, but I want to reiterate it here.  I seldom tell clients “no” and I really feel that it has worked out to my benefit.  At the very least, I hear them out and add them as a contact to keep in mind for the future.&lt;/p&gt;
+&lt;p&gt;What I generally do when I can’t take on a client is I will give them an estimate of when myself or a member of my team will be available.  That way, if they are okay with the timeline, I can keep the pipeline open.  If not, there is no harm done.  Also, if I hire another developer before the time I said I was available, sometimes the client will still have the need and I am able to fill it.&lt;/p&gt;
+&lt;p&gt;If I absolutely don’t have time or don’t want a particular contract, I will refer the client out to other dev shops.  I don’t look at this as competition, but rather opportunity as I would hope they would do the same for me one day.  As an added bonus, some of them have a referral fee so you can at least profit from pairing the client up.&lt;/p&gt;
+&lt;h3 id=&#34;taxes&#34;&gt;Taxes&lt;/h3&gt;
+&lt;p&gt;I have found out that taxes are less fun when you are self-employed than when you are employed by a business.  Luckily my wife is MUCH better at money management than I am, so she set up a separate tax account where roughly 40% of our income would go.&lt;/p&gt;
+&lt;p&gt;One of the other good decisions I made besides hiring an assistant was hiring a CPA.  She has saved me countless hours and fees and is worth her weight in gold.&lt;/p&gt;
+&lt;p&gt;Hire a CPA from day one; you will never regret it.&lt;/p&gt;
+&lt;h3 id=&#34;family&#34;&gt;Family&lt;/h3&gt;
+&lt;p&gt;I know this is a “business” related post, but I have to mention this.  Having a wife and kids, I am very much a family man.  Working for myself has been such a blessing since I have been able to spend considerably more time with my family than when I was employed by someone else.&lt;/p&gt;
+&lt;p&gt;For example, if it’s a nice summer day and the family decides to head to the zoo, I can just go without asking a boss for time off or taking PTO.  I simply work in the evening or more hours the next day to recoup the time.  Personal time management is key to be able to have this kind of freedom.&lt;/p&gt;
+&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+&lt;p&gt;Overall, 2013 was an incredible year.  While I did make mistakes (a ton), I gained so much knowledge and had a blast doing so.  Going solo isn’t for everyone (some days I wonder why everyone** isn’t** doing it, and others I wonder why I &lt;strong&gt;am&lt;/strong&gt;), but it’s been one of the most exciting experiences of my life.&lt;/p&gt;
+&lt;p&gt;I look forward to what 2014 brings and seeing how I can continue to grow my consultancy.&lt;/p&gt;
+&lt;p&gt;Happy New Year and Happy Hacking!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Back To My Roots</title>
+      <link>https://brandontreb.ngrok.io/2013/06/12/back-to-my-roots/</link>
+      <pubDate>Wed, 12 Jun 2013 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2013/06/12/back-to-my-roots/</guid>
+      <description>&lt;p&gt;I wrote my very first blog post back in &lt;a href=&#34;http://www.icodeblog.com/2008/07/22/icodeblog-launched/&#34;&gt;July of 2008&lt;/a&gt; when I start &lt;a href=&#34;http://iCodeBlog.com&#34;&gt;iCodeBlog.com&lt;/a&gt;.  I started the blog because I saw a huge need for iOS development tutorials on the web and really wanted to help others as I progressed in my development.&lt;/p&gt;
+&lt;p&gt;Well, quite a bit has changed since then.  I have written books, spoken at conferences, and built and shipped over 40 iOS applications.  Since selling iCodeblog in 2009, I have really let my passion for blogging fizzle.  For the first 2 years of the iCode sale, I wasn’t allowed to write tutorials on any other site.  This was very discouraging.&lt;/p&gt;
+&lt;p&gt;Over the years, I have guest blogged iOS tutorials on several sites including &lt;a href=&#34;http://mobile.tutsplus.com/author/brandon-trebitowski/&#34;&gt;mobile.tutsplus.com&lt;/a&gt; and &lt;a href=&#34;http://www.raywenderlich.com/author/brandontreb&#34;&gt;raywenderlich.com&lt;/a&gt;.  This has been pretty hit or miss for me.&lt;/p&gt;
+&lt;p&gt;As of recent, I have become an &lt;a href=&#34;http://brandontreb.com/what-i-learned-in-my-first-month-being-a-contract-ios-developer&#34;&gt;independent iOS developer&lt;/a&gt; and have been solving quite a few hard problems and coming up with some interesting solutions on projects that I have been a part of.  I now want to share some of those solutions with the iOS community in the form of tutorial blog posts.  These come in all shapes in sizes from cool UIKit hacks to building simple backend services.&lt;/p&gt;
+&lt;p&gt;So, when I say that I want to “get back to my roots”, I really want to start consistently blogging again and educating other developers using the knowledge I have gained over the years.  So stick around, &lt;a href=&#34;http://brandontreb.com/feed&#34;&gt;subscribe&lt;/a&gt;, &lt;a href=&#34;http://twitter.com/brandontreb&#34;&gt;follow me&lt;/a&gt;, and please don’t hesitate to suggest tutorial ideas.&lt;/p&gt;
+&lt;p&gt;Happy hacking…&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,42 @@
+<rss version="2.0">
+  <channel>
+    <title>ideas on Hack The Planet</title>
+    <link>https://brandontreb.ngrok.io/tags/ideas/</link>
+    <description></description>
+    
+    <language>en-us</language>
+    
+    <lastBuildDate>Fri, 03 Mar 2023 01:42:01 -0600</lastBuildDate>
+    
+    <item>
+      <title>Idea: Micropub Browser Extension For Replies</title>
+      <link>https://brandontreb.ngrok.io/2023/03/03/i8hohphoqfnoaujhlbgtm/</link>
+      <pubDate>Fri, 03 Mar 2023 01:42:01 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2023/03/03/i8hohphoqfnoaujhlbgtm/</guid>
+      <description>&lt;p&gt;I LOVE finding sites that support &lt;a href=&#34;https://indieweb.org/Webmention&#34;&gt;webmentions&lt;/a&gt;. For me, it’s an instant subscribe. These are people who are looking to build community on the web in a new way.&lt;/p&gt;
+&lt;p&gt;The process of “replying” and sending a webmention to a post is &lt;em&gt;still&lt;/em&gt; a bit cumbersome. Here are the current steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Read an article that I want to respond to&lt;/li&gt;
+&lt;li&gt;Determine if the article supports webmentions (either they offer a URL box OR you have to view the source to see if they have a webmention endpoint).&lt;/li&gt;
+&lt;li&gt;Copy the URL&lt;/li&gt;
+&lt;li&gt;Paste the URL into the “reply box” in something like &lt;a href=&#34;https://ll.p3k.io&#34;&gt;Quill&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Write your reply&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It &lt;em&gt;works&lt;/em&gt;, but it’s not ideal. Also, the average user is not going to go through the trouble of doing all of this.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;“There must be a better way…”&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;I am proposing a brower extension that you would authenticate with your &lt;a href=&#34;https://indieweb.org/Micropub&#34;&gt;micropub&lt;/a&gt; endpoint using &lt;a href=&#34;https://indieauth.com/&#34;&gt;IndieAuth&lt;/a&gt;. Once authenticated, the steps to reply to a post become as followed:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;If the site supports webmentions, the plugin will have an active icon&lt;/li&gt;
+&lt;li&gt;Click the icon to reveal a text box&lt;/li&gt;
+&lt;li&gt;Type your response and click send&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;(behind the scenes, the extension posts the reply to your blog and then sends a webmention to the URL you are replying to)&lt;/p&gt;
+&lt;p&gt;This would greatly reduce the friction of using webmentions for responses to posts and I believe would further the adoption of this technology.&lt;/p&gt;
+&lt;p&gt;Maybe I will get around to building this someday…&lt;/p&gt;
+&lt;p&gt;Let me know what you think by sending me a webmention ;)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

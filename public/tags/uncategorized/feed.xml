@@ -1,0 +1,507 @@
+<rss version="2.0">
+  <channel>
+    <title>Uncategorized on Hack The Planet</title>
+    <link>https://brandontreb.ngrok.io/tags/uncategorized/</link>
+    <description></description>
+    
+    <language>en-us</language>
+    
+    <lastBuildDate>Wed, 13 Jun 2012 00:00:00 -0600</lastBuildDate>
+    
+    <item>
+      <title>How To Become An Indie Game Developer</title>
+      <link>https://brandontreb.ngrok.io/2012/06/13/how-to-become-an-indie-game-developer/</link>
+      <pubDate>Wed, 13 Jun 2012 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2012/06/13/how-to-become-an-indie-game-developer/</guid>
+      <description>&lt;p&gt;What programmer doesn’t want to be an indie game developer? A great article with tons of tips to help you on your way.&lt;/p&gt;
+&lt;p&gt;[&lt;a href=&#34;http://www.mode7games.com/blog/2012/06/12/how-to-be-an-indie-game-developer/&#34;&gt;Article Link&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My Number One Feature Request For iOS 6</title>
+      <link>https://brandontreb.ngrok.io/2012/06/08/my-number-one-feature-request-for-ios-6/</link>
+      <pubDate>Fri, 08 Jun 2012 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2012/06/08/my-number-one-feature-request-for-ios-6/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Fix the Snooze button&lt;/strong&gt;! I have no idea how this UI component got to Apple’s review team and they were like ”&lt;em&gt;Yep, that looks beautiful! Ship it!&lt;/em&gt;”. If Apple changes the snooze button and slaps a 6 on iOS, I will be happy. If not, more rants to follow. Stay tuned….&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandontreb.com/wp-content/uploads/2012/06/photo.png&#34;&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2012/photo.png&#34; alt=&#34;&#34; title=&#34;photo&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>If There Was Ever A Time To Submit A Show HN Article, It&amp;#8217;s Right Now</title>
+      <link>https://brandontreb.ngrok.io/2012/06/01/if-there-was-ever-a-time-to-submit-a-show-hn-article-its-right-now/</link>
+      <pubDate>Fri, 01 Jun 2012 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2012/06/01/if-there-was-ever-a-time-to-submit-a-show-hn-article-its-right-now/</guid>
+      <description>&lt;p&gt;Earlier today a post titled ”&lt;a href=&#34;http://tortillasinbed.tumblr.com/post/24175048206/i-up-vote-everything&#34;&gt;I Try to Up Vote Every ‘Show HN’ Post and You Should Too&lt;/a&gt;” made it to the top of HN.  It basically talked about people posting “Show HN” posts are putting themselves out there and the least we can do is give them an up vote.  Well, people are listening and as of this posting, there are currently 15 Show HN posts in the top 30.  That’s incredible.&lt;/p&gt;
+&lt;p&gt;So, if you have recently created something cool.  Head over to HN’s &lt;a href=&#34;http://news.ycombinator.com/submit&#34;&gt;submission page&lt;/a&gt; and add your link making sure to add “Show HN” in the title.  You might get some great traffic/feedback out of it.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lua Scripting The UI For Pocket MUD Pro</title>
+      <link>https://brandontreb.ngrok.io/2012/05/29/lua-scripting-the-ui-for-pocket-mud-pro/</link>
+      <pubDate>Tue, 29 May 2012 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2012/05/29/lua-scripting-the-ui-for-pocket-mud-pro/</guid>
+      <description>&lt;p&gt;I have just updated my MUD client [&lt;a href=&#34;http://itunes.apple.com/us/app/pocket-mud-pro/id511678455?mt=8&#34;&gt;Pocket MUD Pro&lt;/a&gt;] to be a universal library. It was surprisingly easy to add the iPad support as most of the application was comprised of UITableViews.&lt;/p&gt;
+&lt;p&gt;The main “MUD” view was the most challenging part as it contains a couple UIWebViews, UIButons, and a UITextField. However, I chose to do something I feel is pretty cool.&lt;/p&gt;
+&lt;h4 id=&#34;scripting-the-ui-with-lua&#34;&gt;Scripting The UI With Lua&lt;/h4&gt;
+&lt;p&gt;If I haven’t said it enough, I love lua. Especially in the context of scripting within other applications. Pocket MUD Pro already has complete lua support in triggers in aliases, so I figured I might as well apply that same logic to the UI.&lt;/p&gt;
+&lt;p&gt;Pocket MUD Pro has 3 core sections for the UI not counting the text input field. The main view (UIWebview), the prompt view (UIWebview), and the button bar (custom UIView).&lt;/p&gt;
+&lt;p&gt;One of the core challenges I faced on the iPhone, was resizing/reorienting all of these views on orientation change as well as when the keyboard was visible and when it wasn’t. To be honest, I spent most of my cycles getting this part right. On the iPad, I decided to things a little differently which improved the speed of my development overall and paved the way for future updates that will allow user-scripted UIs.&lt;/p&gt;
+&lt;h4 id=&#34;the-ui-script&#34;&gt;The UI Script&lt;/h4&gt;
+&lt;p&gt;I want to start by showing you the lua code that is used to script the UI by default.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;–MUD 
+mudFrame = Frame:new(&amp;#34;mud_frame&amp;#34;) 
+mudFrame.type = FrameTypeMUD
+mudFrame.portraitFrame = {0,0,768,931}
+mudFrame.portraitFrameKeyboard = {0,0,768,667}
+mudFrame.landscapeFrame = {0,0,1024,675}
+mudFrame.landscapeFrameKeyboard = {0,0,1024,323}
+createFrame(mudFrame)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;What’s happening here is, I have created a Frame class that has some properties (type, name, etc…) and injected it into the global lua space for use inside of the UIScripts. Then when the interface gets drawn, I reference the UI script for each of the MUD servers and use it to render the interface.&lt;/p&gt;
+&lt;p&gt;One interesting thing here is, I set the frames for each of the possible layout scenarios. Portrait, Landscape, with and without the keyboard. That way, when the keyboard hides/dismisses or the user rotates the device, I just reference the this script again and re-render the frame accordingly. This could have been achieved with auto-resizing masks however, it gets much more complex and things get tricky when you want to have a dynamic number of windows.&lt;/p&gt;
+&lt;p&gt;I follow this exact pattern for the button frames and the prompt frames. As you might have guessed, in a future release, I will open this script area up to MUDders and give the user the ability to script the interface however they would like. Some examples might be:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dedicated map window&lt;/li&gt;
+&lt;li&gt;Dedicated chat window&lt;/li&gt;
+&lt;li&gt;Customized movement buttons&lt;/li&gt;
+&lt;li&gt;Customized backgrounds/borders/themes&lt;/li&gt;
+&lt;li&gt;Custom health/status/mana&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Given this powerful UI Scripting style, a user will be able to create complex interfaces such as the one below from inside the app:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2012/achaea-300819-1263188763.jpeg&#34; alt=&#34;&#34; title=&#34;Achaea&#34;&gt;
+I still have a ways to go with exposing various functionalities via my custom lua bridge. But things seem to be moving along quite smoothly.&lt;/p&gt;
+&lt;p&gt;If you want to learn how I was able to bridge lua into my application, consider checking out my talk on lua scripting at &lt;a href=&#34;http://360idev.com/&#34;&gt;360iDev 2012&lt;/a&gt; later this year!&lt;/p&gt;
+&lt;p&gt;Happy Coding!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Jailbreak iOS 5.1.1 With Absinthe 2.0 &#43; More Watch Dev Coming</title>
+      <link>https://brandontreb.ngrok.io/2012/05/25/jailbreak-ios-5-1-1-with-absinthe-2-0-more-watch-dev-coming/</link>
+      <pubDate>Fri, 25 May 2012 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2012/05/25/jailbreak-ios-5-1-1-with-absinthe-2-0-more-watch-dev-coming/</guid>
+      <description>&lt;p&gt;The GreenPois0n team has just announced Absinthe 2.0 allowing users of all iDevices (except Apple TV 3) to jailbreak iOS 5.1.1. This is especially good news for me as I can now continue development on my jailbroken app for the &lt;a href=&#34;http://getinpulse.com&#34;&gt;inPulse&lt;/a&gt; watch, &lt;a href=&#34;http://www.myrepospace.com/profile/brandontreb/140058/inPulse&#34;&gt;iOS notifier&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;[&lt;a href=&#34;http://greenpois0n.com/?p=324&#34;&gt;Link URL&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Incredible List Of Popular Indie iOS/Android/Steam Titles On Sale</title>
+      <link>https://brandontreb.ngrok.io/2012/05/24/incredible-list-of-popular-indie-iosandroidsteam-titles-on-sale/</link>
+      <pubDate>Thu, 24 May 2012 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2012/05/24/incredible-list-of-popular-indie-iosandroidsteam-titles-on-sale/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;We believe that developers should have the freedom to price their games how they like, without interference from the online stores that sell the games. Why? Because it allows us to promote our games more freely, as we are doing here! We rely on the ability to promote our games for our livelihood and control over pricing is an important tool for this purpose.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Because We May is doing something very incredible here. They are a website to help you promote your game by listing it on sale. Any developer can submit their game(s) as long as they put it on sale for the given duration (May 24-June 1). There are currently some amazing games on sale including Osmos, Super Brothers, World Of Goo HD, and more.&lt;/p&gt;
+&lt;p&gt;[&lt;a href=&#34;http://www.becausewemay.com/ios.html&#34;&gt;Games Link&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;[&lt;a href=&#34;http://2dboy.com/BWM/AddGame.html&#34;&gt;Submission Link&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Join Me At 360iDev 2012</title>
+      <link>https://brandontreb.ngrok.io/2012/05/24/join-me-at-360idev-2012/</link>
+      <pubDate>Thu, 24 May 2012 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2012/05/24/join-me-at-360idev-2012/</guid>
+      <description>&lt;p&gt;I mentioned this on Twitter last week, so I might as well post it here to make it &lt;em&gt;more&lt;/em&gt; official. My talk &lt;strong&gt;Making Your Games More Dynamic With Lua Scripting&lt;/strong&gt; was accepted for &lt;a href=&#34;http://360idev.com/&#34;&gt;360iDev 2012&lt;/a&gt;! This will be my first official speaking engagement and I could not be more excited/nervous.&lt;/p&gt;
+&lt;h4 id=&#34;the-talk&#34;&gt;The Talk&lt;/h4&gt;
+&lt;p&gt;I have had a huge interest in lua for some time now, especially as it applies to scripting games. In my last project, &lt;a href=&#34;http://itunes.apple.com/us/app/pocket-mud-pro/id511678455?mt=8&#34;&gt;Pocket MUD Pro&lt;/a&gt;, I even embedded lua 5.1 and created my own bridge in order to allow players to fully script the gameplay. This got me very excited for the future as it was so easy to get lua up and running.&lt;/p&gt;
+&lt;p&gt;My talk will cover the basics of setting lua up in your own iOS projects. I will be using a simple tile based RPG (written in Cocos2D) for the demo and will demonstrate how you might use lua to script the behaviors of the NPCs as well as dynamically add new ones to the game. This opens up a whole world of possibility as you can now ship code over the wire and modify your game content without ever submitting an update to Apple.&lt;/p&gt;
+&lt;p&gt;It appears my talk has some pretty steep competition in its timeslot. There are two other incredible talks going on at the same time, so I’m starting to campaign for it now &lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2012/simple-smile.png&#34; alt=&#34;:)&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Please comment on this post if you plan on attending 360iDev. I would love to connect with you.&lt;/p&gt;
+&lt;p&gt;[&lt;a href=&#34;http://360idev.com/schedule&#34;&gt;360 iDev Schedule&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pocket MUD Pro Is Now Universal &#43; Promo Codes</title>
+      <link>https://brandontreb.ngrok.io/2012/05/23/pocket-mud-pro-is-now-universal-promo-codes/</link>
+      <pubDate>Wed, 23 May 2012 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2012/05/23/pocket-mud-pro-is-now-universal-promo-codes/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2012/mza_5672073799134205458.480x480-75.jpg&#34; alt=&#34;&#34; title=&#34;Pocket MUD&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I have just updated &lt;a href=&#34;http://itunes.apple.com/us/app/pocket-mud-pro/id511678455?mt=8&#34;&gt;Pocket MUD Pro&lt;/a&gt; to support the iPad! In celebration, it’s on sale for $1.99 (down from $2.99).&lt;/p&gt;
+&lt;p&gt;Also, here are 10 promo codes for anyone who wants a free copy. Please comment on which code you take so others know which one’s are available.&lt;/p&gt;
+&lt;p&gt;9E3TF4XRLW97&lt;/p&gt;
+&lt;p&gt;RA6KFNTT9NEY&lt;/p&gt;
+&lt;p&gt;KN936MALLH7A&lt;/p&gt;
+&lt;p&gt;TLPMPXNTMMLL&lt;/p&gt;
+&lt;p&gt;RL7JNYFL4F7X&lt;/p&gt;
+&lt;p&gt;3RPAWMFTYY6F&lt;/p&gt;
+&lt;p&gt;4JYYJFH7HLKR&lt;/p&gt;
+&lt;p&gt;7XWETP3YP7JT&lt;/p&gt;
+&lt;p&gt;PN7XERXHH7ME&lt;/p&gt;
+&lt;p&gt;9R4NYX669FMJ&lt;/p&gt;
+&lt;p&gt;[&lt;a href=&#34;http://itunes.apple.com/us/app/pocket-mud-pro/id511678455?mt=8&#34;&gt;Download Link&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The guide to implementing 2D platformers</title>
+      <link>https://brandontreb.ngrok.io/2012/05/23/the-guide-to-implementing-2d-platformers/</link>
+      <pubDate>Wed, 23 May 2012 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2012/05/23/the-guide-to-implementing-2d-platformers/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://higherorderfun.com/blog/2012/05/20/the-guide-to-implementing-2d-platformers/&#34;&gt;http://higherorderfun.com/blog/2012/05/20/the-guide-to-implementing-2d-platformers/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;An incredible guide detailing many of the tricks/design patterns used in 2D platformers.  Although there isn’t much code to look at, the higher level ideas detailed in the article are invaluable.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Why Facebook IS People</title>
+      <link>https://brandontreb.ngrok.io/2012/05/23/why-facebook-is-people/</link>
+      <pubDate>Wed, 23 May 2012 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2012/05/23/why-facebook-is-people/</guid>
+      <description>&lt;p&gt;This is a very well written article detailing some of the inner workings of Facebook and why its business is YOU.  &lt;/p&gt;
+&lt;p&gt;I wonder when a distributed, self-hosted solution (like &lt;a href=&#34;https://joindiaspora.com/&#34;&gt;Diaspora&lt;/a&gt;) will become popular.  Have you tried Diaspora or others?&lt;/p&gt;
+&lt;p&gt;[&lt;a href=&#34;http://observer.com/2012/05/23/facebook-is-people-why-i-quit-mark-zuckerbergs-online-collective-data-farm/?show=all&#34;&gt;Article Link&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Great Introduction To Lua</title>
+      <link>https://brandontreb.ngrok.io/2012/05/22/great-introduction-to-lua/</link>
+      <pubDate>Tue, 22 May 2012 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2012/05/22/great-introduction-to-lua/</guid>
+      <description>&lt;p&gt;(click the post title)&lt;/p&gt;
+&lt;p&gt;I have been using lua in my iOS applications for some time now. This tutorial provides a great introduction to a scripting language that most developers are very curious about. I really suggest spending a few minutes checking it out.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MetaWatch Announces iOS Support &amp;#8211; Still Can&amp;#8217;t Compete With Pebble</title>
+      <link>https://brandontreb.ngrok.io/2012/05/22/metawatch-announces-ios-support-still-cant-compete-with-pebble/</link>
+      <pubDate>Tue, 22 May 2012 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2012/05/22/metawatch-announces-ios-support-still-cant-compete-with-pebble/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2012/b1ef2f2c734bdb5c3dd128645e931609.5b076a068df3c2e957af266fa3005e90.jpg&#34; alt=&#34;&#34; title=&#34;Metawatch&#34;&gt;For those of you who have followed my blog for a while, you know that I am a huge geek for smart watches. I had the first version of what is now the &lt;a href=&#34;http://www.kickstarter.com/projects/597507018/pebble-e-paper-watch-for-iphone-and-android&#34;&gt;Pebble&lt;/a&gt; (&lt;a href=&#34;http://getinpulse.com&#34;&gt;inPulse&lt;/a&gt;) and even hacked a jailbroken iOS app to interface with it.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://metawatch.com&#34;&gt;MetaWatch&lt;/a&gt; has been around for quite some time now and looks *ok *, however their latest update appears to be completely in response to Allerta’s announcement/success of Pebble.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“We are delighted to be the first company to ship a Bluetooth 4.0 smartwatch compatible with both iPhone and Android platforms”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;What is really concerning is the fact they they don’t mention anything related to how they are achieving iOS notifications. Pebble has been very upfront in stating that they are planning on leveraging &lt;a href=&#34;http://ifttt.com/&#34;&gt;ifttt.com&lt;/a&gt; to deliver complex notifications such as Twitter and Facebook. It leads me to believe they haven’t quite sorted everything out and are jumping to a press release in order to ride the smartwatch train.&lt;/p&gt;
+&lt;p&gt;I have a &lt;a href=&#34;http://www.kickstarter.com/projects/597507018/pebble-e-paper-watch-for-iphone-and-android&#34;&gt;Pebble&lt;/a&gt; coming in August and intend on sharing my experiences as well as code. Perhaps I might scoop up one of these as well and write a comparison post.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.metawatch.org/blog/2012/05/announcing-bluetooth-4.0-dev-system.html&#34;&gt;[Article Link]&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pocket MUD Pro Released &#43; Promo Codes</title>
+      <link>https://brandontreb.ngrok.io/2012/03/29/pocket-mud-pro-released-promo-codes/</link>
+      <pubDate>Thu, 29 Mar 2012 00:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2012/03/29/pocket-mud-pro-released-promo-codes/</guid>
+      <description>&lt;p&gt;I am very proud to announce a brand new version of my &lt;a href=&#34;http://itunes.apple.com/us/app/pocket-mud-pro/id511678455?ls=1&amp;amp;mt=8&#34;&gt;Pocket MUD Pro&lt;/a&gt; application for iPhone. I have been working very hard to make a perfect MUD client that is suitable for hardcore mud players, visually impaired mud players, and casual mud players.&lt;/p&gt;
+&lt;p&gt;Here are some of the features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Support for all orientations&lt;/li&gt;
+&lt;li&gt;Full ANSI color support&lt;/li&gt;
+&lt;li&gt;Dedicated prompt&lt;/li&gt;
+&lt;li&gt;Zoomable Text View&lt;/li&gt;
+&lt;li&gt;Perfect rendering of MUD text (check out the maps)&lt;/li&gt;
+&lt;li&gt;Very fast&lt;/li&gt;
+&lt;li&gt;Hides Telnet codes from the user (unlike every other MUD client)&lt;/li&gt;
+&lt;li&gt;Autoconnect on startup&lt;/li&gt;
+&lt;li&gt;List of MUDS&lt;/li&gt;
+&lt;li&gt;Favorite List&lt;/li&gt;
+&lt;li&gt;Unlimited Command history&lt;/li&gt;
+&lt;li&gt;Quickly cycle through command history&lt;/li&gt;
+&lt;li&gt;Triggers using the lua scripting language&lt;/li&gt;
+&lt;li&gt;Text Command Alias&lt;/li&gt;
+&lt;li&gt;Lua scripted aliases&lt;/li&gt;
+&lt;li&gt;Timer Support&lt;/li&gt;
+&lt;li&gt;Background support. Stay connected for up to 10 minutes after you close the application.&lt;/li&gt;
+&lt;li&gt;Support for multiple commands separated by semicolons&lt;/li&gt;
+&lt;li&gt;Comes packed with a list of some of the most popular muds&lt;/li&gt;
+&lt;li&gt;In-App Documentation of triggers and aliases&lt;/li&gt;
+&lt;li&gt;Ability to play sounds when triggers fire&lt;/li&gt;
+&lt;li&gt;Ability to gag extraneous text, which is extremely helpful for visually impaired players.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;promo-codes&#34;&gt;Promo Codes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;PXYTRKLTWL46&lt;/li&gt;
+&lt;li&gt;KTXAAMYNYXPP&lt;/li&gt;
+&lt;li&gt;443433YNJX4E&lt;/li&gt;
+&lt;li&gt;9K99KJWRXNYT&lt;/li&gt;
+&lt;li&gt;W44YHPHLRFMT&lt;/li&gt;
+&lt;li&gt;4HYHLEFXYYN7&lt;/li&gt;
+&lt;li&gt;4HK74JLMMHAA&lt;/li&gt;
+&lt;li&gt;KX6XJ79TLWFP&lt;/li&gt;
+&lt;li&gt;437YTX9KLEN9&lt;/li&gt;
+&lt;li&gt;7YAMYF4EYALF&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Please leave a comment here if you use a code to notify others that it’s been taken&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://itunes.apple.com/us/app/pocket-mud-pro/id511678455?ls=1&amp;amp;mt=8&#34;&gt;Download it here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I’d love to hear what you guys think about the app.&lt;/p&gt;
+&lt;p&gt;Happy MUDding!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fluid For Mac</title>
+      <link>https://brandontreb.ngrok.io/2012/01/19/fluid-for-mac/</link>
+      <pubDate>Thu, 19 Jan 2012 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2012/01/19/fluid-for-mac/</guid>
+      <description>&lt;p&gt;As of OSX Lion, I have started to seriously loathe some of the build-it Mac apps (such as Mail, and iCal). While I previously had no issues with them, they now seem to be very clunky and crash quite often. Being a developer, I thought “why don’t I write an app that wraps web apps for you so you basically get “native web apps” that have icons and are launchable?”.&lt;/p&gt;
+&lt;p&gt;After a quick Google search, I realized &lt;strong&gt;&lt;a href=&#34;http://fluidapp.com/&#34;&gt;this already exists!&lt;/a&gt;&lt;/strong&gt;. The app is called Fluid and it does an incredible job of what I described above and more.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2012/dock_large.png&#34; alt=&#34;&#34;&gt;
+Here are the feature highlights.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a “native” Mac app for any web app&lt;/li&gt;
+&lt;li&gt;Custom icon for each “native” app you create&lt;/li&gt;
+&lt;li&gt;Full screen mode&lt;/li&gt;
+&lt;li&gt;User scripps. These are my favorite. They allow you to update the badge count based on information in the browser. See below for a sample user script.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Sample User Script For Twitter&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;code class=’javascript’&amp;gt;(function () {
+        if (window.fluid) {
+            setInterval(function updateBadge() {
+                var counts = /\d+/.exec(document.title);
+                if (counts &amp;amp;&amp;amp; counts[0] &amp;gt; 0) {
+                    window.fluid.dockBadge = counts[0] &amp;gt; 99 ? ‘99+’ : counts[0];
+                } else {
+                    window.fluid.dockBadge = ”;
+                }
+            }, 2000);
+        }
+    })();&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;a href=&#34;http://userscripts.org/scripts/review/88425&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Fluid is free with some minimal features, but I urge you to drop the $4.99 to gain full screen mode and user scripts. It’s well worth it. I am not affiliated with them in any way, just a happy customer.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://fluidapp.com/&#34;&gt;Download Fluid&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Amazon &amp;#8211; A Terrible Solution To A Huge Problem</title>
+      <link>https://brandontreb.ngrok.io/2012/01/16/amazon-a-terrible-solution-to-a-huge-problem/</link>
+      <pubDate>Mon, 16 Jan 2012 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2012/01/16/amazon-a-terrible-solution-to-a-huge-problem/</guid>
+      <description>&lt;p&gt;tl;dr; Don’t buy a Kindle Fire for your kid until they resolve the parental control issues. Wifi password protection is their current solution, and it sucks.&lt;/p&gt;
+&lt;p&gt;Like many parents, I thought it would be a good idea to get a tablet device for my son so that he could play some &lt;em&gt;educational&lt;/em&gt; games and watch some Netflix (in moderation of course). After doing quite a bit of research, I settled on the Kindle Fire. Before the Apple fanboys give me crap, know that I am one, I have an iPad, it’s too expensive for my son.&lt;/p&gt;
+&lt;p&gt;Honestly, I really love the fire. I think it has the &lt;em&gt;least terrible&lt;/em&gt; Android interface of any of the devices. It’s intuitive and my 3 year old was able to grasp navigation right away. In addition to navigation, he quickly figured out how to acquire new content (apps, video, children’s books) thanks to Amazon’s “One-Click Ordering”. Obviously, Amazon thought the process they use on the web transfered well to a tablet device and was not willing to compromise on that. That’s neither here nor there. You can find plenty of posts about user’s complaining about the &lt;strong&gt;initial&lt;/strong&gt; lack of parental controls.&lt;/p&gt;
+&lt;h4 id=&#34;the-update&#34;&gt;The Update&lt;/h4&gt;
+&lt;p&gt;Shortly after receiving some pretty rough reviews for their interface, Amazon rolled out their first update which brought us to 6.2.1. In addition to fixing some of there terribly choppy UI, they rolled out their “fix” for the lack of parental controls.&lt;/p&gt;
+&lt;p&gt;I noticed a new security setting that I had hoped would allow the device to require a password for content purchase, but it turns out the setting is to password protect enabling wifi.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Password protect enabling wifi? Really?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This is laughable at best. What a worthless feature. I could not figure out why anyone would ever want that. And then I had a conversation with “tech support”.&lt;/p&gt;
+&lt;h4 id=&#34;their-solution-confirmed&#34;&gt;Their “Solution” Confirmed&lt;/h4&gt;
+&lt;p&gt;After seeing an email from Amazon the other day showing my purchase for $17.99 for Team Umizoomi Season 1 (whatever the crap that is), which obviously my son purchased, I set out to chat with customer support. The conversation went something like this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;…&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Me:&lt;/strong&gt; Refund!? No parental controls!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Outsourced Guy:&lt;/strong&gt; Enable Wifi Password = protection!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Me:&lt;/strong&gt; No, watch Netflix! Browse Web! Stupid Solution&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Outsourced Guy:&lt;/strong&gt; Yes Netflix Need Wifi. Did I solve your problem?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Me:&lt;/strong&gt; ?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Outsourced Guy:&lt;/strong&gt; Phone Number. Call Video Support&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So there you have it. Amazon actually pushes this as their solution to the lack of parental controls. My suspicions were confirmed by Outsourced Guy.&lt;/p&gt;
+&lt;h4 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h4&gt;
+&lt;p&gt;It’s sad that a huge company such as Amazon feels that &lt;em&gt;their process&lt;/em&gt; is more important than listening to their customers. Although their devices have been selling like &lt;em&gt;fire&lt;/em&gt; (badum ch!), they need to address such gaping issues if they are to maintain their edge in the “affordable” tablet space. Especially as the younger generations start embracing the technology.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Why I Went Back To Jekyll &amp;#8211; Also Rackspace Sucks</title>
+      <link>https://brandontreb.ngrok.io/2012/01/03/why-i-went-back-to-jekyll-also-rackspace-sucks/</link>
+      <pubDate>Tue, 03 Jan 2012 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2012/01/03/why-i-went-back-to-jekyll-also-rackspace-sucks/</guid>
+      <description>&lt;p&gt;Recently, I was pretty humbled when a post of mine titled &lt;a href=&#34;http://brandontreb.com/wordpress-to-jekyll-and-back-again/&#34;&gt;WordPress To Jekyll And Back Again&lt;/a&gt; made it to the front page of Hacker News. I was a little down on Jekyll for the reasons listed in that post and was feeling pretty good about my WordPress install.&lt;/p&gt;
+&lt;p&gt;At the time, I was running my own virtual instance on Rackspace cloud hosting (we’ll get to this momentarily). I also had all of the caching and optimization plugins installed and welcomed the Hacker News traffic.&lt;/p&gt;
+&lt;p&gt;As you can imagine, the influx of HN traffic crashed the server multiple times and I was (with good reason) mocked in the comments (“must be because he’s ‘back to WordPress’”). So, I asked for advice and further “beefed up” my setup switching from Apache to Nginx, upping the ram, and switching caching plugins. WordPress is a beast and hard to optimize. That’s not even the kicker as to why I switched away.&lt;/p&gt;
+&lt;h4 id=&#34;a-call-from-rackspace&#34;&gt;A Call From Rackspace…&lt;/h4&gt;
+&lt;p&gt;About a month ago, I realized my blog was down. I figured that it might have been that I was featured somewhere else which was crashing it (again I was rolling my eyes at WordPress). But then, I got a call and email from a &lt;em&gt;very&lt;/em&gt; helpful Rackspace employee. The email went like this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Despite the very best efforts of or our Engineering and Datacenter Operations Teams, unfortunately the host machine that your cloud server ‘Websites’ resides on was not able to be recovered. At this point, we are looking at complete data loss.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;and… Rackspace, in this poorly phrased email, was basically like. “Well, sucks to be you, hope you had a backup!”. Well, I admit this is partially my fault for not having a backup as I am a bit of a n00b when it comes to server admin, but I had been hosting for years on (don’t judge me) GoDaddy before that and a couple years on Rackspace. I had no idea that hosting companies didn’t have backups of their own. It would seem that this might be crucial to their business.&lt;/p&gt;
+&lt;p&gt;Needless to say, I lost everything including a jewelry site that I ran (not many sales), an iPhone leaderboard site (not very popular), 2 of my buddies WordPress blogs, and my current WordPress blog.&lt;/p&gt;
+&lt;h4 id=&#34;jekyll-to-the-rescue&#34;&gt;Jekyll To The Rescue&lt;/h4&gt;
+&lt;p&gt;I was pretty angry at Rackspace and myself for never making a backup, but then it hit me that &lt;em&gt;most&lt;/em&gt; of my posts had been converted to Jekyll and were backed up in a github repository. I was able to restore my blog within a few minutes (now hosted on GitHub) and recover the WordPress posts from the &lt;a href=&#34;http://feeds.feedburner.com/brandontreb&#34;&gt;Feedburner cache&lt;/a&gt; of my site.&lt;/p&gt;
+&lt;p&gt;As for my buddies’ sites… I feel for them &lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2012/frownie.png&#34; alt=&#34;:(&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;new-list-of-why-jekyll-is-awesome&#34;&gt;New List Of Why Jekyll Is Awesome&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Automatically backed up&lt;/strong&gt; – This is huge. If not for switching to Jekyll at one point, I would have lost &lt;strong&gt;years&lt;/strong&gt; worth of content. If you have every tried to back up WordPress, it’s a huge frackin pain since the database dump usually gets HUGE.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Free To Host&lt;/strong&gt; – I’m not sure why I was so stubborn about doing my own hosting. I am now hosting on &lt;a href=&#34;https://github.com/brandontreb/brandontreb.github.com&#34;&gt;GitHub&lt;/a&gt; and it couldn’t be more stable and fast.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mobile Blogging&lt;/strong&gt; – This was my largest gripe about Jekyll. I was jealous that I couldn’t blog from my iPhone like WordPress users. Well, I have found a pretty decent solution (tutorial to follow), which involves a combo of Prompt, Screen, and Vim.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Content Oriented&lt;/strong&gt; – WordPress makes it super easy to dump tons of images into your posts. While blogging with Jekyll (inside of Vim in my case), it’s a little bit more of a pain to add your own images. That being said you must be choosy forcing you to focus more on the content and less on using visual crutches.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Blog Anywhere&lt;/strong&gt; – This was another limitation I was placing on Jekyll in my last post. However, I just wasn’t using Jekyll to its full potential. I was building my site locally and rsyncing it up to my server. This process was a little tedious and discouraged me from writing many new posts. Now, hosting with github, posting is as simple as a quick push to the repo.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ninja Fast&lt;/strong&gt; – This one should be obvious.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h4&gt;
+&lt;p&gt;I am quite happy blogging with Jekyll. As far as I’m concerned there is no reason to ever host my own blog again (as long as Github doesn’t ditch pages 😉 ). Also, if you currently have stuff on Rackspace, &lt;strong&gt;go make a backup now&lt;/strong&gt; (or ditch them altogether). Thanks for reading and &lt;a href=&#34;http://feeds.feedburner.com/brandontreb&#34;&gt;look out&lt;/a&gt; for my next post about mobile blogging with Jekyll.&lt;/p&gt;
+&lt;p&gt;Happy Blogging!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New Year &amp;#8211; New Theme: Focus On The Content</title>
+      <link>https://brandontreb.ngrok.io/2011/12/31/new-year-new-theme-focus-on-the-content/</link>
+      <pubDate>Sat, 31 Dec 2011 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2011/12/31/new-year-new-theme-focus-on-the-content/</guid>
+      <description>&lt;p&gt;As you may have noticed, my blog has a new (much cleaner) theme. For 2012, my blogging goals are to focus much more on content rather than flashy visuals.&lt;/p&gt;
+&lt;p&gt;I have also minimized my set up to save blogging costs (I now blog for FREE) and to simplify things greatly. Here is my new setup:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; as my “blog engine”&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.wptux.com/206/wp-typo&#34;&gt;The WPTypo WordPress Theme&lt;/a&gt; I ported this to Jekyll&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/brandontreb/brandontreb.github.com&#34;&gt;GitHub&lt;/a&gt; for hosting (it’s free).&lt;/li&gt;
+&lt;li&gt;Vim – I’m using this as my “blog editor”. There are some incredible plugins that I am using to help facilitate blogging using Jekyll (post on how I do this to follow)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That’s about it. I am now free from server costs and my blog is &lt;strong&gt;always&lt;/strong&gt; backed up and easily accessible.&lt;/p&gt;
+&lt;p&gt;2011 has been a very successful year in terms of blogging for me. In addition to writing here and on &lt;a href=&#34;http://icodeblog.com&#34;&gt;iCodeBlog&lt;/a&gt;, I have recently started blogging for Mobile Tuts + on the &lt;a href=&#34;http://envato.com&#34;&gt;Envato Network&lt;/a&gt;. You can check out my 7 part game series on creating a caterpillar game using Cocos2D &lt;a href=&#34;http://mobile.tutsplus.com/series/build-a-caterpillar-game-with-cocos2d/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I can’t wait to start posting some great content in this new year. Given my new setup, I literally have to adhere to the title of this post as blogging in VIM doesn’t really lend itself to visuals ;).&lt;/p&gt;
+&lt;p&gt;Happy New Year and Happy Hacking in 2012!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SVProgressHUD Is Quickly Becoming My Favorite iOS Library</title>
+      <link>https://brandontreb.ngrok.io/2011/12/07/svprogresshud-is-quickly-becoming-my-favorite-ios-library/</link>
+      <pubDate>Wed, 07 Dec 2011 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2011/12/07/svprogresshud-is-quickly-becoming-my-favorite-ios-library/</guid>
+      <description>&lt;p&gt;From the first time I saw this effect in the Tweetie (now &lt;a href=&#34;http://itunes.apple.com/us/app/twitter/id333903271?mt=8&#34;&gt;Twitter for iPhone&lt;/a&gt;), I was crazy about it. I had written my own hacks to make something &lt;em&gt;close&lt;/em&gt;, but it was always terrible. Within the past few months, I have been using a perfect/elegant solution to this problem called &lt;a href=&#34;https://github.com/samvermette/SVProgressHUD&#34;&gt;SVProgressHUD&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2011/687474703a2f2f662e636c2e6c792f6974656d732f32333159324130743074314a30423072334e30702f737670726f6772657373687564332e706e67&#34; alt=&#34;&#34;&gt;
+Using this in your project is as easy as calling:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// showing
+[SVProgressHUD showWithStatus:@&amp;#34;Logging in…&amp;#34;];
+// hiding
+[SVProgressHUD dismiss];
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/samvermette/SVProgressHUD&#34;&gt;Clone SVProgressHUD On Github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tether Your iPhone Without Jailbreaking (Or Paying For It)</title>
+      <link>https://brandontreb.ngrok.io/2011/11/29/tether-your-iphone-without-jailbreaking-or-paying-for-it/</link>
+      <pubDate>Tue, 29 Nov 2011 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2011/11/29/tether-your-iphone-without-jailbreaking-or-paying-for-it/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://brandontreb.ngrok.io/uploads/2011/screen12.png&#34; alt=&#34;&#34; title=&#34;iProxy&#34;&gt;
+With all of the buzz around the &lt;a href=&#34;http://tether.com&#34;&gt;iTether&lt;/a&gt; App, I figured I’d offer a more permanent solution since Apple will surely yank this soon&lt;/p&gt;
+&lt;p&gt;Last year, a developer published his code for an http &lt;a href=&#34;http://en.wikipedia.org/wiki/SOCKS&#34;&gt;SOCKS&lt;/a&gt; proxy called iProxy. This will give your iPhone the ability to create a SOCKS server in which your laptop can connect to via the Bonjur protocol.&lt;/p&gt;
+&lt;p&gt;Once connect, all of your computer’s http traffic will be routed through the server on your iPhone essentially giving you &lt;strong&gt;free tethering&lt;/strong&gt;. Since this isn’t using the iPhone’s built-in tethering method, I’d assume At&amp;amp;t could not detect it*. After looking at the code, it becomes pretty obvious how the SOCKS proxy works and makes me kick myself that I didn’t write it (or find this code sooner).&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://github.com/tcurdt/iProxy/wiki/Configuring-iProxy&#34;&gt;setup&lt;/a&gt; is a little complex, but you only need to do it once. I would love to hear in the comments if any of you has had some experience with this. I will also share my own as soon as I can get it installed later today.&lt;/p&gt;
+&lt;p&gt;Download the project over at &lt;a href=&#34;https://github.com/tcurdt/iProxy&#34;&gt;github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Happy Coding!&lt;/p&gt;
+&lt;p&gt;*This has not been verified by me&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Caterpillar 1.1 Released</title>
+      <link>https://brandontreb.ngrok.io/2011/11/22/caterpillar-1-1-released/</link>
+      <pubDate>Tue, 22 Nov 2011 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2011/11/22/caterpillar-1-1-released/</guid>
+      <description>&lt;p&gt;I have just released the update to my Centipede clone called &lt;a href=&#34;http://itunes.apple.com/us/app/caterpillar-hd/id479439790?mt=8&#34;&gt;Caterpillar&lt;/a&gt;. For those of you who don’t know, I am doing a 6 part series on how to create this game over at &lt;a href=&#34;http://mobile.tutsplus.com/tutorials/iphone/building-a-caterpiller-game-with-cocos2d/&#34;&gt;MobileTuts+&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This update adds some interesting functionality on which I will be blogging about in the near future.&lt;/p&gt;
+&lt;p&gt;I have added iAds to my cocos2D project and when the iAds fail to serve (which is about 75% of the time), I replace them with Admob ads. This was achieved by creating a new Admob ad view inside of the &lt;code&gt;bannerView:didFailToReceiveAdWithError:&lt;/code&gt; delegate method.&lt;/p&gt;
+&lt;p&gt;I will either post a full tutorial about doing this Here or on Mobile Tuts. Either way, I’ll keep you posted.&lt;/p&gt;
+&lt;p&gt;Also, be sure to &lt;a href=&#34;http://itunes.apple.com/us/app/caterpillar-hd/id479439790?mt=8&#34;&gt;download the game&lt;/a&gt;, test it out, and lemme know if you have suggestions. Version 1.1 addressed quite a few issues from feedback (namely poor controls).&lt;/p&gt;
+&lt;p&gt;Happy coding!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>WordPress Plugin For iOS Developers And Bloggers</title>
+      <link>https://brandontreb.ngrok.io/2011/11/21/wordpress-plugin-for-ios-developers-and-bloggers/</link>
+      <pubDate>Mon, 21 Nov 2011 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2011/11/21/wordpress-plugin-for-ios-developers-and-bloggers/</guid>
+      <description>&lt;p&gt;This plugin looks to be super useful for people wanting to blog about iOS apps. It even supports the affiliate urls.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In any post or page, insert the following shortcode: [ios-app id=”1234”] (where “1234″ is your application’s App Store ID).&lt;/p&gt;
+&lt;p&gt;You can also specify a download link like this: [ios-app id=”1234” download_url=”&lt;a href=&#34;http://www.yourlinktrackerurl.com&#34;&gt;http://www.yourlinktrackerurl.com&lt;/a&gt;”]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/markrickert/App-Display-Page&#34;&gt;Download The Plugin Here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Caterpillar-HD Now In The App Store: Tutorial Series To Follow</title>
+      <link>https://brandontreb.ngrok.io/2011/11/16/caterpillar-hd-now-in-the-app-store-tutorial-series-to-follow/</link>
+      <pubDate>Wed, 16 Nov 2011 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2011/11/16/caterpillar-hd-now-in-the-app-store-tutorial-series-to-follow/</guid>
+      <description>&lt;p&gt;I have just released the update to my Centipede clone called &lt;a href=&#34;http://itunes.apple.com/us/app/caterpillar-hd/id479439790?mt=8&#34;&gt;Caterpillar&lt;/a&gt;. For those of you who don’t know, I am doing a 6 part series on how to create this game over at &lt;a href=&#34;http://mobile.tutsplus.com/tutorials/iphone/building-a-caterpiller-game-with-cocos2d/&#34;&gt;MobileTuts+&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This update adds some interesting functionality on which I will be blogging about in the near future.&lt;/p&gt;
+&lt;p&gt;I have added iAds to my cocos2D project and when the iAds fail to serve (which is about 75% of the time), I replace them with Admob ads. This was achieved by creating a new Admob ad view inside of the &lt;code&gt;bannerView:didFailToReceiveAdWithError:&lt;/code&gt; delegate method.&lt;/p&gt;
+&lt;p&gt;I will either post a full tutorial about doing this Here or on Mobile Tuts. Either way, I’ll keep you posted.&lt;/p&gt;
+&lt;p&gt;Also, be sure to &lt;a href=&#34;http://itunes.apple.com/us/app/caterpillar-hd/id479439790?mt=8&#34;&gt;download the game&lt;/a&gt;, test it out, and lemme know if you have suggestions. Version 1.1 addressed quite a few issues from feedback (namely poor controls).&lt;/p&gt;
+&lt;p&gt;Happy coding!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Voices That Matter Conference: Highlights</title>
+      <link>https://brandontreb.ngrok.io/2011/11/16/voices-that-matter-conference-highlights/</link>
+      <pubDate>Wed, 16 Nov 2011 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2011/11/16/voices-that-matter-conference-highlights/</guid>
+      <description>&lt;p&gt;This past weekend, I attended the voices that matter conference as a sponsor for a new product my team is working called &lt;a href=&#34;http://maasive.co&#34;&gt;MaaSive&lt;/a&gt;. We had an absolute blast at the conference and I learned quite a bit from all of the speakers.&lt;/p&gt;
+&lt;p&gt;Here were a few of my favorite parts:&lt;/p&gt;
+&lt;h4 id=&#34;keynote-by-graeme-devine&#34;&gt;Keynote by Graeme Devine&lt;/h4&gt;
+&lt;p&gt;For those of you who don’t know Graeme is a legend in the game development industry. He was responsible for titles such as Quake 3, 7th guest, and Halo Wars. His presentation entitled “Social Gaming is Dead” was spot on. In it Graeme talked about how game developers have become less focused on the quality of games and more focused on “how do I make a profit?”. A statement that has stuck out to me is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Be generous with fun. We are mean with it!”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Basically, we are charging our users for fun or making them do real work (see Farmville) in order to obtain it. His message was “stop it, make something fun, and dont’t focus on profit”. Otherwise you are &lt;strong&gt;doomed&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/#!/zaphodgjd&#34;&gt;Follow Graeme on Twitter&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;moving-to-3d-by-mike-daily&#34;&gt;Moving To 3D by Mike Daily&lt;/h4&gt;
+&lt;p&gt;Mike is a good friend of mine and I look forward to hanging out with him at the conference each year. His talk was all about showing the developers how easy it actually is to create a 3D game without the use of a game engine. Mike’s demo (show below) was an absolutely incredible space shooter where you used the gyroscope to maneuver around.&lt;/p&gt;
+&lt;p&gt;Mike will be posting a series on &lt;a href=&#34;http://www.71squared.com/&#34;&gt;his blog&lt;/a&gt; in the near future about how to make his game using GLKit in the near future.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://vimeo.com/31690099&#34;&gt;VTM Game Prototype&lt;/a&gt; from &lt;a href=&#34;http://vimeo.com/michaeldaley&#34;&gt;Michael Daley&lt;/a&gt; on &lt;a href=&#34;http://vimeo.com&#34;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/#!/mikedaley&#34;&gt;Follow Mike on Twitter&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;storyboarding-by-erica-sadun&#34;&gt;Storyboarding by Erica Sadun&lt;/h4&gt;
+&lt;p&gt;Erica is an OG (original gangster) when it comes to iOS development. She has been in the space since way before the first SDK was published (in fact she had a jailbroken dev book almost ready to go). Her current book, &lt;a href=&#34;http://www.amazon.com/iPhone-Developers-Cookbook-Building-Applications/dp/0321659570&#34;&gt;The iPhone Developer’s Cookbook&lt;/a&gt; is a beast containing almost 900 pages!!!&lt;/p&gt;
+&lt;p&gt;Her talk showed how easy it is to use storyboarding and just how powerful the technique can be.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/#!/ericasadun&#34;&gt;Follow Erica on Twitter&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h4&gt;
+&lt;p&gt;It should be obvious from this post, that the VTM conference was incredible to say the least. If you didn’t attend, I strongly urge you to check out their next one. Hopefully you will get to blog about &lt;em&gt;my&lt;/em&gt; talk at it (assuming I get my crap together).&lt;/p&gt;
+&lt;p&gt;Happy Coding!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>WordPress To Jekyll And Back Again</title>
+      <link>https://brandontreb.ngrok.io/2011/11/14/wordpress-to-jekyll-and-back-again/</link>
+      <pubDate>Mon, 14 Nov 2011 01:00:00 -0600</pubDate>
+      <author>brandontreb@gmail.com (|ZeroCool|)</author><guid>https://brandontreb.ngrok.io/2011/11/14/wordpress-to-jekyll-and-back-again/</guid>
+      <description>&lt;p&gt;Earlier this year, I jumped ship on WordPress and moved to Jekyll after reading &lt;a href=&#34;http://vitobotta.com/how-to-migrate-from-wordpress-to-jekyll/&#34;&gt;this post&lt;/a&gt; on Hacker News. I wanted to be 1337! I wanted to ditch the whale that was WordPress.&lt;/p&gt;
+&lt;p&gt;Well, it was quite a run, but in the end I decided to revert back to WordPress. Although Jekyll is &lt;strong&gt;much faster&lt;/strong&gt; than WordPress, here were my issues:&lt;/p&gt;
+&lt;h4 id=&#34;build-times&#34;&gt;Build Times&lt;/h4&gt;
+&lt;p&gt;As my post count grew, so did the time to compile my jekyll site. Jekyll is a static site builder, so naturally it has to rebuild your site any time anything changes. With my blog containing hundreds of posts, my site build times started getting into minutes. I simply don’t want to wait forever to publish a post.&lt;/p&gt;
+&lt;p&gt;Since it took &lt;strong&gt;so long&lt;/strong&gt; to build my site, it discouraged me from posting. I would only write posts on my specified &lt;a href=&#34;http://idevblogaday.com&#34;&gt;#iDevBlogADay&lt;/a&gt; days, rather than just posting quick info posts.&lt;/p&gt;
+&lt;h4 id=&#34;too-many-dependancies&#34;&gt;Too Many Dependancies&lt;/h4&gt;
+&lt;p&gt;Jekyll is a beast to install, especially if you want to support some of the fancier plugins like syntax highlighting. This limited my blogging to only &lt;em&gt;my&lt;/em&gt; machines. I couldn’t blog from anywhere anymore. I could have installed Jekyll on my server, but that just seems like a hassle, also see my first point about build times.&lt;/p&gt;
+&lt;h4 id=&#34;no-mobile-app&#34;&gt;No Mobile App&lt;/h4&gt;
+&lt;p&gt;I like to blog on the go, and with Jekyll I just couldn’t find an elegant solution to blog from my iPhone or iPad. I found myself trying to come up with hackish solutions and write custom scripps, but in the end it just wasn’t worth it.&lt;/p&gt;
+&lt;h4 id=&#34;i-can-now-use-markdown-with-wordpress&#34;&gt;I can now use Markdown with WordPress&lt;/h4&gt;
+&lt;p&gt;I fell in love with Jekyll because I could write in markdown. With &lt;a href=&#34;http://wordpress.org/extend/plugins/markdown-on-save-improved/&#34;&gt;this plugin&lt;/a&gt;, I can now do just that with WordPress. It stores the Markdown in a separate meta field and generates the post_content html upon publishing the post. So, I’m not married to the plugin in case I decide to ditch it.&lt;/p&gt;
+&lt;p&gt;I have also hid the disgusting “Visual Editor” that WordPress is unfortunate enough to ship with. This makes my writing experience much more pleasant.&lt;/p&gt;
+&lt;h4 id=&#34;the-future&#34;&gt;The Future&lt;/h4&gt;
+&lt;p&gt;While Jekyll was a fun experiment, I think I will stick with WordPress for now.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;geekCred–;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://twitter.com/share&#34;&gt;Tweet&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
